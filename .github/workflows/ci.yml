@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -50,13 +50,21 @@ jobs:
         run: |
           java -jar publisher.jar -ig ./ -tx https://tx.fhir.org
         
-      - name: Upload entire output folder as artifact
+    download-artifact:
+    name: Download IG output 
+    needs: build
+    steps:
+      - name: Download IG output
         uses: actions/download-artifact@v3
         with:
           name: ig-output
-          path: /home/runner/work/IGTest-git/IGTest-git/output
+      - name: Test artifact download
+        run: ls -R
 
-
+    deploy:
+    name: Deploy IG to GitHub Pages
+    needs: build
+    steps:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
