@@ -51,10 +51,12 @@ jobs:
           java -jar publisher.jar -ig input -tx https://tx.fhir.org
 
       - name: Upload IG output as artifact
-        uses: actions/upload-artifact@v3.1.2
+        run: mkdir -p ./output
+        run: echo hello > ./output/world.txt
+        uses: actions/upload-artifact@v4
         with:
-          name: ig-output
-          path: output/
+            name: my-artifact
+            path: ./output/world.txt
 
   download-artifact:
     name: Download IG output
@@ -62,13 +64,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Download artifact "ig-output"
-        uses: actions/download-artifact@v3
-        with:
-          name: ig-output
-
-      - name: List downloaded files
-        run: ls -R
+    - uses: actions/download-artifact@v4
+      with:
+        name: my-artifact
+    - name: Display structure of downloaded files
+      run: ls -R
 
   deploy:
     name: Deploy IG to GitHub Pages
