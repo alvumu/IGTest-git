@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://testSK.org/CodeSystem/stroke-proc-not-done-reason-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "stroke-proc-not-done-reason-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem stroke-proc-not-done-reason-cs</b></p><a name=\"stroke-proc-not-done-reason-cs\"> </a><a name=\"hcstroke-proc-not-done-reason-cs\"> </a><a name=\"stroke-proc-not-done-reason-cs-en-US\"> </a><p>This case-insensitive code system <code>http://testSK.org/CodeSystem/stroke-proc-not-done-reason-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">time-window<a name=\"stroke-proc-not-done-reason-cs-time-window\"> </a></td><td>Outside Therapeutic Window</td><td>Patient presented or evaluated outside the established time limit for the procedure.</td></tr><tr><td style=\"white-space:nowrap\">no-lvo<a name=\"stroke-proc-not-done-reason-cs-no-lvo\"> </a></td><td>No Large Vessel Occlusion (LVO)</td><td>An eligible large vessel occlusion for thrombectomy was not identified.</td></tr><tr><td style=\"white-space:nowrap\">contraindication<a name=\"stroke-proc-not-done-reason-cs-contraindication\"> </a></td><td>Contraindication Present</td><td>A medical contraindication to the procedure existed (e.g., bleeding risk).</td></tr><tr><td style=\"white-space:nowrap\">patient-refusal<a name=\"stroke-proc-not-done-reason-cs-patient-refusal\"> </a></td><td>Patient/Family Refusal</td><td>The patient or their legal representative refused the procedure.</td></tr><tr><td style=\"white-space:nowrap\">transfer<a name=\"stroke-proc-not-done-reason-cs-transfer\"> </a></td><td>Transferred to Another Facility</td><td>The patient was transferred to another hospital for the procedure.</td></tr><tr><td style=\"white-space:nowrap\">unavailable<a name=\"stroke-proc-not-done-reason-cs-unavailable\"> </a></td><td>Procedure Unavailable</td><td>The procedure was not available at the facility (e.g., lack of equipment, staff).</td></tr><tr><td style=\"white-space:nowrap\">disability<a name=\"stroke-proc-not-done-reason-cs-disability\"> </a></td><td>Severe Preexisting Disability</td><td>Patient's baseline disability made benefit from the procedure unlikely.</td></tr><tr><td style=\"white-space:nowrap\">mild-stroke<a name=\"stroke-proc-not-done-reason-cs-mild-stroke\"> </a></td><td>Mild Stroke / Rapid Improvement</td><td>Stroke symptoms were too mild or improved rapidly, not justifying the procedure risk.</td></tr><tr><td style=\"white-space:nowrap\">done-elsewhere<a name=\"stroke-proc-not-done-reason-cs-done-elsewhere\"> </a></td><td>Performed Elsewhere</td><td>The procedure had already been performed at another facility prior to arrival/transfer.</td></tr><tr><td style=\"white-space:nowrap\">cost<a name=\"stroke-proc-not-done-reason-cs-cost\"> </a></td><td>Cost / No Insurance</td><td>Financial or coverage reasons prevented the procedure.</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"stroke-proc-not-done-reason-cs-unknown\"> </a></td><td>Reason Unknown</td><td>The reason was not documented or is unknown.</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://testSK.org/CodeSystem/stroke-proc-not-done-reason-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "StrokeProcNotDoneReasonCS"] ; # 
+  fhir:title [ fhir:v "Stroke Procedure Not Done Reason Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-06-02T11:25:34+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UMU"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UMU" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://testSK.org/umu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes specifying the reason principal for not performing a key stroke procedure (Thrombolysis, Thrombectomy)."] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "time-window" ] ;
+     fhir:display [ fhir:v "Outside Therapeutic Window" ] ;
+     fhir:definition [ fhir:v "Patient presented or evaluated outside the established time limit for the procedure." ]
+  ] [
+     fhir:code [ fhir:v "no-lvo" ] ;
+     fhir:display [ fhir:v "No Large Vessel Occlusion (LVO)" ] ;
+     fhir:definition [ fhir:v "An eligible large vessel occlusion for thrombectomy was not identified." ]
+  ] [
+     fhir:code [ fhir:v "contraindication" ] ;
+     fhir:display [ fhir:v "Contraindication Present" ] ;
+     fhir:definition [ fhir:v "A medical contraindication to the procedure existed (e.g., bleeding risk)." ]
+  ] [
+     fhir:code [ fhir:v "patient-refusal" ] ;
+     fhir:display [ fhir:v "Patient/Family Refusal" ] ;
+     fhir:definition [ fhir:v "The patient or their legal representative refused the procedure." ]
+  ] [
+     fhir:code [ fhir:v "transfer" ] ;
+     fhir:display [ fhir:v "Transferred to Another Facility" ] ;
+     fhir:definition [ fhir:v "The patient was transferred to another hospital for the procedure." ]
+  ] [
+     fhir:code [ fhir:v "unavailable" ] ;
+     fhir:display [ fhir:v "Procedure Unavailable" ] ;
+     fhir:definition [ fhir:v "The procedure was not available at the facility (e.g., lack of equipment, staff)." ]
+  ] [
+     fhir:code [ fhir:v "disability" ] ;
+     fhir:display [ fhir:v "Severe Preexisting Disability" ] ;
+     fhir:definition [ fhir:v "Patient's baseline disability made benefit from the procedure unlikely." ]
+  ] [
+     fhir:code [ fhir:v "mild-stroke" ] ;
+     fhir:display [ fhir:v "Mild Stroke / Rapid Improvement" ] ;
+     fhir:definition [ fhir:v "Stroke symptoms were too mild or improved rapidly, not justifying the procedure risk." ]
+  ] [
+     fhir:code [ fhir:v "done-elsewhere" ] ;
+     fhir:display [ fhir:v "Performed Elsewhere" ] ;
+     fhir:definition [ fhir:v "The procedure had already been performed at another facility prior to arrival/transfer." ]
+  ] [
+     fhir:code [ fhir:v "cost" ] ;
+     fhir:display [ fhir:v "Cost / No Insurance" ] ;
+     fhir:definition [ fhir:v "Financial or coverage reasons prevented the procedure." ]
+  ] [
+     fhir:code [ fhir:v "unknown" ] ;
+     fhir:display [ fhir:v "Reason Unknown" ] ;
+     fhir:definition [ fhir:v "The reason was not documented or is unknown." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

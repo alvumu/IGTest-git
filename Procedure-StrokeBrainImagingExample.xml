@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="StrokeBrainImagingExample"/>
+  <meta>
+    <profile value="http://testSK.org/StructureDefinition/stroke-brain-imaging-procedure-profile"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure StrokeBrainImagingExample</b></p><a name="StrokeBrainImagingExample"> </a><a name="hcStrokeBrainImagingExample"> </a><a name="StrokeBrainImagingExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-stroke-brain-imaging-procedure-profile.html">Stroke Brain Imaging Procedure Profile (R5)</a></p></div><p><b>Procedure Timing Context Extension</b>: <span title="Codes:{http://testSK.org/CodeSystem/procedure-timing-context-cs acute}">Acute Phase (&lt;24h)</span></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 419949007}">Computed tomography angiography of intracranial artery with contrast (procedure)</span></p><p><b>subject</b>: <a href="Patient-example-patient.html">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>occurrence</b>: 2025-03-01 10:00:00+0000</p></div>
+  </text>
+  <extension url="http://testSK.org/StructureDefinition/procedure-timing-context-ext">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://testSK.org/CodeSystem/procedure-timing-context-cs"/>
+        <code value="acute"/>
+        <display value="Acute Phase (&lt;24h)"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="419949007"/>
+      <display value="Computed tomography angiography of intracranial artery with contrast (procedure)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example-patient"/>
+  </subject>
+  <occurrenceDateTime value="2025-03-01T10:00:00Z"/>
+</Procedure>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="procedure-timing-context-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet procedure-timing-context-vs</b></p><a name="procedure-timing-context-vs"> </a><a name="hcprocedure-timing-context-vs"> </a><a name="procedure-timing-context-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-procedure-timing-context-cs.html"><code>http://testSK.org/CodeSystem/procedure-timing-context-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://testSK.org/ValueSet/procedure-timing-context-vs"/>
+  <version value="0.1.0"/>
+  <name value="ProcedureTimingContextVS"/>
+  <title value="Procedure Timing Context ValueSet"/>
+  <status value="active"/>
+  <date value="2025-06-02T11:25:34+00:00"/>
+  <publisher value="UMU"/>
+  <contact>
+    <name value="UMU"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://testSK.org/umu"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet for codes defining the timing phase of a procedure relative to the encounter start."/>
+  <compose>
+    <include>
+      <system value="http://testSK.org/CodeSystem/procedure-timing-context-cs"/>
+    </include>
+  </compose>
+</ValueSet>

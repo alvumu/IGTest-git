@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="swallow-screen-time-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem swallow-screen-time-cs</b></p><a name="swallow-screen-time-cs"> </a><a name="hcswallow-screen-time-cs"> </a><a name="swallow-screen-time-cs-en-US"> </a><p>This case-insensitive code system <code>http://testSK.org/CodeSystem/swallow-screen-time-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">T4H<a name="swallow-screen-time-cs-T4H"> </a></td><td>Within 4 hours</td><td>Screening performed within 4 hours of symptom onset.</td></tr><tr><td style="white-space:nowrap">T24H<a name="swallow-screen-time-cs-T24H"> </a></td><td>Within 24 hours</td><td>Screening performed within 24 hours of symptom onset (but after 4h).</td></tr><tr><td style="white-space:nowrap">A24H<a name="swallow-screen-time-cs-A24H"> </a></td><td>After 24 hours</td><td>Screening performed after 24 hours of symptom onset.</td></tr><tr><td style="white-space:nowrap">UNK<a name="swallow-screen-time-cs-UNK"> </a></td><td>Unknown time</td><td>Screening performed but timing relative to symptom onset unknown.</td></tr></table></div>
+  </text>
+  <url value="http://testSK.org/CodeSystem/swallow-screen-time-cs"/>
+  <version value="0.1.0"/>
+  <name value="SwallowScreenTimeCS"/>
+  <title value="Swallowing Screening Timing Category Code System"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-06-02T11:25:34+00:00"/>
+  <publisher value="UMU"/>
+  <contact>
+    <name value="UMU"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://testSK.org/umu"/>
+    </telecom>
+  </contact>
+  <description value="Temporal categories relative to stroke onset for swallowing screening."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="T4H"/>
+    <display value="Within 4 hours"/>
+    <definition value="Screening performed within 4 hours of symptom onset."/>
+  </concept>
+  <concept>
+    <code value="T24H"/>
+    <display value="Within 24 hours"/>
+    <definition value="Screening performed within 24 hours of symptom onset (but after 4h)."/>
+  </concept>
+  <concept>
+    <code value="A24H"/>
+    <display value="After 24 hours"/>
+    <definition value="Screening performed after 24 hours of symptom onset."/>
+  </concept>
+  <concept>
+    <code value="UNK"/>
+    <display value="Unknown time"/>
+    <definition value="Screening performed but timing relative to symptom onset unknown."/>
+  </concept>
+</CodeSystem>

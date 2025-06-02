@@ -1,0 +1,84 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "medication-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet medication-vs</b></p><a name=\"medication-vs\"> </a><a name=\"hcmedication-vs\"> </a><a name=\"medication-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/372720008\">372720008</a></td><td>Product containing warfarin (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/108977009\">108977009</a></td><td>Heparin preparations (product)</td></tr><tr><td><a href=\"http://snomed.info/id/429421000\">429421000</a></td><td>Product containing dabigatran (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/429532005\">429532005</a></td><td>Product containing rivaroxaban (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/444216007\">444216007</a></td><td>Product containing apixaban (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/703873003\">703873003</a></td><td>Product containing edoxaban (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/767432000\">767432000</a></td><td>Anticoagulant drug (product)</td></tr><tr><td><a href=\"http://snomed.info/id/387458008\">387458008</a></td><td>Product containing acetylsalicylic acid (medicinal product form)</td></tr><tr><td><a href=\"http://snomed.info/id/372748007\">372748007</a></td><td>Product containing clopidogrel (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/417859008\">417859008</a></td><td>Product containing ticagrelor (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/412198007\">412198007</a></td><td>Product containing prasugrel (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/372761000\">372761000</a></td><td>Product containing dipyridamole (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/373208002\">373208002</a></td><td>Platelet aggregation inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/372749004\">372749004</a></td><td>Product containing enoxaparin (medicinal product)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://testSK.org/ValueSet/medication-vs",
+  "version" : "0.1.0",
+  "name" : "MedicationVS",
+  "title" : "Medications ValueSet",
+  "status" : "draft",
+  "date" : "2025-06-02T11:25:34+00:00",
+  "publisher" : "UMU",
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
+  "description" : "SNOMED CT codes for drug products or substances.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "372720008",
+        "display" : "Product containing warfarin (medicinal product)"
+      },
+      {
+        "code" : "108977009",
+        "display" : "Heparin preparations (product)"
+      },
+      {
+        "code" : "429421000",
+        "display" : "Product containing dabigatran (medicinal product)"
+      },
+      {
+        "code" : "429532005",
+        "display" : "Product containing rivaroxaban (medicinal product)"
+      },
+      {
+        "code" : "444216007",
+        "display" : "Product containing apixaban (medicinal product)"
+      },
+      {
+        "code" : "703873003",
+        "display" : "Product containing edoxaban (medicinal product)"
+      },
+      {
+        "code" : "767432000",
+        "display" : "Anticoagulant drug (product)"
+      },
+      {
+        "code" : "387458008",
+        "display" : "Product containing acetylsalicylic acid (medicinal product form)"
+      },
+      {
+        "code" : "372748007",
+        "display" : "Product containing clopidogrel (medicinal product)"
+      },
+      {
+        "code" : "417859008",
+        "display" : "Product containing ticagrelor (medicinal product)"
+      },
+      {
+        "code" : "412198007",
+        "display" : "Product containing prasugrel (medicinal product)"
+      },
+      {
+        "code" : "372761000",
+        "display" : "Product containing dipyridamole (medicinal product)"
+      },
+      {
+        "code" : "373208002",
+        "display" : "Platelet aggregation inhibitor (product)"
+      },
+      {
+        "code" : "372749004",
+        "display" : "Product containing enoxaparin (medicinal product)"
+      }]
+    }]
+  }
+}

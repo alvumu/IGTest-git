@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://testSK.org/Condition/StrokeDiagnosisConditionExample> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "StrokeDiagnosisConditionExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://testSK.org/StructureDefinition/stroke-diagnosis-condition-profile"^^xsd:anyURI ;
+       fhir:link <http://testSK.org/StructureDefinition/stroke-diagnosis-condition-profile>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition StrokeDiagnosisConditionExample</b></p><a name=\"StrokeDiagnosisConditionExample\"> </a><a name=\"hcStrokeDiagnosisConditionExample\"> </a><a name=\"StrokeDiagnosisConditionExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-stroke-diagnosis-condition-profile.html\">Stroke Diagnosis Condition Profile</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:\">active</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 49436004}\">Atrial fibrillation (disorder)</span></p><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>encounter</b>: <a href=\"Encounter-StrokeEncounterExample.html\">Encounter: extension = true,ICU / Stroke Unit,false,Neurology department (environment); status = completed; type = Inpatient Encounter; actualPeriod = 2025-03-01 08:00:00+0000 --&gt; 2025-03-10 12:00:00+0000</a></p><p><b>onset</b>: 2025-03-31 12:00:00+0000</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ] ;
+       fhir:display [ fhir:v "Encounter Diagnosis" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:49436004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "49436004" ] ;
+       fhir:display [ fhir:v "Atrial fibrillation (disorder)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://testSK.org/Patient/example-patient> ;
+     fhir:reference [ fhir:v "Patient/example-patient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://testSK.org/Encounter/StrokeEncounterExample> ;
+     fhir:reference [ fhir:v "Encounter/StrokeEncounterExample" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:dateTime ;
+     fhir:v "2025-03-31T12:00:00Z"^^xsd:dateTime
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

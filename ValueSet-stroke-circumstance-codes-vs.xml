@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="stroke-circumstance-codes-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet stroke-circumstance-codes-vs</b></p><a name="stroke-circumstance-codes-vs"> </a><a name="hcstroke-circumstance-codes-vs"> </a><a name="stroke-circumstance-codes-vs-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/230690007">230690007</a></td><td>Cerebrovascular accident (disorder)</td></tr><tr><td><a href="http://snomed.info/id/184091000">184091000</a></td><td>Patient in hospital (finding)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://testSK.org/ValueSet/stroke-circumstance-codes-vs"/>
+  <version value="0.1.0"/>
+  <name value="StrokeCircumstanceCodesVS"/>
+  <title value="Stroke Circumstance Codes ValueSet"/>
+  <status value="active"/>
+  <date value="2025-06-02T11:25:34+00:00"/>
+  <publisher value="UMU"/>
+  <contact>
+    <name value="UMU"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://testSK.org/umu"/>
+    </telecom>
+  </contact>
+  <description value="Codes for findings related to the circumstances of stroke onset (In-hospital, Wake-up)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="230690007"/>
+        <display value="Cerebrovascular accident (disorder)"/>
+      </concept>
+      <concept>
+        <code value="184091000"/>
+        <display value="Patient in hospital (finding)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

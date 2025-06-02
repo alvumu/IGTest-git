@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "specific-finding-codes-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet specific-finding-codes-vs</b></p><a name=\"specific-finding-codes-vs\"> </a><a name=\"hcspecific-finding-codes-vs\"> </a><a name=\"specific-finding-codes-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/49436004\">49436004</a></td><td>Atrial fibrillation (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/5370000\">5370000</a></td><td>Atrial flutter (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/00\">00</a></td><td>Ask Snomed</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://testSK.org/ValueSet/specific-finding-codes-vs",
+  "version" : "0.1.0",
+  "name" : "SpecificFindingCodesVS",
+  "title" : "Specific Stroke Finding Codes ValueSet",
+  "status" : "active",
+  "date" : "2025-06-02T11:25:34+00:00",
+  "publisher" : "UMU",
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
+  "description" : "Codes for specific clinical findings relevant to stroke (Afib/Flutter status, mTICI score).",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "49436004",
+        "display" : "Atrial fibrillation (disorder)"
+      },
+      {
+        "code" : "5370000",
+        "display" : "Atrial flutter (disorder)"
+      },
+      {
+        "code" : "00",
+        "display" : "Ask Snomed"
+      }]
+    }]
+  }
+}

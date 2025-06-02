@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mtici-score-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mtici-score-vs</b></p><a name=\"mtici-score-vs\"> </a><a name=\"hcmtici-score-vs\"> </a><a name=\"mtici-score-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-mtici-score-cs.html\"><code>http://testSK.org/CodeSystem/mtici-score-cs</code></a></li></ul></div>"
+  },
+  "url" : "http://testSK.org/ValueSet/mtici-score-vs",
+  "version" : "0.1.0",
+  "name" : "MTICIScoreValueSet",
+  "title" : "mTICI Score ValueSet",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-03-31",
+  "publisher" : "UMU",
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
+  "description" : "ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://testSK.org/CodeSystem/mtici-score-cs"
+    }]
+  }
+}

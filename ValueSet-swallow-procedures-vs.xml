@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="swallow-procedures-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet swallow-procedures-vs</b></p><a name="swallow-procedures-vs"> </a><a name="hcswallow-procedures-vs"> </a><a name="swallow-procedures-vs-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/1290000005">1290000005</a></td><td>Assessment using Gugging Swallowing Screen (procedure)</td></tr><tr><td><a href="http://snomed.info/id/304909008">304909008</a></td><td>Swallowing function test (procedure)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://testSK.org/ValueSet/swallow-procedures-vs"/>
+  <version value="0.1.0"/>
+  <name value="SwallowProceduresValueset"/>
+  <title value="Swallow Procedures ValueSet"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-03-31"/>
+  <publisher value="UMU"/>
+  <contact>
+    <name value="UMU"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://testSK.org/umu"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet containing SNOMED CT codes representing a range of procedures used in the evaluation and management of stroke patients."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1290000005"/>
+        <display value="Assessment using Gugging Swallowing Screen (procedure)"/>
+      </concept>
+      <concept>
+        <code value="304909008"/>
+        <display value="Swallowing function test (procedure)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,37 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "swallow-procedures-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet swallow-procedures-vs</b></p><a name=\"swallow-procedures-vs\"> </a><a name=\"hcswallow-procedures-vs\"> </a><a name=\"swallow-procedures-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/1290000005\">1290000005</a></td><td>Assessment using Gugging Swallowing Screen (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/304909008\">304909008</a></td><td>Swallowing function test (procedure)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://testSK.org/ValueSet/swallow-procedures-vs",
+  "version" : "0.1.0",
+  "name" : "SwallowProceduresValueset",
+  "title" : "Swallow Procedures ValueSet",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-03-31",
+  "publisher" : "UMU",
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
+  "description" : "ValueSet containing SNOMED CT codes representing a range of procedures used in the evaluation and management of stroke patients.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "1290000005",
+        "display" : "Assessment using Gugging Swallowing Screen (procedure)"
+      },
+      {
+        "code" : "304909008",
+        "display" : "Swallowing function test (procedure)"
+      }]
+    }]
+  }
+}
