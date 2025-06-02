@@ -28,14 +28,18 @@ jobs:
       - name: Install SUSHI
         run: npm install -g fsh-sushi
 
-      - name: Compile FSH y generar recursos
+      - name: Download IG Publisher
         run: |
-          cd input
+          curl -L -o publisher.jar \
+            https://github.com/FHIR/ig-publisher/releases/latest/download/publisher.jar
+
+      - name: Compile FSH y generar recursos
+        working-directory: ./input
+        run: |
           sushi .
 
       - name: Run IG Publisher
         run: |
-          cd ..
           java -jar publisher.jar -ig input -tx https://tx.fhir.org
 
       - name: Deploy to GitHub Pages
