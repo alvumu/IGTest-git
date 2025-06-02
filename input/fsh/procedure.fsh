@@ -48,7 +48,7 @@ Id: carotid-imaging-modality-vs
 * include SCT#58920005 "Angiography of carotid artery (procedure)"
 * include SCT#416940007 "Doppler ultrasonography of carotid arteries (procedure)"
 * include SCT#419949007 "Computed tomography angiography of intracranial artery with contrast (procedure)"
-* include SCT#418994000 "Magnetic resonance angiography of intracranial structure (procedure)"
+* include SCT#1366357009 "Magnetic resonance imaging angiography of intracranial artery (procedure)"
 
 // --- ValueSet: Brain Imaging Modalities ---
 ValueSet: BrainImagingModalityVS
