@@ -403,7 +403,6 @@ InstanceOf: SpecificFindingObservationProfile
 Instance: VitalSignObservationExample
 InstanceOf: VitalSignObservationProfile
 * code = SCT#271649006 "Systolic blood pressure (observable entity)"
-* component[]
 * valueQuantity.value = 120
 * valueQuantity.unit = "mmHg"
 * valueQuantity.system = UCUM
