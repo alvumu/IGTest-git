@@ -36,34 +36,45 @@ jobs:
       - name: Setup Ruby (para Jekyll)
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'        
-          bundler-cache: false       
+          ruby-version: '3.1'
+          bundler-cache: false
 
       - name: Install Jekyll gem
         run: gem install jekyll
+
       - name: Compile FSH y generar recursos
-        working-directory: ./
-        run: |
-          sushi .
+        working-directory: ./input
+        run: sushi .
 
       - name: Run IG Publisher
         run: |
-          java -jar publisher.jar -ig ./ -tx https://tx.fhir.org
-        
-    download-artifact:
-    name: Download IG output 
+          java -jar publisher.jar -ig input -tx https://tx.fhir.org
+
+      - name: Upload IG output as artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: ig-output
+          path: output/
+
+  download-artifact:
+    name: Download IG output
     needs: build
+    runs-on: ubuntu-latest
+
     steps:
-      - name: Download IG output
+      - name: Download artifact "ig-output"
         uses: actions/download-artifact@v3
         with:
           name: ig-output
-      - name: Test artifact download
+
+      - name: List downloaded files
         run: ls -R
 
-    deploy:
+  deploy:
     name: Deploy IG to GitHub Pages
     needs: build
+    runs-on: ubuntu-latest
+
     steps:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
