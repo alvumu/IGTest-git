@@ -43,27 +43,22 @@ jobs:
         run: gem install jekyll
 
       - name: Compile FSH y generar recursos
-        working-directory: ./input
+        working-directory: ./
         run: sushi .
 
       - name: Run IG Publisher
         run: |
-          java -jar publisher.jar -ig input -tx https://tx.fhir.org
+          java -jar publisher.jar -ig ./ -tx https://tx.fhir.org
 
   test-artifact:
     name: Test artifact upload
     runs-on: ubuntu-latest
     steps:
-      - name: Create dummy file
-        run: |
-          mkdir -p ./output
-          echo hello > ./output/world.txt
-
       - name: Upload IG output as artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: my-artifact
-          path: ./output/world.txt
+          path: ./output/qa.html
           
   download-artifact:
     name: Download IG output
