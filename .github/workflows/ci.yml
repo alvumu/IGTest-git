@@ -51,6 +51,8 @@ jobs:
           java -jar publisher.jar -ig input -tx https://tx.fhir.org
 
   test-artifact:
+    name: Test artifact upload
+    steps:
       - name: Create dummy file
         run: |
           mkdir -p ./output
