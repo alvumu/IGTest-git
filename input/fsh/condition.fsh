@@ -6,6 +6,7 @@ Alias: CondVerStatus = http://terminology.hl7.org/CodeSystem/condition-ver-statu
 Alias: BleedingReasonCS = http://testSK.org/CodeSystem/stroke-bleeding-reason
 Alias: StrokeEtiologyCS = http://testSK.org/CodeSystem/stroke-ischemic-etiology
 Alias: StrokeRiskUnknVS = http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips
+Alias: ClinicalStatusCondCS = http://terminology.hl7.org/CodeSystem/condition-clinical
 
 // ValueSet for Stroke Diagnosis (with Displays)
 ValueSet: StrokeDiagnosisVS
@@ -43,7 +44,7 @@ Description: "Defines the unknown or absent codes for conditions or risk factors
 * include codes from valueset StrokeRiskFactorSNOMEDVS
 * include codes from valueset StrokeRiskUnknVS
 
-// ValueSet for Discharge Destination (New)
+// ValueSet for Discharge Destination
 ValueSet: DischargeDestinationVS
 Id: discharge-destination-vs
 Title: "Discharge Destination ValueSet"
@@ -58,13 +59,13 @@ Description: "Defines possible patient discharge destinations."
 * ^contact[0].name = "Example Organization"
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "info@example.org"
-* include SCT#1066351000000100 "Discharge to hospital at home service (procedure)"
+* include SCT#306689006 "Discharge to home (procedure)"
 * include SCT#306706006 "Discharge to ward (procedure)"
 * include SCT#19712007 "Patient transfer, to another health care facility (procedure)"
 * include SCT#306691003 "Discharge to residential home (procedure)"
 * include SCT#305398007 "Admission to the mortuary (procedure)"
 
-// ValueSet for Admission Source (New)
+// ValueSet for Admission Source
 ValueSet: AdmissionSourceVS
 Id: admission-source-vs
 Title: "Admission Sources ValueSet"
@@ -206,17 +207,17 @@ Description: "Represents a known condition or risk factor relevant to stroke."
 Instance: StrokeDiagnosisConditionExample
 InstanceOf: StrokeDiagnosisConditionProfile
 * category = CondCat#encounter-diagnosis "Encounter Diagnosis"
-* code = SCT#49436004 "Atrial fibrillation (disorder)"
+* code = SCT#266257000 "Transient ischemic attack (disorder)"
 * encounter = Reference(StrokeEncounterExample)
 * onsetDateTime = 2025-03-31T12:00:00Z
-* clinicalStatus = #active 
+* clinicalStatus = ClinicalStatusCondCS#active 
 * subject = Reference(PatientExample)
 
 Instance: StrokeRiskFactorConditionExample
 InstanceOf: StrokeRiskFactorConditionProfile
 * category = CondCat#problem-list-item "Problem List Item"
 * code = SCT#422504002 "Ischemic stroke (disorder)"
-* clinicalStatus = #remission
+* clinicalStatus = ClinicalStatusCondCS#remission
 * onsetDateTime = 2025-03-31T12:00:00Z
 * recordedDate = 2025-03-31T12:00:00Z
 * encounter = Reference(StrokeEncounterExample)

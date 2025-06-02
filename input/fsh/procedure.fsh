@@ -61,10 +61,10 @@ Id: brain-imaging-modality-vs
 * include SCT#396205005 "Computed tomography of brain without radiopaque contrast (procedure)"
 * include SCT#419949007 "Computed tomography angiography of intracranial artery with contrast (procedure)"
 * include SCT#433111008 "Computed tomography of brain perfusion (procedure)"
-* include SCT#429807000 "Magnetic resonance imaging of brain with fluid attenuated inversion recovery sequence (procedure)"
+* include SCT#16327691000119101 "Magnetic resonance imaging of brain with contrast (procedure)"
 * include SCT#440408002 "Diffusion weighted magnetic resonance imaging (procedure)"
 * include SCT#419059006 "Magnetic resonance imaging cerebral perfusion study (procedure)"
-* include SCT#418994000 "Magnetic resonance angiography of intracranial structure (procedure)"
+* include SCT#1366357009 "Magnetic resonance imaging angiography of intracranial artery (procedure)"
 
 // --- ValueSet: Thrombectomy Complications ---
 ValueSet: ThrombectomyComplicationVS

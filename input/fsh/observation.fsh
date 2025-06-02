@@ -205,7 +205,7 @@ Id: specific-finding-codes-vs
 * ^status = #active
 * include SCT#49436004 "Atrial fibrillation (disorder)"
 * include SCT#5370000 "Atrial flutter (disorder)"
-* include SCT#00 "Ask Snomed" // mTICI Score Assessment
+* include SCT#1156911000 "mTICI Score Assessment"   
 
 // ------------------------- Extensions -------------------------------
 
@@ -402,8 +402,8 @@ InstanceOf: SpecificFindingObservationProfile
 
 Instance: VitalSignObservationExample
 InstanceOf: VitalSignObservationProfile
-* meta.profile = "http://testSK.org/StructureDefinition/vital-sign-observation-profile"
 * code = SCT#271649006 "Systolic blood pressure (observable entity)"
+* component[]
 * valueQuantity.value = 120
 * valueQuantity.unit = "mmHg"
 * valueQuantity.system = UCUM

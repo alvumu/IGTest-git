@@ -4,7 +4,7 @@ Alias: FHIR = http://hl7.org/fhir
 Alias: UCUM = http://unitsofmeasure.org
 // Alias R5 Adherence CodeSystem/ValueSet
 Alias: MedStatementAdherenceVS_R5 = http://hl7.org/fhir/ValueSet/medication-statement-adherence
-Alias: MedStatementMedsVS_R5 = http://testSK.org/ValueSet/medicationStatement-meds-code-vs
+Alias: MedStatementMedsVS_R5 = http://testSK.org/ValueSet/medicationStatement-meds-codes-vs
 // FHIR R5 Resource Aliases
 Alias: MedicationStatement = http://hl7.org/fhir/StructureDefinition/MedicationStatement
 Alias: Patient = http://hl7.org/fhir/StructureDefinition/Patient
