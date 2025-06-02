@@ -51,7 +51,7 @@ jobs:
           java -jar publisher.jar -ig ./ -tx https://tx.fhir.org
         
       - name: Upload entire output folder as artifact
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/download-artifact@v3
         with:
           name: ig-output
           path: /home/runner/work/IGTest-git/IGTest-git/output
