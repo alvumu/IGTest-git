@@ -50,6 +50,7 @@ jobs:
         run: |
           java -jar publisher.jar -ig input -tx https://tx.fhir.org
 
+  test-artifact:
       - name: Create dummy file
         run: |
           mkdir -p ./output
