@@ -40,7 +40,7 @@ jobs:
 
       - name: Run IG Publisher
         run: |
-          java -jar publisher.jar -ig input -tx https://tx.fhir.org
+          java -jar publisher.jar -ig / -tx https://tx.fhir.org
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
