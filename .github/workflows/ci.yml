@@ -34,7 +34,7 @@ jobs:
             https://github.com/FHIR/ig-publisher/releases/latest/download/publisher.jar
 
       - name: Compile FSH y generar recursos
-        working-directory: ./input
+        working-directory: ./
         run: |
           sushi .
 
