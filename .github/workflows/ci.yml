@@ -49,6 +49,13 @@ jobs:
       - name: Run IG Publisher
         run: |
           java -jar publisher.jar -ig ./ -tx https://tx.fhir.org
+        
+      - name: Upload QA report (qa.html) as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ig-qa-report
+          path: output/qa.html
+
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
