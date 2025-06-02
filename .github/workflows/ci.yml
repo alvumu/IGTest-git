@@ -33,6 +33,14 @@ jobs:
           curl -L -o publisher.jar \
             https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
 
+      - name: Setup Ruby (para Jekyll)
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'        # puedes usar 3.x
+          bundler-cache: false       # no es necesario cache de Gemfile aquí
+
+      - name: Install Jekyll gem
+        run: gem install jekyll
       - name: Compile FSH y generar recursos
         working-directory: ./
         run: |
