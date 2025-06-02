@@ -51,7 +51,7 @@ jobs:
           java -jar publisher.jar -ig ./ -tx https://tx.fhir.org
         
       - name: Upload QA report (qa.html) as artifact
-        uses: actions/upload-artifact@v2.4.1
+        uses: actions/upload-artifact@v3
         with:
           name: ig-qa-report
           path: output/qa.html
