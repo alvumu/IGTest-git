@@ -52,6 +52,7 @@ jobs:
 
   test-artifact:
     name: Test artifact upload
+    runs-on: ubuntu-latest
     steps:
       - name: Create dummy file
         run: |
