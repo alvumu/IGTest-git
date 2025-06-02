@@ -50,14 +50,17 @@ jobs:
         run: |
           java -jar publisher.jar -ig input -tx https://tx.fhir.org
 
-      - name: Upload IG output as artifact
-        run: mkdir -p ./output
-        run: echo hello > ./output/world.txt
-        uses: actions/upload-artifact@v4
-        with:
-            name: my-artifact
-            path: ./output/world.txt
+      - name: Create dummy file
+        run: |
+          mkdir -p ./output
+          echo hello > ./output/world.txt
 
+      - name: Upload IG output as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: ./output/world.txt
+          
   download-artifact:
     name: Download IG output
     needs: build
