@@ -36,8 +36,8 @@ jobs:
       - name: Setup Ruby (para Jekyll)
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'        # puedes usar 3.x
-          bundler-cache: false       # no es necesario cache de Gemfile aquí
+          ruby-version: '3.1'        
+          bundler-cache: false       
 
       - name: Install Jekyll gem
         run: gem install jekyll
