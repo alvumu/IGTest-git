@@ -1,0 +1,47 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "swallow-screen-time-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem swallow-screen-time-cs</b></p><a name=\"swallow-screen-time-cs\"> </a><a name=\"hcswallow-screen-time-cs\"> </a><a name=\"swallow-screen-time-cs-en-US\"> </a><p>This case-insensitive code system <code>http://testSK.org/CodeSystem/swallow-screen-time-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">T4H<a name=\"swallow-screen-time-cs-T4H\"> </a></td><td>Within 4 hours</td><td>Screening performed within 4 hours of symptom onset.</td></tr><tr><td style=\"white-space:nowrap\">T24H<a name=\"swallow-screen-time-cs-T24H\"> </a></td><td>Within 24 hours</td><td>Screening performed within 24 hours of symptom onset (but after 4h).</td></tr><tr><td style=\"white-space:nowrap\">A24H<a name=\"swallow-screen-time-cs-A24H\"> </a></td><td>After 24 hours</td><td>Screening performed after 24 hours of symptom onset.</td></tr><tr><td style=\"white-space:nowrap\">UNK<a name=\"swallow-screen-time-cs-UNK\"> </a></td><td>Unknown time</td><td>Screening performed but timing relative to symptom onset unknown.</td></tr></table></div>"
+  },
+  "url" : "http://testSK.org/CodeSystem/swallow-screen-time-cs",
+  "version" : "0.1.0",
+  "name" : "SwallowScreenTimeCS",
+  "title" : "Swallowing Screening Timing Category Code System",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2025-06-03T14:30:00+00:00",
+  "publisher" : "UMU",
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
+  "description" : "Temporal categories relative to stroke onset for swallowing screening.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "T4H",
+    "display" : "Within 4 hours",
+    "definition" : "Screening performed within 4 hours of symptom onset."
+  },
+  {
+    "code" : "T24H",
+    "display" : "Within 24 hours",
+    "definition" : "Screening performed within 24 hours of symptom onset (but after 4h)."
+  },
+  {
+    "code" : "A24H",
+    "display" : "After 24 hours",
+    "definition" : "Screening performed after 24 hours of symptom onset."
+  },
+  {
+    "code" : "UNK",
+    "display" : "Unknown time",
+    "definition" : "Screening performed but timing relative to symptom onset unknown."
+  }]
+}

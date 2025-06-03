@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "afib-flutter-status-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet afib-flutter-status-vs</b></p><a name=\"afib-flutter-status-vs\"> </a><a name=\"hcafib-flutter-status-vs\"> </a><a name=\"afib-flutter-status-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-afib-flutter-status-cs.html\"><code>http://testSK.org/CodeSystem/afib-flutter-status-cs</code></a></li></ul></div>"
+  },
+  "url" : "http://testSK.org/ValueSet/afib-flutter-status-vs",
+  "version" : "0.1.0",
+  "name" : "AfibFlutterStatusVS",
+  "title" : "Atrial Fibrillation or Flutter Status ValueSet",
+  "status" : "active",
+  "date" : "2025-06-03T14:30:00+00:00",
+  "publisher" : "UMU",
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
+  "description" : "ValueSet for the status of Atrial Fibrillation or Flutter assessment.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://testSK.org/CodeSystem/afib-flutter-status-cs"
+    }]
+  }
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mrs-score-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet mrs-score-vs</b></p><a name="mrs-score-vs"> </a><a name="hcmrs-score-vs"> </a><a name="mrs-score-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-mrs-score-cs.html"><code>http://testSK.org/CodeSystem/mrs-score-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://testSK.org/ValueSet/mrs-score-vs"/>
+  <version value="0.1.0"/>
+  <name value="MRsScoreVS"/>
+  <title value="modified Rankin Scale (mRS) Score ValueSet"/>
+  <status value="active"/>
+  <date value="2025-06-03T14:30:00+00:00"/>
+  <publisher value="UMU"/>
+  <contact>
+    <name value="UMU"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://testSK.org/umu"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet containing the codes for the modified Rankin Scale (mRS) score."/>
+  <compose>
+    <include>
+      <system value="http://testSK.org/CodeSystem/mrs-score-cs"/>
+    </include>
+  </compose>
+</ValueSet>

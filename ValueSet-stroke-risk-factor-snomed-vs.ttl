@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "stroke-risk-factor-snomed-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet stroke-risk-factor-snomed-vs</b></p><a name=\"stroke-risk-factor-snomed-vs\"> </a><a name=\"hcstroke-risk-factor-snomed-vs\"> </a><a name=\"stroke-risk-factor-snomed-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/49436004\">49436004</a></td><td>Atrial fibrillation (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/5370000\">5370000</a></td><td>Atrial flutter (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/22298006\">22298006</a></td><td>Myocardial infarction (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/53741008\">53741008</a></td><td>Coronary arteriosclerosis (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/73211009\">73211009</a></td><td>Diabetes mellitus (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/55822004\">55822004</a></td><td>Hyperlipidemia (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/38341003\">38341003</a></td><td>Hypertensive disorder, systemic arterial (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/230706003\">230706003</a></td><td>Hemorrhagic cerebral infarction (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/266257000\">266257000</a></td><td>Transient ischemic attack (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/422504002\">422504002</a></td><td>Ischemic stroke (disorder)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "StrokeRiskFactorSNOMEDVS"] ; # 
+  fhir:title [ fhir:v "Stroke Risk Factor ValueSet"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-06-03T14:30:00+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UMU"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UMU" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://testSK.org/umu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "49436004" ] ;
+         fhir:display [ fhir:v "Atrial fibrillation (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "5370000" ] ;
+         fhir:display [ fhir:v "Atrial flutter (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "22298006" ] ;
+         fhir:display [ fhir:v "Myocardial infarction (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "53741008" ] ;
+         fhir:display [ fhir:v "Coronary arteriosclerosis (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "73211009" ] ;
+         fhir:display [ fhir:v "Diabetes mellitus (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "55822004" ] ;
+         fhir:display [ fhir:v "Hyperlipidemia (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "38341003" ] ;
+         fhir:display [ fhir:v "Hypertensive disorder, systemic arterial (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "230706003" ] ;
+         fhir:display [ fhir:v "Hemorrhagic cerebral infarction (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "266257000" ] ;
+         fhir:display [ fhir:v "Transient ischemic attack (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "422504002" ] ;
+         fhir:display [ fhir:v "Ischemic stroke (disorder)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

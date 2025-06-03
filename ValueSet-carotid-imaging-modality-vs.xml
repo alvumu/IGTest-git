@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="carotid-imaging-modality-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet carotid-imaging-modality-vs</b></p><a name="carotid-imaging-modality-vs"> </a><a name="hccarotid-imaging-modality-vs"> </a><a name="carotid-imaging-modality-vs-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/58920005">58920005</a></td><td>Angiography of carotid artery (procedure)</td></tr><tr><td><a href="http://snomed.info/id/416940007">416940007</a></td><td>Doppler ultrasonography of carotid arteries (procedure)</td></tr><tr><td><a href="http://snomed.info/id/419949007">419949007</a></td><td>Computed tomography angiography of intracranial artery with contrast (procedure)</td></tr><tr><td><a href="http://snomed.info/id/1366357009">1366357009</a></td><td>Magnetic resonance imaging angiography of intracranial artery (procedure)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://testSK.org/ValueSet/carotid-imaging-modality-vs"/>
+  <version value="0.1.0"/>
+  <name value="CarotidImagingModalityVS"/>
+  <title value="Carotid Arteries Imaging Modality ValueSet"/>
+  <status value="active"/>
+  <date value="2025-06-03T14:30:00+00:00"/>
+  <publisher value="UMU"/>
+  <contact>
+    <name value="UMU"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://testSK.org/umu"/>
+    </telecom>
+  </contact>
+  <description value="Defines codes for different types of carotid artery imaging."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="58920005"/>
+        <display value="Angiography of carotid artery (procedure)"/>
+      </concept>
+      <concept>
+        <code value="416940007"/>
+        <display value="Doppler ultrasonography of carotid arteries (procedure)"/>
+      </concept>
+      <concept>
+        <code value="419949007"/>
+        <display value="Computed tomography angiography of intracranial artery with contrast (procedure)"/>
+      </concept>
+      <concept>
+        <code value="1366357009"/>
+        <display value="Magnetic resonance imaging angiography of intracranial artery (procedure)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

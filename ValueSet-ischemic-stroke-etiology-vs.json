@@ -1,0 +1,57 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ischemic-stroke-etiology-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ischemic-stroke-etiology-vs</b></p><a name=\"ischemic-stroke-etiology-vs\"> </a><a name=\"hcischemic-stroke-etiology-vs\"> </a><a name=\"ischemic-stroke-etiology-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/724425005\">724425005</a></td><td>Cerebral ischemic stroke due to intracranial large artery atherosclerosis (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/724426006\">724426006</a></td><td>Cerebral ischemic stroke due to extracranial large artery atherosclerosis (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/1251566005\">1251566005</a></td><td>Embolism from heart (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/404684003\">404684003</a></td><td>Clinical finding (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/16891111000119104\">16891111000119104</a></td><td>Cryptogenic stroke (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/230698000\">230698000</a></td><td>Lacunar infarction (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/443929000\">443929000</a></td><td>Small vessel cerebrovascular disease (disorder)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://testSK.org/ValueSet/ischemic-stroke-etiology-vs",
+  "version" : "0.1.0",
+  "name" : "IschemicStrokeEtiologyVS",
+  "title" : "Stroke Stroke Etiology ValueSet",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-03-31",
+  "publisher" : "UMU",
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
+  "description" : "Specifies the determined etiology of an ischemic stroke.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "724425005",
+        "display" : "Cerebral ischemic stroke due to intracranial large artery atherosclerosis (disorder)"
+      },
+      {
+        "code" : "724426006",
+        "display" : "Cerebral ischemic stroke due to extracranial large artery atherosclerosis (disorder)"
+      },
+      {
+        "code" : "1251566005",
+        "display" : "Embolism from heart (disorder)"
+      },
+      {
+        "code" : "404684003",
+        "display" : "Clinical finding (finding)"
+      },
+      {
+        "code" : "16891111000119104",
+        "display" : "Cryptogenic stroke (disorder)"
+      },
+      {
+        "code" : "230698000",
+        "display" : "Lacunar infarction (disorder)"
+      },
+      {
+        "code" : "443929000",
+        "display" : "Small vessel cerebrovascular disease (disorder)"
+      }]
+    }]
+  }
+}

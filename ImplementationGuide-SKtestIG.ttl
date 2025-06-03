@@ -1,0 +1,1640 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://testSK.org/ImplementationGuide/SKtestIG> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SKtestIG"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide SKtestIG</b></p><a name=\"SKtestIG\"> </a><a name=\"hcSKtestIG\"> </a><a name=\"SKtestIG-en-US\"> </a><h2>IGTest</h2><p>The official URL for this implementation guide is: </p><pre>http://testSK.org/ImplementationGuide/SKtestIG</pre></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://testSK.org/ImplementationGuide/SKtestIG"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IGTest"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-06-03T14:30:00+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UMU"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UMU" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://testSK.org/umu" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "SKtestIG"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+       ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
+     fhir:version [ fhir:v "6.4.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+       ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r5" ] ;
+     fhir:version [ fhir:v "5.2.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "hl7.fhir.uv.tools.r5#0.5.0"
+       ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/admission-source-vs> ;
+         fhir:reference [ fhir:v "ValueSet/admission-source-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Admission Sources ValueSet" ] ;
+       fhir:description [ fhir:v "Defines the modes of transport or pathways by which the patient arrived." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/age-at-onset-observation-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/age-at-onset-observation-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Age at Stroke Onset Observation Profile (R5)" ] ;
+       fhir:description [ fhir:v "R5 Profile specifically for recording the patient's age at stroke onset." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/Observation/AgeAtOnsetObservationExample> ;
+         fhir:reference [ fhir:v "Observation/AgeAtOnsetObservationExample" ]
+       ] ;
+       fhir:name [ fhir:v "AgeAtOnsetObservationExample" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/age-at-onset-observation-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/age-at-onset-observation-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/assessment-context-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/assessment-context-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Assessment Context Code System" ] ;
+       fhir:description [ fhir:v "Codes defining the context or timing of a clinical assessment, particularly functional scores." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/assessment-context-vs> ;
+         fhir:reference [ fhir:v "ValueSet/assessment-context-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Assessment Context ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet for assessment context codes (e.g., timing of functional scores)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/afib-flutter-status-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/afib-flutter-status-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Atrial Fibrillation or Flutter Status Code System" ] ;
+       fhir:description [ fhir:v "Codes representing the status of Atrial Fibrillation or Flutter assessment." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/afib-flutter-status-vs> ;
+         fhir:reference [ fhir:v "ValueSet/afib-flutter-status-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Atrial Fibrillation or Flutter Status ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet for the status of Atrial Fibrillation or Flutter assessment." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/base-stroke-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/base-stroke-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Base Profile for Stroke-Related Observations" ] ;
+       fhir:description [ fhir:v "Common R5 constraints for observations recorded in the context of stroke care." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/brain-imaging-modality-vs> ;
+         fhir:reference [ fhir:v "ValueSet/brain-imaging-modality-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Brain Imaging Modality ValueSet" ] ;
+       fhir:description [ fhir:v "Defines the SNOMED CT codes for individual brain imaging modalities performed as procedures." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/carotid-imaging-modality-vs> ;
+         fhir:reference [ fhir:v "ValueSet/carotid-imaging-modality-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Carotid Arteries Imaging Modality ValueSet" ] ;
+       fhir:description [ fhir:v "Defines codes for different types of carotid artery imaging." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/discharge-department-service-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/discharge-department-service-ext" ]
+       ] ;
+       fhir:name [ fhir:v "Discharge Department/Service Extension" ] ;
+       fhir:description [ fhir:v "Specifies the type of department or service the patient was discharged or transferred to." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/discharge-dept-vs> ;
+         fhir:reference [ fhir:v "ValueSet/discharge-dept-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Discharge Department/Service ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet specifying the type of department or service the patient was discharged or transferred to." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/discharge-destination-vs> ;
+         fhir:reference [ fhir:v "ValueSet/discharge-destination-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Discharge Destination ValueSet" ] ;
+       fhir:description [ fhir:v "Defines possible patient discharge destinations." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/discharge-medication-request-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/discharge-medication-request-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Discharge Medication Request Profile" ] ;
+       fhir:description [ fhir:v "Represents a medication prescription made as part of the patient's discharge plan, categorized as community administration." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/discharge-medication-vs> ;
+         fhir:reference [ fhir:v "ValueSet/discharge-medication-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Discharge Medications ValueSet" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "MedicationRequest"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/MedicationRequest/discharge-medication-request-001> ;
+         fhir:reference [ fhir:v "MedicationRequest/discharge-medication-request-001" ]
+       ] ;
+       fhir:name [ fhir:v "DischargeMedicationRequest" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/discharge-medication-request-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/discharge-medication-request-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/encounter-provider-provenance> ;
+         fhir:reference [ fhir:v "StructureDefinition/encounter-provider-provenance" ]
+       ] ;
+       fhir:name [ fhir:v "Encounter Provider Provenance Profile (R5)" ] ;
+       fhir:description [ fhir:v "R5 Profile for Provenance resource linking the healthcare provider organization (agent) to the specific Encounter resource (target)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Provenance"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/Provenance/ExampleEncounterProviderProvenance> ;
+         fhir:reference [ fhir:v "Provenance/ExampleEncounterProviderProvenance" ]
+       ] ;
+       fhir:name [ fhir:v "ExampleEncounterProviderProvenance" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/encounter-provider-provenance"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/encounter-provider-provenance>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/Organization/ExampleOrganization> ;
+         fhir:reference [ fhir:v "Organization/ExampleOrganization" ]
+       ] ;
+       fhir:name [ fhir:v "ExampleOrganization" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/first-hospital-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/first-hospital-ext" ]
+       ] ;
+       fhir:name [ fhir:v "First Hospital Extension" ] ;
+       fhir:description [ fhir:v "Indicates if the reporting hospital was the first medical facility to admit the patient for this stroke episode." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/Observation/FunctionalScoreObservationExample> ;
+         fhir:reference [ fhir:v "Observation/FunctionalScoreObservationExample" ]
+       ] ;
+       fhir:name [ fhir:v "FunctionalScoreObservationExample" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/functional-score-observation-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/functional-score-observation-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/hemorrhagic-stroke-bleeding-reason-vs> ;
+         fhir:reference [ fhir:v "ValueSet/hemorrhagic-stroke-bleeding-reason-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Hemorrhagic Stroke Bleeding Reason ValueSet" ] ;
+       fhir:description [ fhir:v "Specifies the identified cause of a hemorrhagic stroke, typically used with an extension." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext" ]
+       ] ;
+       fhir:name [ fhir:v "HemorrhagicStrokeBleedingReasonExt" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/initial-care-intensity-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/initial-care-intensity-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Initial Care Intensity Code System" ] ;
+       fhir:description [ fhir:v "Codes indicating the level of care provided during the patient's initial day(s) in the hospital." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/initial-care-intensity-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/initial-care-intensity-ext" ]
+       ] ;
+       fhir:name [ fhir:v "Initial Care Intensity Extension" ] ;
+       fhir:description [ fhir:v "Specifies the level of care provided during the patient's initial day(s) in the hospital (e.g., standard bed, monitored, ICU/Stroke Unit)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/initial-care-intensity-vs> ;
+         fhir:reference [ fhir:v "ValueSet/initial-care-intensity-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Initial Care Intensity ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet indicating the level of care provided initially." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/medication-vs> ;
+         fhir:reference [ fhir:v "ValueSet/medication-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Medications ValueSet" ] ;
+       fhir:description [ fhir:v "SNOMED CT codes for drug products or substances." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/medicationStatement-meds-codes-vs> ;
+         fhir:reference [ fhir:v "ValueSet/medicationStatement-meds-codes-vs" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationStatement Therapy/Finding Codes" ] ;
+       fhir:description [ fhir:v "ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use). **NOTE: These codes are generally NOT suitable for MedicationStatement.medication[x] which expects product/substance codes.**" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/mrs-score-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mrs-score-cs" ]
+       ] ;
+       fhir:name [ fhir:v "modified Rankin Scale (mRS) Score Code System" ] ;
+       fhir:description [ fhir:v "Codes representing the modified Rankin Scale (mRS) score for functional outcome." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/mrs-score-vs> ;
+         fhir:reference [ fhir:v "ValueSet/mrs-score-vs" ]
+       ] ;
+       fhir:name [ fhir:v "modified Rankin Scale (mRS) Score ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet containing the codes for the modified Rankin Scale (mRS) score." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/mtici-score-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mtici-score-cs" ]
+       ] ;
+       fhir:name [ fhir:v "mTICI Score Code System" ] ;
+       fhir:description [ fhir:v "CodeSystem containing the codes to represent the mTICI score." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/mtici-score-vs> ;
+         fhir:reference [ fhir:v "ValueSet/mtici-score-vs" ]
+       ] ;
+       fhir:name [ fhir:v "mTICI Score ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/observation-timing-context-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/observation-timing-context-ext" ]
+       ] ;
+       fhir:name [ fhir:v "Observation Timing Context Extension" ] ;
+       fhir:description [ fhir:v "Specifies the timing context or phase (e.g., pre-stroke, admission, discharge, 3-month) in which an observation or assessment was made." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/Patient/example-patient> ;
+         fhir:reference [ fhir:v "Patient/example-patient" ]
+       ] ;
+       fhir:name [ fhir:v "PatientExample" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/perforation-procedures-vs> ;
+         fhir:reference [ fhir:v "ValueSet/perforation-procedures-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Perforation Procedures ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet containing SNOMED CT codes representing a range of perforation procedures." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/prior-medication-statement-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/prior-medication-statement-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Prior Medication Statement Profile (R5)" ] ;
+       fhir:description [ fhir:v "R5 Profile: Represents a statement about the patient's medication use *before* the index event. Uses adherence.code (#taking/#not-taking) to indicate usage status." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "MedicationStatement"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/MedicationStatement/PriorMedicationStatementExample> ;
+         fhir:reference [ fhir:v "MedicationStatement/PriorMedicationStatementExample" ]
+       ] ;
+       fhir:name [ fhir:v "PriorMedicationStatementExample" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/prior-medication-statement-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/prior-medication-statement-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/procedure-timing-context-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/procedure-timing-context-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Procedure Timing Context Code System" ] ;
+       fhir:description [ fhir:v "Codes defining the timing phase of a procedure relative to the encounter start (e.g., acute vs. post-acute)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/procedure-timing-context-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/procedure-timing-context-ext" ]
+       ] ;
+       fhir:name [ fhir:v "Procedure Timing Context Extension" ] ;
+       fhir:description [ fhir:v "Specifies the timing phase (e.g., acute, post-acute) in which the procedure was performed relative to the start of the encounter." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/procedure-timing-context-vs> ;
+         fhir:reference [ fhir:v "ValueSet/procedure-timing-context-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Procedure Timing Context ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet for codes defining the timing phase of a procedure relative to the encounter start." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/required-post-acute-care-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/required-post-acute-care-ext" ]
+       ] ;
+       fhir:name [ fhir:v "Required Post-Acute Care Extension" ] ;
+       fhir:description [ fhir:v "Indicates whether the patient required hospitalization beyond 24 hours after the designated acute phase of stroke care for this encounter." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/specific-finding-codes-vs> ;
+         fhir:reference [ fhir:v "ValueSet/specific-finding-codes-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Specific Stroke Finding Codes ValueSet" ] ;
+       fhir:description [ fhir:v "Codes for specific clinical findings relevant to stroke (Afib/Flutter status, mTICI score)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/specific-finding-observation-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/specific-finding-observation-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Specific Stroke Finding Observation Profile (R5)" ] ;
+       fhir:description [ fhir:v "R5 Profile for specific coded findings like Afib/Flutter status or mTICI score." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/Observation/SpecificFindingObservationExample> ;
+         fhir:reference [ fhir:v "Observation/SpecificFindingObservationExample" ]
+       ] ;
+       fhir:name [ fhir:v "SpecificFindingObservationExample" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/specific-finding-observation-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/specific-finding-observation-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/Observation/SpecificFindingObservationExampleMTICI> ;
+         fhir:reference [ fhir:v "Observation/SpecificFindingObservationExampleMTICI" ]
+       ] ;
+       fhir:name [ fhir:v "SpecificFindingObservationExampleMTICI" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/specific-finding-observation-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/specific-finding-observation-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/stroke-arrival-mode-vs> ;
+         fhir:reference [ fhir:v "ValueSet/stroke-arrival-mode-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Arrival Mode ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet specifying the mode and origin of the patient's arrival." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/stroke-brain-imaging-procedure-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/stroke-brain-imaging-procedure-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Brain Imaging Procedure Profile (R5)" ] ;
+       fhir:description [ fhir:v "Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/stroke-carotid-imaging-procedure-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/stroke-carotid-imaging-procedure-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Carotid Imaging Procedure Profile (R5)" ] ;
+       fhir:description [ fhir:v "Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/stroke-circumstance-codes-vs> ;
+         fhir:reference [ fhir:v "ValueSet/stroke-circumstance-codes-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Circumstance Codes ValueSet" ] ;
+       fhir:description [ fhir:v "Codes for findings related to the circumstances of stroke onset (In-hospital, Wake-up)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/stroke-circumstance-observation-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Circumstance Observation Profile (R5)" ] ;
+       fhir:description [ fhir:v "R5 Profile for recording findings about stroke onset circumstances (In-hospital, Wake-up)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/stroke-diagnosis-condition-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/stroke-diagnosis-condition-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Diagnosis Condition Profile" ] ;
+       fhir:description [ fhir:v "Represents the final diagnosis of the current stroke event." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/stroke-diagnosis-vs> ;
+         fhir:reference [ fhir:v "ValueSet/stroke-diagnosis-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Diagnosis ValueSet" ] ;
+       fhir:description [ fhir:v "Defines the SNOMED CT codes for final stroke diagnoses, including specific types and etiologies where applicable." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/stroke-discharge-destination-vs> ;
+         fhir:reference [ fhir:v "ValueSet/stroke-discharge-destination-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Discharge Destination ValueSet" ] ;
+       fhir:description [ fhir:v "Defines the possible destinations of the patient upon discharge from the encounter." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/stroke-encounter-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/stroke-encounter-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Encounter Profile" ] ;
+       fhir:description [ fhir:v "Profile for an Encounter resource representing a patient's hospital admission and stay for a stroke event, including key administrative and workflow details." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/functional-score-codes-vs> ;
+         fhir:reference [ fhir:v "ValueSet/functional-score-codes-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Functional Score Codes ValueSet" ] ;
+       fhir:description [ fhir:v "Codes for key functional scores used in stroke (mRS, NIHSS)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/functional-score-observation-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/functional-score-observation-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Functional Score Observation Profile (R5, Timing Ext)" ] ;
+       fhir:description [ fhir:v "R5 Profile for recording functional scores (mRS, NIHSS), using an extension for timing context." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/stroke-proc-not-done-reason-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/stroke-proc-not-done-reason-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Procedure Not Done Reason Code System" ] ;
+       fhir:description [ fhir:v "Codes specifying the reason principal for not performing a key stroke procedure (Thrombolysis, Thrombectomy)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs> ;
+         fhir:reference [ fhir:v "ValueSet/stroke-proc-not-done-reason-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Procedure Not Done Reason ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet containing specific codes to indicate why thrombolysis or thrombectomy was not performed." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/stroke-risk-factor-condition-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Risk Factor Condition Profile" ] ;
+       fhir:description [ fhir:v "Represents a known condition or risk factor relevant to stroke." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs> ;
+         fhir:reference [ fhir:v "ValueSet/stroke-risk-factor-snomed-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Risk Factor ValueSet" ] ;
+       fhir:description [ fhir:v "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/stroke-risk-factor-vs> ;
+         fhir:reference [ fhir:v "ValueSet/stroke-risk-factor-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Risk Factor ValueSet" ] ;
+       fhir:description [ fhir:v "Defines the unknown or absent codes for conditions or risk factors relevant to stroke." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/ischemic-stroke-etiology-vs> ;
+         fhir:reference [ fhir:v "ValueSet/ischemic-stroke-etiology-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Stroke Etiology ValueSet" ] ;
+       fhir:description [ fhir:v "Specifies the determined etiology of an ischemic stroke." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/stroke-swallow-procedure-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/stroke-swallow-procedure-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Swallow Procedure Profile (R5)" ] ;
+       fhir:description [ fhir:v "Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/stroke-thrombolysis-procedure-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/stroke-thrombolysis-procedure-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Thrombolysis Procedure Profile (R5)" ] ;
+       fhir:description [ fhir:v "Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/timing-metric-codes-vs> ;
+         fhir:reference [ fhir:v "ValueSet/timing-metric-codes-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Timing Metric Codes ValueSet" ] ;
+       fhir:description [ fhir:v "Codes for key process timing metrics in acute stroke care (D2N, D2G)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/timing-metric-observation-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/timing-metric-observation-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Timing Metric Observation Profile (R5)" ] ;
+       fhir:description [ fhir:v "R5 Profile for recording key process timing metrics (D2N, D2G)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/vital-sign-codes-vs> ;
+         fhir:reference [ fhir:v "ValueSet/vital-sign-codes-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Vital Sign Codes ValueSet" ] ;
+       fhir:description [ fhir:v "Codes for key vital signs relevant to stroke assessment (Systolic, Diastolic BP)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/vital-sign-observation-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/vital-sign-observation-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Vital Sign Observation Profile (R5)" ] ;
+       fhir:description [ fhir:v "R5 Profile for recording key vital signs (Systolic/Diastolic BP) in stroke patients." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/Procedure/StrokeBrainImagingExample> ;
+         fhir:reference [ fhir:v "Procedure/StrokeBrainImagingExample" ]
+       ] ;
+       fhir:name [ fhir:v "StrokeBrainImagingExample" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/stroke-brain-imaging-procedure-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-brain-imaging-procedure-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/Procedure/StrokeCarotidImagingExample> ;
+         fhir:reference [ fhir:v "Procedure/StrokeCarotidImagingExample" ]
+       ] ;
+       fhir:name [ fhir:v "StrokeCarotidImagingExample" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/stroke-carotid-imaging-procedure-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-carotid-imaging-procedure-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/Observation/StrokeCircumstanceObservationExample> ;
+         fhir:reference [ fhir:v "Observation/StrokeCircumstanceObservationExample" ]
+       ] ;
+       fhir:name [ fhir:v "StrokeCircumstanceObservationExample" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Condition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/Condition/StrokeDiagnosisConditionExample> ;
+         fhir:reference [ fhir:v "Condition/StrokeDiagnosisConditionExample" ]
+       ] ;
+       fhir:name [ fhir:v "StrokeDiagnosisConditionExample" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/stroke-diagnosis-condition-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-diagnosis-condition-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Encounter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/Encounter/StrokeEncounterExample> ;
+         fhir:reference [ fhir:v "Encounter/StrokeEncounterExample" ]
+       ] ;
+       fhir:name [ fhir:v "StrokeEncounterExample" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/stroke-encounter-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-encounter-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Condition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/Condition/StrokeRiskFactorConditionExample> ;
+         fhir:reference [ fhir:v "Condition/StrokeRiskFactorConditionExample" ]
+       ] ;
+       fhir:name [ fhir:v "StrokeRiskFactorConditionExample" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/ischemic-stroke-etiology-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/ischemic-stroke-etiology-ext" ]
+       ] ;
+       fhir:name [ fhir:v "StrokeStrokeEtiologyExt" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/Procedure/StrokeSwallowingExample> ;
+         fhir:reference [ fhir:v "Procedure/StrokeSwallowingExample" ]
+       ] ;
+       fhir:name [ fhir:v "StrokeSwallowingExample" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/stroke-swallow-procedure-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-swallow-procedure-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/Procedure/StrokeThrombolysisExample> ;
+         fhir:reference [ fhir:v "Procedure/StrokeThrombolysisExample" ]
+       ] ;
+       fhir:name [ fhir:v "StrokeThrombolysisExample" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/stroke-thrombolysis-procedure-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-thrombolysis-procedure-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/swallow-procedures-vs> ;
+         fhir:reference [ fhir:v "ValueSet/swallow-procedures-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Swallow Procedures ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet containing SNOMED CT codes representing a range of procedures used in the evaluation and management of stroke patients." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/swallowing-screening-timing-category-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/swallowing-screening-timing-category-ext" ]
+       ] ;
+       fhir:name [ fhir:v "Swallowing Screening Timing Category" ] ;
+       fhir:description [ fhir:v "Temporal category relative to stroke onset in which the swallowing screening was performed." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/swallow-screen-time-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/swallow-screen-time-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Swallowing Screening Timing Category Code System" ] ;
+       fhir:description [ fhir:v "Temporal categories relative to stroke onset for swallowing screening." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/swallowing-screening-timing-category-vs> ;
+         fhir:reference [ fhir:v "ValueSet/swallowing-screening-timing-category-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Swallowing Screening Timing Category ValueSet" ] ;
+       fhir:description [ fhir:v "Temporal categories relative to stroke onset for swallowing screening." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/thrombectomy-complication-vs> ;
+         fhir:reference [ fhir:v "ValueSet/thrombectomy-complication-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Thrombectomy Complication ValueSet" ] ;
+       fhir:description [ fhir:v "Defines the specific complications of thrombectomy to record." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/Observation/TimingMetricObservationExample> ;
+         fhir:reference [ fhir:v "Observation/TimingMetricObservationExample" ]
+       ] ;
+       fhir:name [ fhir:v "TimingMetricObservationExample" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/timing-metric-observation-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/timing-metric-observation-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/Observation/VitalSignObservationExample> ;
+         fhir:reference [ fhir:v "Observation/VitalSignObservationExample" ]
+       ] ;
+       fhir:name [ fhir:v "VitalSignObservationExample" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/vital-sign-observation-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/vital-sign-observation-profile>
+       ] )
+     ] ) ;
+     fhir:page [
+       fhir:source [
+         a fhir:url ;
+         fhir:v "toc.html"^^xsd:anyURI
+       ] ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "index.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "copyrightyear" ]
+       ] ;
+       fhir:value [ fhir:v "2025+" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "releaselabel" ]
+       ] ;
+       fhir:value [ fhir:v "5" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "autoload-resources" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "template/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "input/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-qa" ]
+       ] ;
+       fhir:value [ fhir:v "temp/qa" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-temp" ]
+       ] ;
+       fhir:value [ fhir:v "temp/pages" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-output" ]
+       ] ;
+       fhir:value [ fhir:v "output" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-tx-cache" ]
+       ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-suppressed-warnings" ]
+       ] ;
+       fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-history" ]
+       ] ;
+       fhir:value [ fhir:v "http://testSK.org/history.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-html" ]
+       ] ;
+       fhir:value [ fhir:v "template-page.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-md" ]
+       ] ;
+       fhir:value [ fhir:v "template-page-md.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-contact" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-context" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-copyright" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-jurisdiction" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-license" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-publisher" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-version" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-wg" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active-tables" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "fmm-definition" ]
+       ] ;
+       fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propagate-status" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludelogbinaryformat" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "tabbed-snapshots" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

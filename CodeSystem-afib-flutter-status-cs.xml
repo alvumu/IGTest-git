@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="afib-flutter-status-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem afib-flutter-status-cs</b></p><a name="afib-flutter-status-cs"> </a><a name="hcafib-flutter-status-cs"> </a><a name="afib-flutter-status-cs-en-US"> </a><p>This case-insensitive code system <code>http://testSK.org/CodeSystem/afib-flutter-status-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">detected<a name="afib-flutter-status-cs-detected"> </a></td><td>Detected</td><td>Indicates that atrial fibrillation or flutter has been identified during screening or recent evaluation.</td></tr><tr><td style="white-space:nowrap">known-af<a name="afib-flutter-status-cs-known-af"> </a></td><td>Known AF</td><td>Signifies that the patient has a pre-existing, documented diagnosis of atrial fibrillation.</td></tr><tr><td style="white-space:nowrap">no-af<a name="afib-flutter-status-cs-no-af"> </a></td><td>No AF</td><td>Denotes that the patient does not exhibit atrial fibrillation or atrial flutter.</td></tr><tr><td style="white-space:nowrap">not-screened<a name="afib-flutter-status-cs-not-screened"> </a></td><td>Not Screened</td><td>Means that no screening for atrial fibrillation or flutter has been performed.</td></tr></table></div>
+  </text>
+  <url value="http://testSK.org/CodeSystem/afib-flutter-status-cs"/>
+  <version value="0.1.0"/>
+  <name value="AfibFlutterStatusCS"/>
+  <title value="Atrial Fibrillation or Flutter Status Code System"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-06-03T14:30:00+00:00"/>
+  <publisher value="UMU"/>
+  <contact>
+    <name value="UMU"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://testSK.org/umu"/>
+    </telecom>
+  </contact>
+  <description value="Codes representing the status of Atrial Fibrillation or Flutter assessment."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="detected"/>
+    <display value="Detected"/>
+    <definition value="Indicates that atrial fibrillation or flutter has been identified during screening or recent evaluation."/>
+  </concept>
+  <concept>
+    <code value="known-af"/>
+    <display value="Known AF"/>
+    <definition value="Signifies that the patient has a pre-existing, documented diagnosis of atrial fibrillation."/>
+  </concept>
+  <concept>
+    <code value="no-af"/>
+    <display value="No AF"/>
+    <definition value="Denotes that the patient does not exhibit atrial fibrillation or atrial flutter."/>
+  </concept>
+  <concept>
+    <code value="not-screened"/>
+    <display value="Not Screened"/>
+    <definition value="Means that no screening for atrial fibrillation or flutter has been performed."/>
+  </concept>
+</CodeSystem>

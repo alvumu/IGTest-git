@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://testSK.org/CodeSystem/initial-care-intensity-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "initial-care-intensity-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem initial-care-intensity-cs</b></p><a name=\"initial-care-intensity-cs\"> </a><a name=\"hcinitial-care-intensity-cs\"> </a><a name=\"initial-care-intensity-cs-en-US\"> </a><p>This case-insensitive code system <code>http://testSK.org/CodeSystem/initial-care-intensity-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">standard<a name=\"initial-care-intensity-cs-standard\"> </a></td><td>Standard Bed</td><td>Patient placed in a standard hospital bed without continuous monitoring.</td></tr><tr><td style=\"white-space:nowrap\">monitored<a name=\"initial-care-intensity-cs-monitored\"> </a></td><td>Monitored Bed</td><td>Patient placed in a bed with continuous telemetry or other monitoring (outside ICU).</td></tr><tr><td style=\"white-space:nowrap\">icu-stroke<a name=\"initial-care-intensity-cs-icu-stroke\"> </a></td><td>ICU / Stroke Unit</td><td>Patient placed in an Intensive Care Unit or specialized Stroke Unit.</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://testSK.org/CodeSystem/initial-care-intensity-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "InitialCareIntensityCS"] ; # 
+  fhir:title [ fhir:v "Initial Care Intensity Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-06-03T14:30:00+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UMU"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UMU" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://testSK.org/umu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes indicating the level of care provided during the patient's initial day(s) in the hospital."] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "standard" ] ;
+     fhir:display [ fhir:v "Standard Bed" ] ;
+     fhir:definition [ fhir:v "Patient placed in a standard hospital bed without continuous monitoring." ]
+  ] [
+     fhir:code [ fhir:v "monitored" ] ;
+     fhir:display [ fhir:v "Monitored Bed" ] ;
+     fhir:definition [ fhir:v "Patient placed in a bed with continuous telemetry or other monitoring (outside ICU)." ]
+  ] [
+     fhir:code [ fhir:v "icu-stroke" ] ;
+     fhir:display [ fhir:v "ICU / Stroke Unit" ] ;
+     fhir:definition [ fhir:v "Patient placed in an Intensive Care Unit or specialized Stroke Unit." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

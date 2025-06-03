@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://testSK.org/CodeSystem/mrs-score-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mrs-score-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mrs-score-cs</b></p><a name=\"mrs-score-cs\"> </a><a name=\"hcmrs-score-cs\"> </a><a name=\"mrs-score-cs-en-US\"> </a><p>This case-insensitive code system <code>http://testSK.org/CodeSystem/mrs-score-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"mrs-score-cs-0\"> </a></td><td>No symptoms</td><td>No symptoms at all.</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"mrs-score-cs-1\"> </a></td><td>No significant disability</td><td>Despite symptoms; able to carry out all usual duties and activities.</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"mrs-score-cs-2\"> </a></td><td>Slight disability</td><td>Unable to carry out all previous activities, but able to look after own affairs without assistance.</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"mrs-score-cs-3\"> </a></td><td>Moderate disability</td><td>Requiring some help, but able to walk without assistance.</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"mrs-score-cs-4\"> </a></td><td>Moderately severe disability</td><td>Unable to walk without assistance and unable to attend to own bodily needs without assistance.</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"mrs-score-cs-5\"> </a></td><td>Severe disability</td><td>Bedridden, incontinent and requiring constant nursing care and attention.</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"mrs-score-cs-6\"> </a></td><td>Dead</td><td>Patient deceased.</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://testSK.org/CodeSystem/mrs-score-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "MRsScoreCS"] ; # 
+  fhir:title [ fhir:v "modified Rankin Scale (mRS) Score Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-06-03T14:30:00+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UMU"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UMU" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://testSK.org/umu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes representing the modified Rankin Scale (mRS) score for functional outcome."] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "0" ] ;
+     fhir:display [ fhir:v "No symptoms" ] ;
+     fhir:definition [ fhir:v "No symptoms at all." ]
+  ] [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "No significant disability" ] ;
+     fhir:definition [ fhir:v "Despite symptoms; able to carry out all usual duties and activities." ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "Slight disability" ] ;
+     fhir:definition [ fhir:v "Unable to carry out all previous activities, but able to look after own affairs without assistance." ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "Moderate disability" ] ;
+     fhir:definition [ fhir:v "Requiring some help, but able to walk without assistance." ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "Moderately severe disability" ] ;
+     fhir:definition [ fhir:v "Unable to walk without assistance and unable to attend to own bodily needs without assistance." ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "Severe disability" ] ;
+     fhir:definition [ fhir:v "Bedridden, incontinent and requiring constant nursing care and attention." ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "Dead" ] ;
+     fhir:definition [ fhir:v "Patient deceased." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

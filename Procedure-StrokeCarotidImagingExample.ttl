@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://testSK.org/Procedure/StrokeCarotidImagingExample> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "StrokeCarotidImagingExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://testSK.org/StructureDefinition/stroke-carotid-imaging-procedure-profile"^^xsd:anyURI ;
+       fhir:link <http://testSK.org/StructureDefinition/stroke-carotid-imaging-procedure-profile>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure StrokeCarotidImagingExample</b></p><a name=\"StrokeCarotidImagingExample\"> </a><a name=\"hcStrokeCarotidImagingExample\"> </a><a name=\"StrokeCarotidImagingExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-stroke-carotid-imaging-procedure-profile.html\">Stroke Carotid Imaging Procedure Profile (R5)</a></p></div><p><b>Procedure Timing Context Extension</b>: <span title=\"Codes:{http://testSK.org/CodeSystem/procedure-timing-context-cs post-acute}\">Post-Acute Phase (&gt;=24h)</span></p><p><b>status</b>: Not Done</p><p><b>statusReason</b>: <span title=\"Codes:{http://testSK.org/CodeSystem/stroke-proc-not-done-reason-cs unknown}\">Reason Unknown</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 58920005}\">Angiography of carotid artery (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>occurrence</b>: 2025-03-01 10:00:00+0000 --&gt; 2025-03-01 10:30:00+0000</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://testSK.org/StructureDefinition/procedure-timing-context-ext"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://testSK.org/CodeSystem/procedure-timing-context-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "post-acute" ] ;
+         fhir:display [ fhir:v "Post-Acute Phase (>=24h)" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "not-done"] ; # 
+  fhir:statusReason [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://testSK.org/CodeSystem/stroke-proc-not-done-reason-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "unknown" ] ;
+       fhir:display [ fhir:v "Reason Unknown" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:58920005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "58920005" ] ;
+       fhir:display [ fhir:v "Angiography of carotid artery (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://testSK.org/Patient/example-patient> ;
+     fhir:reference [ fhir:v "Patient/example-patient" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2025-03-01T10:00:00Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2025-03-01T10:30:00Z"^^xsd:dateTime ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

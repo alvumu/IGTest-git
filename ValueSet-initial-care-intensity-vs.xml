@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="initial-care-intensity-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet initial-care-intensity-vs</b></p><a name="initial-care-intensity-vs"> </a><a name="hcinitial-care-intensity-vs"> </a><a name="initial-care-intensity-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-initial-care-intensity-cs.html"><code>http://testSK.org/CodeSystem/initial-care-intensity-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://testSK.org/ValueSet/initial-care-intensity-vs"/>
+  <version value="0.1.0"/>
+  <name value="InitialCareIntensityVS"/>
+  <title value="Initial Care Intensity ValueSet"/>
+  <status value="active"/>
+  <date value="2025-06-03T14:30:00+00:00"/>
+  <publisher value="UMU"/>
+  <contact>
+    <name value="UMU"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://testSK.org/umu"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet indicating the level of care provided initially."/>
+  <compose>
+    <include>
+      <system value="http://testSK.org/CodeSystem/initial-care-intensity-cs"/>
+    </include>
+  </compose>
+</ValueSet>

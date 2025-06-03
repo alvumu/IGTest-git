@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://testSK.org/ValueSet/brain-imaging-modality-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "brain-imaging-modality-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet brain-imaging-modality-vs</b></p><a name=\"brain-imaging-modality-vs\"> </a><a name=\"hcbrain-imaging-modality-vs\"> </a><a name=\"brain-imaging-modality-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/396205005\">396205005</a></td><td>Computed tomography of brain without radiopaque contrast (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/419949007\">419949007</a></td><td>Computed tomography angiography of intracranial artery with contrast (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/433111008\">433111008</a></td><td>Computed tomography of brain perfusion (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/16327691000119101\">16327691000119101</a></td><td>Magnetic resonance imaging of brain with contrast (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/440408002\">440408002</a></td><td>Diffusion weighted magnetic resonance imaging (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/419059006\">419059006</a></td><td>Magnetic resonance imaging cerebral perfusion study (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/1366357009\">1366357009</a></td><td>Magnetic resonance imaging angiography of intracranial artery (procedure)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://testSK.org/ValueSet/brain-imaging-modality-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "BrainImagingModalityVS"] ; # 
+  fhir:title [ fhir:v "Brain Imaging Modality ValueSet"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-06-03T14:30:00+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UMU"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UMU" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://testSK.org/umu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Defines the SNOMED CT codes for individual brain imaging modalities performed as procedures."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "396205005" ] ;
+         fhir:display [ fhir:v "Computed tomography of brain without radiopaque contrast (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "419949007" ] ;
+         fhir:display [ fhir:v "Computed tomography angiography of intracranial artery with contrast (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "433111008" ] ;
+         fhir:display [ fhir:v "Computed tomography of brain perfusion (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "16327691000119101" ] ;
+         fhir:display [ fhir:v "Magnetic resonance imaging of brain with contrast (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "440408002" ] ;
+         fhir:display [ fhir:v "Diffusion weighted magnetic resonance imaging (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "419059006" ] ;
+         fhir:display [ fhir:v "Magnetic resonance imaging cerebral perfusion study (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "1366357009" ] ;
+         fhir:display [ fhir:v "Magnetic resonance imaging angiography of intracranial artery (procedure)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
