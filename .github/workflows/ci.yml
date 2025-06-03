@@ -50,6 +50,13 @@ jobs:
         run: |
           java -jar publisher.jar -ig ./ -tx https://tx.fhir.org
 
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          publish_branch: gh-pages
+
       - name: Upload QA file as artifact
         uses: actions/upload-artifact@v4
         with:
@@ -71,15 +78,3 @@ jobs:
       - name: Mostrar estructura de archivos
         run: ls -R .
 
-  deploy:
-    name: Deploy IG to GitHub Pages
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
-          publish_branch: gh-pages
