@@ -172,12 +172,132 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div>
-  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
-</div>
-<h1 id="igtest">IGTest</h1>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#fhir-implementation-guide--hospital-stroke-care" id="markdown-toc-fhir-implementation-guide--hospital-stroke-care">FHIR Implementation Guide – Hospital Stroke Care</a>    <ul>
+      <li><a href="#1-introduction" id="markdown-toc-1-introduction">1. Introduction</a>        <ul>
+          <li><a href="#11-purpose" id="markdown-toc-11-purpose">1.1 Purpose</a></li>
+          <li><a href="#12-scope" id="markdown-toc-12-scope">1.2 Scope</a></li>
+          <li><a href="#13-audience" id="markdown-toc-13-audience">1.3 Audience</a></li>
+        </ul>
+      </li>
+      <li><a href="#2-guide-structure" id="markdown-toc-2-guide-structure">2. Guide Structure</a></li>
+    </ul>
+  </li>
+</ul>
 
-<p>Feel free to modify this index page with your own awesome content!</p>
+</div>
+
+<h1 id="fhir-implementation-guide--hospital-stroke-care">FHIR Implementation Guide – Hospital Stroke Care</h1>
+
+<h2 id="1-introduction">1. Introduction</h2>
+<p>This Implementation Guide (IG) provides a standardized framework for capturing, exchanging, and analyzing clinical and administrative data related to in-hospital stroke care. It draws on patterns and best practices from existing guides such as:</p>
+<ul>
+  <li>https://build.fhir.org/ig/HL7/fhir-ips/</li>
+  <li>https://hl7.org/fhir/us/core/</li>
+  <li>https://simplifier.net/guide/ca-fex?version=2.2.0-DFT-Ballot</li>
+  <li>https://simplifier.net/guide/fhir-standards-wales-implementation-guide?version=2.2.0</li>
+</ul>
+
+<h3 id="11-purpose">1.1 Purpose</h3>
+<ul>
+  <li><strong>Standardize</strong> the representation of data for patients admitted with acute stroke events (“Stroke Encounter”), including admission details, in-hospital care intensity, discharge planning, diagnoses, risk factors, vital signs, functional scores, procedures, and follow-up.</li>
+  <li><strong>Facilitate</strong> interoperability among hospital information systems, electronic health records, and data registries by using consistent profiles, ValueSets, CodeSystems, and extensions.</li>
+  <li><strong>Provide</strong> clear, example-driven documentation for implementers (developers, clinical informaticists, data analysts) to speed adoption and ensure consistent data capture.</li>
+</ul>
+
+<h3 id="12-scope">1.2 Scope</h3>
+<ul>
+  <li><strong>Inclusions</strong>:
+    <ul>
+      <li>Profiles for Encounter (“StrokeEncounterProfile”), MedicationRequest at discharge, MedicationStatement for prior medications, Observations (vital signs, functional scores, timing metrics, circumstances, specific findings, age at onset), Procedures (imaging, thrombolysis, thrombectomy, swallowing screening), Conditions (stroke diagnosis, stroke risk factors).</li>
+      <li>Custom CodeSystems and ValueSets for stroke-specific concepts (arrival mode, discharge destination, initial care intensity, mTICI, mRS, AFib/Flutter status, timing contexts, procedure reasons, etc.).</li>
+      <li>Extensions for recording information not covered by base FHIR (first-hospital indicator, care intensity, post-acute care requirement, department/service at discharge, observation timing, procedure timing, bleeding reason, stroke etiology).</li>
+      <li>Example instances demonstrating how to populate each profile with real-world data.</li>
+    </ul>
+  </li>
+  <li><strong>Exclusions</strong>:
+    <ul>
+      <li>Outpatient stroke management beyond the acute hospitalization (post-discharge rehab in the community).</li>
+      <li>Pediatric stroke protocols (focus is on adult acute stroke).</li>
+      <li>Billing, administrative workflows outside core clinical documentation.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="13-audience">1.3 Audience</h3>
+<ul>
+  <li><strong>Developers</strong> implementing FHIR servers or applications to capture stroke data.</li>
+  <li><strong>Clinical informaticists</strong> designing local data models or integrating multiple systems.</li>
+  <li><strong>Data analysts/researchers</strong> needing consistent FHIR-based data extracts for stroke registries.</li>
+  <li><strong>Hospital IT teams</strong> configuring EHRs to comply with interoperability requirements.</li>
+</ul>
+
+<hr/>
+
+<h2 id="2-guide-structure">2. Guide Structure</h2>
+
+<p>This IG is organized into discrete sections to facilitate navigation and modular implementation. Each major section corresponds to a folder or page in the generated site:</p>
+
+<ol>
+  <li><strong>Introduction</strong>
+    <ul>
+      <li>Overview, purpose, scope, and intended audience.</li>
+    </ul>
+  </li>
+  <li><strong>Guide Organization</strong>
+    <ul>
+      <li>Explanation of how content is structured (this section).</li>
+      <li>High-level map of folders/pages and their relationships.</li>
+    </ul>
+  </li>
+  <li><strong>Clinical Profiles</strong>
+    <ul>
+      <li>Detailed definitions of each FHIR profile, including constraints, element tables, bindings, and invariants.</li>
+      <li>Each profile lives in its own markdown/HTML page under a <code class="language-plaintext highlighter-rouge">profiles/</code> folder.</li>
+    </ul>
+  </li>
+  <li><strong>CodeSystems &amp; ValueSets</strong>
+    <ul>
+      <li>Definitions for all custom CodeSystems and ValueSets used by profiles.</li>
+      <li>Each resource in this section appears in a <code class="language-plaintext highlighter-rouge">terminology/</code> folder with its own page.</li>
+    </ul>
+  </li>
+  <li><strong>Extensions</strong>
+    <ul>
+      <li>Definitions for all custom extensions that augment FHIR base resources.</li>
+      <li>Each extension has a dedicated page under <code class="language-plaintext highlighter-rouge">extensions/</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Example Instances</strong>
+    <ul>
+      <li>Concrete FHIR resources (JSON or Turtle) demonstrating how to populate each profile.</li>
+      <li>These examples reside in an <code class="language-plaintext highlighter-rouge">examples/</code> folder, with one file per instance (e.g., <code class="language-plaintext highlighter-rouge">StrokeEncounterExample.json</code>).</li>
+    </ul>
+  </li>
+  <li><strong>Technical Documentation</strong>
+    <ul>
+      <li>Guidance on using FHIR Shorthand (FSH) and SUSHI to build the IG.</li>
+      <li>Explanation of invariants (FHIRPath/CQL) and naming conventions.</li>
+      <li>Validation recommendations.</li>
+    </ul>
+  </li>
+  <li><strong>Downloads &amp; Resources</strong>
+    <ul>
+      <li>Direct links to download the complete IG bundle (JSON/XML).</li>
+      <li>Link to the SUSHI-generated ImplementationGuide resource.</li>
+      <li>Any OpenAPI/Swagger documentation (if provided).</li>
+    </ul>
+  </li>
+  <li><strong>Contributing &amp; Contact</strong>
+    <ul>
+      <li>Instructions for submitting issues or pull requests.</li>
+      <li>Maintainers’ contact information.</li>
+      <li>Licensing and usage policies.</li>
+    </ul>
+  </li>
+</ol>
+
 
 
 
@@ -196,8 +316,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l311">​</a>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jun 3, 2025 14:30+0000">2025-06-03</span>
+        <p><a name="l610">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jun 3, 2025 15:17+0000">2025-06-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
