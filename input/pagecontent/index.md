@@ -11,19 +11,19 @@ authors:
 
 # FHIR Implementation Guide – Hospital Stroke Care
 
-## 1. Introduction
+## Introduction
 This Implementation Guide (IG) provides a standardized framework for capturing, exchanging, and analyzing clinical and administrative data related to in-hospital stroke care. It draws on patterns and best practices from existing guides such as:
 - https://build.fhir.org/ig/HL7/fhir-ips/
 - https://hl7.org/fhir/us/core/
 - https://simplifier.net/guide/ca-fex?version=2.2.0-DFT-Ballot
 - https://simplifier.net/guide/fhir-standards-wales-implementation-guide?version=2.2.0
 
-### 1.1 Purpose
+### Purpose
 - **Standardize** the representation of data for patients admitted with acute stroke events (“Stroke Encounter”), including admission details, in-hospital care intensity, discharge planning, diagnoses, risk factors, vital signs, functional scores, procedures, and follow-up.
 - **Facilitate** interoperability among hospital information systems, electronic health records, and data registries by using consistent profiles, ValueSets, CodeSystems, and extensions.
 - **Provide** clear, example-driven documentation for implementers (developers, clinical informaticists, data analysts) to speed adoption and ensure consistent data capture.
 
-### 1.2 Scope
+### Scope
 - **Inclusions**:
   - Profiles for Encounter (“StrokeEncounterProfile”), MedicationRequest at discharge, MedicationStatement for prior medications, Observations (vital signs, functional scores, timing metrics, circumstances, specific findings, age at onset), Procedures (imaging, thrombolysis, thrombectomy, swallowing screening), Conditions (stroke diagnosis, stroke risk factors).
   - Custom CodeSystems and ValueSets for stroke-specific concepts (arrival mode, discharge destination, initial care intensity, mTICI, mRS, AFib/Flutter status, timing contexts, procedure reasons, etc.).
@@ -35,7 +35,7 @@ This Implementation Guide (IG) provides a standardized framework for capturing, 
   - Pediatric stroke protocols (focus is on adult acute stroke).
   - Billing, administrative workflows outside core clinical documentation.
 
-### 1.3 Audience
+### Audience
 - **Developers** implementing FHIR servers or applications to capture stroke data.
 - **Clinical informaticists** designing local data models or integrating multiple systems.
 - **Data analysts/researchers** needing consistent FHIR-based data extracts for stroke registries.
@@ -43,7 +43,7 @@ This Implementation Guide (IG) provides a standardized framework for capturing, 
 
 ---
 
-## 2. Guide Structure
+##  Guide Structure
 
 This IG is organized into discrete sections to facilitate navigation and modular implementation. Each major section corresponds to a folder or page in the generated site:
 
