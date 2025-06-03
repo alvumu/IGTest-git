@@ -1,4 +1,4 @@
-name: CI / Build & Deploy IG
+name: CI / Build & Deploy IG (con artifacts)
 
 on:
   push:
@@ -43,41 +43,34 @@ jobs:
         run: gem install jekyll
 
       - name: Compile FSH y generar recursos
-        working-directory: ./
         run: sushi .
 
       - name: Run IG Publisher
         run: |
           java -jar publisher.jar -ig ./ -tx https://tx.fhir.org
 
-      - name: Upload QA file as artifact
+      - name: Upload todo el output como artifact
         uses: actions/upload-artifact@v4
         with:
-          name: qa-html
-          path: output/qa.html
-
-          
-  download-artifact:
-    name: Download IG output
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-      - name: Download QA artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: qa-html
-
-      - name: Mostrar estructura de archivos
-        run: ls -R .
+          name: ig-output
+          path: output/**
 
   deploy:
-    name: Deploy IG to GitHub Pages
-    needs: build
     runs-on: ubuntu-latest
+    needs: build
 
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Checkout repository (necesario para peaceiris)
+        uses: actions/checkout@v3
+
+      - name: Download artifact con la carpeta output/
+        uses: actions/download-artifact@v4
+        with:
+          name: ig-output
+
+      # A estas alturas, el runner tiene ./output/ completo
+
+      - name: Deploy a GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
