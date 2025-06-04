@@ -3,16 +3,24 @@ Alias: SCT = http://snomed.info/sct
 Alias: FHIR = http://hl7.org/fhir
 Alias: CondCat = http://terminology.hl7.org/CodeSystem/condition-category
 Alias: CondVerStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status
-Alias: BleedingReasonCS = http://testSK.org/CodeSystem/stroke-bleeding-reason
-Alias: StrokeEtiologyCS = http://testSK.org/CodeSystem/stroke-ischemic-etiology
 Alias: StrokeRiskUnknVS = http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips
 Alias: ClinicalStatusCondCS = http://terminology.hl7.org/CodeSystem/condition-clinical
+
+Alias: StrokeDiagnosisVS_URL = http://testSK.org/ValueSet/stroke-diagnosis-vs
+Alias: StrokeRiskFactorSNOMEDVS_URL = http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs
+Alias: StrokeRiskFactorVS_URL = http://testSK.org/ValueSet/stroke-risk-factor-vs
+Alias: StrokeRiskFactorUnknVS_URL = http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips
+Alias: DischargeDestinationVS_URL = http://testSK.org/ValueSet/discharge-destination-vs
+Alias: AdmissionSourceVS_URL = http://testSK.org/ValueSet/admission-source-vs
+Alias: HemorrhagicStrokeBleedingReasonVS_URL = http://testSK.org/ValueSet/hemorrhagic-stroke-bleeding-reason-vs
+Alias: StrokeEtiologyVS_URL = http://testSK.org/ValueSet/stroke-etiology-vs
 
 // ValueSet for Stroke Diagnosis (with Displays)
 ValueSet: StrokeDiagnosisVS
 Id: stroke-diagnosis-vs
 Title: "Stroke Diagnosis ValueSet"
 Description: "Defines the SNOMED CT codes for final stroke diagnoses, including specific types and etiologies where applicable."
+* ^url = StrokeDiagnosisVS_URL
 * ^status = #active
 * include SCT#422504002 "Ischemic stroke (disorder)"
 * include SCT#274100004 "Cerebral hemorrhage (disorder)"
@@ -25,6 +33,7 @@ ValueSet: StrokeRiskFactorSNOMEDVS
 Id: stroke-risk-factor-snomed-vs
 Title: "Stroke Risk Factor ValueSet"
 Description: "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke."
+* ^url = StrokeRiskFactorSNOMEDVS_URL
 * ^status = #active
 * include SCT#49436004 "Atrial fibrillation (disorder)"
 * include SCT#5370000 "Atrial flutter (disorder)"
@@ -41,6 +50,7 @@ ValueSet: StrokeRiskFactorVS
 Id: stroke-risk-factor-vs
 Title: "Stroke Risk Factor ValueSet"
 Description: "Defines the unknown or absent codes for conditions or risk factors relevant to stroke."
+* ^url = StrokeRiskFactorVS_URL
 * include codes from valueset StrokeRiskFactorSNOMEDVS
 * include codes from valueset StrokeRiskUnknVS
 
@@ -49,7 +59,7 @@ ValueSet: DischargeDestinationVS
 Id: discharge-destination-vs
 Title: "Discharge Destination ValueSet"
 Description: "Defines possible patient discharge destinations."
-* ^url = "http://testSK.org/ValueSet/discharge-destination-vs"
+* ^url = DischargeDestinationVS_URL
 * ^version = "1.0.0"
 * ^name = "DischargeDestinationValueset"
 * ^status = #draft
@@ -70,7 +80,7 @@ ValueSet: AdmissionSourceVS
 Id: admission-source-vs
 Title: "Admission Sources ValueSet"
 Description: "Defines the modes of transport or pathways by which the patient arrived."
-* ^url = "http://testSK.org/ValueSet/admission-source-vs"
+* ^url = AdmissionSourceVS_URL
 * ^version = "1.0.0"
 * ^name = "AdmissionSourceValueset"
 * ^status = #draft
@@ -88,7 +98,7 @@ ValueSet: HemorrhagicStrokeBleedingReasonVS
 Id: hemorrhagic-stroke-bleeding-reason-vs
 Title: "Hemorrhagic Stroke Bleeding Reason ValueSet"
 * ^description = "Specifies the identified cause of a hemorrhagic stroke, typically used with an extension."
-* ^url = "http://testSK.org/ValueSet/hemorrhagic-stroke-bleeding-reason-vs"
+* ^url = HemorrhagicStrokeBleedingReasonVS_URL
 * ^version = "1.0.0"
 * ^name = "HemorrhagicStrokeBleedingReasonVS"
 * ^status = #draft
@@ -103,13 +113,13 @@ Title: "Hemorrhagic Stroke Bleeding Reason ValueSet"
 * include SCT#64572001 "Disease (disorder)"
 * include SCT#71388002 "Procedure (procedure)"
 
-ValueSet: StrokeStrokeEtiologyVS
-Id: ischemic-stroke-etiology-vs
-Title: "Stroke Stroke Etiology ValueSet"
-Description: "Specifies the determined etiology of an ischemic stroke."
-* ^url = "http://testSK.org/ValueSet/ischemic-stroke-etiology-vs"
+ValueSet: StrokeEtiologyVS
+Id: stroke-etiology-vs
+Title: "Stroke Etiology ValueSet"
+Description: "Specifies the determined etiology of an stroke."
+* ^url = StrokeEtiologyVS_URL
 * ^version = "1.0.0"
-* ^name = "IschemicStrokeEtiologyVS"
+* ^name = "StrokeEtiologyVS"
 * ^status = #draft
 * ^experimental = true
 * ^date = "2025-03-31"
@@ -139,7 +149,7 @@ Id: ischemic-stroke-etiology-ext
 * ^context.type = #element
 * ^context.expression = "Condition"
 * value[x] only CodeableConcept
-* valueCodeableConcept from StrokeStrokeEtiologyVS (required)
+* valueCodeableConcept from StrokeEtiologyVS (required)
 
 // ------------------ Condition Profiles -------------------------
 
