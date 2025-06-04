@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-03T15:24:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-04T08:16:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -96,7 +96,7 @@
          fhir:reference [ fhir:v "StructureDefinition/age-at-onset-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Age at Stroke Onset Observation Profile (R5)" ] ;
-       fhir:description [ fhir:v "R5 Profile specifically for recording the patient's age at stroke onset." ] ;
+       fhir:description [ fhir:v "Profile specifically for recording the patient's age at stroke onset." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -158,7 +158,7 @@
          fhir:link <http://testSK.org/CodeSystem/afib-flutter-status-cs> ;
          fhir:reference [ fhir:v "CodeSystem/afib-flutter-status-cs" ]
        ] ;
-       fhir:name [ fhir:v "Atrial Fibrillation or Flutter Status Code System" ] ;
+       fhir:name [ fhir:v "Atrial Fibrillation or Flutter Status Codes" ] ;
        fhir:description [ fhir:v "Codes representing the status of Atrial Fibrillation or Flutter assessment." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
@@ -189,7 +189,7 @@
          fhir:reference [ fhir:v "StructureDefinition/base-stroke-observation" ]
        ] ;
        fhir:name [ fhir:v "Base Profile for Stroke-Related Observations" ] ;
-       fhir:description [ fhir:v "Common R5 constraints for observations recorded in the context of stroke care." ] ;
+       fhir:description [ fhir:v "Constraints for observations recorded in the context of stroke care." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -280,20 +280,6 @@
        ] ;
        fhir:name [ fhir:v "Discharge Medication Request Profile" ] ;
        fhir:description [ fhir:v "Represents a medication prescription made as part of the patient's discharge plan, categorized as community administration." ] ;
-       fhir:isExample [ fhir:v false ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://testSK.org/ValueSet/discharge-medication-vs> ;
-         fhir:reference [ fhir:v "ValueSet/discharge-medication-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Discharge Medications ValueSet" ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -491,11 +477,26 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/discharge-medication-vs> ;
+         fhir:reference [ fhir:v "ValueSet/discharge-medication-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Medications ValueSet" ] ;
+       fhir:description [ fhir:v "Codes for drug products or substances representing the Medications on the patient discharge." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://testSK.org/ValueSet/medicationStatement-meds-codes-vs> ;
          fhir:reference [ fhir:v "ValueSet/medicationStatement-meds-codes-vs" ]
        ] ;
        fhir:name [ fhir:v "MedicationStatement Therapy/Finding Codes" ] ;
-       fhir:description [ fhir:v "ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use). **NOTE: These codes are generally NOT suitable for MedicationStatement.medication[x] which expects product/substance codes.**" ] ;
+       fhir:description [ fhir:v "ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use)." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -541,6 +542,36 @@
        ] ;
        fhir:name [ fhir:v "mTICI Score Code System" ] ;
        fhir:description [ fhir:v "CodeSystem containing the codes to represent the mTICI score." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/mtici-code-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mtici-code-cs" ]
+       ] ;
+       fhir:name [ fhir:v "mTICI Score Codes CodeSystem" ] ;
+       fhir:description [ fhir:v "Codes representing the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/mtici-code-vs> ;
+         fhir:reference [ fhir:v "ValueSet/mtici-code-vs" ]
+       ] ;
+       fhir:name [ fhir:v "mTICI Score Codes ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -614,7 +645,7 @@
          fhir:reference [ fhir:v "StructureDefinition/prior-medication-statement-profile" ]
        ] ;
        fhir:name [ fhir:v "Prior Medication Statement Profile (R5)" ] ;
-       fhir:description [ fhir:v "R5 Profile: Represents a statement about the patient's medication use *before* the index event. Uses adherence.code (#taking/#not-taking) to indicate usage status." ] ;
+       fhir:description [ fhir:v "Represents a statement about the patient's medication use *before* the index event." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -714,6 +745,21 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/stroke-finding-codes-vs> ;
+         fhir:reference [ fhir:v "ValueSet/stroke-finding-codes-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Specific Stroke Finding Codes ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet for specific coded findings like Afib/Flutter status or mTICI score." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -722,7 +768,7 @@
          fhir:reference [ fhir:v "StructureDefinition/specific-finding-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Specific Stroke Finding Observation Profile (R5)" ] ;
-       fhir:description [ fhir:v "R5 Profile for specific coded findings like Afib/Flutter status or mTICI score." ] ;
+       fhir:description [ fhir:v "Profile for specific coded findings like Afib/Flutter status or mTICI score." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -788,7 +834,7 @@
          fhir:reference [ fhir:v "StructureDefinition/stroke-brain-imaging-procedure-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Brain Imaging Procedure Profile (R5)" ] ;
-       fhir:description [ fhir:v "Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." ] ;
+       fhir:description [ fhir:v "Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -803,7 +849,7 @@
          fhir:reference [ fhir:v "StructureDefinition/stroke-carotid-imaging-procedure-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Carotid Imaging Procedure Profile (R5)" ] ;
-       fhir:description [ fhir:v "Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." ] ;
+       fhir:description [ fhir:v "Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -833,7 +879,7 @@
          fhir:reference [ fhir:v "StructureDefinition/stroke-circumstance-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Circumstance Observation Profile (R5)" ] ;
-       fhir:description [ fhir:v "R5 Profile for recording findings about stroke onset circumstances (In-hospital, Wake-up)." ] ;
+       fhir:description [ fhir:v "Profile for recording findings about stroke onset circumstances (In-hospital, Wake-up)." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -923,7 +969,7 @@
          fhir:reference [ fhir:v "StructureDefinition/functional-score-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Functional Score Observation Profile (R5, Timing Ext)" ] ;
-       fhir:description [ fhir:v "R5 Profile for recording functional scores (mRS, NIHSS), using an extension for timing context." ] ;
+       fhir:description [ fhir:v "Profile for recording functional scores (mRS, NIHSS), using an extension for timing context." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -1028,7 +1074,7 @@
          fhir:reference [ fhir:v "StructureDefinition/stroke-swallow-procedure-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Swallow Procedure Profile (R5)" ] ;
-       fhir:description [ fhir:v "Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." ] ;
+       fhir:description [ fhir:v "Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -1043,7 +1089,7 @@
          fhir:reference [ fhir:v "StructureDefinition/stroke-thrombolysis-procedure-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Thrombolysis Procedure Profile (R5)" ] ;
-       fhir:description [ fhir:v "Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." ] ;
+       fhir:description [ fhir:v "Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -1056,6 +1102,21 @@
        fhir:reference [
          fhir:link <http://testSK.org/ValueSet/timing-metric-codes-vs> ;
          fhir:reference [ fhir:v "ValueSet/timing-metric-codes-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Timing Metric Codes ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet for key process timing metrics in acute stroke care (D2N, D2G)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/timing-metric-codes-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/timing-metric-codes-cs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Timing Metric Codes ValueSet" ] ;
        fhir:description [ fhir:v "Codes for key process timing metrics in acute stroke care (D2N, D2G)." ] ;
@@ -1073,7 +1134,7 @@
          fhir:reference [ fhir:v "StructureDefinition/timing-metric-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Timing Metric Observation Profile (R5)" ] ;
-       fhir:description [ fhir:v "R5 Profile for recording key process timing metrics (D2N, D2G)." ] ;
+       fhir:description [ fhir:v "Profile for recording key process timing metrics (D2N, D2G)." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -1103,7 +1164,7 @@
          fhir:reference [ fhir:v "StructureDefinition/vital-sign-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Vital Sign Observation Profile (R5)" ] ;
-       fhir:description [ fhir:v "R5 Profile for recording key vital signs (Systolic/Diastolic BP) in stroke patients." ] ;
+       fhir:description [ fhir:v "Profile for recording key vital signs (Systolic/Diastolic BP) in stroke patients." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "5f3451aa-011f-439b-ad21-3642008324b6",
+  "id" : "cf163204-67c1-448e-b592-721875c05c47",
   "meta" : {
-    "lastUpdated" : "2025-06-03T15:25:09.370+00:00"
+    "lastUpdated" : "2025-06-04T08:17:08.909+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -11,7 +11,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-715537001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/715537001\">715537001</a></td><td>http://snomed.info/sct</td><td>Transportation by ambulance (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-715957006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/715957006\">715957006</a></td><td>http://snomed.info/sct</td><td>Transportation by own transport (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-384762007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/384762007\">384762007</a></td><td>http://snomed.info/sct</td><td>Transportation procedure (procedure)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-715537001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/715537001\">715537001</a></td><td>http://snomed.info/sct</td><td>Transportation by ambulance (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-715957006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/715957006\">715957006</a></td><td>http://snomed.info/sct</td><td>Transportation by own transport (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-384762007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/384762007\">384762007</a></td><td>http://snomed.info/sct</td><td>Transportation procedure (procedure)</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/admission-source-vs",
       "version" : "0.1.0",
@@ -21,8 +21,8 @@
       "experimental" : true,
       "date" : "2025-03-31",
       "expansion" : {
-        "identifier" : "urn:uuid:097e65c7-4316-4dea-8185-8e8e38fcea19",
-        "timestamp" : "2025-06-03T15:27:07+00:00",
+        "identifier" : "urn:uuid:66404495-a51e-403f-8983-690dc1f8ca80",
+        "timestamp" : "2025-06-04T08:18:15+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -47,11 +47,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -77,17 +77,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-afib-flutter-status-cs.html\">codesystem Atrial Fibrillation or Flutter Status Code System v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/afib-flutter-status-cs-detected\"> </a>\u00a0\u00a0<a href=\"CodeSystem-afib-flutter-status-cs.html#afib-flutter-status-cs-detected\">detected</a></td><td>http://testSK.org/CodeSystem/afib-flutter-status-cs</td><td>Detected</td><td><div><p>Indicates that atrial fibrillation or flutter has been identified during screening or recent evaluation.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/afib-flutter-status-cs-known-af\"> </a>\u00a0\u00a0<a href=\"CodeSystem-afib-flutter-status-cs.html#afib-flutter-status-cs-known-af\">known-af</a></td><td>http://testSK.org/CodeSystem/afib-flutter-status-cs</td><td>Known AF</td><td><div><p>Signifies that the patient has a pre-existing, documented diagnosis of atrial fibrillation.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/afib-flutter-status-cs-no-af\"> </a>\u00a0\u00a0<a href=\"CodeSystem-afib-flutter-status-cs.html#afib-flutter-status-cs-no-af\">no-af</a></td><td>http://testSK.org/CodeSystem/afib-flutter-status-cs</td><td>No AF</td><td><div><p>Denotes that the patient does not exhibit atrial fibrillation or atrial flutter.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/afib-flutter-status-cs-not-screened\"> </a>\u00a0\u00a0<a href=\"CodeSystem-afib-flutter-status-cs.html#afib-flutter-status-cs-not-screened\">not-screened</a></td><td>http://testSK.org/CodeSystem/afib-flutter-status-cs</td><td>Not Screened</td><td><div><p>Means that no screening for atrial fibrillation or flutter has been performed.</p>\n</div></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-afib-flutter-status-cs.html\">codesystem Atrial Fibrillation or Flutter Status Codes v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/afib-flutter-status-cs-detected\"> </a>\u00a0\u00a0<a href=\"CodeSystem-afib-flutter-status-cs.html#afib-flutter-status-cs-detected\">detected</a></td><td>http://testSK.org/CodeSystem/afib-flutter-status-cs</td><td>Detected</td><td><div><p>Indicates that atrial fibrillation or flutter has been identified during screening or recent evaluation.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/afib-flutter-status-cs-known-af\"> </a>\u00a0\u00a0<a href=\"CodeSystem-afib-flutter-status-cs.html#afib-flutter-status-cs-known-af\">known-af</a></td><td>http://testSK.org/CodeSystem/afib-flutter-status-cs</td><td>Known AF</td><td><div><p>Signifies that the patient has a pre-existing, documented diagnosis of atrial fibrillation.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/afib-flutter-status-cs-no-af\"> </a>\u00a0\u00a0<a href=\"CodeSystem-afib-flutter-status-cs.html#afib-flutter-status-cs-no-af\">no-af</a></td><td>http://testSK.org/CodeSystem/afib-flutter-status-cs</td><td>No AF</td><td><div><p>Denotes that the patient does not exhibit atrial fibrillation or atrial flutter.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/afib-flutter-status-cs-not-screened\"> </a>\u00a0\u00a0<a href=\"CodeSystem-afib-flutter-status-cs.html#afib-flutter-status-cs-not-screened\">not-screened</a></td><td>http://testSK.org/CodeSystem/afib-flutter-status-cs</td><td>Not Screened</td><td><div><p>Means that no screening for atrial fibrillation or flutter has been performed.</p>\n</div></td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/afib-flutter-status-vs",
       "version" : "0.1.0",
       "name" : "AfibFlutterStatusVS",
       "title" : "Atrial Fibrillation or Flutter Status ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:5353dc72-145b-4928-9e30-6e26fafc8b59",
-        "timestamp" : "2025-06-03T15:27:07+00:00",
+        "identifier" : "urn:uuid:1cbccc53-0150-46b0-8591-70ba2f861c85",
+        "timestamp" : "2025-06-04T08:18:16+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -150,10 +150,10 @@
       "name" : "AssessmentContextVS",
       "title" : "Assessment Context ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:45c37dea-3c11-4147-8b87-19fd6449352c",
-        "timestamp" : "2025-06-03T15:27:08+00:00",
+        "identifier" : "urn:uuid:9676f3e8-6217-4242-82ed-b205c82cbfa2",
+        "timestamp" : "2025-06-04T08:18:16+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -209,17 +209,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-396205005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/396205005\">396205005</a></td><td>http://snomed.info/sct</td><td>Computerised axial tomography of brain without radiopaque contrast</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-419949007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419949007\">419949007</a></td><td>http://snomed.info/sct</td><td>Computed tomography angiography of intracranial artery with contrast (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-433111008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/433111008\">433111008</a></td><td>http://snomed.info/sct</td><td>Computed tomography of brain perfusion (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-16327691000119101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/16327691000119101\">16327691000119101</a></td><td>http://snomed.info/sct</td><td>Magnetic resonance imaging of brain with contrast (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-440408002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/440408002\">440408002</a></td><td>http://snomed.info/sct</td><td>Diffusion weighted magnetic resonance imaging (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-419059006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419059006\">419059006</a></td><td>http://snomed.info/sct</td><td>Magnetic resonance imaging cerebral perfusion study (procedure)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-396205005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/396205005\">396205005</a></td><td>http://snomed.info/sct</td><td>Computerised axial tomography of brain without radiopaque contrast</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-419949007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419949007\">419949007</a></td><td>http://snomed.info/sct</td><td>Computed tomography angiography of intracranial artery with contrast (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-433111008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/433111008\">433111008</a></td><td>http://snomed.info/sct</td><td>Computed tomography of brain perfusion (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-16327691000119101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/16327691000119101\">16327691000119101</a></td><td>http://snomed.info/sct</td><td>Magnetic resonance imaging of brain with contrast (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-440408002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/440408002\">440408002</a></td><td>http://snomed.info/sct</td><td>Diffusion weighted magnetic resonance imaging (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-419059006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419059006\">419059006</a></td><td>http://snomed.info/sct</td><td>Magnetic resonance imaging cerebral perfusion study (procedure)</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/brain-imaging-modality-vs",
       "version" : "0.1.0",
       "name" : "BrainImagingModalityVS",
       "title" : "Brain Imaging Modality ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:e03a46a0-9162-4d2c-b3aa-6337dddf58bb",
-        "timestamp" : "2025-06-03T15:27:08+00:00",
+        "identifier" : "urn:uuid:b73d8780-fea6-469e-b17c-163569505844",
+        "timestamp" : "2025-06-04T08:18:16+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -244,11 +244,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -289,17 +289,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-58920005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/58920005\">58920005</a></td><td>http://snomed.info/sct</td><td>Imaging of carotid arteries</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-416940007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/416940007\">416940007</a></td><td>http://snomed.info/sct</td><td>Past history of procedure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-419949007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419949007\">419949007</a></td><td>http://snomed.info/sct</td><td>Computed tomography angiography of intracranial artery with contrast (procedure)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-58920005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/58920005\">58920005</a></td><td>http://snomed.info/sct</td><td>Imaging of carotid arteries</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-416940007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/416940007\">416940007</a></td><td>http://snomed.info/sct</td><td>Past history of procedure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-419949007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419949007\">419949007</a></td><td>http://snomed.info/sct</td><td>Computed tomography angiography of intracranial artery with contrast (procedure)</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/carotid-imaging-modality-vs",
       "version" : "0.1.0",
       "name" : "CarotidImagingModalityVS",
       "title" : "Carotid Arteries Imaging Modality ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:3bd0013b-b265-44d8-ad00-0d53a52f2afe",
-        "timestamp" : "2025-06-03T15:27:08+00:00",
+        "identifier" : "urn:uuid:d595a802-6a16-4749-8f1a-b7ceafecdfcf",
+        "timestamp" : "2025-06-04T08:18:16+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -324,11 +324,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -354,17 +354,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-309940004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/309940004\">309940004</a></td><td>http://snomed.info/sct</td><td>Rehabilitation department</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-309937004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/309937004\">309937004</a></td><td>http://snomed.info/sct</td><td>Neurology department</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-441480003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/441480003\">441480003</a></td><td>http://snomed.info/sct</td><td>Primary care department</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-309912009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/309912009\">309912009</a></td><td>http://snomed.info/sct</td><td>Medical department</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-309940004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/309940004\">309940004</a></td><td>http://snomed.info/sct</td><td>Rehabilitation department</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-309937004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/309937004\">309937004</a></td><td>http://snomed.info/sct</td><td>Neurology department</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-441480003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/441480003\">441480003</a></td><td>http://snomed.info/sct</td><td>Primary care department</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-309912009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/309912009\">309912009</a></td><td>http://snomed.info/sct</td><td>Medical department</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/discharge-dept-vs",
       "version" : "0.1.0",
       "name" : "DischargeDeptVS",
       "title" : "Discharge Department/Service ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:c6c1880d-996f-4ea0-ad96-daf4ad126797",
-        "timestamp" : "2025-06-03T15:27:09+00:00",
+        "identifier" : "urn:uuid:0b66e05e-6117-4c38-86fa-e5030227ae2f",
+        "timestamp" : "2025-06-04T08:18:17+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -389,11 +389,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -424,7 +424,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-306689006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/306689006\">306689006</a></td><td>http://snomed.info/sct</td><td>Discharge to home (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-306706006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/306706006\">306706006</a></td><td>http://snomed.info/sct</td><td>Discharge to ward</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-19712007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/19712007\">19712007</a></td><td>http://snomed.info/sct</td><td>Patient transfer, to another health care facility</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-306691003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/306691003\">306691003</a></td><td>http://snomed.info/sct</td><td>Discharge to residential home</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-305398007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/305398007\">305398007</a></td><td>http://snomed.info/sct</td><td>Admission to the mortuary</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-306689006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/306689006\">306689006</a></td><td>http://snomed.info/sct</td><td>Discharge to home (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-306706006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/306706006\">306706006</a></td><td>http://snomed.info/sct</td><td>Discharge to ward</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-19712007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/19712007\">19712007</a></td><td>http://snomed.info/sct</td><td>Patient transfer, to another health care facility</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-306691003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/306691003\">306691003</a></td><td>http://snomed.info/sct</td><td>Discharge to residential home</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-305398007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/305398007\">305398007</a></td><td>http://snomed.info/sct</td><td>Admission to the mortuary</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/discharge-destination-vs",
       "version" : "0.1.0",
@@ -434,8 +434,8 @@
       "experimental" : true,
       "date" : "2025-03-31",
       "expansion" : {
-        "identifier" : "urn:uuid:6475a78c-fa74-4adf-813c-6efab7c9d7a7",
-        "timestamp" : "2025-06-03T15:27:10+00:00",
+        "identifier" : "urn:uuid:75aaecda-0ada-4507-a286-3d4c4db92d5d",
+        "timestamp" : "2025-06-04T08:18:17+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -460,11 +460,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -500,17 +500,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-1255866005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1255866005\">1255866005</a></td><td>http://snomed.info/sct</td><td>mRS - Modified Rankin Scale</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-450743008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/450743008\">450743008</a></td><td>http://snomed.info/sct</td><td>National Institutes of Health stroke scale score</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-1255866005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1255866005\">1255866005</a></td><td>http://snomed.info/sct</td><td>mRS - Modified Rankin Scale</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-450743008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/450743008\">450743008</a></td><td>http://snomed.info/sct</td><td>National Institutes of Health stroke scale score</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/functional-score-codes-vs",
       "version" : "0.1.0",
       "name" : "FunctionalScoreCodesVS",
       "title" : "Stroke Functional Score Codes ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:f9902fee-9e4d-4f79-8895-e21be1274c7f",
-        "timestamp" : "2025-06-03T15:27:12+00:00",
+        "identifier" : "urn:uuid:9579c733-27d8-4516-89ad-3e5ab808c542",
+        "timestamp" : "2025-06-04T08:18:18+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -535,11 +535,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -560,7 +560,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-128609009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/128609009\">128609009</a></td><td>http://snomed.info/sct</td><td>Cerebral aneurysm</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-703221003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/703221003\">703221003</a></td><td>http://snomed.info/sct</td><td>Intracranial vascular malformation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-64572001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/64572001\">64572001</a></td><td>http://snomed.info/sct</td><td>Disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-71388002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/71388002\">71388002</a></td><td>http://snomed.info/sct</td><td>Procedure</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-128609009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/128609009\">128609009</a></td><td>http://snomed.info/sct</td><td>Cerebral aneurysm</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-703221003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/703221003\">703221003</a></td><td>http://snomed.info/sct</td><td>Intracranial vascular malformation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-64572001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/64572001\">64572001</a></td><td>http://snomed.info/sct</td><td>Disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-71388002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/71388002\">71388002</a></td><td>http://snomed.info/sct</td><td>Procedure</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/hemorrhagic-stroke-bleeding-reason-vs",
       "version" : "0.1.0",
@@ -570,8 +570,8 @@
       "experimental" : true,
       "date" : "2025-03-31",
       "expansion" : {
-        "identifier" : "urn:uuid:04c1b995-0528-4485-a7a2-89c96409512b",
-        "timestamp" : "2025-06-03T15:27:13+00:00",
+        "identifier" : "urn:uuid:868b8197-b00a-420f-ab32-40bf3b863e91",
+        "timestamp" : "2025-06-04T08:18:18+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -596,11 +596,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -638,10 +638,10 @@
       "name" : "InitialCareIntensityVS",
       "title" : "Initial Care Intensity ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:210bef5c-c66f-4afc-bdda-9db02a403303",
-        "timestamp" : "2025-06-03T15:27:13+00:00",
+        "identifier" : "urn:uuid:6f78a9bf-816e-4d8b-b892-6da7fcfcf437",
+        "timestamp" : "2025-06-04T08:18:19+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -692,7 +692,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 7 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-724425005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/724425005\">724425005</a></td><td>http://snomed.info/sct</td><td>Cerebral ischemic stroke due to intracranial large artery atherosclerosis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-724426006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/724426006\">724426006</a></td><td>http://snomed.info/sct</td><td>Cerebral ischemic stroke due to extracranial large artery atherosclerosis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-1251566005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1251566005\">1251566005</a></td><td>http://snomed.info/sct</td><td>Embolism from heart</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-404684003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/404684003\">404684003</a></td><td>http://snomed.info/sct</td><td>Clinical finding (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-16891111000119104\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/16891111000119104\">16891111000119104</a></td><td>http://snomed.info/sct</td><td>Cryptogenic stroke (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-230698000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/230698000\">230698000</a></td><td>http://snomed.info/sct</td><td>Lacunar infarction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-443929000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/443929000\">443929000</a></td><td>http://snomed.info/sct</td><td>Small vessel cerebrovascular disease (disorder)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 7 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-724425005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/724425005\">724425005</a></td><td>http://snomed.info/sct</td><td>Cerebral ischemic stroke due to intracranial large artery atherosclerosis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-724426006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/724426006\">724426006</a></td><td>http://snomed.info/sct</td><td>Cerebral ischemic stroke due to extracranial large artery atherosclerosis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-1251566005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1251566005\">1251566005</a></td><td>http://snomed.info/sct</td><td>Embolism from heart</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-404684003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/404684003\">404684003</a></td><td>http://snomed.info/sct</td><td>Clinical finding (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-16891111000119104\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/16891111000119104\">16891111000119104</a></td><td>http://snomed.info/sct</td><td>Cryptogenic stroke (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-230698000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/230698000\">230698000</a></td><td>http://snomed.info/sct</td><td>Lacunar infarction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-443929000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/443929000\">443929000</a></td><td>http://snomed.info/sct</td><td>Small vessel cerebrovascular disease (disorder)</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/ischemic-stroke-etiology-vs",
       "version" : "0.1.0",
@@ -702,8 +702,8 @@
       "experimental" : true,
       "date" : "2025-03-31",
       "expansion" : {
-        "identifier" : "urn:uuid:4e8ba111-764f-4b4e-bec1-0754d52934c1",
-        "timestamp" : "2025-06-03T15:27:13+00:00",
+        "identifier" : "urn:uuid:a03e5540-beac-4c8d-a3e4-713b910686fe",
+        "timestamp" : "2025-06-04T08:18:19+00:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -728,11 +728,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -778,17 +778,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 13 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372756006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372756006\">372756006</a></td><td>http://snomed.info/sct</td><td>Warfarin (substance)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-698871007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/698871007\">698871007</a></td><td>http://snomed.info/sct</td><td>Dabigatran</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-442031002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/442031002\">442031002</a></td><td>http://snomed.info/sct</td><td>Rivaroxaban</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-698090000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/698090000\">698090000</a></td><td>http://snomed.info/sct</td><td>Apixaban</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-712778008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/712778008\">712778008</a></td><td>http://snomed.info/sct</td><td>Edoxaban (substance)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372862008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372862008\">372862008</a></td><td>http://snomed.info/sct</td><td>Anticoagulant (substance)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-387458008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/387458008\">387458008</a></td><td>http://snomed.info/sct</td><td>Aspirin (substance)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-386952008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/386952008\">386952008</a></td><td>http://snomed.info/sct</td><td>Clopidogrel (substance)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-698805004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/698805004\">698805004</a></td><td>http://snomed.info/sct</td><td>Ticagrelor (substance)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-443129001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/443129001\">443129001</a></td><td>http://snomed.info/sct</td><td>Prasugrel (substance)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-387371005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/387371005\">387371005</a></td><td>http://snomed.info/sct</td><td>Dipyridamole (substance)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-771451006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/771451006\">771451006</a></td><td>http://snomed.info/sct</td><td>Platelet aggregation inhibitor (disposition)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372562003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372562003\">372562003</a></td><td>http://snomed.info/sct</td><td>Enoxaparin (substance)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 13 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372756006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372756006\">372756006</a></td><td>http://snomed.info/sct</td><td>Warfarin (substance)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-698871007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/698871007\">698871007</a></td><td>http://snomed.info/sct</td><td>Dabigatran</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-442031002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/442031002\">442031002</a></td><td>http://snomed.info/sct</td><td>Rivaroxaban</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-698090000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/698090000\">698090000</a></td><td>http://snomed.info/sct</td><td>Apixaban</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-712778008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/712778008\">712778008</a></td><td>http://snomed.info/sct</td><td>Edoxaban (substance)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372862008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372862008\">372862008</a></td><td>http://snomed.info/sct</td><td>Anticoagulant (substance)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-387458008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/387458008\">387458008</a></td><td>http://snomed.info/sct</td><td>Aspirin (substance)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-386952008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/386952008\">386952008</a></td><td>http://snomed.info/sct</td><td>Clopidogrel (substance)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-698805004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/698805004\">698805004</a></td><td>http://snomed.info/sct</td><td>Ticagrelor (substance)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-443129001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/443129001\">443129001</a></td><td>http://snomed.info/sct</td><td>Prasugrel (substance)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-387371005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/387371005\">387371005</a></td><td>http://snomed.info/sct</td><td>Dipyridamole (substance)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-771451006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/771451006\">771451006</a></td><td>http://snomed.info/sct</td><td>Platelet aggregation inhibitor (disposition)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372562003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372562003\">372562003</a></td><td>http://snomed.info/sct</td><td>Enoxaparin (substance)</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/medication-vs",
       "version" : "0.1.0",
       "name" : "MedicationVS",
       "title" : "Medications ValueSet",
       "status" : "draft",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:282b3d25-f319-4a41-b4ea-3b9ede0011b8",
-        "timestamp" : "2025-06-03T15:27:14+00:00",
+        "identifier" : "urn:uuid:dde042f0-0d7c-4ed6-93e5-fb1897136582",
+        "timestamp" : "2025-06-04T08:18:19+00:00",
         "total" : 13,
         "offset" : 0,
         "parameter" : [{
@@ -813,11 +813,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -893,7 +893,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 12 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-413081008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/413081008\">413081008</a></td><td>http://snomed.info/sct</td><td>Clopidogrel prophylaxis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-308116003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/308116003\">308116003</a></td><td>http://snomed.info/sct</td><td>Antihypertensive therapy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-722045009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/722045009\">722045009</a></td><td>http://snomed.info/sct</td><td>Warfarin therapy (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-1335906002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1335906002\">1335906002</a></td><td>http://snomed.info/sct</td><td>Rivaroxaban therapy (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-1335908001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1335908001\">1335908001</a></td><td>http://snomed.info/sct</td><td>Apixaban therapy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-1338036007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1338036007\">1338036007</a></td><td>http://snomed.info/sct</td><td>Edoxaban therapy (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-182764009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/182764009\">182764009</a></td><td>http://snomed.info/sct</td><td>Anticoagulant therapy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-315053001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/315053001\">315053001</a></td><td>http://snomed.info/sct</td><td>Statin prophylaxis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-443464003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/443464003\">443464003</a></td><td>http://snomed.info/sct</td><td>Low molecular weight heparin therapy (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-735127005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/735127005\">735127005</a></td><td>http://snomed.info/sct</td><td>Dipyridamole therapy (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-1237404009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1237404009\">1237404009</a></td><td>http://snomed.info/sct</td><td>Uses hormone method of contraception (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-416608005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/416608005\">416608005</a></td><td>http://snomed.info/sct</td><td>Drug therapy (procedure)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 12 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-413081008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/413081008\">413081008</a></td><td>http://snomed.info/sct</td><td>Clopidogrel prophylaxis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-308116003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/308116003\">308116003</a></td><td>http://snomed.info/sct</td><td>Antihypertensive therapy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-722045009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/722045009\">722045009</a></td><td>http://snomed.info/sct</td><td>Warfarin therapy (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-1335906002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1335906002\">1335906002</a></td><td>http://snomed.info/sct</td><td>Rivaroxaban therapy (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-1335908001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1335908001\">1335908001</a></td><td>http://snomed.info/sct</td><td>Apixaban therapy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-1338036007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1338036007\">1338036007</a></td><td>http://snomed.info/sct</td><td>Edoxaban therapy (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-182764009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/182764009\">182764009</a></td><td>http://snomed.info/sct</td><td>Anticoagulant therapy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-315053001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/315053001\">315053001</a></td><td>http://snomed.info/sct</td><td>Statin prophylaxis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-443464003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/443464003\">443464003</a></td><td>http://snomed.info/sct</td><td>Low molecular weight heparin therapy (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-735127005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/735127005\">735127005</a></td><td>http://snomed.info/sct</td><td>Dipyridamole therapy (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-1237404009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1237404009\">1237404009</a></td><td>http://snomed.info/sct</td><td>Uses hormone method of contraception (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-416608005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/416608005\">416608005</a></td><td>http://snomed.info/sct</td><td>Drug therapy (procedure)</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/medicationStatement-meds-codes-vs",
       "version" : "0.1.0",
@@ -903,8 +903,8 @@
       "experimental" : true,
       "date" : "2025-03-31",
       "expansion" : {
-        "identifier" : "urn:uuid:1af413b0-1e48-4724-adcd-0c814e699581",
-        "timestamp" : "2025-06-03T15:27:14+00:00",
+        "identifier" : "urn:uuid:22d28ed3-95ce-4fa3-98c9-fcd3599e96e2",
+        "timestamp" : "2025-06-04T08:18:19+00:00",
         "total" : 12,
         "offset" : 0,
         "parameter" : [{
@@ -929,11 +929,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -1011,10 +1011,10 @@
       "name" : "MRsScoreVS",
       "title" : "modified Rankin Scale (mRS) Score ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:3a8dacde-8501-4ce4-94ac-75c451023115",
-        "timestamp" : "2025-06-03T15:27:15+00:00",
+        "identifier" : "urn:uuid:459ba6c4-3134-41a6-885e-aec0bf0908b3",
+        "timestamp" : "2025-06-04T08:18:20+00:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -1080,6 +1080,82 @@
     }
   },
   {
+    "fullUrl" : "http://testSK.org/ValueSet/mtici-code-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-mtici-score-cs.html\">codesystem mTICI Score Code System v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/mtici-score-cs-0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-mtici-score-cs.html#mtici-score-cs-0\">0</a></td><td>http://testSK.org/CodeSystem/mtici-score-cs</td><td>Grade 0: No perfusion</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/mtici-score-cs-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-mtici-score-cs.html#mtici-score-cs-1\">1</a></td><td>http://testSK.org/CodeSystem/mtici-score-cs</td><td>Grade 1: Antegrade reperfusion past the initial occlusion, but limited distal branch filling with little or slow distal reperfusion</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/mtici-score-cs-2a\"> </a>\u00a0\u00a0<a href=\"CodeSystem-mtici-score-cs.html#mtici-score-cs-2a\">2a</a></td><td>http://testSK.org/CodeSystem/mtici-score-cs</td><td>Grade 2a: Antegrade reperfusion of less than half of the occluded target artery previously ischemic territory</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/mtici-score-cs-2b\"> </a>\u00a0\u00a0<a href=\"CodeSystem-mtici-score-cs.html#mtici-score-cs-2b\">2b</a></td><td>http://testSK.org/CodeSystem/mtici-score-cs</td><td>Grade 2b: Antegrade reperfusion of more than half of the previously occluded target artery ischemic territory</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/mtici-score-cs-2c\"> </a>\u00a0\u00a0<a href=\"CodeSystem-mtici-score-cs.html#mtici-score-cs-2c\">2c</a></td><td>http://testSK.org/CodeSystem/mtici-score-cs</td><td>Grade 2c: Near complete perfusion except for slow flow or distal emboli in a few distal cortical vessels</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/mtici-score-cs-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-mtici-score-cs.html#mtici-score-cs-3\">3</a></td><td>http://testSK.org/CodeSystem/mtici-score-cs</td><td>Grade 3: Complete antegrade reperfusion of the previously occluded target artery ischemic territory, with absence of visualized occlusion in all distal branches</td></tr></table></div>"
+      },
+      "url" : "http://testSK.org/ValueSet/mtici-code-vs",
+      "version" : "0.1.0",
+      "name" : "mTICICodeVS",
+      "title" : "mTICI Score Codes ValueSet",
+      "status" : "active",
+      "date" : "2025-06-04T08:16:37+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:1d2ce65d-bdb3-419a-a462-731d0d1c6c38",
+        "timestamp" : "2025-06-04T08:18:20+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-experimental",
+          "valueUri" : "http://testSK.org/CodeSystem/mtici-score-cs|0.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://testSK.org/CodeSystem/mtici-score-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://testSK.org/CodeSystem/mtici-score-cs",
+          "code" : "0",
+          "display" : "Grade 0: No perfusion"
+        },
+        {
+          "system" : "http://testSK.org/CodeSystem/mtici-score-cs",
+          "code" : "1",
+          "display" : "Grade 1: Antegrade reperfusion past the initial occlusion, but limited distal branch filling with little or slow distal reperfusion"
+        },
+        {
+          "system" : "http://testSK.org/CodeSystem/mtici-score-cs",
+          "code" : "2a",
+          "display" : "Grade 2a: Antegrade reperfusion of less than half of the occluded target artery previously ischemic territory"
+        },
+        {
+          "system" : "http://testSK.org/CodeSystem/mtici-score-cs",
+          "code" : "2b",
+          "display" : "Grade 2b: Antegrade reperfusion of more than half of the previously occluded target artery ischemic territory"
+        },
+        {
+          "system" : "http://testSK.org/CodeSystem/mtici-score-cs",
+          "code" : "2c",
+          "display" : "Grade 2c: Near complete perfusion except for slow flow or distal emboli in a few distal cortical vessels"
+        },
+        {
+          "system" : "http://testSK.org/CodeSystem/mtici-score-cs",
+          "code" : "3",
+          "display" : "Grade 3: Complete antegrade reperfusion of the previously occluded target artery ischemic territory, with absence of visualized occlusion in all distal branches"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://testSK.org/ValueSet/mtici-score-vs",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1095,8 +1171,8 @@
       "experimental" : true,
       "date" : "2025-03-31",
       "expansion" : {
-        "identifier" : "urn:uuid:708a868e-ab06-40c6-bd6f-24ec77fb2e07",
-        "timestamp" : "2025-06-03T15:27:15+00:00",
+        "identifier" : "urn:uuid:63637bdb-5b2f-4a4e-9c22-e5f1724be31e",
+        "timestamp" : "2025-06-04T08:18:20+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -1158,7 +1234,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-472191000119101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/472191000119101\">472191000119101</a></td><td>http://snomed.info/sct</td><td>Thrombolysis of cerebral artery by intravenous infusion</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-397046001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/397046001\">397046001</a></td><td>http://snomed.info/sct</td><td>Thrombectomy of artery (procedure)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-472191000119101\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/472191000119101\">472191000119101</a></td><td>http://snomed.info/sct</td><td>Thrombolysis of cerebral artery by intravenous infusion</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-397046001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/397046001\">397046001</a></td><td>http://snomed.info/sct</td><td>Thrombectomy of artery (procedure)</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/perforation-procedures-vs",
       "version" : "0.1.0",
@@ -1168,8 +1244,8 @@
       "experimental" : true,
       "date" : "2025-03-31",
       "expansion" : {
-        "identifier" : "urn:uuid:1145da96-06a7-49b3-a749-7986506854f2",
-        "timestamp" : "2025-06-03T15:27:15+00:00",
+        "identifier" : "urn:uuid:315149a7-fb1f-497f-a88f-9ee7bd807b5c",
+        "timestamp" : "2025-06-04T08:18:20+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -1194,11 +1270,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -1226,10 +1302,10 @@
       "name" : "ProcedureTimingContextVS",
       "title" : "Procedure Timing Context ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:b91a3fac-c08a-447a-9b6c-b59d3991260a",
-        "timestamp" : "2025-06-03T15:27:16+00:00",
+        "identifier" : "urn:uuid:e078be2b-3061-4a10-8bd1-f90309f7616a",
+        "timestamp" : "2025-06-04T08:18:20+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -1280,17 +1356,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-49436004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/49436004\">49436004</a></td><td>http://snomed.info/sct</td><td>Atrial fibrillation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-5370000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/5370000\">5370000</a></td><td>http://snomed.info/sct</td><td>Atrial flutter</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-49436004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/49436004\">49436004</a></td><td>http://snomed.info/sct</td><td>Atrial fibrillation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-5370000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/5370000\">5370000</a></td><td>http://snomed.info/sct</td><td>Atrial flutter</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/specific-finding-codes-vs",
       "version" : "0.1.0",
       "name" : "SpecificFindingCodesVS",
       "title" : "Specific Stroke Finding Codes ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:a713158b-b204-4672-a827-0c5eb67d5e57",
-        "timestamp" : "2025-06-03T15:27:16+00:00",
+        "identifier" : "urn:uuid:09183c79-7231-45b4-9ce6-dfe8cbba380d",
+        "timestamp" : "2025-06-04T08:18:20+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -1315,11 +1391,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -1340,17 +1416,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-715537001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/715537001\">715537001</a></td><td>http://snomed.info/sct</td><td>Transportation by ambulance (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-715957006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/715957006\">715957006</a></td><td>http://snomed.info/sct</td><td>Transportation by own transport (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-384762007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/384762007\">384762007</a></td><td>http://snomed.info/sct</td><td>Transportation procedure (procedure)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-715537001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/715537001\">715537001</a></td><td>http://snomed.info/sct</td><td>Transportation by ambulance (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-715957006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/715957006\">715957006</a></td><td>http://snomed.info/sct</td><td>Transportation by own transport (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-384762007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/384762007\">384762007</a></td><td>http://snomed.info/sct</td><td>Transportation procedure (procedure)</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/stroke-arrival-mode-vs",
       "version" : "0.1.0",
       "name" : "StrokeArrivalModeVS",
       "title" : "Stroke Arrival Mode ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:6143d525-4040-4161-9716-b6a57d582f1c",
-        "timestamp" : "2025-06-03T15:27:17+00:00",
+        "identifier" : "urn:uuid:41088560-3a43-47d8-802e-f5d5a9279748",
+        "timestamp" : "2025-06-04T08:18:21+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -1375,11 +1451,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -1405,17 +1481,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-230690007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/230690007\">230690007</a></td><td>http://snomed.info/sct</td><td>CVA - Cerebrovascular accident</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-184091000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/184091000\">184091000</a></td><td>http://snomed.info/sct</td><td>Patient in hospital</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-230690007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/230690007\">230690007</a></td><td>http://snomed.info/sct</td><td>CVA - Cerebrovascular accident</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-184091000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/184091000\">184091000</a></td><td>http://snomed.info/sct</td><td>Patient in hospital</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/stroke-circumstance-codes-vs",
       "version" : "0.1.0",
       "name" : "StrokeCircumstanceCodesVS",
       "title" : "Stroke Circumstance Codes ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:72468346-c28a-423e-a9f9-8edf822d9705",
-        "timestamp" : "2025-06-03T15:27:17+00:00",
+        "identifier" : "urn:uuid:95d89b94-3c84-4f6a-86ee-063e7be79087",
+        "timestamp" : "2025-06-04T08:18:21+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -1440,11 +1516,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -1465,17 +1541,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-422504002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/422504002\">422504002</a></td><td>http://snomed.info/sct</td><td>Ischemic stroke (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-274100004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/274100004\">274100004</a></td><td>http://snomed.info/sct</td><td>Cerebral hemorrhage</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-266257000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/266257000\">266257000</a></td><td>http://snomed.info/sct</td><td>Temporary cerebral vascular dysfunction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-21454007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/21454007\">21454007</a></td><td>http://snomed.info/sct</td><td>Subarachnoid hemorrhage</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-95455008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/95455008\">95455008</a></td><td>http://snomed.info/sct</td><td>Thrombosis of cerebral veins</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-422504002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/422504002\">422504002</a></td><td>http://snomed.info/sct</td><td>Ischemic stroke (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-274100004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/274100004\">274100004</a></td><td>http://snomed.info/sct</td><td>Cerebral hemorrhage</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-266257000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/266257000\">266257000</a></td><td>http://snomed.info/sct</td><td>Temporary cerebral vascular dysfunction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-21454007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/21454007\">21454007</a></td><td>http://snomed.info/sct</td><td>Subarachnoid hemorrhage</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-95455008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/95455008\">95455008</a></td><td>http://snomed.info/sct</td><td>Thrombosis of cerebral veins</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/stroke-diagnosis-vs",
       "version" : "0.1.0",
       "name" : "StrokeDiagnosisVS",
       "title" : "Stroke Diagnosis ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:02aac21b-9b63-4c9c-9466-211fe1f17b28",
-        "timestamp" : "2025-06-03T15:27:18+00:00",
+        "identifier" : "urn:uuid:331c469b-290f-4e01-8294-0fd56221155e",
+        "timestamp" : "2025-06-04T08:18:21+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -1500,11 +1576,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -1540,17 +1616,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-306689006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/306689006\">306689006</a></td><td>http://snomed.info/sct</td><td>Discharge to home (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-37729005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/37729005\">37729005</a></td><td>http://snomed.info/sct</td><td>Patient transfer, in-hospital</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-19712007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/19712007\">19712007</a></td><td>http://snomed.info/sct</td><td>Patient transfer, to another health care facility</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-306694006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/306694006\">306694006</a></td><td>http://snomed.info/sct</td><td>Discharge to nursing home</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-371828006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/371828006\">371828006</a></td><td>http://snomed.info/sct</td><td>Patient deceased during stay (discharge status = dead) (finding)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-306689006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/306689006\">306689006</a></td><td>http://snomed.info/sct</td><td>Discharge to home (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-37729005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/37729005\">37729005</a></td><td>http://snomed.info/sct</td><td>Patient transfer, in-hospital</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-19712007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/19712007\">19712007</a></td><td>http://snomed.info/sct</td><td>Patient transfer, to another health care facility</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-306694006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/306694006\">306694006</a></td><td>http://snomed.info/sct</td><td>Discharge to nursing home</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-371828006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/371828006\">371828006</a></td><td>http://snomed.info/sct</td><td>Patient deceased during stay (discharge status = dead) (finding)</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/stroke-discharge-destination-vs",
       "version" : "0.1.0",
       "name" : "StrokeDischargeDestinationVS",
       "title" : "Stroke Discharge Destination ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:787d8ca9-70ce-4788-9ecd-ec7eba118dd6",
-        "timestamp" : "2025-06-03T15:27:19+00:00",
+        "identifier" : "urn:uuid:f387ce11-c026-40de-a365-3386fc4de60a",
+        "timestamp" : "2025-06-04T08:18:21+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -1575,11 +1651,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -1610,6 +1686,112 @@
     }
   },
   {
+    "fullUrl" : "http://testSK.org/ValueSet/stroke-finding-codes-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li>SNOMED CT International edition 01-Feb 2025</li><li><a href=\"CodeSystem-mtici-score-cs.html\">codesystem mTICI Score Code System v0.1.0 (CodeSystem)</a></li><li><a href=\"ValueSet-mtici-code-vs.html\">valueset mTICI Score Codes ValueSet v0.1.0 (ValueSet)</a></li><li><a href=\"ValueSet-specific-finding-codes-vs.html\">valueset Specific Stroke Finding Codes ValueSet v0.1.0 (ValueSet)</a></li></ul></div><p>This value set contains 8 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-49436004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/49436004\">49436004</a></td><td>http://snomed.info/sct</td><td>Atrial fibrillation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-5370000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/5370000\">5370000</a></td><td>http://snomed.info/sct</td><td>Atrial flutter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/mtici-score-cs-0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-mtici-score-cs.html#mtici-score-cs-0\">0</a></td><td>http://testSK.org/CodeSystem/mtici-score-cs</td><td>Grade 0: No perfusion</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/mtici-score-cs-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-mtici-score-cs.html#mtici-score-cs-1\">1</a></td><td>http://testSK.org/CodeSystem/mtici-score-cs</td><td>Grade 1: Antegrade reperfusion past the initial occlusion, but limited distal branch filling with little or slow distal reperfusion</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/mtici-score-cs-2a\"> </a>\u00a0\u00a0<a href=\"CodeSystem-mtici-score-cs.html#mtici-score-cs-2a\">2a</a></td><td>http://testSK.org/CodeSystem/mtici-score-cs</td><td>Grade 2a: Antegrade reperfusion of less than half of the occluded target artery previously ischemic territory</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/mtici-score-cs-2b\"> </a>\u00a0\u00a0<a href=\"CodeSystem-mtici-score-cs.html#mtici-score-cs-2b\">2b</a></td><td>http://testSK.org/CodeSystem/mtici-score-cs</td><td>Grade 2b: Antegrade reperfusion of more than half of the previously occluded target artery ischemic territory</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/mtici-score-cs-2c\"> </a>\u00a0\u00a0<a href=\"CodeSystem-mtici-score-cs.html#mtici-score-cs-2c\">2c</a></td><td>http://testSK.org/CodeSystem/mtici-score-cs</td><td>Grade 2c: Near complete perfusion except for slow flow or distal emboli in a few distal cortical vessels</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/mtici-score-cs-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-mtici-score-cs.html#mtici-score-cs-3\">3</a></td><td>http://testSK.org/CodeSystem/mtici-score-cs</td><td>Grade 3: Complete antegrade reperfusion of the previously occluded target artery ischemic territory, with absence of visualized occlusion in all distal branches</td></tr></table></div>"
+      },
+      "url" : "http://testSK.org/ValueSet/stroke-finding-codes-vs",
+      "version" : "0.1.0",
+      "name" : "StrokeFindingCodesVS",
+      "title" : "Specific Stroke Finding Codes ValueSet",
+      "status" : "active",
+      "date" : "2025-06-04T08:16:37+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:093531e5-0ea0-4ecf-b2e2-fa8275ad558c",
+        "timestamp" : "2025-06-04T08:18:22+00:00",
+        "total" : 8,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "http://testSK.org/ValueSet/specific-finding-codes-vs|0.1.0"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "http://testSK.org/ValueSet/mtici-code-vs|0.1.0"
+        },
+        {
+          "name" : "warning-experimental",
+          "valueUri" : "http://testSK.org/CodeSystem/mtici-score-cs|0.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://testSK.org/CodeSystem/mtici-score-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "49436004",
+          "display" : "Atrial fibrillation"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "5370000",
+          "display" : "Atrial flutter"
+        },
+        {
+          "system" : "http://testSK.org/CodeSystem/mtici-score-cs",
+          "code" : "0",
+          "display" : "Grade 0: No perfusion"
+        },
+        {
+          "system" : "http://testSK.org/CodeSystem/mtici-score-cs",
+          "code" : "1",
+          "display" : "Grade 1: Antegrade reperfusion past the initial occlusion, but limited distal branch filling with little or slow distal reperfusion"
+        },
+        {
+          "system" : "http://testSK.org/CodeSystem/mtici-score-cs",
+          "code" : "2a",
+          "display" : "Grade 2a: Antegrade reperfusion of less than half of the occluded target artery previously ischemic territory"
+        },
+        {
+          "system" : "http://testSK.org/CodeSystem/mtici-score-cs",
+          "code" : "2b",
+          "display" : "Grade 2b: Antegrade reperfusion of more than half of the previously occluded target artery ischemic territory"
+        },
+        {
+          "system" : "http://testSK.org/CodeSystem/mtici-score-cs",
+          "code" : "2c",
+          "display" : "Grade 2c: Near complete perfusion except for slow flow or distal emboli in a few distal cortical vessels"
+        },
+        {
+          "system" : "http://testSK.org/CodeSystem/mtici-score-cs",
+          "code" : "3",
+          "display" : "Grade 3: Complete antegrade reperfusion of the previously occluded target artery ischemic territory, with absence of visualized occlusion in all distal branches"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1622,10 +1804,10 @@
       "name" : "StrokeProcNotDoneReasonVS",
       "title" : "Stroke Procedure Not Done Reason ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:1b5ddc8d-865e-48df-b4a3-fb7bfe9da5ab",
-        "timestamp" : "2025-06-03T15:27:20+00:00",
+        "identifier" : "urn:uuid:85b7b06a-bba3-42e5-a94e-b01be78b73e5",
+        "timestamp" : "2025-06-04T08:18:22+00:00",
         "total" : 11,
         "offset" : 0,
         "parameter" : [{
@@ -1716,17 +1898,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 10 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-49436004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/49436004\">49436004</a></td><td>http://snomed.info/sct</td><td>Atrial fibrillation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-5370000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/5370000\">5370000</a></td><td>http://snomed.info/sct</td><td>Atrial flutter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-22298006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/22298006\">22298006</a></td><td>http://snomed.info/sct</td><td>Myocardial infarction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-53741008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/53741008\">53741008</a></td><td>http://snomed.info/sct</td><td>Coronary arteriosclerosis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-73211009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/73211009\">73211009</a></td><td>http://snomed.info/sct</td><td>Diabetes mellitus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-55822004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/55822004\">55822004</a></td><td>http://snomed.info/sct</td><td>Hyperlipidemia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-38341003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/38341003\">38341003</a></td><td>http://snomed.info/sct</td><td>High blood pressure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-230706003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/230706003\">230706003</a></td><td>http://snomed.info/sct</td><td>Hemorrhagic cerebral infarction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-266257000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/266257000\">266257000</a></td><td>http://snomed.info/sct</td><td>Temporary cerebral vascular dysfunction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-422504002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/422504002\">422504002</a></td><td>http://snomed.info/sct</td><td>Ischemic stroke (disorder)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 10 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-49436004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/49436004\">49436004</a></td><td>http://snomed.info/sct</td><td>Atrial fibrillation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-5370000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/5370000\">5370000</a></td><td>http://snomed.info/sct</td><td>Atrial flutter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-22298006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/22298006\">22298006</a></td><td>http://snomed.info/sct</td><td>Myocardial infarction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-53741008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/53741008\">53741008</a></td><td>http://snomed.info/sct</td><td>Coronary arteriosclerosis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-73211009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/73211009\">73211009</a></td><td>http://snomed.info/sct</td><td>Diabetes mellitus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-55822004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/55822004\">55822004</a></td><td>http://snomed.info/sct</td><td>Hyperlipidemia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-38341003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/38341003\">38341003</a></td><td>http://snomed.info/sct</td><td>High blood pressure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-230706003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/230706003\">230706003</a></td><td>http://snomed.info/sct</td><td>Hemorrhagic cerebral infarction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-266257000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/266257000\">266257000</a></td><td>http://snomed.info/sct</td><td>Temporary cerebral vascular dysfunction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-422504002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/422504002\">422504002</a></td><td>http://snomed.info/sct</td><td>Ischemic stroke (disorder)</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs",
       "version" : "0.1.0",
       "name" : "StrokeRiskFactorSNOMEDVS",
       "title" : "Stroke Risk Factor ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:9e7e15d5-7240-41f9-8518-c1f69a655776",
-        "timestamp" : "2025-06-03T15:27:20+00:00",
+        "identifier" : "urn:uuid:19f1ae26-3ef3-422e-bad4-7e7dd8ce77f7",
+        "timestamp" : "2025-06-04T08:18:22+00:00",
         "total" : 10,
         "offset" : 0,
         "parameter" : [{
@@ -1751,11 +1933,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -1816,7 +1998,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-1290000005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1290000005\">1290000005</a></td><td>http://snomed.info/sct</td><td>Assessment using Gugging Swallowing Screen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-304909008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/304909008\">304909008</a></td><td>http://snomed.info/sct</td><td>Bilateral hip joint</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-1290000005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1290000005\">1290000005</a></td><td>http://snomed.info/sct</td><td>Assessment using Gugging Swallowing Screen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-304909008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/304909008\">304909008</a></td><td>http://snomed.info/sct</td><td>Bilateral hip joint</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/swallow-procedures-vs",
       "version" : "0.1.0",
@@ -1826,8 +2008,8 @@
       "experimental" : true,
       "date" : "2025-03-31",
       "expansion" : {
-        "identifier" : "urn:uuid:9d7c0274-7de9-4ea5-bf87-d96484adb832",
-        "timestamp" : "2025-06-03T15:27:21+00:00",
+        "identifier" : "urn:uuid:dbe35640-8ad9-4149-bb00-37f3592646a8",
+        "timestamp" : "2025-06-04T08:18:22+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -1852,11 +2034,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -1884,10 +2066,10 @@
       "name" : "SwallowingScreeningTimingCategoryVS",
       "title" : "Swallowing Screening Timing Category ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:15b2441d-6779-436c-a310-d6081d3f5474",
-        "timestamp" : "2025-06-03T15:27:22+00:00",
+        "identifier" : "urn:uuid:c2aaf798-7201-4401-8db0-2f192910cc72",
+        "timestamp" : "2025-06-04T08:18:23+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -1943,17 +2125,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 1 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-307312008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/307312008\">307312008</a></td><td>http://snomed.info/sct</td><td>Perforation of artery</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 1 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-307312008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/307312008\">307312008</a></td><td>http://snomed.info/sct</td><td>Perforation of artery</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/thrombectomy-complication-vs",
       "version" : "0.1.0",
       "name" : "ThrombectomyComplicationVS",
       "title" : "Thrombectomy Complication ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:068d541e-7d26-4263-8f6a-9c402d06fcb9",
-        "timestamp" : "2025-06-03T15:27:22+00:00",
+        "identifier" : "urn:uuid:d03e14a0-add9-42a1-89ae-9ef327d7a836",
+        "timestamp" : "2025-06-04T08:18:23+00:00",
         "total" : 1,
         "offset" : 0,
         "parameter" : [{
@@ -1978,11 +2160,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -1998,18 +2180,18 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-timing-metric-codes-cs.html\">codesystem Stroke Timing Metric Codes ValueSet v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/timing-metric-codes-cs-D2G\"> </a>\u00a0\u00a0<a href=\"CodeSystem-timing-metric-codes-cs.html#timing-metric-codes-cs-D2G\">D2G</a></td><td>http://testSK.org/CodeSystem/timing-metric-codes-cs</td><td>Door to Groin</td><td><div><p>Time (in minutes) from hospital arrival to the groin puncture for mechanical thrombectomy</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://testSK.org/CodeSystem/timing-metric-codes-cs-D2N\"> </a>\u00a0\u00a0<a href=\"CodeSystem-timing-metric-codes-cs.html#timing-metric-codes-cs-D2N\">D2N</a></td><td>http://testSK.org/CodeSystem/timing-metric-codes-cs</td><td>Door to Needle</td><td><div><p>Time (in minutes) from the patient’s arrival at the hospital to the start of intravenous thrombolysis</p>\n</div></td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/timing-metric-codes-vs",
       "version" : "0.1.0",
       "name" : "TimingMetricCodesVS",
       "title" : "Stroke Timing Metric Codes ValueSet",
       "status" : "active",
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:4efe1bb5-2ce0-4190-b3f8-9abf6c43986b",
-        "timestamp" : "2025-06-03T15:27:22+00:00",
-        "total" : 0,
+        "identifier" : "urn:uuid:da940a41-e6c8-4590-9016-db765c6e4a9f",
+        "timestamp" : "2025-06-04T08:18:23+00:00",
+        "total" : 2,
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -2028,16 +2210,18 @@
           "valueBoolean" : false
         },
         {
-          "name" : "used-valueset",
-          "valueUri" : "null"
-        },
-        {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://testSK.org/CodeSystem/timing-metric-codes-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://testSK.org/CodeSystem/timing-metric-codes-cs",
+          "code" : "D2G",
+          "display" : "Door to Groin"
         },
         {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "system" : "http://testSK.org/CodeSystem/timing-metric-codes-cs",
+          "code" : "D2N",
+          "display" : "Door to Needle"
         }]
       }
     }
@@ -2048,7 +2232,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.hl7europe.eu based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-271649006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/271649006\">271649006</a></td><td>http://snomed.info/sct</td><td>Systolic blood pressure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-271650006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/271650006\">271650006</a></td><td>http://snomed.info/sct</td><td>Diastolic blood pressure</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-271649006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/271649006\">271649006</a></td><td>http://snomed.info/sct</td><td>Systolic blood pressure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-271650006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/271650006\">271650006</a></td><td>http://snomed.info/sct</td><td>Diastolic blood pressure</td></tr></table></div>"
       },
       "url" : "http://testSK.org/ValueSet/vital-sign-codes-vs",
       "version" : "0.1.0",
@@ -2056,10 +2240,10 @@
       "title" : "Stroke Vital Sign Codes ValueSet",
       "status" : "active",
       "experimental" : true,
-      "date" : "2025-06-03T15:24:37+00:00",
+      "date" : "2025-06-04T08:16:37+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:1fde2f65-e1dc-4fd0-90e8-5ec35f80eddc",
-        "timestamp" : "2025-06-03T15:27:23+00:00",
+        "identifier" : "urn:uuid:060e41b9-4ccc-42d0-a4e7-05506bbde5c4",
+        "timestamp" : "2025-06-04T08:18:23+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -2084,11 +2268,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",

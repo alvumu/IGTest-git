@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="IGTest"/>
   <status value="draft"/>
-  <date value="2025-06-03T15:24:37+00:00"/>
+  <date value="2025-06-04T08:16:37+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -60,7 +60,7 @@
         <reference value="StructureDefinition/age-at-onset-observation-profile"/>
       </reference>
       <name value="Age at Stroke Onset Observation Profile (R5)"/>
-      <description value="R5 Profile specifically for recording the patient's age at stroke onset."/>
+      <description value="Profile specifically for recording the patient's age at stroke onset."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -103,7 +103,7 @@
       <reference>
         <reference value="CodeSystem/afib-flutter-status-cs"/>
       </reference>
-      <name value="Atrial Fibrillation or Flutter Status Code System"/>
+      <name value="Atrial Fibrillation or Flutter Status Codes"/>
       <description value="Codes representing the status of Atrial Fibrillation or Flutter assessment."/>
       <isExample value="false"/>
     </resource>
@@ -126,7 +126,7 @@
         <reference value="StructureDefinition/base-stroke-observation"/>
       </reference>
       <name value="Base Profile for Stroke-Related Observations"/>
-      <description value="Common R5 constraints for observations recorded in the context of stroke care."/>
+      <description value="Constraints for observations recorded in the context of stroke care."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -193,16 +193,6 @@
       </reference>
       <name value="Discharge Medication Request Profile"/>
       <description value="Represents a medication prescription made as part of the patient's discharge plan, categorized as community administration."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/discharge-medication-vs"/>
-      </reference>
-      <name value="Discharge Medications ValueSet"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -340,10 +330,21 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/discharge-medication-vs"/>
+      </reference>
+      <name value="Medications ValueSet"/>
+      <description value="Codes for drug products or substances representing the Medications on the patient discharge."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/medicationStatement-meds-codes-vs"/>
       </reference>
       <name value="MedicationStatement Therapy/Finding Codes"/>
-      <description value="ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use). **NOTE: These codes are generally NOT suitable for MedicationStatement.medication[x] which expects product/substance codes.**"/>
+      <description value="ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use)."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -377,6 +378,28 @@
       </reference>
       <name value="mTICI Score Code System"/>
       <description value="CodeSystem containing the codes to represent the mTICI score."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mtici-code-cs"/>
+      </reference>
+      <name value="mTICI Score Codes CodeSystem"/>
+      <description value="Codes representing the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mtici-code-vs"/>
+      </reference>
+      <name value="mTICI Score Codes ValueSet"/>
+      <description value="ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -430,7 +453,7 @@
         <reference value="StructureDefinition/prior-medication-statement-profile"/>
       </reference>
       <name value="Prior Medication Statement Profile (R5)"/>
-      <description value="R5 Profile: Represents a statement about the patient's medication use *before* the index event. Uses adherence.code (#taking/#not-taking) to indicate usage status."/>
+      <description value="Represents a statement about the patient's medication use *before* the index event."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -501,13 +524,24 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/stroke-finding-codes-vs"/>
+      </reference>
+      <name value="Specific Stroke Finding Codes ValueSet"/>
+      <description value="ValueSet for specific coded findings like Afib/Flutter status or mTICI score."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/specific-finding-observation-profile"/>
       </reference>
       <name value="Specific Stroke Finding Observation Profile (R5)"/>
-      <description value="R5 Profile for specific coded findings like Afib/Flutter status or mTICI score."/>
+      <description value="Profile for specific coded findings like Afib/Flutter status or mTICI score."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -551,7 +585,7 @@
         <reference value="StructureDefinition/stroke-brain-imaging-procedure-profile"/>
       </reference>
       <name value="Stroke Brain Imaging Procedure Profile (R5)"/>
-      <description value="Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context."/>
+      <description value="Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -562,7 +596,7 @@
         <reference value="StructureDefinition/stroke-carotid-imaging-procedure-profile"/>
       </reference>
       <name value="Stroke Carotid Imaging Procedure Profile (R5)"/>
-      <description value="Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context."/>
+      <description value="Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -584,7 +618,7 @@
         <reference value="StructureDefinition/stroke-circumstance-observation-profile"/>
       </reference>
       <name value="Stroke Circumstance Observation Profile (R5)"/>
-      <description value="R5 Profile for recording findings about stroke onset circumstances (In-hospital, Wake-up)."/>
+      <description value="Profile for recording findings about stroke onset circumstances (In-hospital, Wake-up)."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -650,7 +684,7 @@
         <reference value="StructureDefinition/functional-score-observation-profile"/>
       </reference>
       <name value="Stroke Functional Score Observation Profile (R5, Timing Ext)"/>
-      <description value="R5 Profile for recording functional scores (mRS, NIHSS), using an extension for timing context."/>
+      <description value="Profile for recording functional scores (mRS, NIHSS), using an extension for timing context."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -727,7 +761,7 @@
         <reference value="StructureDefinition/stroke-swallow-procedure-profile"/>
       </reference>
       <name value="Stroke Swallow Procedure Profile (R5)"/>
-      <description value="Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context."/>
+      <description value="Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -738,7 +772,7 @@
         <reference value="StructureDefinition/stroke-thrombolysis-procedure-profile"/>
       </reference>
       <name value="Stroke Thrombolysis Procedure Profile (R5)"/>
-      <description value="Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context."/>
+      <description value="Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -747,6 +781,17 @@
       </extension>
       <reference>
         <reference value="ValueSet/timing-metric-codes-vs"/>
+      </reference>
+      <name value="Stroke Timing Metric Codes ValueSet"/>
+      <description value="ValueSet for key process timing metrics in acute stroke care (D2N, D2G)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/timing-metric-codes-cs"/>
       </reference>
       <name value="Stroke Timing Metric Codes ValueSet"/>
       <description value="Codes for key process timing metrics in acute stroke care (D2N, D2G)."/>
@@ -760,7 +805,7 @@
         <reference value="StructureDefinition/timing-metric-observation-profile"/>
       </reference>
       <name value="Stroke Timing Metric Observation Profile (R5)"/>
-      <description value="R5 Profile for recording key process timing metrics (D2N, D2G)."/>
+      <description value="Profile for recording key process timing metrics (D2N, D2G)."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -782,7 +827,7 @@
         <reference value="StructureDefinition/vital-sign-observation-profile"/>
       </reference>
       <name value="Stroke Vital Sign Observation Profile (R5)"/>
-      <description value="R5 Profile for recording key vital signs (Systolic/Diastolic BP) in stroke patients."/>
+      <description value="Profile for recording key vital signs (Systolic/Diastolic BP) in stroke patients."/>
       <isExample value="false"/>
     </resource>
     <resource>

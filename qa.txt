@@ -1,18 +1,20 @@
 IGTest : Validation Results
 =========================================
 
-err = 25, warn = 112, info = 20
+err = 20, warn = 117, info = 18
 IG Publisher Version: 2.0.4
-Generated Tue Jun 03 15:27:56 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
- Build Errors : 557 / 25 / 0
+Generated Wed Jun 04 08:18:50 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
+ Build Errors : 581 / 24 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-afib-flutter-status-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-initial-care-intensity-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mrs-score-cs : 0 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-code-cs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-score-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-procedure-timing-context-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-proc-not-done-reason-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-screen-time-cs : 0 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-timing-metric-codes-cs : 0 / 3 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionExample : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeRiskFactorConditionExample : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Encounter-StrokeEncounterExample : 0 / 1 / 2
@@ -24,7 +26,7 @@ Generated Tue Jun 03 15:27:56 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (c
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-SpecificFindingObservationExample : 0 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-SpecificFindingObservationExampleMTICI : 2 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-StrokeCircumstanceObservationExample : 0 / 2 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-TimingMetricObservationExample : 2 / 2 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-TimingMetricObservationExample : 0 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-VitalSignObservationExample : 5 / 2 / 3
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Organization-ExampleOrganization : 1 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Patient-example-patient : 0 / 0 / 1
@@ -66,7 +68,7 @@ Generated Tue Jun 03 15:27:56 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (c
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-carotid-imaging-modality-vs : 1 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-dept-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-destination-vs : 0 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-medication-vs : 1 / 4 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-medication-vs : 1 / 3 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-functional-score-codes-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-hemorrhagic-stroke-bleeding-reason-vs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-initial-care-intensity-vs : 0 / 1 / 1
@@ -74,27 +76,28 @@ Generated Tue Jun 03 15:27:56 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (c
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-medication-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-medicationStatement-meds-codes-vs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mrs-score-vs : 0 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mtici-code-vs : 0 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mtici-score-vs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-perforation-procedures-vs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-procedure-timing-context-vs : 0 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-specific-finding-codes-vs : 1 / 1 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-specific-finding-codes-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-arrival-mode-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-circumstance-codes-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-diagnosis-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-discharge-destination-vs : 0 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-finding-codes-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-vs : 2 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallow-procedures-vs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallowing-screening-timing-category-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-thrombectomy-complication-vs : 0 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-timing-metric-codes-vs : 2 / 1 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-timing-metric-codes-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-vital-sign-codes-vs : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ischemic-stroke-etiology-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/discharge-medication-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/AgeAtOnsetObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/discharge-medication-request-001.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Provenance/ExampleEncounterProviderProvenance.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -138,9 +141,15 @@ ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-mrs-score-cs.ht
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-mrs-score-cs.json.html#/html/body/div/div/div/p/a at Line 277, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-mrs-score-cs.ttl.html#/html/body/div/div/div/p/a at Line 275, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-mrs-score-cs.xml.html#/html/body/div/div/div/p/a at Line 277, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-mtici-code-cs-testing.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-mtici-code-cs.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-mtici-code-cs.html#/html/body/div/div/div/p/a at Line 245, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-mtici-code-cs.json.html#/html/body/div/div/div/p/a at Line 247, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-mtici-code-cs.ttl.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-mtici-code-cs.xml.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-mtici-score-cs-testing.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-mtici-score-cs.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-mtici-score-cs.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-mtici-score-cs.html#/html/body/div/div/div/p/a at Line 258, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-mtici-score-cs.json.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-mtici-score-cs.ttl.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-mtici-score-cs.xml.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -162,6 +171,12 @@ ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-swallow-screen-
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-swallow-screen-time-cs.json.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-swallow-screen-time-cs.ttl.html#/html/body/div/div/div/p/a at Line 263, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-swallow-screen-time-cs.xml.html#/html/body/div/div/div/p/a at Line 259, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-timing-metric-codes-cs-testing.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-timing-metric-codes-cs.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-timing-metric-codes-cs.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-timing-metric-codes-cs.json.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-timing-metric-codes-cs.ttl.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/CodeSystem-timing-metric-codes-cs.xml.html#/html/body/div/div/div/p/a at Line 247, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/Condition-StrokeDiagnosisConditionExample.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/Condition-StrokeDiagnosisConditionExample.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/Condition-StrokeDiagnosisConditionExample.json.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -215,7 +230,7 @@ ERROR: /home/runner/work/IGTest-git/IGTest-git/output/Observation-StrokeCircumst
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/Observation-TimingMetricObservationExample.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/Observation-TimingMetricObservationExample.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/Observation-TimingMetricObservationExample.json.html#/html/body/div/div/div/p/a at Line 239, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/Observation-TimingMetricObservationExample.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/Observation-TimingMetricObservationExample.ttl.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/Observation-TimingMetricObservationExample.xml.html#/html/body/div/div/div/p/a at Line 233, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/Observation-VitalSignObservationExample.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/Observation-VitalSignObservationExample.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -383,7 +398,7 @@ ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-specif
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-specific-finding-observation-profile.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-specific-finding-observation-profile.profile.json.html#/html/body/div/div/div/p/a at Line 3396, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-specific-finding-observation-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2539, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-specific-finding-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3161, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-specific-finding-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3159, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-stroke-brain-imaging-procedure-profile-definitions.html#/html/body/div/div/div/p/a at Line 528, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-stroke-brain-imaging-procedure-profile-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-stroke-brain-imaging-procedure-profile-mappings.html#/html/body/div/div/div/p/a at Line 346, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -526,10 +541,10 @@ ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-discharge-destina
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-discharge-destination-vs.xml.html#/html/body/div/div/div/p/a at Line 259, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-discharge-medication-vs-testing.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-discharge-medication-vs.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-discharge-medication-vs.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-discharge-medication-vs.json.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-discharge-medication-vs.ttl.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-discharge-medication-vs.xml.html#/html/body/div/div/div/p/a at Line 240, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-discharge-medication-vs.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-discharge-medication-vs.json.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-discharge-medication-vs.ttl.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-discharge-medication-vs.xml.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-functional-score-codes-vs-testing.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-functional-score-codes-vs.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-functional-score-codes-vs.html#/html/body/div/div/div/p/a at Line 286, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -572,6 +587,12 @@ ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-mrs-score-vs.html
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-mrs-score-vs.json.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-mrs-score-vs.ttl.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-mrs-score-vs.xml.html#/html/body/div/div/div/p/a at Line 238, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-mtici-code-vs-testing.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-mtici-code-vs.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-mtici-code-vs.html#/html/body/div/div/div/p/a at Line 286, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-mtici-code-vs.json.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-mtici-code-vs.ttl.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-mtici-code-vs.xml.html#/html/body/div/div/div/p/a at Line 238, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-mtici-score-vs-testing.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-mtici-score-vs.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-mtici-score-vs.html#/html/body/div/div/div/p/a at Line 284, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -593,9 +614,9 @@ ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-procedure-timing-
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-specific-finding-codes-vs-testing.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-specific-finding-codes-vs.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-specific-finding-codes-vs.html#/html/body/div/div/div/p/a at Line 286, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-specific-finding-codes-vs.json.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-specific-finding-codes-vs.ttl.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-specific-finding-codes-vs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-specific-finding-codes-vs.json.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-specific-finding-codes-vs.ttl.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-specific-finding-codes-vs.xml.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-arrival-mode-vs-testing.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-arrival-mode-vs.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-arrival-mode-vs.html#/html/body/div/div/div/p/a at Line 286, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -620,6 +641,12 @@ ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-discharge-
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-discharge-destination-vs.json.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-discharge-destination-vs.ttl.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-discharge-destination-vs.xml.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-finding-codes-vs-testing.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-finding-codes-vs.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-finding-codes-vs.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-finding-codes-vs.json.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-finding-codes-vs.ttl.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-finding-codes-vs.xml.html#/html/body/div/div/div/p/a at Line 241, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-proc-not-done-reason-vs-testing.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-proc-not-done-reason-vs.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-proc-not-done-reason-vs.html#/html/body/div/div/div/p/a at Line 300, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -658,17 +685,17 @@ ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-thrombectomy-comp
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-thrombectomy-complication-vs.xml.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-timing-metric-codes-vs-testing.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-timing-metric-codes-vs.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-timing-metric-codes-vs.html#/html/body/div/div/div/p/a at Line 286, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-timing-metric-codes-vs.json.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-timing-metric-codes-vs.ttl.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-timing-metric-codes-vs.xml.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-timing-metric-codes-vs.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-timing-metric-codes-vs.json.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-timing-metric-codes-vs.ttl.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-timing-metric-codes-vs.xml.html#/html/body/div/div/div/p/a at Line 238, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-vital-sign-codes-vs-testing.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-vital-sign-codes-vs.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-vital-sign-codes-vs.html#/html/body/div/div/div/p/a at Line 286, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-vital-sign-codes-vs.json.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-vital-sign-codes-vs.ttl.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-vital-sign-codes-vs.xml.html#/html/body/div/div/div/p/a at Line 247, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/artifacts.html#/html/body/div/div/div/p/a at Line 903, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/artifacts.html#/html/body/div/div/div/p/a at Line 937, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/index.html#/html/body/div/div/div/p/a at Line 320, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/toc.html#/html/body/div/div/div/p/a at Line 142, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
@@ -678,10 +705,17 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/CodeSystem-assessment-context-cs.json ==
 == fsh-generated/resources/CodeSystem-initial-care-intensity-cs.json ==
 == fsh-generated/resources/CodeSystem-mrs-score-cs.json ==
+== fsh-generated/resources/CodeSystem-mtici-code-cs.json ==
+WARNING: CodeSystem/mtici-code-cs: CodeSystem: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CodeSystem)
 == fsh-generated/resources/CodeSystem-mtici-score-cs.json ==
 == fsh-generated/resources/CodeSystem-procedure-timing-context-cs.json ==
 == fsh-generated/resources/CodeSystem-stroke-proc-not-done-reason-cs.json ==
 == fsh-generated/resources/CodeSystem-swallow-screen-time-cs.json ==
+== fsh-generated/resources/CodeSystem-timing-metric-codes-cs.json ==
+WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem.concept[0].definition: value should not start or finish with whitespace ' Time (in minutes) from hospital arrival to the groin puncture for mechanical thrombectomy'
+INFORMATION: CodeSystem/timing-metric-codes-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/Condition-StrokeDiagnosisConditionExample.json ==
 == fsh-generated/resources/Condition-StrokeRiskFactorConditionExample.json ==
 ERROR: Condition/StrokeRiskFactorConditionExample: Condition.code: A definition for the value Set 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips' could not be found
@@ -707,8 +741,8 @@ INFORMATION: Observation/SpecificFindingObservationExample: Observation.value.of
 WARNING: Observation/SpecificFindingObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/SpecificFindingObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-SpecificFindingObservationExampleMTICI.json ==
-ERROR: Observation/SpecificFindingObservationExampleMTICI: Observation.code.coding[0].code: Unknown code '1156911000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240801'
-ERROR: Observation/SpecificFindingObservationExampleMTICI: Observation.code: None of the codings provided are in the value set 'Specific Stroke Finding Codes ValueSet' (http://testSK.org/ValueSet/specific-finding-codes-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#1156911000)
+ERROR: Observation/SpecificFindingObservationExampleMTICI: Observation.code.coding[0].code: Unknown code '1156911000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Observation/SpecificFindingObservationExampleMTICI: Observation.code: None of the codings provided are in the value set 'Specific Stroke Finding Codes ValueSet' (http://testSK.org/ValueSet/stroke-finding-codes-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#1156911000)
 INFORMATION: Observation/SpecificFindingObservationExampleMTICI: Observation.value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/mtici-score-cs|0.1.0
 WARNING: Observation/SpecificFindingObservationExampleMTICI: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/SpecificFindingObservationExampleMTICI: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
@@ -716,9 +750,6 @@ WARNING: Observation/SpecificFindingObservationExampleMTICI: Observation: Best P
 WARNING: Observation/StrokeCircumstanceObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/StrokeCircumstanceObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-TimingMetricObservationExample.json ==
-ERROR: Observation/TimingMetricObservationExample: Observation.code.coding[0].code: Unknown code '00' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240801'
-INFORMATION: Observation/TimingMetricObservationExample: Observation.code.coding[0].code: Code 00 is not a valid SNOMED CT Term, and neither could it be parsed as an expression (Concept 00 not found in http://snomed.info/sct)
-ERROR: Observation/TimingMetricObservationExample: Observation.code: None of the codings provided are in the value set 'Stroke Timing Metric Codes ValueSet' (http://testSK.org/ValueSet/timing-metric-codes-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#00)
 WARNING: Observation/TimingMetricObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/TimingMetricObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-VitalSignObservationExample.json ==
@@ -830,10 +861,10 @@ WARNING: ValueSet/afib-flutter-status-vs: ValueSet: Published value sets SHOULD 
 == fsh-generated/resources/ValueSet-assessment-context-vs.json ==
 WARNING: ValueSet/assessment-context-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-brain-imaging-modality-vs.json ==
-ERROR: ValueSet/brain-imaging-modality-vs: ValueSet.compose.include[0].concept[6]: The code '1366357009' is not valid in the system http://snomed.info/sct (Unknown code '1366357009' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240801')
+ERROR: ValueSet/brain-imaging-modality-vs: ValueSet.compose.include[0].concept[6]: The code '1366357009' is not valid in the system http://snomed.info/sct (Unknown code '1366357009' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201')
 WARNING: ValueSet/brain-imaging-modality-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-carotid-imaging-modality-vs.json ==
-ERROR: ValueSet/carotid-imaging-modality-vs: ValueSet.compose.include[0].concept[3]: The code '1366357009' is not valid in the system http://snomed.info/sct (Unknown code '1366357009' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240801')
+ERROR: ValueSet/carotid-imaging-modality-vs: ValueSet.compose.include[0].concept[3]: The code '1366357009' is not valid in the system http://snomed.info/sct (Unknown code '1366357009' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201')
 WARNING: ValueSet/carotid-imaging-modality-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-discharge-dept-vs.json ==
 WARNING: ValueSet/discharge-dept-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -842,7 +873,6 @@ WARNING: ValueSet/discharge-dept-vs: ValueSet: Published value sets SHOULD confo
 WARNING: ValueSet/discharge-medication-vs: ValueSet.compose.include[1].valueSet[0]: A definition could not be found for Canonical URL 'https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html'
 WARNING: ValueSet/discharge-medication-vs: ValueSet.compose.include[1].valueSet[0]: The value set import https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html could not be found so cannot be checked
 WARNING: ValueSet/discharge-medication-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet/discharge-medication-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 ERROR: ValueSet.where(id = 'discharge-medication-vs'): Unable to find included value set 'https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html'
 == fsh-generated/resources/ValueSet-functional-score-codes-vs.json ==
 WARNING: ValueSet/functional-score-codes-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -855,13 +885,14 @@ WARNING: ValueSet/medication-vs: ValueSet: Published value sets SHOULD conform t
 == fsh-generated/resources/ValueSet-medicationStatement-meds-codes-vs.json ==
 == fsh-generated/resources/ValueSet-mrs-score-vs.json ==
 WARNING: ValueSet/mrs-score-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-mtici-code-vs.json ==
+WARNING: ValueSet/mtici-code-vs: ValueSet: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/ValueSet)
+WARNING: ValueSet/mtici-code-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-mtici-score-vs.json ==
 == fsh-generated/resources/ValueSet-perforation-procedures-vs.json ==
 == fsh-generated/resources/ValueSet-procedure-timing-context-vs.json ==
 WARNING: ValueSet/procedure-timing-context-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-specific-finding-codes-vs.json ==
-ERROR: ValueSet/specific-finding-codes-vs: ValueSet.compose.include[0].concept[2]: The code '1156911000' is not valid in the system http://snomed.info/sct (Unknown code '1156911000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240801')
-INFORMATION: ValueSet/specific-finding-codes-vs: ValueSet.compose.include[0]: This SNOMED-CT based include has some concepts with semantic tags (FSN terms) and some without (preferred terms) - check that this is what is intended (examples for FSN: [Atrial fibrillation (disorder), Atrial flutter (disorder)] and examples for no FSN: [mTICI Score Assessment])
 WARNING: ValueSet/specific-finding-codes-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-stroke-arrival-mode-vs.json ==
 WARNING: ValueSet/stroke-arrival-mode-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -871,6 +902,8 @@ WARNING: ValueSet/stroke-circumstance-codes-vs: ValueSet: Published value sets S
 WARNING: ValueSet/stroke-diagnosis-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-stroke-discharge-destination-vs.json ==
 WARNING: ValueSet/stroke-discharge-destination-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-stroke-finding-codes-vs.json ==
+WARNING: ValueSet/stroke-finding-codes-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs.json ==
 WARNING: ValueSet/stroke-proc-not-done-reason-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs.json ==
@@ -886,8 +919,5 @@ WARNING: ValueSet/swallowing-screening-timing-category-vs: ValueSet: Published v
 == fsh-generated/resources/ValueSet-thrombectomy-complication-vs.json ==
 WARNING: ValueSet/thrombectomy-complication-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-timing-metric-codes-vs.json ==
-ERROR: ValueSet/timing-metric-codes-vs: ValueSet.compose.include[0].concept[0]: The code '00' is not valid in the system http://snomed.info/sct (Unknown code '00' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240801')
-INFORMATION: ValueSet/timing-metric-codes-vs: ValueSet.compose.include[0].concept[0]: Unknown code '00' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240801'
-ERROR: ValueSet/timing-metric-codes-vs: ValueSet.compose.include[0].concept[1]: The code '01' is not valid in the system http://snomed.info/sct (Unknown code '01' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240801')
 WARNING: ValueSet/timing-metric-codes-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-vital-sign-codes-vs.json ==

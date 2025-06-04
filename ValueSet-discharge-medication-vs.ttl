@@ -16,9 +16,9 @@
   fhir:url [ fhir:v "http://testSK.org/ValueSet/discharge-medication-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "DischargeMedicationVS"] ; # 
-  fhir:title [ fhir:v "Discharge Medications ValueSet"] ; # 
+  fhir:title [ fhir:v "Medications ValueSet"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-03T15:24:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-04T08:16:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -27,6 +27,7 @@
        fhir:value [ fhir:v "http://testSK.org/umu" ]
      ] )
   ] ) ; # 
+  fhir:description [ fhir:v "Codes for drug products or substances representing the Medications on the patient discharge."] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:valueSet ( [

@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://testSK.org/CodeSystem/timing-metric-codes-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "timing-metric-codes-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem timing-metric-codes-cs</b></p><a name=\"timing-metric-codes-cs\"> </a><a name=\"hctiming-metric-codes-cs\"> </a><a name=\"timing-metric-codes-cs-en-US\"> </a><p>This  code system <code>http://testSK.org/CodeSystem/timing-metric-codes-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">D2G<a name=\"timing-metric-codes-cs-D2G\"> </a></td><td>Door to Groin</td><td> Time (in minutes) from hospital arrival to the groin puncture for mechanical thrombectomy</td></tr><tr><td style=\"white-space:nowrap\">D2N<a name=\"timing-metric-codes-cs-D2N\"> </a></td><td>Door to Needle</td><td>Time (in minutes) from the patient’s arrival at the hospital to the start of intravenous thrombolysis</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://testSK.org/CodeSystem/timing-metric-codes-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "TimingMetricCodesCS"] ; # 
+  fhir:title [ fhir:v "Stroke Timing Metric Codes ValueSet"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-06-04T08:16:37+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UMU"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UMU" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://testSK.org/umu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for key process timing metrics in acute stroke care (D2N, D2G)."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "D2G" ] ;
+     fhir:display [ fhir:v "Door to Groin" ] ;
+     fhir:definition [ fhir:v " Time (in minutes) from hospital arrival to the groin puncture for mechanical thrombectomy" ]
+  ] [
+     fhir:code [ fhir:v "D2N" ] ;
+     fhir:display [ fhir:v "Door to Needle" ] ;
+     fhir:definition [ fhir:v "Time (in minutes) from the patient’s arrival at the hospital to the start of intravenous thrombolysis" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -28,7 +28,7 @@
        fhir:value [ fhir:v "http://testSK.org/umu" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use). **NOTE: These codes are generally NOT suitable for MedicationStatement.medication[x] which expects product/substance codes.**"] ; # 
+  fhir:description [ fhir:v "ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use). "] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;

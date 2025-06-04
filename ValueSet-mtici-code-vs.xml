@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mtici-code-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet mtici-code-vs</b></p><a name="mtici-code-vs"> </a><a name="hcmtici-code-vs"> </a><a name="mtici-code-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-mtici-score-cs.html"><code>http://testSK.org/CodeSystem/mtici-score-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://testSK.org/ValueSet/mtici-code-vs"/>
+  <version value="0.1.0"/>
+  <name value="mTICICodeVS"/>
+  <title value="mTICI Score Codes ValueSet"/>
+  <status value="active"/>
+  <date value="2025-06-04T08:16:37+00:00"/>
+  <publisher value="UMU"/>
+  <contact>
+    <name value="UMU"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://testSK.org/umu"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure."/>
+  <compose>
+    <include>
+      <system value="http://testSK.org/CodeSystem/mtici-score-cs"/>
+    </include>
+  </compose>
+</ValueSet>

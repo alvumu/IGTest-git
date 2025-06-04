@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "stroke-finding-codes-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet stroke-finding-codes-vs</b></p><a name=\"stroke-finding-codes-vs\"> </a><a name=\"hcstroke-finding-codes-vs\"> </a><a name=\"stroke-finding-codes-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-specific-finding-codes-vs.html\">Specific Stroke Finding Codes ValueSet</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-mtici-code-vs.html\">mTICI Score Codes ValueSet</a></li></ul></div>"
+  },
+  "url" : "http://testSK.org/ValueSet/stroke-finding-codes-vs",
+  "version" : "0.1.0",
+  "name" : "StrokeFindingCodesVS",
+  "title" : "Specific Stroke Finding Codes ValueSet",
+  "status" : "active",
+  "date" : "2025-06-04T08:16:37+00:00",
+  "publisher" : "UMU",
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
+  "description" : "ValueSet for specific coded findings like Afib/Flutter status or mTICI score.",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://testSK.org/ValueSet/specific-finding-codes-vs"]
+    },
+    {
+      "valueSet" : ["http://testSK.org/ValueSet/mtici-code-vs"]
+    }]
+  }
+}

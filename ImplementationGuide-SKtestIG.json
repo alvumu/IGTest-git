@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-06-03T15:24:37+00:00",
+  "date" : "2025-06-04T08:16:37+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -67,7 +67,7 @@
         "reference" : "StructureDefinition/age-at-onset-observation-profile"
       },
       "name" : "Age at Stroke Onset Observation Profile (R5)",
-      "description" : "R5 Profile specifically for recording the patient's age at stroke onset.",
+      "description" : "Profile specifically for recording the patient's age at stroke onset.",
       "isExample" : false
     },
     {
@@ -114,7 +114,7 @@
       "reference" : {
         "reference" : "CodeSystem/afib-flutter-status-cs"
       },
-      "name" : "Atrial Fibrillation or Flutter Status Code System",
+      "name" : "Atrial Fibrillation or Flutter Status Codes",
       "description" : "Codes representing the status of Atrial Fibrillation or Flutter assessment.",
       "isExample" : false
     },
@@ -139,7 +139,7 @@
         "reference" : "StructureDefinition/base-stroke-observation"
       },
       "name" : "Base Profile for Stroke-Related Observations",
-      "description" : "Common R5 constraints for observations recorded in the context of stroke care.",
+      "description" : "Constraints for observations recorded in the context of stroke care.",
       "isExample" : false
     },
     {
@@ -212,17 +212,6 @@
       },
       "name" : "Discharge Medication Request Profile",
       "description" : "Represents a medication prescription made as part of the patient's discharge plan, categorized as community administration.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/discharge-medication-vs"
-      },
-      "name" : "Discharge Medications ValueSet",
       "isExample" : false
     },
     {
@@ -373,10 +362,22 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/discharge-medication-vs"
+      },
+      "name" : "Medications ValueSet",
+      "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/medicationStatement-meds-codes-vs"
       },
       "name" : "MedicationStatement Therapy/Finding Codes",
-      "description" : "ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use). **NOTE: These codes are generally NOT suitable for MedicationStatement.medication[x] which expects product/substance codes.**",
+      "description" : "ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use).",
       "isExample" : false
     },
     {
@@ -413,6 +414,30 @@
       },
       "name" : "mTICI Score Code System",
       "description" : "CodeSystem containing the codes to represent the mTICI score.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mtici-code-cs"
+      },
+      "name" : "mTICI Score Codes CodeSystem",
+      "description" : "Codes representing the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mtici-code-vs"
+      },
+      "name" : "mTICI Score Codes ValueSet",
+      "description" : "ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure.",
       "isExample" : false
     },
     {
@@ -471,7 +496,7 @@
         "reference" : "StructureDefinition/prior-medication-statement-profile"
       },
       "name" : "Prior Medication Statement Profile (R5)",
-      "description" : "R5 Profile: Represents a statement about the patient's medication use *before* the index event. Uses adherence.code (#taking/#not-taking) to indicate usage status.",
+      "description" : "Represents a statement about the patient's medication use *before* the index event.",
       "isExample" : false
     },
     {
@@ -549,13 +574,25 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/stroke-finding-codes-vs"
+      },
+      "name" : "Specific Stroke Finding Codes ValueSet",
+      "description" : "ValueSet for specific coded findings like Afib/Flutter status or mTICI score.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
         "reference" : "StructureDefinition/specific-finding-observation-profile"
       },
       "name" : "Specific Stroke Finding Observation Profile (R5)",
-      "description" : "R5 Profile for specific coded findings like Afib/Flutter status or mTICI score.",
+      "description" : "Profile for specific coded findings like Afib/Flutter status or mTICI score.",
       "isExample" : false
     },
     {
@@ -603,7 +640,7 @@
         "reference" : "StructureDefinition/stroke-brain-imaging-procedure-profile"
       },
       "name" : "Stroke Brain Imaging Procedure Profile (R5)",
-      "description" : "Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context.",
+      "description" : "Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context.",
       "isExample" : false
     },
     {
@@ -615,7 +652,7 @@
         "reference" : "StructureDefinition/stroke-carotid-imaging-procedure-profile"
       },
       "name" : "Stroke Carotid Imaging Procedure Profile (R5)",
-      "description" : "Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context.",
+      "description" : "Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context.",
       "isExample" : false
     },
     {
@@ -639,7 +676,7 @@
         "reference" : "StructureDefinition/stroke-circumstance-observation-profile"
       },
       "name" : "Stroke Circumstance Observation Profile (R5)",
-      "description" : "R5 Profile for recording findings about stroke onset circumstances (In-hospital, Wake-up).",
+      "description" : "Profile for recording findings about stroke onset circumstances (In-hospital, Wake-up).",
       "isExample" : false
     },
     {
@@ -711,7 +748,7 @@
         "reference" : "StructureDefinition/functional-score-observation-profile"
       },
       "name" : "Stroke Functional Score Observation Profile (R5, Timing Ext)",
-      "description" : "R5 Profile for recording functional scores (mRS, NIHSS), using an extension for timing context.",
+      "description" : "Profile for recording functional scores (mRS, NIHSS), using an extension for timing context.",
       "isExample" : false
     },
     {
@@ -795,7 +832,7 @@
         "reference" : "StructureDefinition/stroke-swallow-procedure-profile"
       },
       "name" : "Stroke Swallow Procedure Profile (R5)",
-      "description" : "Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context.",
+      "description" : "Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context.",
       "isExample" : false
     },
     {
@@ -807,7 +844,7 @@
         "reference" : "StructureDefinition/stroke-thrombolysis-procedure-profile"
       },
       "name" : "Stroke Thrombolysis Procedure Profile (R5)",
-      "description" : "Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context.",
+      "description" : "Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context.",
       "isExample" : false
     },
     {
@@ -817,6 +854,18 @@
       }],
       "reference" : {
         "reference" : "ValueSet/timing-metric-codes-vs"
+      },
+      "name" : "Stroke Timing Metric Codes ValueSet",
+      "description" : "ValueSet for key process timing metrics in acute stroke care (D2N, D2G).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/timing-metric-codes-cs"
       },
       "name" : "Stroke Timing Metric Codes ValueSet",
       "description" : "Codes for key process timing metrics in acute stroke care (D2N, D2G).",
@@ -831,7 +880,7 @@
         "reference" : "StructureDefinition/timing-metric-observation-profile"
       },
       "name" : "Stroke Timing Metric Observation Profile (R5)",
-      "description" : "R5 Profile for recording key process timing metrics (D2N, D2G).",
+      "description" : "Profile for recording key process timing metrics (D2N, D2G).",
       "isExample" : false
     },
     {
@@ -855,7 +904,7 @@
         "reference" : "StructureDefinition/vital-sign-observation-profile"
       },
       "name" : "Stroke Vital Sign Observation Profile (R5)",
-      "description" : "R5 Profile for recording key vital signs (Systolic/Diastolic BP) in stroke patients.",
+      "description" : "Profile for recording key vital signs (Systolic/Diastolic BP) in stroke patients.",
       "isExample" : false
     },
     {

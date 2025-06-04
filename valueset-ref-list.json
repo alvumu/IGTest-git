@@ -13,9 +13,9 @@
       "uses" : {
       },
       "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
+      "StructureDefinition-stroke-thrombolysis-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)",
       "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-thrombolysis-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)"
+      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)"
     },
     {
       "url" : "http://testSK.org/ValueSet/admission-source-vs",
@@ -97,8 +97,8 @@
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "DischargeMedicationVS",
-      "title" : "Discharge Medications ValueSet",
-      "description" : null,
+      "title" : "Medications ValueSet",
+      "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
@@ -162,7 +162,7 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "ValueSet-discharge-medication-vs.html" : "Discharge Medications ValueSet"
+      "ValueSet-discharge-medication-vs.html" : "Medications ValueSet"
     },
     {
       "url" : "http://testSK.org/ValueSet/medicationStatement-meds-codes-vs",
@@ -170,7 +170,7 @@
       "status" : "draft",
       "name" : "MedicationStatementMedsCodes",
       "title" : "MedicationStatement Therapy/Finding Codes",
-      "description" : "ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use). **NOTE: These codes are generally NOT suitable for MedicationStatement.medication[x] which expects product/substance codes.**",
+      "description" : "ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use). ",
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
@@ -187,6 +187,18 @@
       "uses" : {
       },
       "StructureDefinition-functional-score-observation-profile.html" : "Stroke Functional Score Observation Profile (R5, Timing Ext)"
+    },
+    {
+      "url" : "http://testSK.org/ValueSet/mtici-code-vs",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "mTICICodeVS",
+      "title" : "mTICI Score Codes ValueSet",
+      "description" : "ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure.",
+      "systems" : ["http://testSK.org/CodeSystem/mtici-score-cs"],
+      "uses" : {
+      },
+      "ValueSet-stroke-finding-codes-vs.html" : "Specific Stroke Finding Codes ValueSet"
     },
     {
       "url" : "http://testSK.org/ValueSet/mtici-score-vs",
@@ -231,7 +243,7 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-specific-finding-observation-profile.html" : "Specific Stroke Finding Observation Profile (R5)"
+      "ValueSet-stroke-finding-codes-vs.html" : "Specific Stroke Finding Codes ValueSet"
     },
     {
       "url" : "http://testSK.org/ValueSet/stroke-arrival-mode-vs",
@@ -282,6 +294,21 @@
       "StructureDefinition-stroke-encounter-profile.html" : "Stroke Encounter Profile"
     },
     {
+      "url" : "http://testSK.org/ValueSet/stroke-finding-codes-vs",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "StrokeFindingCodesVS",
+      "title" : "Specific Stroke Finding Codes ValueSet",
+      "description" : "ValueSet for specific coded findings like Afib/Flutter status or mTICI score.",
+      "systems" : [
+        "http://testSK.org/CodeSystem/mtici-score-cs",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-specific-finding-observation-profile.html" : "Specific Stroke Finding Observation Profile (R5)"
+    },
+    {
       "url" : "http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs",
       "version" : "0.1.0",
       "status" : "active",
@@ -294,9 +321,9 @@
       "uses" : {
       },
       "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
+      "StructureDefinition-stroke-thrombolysis-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)",
       "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-thrombolysis-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)"
+      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)"
     },
     {
       "url" : "http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs",
@@ -361,8 +388,8 @@
       "status" : "active",
       "name" : "TimingMetricCodesVS",
       "title" : "Stroke Timing Metric Codes ValueSet",
-      "description" : "Codes for key process timing metrics in acute stroke care (D2N, D2G).",
-      "systems" : ["http://snomed.info/sct"],
+      "description" : "ValueSet for key process timing metrics in acute stroke care (D2N, D2G).",
+      "systems" : ["http://testSK.org/CodeSystem/timing-metric-codes-cs"],
       "uses" : {
       },
       "StructureDefinition-timing-metric-observation-profile.html" : "Stroke Timing Metric Observation Profile (R5)"
