@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="IGTest"/>
   <status value="draft"/>
-  <date value="2025-06-04T08:56:07+00:00"/>
+  <date value="2025-06-04T09:35:36+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -670,6 +670,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/stroke-etiology-vs"/>
+      </reference>
+      <name value="Stroke Etiology ValueSet"/>
+      <description value="Specifies the determined etiology of an stroke."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/functional-score-codes-vs"/>
       </reference>
       <name value="Stroke Functional Score Codes ValueSet"/>
@@ -740,17 +751,6 @@
       </reference>
       <name value="Stroke Risk Factor ValueSet"/>
       <description value="Defines the unknown or absent codes for conditions or risk factors relevant to stroke."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ischemic-stroke-etiology-vs"/>
-      </reference>
-      <name value="Stroke Stroke Etiology ValueSet"/>
-      <description value="Specifies the determined etiology of an ischemic stroke."/>
       <isExample value="false"/>
     </resource>
     <resource>

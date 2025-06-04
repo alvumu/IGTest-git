@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-06-04T08:56:07+00:00",
+  "date" : "2025-06-04T09:35:36+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -733,6 +733,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/stroke-etiology-vs"
+      },
+      "name" : "Stroke Etiology ValueSet",
+      "description" : "Specifies the determined etiology of an stroke.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/functional-score-codes-vs"
       },
       "name" : "Stroke Functional Score Codes ValueSet",
@@ -809,18 +821,6 @@
       },
       "name" : "Stroke Risk Factor ValueSet",
       "description" : "Defines the unknown or absent codes for conditions or risk factors relevant to stroke.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ischemic-stroke-etiology-vs"
-      },
-      "name" : "Stroke Stroke Etiology ValueSet",
-      "description" : "Specifies the determined etiology of an ischemic stroke.",
       "isExample" : false
     },
     {

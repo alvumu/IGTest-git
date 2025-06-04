@@ -12,10 +12,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.109"],
       "uses" : {
       },
-      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
       "StructureDefinition-stroke-thrombolysis-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)",
-      "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)"
+      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
+      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
+      "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)"
     },
     {
       "url" : "http://testSK.org/ValueSet/admission-source-vs",
@@ -139,18 +139,6 @@
       "uses" : {
       },
       "StructureDefinition-initial-care-intensity-ext.html" : "Initial Care Intensity Extension"
-    },
-    {
-      "url" : "http://testSK.org/ValueSet/ischemic-stroke-etiology-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "IschemicStrokeEtiologyVS",
-      "title" : "Stroke Stroke Etiology ValueSet",
-      "description" : "Specifies the determined etiology of an ischemic stroke.",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-ischemic-stroke-etiology-ext.html" : "StrokeStrokeEtiologyExt"
     },
     {
       "url" : "http://testSK.org/ValueSet/medication-vs",
@@ -294,6 +282,18 @@
       "StructureDefinition-stroke-encounter-profile.html" : "Stroke Encounter Profile"
     },
     {
+      "url" : "http://testSK.org/ValueSet/stroke-etiology-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "StrokeEtiologyVS",
+      "title" : "Stroke Etiology ValueSet",
+      "description" : "Specifies the determined etiology of an stroke.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ischemic-stroke-etiology-ext.html" : "StrokeStrokeEtiologyExt"
+    },
+    {
       "url" : "http://testSK.org/ValueSet/stroke-finding-codes-vs",
       "version" : "0.1.0",
       "status" : "active",
@@ -320,10 +320,10 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
       "StructureDefinition-stroke-thrombolysis-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)",
-      "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)"
+      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
+      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
+      "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)"
     },
     {
       "url" : "http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs",

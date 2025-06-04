@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-04T08:56:07+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-04T09:35:36+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -950,6 +950,21 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/stroke-etiology-vs> ;
+         fhir:reference [ fhir:v "ValueSet/stroke-etiology-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Etiology ValueSet" ] ;
+       fhir:description [ fhir:v "Specifies the determined etiology of an stroke." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://testSK.org/ValueSet/functional-score-codes-vs> ;
          fhir:reference [ fhir:v "ValueSet/functional-score-codes-vs" ]
        ] ;
@@ -1045,21 +1060,6 @@
        ] ;
        fhir:name [ fhir:v "Stroke Risk Factor ValueSet" ] ;
        fhir:description [ fhir:v "Defines the unknown or absent codes for conditions or risk factors relevant to stroke." ] ;
-       fhir:isExample [ fhir:v false ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://testSK.org/ValueSet/ischemic-stroke-etiology-vs> ;
-         fhir:reference [ fhir:v "ValueSet/ischemic-stroke-etiology-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Stroke Stroke Etiology ValueSet" ] ;
-       fhir:description [ fhir:v "Specifies the determined etiology of an ischemic stroke." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [

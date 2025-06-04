@@ -72,7 +72,6 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-functional-score-codes-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-hemorrhagic-stroke-bleeding-reason-vs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-initial-care-intensity-vs : 0 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-ischemic-stroke-etiology-vs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-medication-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-medicationStatement-meds-codes-vs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mrs-score-vs : 0 / 1 / 1
@@ -85,6 +84,7 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-circumstance-codes-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-diagnosis-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-discharge-destination-vs : 0 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-etiology-vs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-finding-codes-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs : 0 / 1 / 1
@@ -356,7 +356,7 @@ ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-ischem
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-ischemic-stroke-etiology-ext.profile.history.html#/html/body/div/div/div/p/a at Line 225, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-ischemic-stroke-etiology-ext.profile.json.html#/html/body/div/div/div/p/a at Line 525, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-ischemic-stroke-etiology-ext.profile.ttl.html#/html/body/div/div/div/p/a at Line 469, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-ischemic-stroke-etiology-ext.profile.xml.html#/html/body/div/div/div/p/a at Line 480, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-ischemic-stroke-etiology-ext.profile.xml.html#/html/body/div/div/div/p/a at Line 478, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-observation-timing-context-ext-definitions.html#/html/body/div/div/div/p/a at Line 300, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-observation-timing-context-ext-mappings.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/StructureDefinition-observation-timing-context-ext-testing.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -563,12 +563,6 @@ ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-initial-care-inte
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-initial-care-intensity-vs.json.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-initial-care-intensity-vs.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-initial-care-intensity-vs.xml.html#/html/body/div/div/div/p/a at Line 241, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-ischemic-stroke-etiology-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-ischemic-stroke-etiology-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-ischemic-stroke-etiology-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-ischemic-stroke-etiology-vs.json.html#/html/body/div/div/div/p/a at Line 277, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-ischemic-stroke-etiology-vs.ttl.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-ischemic-stroke-etiology-vs.xml.html#/html/body/div/div/div/p/a at Line 272, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-medication-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-medication-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-medication-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -641,6 +635,12 @@ ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-discharge-
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-discharge-destination-vs.json.html#/html/body/div/div/div/p/a at Line 268, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-discharge-destination-vs.ttl.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-discharge-destination-vs.xml.html#/html/body/div/div/div/p/a at Line 263, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-etiology-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-etiology-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-etiology-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-etiology-vs.json.html#/html/body/div/div/div/p/a at Line 277, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-etiology-vs.ttl.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-etiology-vs.xml.html#/html/body/div/div/div/p/a at Line 271, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-finding-codes-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-finding-codes-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: /home/runner/work/IGTest-git/IGTest-git/output/ValueSet-stroke-finding-codes-vs.html#/html/body/div/div/div/p/a at Line 290, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -802,8 +802,8 @@ WARNING: StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext: StructureDe
 WARNING: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-initial-care-intensity-ext.json ==
 == fsh-generated/resources/StructureDefinition-ischemic-stroke-etiology-ext.json ==
-WARNING: StructureDefinition/ischemic-stroke-etiology-ext: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://testSK.org/ValueSet/ischemic-stroke-etiology-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/ischemic-stroke-etiology-ext: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://testSK.org/ValueSet/ischemic-stroke-etiology-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ischemic-stroke-etiology-ext: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://testSK.org/ValueSet/stroke-etiology-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ischemic-stroke-etiology-ext: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://testSK.org/ValueSet/stroke-etiology-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/ischemic-stroke-etiology-ext'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-observation-timing-context-ext.json ==
 == fsh-generated/resources/StructureDefinition-prior-medication-statement-profile.json ==
@@ -880,7 +880,6 @@ WARNING: ValueSet/functional-score-codes-vs: ValueSet: Published value sets SHOU
 == fsh-generated/resources/ValueSet-hemorrhagic-stroke-bleeding-reason-vs.json ==
 == fsh-generated/resources/ValueSet-initial-care-intensity-vs.json ==
 WARNING: ValueSet/initial-care-intensity-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-ischemic-stroke-etiology-vs.json ==
 == fsh-generated/resources/ValueSet-medication-vs.json ==
 WARNING: ValueSet/medication-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-medicationStatement-meds-codes-vs.json ==
@@ -903,6 +902,7 @@ WARNING: ValueSet/stroke-circumstance-codes-vs: ValueSet: Published value sets S
 WARNING: ValueSet/stroke-diagnosis-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-stroke-discharge-destination-vs.json ==
 WARNING: ValueSet/stroke-discharge-destination-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-stroke-etiology-vs.json ==
 == fsh-generated/resources/ValueSet-stroke-finding-codes-vs.json ==
 WARNING: ValueSet/stroke-finding-codes-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs.json ==
