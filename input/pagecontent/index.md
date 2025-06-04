@@ -84,3 +84,6 @@ This IG is organized into discrete sections to facilitate navigation and modular
    - Instructions for submitting issues or pull requests.
    - Maintainers’ contact information.
    - Licensing and usage policies.
+  
++ ## More Pages  
++ - [General Principles](general-principles.html)  
