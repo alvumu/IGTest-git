@@ -19,7 +19,7 @@ Id: medicationStatement-meds-codes-vs
 * ^url = MedStatementMedsVS_R5
 * ^name = "MedicationStatementMedsCodes" 
 * ^title = "MedicationStatement Therapy/Finding Codes"
-* ^description = "ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use). **NOTE: These codes are generally NOT suitable for MedicationStatement.medication[x] which expects product/substance codes.**"
+* ^description = "ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use). "
 * ^version = "1.0.0"
 * ^status = #draft
 * ^experimental = true
@@ -52,7 +52,7 @@ Parent: MedicationStatement // Base R5 MedicationStatement
 * ^title = "Prior Medication Statement Profile (R5)" // Indicate R5
 * ^experimental = true
 * ^status = #active
-* ^description = "R5 Profile: Represents a statement about the patient's medication use *before* the index event. Uses adherence.code (#taking/#not-taking) to indicate usage status." // Updated Desc for R5
+* ^description = "Represents a statement about the patient's medication use *before* the index event." 
 
 // Key fields for prior medication reporting
 * medication 1..1 MS

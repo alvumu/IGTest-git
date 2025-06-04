@@ -16,6 +16,9 @@ Alias: FHIR_CodeableConcept = http://hl7.org/fhir/StructureDefinition/CodeableCo
 // URLs for Custom CodeSystems
 Alias: AssessmentContextCS_URL = http://testSK.org/CodeSystem/assessment-context-cs
 Alias: MticiScoreCS_URL = http://testSK.org/CodeSystem/mtici-score-cs
+Alias: MticiCodeCS_URL = http://testSK.org/CodeSystem/mtici-code-cs
+Alias: TimingMetricCodesCS_URL = http://testSK.org/CodeSystem/timing-metric-codes-cs
+
 Alias: AfibFlutterStatusCS_URL = http://testSK.org/CodeSystem/afib-flutter-status-cs
 Alias: MRsScoreCS_URL = http://testSK.org/CodeSystem/mrs-score-cs
 
@@ -29,7 +32,8 @@ Alias: FunctionalScoreCodesVS_URL = http://testSK.org/ValueSet/functional-score-
 Alias: TimingMetricCodesVS_URL = http://testSK.org/ValueSet/timing-metric-codes-vs
 Alias: StrokeCircumstanceCodesVS_URL = http://testSK.org/ValueSet/stroke-circumstance-codes-vs
 Alias: SpecificFindingCodesVS_URL = http://testSK.org/ValueSet/specific-finding-codes-vs
-
+Alias: StrokeFindingCodesVS_URL = http://testSK.org/ValueSet/stroke-finding-codes-vs
+Alias: MticiCodeVS_URL = http://testSK.org/ValueSet/mtici-code-vs
 //Extension
 Alias: ObsTimingContextExt_URL = http://testSK.org/StructureDefinition/observation-timing-context-ext
 
@@ -42,7 +46,7 @@ CodeSystem: AfibFlutterStatusCS
 Id: afib-flutter-status-cs
 * ^url = AfibFlutterStatusCS_URL
 * ^version = "1.0.0"
-* ^title = "Atrial Fibrillation or Flutter Status Code System"
+* ^title = "Atrial Fibrillation or Flutter Status Codes"
 * ^description = "Codes representing the status of Atrial Fibrillation or Flutter assessment."
 * ^status = #active
 * ^experimental = true 
@@ -176,15 +180,24 @@ Id: functional-score-codes-vs
 * include SCT#1255866005 "Modified Rankin Scale score (observable entity)"
 * include SCT#450743008 "National Institutes of Health stroke scale score (observable entity)"
 
+CodeSystem: TimingMetricCodesCS
+Id: timing-metric-codes-cs
+* ^url = TimingMetricCodesCS_URL
+* ^version = "1.0.0"
+* ^title = "Stroke Timing Metric Codes ValueSet"
+* ^description = "Codes for key process timing metrics in acute stroke care (D2N, D2G)."
+* ^status = #active
+* #D2G "Door to Groin" " Time (in minutes) from hospital arrival to the groin puncture for mechanical thrombectomy"
+* #D2N "Door to Needle" "Time (in minutes) from the patient’s arrival at the hospital to the start of intravenous thrombolysis"
+
 ValueSet: TimingMetricCodesVS
 Id: timing-metric-codes-vs
 * ^url = TimingMetricCodesVS_URL
 * ^version = "1.0.0"
 * ^title = "Stroke Timing Metric Codes ValueSet"
-* ^description = "Codes for key process timing metrics in acute stroke care (D2N, D2G)."
+* ^description = "ValueSet for key process timing metrics in acute stroke care (D2N, D2G)."
 * ^status = #active
-* include SCT#00 "Ask Snomed" // D2N
-* include SCT#01 "Ask Snomed" // D2G
+* include codes from system TimingMetricCodesCS_URL
 
 ValueSet: StrokeCircumstanceCodesVS
 Id: stroke-circumstance-codes-vs
@@ -205,7 +218,37 @@ Id: specific-finding-codes-vs
 * ^status = #active
 * include SCT#49436004 "Atrial fibrillation (disorder)"
 * include SCT#5370000 "Atrial flutter (disorder)"
-* include SCT#1156911000 "mTICI Score Assessment"   
+
+CodeSystem: mTICICodeCS
+Id: mtici-code-cs
+* ^url = MticiCodeCS_URL
+* ^version = "1.0.0"
+* ^title = "mTICI Score Codes CodeSystem"
+* ^description = "Codes representing the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure."
+* ^status = #active
+* ^experimental = true
+* ^caseSensitive = false
+* #mTICI "mTICI" "Modified Thrombolysis in Cerebral Infarction" 
+
+ValueSet: mTICICodeVS
+Id: mtici-code-vs
+* ^url = MticiCodeVS_URL
+* ^version = "1.0.0"
+* ^title = "mTICI Score Codes ValueSet"
+* ^description = "ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure."
+* ^status = #active
+* include codes from system MticiScoreCS_URL
+
+ValueSet: StrokeFindingCodesVS
+Id: stroke-finding-codes-vs
+* ^url = StrokeFindingCodesVS_URL
+* ^version = "1.0.0"
+* ^title = "Specific Stroke Finding Codes ValueSet"
+* ^description = "ValueSet for specific coded findings like Afib/Flutter status or mTICI score."
+* ^status = #active
+* include codes from valueset SpecificFindingCodesVS_URL
+* include codes from valueset MticiCodeVS_URL
+
 
 // ------------------------- Extensions -------------------------------
 
@@ -226,12 +269,12 @@ Id: observation-timing-context-ext
 // --- Base Profile (Common Constraints) ---
 Profile: BaseStrokeObservation
 Id: base-stroke-observation
-Parent: FHIR_Observation // R5 Observation
+Parent: FHIR_Observation 
 * ^fhirVersion = #5.0.0
 * ^url = "http://testSK.org/StructureDefinition/base-stroke-observation"
 * ^version = "1.0.0"
 * ^title = "Base Profile for Stroke-Related Observations"
-* ^description = "Common R5 constraints for observations recorded in the context of stroke care."
+* ^description = "Constraints for observations recorded in the context of stroke care."
 * ^status = #active
 * status = #final 
 * status MS
@@ -251,7 +294,7 @@ Parent: BaseStrokeObservation
 * ^version = "1.0.0"
 * ^name = "VitalSignObservationProfile"
 * ^title = "Stroke Vital Sign Observation Profile (R5)"
-* ^description = "R5 Profile for recording key vital signs (Systolic/Diastolic BP) in stroke patients."
+* ^description = "Profile for recording key vital signs (Systolic/Diastolic BP) in stroke patients."
 * category = ObsCatCS#vital-signs
 * category 1..1 MS
 * code 1..1 MS
@@ -271,7 +314,7 @@ Parent: BaseStrokeObservation
 * ^version = "1.1.0" // Incremented version due to change
 * ^name = "FunctionalScoreObservationProfile"
 * ^title = "Stroke Functional Score Observation Profile (R5, Timing Ext)" // Updated title
-* ^description = "R5 Profile for recording functional scores (mRS, NIHSS), using an extension for timing context." // Updated description
+* ^description = "Profile for recording functional scores (mRS, NIHSS), using an extension for timing context." // Updated description
 * extension contains ObservationTimingContextExtension named timingContext 1..1 MS // *** ADDED EXTENSION (Mandatory) ***
 * category = ObsCatCS#exam
 * category 1..1 MS
@@ -297,7 +340,7 @@ Parent: BaseStrokeObservation
 * ^version = "1.0.0"
 * ^name = "TimingMetricObservationProfile"
 * ^title = "Stroke Timing Metric Observation Profile (R5)"
-* ^description = "R5 Profile for recording key process timing metrics (D2N, D2G)."
+* ^description = "Profile for recording key process timing metrics (D2N, D2G)."
 * category = ObsCatCS#procedure
 * category 1..1 
 * category MS
@@ -321,7 +364,7 @@ Parent: BaseStrokeObservation
 * ^version = "1.0.0"
 * ^name = "StrokeCircumstanceObservationProfile"
 * ^title = "Stroke Circumstance Observation Profile (R5)"
-* ^description = "R5 Profile for recording findings about stroke onset circumstances (In-hospital, Wake-up)."
+* ^description = "Profile for recording findings about stroke onset circumstances (In-hospital, Wake-up)."
 * code 1..1 MS
 * code from StrokeCircumstanceCodesVS_URL (required)
 * value[x] 1..1 MS
@@ -338,9 +381,9 @@ Parent: BaseStrokeObservation
 * ^version = "1.0.0"
 * ^name = "SpecificFindingObservationProfile"
 * ^title = "Specific Stroke Finding Observation Profile (R5)"
-* ^description = "R5 Profile for specific coded findings like Afib/Flutter status or mTICI score."
+* ^description = "Profile for specific coded findings like Afib/Flutter status or mTICI score."
 * code 1..1 MS
-* code from SpecificFindingCodesVS_URL (required)
+* code from StrokeFindingCodesVS_URL (required)
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
 // Invariants 'obs-afib-code' and 'obs-mtici-code' handle the value binding validation
@@ -354,7 +397,7 @@ Parent: BaseStrokeObservation
 * ^version = "1.0.0"
 * ^name = "AgeAtOnsetObservationProfile"
 * ^title = "Age at Stroke Onset Observation Profile (R5)"
-* ^description = "R5 Profile specifically for recording the patient's age at stroke onset."
+* ^description = "Profile specifically for recording the patient's age at stroke onset."
 * code = SCT#445518008 "Age at onset of clinical finding (observable entity)"
 * code 1..1 MS
 * value[x] 1..1 MS
@@ -420,7 +463,7 @@ InstanceOf: FunctionalScoreObservationProfile
 
 Instance: TimingMetricObservationExample
 InstanceOf: TimingMetricObservationProfile
-* code = SCT#00 "Ask Snomed" // D2N
+* code = TimingMetricCodesCS_URL#D2N "Door to Needle"
 * valueQuantity.value = 30
 * valueQuantity.unit = "minutes"
 * valueQuantity.system = UCUM

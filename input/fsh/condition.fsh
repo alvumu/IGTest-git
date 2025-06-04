@@ -222,7 +222,3 @@ InstanceOf: StrokeRiskFactorConditionProfile
 * recordedDate = 2025-03-31T12:00:00Z
 * encounter = Reference(StrokeEncounterExample)
 * subject = Reference(PatientExample)
-
-
-
-

@@ -229,7 +229,7 @@ Parent: FHIR_Procedure // R5 Procedure Base
 * ^version = "1.2.0" // Incremented version for R5 update
 * ^name = "StrokeBrainImagingProcedureProfile"
 * ^title = "Stroke Brain Imaging Procedure Profile (R5)" // Indicate R5
-* ^description = "Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." // Indicate R5
+* ^description = "Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." // Indicate R5
 * ^status = #active
 * code from BrainImagingModalityVS_URL (required)
 * status 1..1 MS 
@@ -247,7 +247,7 @@ Parent: FHIR_Procedure // R5 Procedure Base
 * ^version = "1.2.0" // Incremented version for R5 update
 * ^name = "StrokeCarotidImagingProcedureProfile"
 * ^title = "Stroke Carotid Imaging Procedure Profile (R5)" // Indicate R5
-* ^description = "Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." // Indicate R5
+* ^description = "Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." // Indicate R5
 * ^status = #active
 * code from CarotidImagingModalityVS_URL (required)
 * status 1..1 MS 
@@ -265,7 +265,7 @@ Parent: FHIR_Procedure // R5 Procedure Base
 * ^version = "1.2.0" // Incremented version for R5 update
 * ^name = "StrokeThrombolysisProcedureProfile"
 * ^title = "Stroke Thrombolysis Procedure Profile (R5)" // Indicate R5
-* ^description = "Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." // Indicate R5
+* ^description = "Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." // Indicate R5
 * ^status = #active
 * code from PerforationProceduresVS_URL (required)
 * status 1..1 MS 
@@ -288,7 +288,7 @@ Parent: FHIR_Procedure // R5 Procedure Base
 * ^version = "1.2.0" // Incremented version for R5 update
 * ^name = "StrokeSwallowProcedureProfile"
 * ^title = "Stroke Swallow Procedure Profile (R5)" // Indicate R5
-* ^description = "Enhanced FHIR R5 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." // Indicate R5
+* ^description = "Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." // Indicate R5
 * ^status = #active
 * code from SwallowProceduresVS_URL (required)
 * status 1..1 MS 

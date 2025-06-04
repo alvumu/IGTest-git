@@ -42,7 +42,8 @@ Id: discharge-medication-vs
 * ^url = "http://testSK.org/ValueSet/discharge-medication-vs"
 * ^version = "1.0.0"
 * ^name = "DischargeMedicationVS"
-* ^title = "Discharge Medications ValueSet"
+* ^title = "Medications ValueSet"
+* ^description = "Codes for drug products or substances representing the Medications on the patient discharge."
 * ^status = #draft
 *   include codes from valueset MedicationVS
 *   include codes from valueset AbsentOrUnknownVS
@@ -56,15 +57,15 @@ Parent: FHIR_MedicationRequest
 * ^name = "DischargeMedicationRequestProfile"
 * ^title = "Discharge Medication Request Profile"
 * ^status = #active
-* ^description = "Represents a medication prescription made as part of the patient's discharge plan, categorized as community administration." // Updated description
+* ^description = "Represents a medication prescription made as part of the patient's discharge plan, categorized as community administration." 
 
-// --- Fixed Values and Core Constraints ---
+
 * status = #active
 * status MS
 
 
 * category = MedReqAdminLocCS#community
-* category 1..1 MS // *** Ensure it's mandatory and MS ***
+* category 1..1 MS 
 
 * medication 1..1 MS
 * medication from DischargeMedicationVS (required)
@@ -72,7 +73,7 @@ Parent: FHIR_MedicationRequest
 * subject only Reference(FHIR_Patient)
 
 * encounter 1..1 MS
-* encounter only Reference(FHIR_Encounter) // Refine to StrokeEncounterProfile if defined
+* encounter only Reference(FHIR_Encounter)
 
 * authoredOn 0..1 MS
 
