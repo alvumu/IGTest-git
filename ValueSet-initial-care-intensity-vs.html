@@ -30,10 +30,10 @@
     <![endif] -->
 
       <!-- Favicons -->
-    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
-    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
-    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -181,7 +181,7 @@
         
           Active
           
-            as of 2025-06-04
+            as of 2025-08-28
           
         
       </td>
@@ -220,17 +220,14 @@
 
   <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div><p class="res-header-id"></p><a name="initial-care-intensity-vs"> </a><a name="hcinitial-care-intensity-vs"> </a><a name="initial-care-intensity-vs-en-US"> </a>
+<div><p class="res-header-id"></p><a name="initial-care-intensity-vs"> </a><a name="hcinitial-care-intensity-vs"> </a>
 <ul><li>Include all codes defined in <a href="CodeSystem-initial-care-intensity-cs.html"><code>http://testSK.org/CodeSystem/initial-care-intensity-cs</code></a></li></ul></div>
 
   <p>&nbsp;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div><p class="res-header-id"></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on <a href="CodeSystem-initial-care-intensity-cs.html">codesystem Initial Care Intensity Code System v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://testSK.org/CodeSystem/initial-care-intensity-cs-standard"> </a>&nbsp;&nbsp;<a href="CodeSystem-initial-care-intensity-cs.html#initial-care-intensity-cs-standard">standard</a></td><td>http://testSK.org/CodeSystem/initial-care-intensity-cs</td><td>Standard Bed</td><td><div><p>Patient placed in a standard hospital bed without continuous monitoring.</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://testSK.org/CodeSystem/initial-care-intensity-cs-monitored"> </a>&nbsp;&nbsp;<a href="CodeSystem-initial-care-intensity-cs.html#initial-care-intensity-cs-monitored">monitored</a></td><td>http://testSK.org/CodeSystem/initial-care-intensity-cs</td><td>Monitored Bed</td><td><div><p>Patient placed in a bed with continuous telemetry or other monitoring (outside ICU).</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://testSK.org/CodeSystem/initial-care-intensity-cs-icu-stroke"> </a>&nbsp;&nbsp;<a href="CodeSystem-initial-care-intensity-cs.html#initial-care-intensity-cs-icu-stroke">icu-stroke</a></td><td>http://testSK.org/CodeSystem/initial-care-intensity-cs</td><td>ICU / Stroke Unit</td><td><div><p>Patient placed in an Intensive Care Unit or specialized Stroke Unit.</p>
-</div></td></tr></table></div>
+  <div><p class="res-header-id"></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on <a href="CodeSystem-initial-care-intensity-cs.html">codesystem Initial Care Intensity Code System v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://testSK.org/CodeSystem/initial-care-intensity-cs-standard"> </a>&nbsp;&nbsp;<a href="CodeSystem-initial-care-intensity-cs.html#initial-care-intensity-cs-standard">standard</a></td><td>http://testSK.org/CodeSystem/initial-care-intensity-cs</td><td>Standard Bed</td><td>Patient placed in a standard hospital bed without continuous monitoring.</td></tr><tr><td style="white-space:nowrap"><a name="x-http://testSK.org/CodeSystem/initial-care-intensity-cs-monitored"> </a>&nbsp;&nbsp;<a href="CodeSystem-initial-care-intensity-cs.html#initial-care-intensity-cs-monitored">monitored</a></td><td>http://testSK.org/CodeSystem/initial-care-intensity-cs</td><td>Monitored Bed</td><td>Patient placed in a bed with continuous telemetry or other monitoring (outside ICU).</td></tr><tr><td style="white-space:nowrap"><a name="x-http://testSK.org/CodeSystem/initial-care-intensity-cs-icu-stroke"> </a>&nbsp;&nbsp;<a href="CodeSystem-initial-care-intensity-cs.html#initial-care-intensity-cs-icu-stroke">icu-stroke</a></td><td>http://testSK.org/CodeSystem/initial-care-intensity-cs</td><td>ICU / Stroke Unit</td><td>Patient placed in an Intensive Care Unit or specialized Stroke Unit.</td></tr></table></div>
 
   <hr/>
   <p>
@@ -288,8 +285,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l529">​</a>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Jun 4, 2025 09:36+0000">2025-06-04</span>
+        <p><a name="l518">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Aug 28, 2025 12:22+0000">2025-08-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

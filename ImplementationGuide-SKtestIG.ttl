@@ -11,13 +11,13 @@
   fhir:id [ fhir:v "SKtestIG"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide SKtestIG</b></p><a name=\"SKtestIG\"> </a><a name=\"hcSKtestIG\"> </a><a name=\"SKtestIG-en-US\"> </a><h2>IGTest</h2><p>The official URL for this implementation guide is: </p><pre>http://testSK.org/ImplementationGuide/SKtestIG</pre></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide SKtestIG</b></p><a name=\"SKtestIG\"> </a><a name=\"hcSKtestIG\"> </a><h2>IGTest</h2><p>The official URL for this implementation guide is: </p><pre>http://testSK.org/ImplementationGuide/SKtestIG</pre></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://testSK.org/ImplementationGuide/SKtestIG"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-04T09:35:36+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-28T12:22:25+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -43,7 +43,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
-     fhir:version [ fhir:v "6.4.0" ]
+     fhir:version [ fhir:v "6.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -65,7 +65,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r5#0.5.0"
+         fhir:v "hl7.fhir.uv.tools.r5#0.7.1"
        ]
      ] ) ;
      fhir:resource ( [
