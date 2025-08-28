@@ -5,57 +5,70 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write   # necesario para gh-pages
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Setup Java 17 (IG Publisher requiere JDK 17+)
+      - name: Setup Java 17
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '17'
 
-      - name: Setup Node.js 16
-        uses: actions/setup-node@v3
+      - name: Setup Node.js (LTS)
+        uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: '20'
 
       - name: Install SUSHI
         run: npm install -g fsh-sushi
 
+      - name: Install jq (para renombrar package.tgz)
+        run: sudo apt-get update && sudo apt-get install -y jq
+
       - name: Download IG Publisher
         run: |
-          curl -L -o publisher.jar \
+          mkdir -p input-cache
+          curl -L -o input-cache/publisher.jar \
             https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
-      
-      - name: Upload IG Publisher jar as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: ig-publisher-latest
-          path: publisher.jar
-          retention-days: 14
 
-      - name: Setup Ruby (para Jekyll)
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'
-          bundler-cache: false
-
-      - name: Install Jekyll gem
-        run: gem install jekyll
-
-      - name: Compile FSH y generar recursos
-        working-directory: ./
+      - name: Run SUSHI
         run: sushi .
 
       - name: Run IG Publisher
+        env:
+          JAVA_TOOL_OPTIONS: -Xmx4g
         run: |
-          java -jar publisher.jar -ig ./ -tx https://tx.fhir.org
+          # Puedes cambiar -tx a 'n/a' si no quieres depender del terminology server en CI
+          java -jar input-cache/publisher.jar -ig . -tx https://tx.fhir.org
+
+      - name: Rename package.tgz with packageId-version
+        id: rename
+        shell: bash
+        run: |
+          IG_JSON=$(ls fsh-generated/resources/ImplementationGuide-*.json | head -n1)
+          PKG=$(jq -r '.packageId' "$IG_JSON")
+          VER=$(jq -r '.version' "$IG_JSON")
+          DEST="output/${PKG}-${VER}.tgz"
+          cp output/package.tgz "$DEST"
+          echo "tgz=$DEST" >> "$GITHUB_OUTPUT"
+
+      - name: Upload build artifacts (incl. tgz)
+        uses: actions/upload-artifact@v4
+        with:
+          name: ig-build
+          path: |
+            ${{ steps.rename.outputs.tgz }}
+            output/qa.html
+            output/**
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -64,25 +77,21 @@ jobs:
           publish_dir: ./output
           publish_branch: gh-pages
 
-      - name: Upload QA file as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: qa-html
-          path: output/qa.html
-
-          
-  download-artifact:
-    name: Download IG output
-    runs-on: ubuntu-latest
+  # Opcional: si publicas un tag, crea un Release con el .tgz
+  release:
+    if: startsWith(github.ref, 'refs/tags/')
     needs: build
-
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Download QA artifact
+      - name: Download IG build artifacts
         uses: actions/download-artifact@v4
         with:
-          name: qa-html
-    
-      - name: Mostrar estructura de archivos
-        run: ls -R .
-        
+          name: ig-build
+          path: dist
 
+      - name: Create GitHub Release with tgz
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.tgz
