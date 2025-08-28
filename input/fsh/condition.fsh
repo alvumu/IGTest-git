@@ -45,7 +45,7 @@ Description: "Defines the SNOMED CT codes for conditions or risk factors relevan
 * include SCT#230706003 "Hemorrhagic cerebral infarction (disorder)" // Prior hemorrhage
 * include SCT#266257000 "Transient ischemic attack (disorder)" // Previous TIA
 * include SCT#422504002 "Ischemic stroke (disorder)" // Previous ischemic stroke
-* include SCT#230690007 "Cerebral hemorrhage (disorder)"
+* include SCT#230690007 "Cerebrovascular accident (disorder)"
 
 ValueSet: StrokeRiskFactorVS
 Id: stroke-risk-factor-vs
