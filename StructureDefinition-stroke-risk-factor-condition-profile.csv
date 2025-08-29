@@ -65,7 +65,7 @@ The data type is CodeableConcept because verificationStatus has some clinical ju
 ","FiveWs.grade","< 272141005 |Severities|","PRB-26 / ABS-3","Can be pre/post-coordinated into value.  Or ./inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""severity""].value","246112005"
 "Condition.code","Condition.code","","type
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Identification of the condition, problem or diagnosis","Identification of the condition, problem or diagnosis.","","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","http://testSK.org/ValueSet/stroke-risk-factor-vs","",,,,"Condition.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Identification of the condition, problem or diagnosis","Identification of the condition, problem or diagnosis.","","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs","",,,,"Condition.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.what[x]","(< 404684003 |Clinical finding| MINUS (
 << 420134006 |Propensity to adverse reactions| OR 
 << 473010000 |Hypersensitivity condition| OR 
