@@ -48,15 +48,15 @@ Description: "Defines the SNOMED CT codes for conditions or risk factors relevan
 * include SCT#422504002 "Ischemic stroke (disorder)" // Previous ischemic stroke
 * include SCT#230690007 "Cerebrovascular accident (disorder)"
 
-ValueSet: StrokeRiskFactorVS
-Id: stroke-risk-factor-vs
-Title: "Stroke Risk Factor ValueSet"
-Description: "Defines the unknown or absent codes for conditions or risk factors relevant to stroke."
-* ^url = StrokeRiskFactorVS_URL
-* ^version = "0.1.0"
-* ^status = #active
-* include codes from valueset StrokeRiskFactorSNOMEDVS
-* include codes from valueset StrokeRiskUnknVS
+// ValueSet: StrokeRiskFactorVS
+// Id: stroke-risk-factor-vs
+// Title: "Stroke Risk Factor ValueSet"
+// Description: "Defines the unknown or absent codes for conditions or risk factors relevant to stroke."
+// * ^url = StrokeRiskFactorVS_URL
+// * ^version = "0.1.0"
+// * ^status = #active
+// * include codes from valueset StrokeRiskFactorSNOMEDVS
+// * include codes from valueset StrokeRiskUnknVS
 
 // ValueSet for Discharge Destination
 ValueSet: DischargeDestinationVS
@@ -208,7 +208,7 @@ Description: "Represents a known condition or risk factor relevant to stroke."
 * subject only Reference(Patient)
 
 * code 1..1 MS
-* code from StrokeRiskFactorVS (required)
+* code from StrokeRiskFactorSNOMEDVS (required)
 
 * onset[x] MS
 * recordedDate MS
