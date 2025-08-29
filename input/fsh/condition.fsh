@@ -34,6 +34,7 @@ Id: stroke-risk-factor-snomed-vs
 Title: "Stroke Risk Factor ValueSet"
 Description: "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke."
 * ^url = StrokeRiskFactorSNOMEDVS_URL
+* ^version = "0.2.0"
 * ^status = #active
 * include SCT#49436004 "Atrial fibrillation (disorder)"
 * include SCT#5370000 "Atrial flutter (disorder)"
@@ -52,6 +53,8 @@ Id: stroke-risk-factor-vs
 Title: "Stroke Risk Factor ValueSet"
 Description: "Defines the unknown or absent codes for conditions or risk factors relevant to stroke."
 * ^url = StrokeRiskFactorVS_URL
+* ^version = "0.1.0"
+* ^status = #active
 * include codes from valueset StrokeRiskFactorSNOMEDVS
 * include codes from valueset StrokeRiskUnknVS
 
