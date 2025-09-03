@@ -18,6 +18,13 @@
       ]
     },
     {
+      "url": "http://testSK.org/StructureDefinition/gender-snomed",
+      "title": "Gender (SNOMED CT)",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://testSK.org/StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext",
       "title": "HemorrhagicStrokeBleedingReasonExt",
       "types": [
@@ -43,6 +50,13 @@
       "title": "Observation Timing Context Extension",
       "types": [
         "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://testSK.org/StructureDefinition/patient-age",
+      "title": "Patient Age (integer)",
+      "types": [
+        "integer"
       ]
     },
     {
@@ -88,6 +102,12 @@
       {
         "url": "http://testSK.org/StructureDefinition/encounter-provider-provenance",
         "title": "Encounter Provider Provenance Profile (R5)"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://testSK.org/StructureDefinition/patient-snomed-gender",
+        "title": "Patient with SNOMED Gender and Age (extensions)"
       }
     ],
     "MedicationStatement": [
@@ -162,6 +182,9 @@
     "http://testSK.org/StructureDefinition/first-hospital-ext": [
       "Encounter"
     ],
+    "http://testSK.org/StructureDefinition/gender-snomed": [
+      "Patient"
+    ],
     "http://testSK.org/StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext": [
       "Condition"
     ],
@@ -173,6 +196,9 @@
     ],
     "http://testSK.org/StructureDefinition/observation-timing-context-ext": [
       "Observation"
+    ],
+    "http://testSK.org/StructureDefinition/patient-age": [
+      "Patient"
     ],
     "http://testSK.org/StructureDefinition/procedure-timing-context-ext": [
       "Procedure"

@@ -126,6 +126,13 @@
     "name" : "FunctionalScoreObservationProfile"
   },
   {
+    "id" : "gender-snomed",
+    "type" : "StructureDefinition",
+    "url" : "http://testSK.org/StructureDefinition/gender-snomed",
+    "version" : "0.1.0",
+    "name" : "GenderSNOMED"
+  },
+  {
     "id" : "hemorrhagic-stroke-bleeding-reason-ext",
     "type" : "StructureDefinition",
     "url" : "http://testSK.org/StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext",
@@ -152,6 +159,20 @@
     "url" : "http://testSK.org/StructureDefinition/observation-timing-context-ext",
     "version" : "0.1.0",
     "name" : "ObservationTimingContextExtension"
+  },
+  {
+    "id" : "patient-age",
+    "type" : "StructureDefinition",
+    "url" : "http://testSK.org/StructureDefinition/patient-age",
+    "version" : "0.1.0",
+    "name" : "PatientAge"
+  },
+  {
+    "id" : "patient-snomed-gender",
+    "type" : "StructureDefinition",
+    "url" : "http://testSK.org/StructureDefinition/patient-snomed-gender",
+    "version" : "0.1.0",
+    "name" : "PatientSNOMEDGender"
   },
   {
     "id" : "prior-medication-statement-profile",
@@ -481,5 +502,12 @@
     "url" : "http://testSK.org/ValueSet/vital-sign-codes-vs",
     "version" : "0.1.0",
     "name" : "VitalSignCodesVS"
+  },
+  {
+    "id" : "vs-gender-snomed",
+    "type" : "ValueSet",
+    "url" : "http://testSK.org/ValueSet/vs-gender-snomed",
+    "version" : "0.1.0",
+    "name" : "GenderSNOMEDVS"
   }
 ]

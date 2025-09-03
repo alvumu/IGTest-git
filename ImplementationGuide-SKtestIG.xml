@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="IGTest"/>
   <status value="draft"/>
-  <date value="2025-08-29T09:46:03+00:00"/>
+  <date value="2025-09-03T11:52:57+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -262,6 +262,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/gender-snomed"/>
+      </reference>
+      <name value="Gender (SNOMED CT)"/>
+      <description value="Patient gender represented with SNOMED CT codes."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-gender-snomed"/>
+      </reference>
+      <name value="Gender (SNOMED CT)"/>
+      <description value="Value set to represent patient gender using SNOMED CT codes, analogous to AdministrativeGender."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -422,6 +444,28 @@
       </reference>
       <name value="Observation Timing Context Extension"/>
       <description value="Specifies the timing context or phase (e.g., pre-stroke, admission, discharge, 3-month) in which an observation or assessment was made."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-age"/>
+      </reference>
+      <name value="Patient Age (integer)"/>
+      <description value="Patient age in years represented as an integer."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-snomed-gender"/>
+      </reference>
+      <name value="Patient with SNOMED Gender and Age (extensions)"/>
+      <description value="Profile that adds an integer age extension and a SNOMED-based gender extension."/>
       <isExample value="false"/>
     </resource>
     <resource>

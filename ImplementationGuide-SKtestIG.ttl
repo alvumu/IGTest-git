@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-08-29T09:46:03+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-03T11:52:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -384,6 +384,36 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/gender-snomed> ;
+         fhir:reference [ fhir:v "StructureDefinition/gender-snomed" ]
+       ] ;
+       fhir:name [ fhir:v "Gender (SNOMED CT)" ] ;
+       fhir:description [ fhir:v "Patient gender represented with SNOMED CT codes." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/vs-gender-snomed> ;
+         fhir:reference [ fhir:v "ValueSet/vs-gender-snomed" ]
+       ] ;
+       fhir:name [ fhir:v "Gender (SNOMED CT)" ] ;
+       fhir:description [ fhir:v "Value set to represent patient gender using SNOMED CT codes, analogous to AdministrativeGender." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -602,6 +632,36 @@
        ] ;
        fhir:name [ fhir:v "Observation Timing Context Extension" ] ;
        fhir:description [ fhir:v "Specifies the timing context or phase (e.g., pre-stroke, admission, discharge, 3-month) in which an observation or assessment was made." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/patient-age> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-age" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Age (integer)" ] ;
+       fhir:description [ fhir:v "Patient age in years represented as an integer." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/StructureDefinition/patient-snomed-gender> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-snomed-gender" ]
+       ] ;
+       fhir:name [ fhir:v "Patient with SNOMED Gender and Age (extensions)" ] ;
+       fhir:description [ fhir:v "Profile that adds an integer age extension and a SNOMED-based gender extension." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [

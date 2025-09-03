@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-08-29T09:46:03+00:00",
+  "date" : "2025-09-03T11:52:57+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -288,6 +288,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/gender-snomed"
+      },
+      "name" : "Gender (SNOMED CT)",
+      "description" : "Patient gender represented with SNOMED CT codes.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-gender-snomed"
+      },
+      "name" : "Gender (SNOMED CT)",
+      "description" : "Value set to represent patient gender using SNOMED CT codes, analogous to AdministrativeGender.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -462,6 +486,30 @@
       },
       "name" : "Observation Timing Context Extension",
       "description" : "Specifies the timing context or phase (e.g., pre-stroke, admission, discharge, 3-month) in which an observation or assessment was made.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/patient-age"
+      },
+      "name" : "Patient Age (integer)",
+      "description" : "Patient age in years represented as an integer.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/patient-snomed-gender"
+      },
+      "name" : "Patient with SNOMED Gender and Age (extensions)",
+      "description" : "Profile that adds an integer age extension and a SNOMED-based gender extension.",
       "isExample" : false
     },
     {
