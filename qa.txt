@@ -1,9 +1,9 @@
 IGTest : Validation Results
 =========================================
 
-err = 16, warn = 117, info = 33
+err = 17, warn = 118, info = 33
 IG Publisher Version: 2.0.16
-Generated Wed Sep 03 11:55:16 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
+Generated Thu Sep 04 12:45:19 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
  Build Errors : 607 / 24 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-afib-flutter-status-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 0 / 0 / 1
@@ -90,7 +90,7 @@ Generated Wed Sep 03 11:55:16 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (c
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-etiology-vs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-finding-codes-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs : 0 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs : 0 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs : 1 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallow-procedures-vs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallowing-screening-timing-category-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-thrombectomy-complication-vs : 0 / 1 / 1
@@ -683,9 +683,9 @@ ERROR: ValueSet-stroke-proc-not-done-reason-vs.ttl.html#/html/body/div/div/div/p
 ERROR: ValueSet-stroke-proc-not-done-reason-vs.xml.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-snomed-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-snomed-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-risk-factor-snomed-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-risk-factor-snomed-vs.json.html#/html/body/div/div/div/p/a at Line 292, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-risk-factor-snomed-vs.ttl.html#/html/body/div/div/div/p/a at Line 272, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-risk-factor-snomed-vs.html#/html/body/div/div/div/p/a at Line 310, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-risk-factor-snomed-vs.json.html#/html/body/div/div/div/p/a at Line 294, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-risk-factor-snomed-vs.ttl.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-snomed-vs.xml.html#/html/body/div/div/div/p/a at Line 285, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-swallow-procedures-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-swallow-procedures-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -954,7 +954,9 @@ WARNING: ValueSet/stroke-finding-codes-vs: ValueSet: Published value sets SHOULD
 == fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs.json ==
 WARNING: ValueSet/stroke-proc-not-done-reason-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs.json ==
+WARNING: ValueSet/stroke-risk-factor-snomed-vs: ValueSet.compose.include[0].filter[0]: The value '<<49436004 OR <<5370000' for the filter constraint can't be checked: Unsupported Operation validate on resource ValueSet
 WARNING: ValueSet/stroke-risk-factor-snomed-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'stroke-risk-factor-snomed-vs'): Error from https://tx.fhir.org/r5: The filter "constraint = <<49436004 OR <<5370000" from the value set http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs was not understood in the context of http://snomed.info/sct (3)
 == fsh-generated/resources/ValueSet-swallow-procedures-vs.json ==
 == fsh-generated/resources/ValueSet-swallowing-screening-timing-category-vs.json ==
 WARNING: ValueSet/swallowing-screening-timing-category-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
