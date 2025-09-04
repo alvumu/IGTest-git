@@ -15,7 +15,7 @@ Description: "Value set to represent patient gender using SNOMED CT codes, analo
 
 // ===== Extension: Patient Age (integer) =====
 Extension: PatientAge
-Id: patient-age
+Id: patient-age-ext
 Title: "Patient Age (integer)"
 Description: "Patient age in years represented as an integer."
 * ^context.type = #element
@@ -26,7 +26,7 @@ Description: "Patient age in years represented as an integer."
 
 // ===== Extension: Gender in SNOMED =====
 Extension: GenderSNOMED
-Id: gender-snomed
+Id: gender-snomed-ext
 Title: "Gender (SNOMED CT)"
 Description: "Patient gender represented with SNOMED CT codes."
 * ^context.type = #element
@@ -36,14 +36,18 @@ Description: "Patient gender represented with SNOMED CT codes."
 * valueCodeableConcept from GenderSNOMEDVS (required)
 
 // ===== Profile: Patient with SNOMED Gender and Age Extensions =====
-Profile: PatientSNOMEDGender
+Profile: PatientAgeGenderSNOMEDProfile
 Parent: Patient
-Id: patient-snomed-gender
+Id: patient-age-gender-snomed-profile
 Title: "Patient with SNOMED Gender and Age (extensions)"
 Description: "Profile that adds an integer age extension and a SNOMED-based gender extension."
-* extension contains
-    PatientAge named age 0..1 and
-    GenderSNOMED named gender-sct 1..1
-* extension[age] MS
-* extension[gender-sct] MS
-* gender 0..0 // Hide standard AdministrativeGender (remove this line if you want to keep it)
+* extension contains PatientAge named age 0..1 MS
+* extension contains GenderSNOMED named gender-sct 0..1 MS
+* gender 0..0 
+
+
+Instance: PatientAgeGenderSnomedExample
+InstanceOf: PatientAgeGenderSNOMEDProfile
+Id: PatientExample
+* extension[PatientAge].valueInteger = 45
+* extension[GenderSNOMED].valueCodeableConcept = SCT#248153007
