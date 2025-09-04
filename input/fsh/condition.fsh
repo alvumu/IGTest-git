@@ -1,7 +1,18 @@
-Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
-Alias: $sct = http://snomed.info/sct
-Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
-Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
+Alias: SCT = http://snomed.info/sct
+Alias: FHIR = http://hl7.org/fhir
+Alias: CondCat = http://terminology.hl7.org/CodeSystem/condition-category
+Alias: CondVerStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status
+Alias: StrokeRiskUnknVS = http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips
+Alias: ClinicalStatusCondCS = http://terminology.hl7.org/CodeSystem/condition-clinical
+
+Alias: StrokeDiagnosisVS_URL = http://testSK.org/ValueSet/stroke-diagnosis-vs
+Alias: StrokeRiskFactorSNOMEDVS_URL = http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs
+Alias: StrokeRiskFactorVS_URL = http://testSK.org/ValueSet/stroke-risk-factor-vs
+Alias: StrokeRiskFactorUnknVS_URL = http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips
+Alias: DischargeDestinationVS_URL = http://testSK.org/ValueSet/discharge-destination-vs
+Alias: AdmissionSourceVS_URL = http://testSK.org/ValueSet/admission-source-vs
+Alias: HemorrhagicStrokeBleedingReasonVS_URL = http://testSK.org/ValueSet/hemorrhagic-stroke-bleeding-reason-vs
+Alias: StrokeEtiologyVS_URL = http://testSK.org/ValueSet/stroke-etiology-vs
 
 Profile: StrokeDiagnosisConditionProfile
 Parent: Condition
