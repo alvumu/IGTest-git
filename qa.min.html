@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 638, errors = 16, warn = 121, info = 33-->
+<!-- broken links = 644, errors = 17, warn = 121, info = 33-->
 <head>
   <title>IGTest : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for IGTest</h1>
- <p>Generated Fri Sep 05 14:08:41 UTC 2025, FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = <a href="http://testSK.org">http://testSK.org</a> (<a href="http://testSK.org/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Fri Sep 05 16:41:00 UTC 2025, FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = <a href="http://testSK.org">http://testSK.org</a> (<a href="http://testSK.org/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.16</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = SKtestIG, Canonical = http://testSK.org</td></tr>
@@ -186,14 +186,14 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 16, warn = 121, info = 33, broken links = 638, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 17, warn = 121, info = 33, broken links = 644, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>638</b></td><td><b>29</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>644</b></td><td><b>29</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_CodeSystem-mtici-code-cs"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-code-cs</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -201,8 +201,8 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_CodeSystem-timing-metric-codes-cs"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-timing-metric-codes-cs</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>1</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_Encounter-StrokeEncounterExample"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Encounter-StrokeEncounterExample</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_Encounter-StrokeEncounterExample"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Encounter-StrokeEncounterExample</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_MedicationStatement-PriorMedicationStatementExample"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationStatement-PriorMedicationStatementExample</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -572,6 +572,24 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="CodeSystem-procedure-timing-context-cs.xml.html#l521">CodeSystem-procedure-timing-context-cs&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 258, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-stroke-arrival-mode-cs-testing.html#l324">CodeSystem-stroke-arrival-mode-cs-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-stroke-arrival-mode-cs.change.history.html#l293">CodeSystem-stroke-arrival-mode-cs&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 189, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-stroke-arrival-mode-cs.html#l450">CodeSystem-stroke-arrival-mode-cs&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 266, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-stroke-arrival-mode-cs.json.html#l444">CodeSystem-stroke-arrival-mode-cs&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 275, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-stroke-arrival-mode-cs.ttl.html#l546">CodeSystem-stroke-arrival-mode-cs&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 274, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-stroke-arrival-mode-cs.xml.html#l593">CodeSystem-stroke-arrival-mode-cs&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 275, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="CodeSystem-stroke-proc-not-done-reason-cs-testing.html#l324">CodeSystem-stroke-proc-not-done-reason-cs-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
@@ -1582,7 +1600,7 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
      <td><b><a href="StructureDefinition-stroke-encounter-profile-testing.html#l346">StructureDefinition-stroke-encounter-profile-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 253, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-stroke-encounter-profile.html#l11080">StructureDefinition-stroke-encounter-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/span&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/span&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/span&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/span&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2370, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-stroke-encounter-profile.html#l11104">StructureDefinition-stroke-encounter-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/span&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/span&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/span&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/span&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2370, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-stroke-encounter-profile.profile.history.html#l319">StructureDefinition-stroke-encounter-profile&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
@@ -2104,16 +2122,16 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
      <td><b><a href="ValueSet-stroke-arrival-mode-vs.change.history.html#l293">ValueSet-stroke-arrival-mode-vs&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 189, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-stroke-arrival-mode-vs.html#l533">ValueSet-stroke-arrival-mode-vs&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 289, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="ValueSet-stroke-arrival-mode-vs.html#l557">ValueSet-stroke-arrival-mode-vs&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 289, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-stroke-arrival-mode-vs.json.html#l405">ValueSet-stroke-arrival-mode-vs&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 260, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="ValueSet-stroke-arrival-mode-vs.json.html#l384">ValueSet-stroke-arrival-mode-vs&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 246, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-stroke-arrival-mode-vs.ttl.html#l462">ValueSet-stroke-arrival-mode-vs&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 256, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="ValueSet-stroke-arrival-mode-vs.ttl.html#l423">ValueSet-stroke-arrival-mode-vs&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-stroke-arrival-mode-vs.xml.html#l497">ValueSet-stroke-arrival-mode-vs&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 253, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="ValueSet-stroke-arrival-mode-vs.xml.html#l443">ValueSet-stroke-arrival-mode-vs&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="ValueSet-stroke-circumstance-codes-vs-testing.html#l324">ValueSet-stroke-circumstance-codes-vs-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
@@ -2350,7 +2368,7 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
      <td><b><a href="ValueSet-vs-gender-snomed.xml.html#l503">ValueSet-vs-gender-snomed&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#l1696">artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1002, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="artifacts.html#l1711">artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1011, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="general-principles.html#l280">general-principles&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 165, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
@@ -2359,7 +2377,7 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
      <td><b><a href="index.html#l639">index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 335, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="toc.html#l1062">toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 145, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="toc.html#l1070">toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 145, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>1</b></td><td><b>warning</b></td><td><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
@@ -2420,6 +2438,9 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Encounter.type[0].coding[0] (l10/c6)</b></td><td><b>warning</b></td><td><b>Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Coding_has_no_system__cannot_validate</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter&#8203;.admission&#8203;.admitSource (l29&#8203;/c6)</b></td><td><b>error</b></td><td><b>None of the codings provided are in the value set 'Stroke Arrival Mode ValueSet' (http://testSK.org/ValueSet/stroke-arrival-mode-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#715537001)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_NoValid_1_CC</span></td>
    </tr>
 </table>
 <hr/>
@@ -2559,7 +2580,7 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Observation&#8203;.value&#8203;.ofType(Quantity) (l9&#8203;/c4)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|5.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl693" class="flip" onclick="flip('l693')">Show Reasoning</span><div id="l693" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/StructureDefinition/bp|5.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Observation.value.ofType(Quantity): discriminator = true and $this.empty()</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+     <td><b><a href="">Observation&#8203;.value&#8203;.ofType(Quantity) (l9&#8203;/c4)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|5.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl700" class="flip" onclick="flip('l700')">Show Reasoning</span><div id="l700" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/StructureDefinition/bp|5.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Observation.value.ofType(Quantity): discriminator = true and $this.empty()</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Observation (l1/c2)</b></td><td><b>error</b></td><td><b>Observation.effective[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|5.0.0)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Validation_VAL_Profile_Minimum</span></td>
@@ -3171,7 +3192,7 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet (l1/c1603)</b></td><td><b>warning</b></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+     <td><b>ValueSet (l1/c959)</b></td><td><b>warning</b></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <hr/>
@@ -3616,6 +3637,9 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
 <a name="Terminology_TX_NoValid_1_CC"> </a>
 <h2>Terminology_TX_NoValid_1_CC</h2>
  <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-StrokeEncounterExample.html">fsh-generated/resources/Encounter-StrokeEncounterExample.json</a></td><td><b>None of the codings provided are in the value set 'Stroke Arrival Mode ValueSet' (http://testSK.org/ValueSet/stroke-arrival-mode-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#715537001)</b></td>
+   </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="Observation-SpecificFindingObservationExampleMTICI.html">fsh-generated/resources/Observation-SpecificFindingObservationExampleMTICI.json</a></td><td><b>None of the codings provided are in the value set 'Specific Stroke Finding Codes ValueSet' (http://testSK.org/ValueSet/stroke-finding-codes-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#1156911000)</b></td>
    </tr>

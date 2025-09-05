@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-09-05T14:06:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-05T16:38:52+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -437,6 +437,21 @@
          fhir:reference [ fhir:v "StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext" ]
        ] ;
        fhir:name [ fhir:v "HemorrhagicStrokeBleedingReasonExt" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/stroke-arrival-mode-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/stroke-arrival-mode-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Initial Care Intensity Code System" ] ;
+       fhir:description [ fhir:v "Codes indicating the level of care provided during the patient's initial day(s) in the hospital." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [

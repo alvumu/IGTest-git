@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://testSK.org/CodeSystem/stroke-arrival-mode-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "stroke-arrival-mode-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem stroke-arrival-mode-cs</b></p><a name=\"stroke-arrival-mode-cs\"> </a><a name=\"hcstroke-arrival-mode-cs\"> </a><p>This case-insensitive code system <code>http://testSK.org/CodeSystem/stroke-arrival-mode-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">priv-transport-home<a name=\"stroke-arrival-mode-cs-priv-transport-home\"> </a></td><td>Private Transportation from Home/Scene</td><td>The patient arrived via personal or non-medical transport from their home or directly from the scene of the incident.</td></tr><tr><td style=\"white-space:nowrap\">priv-transport-gp<a name=\"stroke-arrival-mode-cs-priv-transport-gp\"> </a></td><td>Private Transportation from GP</td><td>The patient was referred and transported privately from GP.</td></tr><tr><td style=\"white-space:nowrap\">ems-gp<a name=\"stroke-arrival-mode-cs-ems-gp\"> </a></td><td>EMS from GP</td><td>Emergency Medical Services (EMS) transported the patient from GP.</td></tr><tr><td style=\"white-space:nowrap\">stroke-center<a name=\"stroke-arrival-mode-cs-stroke-center\"> </a></td><td>Stroke Center</td><td>The patient was transferred from a specialized stroke center, indicating prior specialized care</td></tr><tr><td style=\"white-space:nowrap\">ems-home<a name=\"stroke-arrival-mode-cs-ems-home\"> </a></td><td>EMS from Home</td><td>Emergency Medical Services (EMS) transported the patient from their home or directly from the scene where the stroke symptoms began.</td></tr><tr><td style=\"white-space:nowrap\">another-hosp<a name=\"stroke-arrival-mode-cs-another-hosp\"> </a></td><td>Another Hospital</td><td>The patient was transferred from another hospital</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://testSK.org/CodeSystem/stroke-arrival-mode-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "StrokeArrivalModeCS"] ; # 
+  fhir:title [ fhir:v "Initial Care Intensity Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-09-05T16:38:52+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UMU"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UMU" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://testSK.org/umu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes indicating the level of care provided during the patient's initial day(s) in the hospital."] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "priv-transport-home" ] ;
+     fhir:display [ fhir:v "Private Transportation from Home/Scene" ] ;
+     fhir:definition [ fhir:v "The patient arrived via personal or non-medical transport from their home or directly from the scene of the incident." ]
+  ] [
+     fhir:code [ fhir:v "priv-transport-gp" ] ;
+     fhir:display [ fhir:v "Private Transportation from GP" ] ;
+     fhir:definition [ fhir:v "The patient was referred and transported privately from GP." ]
+  ] [
+     fhir:code [ fhir:v "ems-gp" ] ;
+     fhir:display [ fhir:v "EMS from GP" ] ;
+     fhir:definition [ fhir:v "Emergency Medical Services (EMS) transported the patient from GP." ]
+  ] [
+     fhir:code [ fhir:v "stroke-center" ] ;
+     fhir:display [ fhir:v "Stroke Center" ] ;
+     fhir:definition [ fhir:v "The patient was transferred from a specialized stroke center, indicating prior specialized care" ]
+  ] [
+     fhir:code [ fhir:v "ems-home" ] ;
+     fhir:display [ fhir:v "EMS from Home" ] ;
+     fhir:definition [ fhir:v "Emergency Medical Services (EMS) transported the patient from their home or directly from the scene where the stroke symptoms began." ]
+  ] [
+     fhir:code [ fhir:v "another-hosp" ] ;
+     fhir:display [ fhir:v "Another Hospital" ] ;
+     fhir:definition [ fhir:v "The patient was transferred from another hospital" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

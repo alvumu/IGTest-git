@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-09-05T14:06:57+00:00",
+  "date" : "2025-09-05T16:38:52+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -330,6 +330,18 @@
         "reference" : "StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext"
       },
       "name" : "HemorrhagicStrokeBleedingReasonExt",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/stroke-arrival-mode-cs"
+      },
+      "name" : "Initial Care Intensity Code System",
+      "description" : "Codes indicating the level of care provided during the patient's initial day(s) in the hospital.",
       "isExample" : false
     },
     {

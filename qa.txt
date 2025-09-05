@@ -1,10 +1,10 @@
 IGTest : Validation Results
 =========================================
 
-err = 16, warn = 121, info = 33
+err = 17, warn = 121, info = 33
 IG Publisher Version: 2.0.16
-Generated Fri Sep 05 14:08:41 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
- Build Errors : 638 / 29 / 0
+Generated Fri Sep 05 16:41:00 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
+ Build Errors : 644 / 29 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-afib-flutter-status-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-initial-care-intensity-cs : 0 / 0 / 1
@@ -12,6 +12,7 @@ Generated Fri Sep 05 14:08:41 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (c
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-code-cs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-score-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-procedure-timing-context-cs : 0 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-arrival-mode-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-proc-not-done-reason-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-screen-time-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-timing-metric-codes-cs : 0 / 3 / 2
@@ -19,7 +20,7 @@ Generated Fri Sep 05 14:08:41 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (c
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFlutter : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionExample : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeRiskFactorConditionExample : 0 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Encounter-StrokeEncounterExample : 0 / 1 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Encounter-StrokeEncounterExample : 1 / 1 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG : 0 / 0 / 16
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationRequest-discharge-medication-request-001 : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationStatement-PriorMedicationStatementExample : 1 / 0 / 1
@@ -172,6 +173,12 @@ ERROR: CodeSystem-procedure-timing-context-cs.html#/html/body/div/div/div/p/a at
 ERROR: CodeSystem-procedure-timing-context-cs.json.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-procedure-timing-context-cs.ttl.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-procedure-timing-context-cs.xml.html#/html/body/div/div/div/p/a at Line 258, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-arrival-mode-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-arrival-mode-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-arrival-mode-cs.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-arrival-mode-cs.json.html#/html/body/div/div/div/p/a at Line 275, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-arrival-mode-cs.ttl.html#/html/body/div/div/div/p/a at Line 274, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-arrival-mode-cs.xml.html#/html/body/div/div/div/p/a at Line 275, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-stroke-proc-not-done-reason-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-stroke-proc-not-done-reason-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-stroke-proc-not-done-reason-cs.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -683,9 +690,9 @@ ERROR: ValueSet-specific-finding-codes-vs.xml.html#/html/body/div/div/div/p/a at
 ERROR: ValueSet-stroke-arrival-mode-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-arrival-mode-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-arrival-mode-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-arrival-mode-vs.json.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-arrival-mode-vs.ttl.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-arrival-mode-vs.xml.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-arrival-mode-vs.json.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-arrival-mode-vs.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-arrival-mode-vs.xml.html#/html/body/div/div/div/p/a at Line 241, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-circumstance-codes-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-circumstance-codes-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-circumstance-codes-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -764,7 +771,7 @@ ERROR: ValueSet-vs-gender-snomed.html#/html/body/div/div/div/p/a at Line 289, co
 ERROR: ValueSet-vs-gender-snomed.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-vs-gender-snomed.ttl.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-vs-gender-snomed.xml.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 1002, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 1011, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: general-principles.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: index.html#/html/body/div/div/div/p/a at Line 335, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: toc.html#/html/body/div/div/div/p/a at Line 145, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -779,6 +786,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 WARNING: CodeSystem/mtici-code-cs: CodeSystem: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CodeSystem)
 == fsh-generated/resources/CodeSystem-mtici-score-cs.json ==
 == fsh-generated/resources/CodeSystem-procedure-timing-context-cs.json ==
+== fsh-generated/resources/CodeSystem-stroke-arrival-mode-cs.json ==
 == fsh-generated/resources/CodeSystem-stroke-proc-not-done-reason-cs.json ==
 == fsh-generated/resources/CodeSystem-swallow-screen-time-cs.json ==
 == fsh-generated/resources/CodeSystem-timing-metric-codes-cs.json ==
@@ -793,6 +801,7 @@ WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem: Published code systems S
 == fsh-generated/resources/Encounter-StrokeEncounterExample.json ==
 INFORMATION: Encounter/StrokeEncounterExample: Encounter.extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/initial-care-intensity-cs|0.1.0
 WARNING: Encounter/StrokeEncounterExample: Encounter.type[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Encounter/StrokeEncounterExample: Encounter.admission.admitSource: None of the codings provided are in the value set 'Stroke Arrival Mode ValueSet' (http://testSK.org/ValueSet/stroke-arrival-mode-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#715537001)
 == fsh-generated/resources/ImplementationGuide-SKtestIG.json ==
 INFORMATION: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[3].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
 INFORMATION: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[4].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0

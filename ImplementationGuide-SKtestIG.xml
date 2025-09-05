@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="IGTest"/>
   <status value="draft"/>
-  <date value="2025-09-05T14:06:57+00:00"/>
+  <date value="2025-09-05T16:38:52+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -301,6 +301,17 @@
         <reference value="StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext"/>
       </reference>
       <name value="HemorrhagicStrokeBleedingReasonExt"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/stroke-arrival-mode-cs"/>
+      </reference>
+      <name value="Initial Care Intensity Code System"/>
+      <description value="Codes indicating the level of care provided during the patient's initial day(s) in the hospital."/>
       <isExample value="false"/>
     </resource>
     <resource>
