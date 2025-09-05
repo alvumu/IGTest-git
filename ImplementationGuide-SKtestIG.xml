@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="IGTest"/>
   <status value="draft"/>
-  <date value="2025-09-04T12:43:39+00:00"/>
+  <date value="2025-09-05T10:27:45+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -265,7 +265,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/gender-snomed"/>
+        <reference value="StructureDefinition/gender-snomed-ext"/>
       </reference>
       <name value="Gender (SNOMED CT)"/>
       <description value="Patient gender represented with SNOMED CT codes."/>
@@ -451,7 +451,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/patient-age"/>
+        <reference value="StructureDefinition/patient-age-ext"/>
       </reference>
       <name value="Patient Age (integer)"/>
       <description value="Patient age in years represented as an integer."/>
@@ -462,11 +462,22 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/patient-snomed-gender"/>
+        <reference value="StructureDefinition/patient-age-gender-snomed-profile"/>
       </reference>
       <name value="Patient with SNOMED Gender and Age (extensions)"/>
       <description value="Profile that adds an integer age extension and a SNOMED-based gender extension."/>
       <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PatientAgeGenderSnomedExample"/>
+      </reference>
+      <name value="PatientAgeGenderSnomedExample"/>
+      <isExample value="true"/>
+      <profile value="http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

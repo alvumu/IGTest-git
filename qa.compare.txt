@@ -1,10 +1,10 @@
 IGTest : Validation Results
 =========================================
 
-err = 17, warn = 118, info = 33
+err = 17, warn = 116, info = 33
 $--
 Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
- Build Errors : 607 / 24 / 0
+ Build Errors : 612 / 25 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-afib-flutter-status-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-initial-care-intensity-cs : 0 / 0 / 1
@@ -29,6 +29,7 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-TimingMetricObservationExample : 0 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-VitalSignObservationExample : 5 / 2 / 3
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Organization-ExampleOrganization : 1 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Patient-PatientAgeGenderSnomedExample : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Patient-example-patient : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Procedure-StrokeBrainImagingExample : 0 / 0 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Procedure-StrokeCarotidImagingExample : 0 / 0 / 3
@@ -42,13 +43,13 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-encounter-provider-provenance : 0 / 3 / 3
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-first-hospital-ext : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-functional-score-observation-profile : 0 / 2 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-gender-snomed : 0 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-gender-snomed-ext : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-hemorrhagic-stroke-bleeding-reason-ext : 0 / 3 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-initial-care-intensity-ext : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-ischemic-stroke-etiology-ext : 0 / 3 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-observation-timing-context-ext : 0 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-patient-age : 0 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-patient-snomed-gender : 0 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-patient-age-ext : 0 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-patient-age-gender-snomed-profile : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-prior-medication-statement-profile : 4 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-procedure-timing-context-ext : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-required-post-acute-care-ext : 0 / 0 / 1
@@ -106,6 +107,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Provenance/ExampleEncounterProviderProvenance.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/ExampleOrganization.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/FunctionalScoreObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PatientAgeGenderSnomedExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/example-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/PriorMedicationStatementExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/SpecificFindingObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -245,6 +247,11 @@ ERROR: Organization-ExampleOrganization.html#/html/body/div/div/div/p/a at Line 
 ERROR: Organization-ExampleOrganization.json.html#/html/body/div/div/div/p/a at Line 205, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Organization-ExampleOrganization.ttl.html#/html/body/div/div/div/p/a at Line 216, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Organization-ExampleOrganization.xml.html#/html/body/div/div/div/p/a at Line 205, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Patient-PatientAgeGenderSnomedExample.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Patient-PatientAgeGenderSnomedExample.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Patient-PatientAgeGenderSnomedExample.json.html#/html/body/div/div/div/p/a at Line 227, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Patient-PatientAgeGenderSnomedExample.ttl.html#/html/body/div/div/div/p/a at Line 236, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Patient-PatientAgeGenderSnomedExample.xml.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Patient-example-patient.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Patient-example-patient.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Patient-example-patient.json.html#/html/body/div/div/div/p/a at Line 205, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -336,14 +343,14 @@ ERROR: StructureDefinition-functional-score-observation-profile.profile.history.
 ERROR: StructureDefinition-functional-score-observation-profile.profile.json.html#/html/body/div/div/div/p/a at Line 3707, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-functional-score-observation-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2740, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-functional-score-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3458, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-gender-snomed-definitions.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-gender-snomed-mappings.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-gender-snomed-testing.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-gender-snomed.html#/html/body/div/div/div/p/a at Line 598, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-gender-snomed.profile.history.html#/html/body/div/div/div/p/a at Line 225, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-gender-snomed.profile.json.html#/html/body/div/div/div/p/a at Line 530, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-gender-snomed.profile.ttl.html#/html/body/div/div/div/p/a at Line 474, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-gender-snomed.profile.xml.html#/html/body/div/div/div/p/a at Line 480, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-gender-snomed-ext-definitions.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-gender-snomed-ext-mappings.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-gender-snomed-ext-testing.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-gender-snomed-ext.html#/html/body/div/div/div/p/a at Line 599, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-gender-snomed-ext.profile.history.html#/html/body/div/div/div/p/a at Line 225, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-gender-snomed-ext.profile.json.html#/html/body/div/div/div/p/a at Line 530, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-gender-snomed-ext.profile.ttl.html#/html/body/div/div/div/p/a at Line 474, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-gender-snomed-ext.profile.xml.html#/html/body/div/div/div/p/a at Line 482, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-hemorrhagic-stroke-bleeding-reason-ext-definitions.html#/html/body/div/div/div/p/a at Line 301, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-hemorrhagic-stroke-bleeding-reason-ext-mappings.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-hemorrhagic-stroke-bleeding-reason-ext-testing.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -376,23 +383,23 @@ ERROR: StructureDefinition-observation-timing-context-ext.profile.history.html#/
 ERROR: StructureDefinition-observation-timing-context-ext.profile.json.html#/html/body/div/div/div/p/a at Line 530, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-observation-timing-context-ext.profile.ttl.html#/html/body/div/div/div/p/a at Line 473, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-observation-timing-context-ext.profile.xml.html#/html/body/div/div/div/p/a at Line 484, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-patient-age-definitions.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-patient-age-mappings.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-patient-age-testing.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-patient-age.html#/html/body/div/div/div/p/a at Line 593, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-patient-age.profile.history.html#/html/body/div/div/div/p/a at Line 225, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-patient-age.profile.json.html#/html/body/div/div/div/p/a at Line 523, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-patient-age.profile.ttl.html#/html/body/div/div/div/p/a at Line 465, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-patient-age.profile.xml.html#/html/body/div/div/div/p/a at Line 473, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-patient-snomed-gender-definitions.html#/html/body/div/div/div/p/a at Line 565, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-patient-snomed-gender-examples.html#/html/body/div/div/div/p/a at Line 236, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-patient-snomed-gender-mappings.html#/html/body/div/div/div/p/a at Line 865, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-patient-snomed-gender-testing.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-patient-snomed-gender.html#/html/body/div/div/div/p/a at Line 1542, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-patient-snomed-gender.profile.history.html#/html/body/div/div/div/p/a at Line 225, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-patient-snomed-gender.profile.json.html#/html/body/div/div/div/p/a at Line 2641, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-patient-snomed-gender.profile.ttl.html#/html/body/div/div/div/p/a at Line 1978, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-patient-snomed-gender.profile.xml.html#/html/body/div/div/div/p/a at Line 2434, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-patient-age-ext-definitions.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-patient-age-ext-mappings.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-patient-age-ext-testing.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-patient-age-ext.html#/html/body/div/div/div/p/a at Line 594, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-patient-age-ext.profile.history.html#/html/body/div/div/div/p/a at Line 225, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-patient-age-ext.profile.json.html#/html/body/div/div/div/p/a at Line 523, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-patient-age-ext.profile.ttl.html#/html/body/div/div/div/p/a at Line 465, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-patient-age-ext.profile.xml.html#/html/body/div/div/div/p/a at Line 475, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-patient-age-gender-snomed-profile-definitions.html#/html/body/div/div/div/p/a at Line 575, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-patient-age-gender-snomed-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-patient-age-gender-snomed-profile-mappings.html#/html/body/div/div/div/p/a at Line 875, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-patient-age-gender-snomed-profile-testing.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-patient-age-gender-snomed-profile.html#/html/body/div/div/div/p/a at Line 1552, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-patient-age-gender-snomed-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-patient-age-gender-snomed-profile.profile.json.html#/html/body/div/div/div/p/a at Line 2650, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-patient-age-gender-snomed-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 1987, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-patient-age-gender-snomed-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2448, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-prior-medication-statement-profile-definitions.html#/html/body/div/div/div/p/a at Line 454, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-prior-medication-statement-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-prior-medication-statement-profile-mappings.html#/html/body/div/div/div/p/a at Line 538, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -723,7 +730,7 @@ ERROR: ValueSet-vs-gender-snomed.html#/html/body/div/div/div/p/a at Line 289, co
 ERROR: ValueSet-vs-gender-snomed.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-vs-gender-snomed.ttl.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-vs-gender-snomed.xml.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 966, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 972, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: general-principles.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: index.html#/html/body/div/div/div/p/a at Line 335, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: toc.html#/html/body/div/div/div/p/a at Line 145, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -804,6 +811,7 @@ WARNING: Observation/VitalSignObservationExample: Observation: Best Practice Rec
 WARNING: Observation/VitalSignObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Organization-ExampleOrganization.json ==
 ERROR: Organization/ExampleOrganization: Organization: Constraint failed: org-1: 'The organization SHALL at least have a name or an identifier, and possibly more than one' (defined in http://hl7.org/fhir/StructureDefinition/Organization)
+== fsh-generated/resources/Patient-PatientAgeGenderSnomedExample.json ==
 == fsh-generated/resources/Patient-example-patient.json ==
 == fsh-generated/resources/Procedure-StrokeBrainImagingExample.json ==
 INFORMATION: Procedure/StrokeBrainImagingExample: Procedure.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/procedure-timing-context-cs|0.1.0
@@ -836,8 +844,7 @@ WARNING: StructureDefinition/encounter-provider-provenance: StructureDefinition.
 == fsh-generated/resources/StructureDefinition-functional-score-observation-profile.json ==
 WARNING: StructureDefinition/functional-score-observation-profile: StructureDefinition.snapshot.element[22].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/functional-score-observation-profile: StructureDefinition.snapshot.element[48].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental
-== fsh-generated/resources/StructureDefinition-gender-snomed.json ==
-WARNING: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/gender-snomed'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-gender-snomed-ext.json ==
 == fsh-generated/resources/StructureDefinition-hemorrhagic-stroke-bleeding-reason-ext.json ==
 WARNING: StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://testSK.org/ValueSet/hemorrhagic-stroke-bleeding-reason-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://testSK.org/ValueSet/hemorrhagic-stroke-bleeding-reason-vs' which is experimental, but this structure is not labeled as experimental
@@ -848,10 +855,8 @@ WARNING: StructureDefinition/ischemic-stroke-etiology-ext: StructureDefinition.d
 WARNING: StructureDefinition/ischemic-stroke-etiology-ext: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://testSK.org/ValueSet/stroke-etiology-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/ischemic-stroke-etiology-ext'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-observation-timing-context-ext.json ==
-== fsh-generated/resources/StructureDefinition-patient-age.json ==
-WARNING: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/patient-age'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-patient-snomed-gender.json ==
-WARNING: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/patient-snomed-gender'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-patient-age-ext.json ==
+== fsh-generated/resources/StructureDefinition-patient-age-gender-snomed-profile.json ==
 == fsh-generated/resources/StructureDefinition-prior-medication-statement-profile.json ==
 ERROR: StructureDefinition/prior-medication-statement-profile: StructureDefinition.snapshot.element[29].binding.valueSet: Canonical URL 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
 ERROR: StructureDefinition/prior-medication-statement-profile: StructureDefinition.differential.element[5].binding.valueSet: Canonical URL 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]

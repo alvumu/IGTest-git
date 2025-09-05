@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-09-04T12:43:39+00:00",
+  "date" : "2025-09-05T10:27:45+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -291,7 +291,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/gender-snomed"
+        "reference" : "StructureDefinition/gender-snomed-ext"
       },
       "name" : "Gender (SNOMED CT)",
       "description" : "Patient gender represented with SNOMED CT codes.",
@@ -494,7 +494,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/patient-age"
+        "reference" : "StructureDefinition/patient-age-ext"
       },
       "name" : "Patient Age (integer)",
       "description" : "Patient age in years represented as an integer.",
@@ -506,11 +506,23 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/patient-snomed-gender"
+        "reference" : "StructureDefinition/patient-age-gender-snomed-profile"
       },
       "name" : "Patient with SNOMED Gender and Age (extensions)",
       "description" : "Profile that adds an integer age extension and a SNOMED-based gender extension.",
       "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/PatientAgeGenderSnomedExample"
+      },
+      "name" : "PatientAgeGenderSnomedExample",
+      "isExample" : true,
+      "profile" : ["http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile"]
     },
     {
       "extension" : [{
