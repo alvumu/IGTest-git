@@ -1,10 +1,10 @@
 IGTest : Validation Results
 =========================================
 
-err = 17, warn = 116, info = 33
+err = 16, warn = 121, info = 33
 $--
 Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
- Build Errors : 612 / 25 / 0
+ Build Errors : 638 / 29 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-afib-flutter-status-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-initial-care-intensity-cs : 0 / 0 / 1
@@ -15,6 +15,8 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-proc-not-done-reason-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-screen-time-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-timing-metric-codes-cs : 0 / 3 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFib : 0 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFlutter : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionExample : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeRiskFactorConditionExample : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Encounter-StrokeEncounterExample : 0 / 1 / 2
@@ -48,6 +50,8 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-initial-care-intensity-ext : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-ischemic-stroke-etiology-ext : 0 / 3 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-observation-timing-context-ext : 0 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-onset-date-ext : 0 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-onset-time-ext : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-patient-age-ext : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-patient-age-gender-snomed-profile : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-prior-medication-statement-profile : 4 / 0 / 1
@@ -91,7 +95,7 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-etiology-vs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-finding-codes-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs : 0 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs : 1 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallow-procedures-vs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallowing-screening-timing-category-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-thrombectomy-complication-vs : 0 / 1 / 1
@@ -101,6 +105,8 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/onset-date-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/onset-time-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ischemic-stroke-etiology-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/AgeAtOnsetObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/discharge-medication-request-001.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -115,6 +121,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/StrokeBrainImagingExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/StrokeCarotidImagingExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/StrokeCircumstanceObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/StrokeDiagnosisConditionAFib.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/StrokeDiagnosisConditionAFlutter.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/StrokeDiagnosisConditionExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/StrokeEncounterExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/StrokeRiskFactorConditionExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -182,11 +190,21 @@ ERROR: CodeSystem-timing-metric-codes-cs.html#/html/body/div/div/div/p/a at Line
 ERROR: CodeSystem-timing-metric-codes-cs.json.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-timing-metric-codes-cs.ttl.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-timing-metric-codes-cs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Condition-StrokeDiagnosisConditionAFib.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Condition-StrokeDiagnosisConditionAFib.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Condition-StrokeDiagnosisConditionAFib.json.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Condition-StrokeDiagnosisConditionAFib.ttl.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Condition-StrokeDiagnosisConditionAFib.xml.html#/html/body/div/div/div/p/a at Line 244, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Condition-StrokeDiagnosisConditionAFlutter.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Condition-StrokeDiagnosisConditionAFlutter.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Condition-StrokeDiagnosisConditionAFlutter.json.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Condition-StrokeDiagnosisConditionAFlutter.ttl.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Condition-StrokeDiagnosisConditionAFlutter.xml.html#/html/body/div/div/div/p/a at Line 244, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Condition-StrokeDiagnosisConditionExample.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Condition-StrokeDiagnosisConditionExample.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: Condition-StrokeDiagnosisConditionExample.json.html#/html/body/div/div/div/p/a at Line 245, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: Condition-StrokeDiagnosisConditionExample.ttl.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: Condition-StrokeDiagnosisConditionExample.xml.html#/html/body/div/div/div/p/a at Line 238, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Condition-StrokeDiagnosisConditionExample.json.html#/html/body/div/div/div/p/a at Line 244, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Condition-StrokeDiagnosisConditionExample.ttl.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Condition-StrokeDiagnosisConditionExample.xml.html#/html/body/div/div/div/p/a at Line 237, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Condition-StrokeRiskFactorConditionExample.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Condition-StrokeRiskFactorConditionExample.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Condition-StrokeRiskFactorConditionExample.json.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -383,6 +401,22 @@ ERROR: StructureDefinition-observation-timing-context-ext.profile.history.html#/
 ERROR: StructureDefinition-observation-timing-context-ext.profile.json.html#/html/body/div/div/div/p/a at Line 530, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-observation-timing-context-ext.profile.ttl.html#/html/body/div/div/div/p/a at Line 473, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-observation-timing-context-ext.profile.xml.html#/html/body/div/div/div/p/a at Line 484, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-onset-date-ext-definitions.html#/html/body/div/div/div/p/a at Line 301, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-onset-date-ext-mappings.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-onset-date-ext-testing.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-onset-date-ext.html#/html/body/div/div/div/p/a at Line 590, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-onset-date-ext.profile.history.html#/html/body/div/div/div/p/a at Line 225, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-onset-date-ext.profile.json.html#/html/body/div/div/div/p/a at Line 517, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-onset-date-ext.profile.ttl.html#/html/body/div/div/div/p/a at Line 459, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-onset-date-ext.profile.xml.html#/html/body/div/div/div/p/a at Line 467, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-onset-time-ext-definitions.html#/html/body/div/div/div/p/a at Line 301, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-onset-time-ext-mappings.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-onset-time-ext-testing.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-onset-time-ext.html#/html/body/div/div/div/p/a at Line 590, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-onset-time-ext.profile.history.html#/html/body/div/div/div/p/a at Line 225, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-onset-time-ext.profile.json.html#/html/body/div/div/div/p/a at Line 517, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-onset-time-ext.profile.ttl.html#/html/body/div/div/div/p/a at Line 459, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-onset-time-ext.profile.xml.html#/html/body/div/div/div/p/a at Line 467, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-patient-age-ext-definitions.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-patient-age-ext-mappings.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-patient-age-ext-testing.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -461,15 +495,15 @@ ERROR: StructureDefinition-stroke-circumstance-observation-profile.profile.histo
 ERROR: StructureDefinition-stroke-circumstance-observation-profile.profile.json.html#/html/body/div/div/div/p/a at Line 3410, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-circumstance-observation-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2546, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-circumstance-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3170, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-diagnosis-condition-profile-definitions.html#/html/body/div/div/div/p/a at Line 508, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-diagnosis-condition-profile-definitions.html#/html/body/div/div/div/p/a at Line 524, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-diagnosis-condition-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-diagnosis-condition-profile-mappings.html#/html/body/div/div/div/p/a at Line 686, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-diagnosis-condition-profile-mappings.html#/html/body/div/div/div/p/a at Line 708, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-diagnosis-condition-profile-testing.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-diagnosis-condition-profile.html#/html/body/div/div/div/p/a at Line 2018, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-diagnosis-condition-profile.html#/html/body/div/div/div/p/a at Line 1826, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-diagnosis-condition-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-diagnosis-condition-profile.profile.json.html#/html/body/div/div/div/p/a at Line 2304, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-diagnosis-condition-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 1765, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-diagnosis-condition-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2133, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-diagnosis-condition-profile.profile.json.html#/html/body/div/div/div/p/a at Line 2408, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-diagnosis-condition-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 1846, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-diagnosis-condition-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2222, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-encounter-profile-definitions.html#/html/body/div/div/div/p/a at Line 716, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-encounter-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-encounter-profile-mappings.html#/html/body/div/div/div/p/a at Line 960, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -480,14 +514,14 @@ ERROR: StructureDefinition-stroke-encounter-profile.profile.json.html#/html/body
 ERROR: StructureDefinition-stroke-encounter-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 3056, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-encounter-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3690, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-risk-factor-condition-profile-definitions.html#/html/body/div/div/div/p/a at Line 489, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-risk-factor-condition-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-risk-factor-condition-profile-examples.html#/html/body/div/div/div/p/a at Line 269, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-risk-factor-condition-profile-mappings.html#/html/body/div/div/div/p/a at Line 664, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-risk-factor-condition-profile-testing.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-risk-factor-condition-profile.html#/html/body/div/div/div/p/a at Line 2036, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-risk-factor-condition-profile.html#/html/body/div/div/div/p/a at Line 1786, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-risk-factor-condition-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-risk-factor-condition-profile.profile.json.html#/html/body/div/div/div/p/a at Line 2187, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-risk-factor-condition-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 1669, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-risk-factor-condition-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2038, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-risk-factor-condition-profile.profile.json.html#/html/body/div/div/div/p/a at Line 2171, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-risk-factor-condition-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 1659, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-risk-factor-condition-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2021, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-swallow-procedure-profile-definitions.html#/html/body/div/div/div/p/a at Line 532, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-swallow-procedure-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-swallow-procedure-profile-mappings.html#/html/body/div/div/div/p/a at Line 716, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -690,9 +724,9 @@ ERROR: ValueSet-stroke-proc-not-done-reason-vs.ttl.html#/html/body/div/div/div/p
 ERROR: ValueSet-stroke-proc-not-done-reason-vs.xml.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-snomed-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-snomed-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-risk-factor-snomed-vs.html#/html/body/div/div/div/p/a at Line 310, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-risk-factor-snomed-vs.json.html#/html/body/div/div/div/p/a at Line 294, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-risk-factor-snomed-vs.ttl.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-risk-factor-snomed-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-risk-factor-snomed-vs.json.html#/html/body/div/div/div/p/a at Line 292, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-risk-factor-snomed-vs.ttl.html#/html/body/div/div/div/p/a at Line 272, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-snomed-vs.xml.html#/html/body/div/div/div/p/a at Line 285, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-swallow-procedures-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-swallow-procedures-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -730,7 +764,7 @@ ERROR: ValueSet-vs-gender-snomed.html#/html/body/div/div/div/p/a at Line 289, co
 ERROR: ValueSet-vs-gender-snomed.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-vs-gender-snomed.ttl.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-vs-gender-snomed.xml.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 972, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 1002, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: general-principles.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: index.html#/html/body/div/div/div/p/a at Line 335, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: toc.html#/html/body/div/div/div/p/a at Line 145, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -752,6 +786,8 @@ WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem.concept[0].definition: va
 INFORMATION: CodeSystem/timing-metric-codes-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/Condition-StrokeDiagnosisConditionAFib.json ==
+== fsh-generated/resources/Condition-StrokeDiagnosisConditionAFlutter.json ==
 == fsh-generated/resources/Condition-StrokeDiagnosisConditionExample.json ==
 == fsh-generated/resources/Condition-StrokeRiskFactorConditionExample.json ==
 == fsh-generated/resources/Encounter-StrokeEncounterExample.json ==
@@ -855,6 +891,10 @@ WARNING: StructureDefinition/ischemic-stroke-etiology-ext: StructureDefinition.d
 WARNING: StructureDefinition/ischemic-stroke-etiology-ext: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://testSK.org/ValueSet/stroke-etiology-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/ischemic-stroke-etiology-ext'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-observation-timing-context-ext.json ==
+== fsh-generated/resources/StructureDefinition-onset-date-ext.json ==
+WARNING: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/onset-date-ext'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-onset-time-ext.json ==
+WARNING: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/onset-time-ext'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-patient-age-ext.json ==
 == fsh-generated/resources/StructureDefinition-patient-age-gender-snomed-profile.json ==
 == fsh-generated/resources/StructureDefinition-prior-medication-statement-profile.json ==
@@ -877,8 +917,8 @@ WARNING: StructureDefinition/stroke-carotid-imaging-procedure-profile: Structure
 WARNING: StructureDefinition/stroke-circumstance-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/stroke-circumstance-observation-profile: StructureDefinition.snapshot.element[45].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-stroke-diagnosis-condition-profile.json ==
-INFORMATION: StructureDefinition/stroke-diagnosis-condition-profile: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-WARNING: StructureDefinition/stroke-diagnosis-condition-profile: StructureDefinition.snapshot.element[27].binding: The definition for the element 'Condition.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type' which is experimental, but this structure is not labeled as experimental
+INFORMATION: StructureDefinition/stroke-diagnosis-condition-profile: StructureDefinition.snapshot.element[16].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/stroke-diagnosis-condition-profile: StructureDefinition.snapshot.element[29].binding: The definition for the element 'Condition.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-stroke-encounter-profile.json ==
 WARNING: StructureDefinition/stroke-encounter-profile: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: StructureDefinition/stroke-encounter-profile: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
@@ -959,9 +999,7 @@ WARNING: ValueSet/stroke-finding-codes-vs: ValueSet: Published value sets SHOULD
 == fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs.json ==
 WARNING: ValueSet/stroke-proc-not-done-reason-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs.json ==
-WARNING: ValueSet/stroke-risk-factor-snomed-vs: ValueSet.compose.include[0].filter[0]: The value '<<49436004 OR <<5370000' for the filter constraint can't be checked: Unsupported Operation validate on resource ValueSet
 WARNING: ValueSet/stroke-risk-factor-snomed-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: ValueSet.where(id = 'stroke-risk-factor-snomed-vs'): Error from https://tx.fhir.org/r5: The filter "constraint = <<49436004 OR <<5370000" from the value set http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs was not understood in the context of http://snomed.info/sct (3)
 == fsh-generated/resources/ValueSet-swallow-procedures-vs.json ==
 == fsh-generated/resources/ValueSet-swallowing-screening-timing-category-vs.json ==
 WARNING: ValueSet/swallowing-screening-timing-category-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

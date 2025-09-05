@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-09-05T10:27:45+00:00",
+  "date" : "2025-09-05T14:06:57+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -486,6 +486,28 @@
       },
       "name" : "Observation Timing Context Extension",
       "description" : "Specifies the timing context or phase (e.g., pre-stroke, admission, discharge, 3-month) in which an observation or assessment was made.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/onset-date-ext"
+      },
+      "name" : "OnsetDateExt",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/onset-time-ext"
+      },
+      "name" : "OnsetTimeExt",
       "isExample" : false
     },
     {
@@ -990,6 +1012,30 @@
       "name" : "StrokeCircumstanceObservationExample",
       "isExample" : true,
       "profile" : ["http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/StrokeDiagnosisConditionAFib"
+      },
+      "name" : "StrokeDiagnosisConditionAFib",
+      "isExample" : true,
+      "profile" : ["http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/StrokeDiagnosisConditionAFlutter"
+      },
+      "name" : "StrokeDiagnosisConditionAFlutter",
+      "isExample" : true,
+      "profile" : ["http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile"]
     },
     {
       "extension" : [{

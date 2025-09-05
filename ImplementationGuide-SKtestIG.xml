@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="IGTest"/>
   <status value="draft"/>
-  <date value="2025-09-05T10:27:45+00:00"/>
+  <date value="2025-09-05T14:06:57+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -444,6 +444,26 @@
       </reference>
       <name value="Observation Timing Context Extension"/>
       <description value="Specifies the timing context or phase (e.g., pre-stroke, admission, discharge, 3-month) in which an observation or assessment was made."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onset-date-ext"/>
+      </reference>
+      <name value="OnsetDateExt"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onset-time-ext"/>
+      </reference>
+      <name value="OnsetTimeExt"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -906,6 +926,28 @@
       <name value="StrokeCircumstanceObservationExample"/>
       <isExample value="true"/>
       <profile value="http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/StrokeDiagnosisConditionAFib"/>
+      </reference>
+      <name value="StrokeDiagnosisConditionAFib"/>
+      <isExample value="true"/>
+      <profile value="http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/StrokeDiagnosisConditionAFlutter"/>
+      </reference>
+      <name value="StrokeDiagnosisConditionAFlutter"/>
+      <isExample value="true"/>
+      <profile value="http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

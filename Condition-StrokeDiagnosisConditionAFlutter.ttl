@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://testSK.org/Condition/StrokeDiagnosisConditionAFlutter> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "StrokeDiagnosisConditionAFlutter"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile"^^xsd:anyURI ;
+       fhir:link <http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition StrokeDiagnosisConditionAFlutter</b></p><a name=\"StrokeDiagnosisConditionAFlutter\"> </a><a name=\"hcStrokeDiagnosisConditionAFlutter\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-stroke-risk-factor-condition-profile.html\">Stroke Risk Factor Condition Profile</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status differential}\">Differential</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 5370000}\">Atrial flutter (disorder)</span></p><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>encounter</b>: <a href=\"Encounter-StrokeEncounterExample.html\">Encounter: extension = true,ICU / Stroke Unit,false,Neurology department (environment); status = completed; type = Inpatient Encounter; actualPeriod = 2025-03-01 08:00:00+0000 --&gt; 2025-03-10 12:00:00+0000</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "differential" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "problem-list-item" ] ;
+       fhir:display [ fhir:v "Problem List Item" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:5370000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "5370000" ] ;
+       fhir:display [ fhir:v "Atrial flutter (disorder)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://testSK.org/Patient/example-patient> ;
+     fhir:reference [ fhir:v "Patient/example-patient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://testSK.org/Encounter/StrokeEncounterExample> ;
+     fhir:reference [ fhir:v "Encounter/StrokeEncounterExample" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
