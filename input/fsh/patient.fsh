@@ -48,6 +48,5 @@ Description: "Profile that adds an integer age extension and a SNOMED-based gend
 
 Instance: PatientAgeGenderSnomedExample
 InstanceOf: PatientAgeGenderSNOMEDProfile
-Id: PatientExample
 * extension[PatientAge].valueInteger = 45
 * extension[GenderSNOMED].valueCodeableConcept = SCT#248153007
