@@ -4,6 +4,7 @@ Alias: FHIR_Encounter = http://hl7.org/fhir/StructureDefinition/Encounter
 Alias: FHIR_Extension = http://hl7.org/fhir/StructureDefinition/Extension
 Alias: FHIR_Location = http://hl7.org/fhir/StructureDefinition/Location
 
+
 // URLs for Custom CodeSystems (Defined Below)
 Alias: StrokeArrivalModeCS_URL = http://testSK.org/CodeSystem/stroke-arrival-mode-cs
 Alias: DischargeDeptCS_URL = http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs
@@ -23,6 +24,22 @@ Alias: DischargeDepartmentServiceExt_URL = http://testSK.org/StructureDefinition
 
 // ------------------------- Custom CodeSystems & ValueSets -------------
 
+// --- Initial Care Intensity ---
+CodeSystem: StrokeArrivalModeCS
+Id: stroke-arrival-mode-cs
+* ^url = StrokeArrivalModeCS_URL
+* ^title = "Initial Care Intensity Code System"
+* ^description = "Codes indicating the level of care provided during the patient's initial day(s) in the hospital."
+* ^status = #active
+* ^experimental = true 
+* ^caseSensitive = false  
+* #priv-transport-home "Private Transportation from Home/Scene" "The patient arrived via personal or non-medical transport from their home or directly from the scene of the incident."
+* #priv-transport-gp "Private Transportation from GP" "The patient was referred and transported privately from GP."
+* #ems-gp "EMS from GP" "Emergency Medical Services (EMS) transported the patient from GP."
+* #stroke-center "Stroke Center" "The patient was transferred from a specialized stroke center, indicating prior specialized care"
+* #ems-home "EMS from Home" "Emergency Medical Services (EMS) transported the patient from their home or directly from the scene where the stroke symptoms began."
+* #another-hosp "Another Hospital" "The patient was transferred from another hospital"
+
 // --- Arrival Mode ---
 ValueSet: StrokeArrivalModeVS
 Id: stroke-arrival-mode-vs
@@ -30,9 +47,7 @@ Id: stroke-arrival-mode-vs
 * ^title = "Stroke Arrival Mode ValueSet"
 * ^description = "ValueSet specifying the mode and origin of the patient's arrival."
 * ^status = #active
-* include SCT#715537001 "Transportation by ambulance (procedure)"
-* include SCT#715957006 "Transportation by own transport (procedure)"
-* include SCT#384762007 "Transportation procedure (procedure)"
+* include codes from system StrokeArrivalModeCS_URL
 
 // --- Discharge Destination ---
 ValueSet: StrokeDischargeDestinationVS
@@ -188,6 +203,3 @@ InstanceOf: StrokeEncounterProfile
 * extension[initialCareIntensity].valueCodeableConcept = InitialCareIntensityCS_URL#icu-stroke "ICU / Stroke Unit"
 * extension[requiredPostAcuteCare].valueBoolean = false
 * extension[dischargeDepartmentService].valueCodeableConcept = SCT#309937004 "Neurology department (environment)"
-
-
-
