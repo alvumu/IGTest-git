@@ -36,7 +36,8 @@ Description: "Defines the SNOMED CT codes for conditions or risk factors relevan
 * ^url = StrokeRiskFactorSNOMEDVS_URL
 * ^version = "0.2.0"
 * ^status = #active
-* include codes from system SCT where constraint = "<<49436004 OR <<5370000"
+* SCT#5370000 "Atrial flutter (disorder)"
+* SCT#49436004 "Atrial fibrillation (disorder)"
 * SCT#22298006 "Myocardial infarction (disorder)"
 * SCT#53741008 "Coronary arteriosclerosis (disorder)"
 * SCT#73211009 "Diabetes mellitus (disorder)"
@@ -142,6 +143,19 @@ Id: ischemic-stroke-etiology-ext
 * value[x] only CodeableConcept
 * valueCodeableConcept from StrokeEtiologyVS (required)
 
+Extension: OnsetDateExt
+Id: onset-date-ext
+* ^context.type = #element
+* ^context.expression = "Condition"
+* value[x] only date
+
+
+Extension: OnsetTimeExt
+Id: onset-time-ext
+* ^context.type = #element
+* ^context.expression = "Condition"
+* value[x] only time
+
 // ------------------ Condition Profiles -------------------------
 
 // --- 1. Profile for Primary Stroke Diagnosis ---
@@ -154,7 +168,6 @@ Description: "Represents the final diagnosis of the current stroke event."
 
 * clinicalStatus MS
 * verificationStatus MS
-* verificationStatus = CondVerStatus#confirmed
 
 * category MS
 * category = CondCat#encounter-diagnosis "Encounter Diagnosis"
@@ -169,12 +182,14 @@ Description: "Represents the final diagnosis of the current stroke event."
 * encounter only Reference(Encounter)
 * encounter MS
 
-* onset[x] 1..1
-* onset[x] only dateTime
-* onset[x] MS
+* onset[x] 0..0
+
 
 * extension contains HemorrhagicStrokeBleedingReasonExt named bleedingReason 0..1 MS
 * extension contains StrokeStrokeEtiologyExt named ischemicEtiology 0..1 MS
+* extension contains OnsetDateExt named onsetDate 0..1 MS
+* extension contains OnsetTimeExt named onsetTime 0..1 MS
+
 
 // --- 2. Profile for Stroke Risk Factor Conditions ---
 Profile: StrokeRiskFactorConditionProfile
@@ -186,7 +201,7 @@ Description: "Represents a known condition or risk factor relevant to stroke."
 
 * clinicalStatus MS
 * verificationStatus MS
-* verificationStatus = CondVerStatus#confirmed
+
 
 * category MS
 * category = CondCat#problem-list-item "Problem List Item"
@@ -210,8 +225,28 @@ InstanceOf: StrokeDiagnosisConditionProfile
 * category = CondCat#encounter-diagnosis "Encounter Diagnosis"
 * code = SCT#266257000 "Transient ischemic attack (disorder)"
 * encounter = Reference(StrokeEncounterExample)
-* onsetDateTime = 2025-03-31T12:00:00Z
 * clinicalStatus = ClinicalStatusCondCS#active 
+* encounter = Reference(StrokeEncounterExample)
+* subject = Reference(PatientExample)
+
+Instance: StrokeDiagnosisConditionAFlutter
+InstanceOf: StrokeRiskFactorConditionProfile
+* category = CondCat#problem-list-item "Problem List Item"
+* code = SCT#5370000 "Atrial flutter (disorder)"
+* encounter = Reference(StrokeEncounterExample)
+* clinicalStatus = ClinicalStatusCondCS#active
+* verificationStatus = CondVerStatus#differential
+* encounter = Reference(StrokeEncounterExample)
+* subject = Reference(PatientExample)
+
+Instance: StrokeDiagnosisConditionAFib
+InstanceOf: StrokeRiskFactorConditionProfile
+* category = CondCat#problem-list-item "Problem List Item"
+* code = SCT#49436004 "Atrial fibrillation (disorder)"
+* encounter = Reference(StrokeEncounterExample)
+* clinicalStatus = ClinicalStatusCondCS#active
+* verificationStatus = CondVerStatus#differential
+* encounter = Reference(StrokeEncounterExample)
 * subject = Reference(PatientExample)
 
 Instance: StrokeRiskFactorConditionExample
