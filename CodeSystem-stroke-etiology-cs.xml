@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="stroke-etiology-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem stroke-etiology-cs</b></p><a name="stroke-etiology-cs"> </a><a name="hcstroke-etiology-cs"> </a><p>This case-insensitive code system <code>http://testSK.org/CodeSystem/stroke-etiology-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">atherosclerosis<a name="stroke-etiology-cs-atherosclerosis"> </a></td><td>Stroke Etiology Atherosclerosis</td><td>Specifies that large artery atherosclerosis (for example, significant stenosis in the carotid or basilar arteries) was identified as the cause of the stroke.</td></tr><tr><td style="white-space:nowrap">other<a name="stroke-etiology-cs-other"> </a></td><td>Stroke Etiology Other</td><td>Specifies that the stroke etiology falls into a rarer category not covered by the main classifications, such as vasculitis or hypercoagulable states.</td></tr></table></div>
+  </text>
+  <url value="http://testSK.org/CodeSystem/stroke-etiology-cs"/>
+  <version value="0.1.0"/>
+  <name value="StrokeEtiologyCS"/>
+  <title value="Stroke Etiology Code System"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-09-08T06:26:35+00:00"/>
+  <publisher value="UMU"/>
+  <contact>
+    <name value="UMU"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://testSK.org/umu"/>
+    </telecom>
+  </contact>
+  <description value="Codes indicating the etiology of strokes."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="atherosclerosis"/>
+    <display value="Stroke Etiology Atherosclerosis"/>
+    <definition value="Specifies that large artery atherosclerosis (for example, significant stenosis in the carotid or basilar arteries) was identified as the cause of the stroke."/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Stroke Etiology Other"/>
+    <definition value="Specifies that the stroke etiology falls into a rarer category not covered by the main classifications, such as vasculitis or hypercoagulable states."/>
+  </concept>
+</CodeSystem>

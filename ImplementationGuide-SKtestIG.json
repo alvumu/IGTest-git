@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-09-05T16:38:52+00:00",
+  "date" : "2025-09-08T06:26:35+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -312,6 +312,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/hemorrhagic-stroke-bleeding-reason-cs"
+      },
+      "name" : "Hemorrhagic Stroke Bleeding Reason Code System",
+      "description" : "Codes indicating the reason for bleeding in hemorrhagic stroke cases.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -383,13 +395,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "ValueSet/medication-vs"
+        "reference" : "CodeSystem/discharge-medication-cs"
       },
-      "name" : "Medications ValueSet",
-      "description" : "SNOMED CT codes for drug products or substances.",
+      "name" : "Medications CodeSystem",
+      "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
       "isExample" : false
     },
     {
@@ -402,6 +414,18 @@
       },
       "name" : "Medications ValueSet",
       "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/medication-statement-cs"
+      },
+      "name" : "MedicationStatement CodeSystem",
+      "description" : "Codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use).",
       "isExample" : false
     },
     {
@@ -800,6 +824,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/stroke-discharge-destination-cs"
+      },
+      "name" : "Stroke Discharge Destination Code System",
+      "description" : "Codes indicating the possible destinations of the patient upon discharge from the encounter.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -819,6 +855,18 @@
       },
       "name" : "Stroke Encounter Profile",
       "description" : "Profile for an Encounter resource representing a patient's hospital admission and stay for a stroke event, including key administrative and workflow details.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/stroke-etiology-cs"
+      },
+      "name" : "Stroke Etiology Code System",
+      "description" : "Codes indicating the etiology of strokes.",
       "isExample" : false
     },
     {

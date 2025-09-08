@@ -12,10 +12,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.109"],
       "uses" : {
       },
+      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
       "StructureDefinition-stroke-thrombolysis-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)",
       "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
-      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)"
+      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)"
     },
     {
       "url" : "http://testSK.org/ValueSet/admission-source-vs",
@@ -99,7 +99,7 @@
       "name" : "DischargeMedicationVS",
       "title" : "Medications ValueSet",
       "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
-      "systems" : ["http://snomed.info/sct"],
+      "systems" : ["http://testSK.org/ValueSet/medication-vs"],
       "uses" : {
       },
       "StructureDefinition-discharge-medication-request-profile.html" : "Discharge Medication Request Profile"
@@ -123,7 +123,9 @@
       "name" : "HemorrhagicStrokeBleedingReasonVS",
       "title" : "Hemorrhagic Stroke Bleeding Reason ValueSet",
       "description" : "Specifies the identified cause of a hemorrhagic stroke, typically used with an extension.",
-      "systems" : ["http://snomed.info/sct"],
+      "systems" : [
+        "http://testSK.org/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs"
+      ],
       "uses" : {
       },
       "StructureDefinition-hemorrhagic-stroke-bleeding-reason-ext.html" : "HemorrhagicStrokeBleedingReasonExt"
@@ -141,25 +143,16 @@
       "StructureDefinition-initial-care-intensity-ext.html" : "Initial Care Intensity Extension"
     },
     {
-      "url" : "http://testSK.org/ValueSet/medication-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "MedicationVS",
-      "title" : "Medications ValueSet",
-      "description" : "SNOMED CT codes for drug products or substances.",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "ValueSet-discharge-medication-vs.html" : "Medications ValueSet"
-    },
-    {
       "url" : "http://testSK.org/ValueSet/medicationStatement-meds-codes-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "MedicationStatementMedsCodes",
       "title" : "MedicationStatement Therapy/Finding Codes",
       "description" : "ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use).",
-      "systems" : ["http://snomed.info/sct"],
+      "systems" : [
+        "http://testSK.org/CodeSystem/medication-statement-cs",
+        "http://snomed.info/sct"
+      ],
       "uses" : {
       },
       "StructureDefinition-prior-medication-statement-profile.html" : "Prior Medication Statement Profile (R5)"
@@ -276,7 +269,10 @@
       "name" : "StrokeDischargeDestinationVS",
       "title" : "Stroke Discharge Destination ValueSet",
       "description" : "Defines the possible destinations of the patient upon discharge from the encounter.",
-      "systems" : ["http://snomed.info/sct"],
+      "systems" : [
+        "http://testSK.org/CodeSystem/stroke-discharge-destination-cs",
+        "http://snomed.info/sct"
+      ],
       "uses" : {
       },
       "StructureDefinition-stroke-encounter-profile.html" : "Stroke Encounter Profile"
@@ -288,7 +284,10 @@
       "name" : "StrokeEtiologyVS",
       "title" : "Stroke Etiology ValueSet",
       "description" : "Specifies the determined etiology of an stroke.",
-      "systems" : ["http://snomed.info/sct"],
+      "systems" : [
+        "http://testSK.org/CodeSystem/stroke-etiology-cs",
+        "http://snomed.info/sct"
+      ],
       "uses" : {
       },
       "StructureDefinition-ischemic-stroke-etiology-ext.html" : "StrokeStrokeEtiologyExt"
@@ -320,10 +319,10 @@
       ],
       "uses" : {
       },
+      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
       "StructureDefinition-stroke-thrombolysis-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)",
       "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
-      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)"
+      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)"
     },
     {
       "url" : "http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs",

@@ -14,11 +14,25 @@
     "name" : "AssessmentContextCS"
   },
   {
+    "id" : "hemorrhagic-stroke-bleeding-reason-cs",
+    "type" : "CodeSystem",
+    "url" : "http://testSK.org/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs",
+    "version" : "0.1.0",
+    "name" : "HemorrhagicStrokeBleedingReasonCS"
+  },
+  {
     "id" : "initial-care-intensity-cs",
     "type" : "CodeSystem",
     "url" : "http://testSK.org/CodeSystem/initial-care-intensity-cs",
     "version" : "0.1.0",
     "name" : "InitialCareIntensityCS"
+  },
+  {
+    "id" : "medication-statement-cs",
+    "type" : "CodeSystem",
+    "url" : "http://testSK.org/CodeSystem/medication-statement-cs",
+    "version" : "0.1.0",
+    "name" : "MedicationStatementCS"
   },
   {
     "id" : "mrs-score-cs",
@@ -54,6 +68,20 @@
     "url" : "http://testSK.org/CodeSystem/stroke-arrival-mode-cs",
     "version" : "0.1.0",
     "name" : "StrokeArrivalModeCS"
+  },
+  {
+    "id" : "stroke-discharge-destination-cs",
+    "type" : "CodeSystem",
+    "url" : "http://testSK.org/CodeSystem/stroke-discharge-destination-cs",
+    "version" : "0.1.0",
+    "name" : "StrokeDischargeDestinationCS"
+  },
+  {
+    "id" : "stroke-etiology-cs",
+    "type" : "CodeSystem",
+    "url" : "http://testSK.org/CodeSystem/stroke-etiology-cs",
+    "version" : "0.1.0",
+    "name" : "StrokeEtiologyCS"
   },
   {
     "id" : "stroke-proc-not-done-reason-cs",
@@ -378,11 +406,11 @@
     "name" : "InitialCareIntensityVS"
   },
   {
-    "id" : "medication-vs",
-    "type" : "ValueSet",
+    "id" : "discharge-medication-cs",
+    "type" : "CodeSystem",
     "url" : "http://testSK.org/ValueSet/medication-vs",
     "version" : "0.1.0",
-    "name" : "MedicationVS"
+    "name" : "DischargeMedicationCS"
   },
   {
     "id" : "medicationStatement-meds-codes-vs",

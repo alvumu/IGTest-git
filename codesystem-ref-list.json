@@ -35,6 +35,17 @@
       "ValueSet-assessment-context-vs.html" : "Assessment Context ValueSet"
     },
     {
+      "url" : "http://testSK.org/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "HemorrhagicStrokeBleedingReasonCS",
+      "title" : "Hemorrhagic Stroke Bleeding Reason Code System",
+      "description" : "Codes indicating the reason for bleeding in hemorrhagic stroke cases.",
+      "uses" : {
+      },
+      "ValueSet-hemorrhagic-stroke-bleeding-reason-vs.html" : "Hemorrhagic Stroke Bleeding Reason ValueSet"
+    },
+    {
       "url" : "http://testSK.org/CodeSystem/initial-care-intensity-cs",
       "version" : "0.1.0",
       "status" : "active",
@@ -44,6 +55,17 @@
       "uses" : {
       },
       "ValueSet-initial-care-intensity-vs.html" : "Initial Care Intensity ValueSet"
+    },
+    {
+      "url" : "http://testSK.org/CodeSystem/medication-statement-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MedicationStatementCS",
+      "title" : "MedicationStatement CodeSystem",
+      "description" : "Codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use).",
+      "uses" : {
+      },
+      "ValueSet-medicationStatement-meds-codes-vs.html" : "MedicationStatement Therapy/Finding Codes"
     },
     {
       "url" : "http://testSK.org/CodeSystem/mrs-score-cs",
@@ -91,6 +113,28 @@
       "ValueSet-stroke-arrival-mode-vs.html" : "Stroke Arrival Mode ValueSet"
     },
     {
+      "url" : "http://testSK.org/CodeSystem/stroke-discharge-destination-cs",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "StrokeDischargeDestinationCS",
+      "title" : "Stroke Discharge Destination Code System",
+      "description" : "Codes indicating the possible destinations of the patient upon discharge from the encounter.",
+      "uses" : {
+      },
+      "ValueSet-stroke-discharge-destination-vs.html" : "Stroke Discharge Destination ValueSet"
+    },
+    {
+      "url" : "http://testSK.org/CodeSystem/stroke-etiology-cs",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "StrokeEtiologyCS",
+      "title" : "Stroke Etiology Code System",
+      "description" : "Codes indicating the etiology of strokes.",
+      "uses" : {
+      },
+      "ValueSet-stroke-etiology-vs.html" : "Stroke Etiology ValueSet"
+    },
+    {
       "url" : "http://testSK.org/CodeSystem/stroke-proc-not-done-reason-cs",
       "version" : "0.1.0",
       "status" : "active",
@@ -122,6 +166,17 @@
       "uses" : {
       },
       "ValueSet-timing-metric-codes-vs.html" : "Stroke Timing Metric Codes ValueSet"
+    },
+    {
+      "url" : "http://testSK.org/ValueSet/medication-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DischargeMedicationCS",
+      "title" : "Medications CodeSystem",
+      "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
+      "uses" : {
+      },
+      "ValueSet-discharge-medication-vs.html" : "Medications ValueSet"
     }
   ]
 }

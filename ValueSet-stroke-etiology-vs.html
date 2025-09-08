@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"3.56"}
-    h3,h4,h5,h6{--heading-prefix:"3.56"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.55"}
+    h3,h4,h5,h6{--heading-prefix:"3.55"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -220,14 +220,20 @@
 
   <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div><p class="res-header-id"></p><a name="stroke-etiology-vs"> </a><a name="hcstroke-etiology-vs"> </a>
-<ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/724425005">724425005</a></td><td>Cerebral ischemic stroke due to intracranial large artery atherosclerosis (disorder)</td></tr><tr><td><a href="http://snomed.info/id/724426006">724426006</a></td><td>Cerebral ischemic stroke due to extracranial large artery atherosclerosis (disorder)</td></tr><tr><td><a href="http://snomed.info/id/1251566005">1251566005</a></td><td>Embolism from heart (disorder)</td></tr><tr><td><a href="http://snomed.info/id/404684003">404684003</a></td><td>Clinical finding (finding)</td></tr><tr><td><a href="http://snomed.info/id/16891111000119104">16891111000119104</a></td><td>Cryptogenic stroke (disorder)</td></tr><tr><td><a href="http://snomed.info/id/230698000">230698000</a></td><td>Lacunar infarction (disorder)</td></tr><tr><td><a href="http://snomed.info/id/443929000">443929000</a></td><td>Small vessel cerebrovascular disease (disorder)</td></tr></table></li></ul></div>
+<div><p class="res-header-id"></p><a name="stroke-etiology-vs"> </a><a name="hcstroke-etiology-vs"> </a><p>This value set includes codes based on the following rules:</p>
+<ul><li>Include all codes defined in <a href="CodeSystem-stroke-etiology-cs.html"><code>http://testSK.org/CodeSystem/stroke-etiology-cs</code></a></li>
+<li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a>
+<table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr>
+<tr><td><a href="http://snomed.info/id/16891111000119104">16891111000119104</a></td>
+<td>Cryptogenic stroke (disorder)</td></tr>
+<tr><td><a href="http://snomed.info/id/413758000">413758000</a></td>
+<td>Cardioembolic stroke (disorder)</td></tr></table></li></ul></div>
 
   <p>&nbsp;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div><p class="res-header-id"></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 7 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-724425005"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/724425005">724425005</a></td><td>http://snomed.info/sct</td><td>Cerebral ischemic stroke due to intracranial large artery atherosclerosis (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-724426006"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/724426006">724426006</a></td><td>http://snomed.info/sct</td><td>Cerebral ischemic stroke due to extracranial large artery atherosclerosis (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1251566005"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/1251566005">1251566005</a></td><td>http://snomed.info/sct</td><td>Embolism from heart</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-404684003"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/404684003">404684003</a></td><td>http://snomed.info/sct</td><td>Clinical finding (finding)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-16891111000119104"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/16891111000119104">16891111000119104</a></td><td>http://snomed.info/sct</td><td>Cryptogenic stroke (disorder)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-230698000"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/230698000">230698000</a></td><td>http://snomed.info/sct</td><td>Lacunar infarction</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-443929000"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/443929000">443929000</a></td><td>http://snomed.info/sct</td><td>Small vessel cerebrovascular disease (disorder)</td></tr></table></div>
+  <div><p class="res-header-id"></p><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion from tx.fhir.org based on:</p><ul><li>SNOMED CT International edition 01-Feb 2025</li><li><a href="CodeSystem-stroke-etiology-cs.html">codesystem Stroke Etiology Code System v0.1.0 (CodeSystem)</a></li></ul></div><p>This value set contains 4 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://testSK.org/CodeSystem/stroke-etiology-cs-atherosclerosis"> </a>&nbsp;&nbsp;<a href="CodeSystem-stroke-etiology-cs.html#stroke-etiology-cs-atherosclerosis">atherosclerosis</a></td><td>http://testSK.org/CodeSystem/stroke-etiology-cs</td><td>Stroke Etiology Atherosclerosis</td><td>Specifies that large artery atherosclerosis (for example, significant stenosis in the carotid or basilar arteries) was identified as the cause of the stroke.</td></tr><tr><td style="white-space:nowrap"><a name="x-http://testSK.org/CodeSystem/stroke-etiology-cs-other"> </a>&nbsp;&nbsp;<a href="CodeSystem-stroke-etiology-cs.html#stroke-etiology-cs-other">other</a></td><td>http://testSK.org/CodeSystem/stroke-etiology-cs</td><td>Stroke Etiology Other</td><td>Specifies that the stroke etiology falls into a rarer category not covered by the main classifications, such as vasculitis or hypercoagulable states.</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-16891111000119104"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/16891111000119104">16891111000119104</a></td><td>http://snomed.info/sct</td><td>Cryptogenic stroke (disorder)</td><td></td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-413758000"> </a>&nbsp;&nbsp;<a href="http://snomed.info/id/413758000">413758000</a></td><td>http://snomed.info/sct</td><td>Cardioembolic stroke (disorder)</td><td></td></tr></table></div>
 
   <hr/>
   <p>
@@ -285,8 +291,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l601">​</a>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Sep 5, 2025 16:39+0000">2025-09-05</span>
+        <p><a name="l567">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Sep 8, 2025 06:27+0000">2025-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,18 +1,23 @@
 IGTest : Validation Results
 =========================================
 
-err = 17, warn = 121, info = 33
+err = 20, warn = 125, info = 36
 IG Publisher Version: 2.0.16
-Generated Fri Sep 05 16:41:00 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
- Build Errors : 644 / 29 / 0
+Generated Mon Sep 08 06:28:17 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
+ Build Errors : 668 / 29 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-afib-flutter-status-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 0 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-medication-cs : 3 / 2 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-hemorrhagic-stroke-bleeding-reason-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-initial-care-intensity-cs : 0 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-medication-statement-cs : 0 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mrs-score-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-code-cs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-score-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-procedure-timing-context-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-arrival-mode-cs : 0 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-discharge-destination-cs : 0 / 1 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-etiology-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-proc-not-done-reason-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-screen-time-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-timing-metric-codes-cs : 0 / 3 / 2
@@ -81,7 +86,6 @@ Generated Fri Sep 05 16:41:00 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (c
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-functional-score-codes-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-hemorrhagic-stroke-bleeding-reason-vs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-initial-care-intensity-vs : 0 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-medication-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-medicationStatement-meds-codes-vs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mrs-score-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mtici-code-vs : 0 / 2 / 1
@@ -143,12 +147,30 @@ ERROR: CodeSystem-assessment-context-cs.html#/html/body/div/div/div/p/a at Line 
 ERROR: CodeSystem-assessment-context-cs.json.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-assessment-context-cs.ttl.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-assessment-context-cs.xml.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-discharge-medication-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-discharge-medication-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-discharge-medication-cs.html#/html/body/div/div/div/p/a at Line 269, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-discharge-medication-cs.json.html#/html/body/div/div/div/p/a at Line 278, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-discharge-medication-cs.ttl.html#/html/body/div/div/div/p/a at Line 276, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-discharge-medication-cs.xml.html#/html/body/div/div/div/p/a at Line 279, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-hemorrhagic-stroke-bleeding-reason-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-hemorrhagic-stroke-bleeding-reason-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-hemorrhagic-stroke-bleeding-reason-cs.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-hemorrhagic-stroke-bleeding-reason-cs.json.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-hemorrhagic-stroke-bleeding-reason-cs.ttl.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-hemorrhagic-stroke-bleeding-reason-cs.xml.html#/html/body/div/div/div/p/a at Line 259, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-initial-care-intensity-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-initial-care-intensity-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-initial-care-intensity-cs.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-initial-care-intensity-cs.json.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-initial-care-intensity-cs.ttl.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-initial-care-intensity-cs.xml.html#/html/body/div/div/div/p/a at Line 258, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-medication-statement-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-medication-statement-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-medication-statement-cs.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-medication-statement-cs.json.html#/html/body/div/div/div/p/a at Line 263, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-medication-statement-cs.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-medication-statement-cs.xml.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-mrs-score-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-mrs-score-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-mrs-score-cs.html#/html/body/div/div/div/p/a at Line 269, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -179,6 +201,18 @@ ERROR: CodeSystem-stroke-arrival-mode-cs.html#/html/body/div/div/div/p/a at Line
 ERROR: CodeSystem-stroke-arrival-mode-cs.json.html#/html/body/div/div/div/p/a at Line 275, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-stroke-arrival-mode-cs.ttl.html#/html/body/div/div/div/p/a at Line 274, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-stroke-arrival-mode-cs.xml.html#/html/body/div/div/div/p/a at Line 275, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-discharge-destination-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-discharge-destination-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-discharge-destination-cs.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-discharge-destination-cs.json.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-discharge-destination-cs.ttl.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-discharge-destination-cs.xml.html#/html/body/div/div/div/p/a at Line 244, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-etiology-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-etiology-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-etiology-cs.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-etiology-cs.json.html#/html/body/div/div/div/p/a at Line 255, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-etiology-cs.ttl.html#/html/body/div/div/div/p/a at Line 258, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-etiology-cs.xml.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-stroke-proc-not-done-reason-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-stroke-proc-not-done-reason-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-stroke-proc-not-done-reason-cs.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -618,8 +652,8 @@ ERROR: ValueSet-discharge-destination-vs.xml.html#/html/body/div/div/div/p/a at 
 ERROR: ValueSet-discharge-medication-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-discharge-medication-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-discharge-medication-vs.html#/html/body/div/div/div/p/a at Line 291, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-discharge-medication-vs.json.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-discharge-medication-vs.ttl.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-discharge-medication-vs.json.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-discharge-medication-vs.ttl.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-discharge-medication-vs.xml.html#/html/body/div/div/div/p/a at Line 245, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-functional-score-codes-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-functional-score-codes-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -630,27 +664,21 @@ ERROR: ValueSet-functional-score-codes-vs.xml.html#/html/body/div/div/div/p/a at
 ERROR: ValueSet-hemorrhagic-stroke-bleeding-reason-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-hemorrhagic-stroke-bleeding-reason-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-hemorrhagic-stroke-bleeding-reason-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-hemorrhagic-stroke-bleeding-reason-vs.json.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-hemorrhagic-stroke-bleeding-reason-vs.ttl.html#/html/body/div/div/div/p/a at Line 259, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-hemorrhagic-stroke-bleeding-reason-vs.xml.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-hemorrhagic-stroke-bleeding-reason-vs.json.html#/html/body/div/div/div/p/a at Line 247, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-hemorrhagic-stroke-bleeding-reason-vs.ttl.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-hemorrhagic-stroke-bleeding-reason-vs.xml.html#/html/body/div/div/div/p/a at Line 244, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-initial-care-intensity-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-initial-care-intensity-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-initial-care-intensity-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-initial-care-intensity-vs.json.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-initial-care-intensity-vs.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-initial-care-intensity-vs.xml.html#/html/body/div/div/div/p/a at Line 241, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-medication-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-medication-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-medication-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-medication-vs.json.html#/html/body/div/div/div/p/a at Line 300, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-medication-vs.ttl.html#/html/body/div/div/div/p/a at Line 276, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-medication-vs.xml.html#/html/body/div/div/div/p/a at Line 292, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-medicationStatement-meds-codes-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-medicationStatement-meds-codes-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-medicationStatement-meds-codes-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-medicationStatement-meds-codes-vs.json.html#/html/body/div/div/div/p/a at Line 297, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-medicationStatement-meds-codes-vs.ttl.html#/html/body/div/div/div/p/a at Line 275, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-medicationStatement-meds-codes-vs.xml.html#/html/body/div/div/div/p/a at Line 291, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-medicationStatement-meds-codes-vs.html#/html/body/div/div/div/p/a at Line 290, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-medicationStatement-meds-codes-vs.json.html#/html/body/div/div/div/p/a at Line 272, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-medicationStatement-meds-codes-vs.ttl.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-medicationStatement-meds-codes-vs.xml.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-mrs-score-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-mrs-score-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-mrs-score-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -707,16 +735,16 @@ ERROR: ValueSet-stroke-diagnosis-vs.ttl.html#/html/body/div/div/div/p/a at Line 
 ERROR: ValueSet-stroke-diagnosis-vs.xml.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-discharge-destination-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-discharge-destination-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-discharge-destination-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-discharge-destination-vs.json.html#/html/body/div/div/div/p/a at Line 268, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-discharge-destination-vs.ttl.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-discharge-destination-vs.xml.html#/html/body/div/div/div/p/a at Line 263, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-discharge-destination-vs.html#/html/body/div/div/div/p/a at Line 290, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-discharge-destination-vs.json.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-discharge-destination-vs.ttl.html#/html/body/div/div/div/p/a at Line 259, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-discharge-destination-vs.xml.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-etiology-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-etiology-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-etiology-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-etiology-vs.json.html#/html/body/div/div/div/p/a at Line 277, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-etiology-vs.ttl.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-etiology-vs.xml.html#/html/body/div/div/div/p/a at Line 271, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-etiology-vs.html#/html/body/div/div/div/p/a at Line 295, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-etiology-vs.json.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-etiology-vs.ttl.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-etiology-vs.xml.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-finding-codes-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-finding-codes-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-finding-codes-vs.html#/html/body/div/div/div/p/a at Line 290, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -771,7 +799,7 @@ ERROR: ValueSet-vs-gender-snomed.html#/html/body/div/div/div/p/a at Line 289, co
 ERROR: ValueSet-vs-gender-snomed.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-vs-gender-snomed.ttl.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-vs-gender-snomed.xml.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 1011, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 1048, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: general-principles.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: index.html#/html/body/div/div/div/p/a at Line 335, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: toc.html#/html/body/div/div/div/p/a at Line 145, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -780,13 +808,29 @@ WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-ta
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CodeSystem-afib-flutter-status-cs.json ==
 == fsh-generated/resources/CodeSystem-assessment-context-cs.json ==
+== fsh-generated/resources/CodeSystem-discharge-medication-cs.json ==
+ERROR: CodeSystem.where(url = 'http://testSK.org/ValueSet/medication-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-medication-cs.json - the canonical URL (http://testSK.org/CodeSystem/discharge-medication-cs) does not match the URL (http://testSK.org/ValueSet/medication-vs)
+ERROR: CodeSystem.url: Resource id/url mismatch: discharge-medication-cs/http://testSK.org/ValueSet/medication-vs
+INFORMATION: CodeSystem/discharge-medication-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/discharge-medication-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/discharge-medication-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-medication-cs: URL Mismatch http://testSK.org/CodeSystem/discharge-medication-cs vs http://testSK.org/ValueSet/medication-vs
+== fsh-generated/resources/CodeSystem-hemorrhagic-stroke-bleeding-reason-cs.json ==
 == fsh-generated/resources/CodeSystem-initial-care-intensity-cs.json ==
+== fsh-generated/resources/CodeSystem-medication-statement-cs.json ==
+INFORMATION: CodeSystem/medication-statement-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/medication-statement-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/medication-statement-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-mrs-score-cs.json ==
 == fsh-generated/resources/CodeSystem-mtici-code-cs.json ==
 WARNING: CodeSystem/mtici-code-cs: CodeSystem: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CodeSystem)
 == fsh-generated/resources/CodeSystem-mtici-score-cs.json ==
 == fsh-generated/resources/CodeSystem-procedure-timing-context-cs.json ==
 == fsh-generated/resources/CodeSystem-stroke-arrival-mode-cs.json ==
+== fsh-generated/resources/CodeSystem-stroke-discharge-destination-cs.json ==
+INFORMATION: CodeSystem/stroke-discharge-destination-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/stroke-discharge-destination-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-stroke-etiology-cs.json ==
 == fsh-generated/resources/CodeSystem-stroke-proc-not-done-reason-cs.json ==
 == fsh-generated/resources/CodeSystem-swallow-screen-time-cs.json ==
 == fsh-generated/resources/CodeSystem-timing-metric-codes-cs.json ==
@@ -980,8 +1024,6 @@ WARNING: ValueSet/functional-score-codes-vs: ValueSet: Published value sets SHOU
 == fsh-generated/resources/ValueSet-hemorrhagic-stroke-bleeding-reason-vs.json ==
 == fsh-generated/resources/ValueSet-initial-care-intensity-vs.json ==
 WARNING: ValueSet/initial-care-intensity-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-medication-vs.json ==
-WARNING: ValueSet/medication-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-medicationStatement-meds-codes-vs.json ==
 == fsh-generated/resources/ValueSet-mrs-score-vs.json ==
 WARNING: ValueSet/mrs-score-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

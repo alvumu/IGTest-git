@@ -1,0 +1,37 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "stroke-etiology-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem stroke-etiology-cs</b></p><a name=\"stroke-etiology-cs\"> </a><a name=\"hcstroke-etiology-cs\"> </a><p>This case-insensitive code system <code>http://testSK.org/CodeSystem/stroke-etiology-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">atherosclerosis<a name=\"stroke-etiology-cs-atherosclerosis\"> </a></td><td>Stroke Etiology Atherosclerosis</td><td>Specifies that large artery atherosclerosis (for example, significant stenosis in the carotid or basilar arteries) was identified as the cause of the stroke.</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"stroke-etiology-cs-other\"> </a></td><td>Stroke Etiology Other</td><td>Specifies that the stroke etiology falls into a rarer category not covered by the main classifications, such as vasculitis or hypercoagulable states.</td></tr></table></div>"
+  },
+  "url" : "http://testSK.org/CodeSystem/stroke-etiology-cs",
+  "version" : "0.1.0",
+  "name" : "StrokeEtiologyCS",
+  "title" : "Stroke Etiology Code System",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2025-09-08T06:26:35+00:00",
+  "publisher" : "UMU",
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
+  "description" : "Codes indicating the etiology of strokes.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "atherosclerosis",
+    "display" : "Stroke Etiology Atherosclerosis",
+    "definition" : "Specifies that large artery atherosclerosis (for example, significant stenosis in the carotid or basilar arteries) was identified as the cause of the stroke."
+  },
+  {
+    "code" : "other",
+    "display" : "Stroke Etiology Other",
+    "definition" : "Specifies that the stroke etiology falls into a rarer category not covered by the main classifications, such as vasculitis or hypercoagulable states."
+  }]
+}

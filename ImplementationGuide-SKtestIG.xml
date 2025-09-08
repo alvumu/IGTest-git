@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="IGTest"/>
   <status value="draft"/>
-  <date value="2025-09-05T16:38:52+00:00"/>
+  <date value="2025-09-08T06:26:35+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -284,6 +284,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/hemorrhagic-stroke-bleeding-reason-cs"/>
+      </reference>
+      <name value="Hemorrhagic Stroke Bleeding Reason Code System"/>
+      <description value="Codes indicating the reason for bleeding in hemorrhagic stroke cases."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -349,13 +360,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="ValueSet/medication-vs"/>
+        <reference value="CodeSystem/discharge-medication-cs"/>
       </reference>
-      <name value="Medications ValueSet"/>
-      <description value="SNOMED CT codes for drug products or substances."/>
+      <name value="Medications CodeSystem"/>
+      <description value="Codes for drug products or substances representing the Medications on the patient discharge."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -367,6 +378,17 @@
       </reference>
       <name value="Medications ValueSet"/>
       <description value="Codes for drug products or substances representing the Medications on the patient discharge."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/medication-statement-cs"/>
+      </reference>
+      <name value="MedicationStatement CodeSystem"/>
+      <description value="Codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use)."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -731,6 +753,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/stroke-discharge-destination-cs"/>
+      </reference>
+      <name value="Stroke Discharge Destination Code System"/>
+      <description value="Codes indicating the possible destinations of the patient upon discharge from the encounter."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -749,6 +782,17 @@
       </reference>
       <name value="Stroke Encounter Profile"/>
       <description value="Profile for an Encounter resource representing a patient's hospital admission and stay for a stroke event, including key administrative and workflow details."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/stroke-etiology-cs"/>
+      </reference>
+      <name value="Stroke Etiology Code System"/>
+      <description value="Codes indicating the etiology of strokes."/>
       <isExample value="false"/>
     </resource>
     <resource>

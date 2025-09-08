@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "medicationStatement-meds-codes-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet medicationStatement-meds-codes-vs</b></p><a name=\"medicationStatement-meds-codes-vs\"> </a><a name=\"hcmedicationStatement-meds-codes-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/413081008\">413081008</a></td><td>Administration of prophylactic clopidogrel (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/308116003\">308116003</a></td><td>Antihypertensive therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/722045009\">722045009</a></td><td>Warfarin therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/1335906002\">1335906002</a></td><td>Rivaroxaban therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/1335908001\">1335908001</a></td><td>Apixaban therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/1338036007\">1338036007</a></td><td>Edoxaban therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/182764009\">182764009</a></td><td>Anticoagulant therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/315053001\">315053001</a></td><td>Administration of prophylactic statin (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/443464003\">443464003</a></td><td>Low molecular weight heparin therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/735127005\">735127005</a></td><td>Dipyridamole therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/1237404009\">1237404009</a></td><td>Uses hormone method of contraception (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/416608005\">416608005</a></td><td>Drug therapy (procedure)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet medicationStatement-meds-codes-vs</b></p><a name=\"medicationStatement-meds-codes-vs\"> </a><a name=\"hcmedicationStatement-meds-codes-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/308116003\">308116003</a></td><td>Antihypertensive therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/182764009\">182764009</a></td><td>Anticoagulant therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/1237404009\">1237404009</a></td><td>Uses hormone method of contraception (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/315053001\">315053001</a></td><td>Administration of prophylactic statin (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/722045009\">722045009</a></td><td>Warfarin therapy (procedure)</td></tr></table></li><li>Include all codes defined in <a href=\"CodeSystem-medication-statement-cs.html\"><code>http://testSK.org/CodeSystem/medication-statement-cs</code></a></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://testSK.org/ValueSet/medicationStatement-meds-codes-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -33,42 +33,23 @@
      fhir:include ( [
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
        fhir:concept ( [
-         fhir:code [ fhir:v "413081008" ] ;
-         fhir:display [ fhir:v "Administration of prophylactic clopidogrel (procedure)" ]
-       ] [
          fhir:code [ fhir:v "308116003" ] ;
          fhir:display [ fhir:v "Antihypertensive therapy (procedure)" ]
-       ] [
-         fhir:code [ fhir:v "722045009" ] ;
-         fhir:display [ fhir:v "Warfarin therapy (procedure)" ]
-       ] [
-         fhir:code [ fhir:v "1335906002" ] ;
-         fhir:display [ fhir:v "Rivaroxaban therapy (procedure)" ]
-       ] [
-         fhir:code [ fhir:v "1335908001" ] ;
-         fhir:display [ fhir:v "Apixaban therapy (procedure)" ]
-       ] [
-         fhir:code [ fhir:v "1338036007" ] ;
-         fhir:display [ fhir:v "Edoxaban therapy (procedure)" ]
        ] [
          fhir:code [ fhir:v "182764009" ] ;
          fhir:display [ fhir:v "Anticoagulant therapy (procedure)" ]
        ] [
-         fhir:code [ fhir:v "315053001" ] ;
-         fhir:display [ fhir:v "Administration of prophylactic statin (procedure)" ]
-       ] [
-         fhir:code [ fhir:v "443464003" ] ;
-         fhir:display [ fhir:v "Low molecular weight heparin therapy (procedure)" ]
-       ] [
-         fhir:code [ fhir:v "735127005" ] ;
-         fhir:display [ fhir:v "Dipyridamole therapy (procedure)" ]
-       ] [
          fhir:code [ fhir:v "1237404009" ] ;
          fhir:display [ fhir:v "Uses hormone method of contraception (finding)" ]
        ] [
-         fhir:code [ fhir:v "416608005" ] ;
-         fhir:display [ fhir:v "Drug therapy (procedure)" ]
+         fhir:code [ fhir:v "315053001" ] ;
+         fhir:display [ fhir:v "Administration of prophylactic statin (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "722045009" ] ;
+         fhir:display [ fhir:v "Warfarin therapy (procedure)" ]
        ] )
+     ] [
+       fhir:system [ fhir:v "http://testSK.org/CodeSystem/medication-statement-cs"^^xsd:anyURI ]
      ] )
   ] . # 
 

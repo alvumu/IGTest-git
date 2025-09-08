@@ -3,14 +3,14 @@
   "id" : "discharge-medication-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet discharge-medication-vs</b></p><a name=\"discharge-medication-vs\"> </a><a name=\"hcdischarge-medication-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-medication-vs.html\">Medications ValueSet</a></li><li>Import all the codes that are contained in https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html</li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet discharge-medication-vs</b></p><a name=\"discharge-medication-vs\"> </a><a name=\"hcdischarge-medication-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-discharge-medication-cs.html\"><code>http://testSK.org/ValueSet/medication-vs</code></a></li><li>Import all the codes that are contained in https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html</li></ul></div>"
   },
   "url" : "http://testSK.org/ValueSet/discharge-medication-vs",
   "version" : "0.1.0",
   "name" : "DischargeMedicationVS",
   "title" : "Medications ValueSet",
   "status" : "draft",
-  "date" : "2025-09-05T16:38:52+00:00",
+  "date" : "2025-09-08T06:26:35+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -22,7 +22,7 @@
   "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
   "compose" : {
     "include" : [{
-      "valueSet" : ["http://testSK.org/ValueSet/medication-vs"]
+      "system" : "http://testSK.org/ValueSet/medication-vs"
     },
     {
       "valueSet" : ["https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html"]

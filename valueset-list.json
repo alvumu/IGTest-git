@@ -70,7 +70,7 @@
       "name" : "DischargeMedicationVS",
       "title" : "Medications ValueSet",
       "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : ["http://testSK.org/ValueSet/medication-vs"]
     },
     {
       "url" : "http://testSK.org/ValueSet/functional-score-codes-vs",
@@ -88,7 +88,9 @@
       "name" : "HemorrhagicStrokeBleedingReasonVS",
       "title" : "Hemorrhagic Stroke Bleeding Reason ValueSet",
       "description" : "Specifies the identified cause of a hemorrhagic stroke, typically used with an extension.",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : [
+        "http://testSK.org/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs"
+      ]
     },
     {
       "url" : "http://testSK.org/ValueSet/initial-care-intensity-vs",
@@ -100,22 +102,16 @@
       "systems" : ["http://testSK.org/CodeSystem/initial-care-intensity-cs"]
     },
     {
-      "url" : "http://testSK.org/ValueSet/medication-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "MedicationVS",
-      "title" : "Medications ValueSet",
-      "description" : "SNOMED CT codes for drug products or substances.",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
       "url" : "http://testSK.org/ValueSet/medicationStatement-meds-codes-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "MedicationStatementMedsCodes",
       "title" : "MedicationStatement Therapy/Finding Codes",
       "description" : "ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use).",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : [
+        "http://testSK.org/CodeSystem/medication-statement-cs",
+        "http://snomed.info/sct"
+      ]
     },
     {
       "url" : "http://testSK.org/ValueSet/mrs-score-vs",
@@ -205,7 +201,10 @@
       "name" : "StrokeDischargeDestinationVS",
       "title" : "Stroke Discharge Destination ValueSet",
       "description" : "Defines the possible destinations of the patient upon discharge from the encounter.",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : [
+        "http://testSK.org/CodeSystem/stroke-discharge-destination-cs",
+        "http://snomed.info/sct"
+      ]
     },
     {
       "url" : "http://testSK.org/ValueSet/stroke-etiology-vs",
@@ -214,7 +213,10 @@
       "name" : "StrokeEtiologyVS",
       "title" : "Stroke Etiology ValueSet",
       "description" : "Specifies the determined etiology of an stroke.",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : [
+        "http://testSK.org/CodeSystem/stroke-etiology-cs",
+        "http://snomed.info/sct"
+      ]
     },
     {
       "url" : "http://testSK.org/ValueSet/stroke-finding-codes-vs",

@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-09-05T16:38:52+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-08T06:26:35+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -414,6 +414,21 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/hemorrhagic-stroke-bleeding-reason-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Hemorrhagic Stroke Bleeding Reason Code System" ] ;
+       fhir:description [ fhir:v "Codes indicating the reason for bleeding in hemorrhagic stroke cases." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -503,15 +518,15 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
+           fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://testSK.org/ValueSet/medication-vs> ;
-         fhir:reference [ fhir:v "ValueSet/medication-vs" ]
+         fhir:link <http://testSK.org/CodeSystem/discharge-medication-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/discharge-medication-cs" ]
        ] ;
-       fhir:name [ fhir:v "Medications ValueSet" ] ;
-       fhir:description [ fhir:v "SNOMED CT codes for drug products or substances." ] ;
+       fhir:name [ fhir:v "Medications CodeSystem" ] ;
+       fhir:description [ fhir:v "Codes for drug products or substances representing the Medications on the patient discharge." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -527,6 +542,21 @@
        ] ;
        fhir:name [ fhir:v "Medications ValueSet" ] ;
        fhir:description [ fhir:v "Codes for drug products or substances representing the Medications on the patient discharge." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/medication-statement-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/medication-statement-cs" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationStatement CodeSystem" ] ;
+       fhir:description [ fhir:v "Codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use)." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -1037,6 +1067,21 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/stroke-discharge-destination-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/stroke-discharge-destination-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Discharge Destination Code System" ] ;
+       fhir:description [ fhir:v "Codes indicating the possible destinations of the patient upon discharge from the encounter." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -1061,6 +1106,21 @@
        ] ;
        fhir:name [ fhir:v "Stroke Encounter Profile" ] ;
        fhir:description [ fhir:v "Profile for an Encounter resource representing a patient's hospital admission and stay for a stroke event, including key administrative and workflow details." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/stroke-etiology-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/stroke-etiology-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Etiology Code System" ] ;
+       fhir:description [ fhir:v "Codes indicating the etiology of strokes." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [

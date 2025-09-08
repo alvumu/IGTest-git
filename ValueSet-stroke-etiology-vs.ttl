@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "stroke-etiology-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet stroke-etiology-vs</b></p><a name=\"stroke-etiology-vs\"> </a><a name=\"hcstroke-etiology-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/724425005\">724425005</a></td><td>Cerebral ischemic stroke due to intracranial large artery atherosclerosis (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/724426006\">724426006</a></td><td>Cerebral ischemic stroke due to extracranial large artery atherosclerosis (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/1251566005\">1251566005</a></td><td>Embolism from heart (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/404684003\">404684003</a></td><td>Clinical finding (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/16891111000119104\">16891111000119104</a></td><td>Cryptogenic stroke (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/230698000\">230698000</a></td><td>Lacunar infarction (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/443929000\">443929000</a></td><td>Small vessel cerebrovascular disease (disorder)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet stroke-etiology-vs</b></p><a name=\"stroke-etiology-vs\"> </a><a name=\"hcstroke-etiology-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-stroke-etiology-cs.html\"><code>http://testSK.org/CodeSystem/stroke-etiology-cs</code></a></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/16891111000119104\">16891111000119104</a></td><td>Cryptogenic stroke (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/413758000\">413758000</a></td><td>Cardioembolic stroke (disorder)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://testSK.org/ValueSet/stroke-etiology-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -31,28 +31,15 @@
   fhir:description [ fhir:v "Specifies the determined etiology of an stroke."] ; # 
   fhir:compose [
      fhir:include ( [
+       fhir:system [ fhir:v "http://testSK.org/CodeSystem/stroke-etiology-cs"^^xsd:anyURI ]
+     ] [
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
        fhir:concept ( [
-         fhir:code [ fhir:v "724425005" ] ;
-         fhir:display [ fhir:v "Cerebral ischemic stroke due to intracranial large artery atherosclerosis (disorder)" ]
-       ] [
-         fhir:code [ fhir:v "724426006" ] ;
-         fhir:display [ fhir:v "Cerebral ischemic stroke due to extracranial large artery atherosclerosis (disorder)" ]
-       ] [
-         fhir:code [ fhir:v "1251566005" ] ;
-         fhir:display [ fhir:v "Embolism from heart (disorder)" ]
-       ] [
-         fhir:code [ fhir:v "404684003" ] ;
-         fhir:display [ fhir:v "Clinical finding (finding)" ]
-       ] [
          fhir:code [ fhir:v "16891111000119104" ] ;
          fhir:display [ fhir:v "Cryptogenic stroke (disorder)" ]
        ] [
-         fhir:code [ fhir:v "230698000" ] ;
-         fhir:display [ fhir:v "Lacunar infarction (disorder)" ]
-       ] [
-         fhir:code [ fhir:v "443929000" ] ;
-         fhir:display [ fhir:v "Small vessel cerebrovascular disease (disorder)" ]
+         fhir:code [ fhir:v "413758000" ] ;
+         fhir:display [ fhir:v "Cardioembolic stroke (disorder)" ]
        ] )
      ] )
   ] . # 
