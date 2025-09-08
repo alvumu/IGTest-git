@@ -79,10 +79,6 @@ jobs:
       - name: Install Jekyll gem
         run: gem install jekyll
 
-      - name: Compile FSH y generar recursos
-        working-directory: ./
-        run: sushi .
-
       - name: Run IG Publisher
         run: |
           java -jar publisher.jar -ig ./ -tx https://tx.fhir.org
