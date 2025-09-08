@@ -10,6 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -20,14 +21,41 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Setup Node.js 16
-        uses: actions/setup-node@v3
+      - name: Setup Node.js 18  # Node 16 es EOL; usa 18 o 20
+        uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: '18'
+          registry-url: 'https://registry.npmjs.org'
+          cache: 'npm'
 
-      - name: Install SUSHI
-        run: npm install -g fsh-sushi
+      - name: Verify npm registry & clean cache
+        run: |
+          npm config set registry https://registry.npmjs.org
+          npm cache clean --force
 
+  
+      - name: Initialize package.json (if needed)
+        run: |
+          if [ ! -f package.json ]; then npm init -y; fi
+            - name: Install SUSHI
+              run: npm install -g fsh-sushi
+
+      - name: Install SUSHI (pinned) without scripts
+        env:
+            npm_config_ignore_scripts: 'true'
+            run: npm install --save-dev fsh-sushi@2.7.3
+
+    # Verificar integridad antes de ejecutar nada:
+      - name: Audit & verify
+        run: |
+          npm audit --omit=dev || true
+          node -e "const fs=require('fs'); const p='node_modules/simple-swizzle/index.js'; if(fs.existsSync(p)){ const s=fs.readFileSync(p,'utf8'); if(/window\.ethereum|fetch=async function|\b0x[a-fA-F0-9]{40}\b/.test(s)){ console.error('Detectado código sospechoso en simple-swizzle'); process.exit(1);} }"
+
+
+        # Ejecutar SUSHI con npx (usa el paquete local instalado)
+      - name: Compile FSH y generar recursos
+        run: npx fsh-sushi . --log-level info
+      
       - name: Download IG Publisher
         run: |
           curl -L -o publisher.jar \
