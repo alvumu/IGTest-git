@@ -20,7 +20,7 @@ Alias: StrokeProcNotDoneReasonCS_URL = http://testSK.org/CodeSystem/stroke-proc-
 Alias: SwallowScreenTimeCS_URL = http://testSK.org/CodeSystem/swallow-screen-time-cs
 Alias: ProcedureTimingContextCS_URL = http://testSK.org/CodeSystem/procedure-timing-context-cs
 Alias: BrainImagingTypeCS_URL = http://testSK.org/CodeSystem/brain-imaging-type-cs
-
+Alias: SwallowProceduresCS_URL = http://testSK.org/CodeSystem/swallow-procedures-cs
 // URLs for ValueSets (used in bindings)
 Alias: CarotidImagingModalityVS_URL = http://testSK.org/ValueSet/carotid-imaging-modality-vs
 Alias: BrainImagingModalityVS_URL = http://testSK.org/ValueSet/brain-imaging-modality-vs
@@ -105,11 +105,15 @@ Id: stroke-proc-not-done-reason-cs
 * #transfer "Transferred to Another Facility" "The patient was transferred to another hospital for the procedure."
 * #unavailable "Procedure Unavailable" "The procedure was not available at the facility (e.g., lack of equipment, staff)."
 * #disability "Severe Preexisting Disability" "Patient's baseline disability made benefit from the procedure unlikely."
-* #mild-stroke "Mild Stroke / Rapid Improvement" "Stroke symptoms were too mild or improved rapidly, not justifying the procedure risk."
+* #mild-deficit "Mild Deficit" "Patient's neurological deficit was too mild to warrant the procedure."
 * #done-elsewhere "Performed Elsewhere" "The procedure had already been performed at another facility prior to arrival/transfer."
 * #cost "Cost / No Insurance" "Financial or coverage reasons prevented the procedure."
 * #unknown "Reason Unknown" "The reason was not documented or is unknown."
-
+* #consent "Consent Not Obtained" "Informed consent for the procedure was not obtained."
+* #only-mt "Only Mechanical Thrombectomy Considered" "Only mechanical thrombectomy was considered, and thrombolysis was not performed."
+* #other "Other Reason" "A reason not specifically defined."
+* #technically-not-possible "Technically Not Possible" "The procedure could not be performed due to technical or anatomical challenges."
+* #no-angiography "Angiography Not Performed" "Angiography to assess the situation was not performed."
 // --- ValueSet: Stroke Procedure Not Done Reasons ---
 ValueSet: StrokeProcNotDoneReasonVS
 Id: stroke-proc-not-done-reason-vs
@@ -132,9 +136,7 @@ Id: swallow-screen-time-cs
 * ^experimental = true
 * ^caseSensitive = false 
 * #T4H "Within 4 hours" "Screening performed within 4 hours of symptom onset."
-* #T24H "Within 24 hours" "Screening performed within 24 hours of symptom onset (but after 4h)."
-* #A24H "After 24 hours" "Screening performed after 24 hours of symptom onset."
-* #UNK "Unknown time" "Screening performed but timing relative to symptom onset unknown."
+
 
 // --- ValueSet: Swallowing Screening Timing Category ---
 ValueSet: SwallowingScreeningTimingCategoryVS
@@ -145,6 +147,8 @@ Id: swallowing-screening-timing-category-vs
 * ^description = "Temporal categories relative to stroke onset for swallowing screening."
 * ^status = #active
 * include codes from system SwallowScreenTimeCS_URL
+* include SCT#281380002 "24 hours post admission (qualifier value)"
+* include SCT#281381003 "More than 24 hours after admission (qualifier value)"
 
 // --- CodeSystem: Procedure Timing Context ---
 CodeSystem: ProcedureTimingContextCS
@@ -170,6 +174,19 @@ Id: procedure-timing-context-vs
 * ^status = #active
 * include codes from system ProcedureTimingContextCS_URL
 
+
+// --- CodeSystem: Swallow Screening Procedures ---
+CodeSystem: SwallowProceduresCS
+Id: swallow-procedures-cs
+* ^url = SwallowProceduresCS_URL
+* ^version = "1.0.0"
+* ^title = "Swallow Procedures Code System"
+* ^description = "Codes representing various swallowing assessment procedures."
+* ^status = #active
+* #assist "ASSIST" "Assisted Swallowing Test (ASSIST)"
+* #other "Other Swallow Procedure" "Other specified swallowing assessment procedure"
+* #v-vst "V-VST" "Volume-Viscosity Swallow Test (V-VST)"
+
 // --- ValueSet: Procedures (General) ---
 ValueSet: SwallowProceduresVS
 Id: swallow-procedures-vs
@@ -186,7 +203,9 @@ Id: swallow-procedures-vs
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "info@example.org"
 * include SCT#1290000005 "Assessment using Gugging Swallowing Screen (procedure)"
-* include SCT#304909008 "Swallowing function test (procedure)"
+* include SCT#63913004 "Tonography with water provocation (procedure)"
+* include codes from system SwallowProceduresCS_URL
+
 
 // --- ValueSet: Procedures (General) ---
 ValueSet: PerforationProceduresVS_URL
