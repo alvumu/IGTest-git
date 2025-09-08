@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-09-08T10:17:51+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-08T16:35:28+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -1556,6 +1556,21 @@
          fhir:v "http://testSK.org/StructureDefinition/stroke-thrombolysis-procedure-profile"^^xsd:anyURI ;
          fhir:link <http://testSK.org/StructureDefinition/stroke-thrombolysis-procedure-profile>
        ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/swallow-procedures-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/swallow-procedures-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Swallow Procedures Code System" ] ;
+       fhir:description [ fhir:v "Codes representing various swallowing assessment procedures." ] ;
+       fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

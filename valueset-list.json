@@ -260,7 +260,10 @@
       "name" : "SwallowProceduresValueset",
       "title" : "Swallow Procedures ValueSet",
       "description" : "ValueSet containing SNOMED CT codes representing a range of procedures used in the evaluation and management of stroke patients.",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : [
+        "http://testSK.org/CodeSystem/swallow-procedures-cs",
+        "http://snomed.info/sct"
+      ]
     },
     {
       "url" : "http://testSK.org/ValueSet/swallowing-screening-timing-category-vs",
@@ -269,7 +272,10 @@
       "name" : "SwallowingScreeningTimingCategoryVS",
       "title" : "Swallowing Screening Timing Category ValueSet",
       "description" : "Temporal categories relative to stroke onset for swallowing screening.",
-      "systems" : ["http://testSK.org/CodeSystem/swallow-screen-time-cs"]
+      "systems" : [
+        "http://testSK.org/CodeSystem/swallow-screen-time-cs",
+        "http://snomed.info/sct"
+      ]
     },
     {
       "url" : "http://testSK.org/ValueSet/thrombectomy-complication-vs",

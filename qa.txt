@@ -1,10 +1,10 @@
 IGTest : Validation Results
 =========================================
 
-err = 22, warn = 129, info = 38
+err = 22, warn = 131, info = 39
 IG Publisher Version: 2.0.16
-Generated Mon Sep 08 10:19:39 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
- Build Errors : 680 / 29 / 0
+Generated Mon Sep 08 16:37:00 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
+ Build Errors : 686 / 29 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-afib-flutter-status-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-brain-imaging-type-cs : 0 / 2 / 2
@@ -21,6 +21,7 @@ Generated Mon Sep 08 10:19:39 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (c
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-discharge-destination-cs : 0 / 1 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-etiology-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-proc-not-done-reason-cs : 0 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-procedures-cs : 0 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-screen-time-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-timing-metric-codes-cs : 0 / 3 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFib : 0 / 0 / 1
@@ -229,16 +230,22 @@ ERROR: CodeSystem-stroke-etiology-cs.ttl.html#/html/body/div/div/div/p/a at Line
 ERROR: CodeSystem-stroke-etiology-cs.xml.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-stroke-proc-not-done-reason-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-stroke-proc-not-done-reason-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: CodeSystem-stroke-proc-not-done-reason-cs.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: CodeSystem-stroke-proc-not-done-reason-cs.json.html#/html/body/div/div/div/p/a at Line 300, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: CodeSystem-stroke-proc-not-done-reason-cs.ttl.html#/html/body/div/div/div/p/a at Line 294, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: CodeSystem-stroke-proc-not-done-reason-cs.xml.html#/html/body/div/div/div/p/a at Line 305, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-proc-not-done-reason-cs.html#/html/body/div/div/div/p/a at Line 296, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-proc-not-done-reason-cs.json.html#/html/body/div/div/div/p/a at Line 325, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-proc-not-done-reason-cs.ttl.html#/html/body/div/div/div/p/a at Line 314, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-proc-not-done-reason-cs.xml.html#/html/body/div/div/div/p/a at Line 333, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-swallow-procedures-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-swallow-procedures-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-swallow-procedures-cs.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-swallow-procedures-cs.json.html#/html/body/div/div/div/p/a at Line 258, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-swallow-procedures-cs.ttl.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-swallow-procedures-cs.xml.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-swallow-screen-time-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-swallow-screen-time-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: CodeSystem-swallow-screen-time-cs.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: CodeSystem-swallow-screen-time-cs.json.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: CodeSystem-swallow-screen-time-cs.ttl.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: CodeSystem-swallow-screen-time-cs.xml.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-swallow-screen-time-cs.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-swallow-screen-time-cs.json.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-swallow-screen-time-cs.ttl.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-swallow-screen-time-cs.xml.html#/html/body/div/div/div/p/a at Line 245, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-timing-metric-codes-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-timing-metric-codes-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-timing-metric-codes-cs.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -779,16 +786,16 @@ ERROR: ValueSet-stroke-risk-factor-snomed-vs.ttl.html#/html/body/div/div/div/p/a
 ERROR: ValueSet-stroke-risk-factor-snomed-vs.xml.html#/html/body/div/div/div/p/a at Line 285, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-swallow-procedures-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-swallow-procedures-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-swallow-procedures-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-swallow-procedures-vs.json.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-swallow-procedures-vs.ttl.html#/html/body/div/div/div/p/a at Line 255, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-swallow-procedures-vs.xml.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-swallow-procedures-vs.html#/html/body/div/div/div/p/a at Line 290, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-swallow-procedures-vs.json.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-swallow-procedures-vs.ttl.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-swallow-procedures-vs.xml.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-swallowing-screening-timing-category-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-swallowing-screening-timing-category-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-swallowing-screening-timing-category-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-swallowing-screening-timing-category-vs.json.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-swallowing-screening-timing-category-vs.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-swallowing-screening-timing-category-vs.xml.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-swallowing-screening-timing-category-vs.html#/html/body/div/div/div/p/a at Line 295, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-swallowing-screening-timing-category-vs.json.html#/html/body/div/div/div/p/a at Line 259, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-swallowing-screening-timing-category-vs.ttl.html#/html/body/div/div/div/p/a at Line 255, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-swallowing-screening-timing-category-vs.xml.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-thrombectomy-complication-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-thrombectomy-complication-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-thrombectomy-complication-vs.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -813,7 +820,7 @@ ERROR: ValueSet-vs-gender-snomed.html#/html/body/div/div/div/p/a at Line 289, co
 ERROR: ValueSet-vs-gender-snomed.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-vs-gender-snomed.ttl.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-vs-gender-snomed.xml.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 1066, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 1075, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: general-principles.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: index.html#/html/body/div/div/div/p/a at Line 335, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: toc.html#/html/body/div/div/div/p/a at Line 145, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -856,6 +863,10 @@ INFORMATION: CodeSystem/stroke-discharge-destination-cs: CodeSystem: CodeSystems
 WARNING: CodeSystem/stroke-discharge-destination-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-stroke-etiology-cs.json ==
 == fsh-generated/resources/CodeSystem-stroke-proc-not-done-reason-cs.json ==
+== fsh-generated/resources/CodeSystem-swallow-procedures-cs.json ==
+INFORMATION: CodeSystem/swallow-procedures-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/swallow-procedures-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/swallow-procedures-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-swallow-screen-time-cs.json ==
 == fsh-generated/resources/CodeSystem-timing-metric-codes-cs.json ==
 WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem.concept[0].definition: value should not start or finish with whitespace ' Time (in minutes) from hospital arrival to the groin puncture for mechanical thrombectomy'

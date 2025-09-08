@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-09-08T10:17:51+00:00",
+  "date" : "2025-09-08T16:35:28+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -1191,6 +1191,18 @@
       "name" : "StrokeThrombolysisExample",
       "isExample" : true,
       "profile" : ["http://testSK.org/StructureDefinition/stroke-thrombolysis-procedure-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/swallow-procedures-cs"
+      },
+      "name" : "Swallow Procedures Code System",
+      "description" : "Codes representing various swallowing assessment procedures.",
+      "isExample" : false
     },
     {
       "extension" : [{

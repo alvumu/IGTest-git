@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="IGTest"/>
   <status value="draft"/>
-  <date value="2025-09-08T10:17:51+00:00"/>
+  <date value="2025-09-08T16:35:28+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -1090,6 +1090,17 @@
       <name value="StrokeThrombolysisExample"/>
       <isExample value="true"/>
       <profile value="http://testSK.org/StructureDefinition/stroke-thrombolysis-procedure-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/swallow-procedures-cs"/>
+      </reference>
+      <name value="Swallow Procedures Code System"/>
+      <description value="Codes representing various swallowing assessment procedures."/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
