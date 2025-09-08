@@ -35,8 +35,6 @@ jobs:
       - name: Initialize package.json (if needed)
         run: |
           if [ ! -f package.json ]; then npm init -y; fi
-            - name: Install SUSHI
-              run: npm install -g fsh-sushi
 
       - name: Install SUSHI (pinned) without scripts
         env:
