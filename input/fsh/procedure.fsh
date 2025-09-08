@@ -19,6 +19,7 @@ Alias: FHIR_Condition = http://hl7.org/fhir/StructureDefinition/Condition // For
 Alias: StrokeProcNotDoneReasonCS_URL = http://testSK.org/CodeSystem/stroke-proc-not-done-reason-cs
 Alias: SwallowScreenTimeCS_URL = http://testSK.org/CodeSystem/swallow-screen-time-cs
 Alias: ProcedureTimingContextCS_URL = http://testSK.org/CodeSystem/procedure-timing-context-cs
+Alias: BrainImagingTypeCS_URL = http://testSK.org/CodeSystem/brain-imaging-type-cs
 
 // URLs for ValueSets (used in bindings)
 Alias: CarotidImagingModalityVS_URL = http://testSK.org/ValueSet/carotid-imaging-modality-vs
@@ -50,6 +51,22 @@ Id: carotid-imaging-modality-vs
 * include SCT#419949007 "Computed tomography angiography of intracranial artery with contrast (procedure)"
 * include SCT#1366357009 "Magnetic resonance imaging angiography of intracranial artery (procedure)"
 
+
+
+
+CodeSystem: BrainImagingTypeCS
+Id: brain-imaging-type-cs
+* ^url = BrainImagingTypeCS_URL
+* ^version = "1.0.0"
+* ^title = "Brain Imaging Type Code System"
+* ^description = "Codes specifying the type of brain imaging performed (e.g., CT, MRI)."
+* ^status = #active
+* #ct-cta "CT-CTA" "Computed Tomography (CT) and CT Angiography (CTA)"
+* #ct-cta-perfusion "CT-CTA and Perfusion" "Computed Tomography (CT), CT Angiography (CTA), and CT Perfusion"
+* #mr-dwi-flair "MR DWI-FLAIR" "Magnetic Resonance Imaging (MRI) with Diffusion-Weighted Imaging (DWI) or Fluid-Attenuated Inversion Recovery (FLAIR)"
+* #mr-dwi-flair-mra "MR DWI-FLAIR and MRA" "Magnetic Resonance Imaging (MRI) with Diffusion-Weighted Imaging (DWI) or Fluid-Attenuated Inversion Recovery (FLAIR), and Magnetic Resonance Angiography (MRA)"
+* #mr-dwi-flair-mra-perfusion "MR DWI-FLAIR, MRA, and Perfusion" "Magnetic Resonance Imaging (MRI) with Diffusion-Weighted Imaging (DWI) and Fluid-Attenuated Inversion Recovery (FLAIR), Magnetic Resonance Angiography (MRA), and MR Perfusion"
+
 // --- ValueSet: Brain Imaging Modalities ---
 ValueSet: BrainImagingModalityVS
 Id: brain-imaging-modality-vs
@@ -58,13 +75,9 @@ Id: brain-imaging-modality-vs
 * ^title = "Brain Imaging Modality ValueSet"
 * ^description = "Defines the SNOMED CT codes for individual brain imaging modalities performed as procedures."
 * ^status = #active
-* include SCT#396205005 "Computed tomography of brain without radiopaque contrast (procedure)"
 * include SCT#419949007 "Computed tomography angiography of intracranial artery with contrast (procedure)"
-* include SCT#433111008 "Computed tomography of brain perfusion (procedure)"
-* include SCT#16327691000119101 "Magnetic resonance imaging of brain with contrast (procedure)"
-* include SCT#440408002 "Diffusion weighted magnetic resonance imaging (procedure)"
-* include SCT#419059006 "Magnetic resonance imaging cerebral perfusion study (procedure)"
-* include SCT#1366357009 "Magnetic resonance imaging angiography of intracranial artery (procedure)"
+* include codes from system BrainImagingTypeCS_URL
+
 
 // --- ValueSet: Thrombectomy Complications ---
 ValueSet: ThrombectomyComplicationVS

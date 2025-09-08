@@ -73,16 +73,24 @@ Id: stroke-discharge-destination-vs
 * include codes from system StrokeDischargeDestinationCS_URL
 
 // --- Discharge Department/Service ---
+CodeSystem: DischargeDeptCS
+Id: discharge-dept-cs
+* ^url = DischargeDeptCS_URL
+* ^title = "Discharge Department/Service Code System"
+* ^description = "Code system specifying the type of department or service the patient was discharged or transferred to."
+* ^status = #active
+* #acute "Acute Rehabilitation" "Patient discharged to an acute rehabilitation setting."
+* #post-care "Post Care Bed" "Patient discharged to a post care bed."
+* #neurology "Neurology" "Patient discharged to a neurology department or service."
+* #another-department "Another Department" "Patient discharged to a different department within the same hospital."
+
 ValueSet: DischargeDeptVS
 Id: discharge-dept-vs
 * ^url = DischargeDeptVS_URL
 * ^title = "Discharge Department/Service ValueSet"
 * ^description = "ValueSet specifying the type of department or service the patient was discharged or transferred to."
 * ^status = #active
-* include SCT#309940004 "Rehabilitation department (environment)"
-* include SCT#309937004 "Neurology department (environment)"
-* include SCT#441480003 "Primary care department (environment)"
-* include SCT#309912009 "Medical department (environment)"
+* include codes from system DischargeDeptCS_URL
 
 // --- Initial Care Intensity ---
 CodeSystem: InitialCareIntensityCS

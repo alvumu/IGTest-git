@@ -25,7 +25,7 @@ Id: medication-statement-cs
 * ^title = "MedicationStatement CodeSystem"
 * ^description = "Codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use)."
 * #antidiabetic "Any Antidiabetic" "The patient was taking antidiabetic medication prior to hospital admission or before the stroke event"
-* #antyplatelet "Any Antiplatelet" "The patient was taking antiplatelet medication prior to hospital admission or before the stroke event"
+* #antiplatelet "Any Antiplatelet" "The patient was taking antiplatelet medication prior to hospital admission or before the stroke event"
 * #asa "Aspirin" "The patient was taking aspirin (acetylsalicylic acid) prior to hospital admission or before the stroke event"
 * #clopidogrel "Clopidogrel" "The patient was taking clopidogrel prior to hospital admission or before the stroke event"
 
