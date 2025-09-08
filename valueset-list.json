@@ -34,7 +34,10 @@
       "name" : "BrainImagingModalityVS",
       "title" : "Brain Imaging Modality ValueSet",
       "description" : "Defines the SNOMED CT codes for individual brain imaging modalities performed as procedures.",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : [
+        "http://testSK.org/CodeSystem/brain-imaging-type-cs",
+        "http://snomed.info/sct"
+      ]
     },
     {
       "url" : "http://testSK.org/ValueSet/carotid-imaging-modality-vs",
@@ -52,7 +55,7 @@
       "name" : "DischargeDeptVS",
       "title" : "Discharge Department/Service ValueSet",
       "description" : "ValueSet specifying the type of department or service the patient was discharged or transferred to.",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : ["http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs"]
     },
     {
       "url" : "http://testSK.org/ValueSet/discharge-destination-vs",

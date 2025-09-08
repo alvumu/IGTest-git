@@ -1,12 +1,14 @@
 IGTest : Validation Results
 =========================================
 
-err = 20, warn = 125, info = 36
+err = 22, warn = 129, info = 38
 IG Publisher Version: 2.0.16
-Generated Mon Sep 08 07:32:51 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
- Build Errors : 668 / 29 / 0
+Generated Mon Sep 08 10:19:39 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
+ Build Errors : 680 / 29 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-afib-flutter-status-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 0 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-brain-imaging-type-cs : 0 / 2 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs : 2 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-medication-cs : 3 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-hemorrhagic-stroke-bleeding-reason-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-initial-care-intensity-cs : 0 / 0 / 1
@@ -25,7 +27,7 @@ Generated Mon Sep 08 07:32:51 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (c
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFlutter : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionExample : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeRiskFactorConditionExample : 0 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Encounter-StrokeEncounterExample : 1 / 1 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Encounter-StrokeEncounterExample : 2 / 1 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG : 0 / 0 / 16
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationRequest-discharge-medication-request-001 : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationStatement-PriorMedicationStatementExample : 1 / 0 / 1
@@ -78,7 +80,7 @@ Generated Mon Sep 08 07:32:51 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (c
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-admission-source-vs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-afib-flutter-status-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-assessment-context-vs : 0 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-brain-imaging-modality-vs : 1 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-brain-imaging-modality-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-carotid-imaging-modality-vs : 1 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-dept-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-destination-vs : 0 / 0 / 1
@@ -147,6 +149,18 @@ ERROR: CodeSystem-assessment-context-cs.html#/html/body/div/div/div/p/a at Line 
 ERROR: CodeSystem-assessment-context-cs.json.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-assessment-context-cs.ttl.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-assessment-context-cs.xml.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-brain-imaging-type-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-brain-imaging-type-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-brain-imaging-type-cs.html#/html/body/div/div/div/p/a at Line 263, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-brain-imaging-type-cs.json.html#/html/body/div/div/div/p/a at Line 268, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-brain-imaging-type-cs.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-brain-imaging-type-cs.xml.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-discharge-dept-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-discharge-dept-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-discharge-dept-cs.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-discharge-dept-cs.json.html#/html/body/div/div/div/p/a at Line 263, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-discharge-dept-cs.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-discharge-dept-cs.xml.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-discharge-medication-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-discharge-medication-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-discharge-medication-cs.html#/html/body/div/div/div/p/a at Line 269, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -627,10 +641,10 @@ ERROR: ValueSet-assessment-context-vs.ttl.html#/html/body/div/div/div/p/a at Lin
 ERROR: ValueSet-assessment-context-vs.xml.html#/html/body/div/div/div/p/a at Line 241, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-brain-imaging-modality-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-brain-imaging-modality-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-brain-imaging-modality-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-brain-imaging-modality-vs.json.html#/html/body/div/div/div/p/a at Line 276, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-brain-imaging-modality-vs.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-brain-imaging-modality-vs.xml.html#/html/body/div/div/div/p/a at Line 275, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-brain-imaging-modality-vs.html#/html/body/div/div/div/p/a at Line 290, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-brain-imaging-modality-vs.json.html#/html/body/div/div/div/p/a at Line 255, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-brain-imaging-modality-vs.ttl.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-brain-imaging-modality-vs.xml.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-carotid-imaging-modality-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-carotid-imaging-modality-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-carotid-imaging-modality-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -640,9 +654,9 @@ ERROR: ValueSet-carotid-imaging-modality-vs.xml.html#/html/body/div/div/div/p/a 
 ERROR: ValueSet-discharge-dept-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-discharge-dept-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-discharge-dept-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-discharge-dept-vs.json.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-discharge-dept-vs.ttl.html#/html/body/div/div/div/p/a at Line 258, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-discharge-dept-vs.xml.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-discharge-dept-vs.json.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-discharge-dept-vs.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-discharge-dept-vs.xml.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-discharge-destination-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-discharge-destination-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-discharge-destination-vs.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -799,7 +813,7 @@ ERROR: ValueSet-vs-gender-snomed.html#/html/body/div/div/div/p/a at Line 289, co
 ERROR: ValueSet-vs-gender-snomed.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-vs-gender-snomed.ttl.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-vs-gender-snomed.xml.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 1048, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 1066, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: general-principles.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: index.html#/html/body/div/div/div/p/a at Line 335, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: toc.html#/html/body/div/div/div/p/a at Line 145, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -808,6 +822,16 @@ WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-ta
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CodeSystem-afib-flutter-status-cs.json ==
 == fsh-generated/resources/CodeSystem-assessment-context-cs.json ==
+== fsh-generated/resources/CodeSystem-brain-imaging-type-cs.json ==
+INFORMATION: CodeSystem/brain-imaging-type-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/brain-imaging-type-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/brain-imaging-type-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-discharge-dept-cs.json ==
+ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs.json - the canonical URL (http://testSK.org/CodeSystem/discharge-dept-cs) does not match the URL (http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs)
+INFORMATION: CodeSystem/discharge-dept-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/discharge-dept-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/discharge-dept-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs: URL Mismatch http://testSK.org/CodeSystem/discharge-dept-cs vs http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs
 == fsh-generated/resources/CodeSystem-discharge-medication-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/ValueSet/medication-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-medication-cs.json - the canonical URL (http://testSK.org/CodeSystem/discharge-medication-cs) does not match the URL (http://testSK.org/ValueSet/medication-vs)
 ERROR: CodeSystem.url: Resource id/url mismatch: discharge-medication-cs/http://testSK.org/ValueSet/medication-vs
@@ -844,6 +868,7 @@ WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem: Published code systems S
 == fsh-generated/resources/Condition-StrokeRiskFactorConditionExample.json ==
 == fsh-generated/resources/Encounter-StrokeEncounterExample.json ==
 INFORMATION: Encounter/StrokeEncounterExample: Encounter.extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/initial-care-intensity-cs|0.1.0
+ERROR: Encounter/StrokeEncounterExample: Encounter.extension[3].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Discharge Department/Service ValueSet' (http://testSK.org/ValueSet/discharge-dept-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#309937004)
 WARNING: Encounter/StrokeEncounterExample: Encounter.type[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 ERROR: Encounter/StrokeEncounterExample: Encounter.admission.admitSource: None of the codings provided are in the value set 'Stroke Arrival Mode ValueSet' (http://testSK.org/ValueSet/stroke-arrival-mode-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#715537001)
 == fsh-generated/resources/ImplementationGuide-SKtestIG.json ==
@@ -1006,7 +1031,6 @@ WARNING: ValueSet/afib-flutter-status-vs: ValueSet: Published value sets SHOULD 
 == fsh-generated/resources/ValueSet-assessment-context-vs.json ==
 WARNING: ValueSet/assessment-context-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-brain-imaging-modality-vs.json ==
-ERROR: ValueSet/brain-imaging-modality-vs: ValueSet.compose.include[0].concept[6]: The code '1366357009' is not valid in the system http://snomed.info/sct (Unknown code '1366357009' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201')
 WARNING: ValueSet/brain-imaging-modality-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-carotid-imaging-modality-vs.json ==
 ERROR: ValueSet/carotid-imaging-modality-vs: ValueSet.compose.include[0].concept[3]: The code '1366357009' is not valid in the system http://snomed.info/sct (Unknown code '1366357009' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201')

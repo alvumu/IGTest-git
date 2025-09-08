@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="discharge-dept-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem discharge-dept-cs</b></p><a name="discharge-dept-cs"> </a><a name="hcdischarge-dept-cs"> </a><p>This  code system <code>http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">acute<a name="discharge-dept-cs-acute"> </a></td><td>Acute Rehabilitation</td><td>Patient discharged to an acute rehabilitation setting.</td></tr><tr><td style="white-space:nowrap">post-care<a name="discharge-dept-cs-post-care"> </a></td><td>Post Care Bed</td><td>Patient discharged to a post care bed.</td></tr><tr><td style="white-space:nowrap">neurology<a name="discharge-dept-cs-neurology"> </a></td><td>Neurology</td><td>Patient discharged to a neurology department or service.</td></tr><tr><td style="white-space:nowrap">another-department<a name="discharge-dept-cs-another-department"> </a></td><td>Another Department</td><td>Patient discharged to a different department within the same hospital.</td></tr></table></div>
+  </text>
+  <url value="http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs"/>
+  <version value="0.1.0"/>
+  <name value="DischargeDeptCS"/>
+  <title value="Discharge Department/Service Code System"/>
+  <status value="active"/>
+  <date value="2025-09-08T10:17:51+00:00"/>
+  <publisher value="UMU"/>
+  <contact>
+    <name value="UMU"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://testSK.org/umu"/>
+    </telecom>
+  </contact>
+  <description value="Code system specifying the type of department or service the patient was discharged or transferred to."/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="acute"/>
+    <display value="Acute Rehabilitation"/>
+    <definition value="Patient discharged to an acute rehabilitation setting."/>
+  </concept>
+  <concept>
+    <code value="post-care"/>
+    <display value="Post Care Bed"/>
+    <definition value="Patient discharged to a post care bed."/>
+  </concept>
+  <concept>
+    <code value="neurology"/>
+    <display value="Neurology"/>
+    <definition value="Patient discharged to a neurology department or service."/>
+  </concept>
+  <concept>
+    <code value="another-department"/>
+    <display value="Another Department"/>
+    <definition value="Patient discharged to a different department within the same hospital."/>
+  </concept>
+</CodeSystem>

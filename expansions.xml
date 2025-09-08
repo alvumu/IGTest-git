@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="84495c2c-e15b-45cf-9e11-de64091df3ff"/>
+  <id value="b4f4e07e-1438-4391-904d-542fe32ea983"/>
   <meta>
-    <lastUpdated value="2025-09-08T07:31:39.684+00:00"/>
+    <lastUpdated value="2025-09-08T10:18:21.029+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -63,8 +63,8 @@
         <experimental value="true"/>
         <date value="2025-03-31"/>
         <expansion>
-          <identifier value="urn:uuid:a397b971-3e14-4642-b835-5886e5dae3c9"/>
-          <timestamp value="2025-09-08T07:32:21+00:00"/>
+          <identifier value="urn:uuid:78734929-769f-41dc-96f7-c203a2c711a6"/>
+          <timestamp value="2025-09-08T10:19:02+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -181,10 +181,10 @@
         <name value="AfibFlutterStatusVS"/>
         <title value="Atrial Fibrillation or Flutter Status ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:54d1c72d-306f-409a-b628-5c3b4eabf7be"/>
-          <timestamp value="2025-09-08T07:32:21+00:00"/>
+          <identifier value="urn:uuid:8ec844e7-d461-4269-9f73-886a43157d9c"/>
+          <timestamp value="2025-09-08T10:19:03+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -302,10 +302,10 @@
         <name value="AssessmentContextVS"/>
         <title value="Assessment Context ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:ed9fb0ba-5417-4c8a-972c-945ab453a5f9"/>
-          <timestamp value="2025-09-08T07:32:21+00:00"/>
+          <identifier value="urn:uuid:f1fd0dc1-1173-4e4e-b113-91d074b14448"/>
+          <timestamp value="2025-09-08T10:19:03+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -360,7 +360,15 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>SNOMED CT International edition 01-Feb 2025</li>
+                <li>
+                  <a href="CodeSystem-brain-imaging-type-cs.html">codesystem Brain Imaging Type Code System v0.1.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
             <p>This value set contains 6 concepts</p>
             <table class="codes">
               <tr>
@@ -373,14 +381,9 @@
                 <td>
                   <b>Display</b>
                 </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-396205005"> </a>  
-                  <a href="http://snomed.info/id/396205005">396205005</a>
+                <td>
+                  <b>Definition</b>
                 </td>
-                <td>http://snomed.info/sct</td>
-                <td>Computed tomography of brain without radiopaque contrast (procedure)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -389,38 +392,52 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Computed tomography angiography of intracranial artery with contrast (procedure)</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-433111008"> </a>  
-                  <a href="http://snomed.info/id/433111008">433111008</a>
+                  <a name="x-http://testSK.org/CodeSystem/brain-imaging-type-cs-ct-cta"> </a>  
+                  <a href="CodeSystem-brain-imaging-type-cs.html#brain-imaging-type-cs-ct-cta">ct-cta</a>
                 </td>
-                <td>http://snomed.info/sct</td>
-                <td>Computed tomography of brain perfusion (procedure)</td>
+                <td>http://testSK.org/CodeSystem/brain-imaging-type-cs</td>
+                <td>CT-CTA</td>
+                <td>Computed Tomography (CT) and CT Angiography (CTA)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-16327691000119101"> </a>  
-                  <a href="http://snomed.info/id/16327691000119101">16327691000119101</a>
+                  <a name="x-http://testSK.org/CodeSystem/brain-imaging-type-cs-ct-cta-perfusion"> </a>  
+                  <a href="CodeSystem-brain-imaging-type-cs.html#brain-imaging-type-cs-ct-cta-perfusion">ct-cta-perfusion</a>
                 </td>
-                <td>http://snomed.info/sct</td>
-                <td>Magnetic resonance imaging of brain with contrast (procedure)</td>
+                <td>http://testSK.org/CodeSystem/brain-imaging-type-cs</td>
+                <td>CT-CTA and Perfusion</td>
+                <td>Computed Tomography (CT), CT Angiography (CTA), and CT Perfusion</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-440408002"> </a>  
-                  <a href="http://snomed.info/id/440408002">440408002</a>
+                  <a name="x-http://testSK.org/CodeSystem/brain-imaging-type-cs-mr-dwi-flair"> </a>  
+                  <a href="CodeSystem-brain-imaging-type-cs.html#brain-imaging-type-cs-mr-dwi-flair">mr-dwi-flair</a>
                 </td>
-                <td>http://snomed.info/sct</td>
-                <td>Diffusion weighted magnetic resonance imaging (procedure)</td>
+                <td>http://testSK.org/CodeSystem/brain-imaging-type-cs</td>
+                <td>MR DWI-FLAIR</td>
+                <td>Magnetic Resonance Imaging (MRI) with Diffusion-Weighted Imaging (DWI) or Fluid-Attenuated Inversion Recovery (FLAIR)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-419059006"> </a>  
-                  <a href="http://snomed.info/id/419059006">419059006</a>
+                  <a name="x-http://testSK.org/CodeSystem/brain-imaging-type-cs-mr-dwi-flair-mra"> </a>  
+                  <a href="CodeSystem-brain-imaging-type-cs.html#brain-imaging-type-cs-mr-dwi-flair-mra">mr-dwi-flair-mra</a>
                 </td>
-                <td>http://snomed.info/sct</td>
-                <td>Magnetic resonance imaging cerebral perfusion study (procedure)</td>
+                <td>http://testSK.org/CodeSystem/brain-imaging-type-cs</td>
+                <td>MR DWI-FLAIR and MRA</td>
+                <td>Magnetic Resonance Imaging (MRI) with Diffusion-Weighted Imaging (DWI) or Fluid-Attenuated Inversion Recovery (FLAIR), and Magnetic Resonance Angiography (MRA)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://testSK.org/CodeSystem/brain-imaging-type-cs-mr-dwi-flair-mra-perfusion"> </a>  
+                  <a href="CodeSystem-brain-imaging-type-cs.html#brain-imaging-type-cs-mr-dwi-flair-mra-perfusion">mr-dwi-flair-mra-perfusion</a>
+                </td>
+                <td>http://testSK.org/CodeSystem/brain-imaging-type-cs</td>
+                <td>MR DWI-FLAIR, MRA, and Perfusion</td>
+                <td>Magnetic Resonance Imaging (MRI) with Diffusion-Weighted Imaging (DWI) and Fluid-Attenuated Inversion Recovery (FLAIR), Magnetic Resonance Angiography (MRA), and MR Perfusion</td>
               </tr>
             </table>
           </div>
@@ -430,10 +447,10 @@
         <name value="BrainImagingModalityVS"/>
         <title value="Brain Imaging Modality ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7666e309-048b-4ca7-99f8-9c54b3843003"/>
-          <timestamp value="2025-09-08T07:32:21+00:00"/>
+          <identifier value="urn:uuid:c19b3334-dc6c-4419-8e9f-74414380aa78"/>
+          <timestamp value="2025-09-08T10:19:03+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -460,35 +477,39 @@
             <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="396205005"/>
-            <display value="Computed tomography of brain without radiopaque contrast (procedure)"/>
-          </contains>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://testSK.org/CodeSystem/brain-imaging-type-cs|0.1.0"/>
+          </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="419949007"/>
             <display value="Computed tomography angiography of intracranial artery with contrast (procedure)"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="433111008"/>
-            <display value="Computed tomography of brain perfusion (procedure)"/>
+            <system value="http://testSK.org/CodeSystem/brain-imaging-type-cs"/>
+            <code value="ct-cta"/>
+            <display value="CT-CTA"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="16327691000119101"/>
-            <display value="Magnetic resonance imaging of brain with contrast (procedure)"/>
+            <system value="http://testSK.org/CodeSystem/brain-imaging-type-cs"/>
+            <code value="ct-cta-perfusion"/>
+            <display value="CT-CTA and Perfusion"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="440408002"/>
-            <display value="Diffusion weighted magnetic resonance imaging (procedure)"/>
+            <system value="http://testSK.org/CodeSystem/brain-imaging-type-cs"/>
+            <code value="mr-dwi-flair"/>
+            <display value="MR DWI-FLAIR"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="419059006"/>
-            <display value="Magnetic resonance imaging cerebral perfusion study (procedure)"/>
+            <system value="http://testSK.org/CodeSystem/brain-imaging-type-cs"/>
+            <code value="mr-dwi-flair-mra"/>
+            <display value="MR DWI-FLAIR and MRA"/>
+          </contains>
+          <contains>
+            <system value="http://testSK.org/CodeSystem/brain-imaging-type-cs"/>
+            <code value="mr-dwi-flair-mra-perfusion"/>
+            <display value="MR DWI-FLAIR, MRA, and Perfusion"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -548,10 +569,10 @@
         <name value="CarotidImagingModalityVS"/>
         <title value="Carotid Arteries Imaging Modality ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:3b552335-90de-48a9-9e41-b60ec76c00b5"/>
-          <timestamp value="2025-09-08T07:32:21+00:00"/>
+          <identifier value="urn:uuid:5adea0fb-38ca-4c82-9243-53c11c9e3e25"/>
+          <timestamp value="2025-09-08T10:19:03+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -605,7 +626,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-discharge-dept-cs.html">codesystem Discharge Department/Service Code System v0.1.0 (CodeSystem)</a>
+            </p>
             <p>This value set contains 4 concepts</p>
             <table class="codes">
               <tr>
@@ -618,38 +641,45 @@
                 <td>
                   <b>Display</b>
                 </td>
+                <td>
+                  <b>Definition</b>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-309940004"> </a>  
-                  <a href="http://snomed.info/id/309940004">309940004</a>
+                  <a name="x-http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs-acute"> </a>  
+                  <a href="CodeSystem-discharge-dept-cs.html#discharge-dept-cs-acute">acute</a>
                 </td>
-                <td>http://snomed.info/sct</td>
-                <td>Rehabilitation department</td>
+                <td>http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs</td>
+                <td>Acute Rehabilitation</td>
+                <td>Patient discharged to an acute rehabilitation setting.</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-309937004"> </a>  
-                  <a href="http://snomed.info/id/309937004">309937004</a>
+                  <a name="x-http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs-post-care"> </a>  
+                  <a href="CodeSystem-discharge-dept-cs.html#discharge-dept-cs-post-care">post-care</a>
                 </td>
-                <td>http://snomed.info/sct</td>
-                <td>Neurology department</td>
+                <td>http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs</td>
+                <td>Post Care Bed</td>
+                <td>Patient discharged to a post care bed.</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-441480003"> </a>  
-                  <a href="http://snomed.info/id/441480003">441480003</a>
+                  <a name="x-http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs-neurology"> </a>  
+                  <a href="CodeSystem-discharge-dept-cs.html#discharge-dept-cs-neurology">neurology</a>
                 </td>
-                <td>http://snomed.info/sct</td>
-                <td>Primary care department</td>
+                <td>http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs</td>
+                <td>Neurology</td>
+                <td>Patient discharged to a neurology department or service.</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-309912009"> </a>  
-                  <a href="http://snomed.info/id/309912009">309912009</a>
+                  <a name="x-http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs-another-department"> </a>  
+                  <a href="CodeSystem-discharge-dept-cs.html#discharge-dept-cs-another-department">another-department</a>
                 </td>
-                <td>http://snomed.info/sct</td>
-                <td>Medical department</td>
+                <td>http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs</td>
+                <td>Another Department</td>
+                <td>Patient discharged to a different department within the same hospital.</td>
               </tr>
             </table>
           </div>
@@ -659,10 +689,10 @@
         <name value="DischargeDeptVS"/>
         <title value="Discharge Department/Service ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:0663eabd-1bf0-4c8e-80f3-ae619ec3df55"/>
-          <timestamp value="2025-09-08T07:32:22+00:00"/>
+          <identifier value="urn:uuid:3967e544-ef84-4bc1-a1d4-af79b9dea959"/>
+          <timestamp value="2025-09-08T10:19:03+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -678,36 +708,28 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+            <valueUri value="http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="309940004"/>
-            <display value="Rehabilitation department"/>
+            <system value="http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs"/>
+            <code value="acute"/>
+            <display value="Acute Rehabilitation"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="309937004"/>
-            <display value="Neurology department"/>
+            <system value="http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs"/>
+            <code value="post-care"/>
+            <display value="Post Care Bed"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="441480003"/>
-            <display value="Primary care department"/>
+            <system value="http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs"/>
+            <code value="neurology"/>
+            <display value="Neurology"/>
           </contains>
           <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="309912009"/>
-            <display value="Medical department"/>
+            <system value="http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs"/>
+            <code value="another-department"/>
+            <display value="Another Department"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -786,8 +808,8 @@
         <experimental value="true"/>
         <date value="2025-03-31"/>
         <expansion>
-          <identifier value="urn:uuid:adb1f674-09c9-47ac-b486-d0c8459974f2"/>
-          <timestamp value="2025-09-08T07:32:22+00:00"/>
+          <identifier value="urn:uuid:de2fc5e4-159d-4506-ab34-7dd2182c0303"/>
+          <timestamp value="2025-09-08T10:19:03+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -889,10 +911,10 @@
         <name value="FunctionalScoreCodesVS"/>
         <title value="Stroke Functional Score Codes ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:5399b244-7924-40ee-969d-6042c83bdb87"/>
-          <timestamp value="2025-09-08T07:32:22+00:00"/>
+          <identifier value="urn:uuid:0a0c6a12-e5b5-4df2-8f23-ea3b91fcce2f"/>
+          <timestamp value="2025-09-08T10:19:03+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -998,8 +1020,8 @@
         <experimental value="true"/>
         <date value="2025-09-08"/>
         <expansion>
-          <identifier value="urn:uuid:3659c522-cfdc-4c43-b94b-ed8355655787"/>
-          <timestamp value="2025-09-08T07:32:22+00:00"/>
+          <identifier value="urn:uuid:a7731887-34a4-4c93-a3b8-76403a242486"/>
+          <timestamp value="2025-09-08T10:19:04+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1099,10 +1121,10 @@
         <name value="InitialCareIntensityVS"/>
         <title value="Initial Care Intensity ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c6cf195e-402a-4393-b9c9-7953b649ce51"/>
-          <timestamp value="2025-09-08T07:32:22+00:00"/>
+          <identifier value="urn:uuid:47f0e0bb-0171-4857-a13c-1d9b7278e6dc"/>
+          <timestamp value="2025-09-08T10:19:04+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1233,8 +1255,8 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://testSK.org/CodeSystem/medication-statement-cs-antyplatelet"> </a>  
-                  <a href="CodeSystem-medication-statement-cs.html#medication-statement-cs-antyplatelet">antyplatelet</a>
+                  <a name="x-http://testSK.org/CodeSystem/medication-statement-cs-antiplatelet"> </a>  
+                  <a href="CodeSystem-medication-statement-cs.html#medication-statement-cs-antiplatelet">antiplatelet</a>
                 </td>
                 <td>http://testSK.org/CodeSystem/medication-statement-cs</td>
                 <td>Any Antiplatelet</td>
@@ -1269,8 +1291,8 @@
         <experimental value="true"/>
         <date value="2025-03-31"/>
         <expansion>
-          <identifier value="urn:uuid:bc756124-6fd4-4a8a-8ef2-014b4b9b31b1"/>
-          <timestamp value="2025-09-08T07:32:22+00:00"/>
+          <identifier value="urn:uuid:434517f9-c2b0-4828-9f94-b620191b3f11"/>
+          <timestamp value="2025-09-08T10:19:04+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -1333,7 +1355,7 @@
           </contains>
           <contains>
             <system value="http://testSK.org/CodeSystem/medication-statement-cs"/>
-            <code value="antyplatelet"/>
+            <code value="antiplatelet"/>
             <display value="Any Antiplatelet"/>
           </contains>
           <contains>
@@ -1448,10 +1470,10 @@
         <name value="MRsScoreVS"/>
         <title value="modified Rankin Scale (mRS) Score ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8b532968-9b97-48da-89f7-9498e477908e"/>
-          <timestamp value="2025-09-08T07:32:23+00:00"/>
+          <identifier value="urn:uuid:bb1e8820-f4e2-49d1-a50c-a705d4de50be"/>
+          <timestamp value="2025-09-08T10:19:04+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -1593,10 +1615,10 @@
         <name value="mTICICodeVS"/>
         <title value="mTICI Score Codes ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:69365287-61f4-4df1-9ec1-3ebcc0239909"/>
-          <timestamp value="2025-09-08T07:32:23+00:00"/>
+          <identifier value="urn:uuid:e6a3a79d-d54e-4d3c-8baf-b2b05720598c"/>
+          <timestamp value="2025-09-08T10:19:04+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -1736,8 +1758,8 @@
         <experimental value="true"/>
         <date value="2025-03-31"/>
         <expansion>
-          <identifier value="urn:uuid:7da7e5bd-6283-4ed7-b9f4-5e8b2b8aa9d8"/>
-          <timestamp value="2025-09-08T07:32:23+00:00"/>
+          <identifier value="urn:uuid:c713a7e7-f5eb-4527-8c48-3f3a400ef6da"/>
+          <timestamp value="2025-09-08T10:19:04+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -1839,8 +1861,8 @@
         <experimental value="true"/>
         <date value="2025-03-31"/>
         <expansion>
-          <identifier value="urn:uuid:35691e11-9364-4405-9778-ad71e8cbaae1"/>
-          <timestamp value="2025-09-08T07:32:23+00:00"/>
+          <identifier value="urn:uuid:49950914-8247-4f5c-85f6-92ddfbe487bb"/>
+          <timestamp value="2025-09-08T10:19:04+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1943,10 +1965,10 @@
         <name value="ProcedureTimingContextVS"/>
         <title value="Procedure Timing Context ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:a807accb-40d0-4dd8-bac4-ac879b839e6d"/>
-          <timestamp value="2025-09-08T07:32:23+00:00"/>
+          <identifier value="urn:uuid:5f95c892-8ae8-40f0-b678-ee9f6e02b018"/>
+          <timestamp value="2025-09-08T10:19:04+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -2034,10 +2056,10 @@
         <name value="SpecificFindingCodesVS"/>
         <title value="Specific Stroke Finding Codes ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:6266f4a0-d08c-4d1b-b854-abaf0592fd66"/>
-          <timestamp value="2025-09-08T07:32:23+00:00"/>
+          <identifier value="urn:uuid:2c2bd941-fc9c-4024-975d-9ad7deedd08e"/>
+          <timestamp value="2025-09-08T10:19:04+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2167,10 +2189,10 @@
         <name value="StrokeArrivalModeVS"/>
         <title value="Stroke Arrival Mode ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8a4fbf3c-6bbb-44da-9aa4-ef5579f59c9a"/>
-          <timestamp value="2025-09-08T07:32:23+00:00"/>
+          <identifier value="urn:uuid:d5f3aadc-62df-4773-95f6-58ea86575685"/>
+          <timestamp value="2025-09-08T10:19:04+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -2273,10 +2295,10 @@
         <name value="StrokeCircumstanceCodesVS"/>
         <title value="Stroke Circumstance Codes ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:bfb5ba4a-12cb-41ef-8254-caa6f8cd0550"/>
-          <timestamp value="2025-09-08T07:32:23+00:00"/>
+          <identifier value="urn:uuid:c25a397d-7c43-430a-a3e9-c9cdeb65b7eb"/>
+          <timestamp value="2025-09-08T10:19:04+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2387,10 +2409,10 @@
         <name value="StrokeDiagnosisVS"/>
         <title value="Stroke Diagnosis ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8297edeb-404f-4653-b4b0-d93fa33da0a6"/>
-          <timestamp value="2025-09-08T07:32:23+00:00"/>
+          <identifier value="urn:uuid:531435ea-ae5e-464a-859b-a22283275daf"/>
+          <timestamp value="2025-09-08T10:19:05+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2532,10 +2554,10 @@
         <name value="StrokeDischargeDestinationVS"/>
         <title value="Stroke Discharge Destination ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c2b827e9-ca7a-4e59-99b0-4c35247bab63"/>
-          <timestamp value="2025-09-08T07:32:23+00:00"/>
+          <identifier value="urn:uuid:d5352c06-fa45-400d-8e44-14c214508b1d"/>
+          <timestamp value="2025-09-08T10:19:05+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2688,8 +2710,8 @@
         <experimental value="true"/>
         <date value="2025-03-31"/>
         <expansion>
-          <identifier value="urn:uuid:ece761e0-a864-425e-89ea-a1cb93e3622d"/>
-          <timestamp value="2025-09-08T07:32:24+00:00"/>
+          <identifier value="urn:uuid:3f650683-a892-4606-add6-1ac39b9d5230"/>
+          <timestamp value="2025-09-08T10:19:05+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2861,10 +2883,10 @@
         <name value="StrokeFindingCodesVS"/>
         <title value="Specific Stroke Finding Codes ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:be5a0740-a086-4131-9fa1-63653c024b23"/>
-          <timestamp value="2025-09-08T07:32:24+00:00"/>
+          <identifier value="urn:uuid:4ac269df-8117-4e5d-ab8e-02aba2d4ad38"/>
+          <timestamp value="2025-09-08T10:19:05+00:00"/>
           <total value="8"/>
           <offset value="0"/>
           <parameter>
@@ -3085,10 +3107,10 @@
         <name value="StrokeProcNotDoneReasonVS"/>
         <title value="Stroke Procedure Not Done Reason ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:a2833396-4686-4e8e-a323-c6e7935b9ba2"/>
-          <timestamp value="2025-09-08T07:32:24+00:00"/>
+          <identifier value="urn:uuid:5401ed81-282e-4547-98a8-df8e149d674d"/>
+          <timestamp value="2025-09-08T10:19:05+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -3288,10 +3310,10 @@
         <name value="StrokeRiskFactorSNOMEDVS"/>
         <title value="Stroke Risk Factor ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:5c7e4133-ab19-4f40-a8cd-b91c19fad8e3"/>
-          <timestamp value="2025-09-08T07:32:24+00:00"/>
+          <identifier value="urn:uuid:64db08dc-e060-4d1c-812b-4e1e3a63a858"/>
+          <timestamp value="2025-09-08T10:19:05+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -3426,8 +3448,8 @@
         <experimental value="true"/>
         <date value="2025-03-31"/>
         <expansion>
-          <identifier value="urn:uuid:d3ebe977-c0d0-41ff-91b5-d25989d6fb7a"/>
-          <timestamp value="2025-09-08T07:32:24+00:00"/>
+          <identifier value="urn:uuid:d1f8cd80-1bd4-489d-b103-219b6e27b389"/>
+          <timestamp value="2025-09-08T10:19:05+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -3539,10 +3561,10 @@
         <name value="SwallowingScreeningTimingCategoryVS"/>
         <title value="Swallowing Screening Timing Category ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:d81c0588-740c-4c8f-b13a-928387c91cb5"/>
-          <timestamp value="2025-09-08T07:32:24+00:00"/>
+          <identifier value="urn:uuid:cc31d335-87ff-4939-a578-15dbc00c01c7"/>
+          <timestamp value="2025-09-08T10:19:06+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -3627,10 +3649,10 @@
         <name value="ThrombectomyComplicationVS"/>
         <title value="Thrombectomy Complication ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b1f4ce25-dd8f-48df-8e49-f5252fbaaca6"/>
-          <timestamp value="2025-09-08T07:32:24+00:00"/>
+          <identifier value="urn:uuid:ada6eacb-ac03-4bb0-aba2-a04cbde15bdb"/>
+          <timestamp value="2025-09-08T10:19:06+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -3719,10 +3741,10 @@
         <name value="TimingMetricCodesVS"/>
         <title value="Stroke Timing Metric Codes ValueSet"/>
         <status value="active"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:23d91da8-5eb5-46d0-ae9b-38fd37f3e80d"/>
-          <timestamp value="2025-09-08T07:32:24+00:00"/>
+          <identifier value="urn:uuid:0667ff2d-5737-428b-9f02-05ba9d738d09"/>
+          <timestamp value="2025-09-08T10:19:06+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -3802,10 +3824,10 @@
         <title value="Stroke Vital Sign Codes ValueSet"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:828818b7-0fdd-4cfd-859c-6812d5cf51c6"/>
-          <timestamp value="2025-09-08T07:32:24+00:00"/>
+          <identifier value="urn:uuid:e519f0d6-1f17-410c-b764-7cca7a0500a3"/>
+          <timestamp value="2025-09-08T10:19:06+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -3901,10 +3923,10 @@
         <title value="Gender (SNOMED CT)"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2025-09-08T07:31:14+00:00"/>
+        <date value="2025-09-08T10:17:51+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:160d494e-19f7-4ad1-bc5f-a72242e9a22d"/>
-          <timestamp value="2025-09-08T07:32:25+00:00"/>
+          <identifier value="urn:uuid:fa675201-4a2b-4dc8-b879-42eadd0a8952"/>
+          <timestamp value="2025-09-08T10:19:06+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>

@@ -3,14 +3,14 @@
   "id" : "brain-imaging-modality-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet brain-imaging-modality-vs</b></p><a name=\"brain-imaging-modality-vs\"> </a><a name=\"hcbrain-imaging-modality-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/396205005\">396205005</a></td><td>Computed tomography of brain without radiopaque contrast (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/419949007\">419949007</a></td><td>Computed tomography angiography of intracranial artery with contrast (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/433111008\">433111008</a></td><td>Computed tomography of brain perfusion (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/16327691000119101\">16327691000119101</a></td><td>Magnetic resonance imaging of brain with contrast (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/440408002\">440408002</a></td><td>Diffusion weighted magnetic resonance imaging (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/419059006\">419059006</a></td><td>Magnetic resonance imaging cerebral perfusion study (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/1366357009\">1366357009</a></td><td>Magnetic resonance imaging angiography of intracranial artery (procedure)</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet brain-imaging-modality-vs</b></p><a name=\"brain-imaging-modality-vs\"> </a><a name=\"hcbrain-imaging-modality-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/419949007\">419949007</a></td><td>Computed tomography angiography of intracranial artery with contrast (procedure)</td></tr></table></li><li>Include all codes defined in <a href=\"CodeSystem-brain-imaging-type-cs.html\"><code>http://testSK.org/CodeSystem/brain-imaging-type-cs</code></a></li></ul></div>"
   },
   "url" : "http://testSK.org/ValueSet/brain-imaging-modality-vs",
   "version" : "0.1.0",
   "name" : "BrainImagingModalityVS",
   "title" : "Brain Imaging Modality ValueSet",
   "status" : "active",
-  "date" : "2025-09-08T07:31:14+00:00",
+  "date" : "2025-09-08T10:17:51+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -24,33 +24,12 @@
     "include" : [{
       "system" : "http://snomed.info/sct",
       "concept" : [{
-        "code" : "396205005",
-        "display" : "Computed tomography of brain without radiopaque contrast (procedure)"
-      },
-      {
         "code" : "419949007",
         "display" : "Computed tomography angiography of intracranial artery with contrast (procedure)"
-      },
-      {
-        "code" : "433111008",
-        "display" : "Computed tomography of brain perfusion (procedure)"
-      },
-      {
-        "code" : "16327691000119101",
-        "display" : "Magnetic resonance imaging of brain with contrast (procedure)"
-      },
-      {
-        "code" : "440408002",
-        "display" : "Diffusion weighted magnetic resonance imaging (procedure)"
-      },
-      {
-        "code" : "419059006",
-        "display" : "Magnetic resonance imaging cerebral perfusion study (procedure)"
-      },
-      {
-        "code" : "1366357009",
-        "display" : "Magnetic resonance imaging angiography of intracranial artery (procedure)"
       }]
+    },
+    {
+      "system" : "http://testSK.org/CodeSystem/brain-imaging-type-cs"
     }]
   }
 }

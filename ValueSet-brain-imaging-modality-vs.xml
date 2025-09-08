@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="brain-imaging-modality-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet brain-imaging-modality-vs</b></p><a name="brain-imaging-modality-vs"> </a><a name="hcbrain-imaging-modality-vs"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/396205005">396205005</a></td><td>Computed tomography of brain without radiopaque contrast (procedure)</td></tr><tr><td><a href="http://snomed.info/id/419949007">419949007</a></td><td>Computed tomography angiography of intracranial artery with contrast (procedure)</td></tr><tr><td><a href="http://snomed.info/id/433111008">433111008</a></td><td>Computed tomography of brain perfusion (procedure)</td></tr><tr><td><a href="http://snomed.info/id/16327691000119101">16327691000119101</a></td><td>Magnetic resonance imaging of brain with contrast (procedure)</td></tr><tr><td><a href="http://snomed.info/id/440408002">440408002</a></td><td>Diffusion weighted magnetic resonance imaging (procedure)</td></tr><tr><td><a href="http://snomed.info/id/419059006">419059006</a></td><td>Magnetic resonance imaging cerebral perfusion study (procedure)</td></tr><tr><td><a href="http://snomed.info/id/1366357009">1366357009</a></td><td>Magnetic resonance imaging angiography of intracranial artery (procedure)</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet brain-imaging-modality-vs</b></p><a name="brain-imaging-modality-vs"> </a><a name="hcbrain-imaging-modality-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/419949007">419949007</a></td><td>Computed tomography angiography of intracranial artery with contrast (procedure)</td></tr></table></li><li>Include all codes defined in <a href="CodeSystem-brain-imaging-type-cs.html"><code>http://testSK.org/CodeSystem/brain-imaging-type-cs</code></a></li></ul></div>
   </text>
   <url value="http://testSK.org/ValueSet/brain-imaging-modality-vs"/>
   <version value="0.1.0"/>
   <name value="BrainImagingModalityVS"/>
   <title value="Brain Imaging Modality ValueSet"/>
   <status value="active"/>
-  <date value="2025-09-08T07:31:14+00:00"/>
+  <date value="2025-09-08T10:17:51+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -24,33 +24,12 @@
     <include>
       <system value="http://snomed.info/sct"/>
       <concept>
-        <code value="396205005"/>
-        <display value="Computed tomography of brain without radiopaque contrast (procedure)"/>
-      </concept>
-      <concept>
         <code value="419949007"/>
         <display value="Computed tomography angiography of intracranial artery with contrast (procedure)"/>
       </concept>
-      <concept>
-        <code value="433111008"/>
-        <display value="Computed tomography of brain perfusion (procedure)"/>
-      </concept>
-      <concept>
-        <code value="16327691000119101"/>
-        <display value="Magnetic resonance imaging of brain with contrast (procedure)"/>
-      </concept>
-      <concept>
-        <code value="440408002"/>
-        <display value="Diffusion weighted magnetic resonance imaging (procedure)"/>
-      </concept>
-      <concept>
-        <code value="419059006"/>
-        <display value="Magnetic resonance imaging cerebral perfusion study (procedure)"/>
-      </concept>
-      <concept>
-        <code value="1366357009"/>
-        <display value="Magnetic resonance imaging angiography of intracranial artery (procedure)"/>
-      </concept>
+    </include>
+    <include>
+      <system value="http://testSK.org/CodeSystem/brain-imaging-type-cs"/>
     </include>
   </compose>
 </ValueSet>

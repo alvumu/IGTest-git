@@ -12,10 +12,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.109"],
       "uses" : {
       },
-      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
       "StructureDefinition-stroke-thrombolysis-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)",
       "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)"
+      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
+      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)"
     },
     {
       "url" : "http://testSK.org/ValueSet/admission-source-vs",
@@ -54,7 +54,10 @@
       "name" : "BrainImagingModalityVS",
       "title" : "Brain Imaging Modality ValueSet",
       "description" : "Defines the SNOMED CT codes for individual brain imaging modalities performed as procedures.",
-      "systems" : ["http://snomed.info/sct"],
+      "systems" : [
+        "http://testSK.org/CodeSystem/brain-imaging-type-cs",
+        "http://snomed.info/sct"
+      ],
       "uses" : {
       },
       "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)"
@@ -78,7 +81,7 @@
       "name" : "DischargeDeptVS",
       "title" : "Discharge Department/Service ValueSet",
       "description" : "ValueSet specifying the type of department or service the patient was discharged or transferred to.",
-      "systems" : ["http://snomed.info/sct"],
+      "systems" : ["http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs"],
       "uses" : {
       },
       "StructureDefinition-discharge-department-service-ext.html" : "Discharge Department/Service Extension"
@@ -319,10 +322,10 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
       "StructureDefinition-stroke-thrombolysis-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)",
       "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)"
+      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
+      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)"
     },
     {
       "url" : "http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs",

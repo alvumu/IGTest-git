@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="IGTest"/>
   <status value="draft"/>
-  <date value="2025-09-08T07:31:14+00:00"/>
+  <date value="2025-09-08T10:17:51+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -142,6 +142,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/brain-imaging-type-cs"/>
+      </reference>
+      <name value="Brain Imaging Type Code System"/>
+      <description value="Codes specifying the type of brain imaging performed (e.g., CT, MRI)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -149,6 +160,17 @@
       </reference>
       <name value="Carotid Arteries Imaging Modality ValueSet"/>
       <description value="Defines codes for different types of carotid artery imaging."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/discharge-dept-cs"/>
+      </reference>
+      <name value="Discharge Department/Service Code System"/>
+      <description value="Code system specifying the type of department or service the patient was discharged or transferred to."/>
       <isExample value="false"/>
     </resource>
     <resource>
