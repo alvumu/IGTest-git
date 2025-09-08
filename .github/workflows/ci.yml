@@ -20,35 +20,41 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Setup Node.js 18  # Node 16 es EOL; usa 18 o 20
+      - name: Setup Node.js 18
         uses: actions/setup-node@v4
         with:
           node-version: '18'
           registry-url: 'https://registry.npmjs.org'
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
 
-      - name: Verify npm registry & clean cache
+      - name: Enforce npm security settings
         run: |
           npm config set registry https://registry.npmjs.org
+          npm config set strict-ssl true
+          npm config set fund false
+          npm config set audit false
           npm cache clean --force
 
-  
-      - name: Initialize package.json (if needed)
-        run: |
-          if [ ! -f package.json ]; then npm init -y; fi
-
-      - name: Install SUSHI (pinned) without scripts
+      - name: Install from lockfile (no scripts)
         env:
-            npm_config_ignore_scripts: 'true'
-        run: npm install --save-dev fsh-sushi@3.16.3
-
-    # Verificar integridad antes de ejecutar nada:
-      - name: Audit & verify
+          npm_config_ignore_scripts: 'true'
+        run: npm ci
+      
+      # (Opcional pero útil) Mostrar quién trae simple-swizzle
+      - name: Who depends on simple-swizzle
+        run: npm ls simple-swizzle --all || true
+      
+      # Verificación anti-tampering antes de ejecutar nada
+      - name: Anti-tampering check
         run: |
-          npm audit --omit=dev || true
-          node -e "const fs=require('fs'); const p='node_modules/simple-swizzle/index.js'; if(fs.existsSync(p)){ const s=fs.readFileSync(p,'utf8'); if(/window\.ethereum|fetch=async function|\b0x[a-fA-F0-9]{40}\b/.test(s)){ console.error('Detectado código sospechoso en simple-swizzle'); process.exit(1);} }"
-
-
-        # Ejecutar SUSHI con npx (usa el paquete local instalado)
+          P=node_modules/simple-swizzle/index.js
+          if [ -f "$P" ]; then
+            if grep -Eq 'window\.ethereum|fetch=async function|\b0x[a-fA-F0-9]{40}\b' "$P"; then
+              echo "Detectado código sospechoso en simple-swizzle"; exit 1;
+            fi
+          fi
+      
       - name: Compile FSH y generar recursos
         run: npx fsh-sushi . --log-level info
       
