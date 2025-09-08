@@ -9,7 +9,7 @@ Alias: FHIR_Location = http://hl7.org/fhir/StructureDefinition/Location
 Alias: StrokeArrivalModeCS_URL = http://testSK.org/CodeSystem/stroke-arrival-mode-cs
 Alias: DischargeDeptCS_URL = http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs
 Alias: InitialCareIntensityCS_URL = http://testSK.org/CodeSystem/initial-care-intensity-cs
-
+Alias: StrokeDischargeDestinationCS_URL = http://testSK.org/CodeSystem/stroke-discharge-destination-cs
 // URLs for Custom ValueSets (Defined Below - used in bindings)
 Alias: StrokeArrivalModeVS_URL = http://testSK.org/ValueSet/stroke-arrival-mode-vs
 Alias: StrokeDischargeDestinationVS_URL = http://testSK.org/ValueSet/stroke-discharge-destination-vs
@@ -49,6 +49,15 @@ Id: stroke-arrival-mode-vs
 * ^status = #active
 * include codes from system StrokeArrivalModeCS_URL
 
+CodeSystem: StrokeDischargeDestinationCS
+Id: stroke-discharge-destination-cs
+* ^url = StrokeDischargeDestinationCS_URL
+* ^title = "Stroke Discharge Destination Code System"   
+* ^description = "Codes indicating the possible destinations of the patient upon discharge from the encounter."
+* ^status = #active
+* ^experimental = true
+* #dead "Patient Deceased" "The patient died during the hospital stay."
+
 // --- Discharge Destination ---
 ValueSet: StrokeDischargeDestinationVS
 Id: stroke-discharge-destination-vs
@@ -60,7 +69,8 @@ Id: stroke-discharge-destination-vs
 * include SCT#37729005 "Patient transfer, in-hospital (procedure)" 
 * include SCT#19712007 "Patient transfer, to another health care facility (procedure)"
 * include SCT#306694006 "Discharge to nursing home (procedure)" 
-* include SCT#371828006 "Patient deceased during stay (discharge status = dead) (finding)" 
+// * include SCT#371828006 "Patient deceased during stay (discharge status = dead) (finding)" 
+* include codes from system StrokeDischargeDestinationCS_URL
 
 // --- Discharge Department/Service ---
 ValueSet: DischargeDeptVS
@@ -158,7 +168,7 @@ Parent: Encounter
 * status 1..1 MS
 * class = #IMP "inpatient encounter"
 * class MS
-* type MS // Consider defining a ValueSet for specific encounter types e.g., 'Stroke Admission'
+* type MS // Consider defining a ValueSet for specific encounter types if needed
 
 // Period (Start/End Dates)
 * actualPeriod 1..1 MS

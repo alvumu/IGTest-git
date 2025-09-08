@@ -6,6 +6,9 @@ Alias: CondVerStatus = http://terminology.hl7.org/CodeSystem/condition-ver-statu
 Alias: StrokeRiskUnknVS = http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips
 Alias: ClinicalStatusCondCS = http://terminology.hl7.org/CodeSystem/condition-clinical
 
+
+Alias: HemorrhagicStrokeBleedingReasonCS_URL = http://testSK.org/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs
+Alias: StrokeEtiologyCS_URL = http://testSK.org/CodeSystem/stroke-etiology-cs
 Alias: StrokeDiagnosisVS_URL = http://testSK.org/ValueSet/stroke-diagnosis-vs
 Alias: StrokeRiskFactorSNOMEDVS_URL = http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs
 Alias: StrokeRiskFactorVS_URL = http://testSK.org/ValueSet/stroke-risk-factor-vs
@@ -87,6 +90,19 @@ Description: "Defines the modes of transport or pathways by which the patient ar
 * include SCT#715957006 "Transportation by own transport (procedure)" // Note: Verify this code, was corrected per input.
 * include SCT#384762007 "Transportation procedure (procedure)"
 
+CodeSystem: HemorrhagicStrokeBleedingReasonCS
+Id: hemorrhagic-stroke-bleeding-reason-cs
+* ^url = HemorrhagicStrokeBleedingReasonCS_URL
+* ^title = "Hemorrhagic Stroke Bleeding Reason Code System"
+* ^description = "Codes indicating the reason for bleeding in hemorrhagic stroke cases."
+* ^status = #active
+* ^experimental = true 
+* ^caseSensitive = false  
+* #aneurysm "Bleeding Reason Aneurysm" "A cerebral aneurysm was identified as the cause of the patient's hemorrhagic stroke"
+* #malformation "Bleeding Reason Malformation" "A vascular malformation was identified as the cause of the patient's hemorrhagic stroke"
+* #other "Bleeding Reason Other" "Another, less common or unspecified cause of intracranial hemorrhage was identified"
+
+
 ValueSet: HemorrhagicStrokeBleedingReasonVS
 Id: hemorrhagic-stroke-bleeding-reason-vs
 Title: "Hemorrhagic Stroke Bleeding Reason ValueSet"
@@ -96,15 +112,24 @@ Title: "Hemorrhagic Stroke Bleeding Reason ValueSet"
 * ^name = "HemorrhagicStrokeBleedingReasonVS"
 * ^status = #draft
 * ^experimental = true
-* ^date = "2025-03-31"
+* ^date = "2025-09-08"
 * ^publisher = "Example Organization"
 * ^contact[0].name = "Example Organization"
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "info@example.org"
-* include SCT#128609009 "Intracranial aneurysm (disorder)"
-* include SCT#703221003 "Congenital intracranial vascular malformation (disorder)"
-* include SCT#64572001 "Disease (disorder)"
-* include SCT#71388002 "Procedure (procedure)"
+* include codes from system HemorrhagicStrokeBleedingReasonCS_URL
+
+
+CodeSystem: StrokeEtiologyCS
+Id: stroke-etiology-cs
+* ^url = StrokeEtiologyCS_URL
+* ^title = "Stroke Etiology Code System"
+* ^description = "Codes indicating the etiology of strokes."
+* ^status = #active
+* ^experimental = true 
+* ^caseSensitive = false  
+* #atherosclerosis "Stroke Etiology Atherosclerosis" "Specifies that large artery atherosclerosis (for example, significant stenosis in the carotid or basilar arteries) was identified as the cause of the stroke."
+* #other "Stroke Etiology Other" "Specifies that the stroke etiology falls into a rarer category not covered by the main classifications, such as vasculitis or hypercoagulable states."
 
 ValueSet: StrokeEtiologyVS
 Id: stroke-etiology-vs
@@ -120,13 +145,11 @@ Description: "Specifies the determined etiology of an stroke."
 * ^contact[0].name = "Example Organization"
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "info@example.org"
-* include SCT#724425005 "Cerebral ischemic stroke due to intracranial large artery atherosclerosis (disorder)"
-* include SCT#724426006 "Cerebral ischemic stroke due to extracranial large artery atherosclerosis (disorder)"
-* include SCT#1251566005 "Embolism from heart (disorder)"
-* include SCT#404684003 "Clinical finding (finding)"
+* include codes from system StrokeEtiologyCS_URL
 * include SCT#16891111000119104 "Cryptogenic stroke (disorder)"
-* include SCT#230698000 "Lacunar infarction (disorder)"
-* include SCT#443929000 "Small vessel cerebrovascular disease (disorder)"
+* include SCT#413758000 "Cardioembolic stroke (disorder)"
+
+
 // ------------------ Extensions ---------------------------------
 // (No changes from previous version)
 Extension: HemorrhagicStrokeBleedingReasonExt

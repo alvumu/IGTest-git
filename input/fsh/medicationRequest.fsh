@@ -15,28 +15,43 @@ Alias: AbsentOrUnknownVS = https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknow
 // URLs for Medication ValueSets
 Alias: MedicationVS_URL = http://testSK.org/ValueSet/medication-vs
 
-ValueSet: MedicationVS
-Id: medication-vs
+// ValueSet: MedicationVS
+// Id: medication-vs
+// * ^url = MedicationVS_URL
+// * ^version = "1.0.0"
+// * ^name = "MedicationVS"
+// * ^title = "Medications ValueSet"
+// * ^description = "SNOMED CT codes for drug products or substances."
+// * ^status = #draft
+// * include SCT#372756006 "Warfarin (substance)"
+// * include SCT#698871007 "Dabigatran (substance)"
+// * include SCT#442031002 "Rivaroxaban (substance)"
+// * include SCT#698090000 "Apixaban (substance)"
+// * include SCT#712778008 "Edoxaban (substance)"
+// * include SCT#372862008 "Anticoagulant (substance)"
+// * include SCT#387458008 "Aspirin (substance)"
+// * include SCT#386952008 "Clopidogrel (substance)"
+// * include SCT#698805004 "Ticagrelor (substance)"
+// * include SCT#443129001 "Prasugrel (substance)"
+// * include SCT#387371005 "Dipyridamole (substance)"
+// * include SCT#771451006 "Platelet aggregation inhibitor (disposition)"
+// * include SCT#372562003 "Enoxaparin (substance)"
+
+CodeSystem: DischargeMedicationCS
+Id: discharge-medication-cs
 * ^url = MedicationVS_URL
 * ^version = "1.0.0"
-* ^name = "MedicationVS"
-* ^title = "Medications ValueSet"
-* ^description = "SNOMED CT codes for drug products or substances."
+* ^name = "DischargeMedicationCS"
+* ^title = "Medications CodeSystem"
+* ^description = "Codes for drug products or substances representing the Medications on the patient discharge."
 * ^status = #draft
-* include SCT#372756006 "Warfarin (substance)"
-* include SCT#698871007 "Dabigatran (substance)"
-* include SCT#442031002 "Rivaroxaban (substance)"
-* include SCT#698090000 "Apixaban (substance)"
-* include SCT#712778008 "Edoxaban (substance)"
-* include SCT#372862008 "Anticoagulant (substance)"
-* include SCT#387458008 "Aspirin (substance)"
-* include SCT#386952008 "Clopidogrel (substance)"
-* include SCT#698805004 "Ticagrelor (substance)"
-* include SCT#443129001 "Prasugrel (substance)"
-* include SCT#387371005 "Dipyridamole (substance)"
-* include SCT#771451006 "Platelet aggregation inhibitor (disposition)"
-* include SCT#372562003 "Enoxaparin (substance)"
-
+* #anticoagulant "Any Anticoagulant" "Any anticoagulant (such as warfarin or a NOAC) was prescribed at discharge"
+* #antiplatelet "Any Antiplatelet" "Any antiplatelet medication (e.g., aspirin, clopidogrel) was prescribed at discharge"
+* #asa "Aspirin" "Aspirin (acetylsalicylic acid) was prescribed at discharge"
+* #clopidogrel "Clopidogrel" "Clopidogrel was prescribed at discharge"
+* #heparin "Heparin" "Heparin (either unfractionated or low-molecular-weight) was prescribed at discharge"
+* #warfarin "Warfarin" "Warfarin, a vitamin K antagonist—was prescribed at discharge"
+* #other "Other Medication" "A medication other than those specifically listed was prescribed at discharge"
 ValueSet: DischargeMedicationVS
 Id: discharge-medication-vs
 * ^url = "http://testSK.org/ValueSet/discharge-medication-vs"
@@ -45,7 +60,7 @@ Id: discharge-medication-vs
 * ^title = "Medications ValueSet"
 * ^description = "Codes for drug products or substances representing the Medications on the patient discharge."
 * ^status = #draft
-*   include codes from valueset MedicationVS
+*   include codes from system MedicationVS_URL
 *   include codes from valueset AbsentOrUnknownVS
 // ------------------ Profile: Discharge Medication Request (Updated) -----------------------
 
