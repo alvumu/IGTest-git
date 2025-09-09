@@ -192,9 +192,9 @@ Parent: Encounter
 // Hospitalization Details
 * admission 1..1 MS
 * admission.admitSource 0..1 MS // arrival mode
-* admission.admitSource from StrokeArrivalModeVS_URL (required)
+* admission.admitSource from StrokeArrivalModeVS (required)
 * admission.dischargeDisposition 0..1 MS // discharge destination
-* admission.dischargeDisposition from StrokeDischargeDestinationVS_URL (required)
+* admission.dischargeDisposition from StrokeDischargeDestinationVS (required)
 
 
 
