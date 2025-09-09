@@ -1,7 +1,7 @@
 IGTest : Validation Results
 =========================================
 
-err = 27, warn = 135, info = 37
+err = 30, warn = 135, info = 37
 $--
 Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
  Build Errors : 692 / 29 / 0
@@ -24,10 +24,10 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-procedures-cs : 0 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-screen-time-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-timing-metric-codes-cs : 0 / 3 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFib : 1 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFlutter : 1 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFib : 2 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFlutter : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionExample : 0 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeRiskFactorConditionExample : 1 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeRiskFactorConditionExample : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Encounter-StrokeEncounterExample : 2 / 1 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG : 0 / 0 / 16
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationRequest-discharge-medication-request-001 : 0 / 0 / 1
@@ -781,15 +781,15 @@ ERROR: ValueSet-stroke-proc-not-done-reason-vs.ttl.html#/html/body/div/div/div/p
 ERROR: ValueSet-stroke-proc-not-done-reason-vs.xml.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-snomed-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-snomed-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-risk-factor-snomed-vs.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-risk-factor-snomed-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-snomed-vs.json.html#/html/body/div/div/div/p/a at Line 292, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-snomed-vs.ttl.html#/html/body/div/div/div/p/a at Line 272, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-snomed-vs.xml.html#/html/body/div/div/div/p/a at Line 285, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-vs.html#/html/body/div/div/div/p/a at Line 291, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-risk-factor-vs.json.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-risk-factor-vs.ttl.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-risk-factor-vs.json.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-risk-factor-vs.ttl.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-vs.xml.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-swallow-procedures-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-swallow-procedures-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -881,11 +881,14 @@ INFORMATION: CodeSystem/timing-metric-codes-cs: CodeSystem: CodeSystems SHOULD h
 WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/Condition-StrokeDiagnosisConditionAFib.json ==
+ERROR: Condition/StrokeDiagnosisConditionAFib: Condition.code: A definition for the value Set 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips' could not be found
 ERROR: Condition/StrokeDiagnosisConditionAFib: Condition.code: None of the codings provided are in the value set 'Stroke Risk Factor ValueSet' (http://testSK.org/ValueSet/stroke-risk-factor-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#49436004)
 == fsh-generated/resources/Condition-StrokeDiagnosisConditionAFlutter.json ==
+ERROR: Condition/StrokeDiagnosisConditionAFlutter: Condition.code: A definition for the value Set 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips' could not be found
 ERROR: Condition/StrokeDiagnosisConditionAFlutter: Condition.code: None of the codings provided are in the value set 'Stroke Risk Factor ValueSet' (http://testSK.org/ValueSet/stroke-risk-factor-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#5370000)
 == fsh-generated/resources/Condition-StrokeDiagnosisConditionExample.json ==
 == fsh-generated/resources/Condition-StrokeRiskFactorConditionExample.json ==
+ERROR: Condition/StrokeRiskFactorConditionExample: Condition.code: A definition for the value Set 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips' could not be found
 ERROR: Condition/StrokeRiskFactorConditionExample: Condition.code: None of the codings provided are in the value set 'Stroke Risk Factor ValueSet' (http://testSK.org/ValueSet/stroke-risk-factor-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#422504002)
 == fsh-generated/resources/Encounter-StrokeEncounterExample.json ==
 INFORMATION: Encounter/StrokeEncounterExample: Encounter.extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/initial-care-intensity-cs|0.1.0
@@ -1097,10 +1100,10 @@ WARNING: ValueSet/stroke-proc-not-done-reason-vs: ValueSet: Published value sets
 == fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs.json ==
 WARNING: ValueSet/stroke-risk-factor-snomed-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-stroke-risk-factor-vs.json ==
-ERROR: ValueSet/stroke-risk-factor-vs: ValueSet.compose.include[1].system: No definition could be found for URL value 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips'
-ERROR: ValueSet/stroke-risk-factor-vs: ValueSet.compose.include[0]: The system 'http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs' is actually a value set, which itself refers to the system 'http://snomed.info/sct' so that may be what is intended here
+ERROR: ValueSet/stroke-risk-factor-vs: ValueSet.compose.include[1].valueSet[0]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips'
+WARNING: ValueSet/stroke-risk-factor-vs: ValueSet.compose.include[1].valueSet[0]: The value set import http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips could not be found so cannot be checked
 WARNING: ValueSet/stroke-risk-factor-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'stroke-risk-factor-vs'): Error from https://tx.fhir.org/r5: Unable to provide support for code system http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs
+ERROR: ValueSet.where(id = 'stroke-risk-factor-vs'): Unable to find included value set 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips'
 == fsh-generated/resources/ValueSet-swallow-procedures-vs.json ==
 == fsh-generated/resources/ValueSet-swallowing-screening-timing-category-vs.json ==
 WARNING: ValueSet/swallowing-screening-timing-category-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
