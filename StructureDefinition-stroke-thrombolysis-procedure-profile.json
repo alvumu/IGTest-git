@@ -10,7 +10,7 @@
   "name" : "StrokeThrombolysisProcedureProfile",
   "title" : "Stroke Thrombolysis Procedure Profile (R5)",
   "status" : "active",
-  "date" : "2025-09-08T16:35:28+00:00",
+  "date" : "2025-09-09T08:15:52+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -236,7 +236,7 @@
         "valueSet" : "http://hl7.org/fhir/ValueSet/all-languages|5.0.0",
         "additional" : [{
           "purpose" : "starter",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/languages|5.0.0"
         }]
       }
     },
@@ -483,11 +483,11 @@
       },
       "type" : [{
         "code" : "canonical",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/PlanDefinition",
-        "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
-        "http://hl7.org/fhir/StructureDefinition/Measure",
-        "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
-        "http://hl7.org/fhir/StructureDefinition/Questionnaire"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/PlanDefinition|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/ActivityDefinition|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Measure|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/OperationDefinition|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Questionnaire|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -558,8 +558,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/CarePlan",
-        "http://hl7.org/fhir/StructureDefinition/ServiceRequest"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/CarePlan|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/ServiceRequest|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -600,9 +600,9 @@
           "valueBoolean" : true
         }],
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Procedure",
-        "http://hl7.org/fhir/StructureDefinition/Observation",
-        "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Procedure|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/MedicationAdministration|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -744,7 +744,7 @@
         }],
         "strength" : "example",
         "description" : "A code that classifies a procedure for searching, sorting and display purposes.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-category"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-category|5.0.0"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -822,12 +822,12 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
-        "http://hl7.org/fhir/StructureDefinition/Group",
-        "http://hl7.org/fhir/StructureDefinition/Device",
-        "http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/Organization",
-        "http://hl7.org/fhir/StructureDefinition/Location"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Group|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Device|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Location|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -870,14 +870,14 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
-        "http://hl7.org/fhir/StructureDefinition/Group",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        "http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/Organization",
-        "http://hl7.org/fhir/StructureDefinition/CareTeam",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        "http://hl7.org/fhir/StructureDefinition/Specimen"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Group|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/CareTeam|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Specimen|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -909,7 +909,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1181,10 +1181,10 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        "http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1224,11 +1224,11 @@
       },
       {
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        "http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        "http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1436,7 +1436,7 @@
         }],
         "strength" : "example",
         "description" : "A code that identifies the role of a performer of the procedure.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/performer-role"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/performer-role|5.0.0"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1466,14 +1466,14 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        "http://hl7.org/fhir/StructureDefinition/Organization",
-        "http://hl7.org/fhir/StructureDefinition/Patient",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        "http://hl7.org/fhir/StructureDefinition/Device",
-        "http://hl7.org/fhir/StructureDefinition/CareTeam",
-        "http://hl7.org/fhir/StructureDefinition/HealthcareService"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Patient|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Device|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/CareTeam|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/HealthcareService|5.0.0"]
       }],
       "condition" : ["prc-1"],
       "constraint" : [{
@@ -1519,7 +1519,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"]
       }],
       "condition" : ["prc-1"],
       "constraint" : [{
@@ -1577,7 +1577,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1617,11 +1617,11 @@
       },
       "type" : [{
         "code" : "CodeableReference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition",
-        "http://hl7.org/fhir/StructureDefinition/Observation",
-        "http://hl7.org/fhir/StructureDefinition/Procedure",
-        "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-        "http://hl7.org/fhir/StructureDefinition/DocumentReference"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Procedure|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/DiagnosticReport|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/DocumentReference|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1640,7 +1640,7 @@
         }],
         "strength" : "example",
         "description" : "A code that identifies the reason a procedure is  required.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-reason"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-reason|5.0.0"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1692,7 +1692,7 @@
         }],
         "strength" : "example",
         "description" : "SNOMED CT Body site concepts",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/body-site"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/body-site|5.0.0"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1736,7 +1736,7 @@
         }],
         "strength" : "example",
         "description" : "An outcome of a procedure - whether it was resolved or otherwise.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-outcome"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-outcome|5.0.0"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1758,9 +1758,9 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-        "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-        "http://hl7.org/fhir/StructureDefinition/Composition"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/DiagnosticReport|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/DocumentReference|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Composition|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1792,7 +1792,7 @@
       },
       "type" : [{
         "code" : "CodeableReference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1811,7 +1811,7 @@
         }],
         "strength" : "example",
         "description" : "Codes describing complications that resulted from a procedure.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-code"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-code|5.0.0"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1850,7 +1850,7 @@
         }],
         "strength" : "example",
         "description" : "Specific follow up required for a procedure e.g. removal of sutures.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-followup"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-followup|5.0.0"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -2066,7 +2066,7 @@
         }],
         "strength" : "preferred",
         "description" : "A kind of change that happened to the device during the procedure.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/device-action"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/device-action|5.0.0"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -2087,7 +2087,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2120,10 +2120,10 @@
       },
       "type" : [{
         "code" : "CodeableReference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device",
-        "http://hl7.org/fhir/StructureDefinition/Medication",
-        "http://hl7.org/fhir/StructureDefinition/Substance",
-        "http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Medication|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Substance|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2142,7 +2142,7 @@
         }],
         "strength" : "example",
         "description" : "Codes describing items used during a procedure.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/device-type"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/device-type|5.0.0"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -2163,7 +2163,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",

@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-09-08T16:35:28+00:00",
+  "date" : "2025-09-09T08:15:52+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -44,7 +44,7 @@
   "definition" : {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r5#0.7.1"
+      "valueCode" : "hl7.fhir.uv.tools.r5#0.8.0"
     }],
     "resource" : [{
       "extension" : [{
@@ -975,6 +975,18 @@
       },
       "name" : "Stroke Risk Factor ValueSet",
       "description" : "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/stroke-risk-factor-vs"
+      },
+      "name" : "Stroke Risk Factor ValueSet",
+      "description" : "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status.",
       "isExample" : false
     },
     {

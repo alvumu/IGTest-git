@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "StrokeThrombolysisProcedureProfile"] ; # 
   fhir:title [ fhir:v "Stroke Thrombolysis Procedure Profile (R5)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-09-08T16:35:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-09T08:15:52+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -276,8 +276,8 @@
          fhir:additional ( [
            fhir:purpose [ fhir:v "starter" ] ;
            fhir:valueSet [
-             fhir:v "http://hl7.org/fhir/ValueSet/languages"^^xsd:anyURI ;
-             fhir:link <http://hl7.org/fhir/ValueSet/languages>
+             fhir:v "http://hl7.org/fhir/ValueSet/languages|5.0.0"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/ValueSet/languages|5.0.0>
            ]
          ] )
        ]
@@ -531,20 +531,20 @@
        fhir:type ( [
          fhir:code [ fhir:v "canonical"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/PlanDefinition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/PlanDefinition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/PlanDefinition|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/PlanDefinition|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ActivityDefinition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ActivityDefinition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/ActivityDefinition|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/ActivityDefinition|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Measure"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Measure>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Measure|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Measure|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/OperationDefinition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/OperationDefinition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/OperationDefinition|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/OperationDefinition|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Questionnaire>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Questionnaire|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -619,11 +619,11 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/CarePlan"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/CarePlan>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/CarePlan|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/CarePlan|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ServiceRequest"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ServiceRequest>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/ServiceRequest|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/ServiceRequest|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -670,14 +670,14 @@
          ] ) ;
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Procedure"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Procedure>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Procedure|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Procedure|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationAdministration>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationAdministration|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -833,8 +833,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "A code that classifies a procedure for searching, sorting and display purposes." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/procedure-category"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/procedure-category>
+           fhir:v "http://hl7.org/fhir/ValueSet/procedure-category|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/procedure-category|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -913,23 +913,23 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Group"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Group>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Group|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Group|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Device"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Device|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Device|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Location"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Location>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Location|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Location|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -973,29 +973,29 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Group"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Group>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Group|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Group|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/CareTeam"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/CareTeam>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/CareTeam|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/CareTeam|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Specimen"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Specimen>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Specimen|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Specimen|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1031,8 +1031,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Encounter"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Encounter>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1311,17 +1311,17 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1363,20 +1363,20 @@
        ] [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1602,8 +1602,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "A code that identifies the role of a performer of the procedure." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/performer-role"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/performer-role>
+           fhir:v "http://hl7.org/fhir/ValueSet/performer-role|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/performer-role|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -1632,29 +1632,29 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Device"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Device|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Device|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/CareTeam"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/CareTeam>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/CareTeam|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/CareTeam|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/HealthcareService"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/HealthcareService>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/HealthcareService|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/HealthcareService|5.0.0>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "prc-1" ] ) ;
@@ -1701,8 +1701,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|5.0.0>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "prc-1" ] ) ;
@@ -1766,8 +1766,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Location"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Location>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Location|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Location|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1809,20 +1809,20 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableReference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Condition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Condition|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Procedure"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Procedure>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Procedure|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Procedure|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentReference"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentReference>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentReference|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentReference|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1849,8 +1849,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "A code that identifies the reason a procedure is  required." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/procedure-reason"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/procedure-reason>
+           fhir:v "http://hl7.org/fhir/ValueSet/procedure-reason|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/procedure-reason|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -1906,8 +1906,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "SNOMED CT Body site concepts" ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/body-site"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/body-site>
+           fhir:v "http://hl7.org/fhir/ValueSet/body-site|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/body-site|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -1957,8 +1957,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "An outcome of a procedure - whether it was resolved or otherwise." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/procedure-outcome"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/procedure-outcome>
+           fhir:v "http://hl7.org/fhir/ValueSet/procedure-outcome|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/procedure-outcome|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -1981,14 +1981,14 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentReference"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentReference>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentReference|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentReference|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Composition|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2024,8 +2024,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableReference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Condition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Condition|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2052,8 +2052,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "Codes describing complications that resulted from a procedure." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/condition-code"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/condition-code>
+           fhir:v "http://hl7.org/fhir/ValueSet/condition-code|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/condition-code|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -2099,8 +2099,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "Specific follow up required for a procedure e.g. removal of sutures." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/procedure-followup"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/procedure-followup>
+           fhir:v "http://hl7.org/fhir/ValueSet/procedure-followup|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/procedure-followup|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -2332,8 +2332,8 @@
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "A kind of change that happened to the device during the procedure." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/device-action"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/device-action>
+           fhir:v "http://hl7.org/fhir/ValueSet/device-action|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/device-action|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -2355,8 +2355,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Device"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Device|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Device|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2393,17 +2393,17 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableReference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Device"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Device|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Device|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Medication"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Medication>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Medication|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Medication|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Substance"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Substance>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Substance|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Substance|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2430,8 +2430,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "Codes describing items used during a procedure." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/device-type"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/device-type>
+           fhir:v "http://hl7.org/fhir/ValueSet/device-type|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/device-type|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -2453,8 +2453,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Resource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Resource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Resource|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Resource|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [

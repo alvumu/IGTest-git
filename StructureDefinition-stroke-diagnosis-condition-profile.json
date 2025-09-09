@@ -10,7 +10,7 @@
   "name" : "StrokeDiagnosisConditionProfile",
   "title" : "Stroke Diagnosis Condition Profile",
   "status" : "active",
-  "date" : "2025-09-08T16:35:28+00:00",
+  "date" : "2025-09-09T08:15:52+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -259,7 +259,7 @@
         "valueSet" : "http://hl7.org/fhir/ValueSet/all-languages|5.0.0",
         "additional" : [{
           "purpose" : "starter",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/languages|5.0.0"
         }]
       }
     },
@@ -742,7 +742,7 @@
         }],
         "strength" : "preferred",
         "description" : "A category assigned to the condition.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-category"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-category|5.0.0"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -794,7 +794,7 @@
         }],
         "strength" : "preferred",
         "description" : "A subjective assessment of the severity of the condition as evaluated by the clinician.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-severity"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-severity|5.0.0"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -902,7 +902,7 @@
         }],
         "strength" : "example",
         "description" : "SNOMED CT Body site concepts",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/body-site"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/body-site|5.0.0"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -973,7 +973,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1306,7 +1306,7 @@
           "valueString" : "ConditionParticipantFunction"
         }],
         "strength" : "extensible",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/participation-role-type"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1327,13 +1327,13 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        "http://hl7.org/fhir/StructureDefinition/Patient",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        "http://hl7.org/fhir/StructureDefinition/Device",
-        "http://hl7.org/fhir/StructureDefinition/Organization",
-        "http://hl7.org/fhir/StructureDefinition/CareTeam"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Patient|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Device|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/CareTeam|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1533,7 +1533,7 @@
         }],
         "strength" : "example",
         "description" : "Codes describing condition stages (e.g. Cancer stages).",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-stage"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-stage|5.0.0"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1562,9 +1562,9 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ClinicalImpression",
-        "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-        "http://hl7.org/fhir/StructureDefinition/Observation"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ClinicalImpression|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/DiagnosticReport|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"]
       }],
       "condition" : ["con-1"],
       "constraint" : [{
@@ -1614,7 +1614,7 @@
         }],
         "strength" : "example",
         "description" : "Codes describing the kind of condition staging (e.g. clinical or pathological).",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-stage-type"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-stage-type|5.0.0"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1636,7 +1636,7 @@
       },
       "type" : [{
         "code" : "CodeableReference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1654,7 +1654,7 @@
           "valueString" : "ManifestationOrSymptom"
         }],
         "strength" : "example",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/clinical-findings"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/clinical-findings|5.0.0"
       },
       "mapping" : [{
         "identity" : "rim",

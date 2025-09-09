@@ -11,7 +11,7 @@
   "title" : "Prior Medication Statement Profile (R5)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-09-08T16:35:28+00:00",
+  "date" : "2025-09-09T08:15:52+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -238,7 +238,7 @@
         "valueSet" : "http://hl7.org/fhir/ValueSet/all-languages|5.0.0",
         "additional" : [{
           "purpose" : "starter",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/languages|5.0.0"
         }]
       }
     },
@@ -448,8 +448,8 @@
           "valueBoolean" : true
         }],
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Procedure",
-        "http://hl7.org/fhir/StructureDefinition/MedicationStatement"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Procedure|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/MedicationStatement|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -547,7 +547,7 @@
         }],
         "strength" : "example",
         "description" : "A coded concept identifying where the medication included in the MedicationStatement is expected to be consumed or administered.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/medicationrequest-admin-location"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/medicationrequest-admin-location|5.0.0"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -573,7 +573,7 @@
       },
       "type" : [{
         "code" : "CodeableReference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Medication"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Medication|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -659,7 +659,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -773,11 +773,11 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
-        "http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        "http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -813,7 +813,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -845,9 +845,9 @@
       },
       "type" : [{
         "code" : "CodeableReference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition",
-        "http://hl7.org/fhir/StructureDefinition/Observation",
-        "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/DiagnosticReport|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -866,7 +866,7 @@
         }],
         "strength" : "example",
         "description" : "A coded concept identifying why the medication is being taken.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-code"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-code|5.0.0"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -929,8 +929,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation",
-        "http://hl7.org/fhir/StructureDefinition/Condition"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Condition|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1215,7 +1215,7 @@
           "valueString" : "MedicationStatementStatusReason"
         }],
         "strength" : "example",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/reason-medication-status-codes"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/reason-medication-status-codes|5.0.0"
       },
       "mapping" : [{
         "identity" : "rim",

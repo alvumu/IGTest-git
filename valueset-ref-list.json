@@ -12,10 +12,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.109"],
       "uses" : {
       },
-      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)",
+      "StructureDefinition-stroke-thrombolysis-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)",
       "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
-      "StructureDefinition-stroke-thrombolysis-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)"
+      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
+      "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)"
     },
     {
       "url" : "http://testSK.org/ValueSet/admission-source-vs",
@@ -322,10 +322,10 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)",
+      "StructureDefinition-stroke-thrombolysis-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)",
       "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
-      "StructureDefinition-stroke-thrombolysis-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)"
+      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
+      "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)"
     },
     {
       "url" : "http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs",
@@ -334,7 +334,19 @@
       "name" : "StrokeRiskFactorSNOMEDVS",
       "title" : "Stroke Risk Factor ValueSet",
       "description" : "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke.",
-      "systems" : ["http://snomed.info/sct"],
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://testSK.org/ValueSet/stroke-risk-factor-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "StrokeRiskFactorValueset",
+      "title" : "Stroke Risk Factor ValueSet",
+      "description" : "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status.",
+      "systems" : [
+        "http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips",
+        "http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs"
+      ],
       "uses" : {
       },
       "StructureDefinition-stroke-risk-factor-condition-profile.html" : "Stroke Risk Factor Condition Profile"

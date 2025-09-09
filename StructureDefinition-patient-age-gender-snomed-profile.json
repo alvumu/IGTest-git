@@ -10,7 +10,7 @@
   "name" : "PatientAgeGenderSNOMEDProfile",
   "title" : "Patient with SNOMED Gender and Age (extensions)",
   "status" : "draft",
-  "date" : "2025-09-08T16:35:28+00:00",
+  "date" : "2025-09-09T08:15:52+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -251,7 +251,7 @@
         "valueSet" : "http://hl7.org/fhir/ValueSet/all-languages|5.0.0",
         "additional" : [{
           "purpose" : "starter",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/languages|5.0.0"
         }]
       }
     },
@@ -878,7 +878,7 @@
         }],
         "strength" : "extensible",
         "description" : "The domestic partnership status of a person.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/marital-status"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/marital-status|5.0.0"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1165,7 +1165,7 @@
         }],
         "strength" : "extensible",
         "description" : "The nature of the relationship between a patient and a contact person for that patient.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship|5.0.0"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1364,7 +1364,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"]
       }],
       "condition" : ["pat-1"],
       "constraint" : [{
@@ -1610,7 +1610,7 @@
         "valueSet" : "http://hl7.org/fhir/ValueSet/all-languages|5.0.0",
         "additional" : [{
           "purpose" : "starter",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/languages|5.0.0"
         }]
       },
       "mapping" : [{
@@ -1682,9 +1682,9 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization",
-        "http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1725,7 +1725,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1911,8 +1911,8 @@
           "valueBoolean" : false
         }],
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",

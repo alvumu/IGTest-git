@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="IGTest"/>
   <status value="draft"/>
-  <date value="2025-09-08T16:35:28+00:00"/>
+  <date value="2025-09-09T08:15:52+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -39,7 +39,7 @@
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r5#0.7.1"/>
+      <valueCode value="hl7.fhir.uv.tools.r5#0.8.0"/>
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -892,6 +892,17 @@
       </reference>
       <name value="Stroke Risk Factor ValueSet"/>
       <description value="Defines the SNOMED CT codes for conditions or risk factors relevant to stroke."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/stroke-risk-factor-vs"/>
+      </reference>
+      <name value="Stroke Risk Factor ValueSet"/>
+      <description value="Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status."/>
       <isExample value="false"/>
     </resource>
     <resource>

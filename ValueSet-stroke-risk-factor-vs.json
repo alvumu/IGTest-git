@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "stroke-risk-factor-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet stroke-risk-factor-vs</b></p><a name=\"stroke-risk-factor-vs\"> </a><a name=\"hcstroke-risk-factor-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs</code></li><li>Include all codes defined in <code>http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips</code></li></ul></div>"
+  },
+  "url" : "http://testSK.org/ValueSet/stroke-risk-factor-vs",
+  "version" : "0.1.0",
+  "name" : "StrokeRiskFactorValueset",
+  "title" : "Stroke Risk Factor ValueSet",
+  "status" : "draft",
+  "date" : "2025-09-09T08:15:52+00:00",
+  "publisher" : "UMU",
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
+  "description" : "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs"
+    },
+    {
+      "system" : "http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips"
+    }]
+  }
+}

@@ -30,7 +30,7 @@
   <name value="StrokeEncounterProfile"/>
   <title value="Stroke Encounter Profile"/>
   <status value="active"/>
-  <date value="2025-09-08T16:35:28+00:00"/>
+  <date value="2025-09-09T08:15:52+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -247,7 +247,7 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/all-languages|5.0.0"/>
         <additional>
           <purpose value="starter"/>
-          <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
+          <valueSet value="http://hl7.org/fhir/ValueSet/languages|5.0.0"/>
         </additional>
       </binding>
     </element>
@@ -752,7 +752,7 @@
         </extension>
         <strength value="example"/>
         <description value="A specific code indicating type of service provided"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-type"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-type|5.0.0"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -784,7 +784,7 @@
       </base>
       <type>
         <code value="CodeableReference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -802,7 +802,7 @@
         </extension>
         <strength value="example"/>
         <description value="Broad categorization of the service that is to be provided."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/service-type"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/service-type|5.0.0"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -892,7 +892,7 @@
         </extension>
         <strength value="example"/>
         <description value="Current status of the subject  within the encounter."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-subject-status"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-subject-status|5.0.0"/>
       </binding>
     </element>
     <element id="Encounter.episodeOfCare">
@@ -908,7 +908,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -947,10 +947,10 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceRequest"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceRequest|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -984,7 +984,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1018,7 +1018,7 @@
           <valueBoolean value="true"/>
         </extension>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1052,7 +1052,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1267,7 +1267,7 @@
         </extension>
         <strength value="extensible"/>
         <description value="Role of participant in encounter."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-participant-type"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-participant-type|5.0.0"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -1329,13 +1329,13 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService|5.0.0"/>
       </type>
       <condition value="enc-1"/>
       <condition value="enc-2"/>
@@ -1379,7 +1379,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Appointment|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1875,7 +1875,7 @@
           <valueString value="reason-use"/>
         </extension>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-reason-use"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-reason-use|5.0.0"/>
       </binding>
     </element>
     <element id="Encounter.reason.value">
@@ -1893,11 +1893,11 @@
       </base>
       <type>
         <code value="CodeableReference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1915,7 +1915,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="Reason why the encounter takes place."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-reason"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-reason|5.0.0"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -2085,7 +2085,7 @@
       </base>
       <type>
         <code value="CodeableReference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2102,7 +2102,7 @@
           <valueString value="condition-code"/>
         </extension>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/condition-code"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/condition-code|5.0.0"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -2151,7 +2151,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="The type of diagnosis this condition represents."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-diagnosis-use"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-diagnosis-use|5.0.0"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2176,7 +2176,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Account"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Account|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2225,7 +2225,7 @@
         </extension>
         <strength value="example"/>
         <description value="Medical, cultural or ethical food preferences to help with catering requirements."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-diet"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-diet|5.0.0"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2266,7 +2266,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="Special arrangements."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-special-arrangements"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-special-arrangements|5.0.0"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2308,7 +2308,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="Special courtesies."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-special-courtesy"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-special-courtesy|5.0.0"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2500,8 +2500,8 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2609,8 +2609,8 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2816,7 +2816,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2914,7 +2914,7 @@
         </extension>
         <strength value="example"/>
         <description value="Physical form of the location."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/location-form"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/location-form|5.0.0"/>
       </binding>
     </element>
     <element id="Encounter.location.period">

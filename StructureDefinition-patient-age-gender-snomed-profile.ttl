@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "PatientAgeGenderSNOMEDProfile"] ; # 
   fhir:title [ fhir:v "Patient with SNOMED Gender and Age (extensions)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-09-08T16:35:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-09T08:15:52+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -288,8 +288,8 @@
          fhir:additional ( [
            fhir:purpose [ fhir:v "starter" ] ;
            fhir:valueSet [
-             fhir:v "http://hl7.org/fhir/ValueSet/languages"^^xsd:anyURI ;
-             fhir:link <http://hl7.org/fhir/ValueSet/languages>
+             fhir:v "http://hl7.org/fhir/ValueSet/languages|5.0.0"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/ValueSet/languages|5.0.0>
            ]
          ] )
        ]
@@ -933,8 +933,8 @@
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "The domestic partnership status of a person." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/marital-status"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/marital-status>
+           fhir:v "http://hl7.org/fhir/ValueSet/marital-status|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/marital-status|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -1234,8 +1234,8 @@
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "The nature of the relationship between a patient and a contact person for that patient." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/patient-contactrelationship"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/patient-contactrelationship>
+           fhir:v "http://hl7.org/fhir/ValueSet/patient-contactrelationship|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/patient-contactrelationship|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -1439,8 +1439,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|5.0.0>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "pat-1" ] ) ;
@@ -1705,8 +1705,8 @@
          fhir:additional ( [
            fhir:purpose [ fhir:v "starter" ] ;
            fhir:valueSet [
-             fhir:v "http://hl7.org/fhir/ValueSet/languages"^^xsd:anyURI ;
-             fhir:link <http://hl7.org/fhir/ValueSet/languages>
+             fhir:v "http://hl7.org/fhir/ValueSet/languages|5.0.0"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/ValueSet/languages|5.0.0>
            ]
          ] )
        ] ;
@@ -1777,14 +1777,14 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1827,8 +1827,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2028,11 +2028,11 @@
          ] ) ;
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [

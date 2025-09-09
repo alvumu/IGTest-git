@@ -19,7 +19,7 @@
   fhir:title [ fhir:v "Prior Medication Statement Profile (R5)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2025-09-08T16:35:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-09T08:15:52+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -278,8 +278,8 @@
          fhir:additional ( [
            fhir:purpose [ fhir:v "starter" ] ;
            fhir:valueSet [
-             fhir:v "http://hl7.org/fhir/ValueSet/languages"^^xsd:anyURI ;
-             fhir:link <http://hl7.org/fhir/ValueSet/languages>
+             fhir:v "http://hl7.org/fhir/ValueSet/languages|5.0.0"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/ValueSet/languages|5.0.0>
            ]
          ] )
        ]
@@ -492,11 +492,11 @@
          ] ) ;
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Procedure"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Procedure>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Procedure|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Procedure|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationStatement"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationStatement>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationStatement|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationStatement|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -610,8 +610,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "A coded concept identifying where the medication included in the MedicationStatement is expected to be consumed or administered." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/medicationrequest-admin-location"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/medicationrequest-admin-location>
+           fhir:v "http://hl7.org/fhir/ValueSet/medicationrequest-admin-location|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/medicationrequest-admin-location|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -637,8 +637,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableReference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Medication"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Medication>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Medication|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Medication|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -731,8 +731,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Encounter"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Encounter>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -848,20 +848,20 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -900,8 +900,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Resource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Resource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Resource|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Resource|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -937,14 +937,14 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableReference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Condition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Condition|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -971,8 +971,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "A coded concept identifying why the medication is being taken." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/condition-code"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/condition-code>
+           fhir:v "http://hl7.org/fhir/ValueSet/condition-code|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/condition-code|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -1035,11 +1035,11 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Condition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Condition|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1352,8 +1352,8 @@
          ] ) ;
          fhir:strength [ fhir:v "example" ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/reason-medication-status-codes"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/reason-medication-status-codes>
+           fhir:v "http://hl7.org/fhir/ValueSet/reason-medication-status-codes|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/reason-medication-status-codes|5.0.0>
          ]
        ] ;
        fhir:mapping ( [

@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "FunctionalScoreObservationProfile"] ; # 
   fhir:title [ fhir:v "Stroke Functional Score Observation Profile (R5, Timing Ext)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-09-08T16:35:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-09T08:15:52+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -319,8 +319,8 @@
          fhir:additional ( [
            fhir:purpose [ fhir:v "starter" ] ;
            fhir:valueSet [
-             fhir:v "http://hl7.org/fhir/ValueSet/languages"^^xsd:anyURI ;
-             fhir:link <http://hl7.org/fhir/ValueSet/languages>
+             fhir:v "http://hl7.org/fhir/ValueSet/languages|5.0.0"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/ValueSet/languages|5.0.0>
            ]
          ] )
        ]
@@ -578,14 +578,14 @@
        fhir:type ( [
          fhir:code [ fhir:v "canonical"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ObservationDefinition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ObservationDefinition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/ObservationDefinition|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/ObservationDefinition|5.0.0>
          ] )
        ] [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ObservationDefinition"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ObservationDefinition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/ObservationDefinition|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/ObservationDefinition|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -625,23 +625,23 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/CarePlan"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/CarePlan>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/CarePlan|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/CarePlan|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceRequest"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DeviceRequest>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceRequest|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DeviceRequest|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationRequest"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationRequest>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationRequest|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationRequest|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/NutritionOrder"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/NutritionOrder>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/NutritionOrder|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/NutritionOrder|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ServiceRequest"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ServiceRequest>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/ServiceRequest|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/ServiceRequest|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -833,8 +833,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1098,8 +1098,8 @@
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "Codes for high level observation categories." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/observation-category"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/observation-category>
+           fhir:v "http://hl7.org/fhir/ValueSet/observation-category|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/observation-category|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -1230,8 +1230,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Resource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Resource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Resource|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Resource|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1275,8 +1275,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Encounter"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Encounter>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1410,23 +1410,23 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/CareTeam"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/CareTeam>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/CareTeam|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/CareTeam|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1504,8 +1504,8 @@
        ] [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/MolecularSequence"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/MolecularSequence>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MolecularSequence|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MolecularSequence|5.0.0>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "obs-7" ] [ fhir:v "obs-6" ] ) ;
@@ -1674,8 +1674,8 @@
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Codes specifying why the result (`Observation.value[x]`) is missing." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/data-absent-reason"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/data-absent-reason>
+           fhir:v "http://hl7.org/fhir/ValueSet/data-absent-reason|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/data-absent-reason|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -1727,8 +1727,8 @@
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Codes identifying interpretations of observations." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/observation-interpretation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/observation-interpretation>
+           fhir:v "http://hl7.org/fhir/ValueSet/observation-interpretation|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/observation-interpretation|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -1822,8 +1822,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "SNOMED CT Body site concepts" ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/body-site"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/body-site>
+           fhir:v "http://hl7.org/fhir/ValueSet/body-site|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/body-site|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -1855,8 +1855,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/BodyStructure"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/BodyStructure>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/BodyStructure|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/BodyStructure|5.0.0>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "obs-8" ] ) ;
@@ -1918,8 +1918,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "Methods for simple observations." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/observation-methods"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/observation-methods>
+           fhir:v "http://hl7.org/fhir/ValueSet/observation-methods|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/observation-methods|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -1945,11 +1945,11 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Specimen"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Specimen>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Specimen|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Specimen|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Group"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Group>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Group|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Group|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2003,11 +2003,11 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Device"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Device|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Device|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceMetric"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceMetric|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DeviceMetric|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2213,8 +2213,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Quantity"^^xsd:anyURI ] ;
          fhir:profile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/SimpleQuantity>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/SimpleQuantity|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/SimpleQuantity|5.0.0>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "obs-3" ] ) ;
@@ -2253,8 +2253,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Quantity"^^xsd:anyURI ] ;
          fhir:profile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/SimpleQuantity>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/SimpleQuantity|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/SimpleQuantity|5.0.0>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "obs-3" ] ) ;
@@ -2317,8 +2317,8 @@
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Codes identifying the normal value of the observation." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/observation-referencerange-normalvalue"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/observation-referencerange-normalvalue>
+           fhir:v "http://hl7.org/fhir/ValueSet/observation-referencerange-normalvalue|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/observation-referencerange-normalvalue|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -2369,8 +2369,8 @@
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "Code for the meaning of a reference range." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/referencerange-meaning"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/referencerange-meaning>
+           fhir:v "http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -2424,8 +2424,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "Codes identifying the population the reference range applies to." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/referencerange-appliesto"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/referencerange-appliesto>
+           fhir:v "http://hl7.org/fhir/ValueSet/referencerange-appliesto|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/referencerange-appliesto|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -2523,14 +2523,14 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/MolecularSequence"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/MolecularSequence>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MolecularSequence|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MolecularSequence|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2569,26 +2569,26 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentReference"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentReference>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentReference|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentReference|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ImagingStudy"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ImagingStudy>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/ImagingStudy|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/ImagingStudy|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ImagingSelection"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ImagingSelection>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/ImagingSelection|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/ImagingSelection|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/MolecularSequence"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/MolecularSequence>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MolecularSequence|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MolecularSequence|5.0.0>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/GenomicStudy"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/GenomicStudy>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/GenomicStudy|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/GenomicStudy|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2807,8 +2807,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "Codes identifying names of simple observations." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/observation-codes"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/observation-codes>
+           fhir:v "http://hl7.org/fhir/ValueSet/observation-codes|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/observation-codes|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -2865,8 +2865,8 @@
        ] [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/MolecularSequence"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/MolecularSequence>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/MolecularSequence|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MolecularSequence|5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2936,8 +2936,8 @@
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Codes specifying why the result (`Observation.value[x]`) is missing." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/data-absent-reason"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/data-absent-reason>
+           fhir:v "http://hl7.org/fhir/ValueSet/data-absent-reason|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/data-absent-reason|5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -2989,8 +2989,8 @@
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Codes identifying interpretations of observations." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/observation-interpretation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/observation-interpretation>
+           fhir:v "http://hl7.org/fhir/ValueSet/observation-interpretation|5.0.0"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/observation-interpretation|5.0.0>
          ]
        ] ;
        fhir:mapping ( [

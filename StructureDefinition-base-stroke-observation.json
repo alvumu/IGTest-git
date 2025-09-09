@@ -10,7 +10,7 @@
   "name" : "BaseStrokeObservation",
   "title" : "Base Profile for Stroke-Related Observations",
   "status" : "active",
-  "date" : "2025-09-08T16:35:28+00:00",
+  "date" : "2025-09-09T08:15:52+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -280,7 +280,7 @@
         "valueSet" : "http://hl7.org/fhir/ValueSet/all-languages|5.0.0",
         "additional" : [{
           "purpose" : "starter",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/languages|5.0.0"
         }]
       }
     },
@@ -491,11 +491,11 @@
       },
       "type" : [{
         "code" : "canonical",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ObservationDefinition"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ObservationDefinition|5.0.0"]
       },
       {
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ObservationDefinition"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ObservationDefinition|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -532,12 +532,12 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/CarePlan",
-        "http://hl7.org/fhir/StructureDefinition/DeviceRequest",
-        "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
-        "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
-        "http://hl7.org/fhir/StructureDefinition/NutritionOrder",
-        "http://hl7.org/fhir/StructureDefinition/ServiceRequest"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/CarePlan|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/DeviceRequest|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/MedicationRequest|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/NutritionOrder|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/ServiceRequest|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -719,7 +719,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -943,7 +943,7 @@
         }],
         "strength" : "preferred",
         "description" : "Codes for high level observation categories.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/observation-category"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/observation-category|5.0.0"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -990,7 +990,7 @@
         }],
         "strength" : "example",
         "description" : "Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/observation-codes"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/observation-codes|5.0.0"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1077,7 +1077,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1119,7 +1119,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1256,12 +1256,12 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        "http://hl7.org/fhir/StructureDefinition/Organization",
-        "http://hl7.org/fhir/StructureDefinition/CareTeam",
-        "http://hl7.org/fhir/StructureDefinition/Patient",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/CareTeam|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Patient|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1342,7 +1342,7 @@
       },
       {
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MolecularSequence"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MolecularSequence|5.0.0"]
       }],
       "condition" : ["obs-7",
       "obs-6"],
@@ -1408,7 +1408,7 @@
         }],
         "strength" : "extensible",
         "description" : "Codes specifying why the result (`Observation.value[x]`) is missing.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/data-absent-reason"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/data-absent-reason|5.0.0"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1454,7 +1454,7 @@
         }],
         "strength" : "extensible",
         "description" : "Codes identifying interpretations of observations.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/observation-interpretation"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/observation-interpretation|5.0.0"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1543,7 +1543,7 @@
         }],
         "strength" : "example",
         "description" : "SNOMED CT Body site concepts",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/body-site"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/body-site|5.0.0"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1577,7 +1577,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/BodyStructure"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/BodyStructure|5.0.0"]
       }],
       "condition" : ["obs-8"],
       "constraint" : [{
@@ -1629,7 +1629,7 @@
         }],
         "strength" : "example",
         "description" : "Methods for simple observations.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/observation-methods"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/observation-methods|5.0.0"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1655,8 +1655,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Specimen",
-        "http://hl7.org/fhir/StructureDefinition/Group"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Specimen|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Group|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1707,8 +1707,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device",
-        "http://hl7.org/fhir/StructureDefinition/DeviceMetric"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/DeviceMetric|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1903,7 +1903,7 @@
       },
       "type" : [{
         "code" : "Quantity",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity|5.0.0"]
       }],
       "condition" : ["obs-3"],
       "constraint" : [{
@@ -1939,7 +1939,7 @@
       },
       "type" : [{
         "code" : "Quantity",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity|5.0.0"]
       }],
       "condition" : ["obs-3"],
       "constraint" : [{
@@ -1993,7 +1993,7 @@
         }],
         "strength" : "extensible",
         "description" : "Codes identifying the normal value of the observation.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/observation-referencerange-normalvalue"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/observation-referencerange-normalvalue|5.0.0"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2038,7 +2038,7 @@
         }],
         "strength" : "preferred",
         "description" : "Code for the meaning of a reference range.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/referencerange-meaning"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -2087,7 +2087,7 @@
         }],
         "strength" : "example",
         "description" : "Codes identifying the population the reference range applies to.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto|5.0.0"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -2183,9 +2183,9 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation",
-        "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
-        "http://hl7.org/fhir/StructureDefinition/MolecularSequence"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/MolecularSequence|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2221,13 +2221,13 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/DocumentReference",
-        "http://hl7.org/fhir/StructureDefinition/ImagingStudy",
-        "http://hl7.org/fhir/StructureDefinition/ImagingSelection",
-        "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
-        "http://hl7.org/fhir/StructureDefinition/Observation",
-        "http://hl7.org/fhir/StructureDefinition/MolecularSequence",
-        "http://hl7.org/fhir/StructureDefinition/GenomicStudy"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/DocumentReference|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/ImagingStudy|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/ImagingSelection|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/MolecularSequence|5.0.0",
+        "http://hl7.org/fhir/StructureDefinition/GenomicStudy|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2429,7 +2429,7 @@
         }],
         "strength" : "example",
         "description" : "Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/observation-codes"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/observation-codes|5.0.0"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -2500,7 +2500,7 @@
       },
       {
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MolecularSequence"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MolecularSequence|5.0.0"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2563,7 +2563,7 @@
         }],
         "strength" : "extensible",
         "description" : "Codes specifying why the result (`Observation.value[x]`) is missing.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/data-absent-reason"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/data-absent-reason|5.0.0"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2609,7 +2609,7 @@
         }],
         "strength" : "extensible",
         "description" : "Codes identifying interpretations of observations.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/observation-interpretation"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/observation-interpretation|5.0.0"
       },
       "mapping" : [{
         "identity" : "sct-concept",

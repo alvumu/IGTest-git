@@ -1,10 +1,10 @@
 IGTest : Validation Results
 =========================================
 
-err = 22, warn = 131, info = 39
+err = 27, warn = 135, info = 37
 $--
 Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
- Build Errors : 686 / 29 / 0
+ Build Errors : 692 / 29 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-afib-flutter-status-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-brain-imaging-type-cs : 0 / 2 / 2
@@ -24,10 +24,10 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-procedures-cs : 0 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-screen-time-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-timing-metric-codes-cs : 0 / 3 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFib : 0 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFlutter : 0 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFib : 1 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFlutter : 1 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionExample : 0 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeRiskFactorConditionExample : 0 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeRiskFactorConditionExample : 1 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Encounter-StrokeEncounterExample : 2 / 1 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG : 0 / 0 / 16
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationRequest-discharge-medication-request-001 : 0 / 0 / 1
@@ -51,7 +51,7 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-base-stroke-observation : 0 / 3 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-discharge-department-service-ext : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-discharge-medication-request-profile : 0 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-encounter-provider-provenance : 0 / 3 / 3
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-encounter-provider-provenance : 0 / 5 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-first-hospital-ext : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-functional-score-observation-profile : 0 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-gender-snomed-ext : 0 / 0 / 1
@@ -104,6 +104,7 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-finding-codes-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs : 0 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-vs : 2 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallow-procedures-vs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallowing-screening-timing-category-vs : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-thrombectomy-complication-vs : 0 / 1 / 1
@@ -370,7 +371,7 @@ ERROR: StructureDefinition-age-at-onset-observation-profile.html#/html/body/div/
 ERROR: StructureDefinition-age-at-onset-observation-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-age-at-onset-observation-profile.profile.json.html#/html/body/div/div/div/p/a at Line 3760, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-age-at-onset-observation-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2808, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-age-at-onset-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3484, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-age-at-onset-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3491, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-base-stroke-observation-definitions.html#/html/body/div/div/div/p/a at Line 636, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-base-stroke-observation-examples.html#/html/body/div/div/div/p/a at Line 236, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-base-stroke-observation-mappings.html#/html/body/div/div/div/p/a at Line 1043, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -379,7 +380,7 @@ ERROR: StructureDefinition-base-stroke-observation.html#/html/body/div/div/div/p
 ERROR: StructureDefinition-base-stroke-observation.profile.history.html#/html/body/div/div/div/p/a at Line 225, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-base-stroke-observation.profile.json.html#/html/body/div/div/div/p/a at Line 3460, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-base-stroke-observation.profile.ttl.html#/html/body/div/div/div/p/a at Line 2570, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-base-stroke-observation.profile.xml.html#/html/body/div/div/div/p/a at Line 3215, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-base-stroke-observation.profile.xml.html#/html/body/div/div/div/p/a at Line 3222, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-discharge-department-service-ext-definitions.html#/html/body/div/div/div/p/a at Line 301, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-discharge-department-service-ext-mappings.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-discharge-department-service-ext-testing.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -396,7 +397,7 @@ ERROR: StructureDefinition-discharge-medication-request-profile.html#/html/body/
 ERROR: StructureDefinition-discharge-medication-request-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-discharge-medication-request-profile.profile.json.html#/html/body/div/div/div/p/a at Line 3338, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-discharge-medication-request-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2525, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-discharge-medication-request-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3107, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-discharge-medication-request-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3108, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-encounter-provider-provenance-definitions.html#/html/body/div/div/div/p/a at Line 565, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-encounter-provider-provenance-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-encounter-provider-provenance-mappings.html#/html/body/div/div/div/p/a at Line 806, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -405,7 +406,7 @@ ERROR: StructureDefinition-encounter-provider-provenance.html#/html/body/div/div
 ERROR: StructureDefinition-encounter-provider-provenance.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-encounter-provider-provenance.profile.json.html#/html/body/div/div/div/p/a at Line 2836, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-encounter-provider-provenance.profile.ttl.html#/html/body/div/div/div/p/a at Line 2129, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-encounter-provider-provenance.profile.xml.html#/html/body/div/div/div/p/a at Line 2608, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-encounter-provider-provenance.profile.xml.html#/html/body/div/div/div/p/a at Line 2611, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-first-hospital-ext-definitions.html#/html/body/div/div/div/p/a at Line 301, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-first-hospital-ext-mappings.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-first-hospital-ext-testing.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -422,7 +423,7 @@ ERROR: StructureDefinition-functional-score-observation-profile.html#/html/body/
 ERROR: StructureDefinition-functional-score-observation-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-functional-score-observation-profile.profile.json.html#/html/body/div/div/div/p/a at Line 3707, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-functional-score-observation-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2740, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-functional-score-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3458, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-functional-score-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3464, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-gender-snomed-ext-definitions.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-gender-snomed-ext-mappings.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-gender-snomed-ext-testing.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -529,7 +530,7 @@ ERROR: StructureDefinition-specific-finding-observation-profile.html#/html/body/
 ERROR: StructureDefinition-specific-finding-observation-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-specific-finding-observation-profile.profile.json.html#/html/body/div/div/div/p/a at Line 3399, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-specific-finding-observation-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2542, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-specific-finding-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3162, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-specific-finding-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3168, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-brain-imaging-procedure-profile-definitions.html#/html/body/div/div/div/p/a at Line 531, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-brain-imaging-procedure-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-brain-imaging-procedure-profile-mappings.html#/html/body/div/div/div/p/a at Line 707, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -538,7 +539,7 @@ ERROR: StructureDefinition-stroke-brain-imaging-procedure-profile.html#/html/bod
 ERROR: StructureDefinition-stroke-brain-imaging-procedure-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-brain-imaging-procedure-profile.profile.json.html#/html/body/div/div/div/p/a at Line 2769, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-brain-imaging-procedure-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2153, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-brain-imaging-procedure-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2555, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-brain-imaging-procedure-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2561, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile-definitions.html#/html/body/div/div/div/p/a at Line 524, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile-mappings.html#/html/body/div/div/div/p/a at Line 707, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -547,7 +548,7 @@ ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile.html#/html/b
 ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile.profile.json.html#/html/body/div/div/div/p/a at Line 2764, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2150, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2550, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2556, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-circumstance-observation-profile-definitions.html#/html/body/div/div/div/p/a at Line 645, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-circumstance-observation-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-circumstance-observation-profile-mappings.html#/html/body/div/div/div/p/a at Line 1053, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -556,7 +557,7 @@ ERROR: StructureDefinition-stroke-circumstance-observation-profile.html#/html/bo
 ERROR: StructureDefinition-stroke-circumstance-observation-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-circumstance-observation-profile.profile.json.html#/html/body/div/div/div/p/a at Line 3410, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-circumstance-observation-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2546, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-circumstance-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3170, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-circumstance-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3176, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-diagnosis-condition-profile-definitions.html#/html/body/div/div/div/p/a at Line 524, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-diagnosis-condition-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-diagnosis-condition-profile-mappings.html#/html/body/div/div/div/p/a at Line 708, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -565,7 +566,7 @@ ERROR: StructureDefinition-stroke-diagnosis-condition-profile.html#/html/body/di
 ERROR: StructureDefinition-stroke-diagnosis-condition-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-diagnosis-condition-profile.profile.json.html#/html/body/div/div/div/p/a at Line 2408, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-diagnosis-condition-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 1846, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-diagnosis-condition-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2222, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-diagnosis-condition-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2226, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-encounter-profile-definitions.html#/html/body/div/div/div/p/a at Line 716, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-encounter-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-encounter-profile-mappings.html#/html/body/div/div/div/p/a at Line 960, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -574,7 +575,7 @@ ERROR: StructureDefinition-stroke-encounter-profile.html#/html/body/div/div/div/
 ERROR: StructureDefinition-stroke-encounter-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-encounter-profile.profile.json.html#/html/body/div/div/div/p/a at Line 4059, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-encounter-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 3056, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-encounter-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3690, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-encounter-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3693, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-risk-factor-condition-profile-definitions.html#/html/body/div/div/div/p/a at Line 489, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-risk-factor-condition-profile-examples.html#/html/body/div/div/div/p/a at Line 269, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-risk-factor-condition-profile-mappings.html#/html/body/div/div/div/p/a at Line 664, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -583,7 +584,7 @@ ERROR: StructureDefinition-stroke-risk-factor-condition-profile.html#/html/body/
 ERROR: StructureDefinition-stroke-risk-factor-condition-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-risk-factor-condition-profile.profile.json.html#/html/body/div/div/div/p/a at Line 2171, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-risk-factor-condition-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 1659, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-risk-factor-condition-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2021, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-risk-factor-condition-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2023, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-swallow-procedure-profile-definitions.html#/html/body/div/div/div/p/a at Line 532, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-swallow-procedure-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-swallow-procedure-profile-mappings.html#/html/body/div/div/div/p/a at Line 716, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -592,7 +593,7 @@ ERROR: StructureDefinition-stroke-swallow-procedure-profile.html#/html/body/div/
 ERROR: StructureDefinition-stroke-swallow-procedure-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-swallow-procedure-profile.profile.json.html#/html/body/div/div/div/p/a at Line 2827, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-swallow-procedure-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2198, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-swallow-procedure-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2602, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-swallow-procedure-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2608, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-thrombolysis-procedure-profile-definitions.html#/html/body/div/div/div/p/a at Line 566, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-thrombolysis-procedure-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-thrombolysis-procedure-profile-mappings.html#/html/body/div/div/div/p/a at Line 743, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -601,7 +602,7 @@ ERROR: StructureDefinition-stroke-thrombolysis-procedure-profile.html#/html/body
 ERROR: StructureDefinition-stroke-thrombolysis-procedure-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-thrombolysis-procedure-profile.profile.json.html#/html/body/div/div/div/p/a at Line 2958, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-thrombolysis-procedure-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2284, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-thrombolysis-procedure-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2713, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-thrombolysis-procedure-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2719, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-swallowing-screening-timing-category-ext-definitions.html#/html/body/div/div/div/p/a at Line 300, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-swallowing-screening-timing-category-ext-mappings.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-swallowing-screening-timing-category-ext-testing.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -618,7 +619,7 @@ ERROR: StructureDefinition-timing-metric-observation-profile.html#/html/body/div
 ERROR: StructureDefinition-timing-metric-observation-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-timing-metric-observation-profile.profile.json.html#/html/body/div/div/div/p/a at Line 3773, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-timing-metric-observation-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2811, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-timing-metric-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3493, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-timing-metric-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3499, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-vital-sign-observation-profile-definitions.html#/html/body/div/div/div/p/a at Line 701, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-vital-sign-observation-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-vital-sign-observation-profile-mappings.html#/html/body/div/div/div/p/a at Line 1144, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -627,7 +628,7 @@ ERROR: StructureDefinition-vital-sign-observation-profile.html#/html/body/div/di
 ERROR: StructureDefinition-vital-sign-observation-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-vital-sign-observation-profile.profile.json.html#/html/body/div/div/div/p/a at Line 3762, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-vital-sign-observation-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2807, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-vital-sign-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3487, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-vital-sign-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3493, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-admission-source-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-admission-source-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-admission-source-vs.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -780,10 +781,16 @@ ERROR: ValueSet-stroke-proc-not-done-reason-vs.ttl.html#/html/body/div/div/div/p
 ERROR: ValueSet-stroke-proc-not-done-reason-vs.xml.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-snomed-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-snomed-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-risk-factor-snomed-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-risk-factor-snomed-vs.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-snomed-vs.json.html#/html/body/div/div/div/p/a at Line 292, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-snomed-vs.ttl.html#/html/body/div/div/div/p/a at Line 272, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-risk-factor-snomed-vs.xml.html#/html/body/div/div/div/p/a at Line 285, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-risk-factor-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-risk-factor-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-risk-factor-vs.html#/html/body/div/div/div/p/a at Line 291, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-risk-factor-vs.json.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-risk-factor-vs.ttl.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-risk-factor-vs.xml.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-swallow-procedures-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-swallow-procedures-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-swallow-procedures-vs.html#/html/body/div/div/div/p/a at Line 290, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -820,7 +827,7 @@ ERROR: ValueSet-vs-gender-snomed.html#/html/body/div/div/div/p/a at Line 289, co
 ERROR: ValueSet-vs-gender-snomed.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-vs-gender-snomed.ttl.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-vs-gender-snomed.xml.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 1075, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 1084, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: general-principles.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: index.html#/html/body/div/div/div/p/a at Line 335, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: toc.html#/html/body/div/div/div/p/a at Line 145, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -834,13 +841,13 @@ INFORMATION: CodeSystem/brain-imaging-type-cs: CodeSystem: CodeSystems SHOULD ha
 WARNING: CodeSystem/brain-imaging-type-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/brain-imaging-type-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-discharge-dept-cs.json ==
-ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs.json - the canonical URL (http://testSK.org/CodeSystem/discharge-dept-cs) does not match the URL (http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs)
+ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs.json - the canonical URL (http://testSK.org/CodeSystem/discharge-dept-cs) does not match the URL (http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs). Use the special-url parameter if you really mean for it not to match
 INFORMATION: CodeSystem/discharge-dept-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/discharge-dept-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/discharge-dept-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs: URL Mismatch http://testSK.org/CodeSystem/discharge-dept-cs vs http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs
 == fsh-generated/resources/CodeSystem-discharge-medication-cs.json ==
-ERROR: CodeSystem.where(url = 'http://testSK.org/ValueSet/medication-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-medication-cs.json - the canonical URL (http://testSK.org/CodeSystem/discharge-medication-cs) does not match the URL (http://testSK.org/ValueSet/medication-vs)
+ERROR: CodeSystem.where(url = 'http://testSK.org/ValueSet/medication-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-medication-cs.json - the canonical URL (http://testSK.org/CodeSystem/discharge-medication-cs) does not match the URL (http://testSK.org/ValueSet/medication-vs). Use the special-url parameter if you really mean for it not to match
 ERROR: CodeSystem.url: Resource id/url mismatch: discharge-medication-cs/http://testSK.org/ValueSet/medication-vs
 INFORMATION: CodeSystem/discharge-medication-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/discharge-medication-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
@@ -874,9 +881,12 @@ INFORMATION: CodeSystem/timing-metric-codes-cs: CodeSystem: CodeSystems SHOULD h
 WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/Condition-StrokeDiagnosisConditionAFib.json ==
+ERROR: Condition/StrokeDiagnosisConditionAFib: Condition.code: None of the codings provided are in the value set 'Stroke Risk Factor ValueSet' (http://testSK.org/ValueSet/stroke-risk-factor-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#49436004)
 == fsh-generated/resources/Condition-StrokeDiagnosisConditionAFlutter.json ==
+ERROR: Condition/StrokeDiagnosisConditionAFlutter: Condition.code: None of the codings provided are in the value set 'Stroke Risk Factor ValueSet' (http://testSK.org/ValueSet/stroke-risk-factor-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#5370000)
 == fsh-generated/resources/Condition-StrokeDiagnosisConditionExample.json ==
 == fsh-generated/resources/Condition-StrokeRiskFactorConditionExample.json ==
+ERROR: Condition/StrokeRiskFactorConditionExample: Condition.code: None of the codings provided are in the value set 'Stroke Risk Factor ValueSet' (http://testSK.org/ValueSet/stroke-risk-factor-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#422504002)
 == fsh-generated/resources/Encounter-StrokeEncounterExample.json ==
 INFORMATION: Encounter/StrokeEncounterExample: Encounter.extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/initial-care-intensity-cs|0.1.0
 ERROR: Encounter/StrokeEncounterExample: Encounter.extension[3].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Discharge Department/Service ValueSet' (http://testSK.org/ValueSet/discharge-dept-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#309937004)
@@ -950,25 +960,25 @@ INFORMATION: Procedure/StrokeSwallowingExample: Procedure.extension[1].value.ofT
 INFORMATION: Procedure/StrokeThrombolysisExample: Procedure.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/procedure-timing-context-cs|0.1.0
 == fsh-generated/resources/Provenance-ExampleEncounterProviderProvenance.json ==
 == fsh-generated/resources/StructureDefinition-age-at-onset-observation-profile.json ==
-WARNING: StructureDefinition/age-at-onset-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/age-at-onset-observation-profile: StructureDefinition.snapshot.element[52].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/age-at-onset-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/age-at-onset-observation-profile: StructureDefinition.snapshot.element[52].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-base-stroke-observation.json ==
-WARNING: StructureDefinition/base-stroke-observation: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/base-stroke-observation: StructureDefinition.snapshot.element[45].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/base-stroke-observation: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/base-stroke-observation: StructureDefinition.snapshot.element[45].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/base-stroke-observation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-discharge-department-service-ext.json ==
 == fsh-generated/resources/StructureDefinition-discharge-medication-request-profile.json ==
 WARNING: StructureDefinition/discharge-medication-request-profile: StructureDefinition.snapshot.element[18].binding: The definition for the element 'MedicationRequest.priority' binds to the value set 'http://hl7.org/fhir/ValueSet/request-priority|5.0.0' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-encounter-provider-provenance.json ==
-INFORMATION: StructureDefinition/encounter-provider-provenance: StructureDefinition.snapshot.element[19].slicing.discriminator[0].type: The code 'pattern' is valid but is deprecated
-INFORMATION: StructureDefinition/encounter-provider-provenance: StructureDefinition.differential.element[2].slicing.discriminator[0].type: The code 'pattern' is valid but is deprecated
+WARNING: StructureDefinition/encounter-provider-provenance: StructureDefinition.snapshot.element[19].slicing.discriminator[0].type: The concept 'pattern' has a status of deprecated and its use should be reviewed
+WARNING: StructureDefinition/encounter-provider-provenance: StructureDefinition.differential.element[2].slicing.discriminator[0].type: The concept 'pattern' has a status of deprecated and its use should be reviewed
 WARNING: StructureDefinition/encounter-provider-provenance: StructureDefinition.differential.element[2].slicing.discriminator[0]: The discriminator type 'pattern' has been deprecated. Use type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/encounter-provider-provenance: StructureDefinition.snapshot.element[19].slicing.discriminator[0]: The discriminator type 'pattern' has been deprecated. Use type=value with a pattern[x] instead (if this is not an inherited slicing)
-WARNING: StructureDefinition/encounter-provider-provenance: StructureDefinition.snapshot.element[37].binding: The definition for the element 'Provenance.agent.who.type' binds to the value set 'http://hl7.org/fhir/ValueSet/resource-types' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/encounter-provider-provenance: StructureDefinition.snapshot.element[37].binding: The definition for the element 'Provenance.agent.who.type' binds to the value set 'http://hl7.org/fhir/ValueSet/resource-types|5.0.0' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-first-hospital-ext.json ==
 == fsh-generated/resources/StructureDefinition-functional-score-observation-profile.json ==
-WARNING: StructureDefinition/functional-score-observation-profile: StructureDefinition.snapshot.element[22].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/functional-score-observation-profile: StructureDefinition.snapshot.element[48].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/functional-score-observation-profile: StructureDefinition.snapshot.element[22].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/functional-score-observation-profile: StructureDefinition.snapshot.element[48].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-gender-snomed-ext.json ==
 == fsh-generated/resources/StructureDefinition-hemorrhagic-stroke-bleeding-reason-ext.json ==
 WARNING: StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://testSK.org/ValueSet/hemorrhagic-stroke-bleeding-reason-vs' which is experimental, but this structure is not labeled as experimental
@@ -994,8 +1004,8 @@ ERROR: StructureDefinition/prior-medication-statement-profile: StructureDefiniti
 == fsh-generated/resources/StructureDefinition-procedure-timing-context-ext.json ==
 == fsh-generated/resources/StructureDefinition-required-post-acute-care-ext.json ==
 == fsh-generated/resources/StructureDefinition-specific-finding-observation-profile.json ==
-WARNING: StructureDefinition/specific-finding-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/specific-finding-observation-profile: StructureDefinition.snapshot.element[45].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/specific-finding-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/specific-finding-observation-profile: StructureDefinition.snapshot.element[45].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-stroke-brain-imaging-procedure-profile.json ==
 WARNING: StructureDefinition/stroke-brain-imaging-procedure-profile: StructureDefinition.differential.element[3].binding: The definition for the element 'Procedure.status' binds to the value set 'http://hl7.org/fhir/ValueSet/event-status' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/stroke-brain-imaging-procedure-profile: StructureDefinition.snapshot.element[15].binding: The definition for the element 'Procedure.status' binds to the value set 'http://hl7.org/fhir/ValueSet/event-status' which is experimental, but this structure is not labeled as experimental
@@ -1003,20 +1013,20 @@ WARNING: StructureDefinition/stroke-brain-imaging-procedure-profile: StructureDe
 WARNING: StructureDefinition/stroke-carotid-imaging-procedure-profile: StructureDefinition.differential.element[3].binding: The definition for the element 'Procedure.status' binds to the value set 'http://hl7.org/fhir/ValueSet/event-status' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/stroke-carotid-imaging-procedure-profile: StructureDefinition.snapshot.element[15].binding: The definition for the element 'Procedure.status' binds to the value set 'http://hl7.org/fhir/ValueSet/event-status' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-stroke-circumstance-observation-profile.json ==
-WARNING: StructureDefinition/stroke-circumstance-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/stroke-circumstance-observation-profile: StructureDefinition.snapshot.element[45].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/stroke-circumstance-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/stroke-circumstance-observation-profile: StructureDefinition.snapshot.element[45].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-stroke-diagnosis-condition-profile.json ==
 INFORMATION: StructureDefinition/stroke-diagnosis-condition-profile: StructureDefinition.snapshot.element[16].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-WARNING: StructureDefinition/stroke-diagnosis-condition-profile: StructureDefinition.snapshot.element[29].binding: The definition for the element 'Condition.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/stroke-diagnosis-condition-profile: StructureDefinition.snapshot.element[29].binding: The definition for the element 'Condition.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-stroke-encounter-profile.json ==
 WARNING: StructureDefinition/stroke-encounter-profile: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: StructureDefinition/stroke-encounter-profile: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: StructureDefinition/stroke-encounter-profile: StructureDefinition.snapshot.element[14].binding: The definition for the element 'Encounter.status' binds to the value set 'http://hl7.org/fhir/ValueSet/encounter-status|5.0.0' which is experimental, but this structure is not labeled as experimental
 INFORMATION: StructureDefinition/stroke-encounter-profile: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-WARNING: StructureDefinition/stroke-encounter-profile: StructureDefinition.snapshot.element[48].binding: The definition for the element 'Encounter.reason.value' binds to the value set 'http://hl7.org/fhir/ValueSet/encounter-reason' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/stroke-encounter-profile: StructureDefinition.snapshot.element[48].binding: The definition for the element 'Encounter.reason.value' binds to the value set 'http://hl7.org/fhir/ValueSet/encounter-reason|5.0.0' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-stroke-risk-factor-condition-profile.json ==
 INFORMATION: StructureDefinition/stroke-risk-factor-condition-profile: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-WARNING: StructureDefinition/stroke-risk-factor-condition-profile: StructureDefinition.snapshot.element[25].binding: The definition for the element 'Condition.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/stroke-risk-factor-condition-profile: StructureDefinition.snapshot.element[25].binding: The definition for the element 'Condition.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-stroke-swallow-procedure-profile.json ==
 WARNING: StructureDefinition/stroke-swallow-procedure-profile: StructureDefinition.differential.element[4].binding: The definition for the element 'Procedure.status' binds to the value set 'http://hl7.org/fhir/ValueSet/event-status' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/stroke-swallow-procedure-profile: StructureDefinition.differential.element[6].binding: The definition for the element 'Procedure.code' binds to the value set 'http://testSK.org/ValueSet/swallow-procedures-vs' which is experimental, but this structure is not labeled as experimental
@@ -1029,13 +1039,13 @@ WARNING: StructureDefinition/stroke-thrombolysis-procedure-profile: StructureDef
 WARNING: StructureDefinition/stroke-thrombolysis-procedure-profile: StructureDefinition.snapshot.element[18].binding: The definition for the element 'Procedure.code' binds to the value set 'http://testSK.org/ValueSet/perforation-procedures-vs' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-swallowing-screening-timing-category-ext.json ==
 == fsh-generated/resources/StructureDefinition-timing-metric-observation-profile.json ==
-WARNING: StructureDefinition/timing-metric-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/timing-metric-observation-profile: StructureDefinition.snapshot.element[52].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/timing-metric-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/timing-metric-observation-profile: StructureDefinition.snapshot.element[52].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-vital-sign-observation-profile.json ==
 WARNING: StructureDefinition/vital-sign-observation-profile: StructureDefinition.differential.element[2].binding: The definition for the element 'Observation.code' binds to the value set 'http://testSK.org/ValueSet/vital-sign-codes-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/vital-sign-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/vital-sign-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/vital-sign-observation-profile: StructureDefinition.snapshot.element[22].binding: The definition for the element 'Observation.code' binds to the value set 'http://testSK.org/ValueSet/vital-sign-codes-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/vital-sign-observation-profile: StructureDefinition.snapshot.element[52].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/vital-sign-observation-profile: StructureDefinition.snapshot.element[52].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/ValueSet-admission-source-vs.json ==
 == fsh-generated/resources/ValueSet-afib-flutter-status-vs.json ==
 WARNING: ValueSet/afib-flutter-status-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -1086,6 +1096,11 @@ WARNING: ValueSet/stroke-finding-codes-vs: ValueSet: Published value sets SHOULD
 WARNING: ValueSet/stroke-proc-not-done-reason-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs.json ==
 WARNING: ValueSet/stroke-risk-factor-snomed-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-stroke-risk-factor-vs.json ==
+ERROR: ValueSet/stroke-risk-factor-vs: ValueSet.compose.include[1].system: No definition could be found for URL value 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips'
+ERROR: ValueSet/stroke-risk-factor-vs: ValueSet.compose.include[0]: The system 'http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs' is actually a value set, which itself refers to the system 'http://snomed.info/sct' so that may be what is intended here
+WARNING: ValueSet/stroke-risk-factor-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'stroke-risk-factor-vs'): Error from https://tx.fhir.org/r5: Unable to provide support for code system http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs
 == fsh-generated/resources/ValueSet-swallow-procedures-vs.json ==
 == fsh-generated/resources/ValueSet-swallowing-screening-timing-category-vs.json ==
 WARNING: ValueSet/swallowing-screening-timing-category-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

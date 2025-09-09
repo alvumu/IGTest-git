@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-09-08T16:35:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-09T08:15:52+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -65,7 +65,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r5#0.7.1"
+         fhir:v "hl7.fhir.uv.tools.r5#0.8.0"
        ]
      ] ) ;
      fhir:resource ( [
@@ -1256,6 +1256,21 @@
        ] ;
        fhir:name [ fhir:v "Stroke Risk Factor ValueSet" ] ;
        fhir:description [ fhir:v "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/ValueSet/stroke-risk-factor-vs> ;
+         fhir:reference [ fhir:v "ValueSet/stroke-risk-factor-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Risk Factor ValueSet" ] ;
+       fhir:description [ fhir:v "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [

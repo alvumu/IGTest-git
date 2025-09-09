@@ -21,7 +21,7 @@
   <name value="TimingMetricObservationProfile"/>
   <title value="Stroke Timing Metric Observation Profile (R5)"/>
   <status value="draft"/>
-  <date value="2025-09-08T16:35:28+00:00"/>
+  <date value="2025-09-09T08:15:52+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -281,7 +281,7 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/all-languages|5.0.0"/>
         <additional>
           <purpose value="starter"/>
-          <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
+          <valueSet value="http://hl7.org/fhir/ValueSet/languages|5.0.0"/>
         </additional>
       </binding>
     </element>
@@ -486,11 +486,11 @@
       </base>
       <type>
         <code value="canonical"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ObservationDefinition"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ObservationDefinition|5.0.0"/>
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ObservationDefinition"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ObservationDefinition|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -526,12 +526,12 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceRequest"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/NutritionOrder"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceRequest|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/NutritionOrder|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -707,7 +707,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -928,7 +928,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="Codes for high level observation categories."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/observation-category"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-category|5.0.0"/>
       </binding>
       <mapping>
         <identity value="w5"/>
@@ -1054,7 +1054,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1095,7 +1095,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1229,12 +1229,12 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1598,7 +1598,7 @@
         </extension>
         <strength value="extensible"/>
         <description value="Codes specifying why the result (`Observation.value[x]`) is missing."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/data-absent-reason"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/data-absent-reason|5.0.0"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1642,7 +1642,7 @@
         </extension>
         <strength value="extensible"/>
         <description value="Codes identifying interpretations of observations."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/observation-interpretation"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-interpretation|5.0.0"/>
       </binding>
       <mapping>
         <identity value="sct-concept"/>
@@ -1728,7 +1728,7 @@
         </extension>
         <strength value="example"/>
         <description value="SNOMED CT Body site concepts"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/body-site|5.0.0"/>
       </binding>
       <mapping>
         <identity value="sct-concept"/>
@@ -1761,7 +1761,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/BodyStructure"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/BodyStructure|5.0.0"/>
       </type>
       <condition value="obs-8"/>
       <constraint>
@@ -1811,7 +1811,7 @@
         </extension>
         <strength value="example"/>
         <description value="Methods for simple observations."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/observation-methods"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-methods|5.0.0"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1836,8 +1836,8 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Specimen|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1887,8 +1887,8 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceMetric"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceMetric|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2077,7 +2077,7 @@
       </base>
       <type>
         <code value="Quantity"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity|5.0.0"/>
       </type>
       <condition value="obs-3"/>
       <constraint>
@@ -2112,7 +2112,7 @@
       </base>
       <type>
         <code value="Quantity"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity|5.0.0"/>
       </type>
       <condition value="obs-3"/>
       <constraint>
@@ -2164,7 +2164,7 @@
         </extension>
         <strength value="extensible"/>
         <description value="Codes identifying the normal value of the observation."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/observation-referencerange-normalvalue"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-referencerange-normalvalue|5.0.0"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2207,7 +2207,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="Code for the meaning of a reference range."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/referencerange-meaning"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0"/>
       </binding>
       <mapping>
         <identity value="sct-concept"/>
@@ -2254,7 +2254,7 @@
         </extension>
         <strength value="example"/>
         <description value="Codes identifying the population the reference range applies to."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/referencerange-appliesto"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/referencerange-appliesto|5.0.0"/>
       </binding>
       <mapping>
         <identity value="sct-concept"/>
@@ -2382,13 +2382,13 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImagingStudy"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImagingSelection"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/GenomicStudy"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImagingStudy|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImagingSelection|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/GenomicStudy|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2583,7 +2583,7 @@
         </extension>
         <strength value="example"/>
         <description value="Codes identifying names of simple observations."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/observation-codes"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-codes|5.0.0"/>
       </binding>
       <mapping>
         <identity value="w5"/>
@@ -2653,7 +2653,7 @@
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2714,7 +2714,7 @@
         </extension>
         <strength value="extensible"/>
         <description value="Codes specifying why the result (`Observation.value[x]`) is missing."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/data-absent-reason"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/data-absent-reason|5.0.0"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2758,7 +2758,7 @@
         </extension>
         <strength value="extensible"/>
         <description value="Codes identifying interpretations of observations."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/observation-interpretation"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-interpretation|5.0.0"/>
       </binding>
       <mapping>
         <identity value="sct-concept"/>

@@ -27,7 +27,7 @@
   <name value="StrokeDiagnosisConditionProfile"/>
   <title value="Stroke Diagnosis Condition Profile"/>
   <status value="active"/>
-  <date value="2025-09-08T16:35:28+00:00"/>
+  <date value="2025-09-09T08:15:52+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -266,7 +266,7 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/all-languages|5.0.0"/>
         <additional>
           <purpose value="starter"/>
-          <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
+          <valueSet value="http://hl7.org/fhir/ValueSet/languages|5.0.0"/>
         </additional>
       </binding>
     </element>
@@ -734,7 +734,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="A category assigned to the condition."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/condition-category"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/condition-category|5.0.0"/>
       </binding>
       <mapping>
         <identity value="w5"/>
@@ -784,7 +784,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="A subjective assessment of the severity of the condition as evaluated by the clinician."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/condition-severity"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/condition-severity|5.0.0"/>
       </binding>
       <mapping>
         <identity value="w5"/>
@@ -889,7 +889,7 @@
         </extension>
         <strength value="example"/>
         <description value="SNOMED CT Body site concepts"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/body-site|5.0.0"/>
       </binding>
       <mapping>
         <identity value="sct-concept"/>
@@ -958,7 +958,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1281,7 +1281,7 @@
           <valueString value="ConditionParticipantFunction"/>
         </extension>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/participation-role-type"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -1301,13 +1301,13 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1500,7 +1500,7 @@
         </extension>
         <strength value="example"/>
         <description value="Codes describing condition stages (e.g. Cancer stages)."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/condition-stage"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/condition-stage|5.0.0"/>
       </binding>
       <mapping>
         <identity value="sct-concept"/>
@@ -1528,9 +1528,9 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"/>
       </type>
       <condition value="con-1"/>
       <constraint>
@@ -1578,7 +1578,7 @@
         </extension>
         <strength value="example"/>
         <description value="Codes describing the kind of condition staging (e.g. clinical or pathological)."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/condition-stage-type"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/condition-stage-type|5.0.0"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -1599,7 +1599,7 @@
       </base>
       <type>
         <code value="CodeableReference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1616,7 +1616,7 @@
           <valueString value="ManifestationOrSymptom"/>
         </extension>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/clinical-findings"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/clinical-findings|5.0.0"/>
       </binding>
       <mapping>
         <identity value="rim"/>

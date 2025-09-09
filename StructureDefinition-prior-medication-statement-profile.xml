@@ -17,7 +17,7 @@
   <title value="Prior Medication Statement Profile (R5)"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2025-09-08T16:35:28+00:00"/>
+  <date value="2025-09-09T08:15:52+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -234,7 +234,7 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/all-languages|5.0.0"/>
         <additional>
           <purpose value="starter"/>
-          <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
+          <valueSet value="http://hl7.org/fhir/ValueSet/languages|5.0.0"/>
         </additional>
       </binding>
     </element>
@@ -437,8 +437,8 @@
           <valueBoolean value="true"/>
         </extension>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -532,7 +532,7 @@
         </extension>
         <strength value="example"/>
         <description value="A coded concept identifying where the medication included in the MedicationStatement is expected to be consumed or administered."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/medicationrequest-admin-location"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/medicationrequest-admin-location|5.0.0"/>
       </binding>
       <mapping>
         <identity value="w5"/>
@@ -557,7 +557,7 @@
       </base>
       <type>
         <code value="CodeableReference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -641,7 +641,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -752,11 +752,11 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -791,7 +791,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -822,9 +822,9 @@
       </base>
       <type>
         <code value="CodeableReference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -842,7 +842,7 @@
         </extension>
         <strength value="example"/>
         <description value="A coded concept identifying why the medication is being taken."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/condition-code"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/condition-code|5.0.0"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -903,8 +903,8 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition|5.0.0"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1179,7 +1179,7 @@
           <valueString value="MedicationStatementStatusReason"/>
         </extension>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/reason-medication-status-codes"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/reason-medication-status-codes|5.0.0"/>
       </binding>
       <mapping>
         <identity value="rim"/>
