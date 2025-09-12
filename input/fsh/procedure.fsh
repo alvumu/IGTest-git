@@ -21,6 +21,7 @@ Alias: SwallowScreenTimeCS_URL = http://testSK.org/CodeSystem/swallow-screen-tim
 Alias: ProcedureTimingContextCS_URL = http://testSK.org/CodeSystem/procedure-timing-context-cs
 Alias: BrainImagingTypeCS_URL = http://testSK.org/CodeSystem/brain-imaging-type-cs
 Alias: SwallowProceduresCS_URL = http://testSK.org/CodeSystem/swallow-procedures-cs
+Alias: ThrombectomyComplicationCS_URL = http://testSK.org/CodeSystem/thrombectomy-complication-cs
 // URLs for ValueSets (used in bindings)
 Alias: CarotidImagingModalityVS_URL = http://testSK.org/ValueSet/carotid-imaging-modality-vs
 Alias: BrainImagingModalityVS_URL = http://testSK.org/ValueSet/brain-imaging-modality-vs
@@ -77,6 +78,15 @@ Id: brain-imaging-modality-vs
 * ^status = #active
 * include SCT#419949007 "Computed tomography angiography of intracranial artery with contrast (procedure)"
 * include codes from system BrainImagingTypeCS_URL
+
+CodeSystem: ThrombectomyComplicationCS
+Id: thrombectomy-complication-cs
+* ^url = ThrombectomyComplicationCS_URL
+* ^version = "1.0.0"
+* ^title = "Thrombectomy Complication Code System"
+* ^description = "Codes specifying the specific complications of thrombectomy to record."
+* ^status = #active
+* #perforation "Vessel Perforation" "Vessel perforation occurred during the mechanical thrombectomy"
 
 
 // --- ValueSet: Thrombectomy Complications ---
@@ -281,7 +291,7 @@ Parent: FHIR_Procedure // R5 Procedure Base
 * ^title = "Stroke Carotid Imaging Procedure Profile (R5)" // Indicate R5
 * ^description = "Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." // Indicate R5
 * ^status = #active
-* code from CarotidImagingModalityVS_URL (required)
+* code = SCT#58920005 "Angiography of carotid artery (procedure)"
 * status 1..1 MS 
 * status from http://hl7.org/fhir/ValueSet/event-status
 * statusReason 0..1 MS

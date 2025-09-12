@@ -18,7 +18,7 @@ Alias: AssessmentContextCS_URL = http://testSK.org/CodeSystem/assessment-context
 Alias: MticiScoreCS_URL = http://testSK.org/CodeSystem/mtici-score-cs
 Alias: MticiCodeCS_URL = http://testSK.org/CodeSystem/mtici-code-cs
 Alias: TimingMetricCodesCS_URL = http://testSK.org/CodeSystem/timing-metric-codes-cs
-
+Alias: StrokeCircumstanceCodesCS_URL = http://testSK.org/CodeSystem/stroke-circumstance-codes-cs
 Alias: AfibFlutterStatusCS_URL = http://testSK.org/CodeSystem/afib-flutter-status-cs
 Alias: MRsScoreCS_URL = http://testSK.org/CodeSystem/mrs-score-cs
 
@@ -41,20 +41,20 @@ Alias: ObsTimingContextExt_URL = http://testSK.org/StructureDefinition/observati
 // ------------------------- Custom CodeSystems & ValueSets (English) -------------
 
 
-// --- CodeSystem for Atrial Fibrillation/Flutter Status ---
-CodeSystem: AfibFlutterStatusCS
-Id: afib-flutter-status-cs
-* ^url = AfibFlutterStatusCS_URL
-* ^version = "1.0.0"
-* ^title = "Atrial Fibrillation or Flutter Status Codes"
-* ^description = "Codes representing the status of Atrial Fibrillation or Flutter assessment."
-* ^status = #active
-* ^experimental = true 
-* ^caseSensitive = false     
-* #detected "Detected" "Indicates that atrial fibrillation or flutter has been identified during screening or recent evaluation."
-* #known-af "Known AF" "Signifies that the patient has a pre-existing, documented diagnosis of atrial fibrillation."
-* #no-af "No AF" "Denotes that the patient does not exhibit atrial fibrillation or atrial flutter."
-* #not-screened "Not Screened" "Means that no screening for atrial fibrillation or flutter has been performed."
+// // --- CodeSystem for Atrial Fibrillation/Flutter Status ---
+// CodeSystem: AfibFlutterStatusCS
+// Id: afib-flutter-status-cs
+// * ^url = AfibFlutterStatusCS_URL
+// * ^version = "1.0.0"
+// * ^title = "Atrial Fibrillation or Flutter Status Codes"
+// * ^description = "Codes representing the status of Atrial Fibrillation or Flutter assessment."
+// * ^status = #active
+// * ^experimental = true 
+// * ^caseSensitive = false     
+// * #detected "Detected" "Indicates that atrial fibrillation or flutter has been identified during screening or recent evaluation."
+// * #known-af "Known AF" "Signifies that the patient has a pre-existing, documented diagnosis of atrial fibrillation."
+// * #no-af "No AF" "Denotes that the patient does not exhibit atrial fibrillation or atrial flutter."
+// * #not-screened "Not Screened" "Means that no screening for atrial fibrillation or flutter has been performed."
 
 // --- ValueSet for Atrial Fibrillation/Flutter Status ---
 ValueSet: AfibFlutterStatusVS
@@ -64,7 +64,9 @@ Id: afib-flutter-status-vs
 * ^title = "Atrial Fibrillation or Flutter Status ValueSet"
 * ^description = "ValueSet for the status of Atrial Fibrillation or Flutter assessment."
 * ^status = #active
-* include codes from system AfibFlutterStatusCS_URL
+* SCT#410515003 "Known present (qualifier value)"
+* SCT#410516002 "Known absent (qualifier value)"
+* SCT#261665006 "Unknown (qualifier value)"
 
 // --- CodeSystem for mTICI Score ---
 CodeSystem: MticiScoreCS
@@ -187,7 +189,7 @@ Id: timing-metric-codes-cs
 * ^title = "Stroke Timing Metric Codes ValueSet"
 * ^description = "Codes for key process timing metrics in acute stroke care (D2N, D2G)."
 * ^status = #active
-* #D2G "Door to Groin" " Time (in minutes) from hospital arrival to the groin puncture for mechanical thrombectomy"
+* #D2G "Door to Groin" "Time (in minutes) from hospital arrival to the groin puncture for mechanical thrombectomy"
 * #D2N "Door to Needle" "Time (in minutes) from the patient’s arrival at the hospital to the start of intravenous thrombolysis"
 
 ValueSet: TimingMetricCodesVS
@@ -199,6 +201,16 @@ Id: timing-metric-codes-vs
 * ^status = #active
 * include codes from system TimingMetricCodesCS_URL
 
+CodeSystem: StrokeCircumstanceCodesCS
+Id: stroke-circumstance-codes-cs
+* ^url = StrokeCircumstanceCodesCS_URL
+* ^version = "1.0.0"
+* ^title = "Stroke Circumstance Codes CodeSystem"
+* ^description = "Codes for findings related to the circumstances of stroke onset (In-hospital, Wake-up)."
+* ^status = #active
+* #in-hospital "In-hospital Stroke" "Indicates that the stroke occurred while the patient was already admitted to the hospital for another reason."
+* #wake-up "Wake-up Stroke" "Indicates that the stroke symptoms were first noticed upon waking from sleep, with an unknown time of onset."
+
 ValueSet: StrokeCircumstanceCodesVS
 Id: stroke-circumstance-codes-vs
 * ^url = StrokeCircumstanceCodesVS_URL
@@ -206,8 +218,7 @@ Id: stroke-circumstance-codes-vs
 * ^title = "Stroke Circumstance Codes ValueSet"
 * ^description = "Codes for findings related to the circumstances of stroke onset (In-hospital, Wake-up)."
 * ^status = #active
-* include SCT#230690007 "Cerebrovascular accident (disorder)" 
-* include SCT#184091000 "Patient in hospital (finding)"
+* include codes from system StrokeCircumstanceCodesCS_URL
 
 ValueSet: SpecificFindingCodesVS
 Id: specific-finding-codes-vs
@@ -298,12 +309,17 @@ Parent: BaseStrokeObservation
 * category = ObsCatCS#vital-signs
 * category 1..1 MS
 * code 1..1 MS
-* code from VitalSignCodesVS_URL (required)
-* value[x] 1..1 MS
-* value[x] only Quantity
-* value[x].unit = "mmHg"
-* value[x].system = UCUM
-* value[x].code = #"mm[Hg]"
+* code = SCT#61746007 "Taking patient vital signs (procedure)"
+* component 0..* MS
+* component.code 1..1 MS
+* component.code from VitalSignCodesVS_URL (required)
+* component.value[x] 1..1 MS
+* component.value[x] only Quantity
+* component.value[x].unit = "mmHg"
+* component.value[x].system = UCUM
+* component.value[x].code = #"mm[Hg]"
+
+
 
 // --- Functional Score Observation Profile --- *** UPDATED: Uses Extension ***
 Profile: FunctionalScoreObservationProfile
@@ -445,11 +461,16 @@ InstanceOf: SpecificFindingObservationProfile
 
 Instance: VitalSignObservationExample
 InstanceOf: VitalSignObservationProfile
-* code = SCT#271649006 "Systolic blood pressure (observable entity)"
-* valueQuantity.value = 120
-* valueQuantity.unit = "mmHg"
-* valueQuantity.system = UCUM
-* valueQuantity.code = #"mm[Hg]"
+* component[+].code = SCT#271649006 "Systolic blood pressure (observable entity)"
+* component[=].valueQuantity.value = 120
+* component[=].valueQuantity.unit = "mmHg"
+* component[=].valueQuantity.system = UCUM
+* component[=].valueQuantity.code = #"mm[Hg]"
+* component[+].code = SCT#271650006 "Diastolic blood pressure (observable entity)"
+* component[=].valueQuantity.value = 80
+* component[=].valueQuantity.unit = "mmHg"
+* component[=].valueQuantity.system = UCUM
+* component[=].valueQuantity.code = #"mm[Hg]"
 * subject = Reference(PatientExample)
 * encounter = Reference(StrokeEncounterExample)
 
@@ -471,16 +492,16 @@ InstanceOf: TimingMetricObservationProfile
 * subject = Reference(PatientExample)
 * encounter = Reference(StrokeEncounterExample)
 
-Instance: StrokeCircumstanceObservationExample
-InstanceOf: StrokeCircumstanceObservationProfile
-* code = SCT#230690007 "Cerebrovascular accident (disorder)"
-* valueBoolean = true // Indicates in-hospital stroke
-* subject = Reference(PatientExample)
-* encounter = Reference(StrokeEncounterExample)
-
 Instance: SpecificFindingObservationExampleMTICI
 InstanceOf: SpecificFindingObservationProfile
 * code = SCT#1156911000 "mTICI Score Assessment"
 * valueCodeableConcept = MticiScoreCS_URL#3 "Grade 3: Complete antegrade reperfusion of the previously occluded target artery ischemic territory, with absence of visualized occlusion in all distal branches"
+* subject = Reference(PatientExample)
+* encounter = Reference(StrokeEncounterExample)
+
+Instance: StrokeCircumstanceObservationExampleWakeUp
+InstanceOf: StrokeCircumstanceObservationProfile
+* code = StrokeCircumstanceCodesCS_URL#wake-up "Wake-up Stroke"
+* focus = Reference(ConditionExample)
 * subject = Reference(PatientExample)
 * encounter = Reference(StrokeEncounterExample)
