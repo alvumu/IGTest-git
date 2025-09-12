@@ -383,8 +383,6 @@ Parent: BaseStrokeObservation
 * ^description = "Profile for recording findings about stroke onset circumstances (In-hospital, Wake-up)."
 * code 1..1 MS
 * code from StrokeCircumstanceCodesVS_URL (required)
-* value[x] 1..1 MS
-* value[x] only boolean
 * hasMember 0..* MS
 * hasMember only Reference(FHIR_Observation)
 
