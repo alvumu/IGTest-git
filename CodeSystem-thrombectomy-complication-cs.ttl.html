@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Atrial Fibrillation or Flutter Status Codes - TTL Representation -  v0.1.0</title>
+    <title>Thrombectomy Complication Code System - TTL Representation -  v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"3.66"}
-    h3,h4,h5,h6{--heading-prefix:"3.66"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.84"}
+    h3,h4,h5,h6{--heading-prefix:"3.84"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -100,7 +100,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Atrial Fibrillation or Flutter Status Codes</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Thrombectomy Complication Code System</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -126,21 +126,21 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="CodeSystem-afib-flutter-status-cs.html">Narrative Content</a>
+    <a href="CodeSystem-thrombectomy-complication-cs.html">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="CodeSystem-afib-flutter-status-cs.xml.html">XML</a>
+      <a href="CodeSystem-thrombectomy-complication-cs.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="CodeSystem-afib-flutter-status-cs.json.html">JSON</a>
+      <a href="CodeSystem-thrombectomy-complication-cs.json.html">JSON</a>
     </li>
   
 
@@ -159,7 +159,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Atrial Fibrillation or Flutter Status Codes - TTL Representation</h2>
+<h2 id="root">: Thrombectomy Complication Code System - TTL Representation</h2>
 
   <table class="colsi">
     <tr>
@@ -168,7 +168,7 @@
         
           Active
           
-            as of 2025-09-09
+            as of 2025-09-12
           
         
       </td>
@@ -177,7 +177,7 @@
   </table>
 
 
-<p><a href="CodeSystem-afib-flutter-status-cs.ttl" no-download="true">Raw ttl</a> | <a download="null" href="CodeSystem-afib-flutter-status-cs.ttl">Download</a></p>
+<p><a href="CodeSystem-thrombectomy-complication-cs.ttl" no-download="true">Raw ttl</a> | <a download="null" href="CodeSystem-thrombectomy-complication-cs.ttl">Download</a></p>
 
     <!-- insert intro if present -->
   
@@ -195,18 +195,17 @@
 
  a fhir:CodeSystem ;
   <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> "afib-flutter-status-cs"] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> "thrombectomy-complication-cs"] ; # 
   <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "generated" ] ;
-fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Generated Narrative: CodeSystem afib-flutter-status-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\"afib-flutter-status-cs\"&gt; &lt;/a&gt;&lt;a name=\"hcafib-flutter-status-cs\"&gt; &lt;/a&gt;&lt;p&gt;This case-insensitive code system &lt;code&gt;http://testSK.org/CodeSystem/afib-flutter-status-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\"codes\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;detected&lt;a name=\"afib-flutter-status-cs-detected\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Detected&lt;/td&gt;&lt;td&gt;Indicates that atrial fibrillation or flutter has been identified during screening or recent evaluation.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;known-af&lt;a name=\"afib-flutter-status-cs-known-af\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Known AF&lt;/td&gt;&lt;td&gt;Signifies that the patient has a pre-existing, documented diagnosis of atrial fibrillation.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;no-af&lt;a name=\"afib-flutter-status-cs-no-af\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;No AF&lt;/td&gt;&lt;td&gt;Denotes that the patient does not exhibit atrial fibrillation or atrial flutter.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;not-screened&lt;a name=\"afib-flutter-status-cs-not-screened\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Not Screened&lt;/td&gt;&lt;td&gt;Means that no screening for atrial fibrillation or flutter has been performed.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"^^rdf:XMLLiteral
+fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Generated Narrative: CodeSystem thrombectomy-complication-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\"thrombectomy-complication-cs\"&gt; &lt;/a&gt;&lt;a name=\"hcthrombectomy-complication-cs\"&gt; &lt;/a&gt;&lt;p&gt;This  code system &lt;code&gt;http://testSK.org/CodeSystem/thrombectomy-complication-cs&lt;/code&gt; defines the following code:&lt;/p&gt;&lt;table class=\"codes\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;perforation&lt;a name=\"thrombectomy-complication-cs-perforation\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vessel Perforation&lt;/td&gt;&lt;td&gt;Vessel perforation occurred during the mechanical thrombectomy&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"^^rdf:XMLLiteral
   ] ; # 
-  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> "http://testSK.org/CodeSystem/afib-flutter-status-cs"^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> "http://testSK.org/CodeSystem/thrombectomy-complication-cs"^^xsd:anyURI] ; # 
   <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "0.1.0"] ; # 
-  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "AfibFlutterStatusCS"] ; # 
-  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Atrial Fibrillation or Flutter Status Codes"] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "ThrombectomyComplicationCS"] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Thrombectomy Complication Code System"] ; # 
   <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "active"] ; # 
-  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true] ; # 
-  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> "2025-09-09T09:28:44+00:00"^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> "2025-09-12T08:57:32+00:00"^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "UMU"] ; # 
   <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
 <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "UMU" ] ;
@@ -214,26 +213,13 @@ fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-he
 <a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "url" ] ;
 <a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "http://testSK.org/umu" ]     ] )
   ] ) ; # 
-  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> "Codes representing the status of Atrial Fibrillation or Flutter assessment."] ; # 
-  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.caseSensitive">fhir:caseSensitive</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> "Codes specifying the specific complications of thrombectomy to record."] ; # 
   <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.content">fhir:content</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "complete"] ; # 
-  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.count">fhir:count</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> "4"^^xsd:nonNegativeInteger] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.count">fhir:count</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> "1"^^xsd:nonNegativeInteger] ; # 
   <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">fhir:concept</a> ( [
-<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "detected" ] ;
-<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Detected" ] ;
-<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Indicates that atrial fibrillation or flutter has been identified during screening or recent evaluation." ]
-  ] [
-<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "known-af" ] ;
-<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Known AF" ] ;
-<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Signifies that the patient has a pre-existing, documented diagnosis of atrial fibrillation." ]
-  ] [
-<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "no-af" ] ;
-<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "No AF" ] ;
-<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Denotes that the patient does not exhibit atrial fibrillation or atrial flutter." ]
-  ] [
-<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "not-screened" ] ;
-<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Not Screened" ] ;
-<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Means that no screening for atrial fibrillation or flutter has been performed." ]
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "perforation" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Vessel Perforation" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Vessel perforation occurred during the mechanical thrombectomy" ]
   ] ) . # 
 
 </code></pre>
@@ -260,8 +246,8 @@ fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-he
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l510">​</a>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 9, 2025 09:29+0000">2025-09-09</span>
+        <p><a name="l444">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Sep 12, 2025 08:57+0000">2025-09-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -66,7 +66,13 @@ Cancelled Reason","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
 ","FiveWs.class",".outboundRelationship[typeCode=""COMP].target[classCode=""LIST"", moodCode=""EVN""].code","PR1-6"
 "Procedure.code","Procedure.code","","type
 ","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","Identification of the procedure","The specific procedure that is performed. Use text if the exact nature of the procedure cannot be coded (e.g. ""Laparoscopic Appendectomy"").","","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","http://testSK.org/ValueSet/carotid-imaging-modality-vs","",,,,"Procedure.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Identification of the procedure","The specific procedure that is performed. Use text if the exact nature of the procedure cannot be coded (e.g. ""Laparoscopic Appendectomy"").","","0..1 to account for primarily narrative only resources.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://snomed.info/sct""/>
+    <code value=""58920005""/>
+    <display value=""Angiography of carotid artery (procedure)""/>
+  </coding>
+</valueCodeableConcept>","","","",,"example","A code to identify a specific procedure .","http://hl7.org/fhir/ValueSet/procedure-code|5.0.0","",,,,"Procedure.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","FiveWs.what[x]",".code","PR1-3"
 "Procedure.subject","Procedure.subject","","patient
 ","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient|5.0.0], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group|5.0.0], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device|5.0.0], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization|5.0.0], CanonicalType[http://hl7.org/fhir/StructureDefinition/Location|5.0.0]]}

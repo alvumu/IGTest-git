@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="IGTest"/>
   <status value="draft"/>
-  <date value="2025-09-09T09:28:44+00:00"/>
+  <date value="2025-09-12T08:57:32+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -94,17 +94,6 @@
       </reference>
       <name value="Assessment Context ValueSet"/>
       <description value="ValueSet for assessment context codes (e.g., timing of functional scores)."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/afib-flutter-status-cs"/>
-      </reference>
-      <name value="Atrial Fibrillation or Flutter Status Codes"/>
-      <description value="Codes representing the status of Atrial Fibrillation or Flutter assessment."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -731,6 +720,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/stroke-circumstance-codes-cs"/>
+      </reference>
+      <name value="Stroke Circumstance Codes CodeSystem"/>
+      <description value="Codes for findings related to the circumstances of stroke onset (In-hospital, Wake-up)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1009,9 +1009,9 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/StrokeCircumstanceObservationExample"/>
+        <reference value="Observation/StrokeCircumstanceObservationExampleWakeUp"/>
       </reference>
-      <name value="StrokeCircumstanceObservationExample"/>
+      <name value="StrokeCircumstanceObservationExampleWakeUp"/>
       <isExample value="true"/>
       <profile value="http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile"/>
     </resource>
@@ -1155,6 +1155,17 @@
       </reference>
       <name value="Swallowing Screening Timing Category ValueSet"/>
       <description value="Temporal categories relative to stroke onset for swallowing screening."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/thrombectomy-complication-cs"/>
+      </reference>
+      <name value="Thrombectomy Complication Code System"/>
+      <description value="Codes specifying the specific complications of thrombectomy to record."/>
       <isExample value="false"/>
     </resource>
     <resource>

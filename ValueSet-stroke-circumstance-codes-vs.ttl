@@ -11,14 +11,14 @@
   fhir:id [ fhir:v "stroke-circumstance-codes-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet stroke-circumstance-codes-vs</b></p><a name=\"stroke-circumstance-codes-vs\"> </a><a name=\"hcstroke-circumstance-codes-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/230690007\">230690007</a></td><td>Cerebrovascular accident (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/184091000\">184091000</a></td><td>Patient in hospital (finding)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet stroke-circumstance-codes-vs</b></p><a name=\"stroke-circumstance-codes-vs\"> </a><a name=\"hcstroke-circumstance-codes-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-stroke-circumstance-codes-cs.html\"><code>http://testSK.org/CodeSystem/stroke-circumstance-codes-cs</code></a></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://testSK.org/ValueSet/stroke-circumstance-codes-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "StrokeCircumstanceCodesVS"] ; # 
   fhir:title [ fhir:v "Stroke Circumstance Codes ValueSet"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-09-09T09:28:44+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-12T08:57:32+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -30,14 +30,7 @@
   fhir:description [ fhir:v "Codes for findings related to the circumstances of stroke onset (In-hospital, Wake-up)."] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:concept ( [
-         fhir:code [ fhir:v "230690007" ] ;
-         fhir:display [ fhir:v "Cerebrovascular accident (disorder)" ]
-       ] [
-         fhir:code [ fhir:v "184091000" ] ;
-         fhir:display [ fhir:v "Patient in hospital (finding)" ]
-       ] )
+       fhir:system [ fhir:v "http://testSK.org/CodeSystem/stroke-circumstance-codes-cs"^^xsd:anyURI ]
      ] )
   ] . # 
 

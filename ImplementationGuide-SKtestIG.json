@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-09-09T09:28:44+00:00",
+  "date" : "2025-09-12T08:57:32+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -104,18 +104,6 @@
       },
       "name" : "Assessment Context ValueSet",
       "description" : "ValueSet for assessment context codes (e.g., timing of functional scores).",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/afib-flutter-status-cs"
-      },
-      "name" : "Atrial Fibrillation or Flutter Status Codes",
-      "description" : "Codes representing the status of Atrial Fibrillation or Flutter assessment.",
       "isExample" : false
     },
     {
@@ -800,6 +788,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/stroke-circumstance-codes-cs"
+      },
+      "name" : "Stroke Circumstance Codes CodeSystem",
+      "description" : "Codes for findings related to the circumstances of stroke onset (In-hospital, Wake-up).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1103,9 +1103,9 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/StrokeCircumstanceObservationExample"
+        "reference" : "Observation/StrokeCircumstanceObservationExampleWakeUp"
       },
-      "name" : "StrokeCircumstanceObservationExample",
+      "name" : "StrokeCircumstanceObservationExampleWakeUp",
       "isExample" : true,
       "profile" : ["http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile"]
     },
@@ -1262,6 +1262,18 @@
       },
       "name" : "Swallowing Screening Timing Category ValueSet",
       "description" : "Temporal categories relative to stroke onset for swallowing screening.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/thrombectomy-complication-cs"
+      },
+      "name" : "Thrombectomy Complication Code System",
+      "description" : "Codes specifying the specific complications of thrombectomy to record.",
       "isExample" : false
     },
     {

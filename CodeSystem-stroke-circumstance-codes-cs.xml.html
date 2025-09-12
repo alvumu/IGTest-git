@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Atrial Fibrillation or Flutter Status Codes - XML Representation -  v0.1.0</title>
+    <title>Stroke Circumstance Codes CodeSystem - XML Representation -  v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"3.66"}
-    h3,h4,h5,h6{--heading-prefix:"3.66"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.77"}
+    h3,h4,h5,h6{--heading-prefix:"3.77"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -100,7 +100,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Atrial Fibrillation or Flutter Status Codes</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Stroke Circumstance Codes CodeSystem</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -126,7 +126,7 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="CodeSystem-afib-flutter-status-cs.html">Narrative Content</a>
+    <a href="CodeSystem-stroke-circumstance-codes-cs.html">Narrative Content</a>
   </li>
 
 
@@ -140,14 +140,14 @@
 
   
     <li>
-      <a href="CodeSystem-afib-flutter-status-cs.json.html">JSON</a>
+      <a href="CodeSystem-stroke-circumstance-codes-cs.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="CodeSystem-afib-flutter-status-cs.ttl.html">TTL</a>
+      <a href="CodeSystem-stroke-circumstance-codes-cs.ttl.html">TTL</a>
     </li>
   
 
@@ -159,7 +159,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Atrial Fibrillation or Flutter Status Codes - XML Representation</h2>
+<h2 id="root">: Stroke Circumstance Codes CodeSystem - XML Representation</h2>
 
   <table class="colsi">
     <tr>
@@ -168,7 +168,7 @@
         
           Active
           
-            as of 2025-09-09
+            as of 2025-09-12
           
         
       </td>
@@ -177,7 +177,7 @@
   </table>
 
 
-<p><a href="CodeSystem-afib-flutter-status-cs.xml" no-download="true">Raw xml</a> | <a download="null" href="CodeSystem-afib-flutter-status-cs.xml">Download</a></p>
+<p><a href="CodeSystem-stroke-circumstance-codes-cs.xml" no-download="true">Raw xml</a> | <a download="null" href="CodeSystem-stroke-circumstance-codes-cs.xml">Download</a></p>
 
     <!-- insert intro if present -->
   
@@ -186,18 +186,17 @@
 
   <pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="xml"><code style="white-space: pre; text-wrap: nowrap;" class="language-xml">
 &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem">CodeSystem</a> xmlns="http://hl7.org/fhir"&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="afib-flutter-status-cs"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="stroke-circumstance-codes-cs"/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
-    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: CodeSystem afib-flutter-status-cs&lt;/b&gt;&lt;/p&gt;&lt;a name="afib-flutter-status-cs"&gt; &lt;/a&gt;&lt;a name="hcafib-flutter-status-cs"&gt; &lt;/a&gt;&lt;p&gt;This case-insensitive code system &lt;code&gt;http://testSK.org/CodeSystem/afib-flutter-status-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class="codes"&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;detected&lt;a name="afib-flutter-status-cs-detected"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Detected&lt;/td&gt;&lt;td&gt;Indicates that atrial fibrillation or flutter has been identified during screening or recent evaluation.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;known-af&lt;a name="afib-flutter-status-cs-known-af"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Known AF&lt;/td&gt;&lt;td&gt;Signifies that the patient has a pre-existing, documented diagnosis of atrial fibrillation.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;no-af&lt;a name="afib-flutter-status-cs-no-af"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;No AF&lt;/td&gt;&lt;td&gt;Denotes that the patient does not exhibit atrial fibrillation or atrial flutter.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;not-screened&lt;a name="afib-flutter-status-cs-not-screened"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Not Screened&lt;/td&gt;&lt;td&gt;Means that no screening for atrial fibrillation or flutter has been performed.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: CodeSystem stroke-circumstance-codes-cs&lt;/b&gt;&lt;/p&gt;&lt;a name="stroke-circumstance-codes-cs"&gt; &lt;/a&gt;&lt;a name="hcstroke-circumstance-codes-cs"&gt; &lt;/a&gt;&lt;p&gt;This  code system &lt;code&gt;http://testSK.org/CodeSystem/stroke-circumstance-codes-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class="codes"&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;in-hospital&lt;a name="stroke-circumstance-codes-cs-in-hospital"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;In-hospital Stroke&lt;/td&gt;&lt;td&gt;Indicates that the stroke occurred while the patient was already admitted to the hospital for another reason.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;wake-up&lt;a name="stroke-circumstance-codes-cs-wake-up"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Wake-up Stroke&lt;/td&gt;&lt;td&gt;Indicates that the stroke symptoms were first noticed upon waking from sleep, with an unknown time of onset.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.text">text</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.url">url</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://testSK.org/CodeSystem/afib-flutter-status-cs"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.url">url</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://testSK.org/CodeSystem/stroke-circumstance-codes-cs"/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="0.1.0"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="AfibFlutterStatusCS"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Atrial Fibrillation or Flutter Status Codes"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="StrokeCircumstanceCodesCS"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Stroke Circumstance Codes CodeSystem"/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="active"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.experimental">experimental</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>="true"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>="2025-09-09T09:28:44+00:00"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>="2025-09-12T08:57:32+00:00"/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.publisher">publisher</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="UMU"/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="UMU"/&gt;
@@ -207,33 +206,20 @@
     &lt;/<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.contact">contact</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.description">description</a>
-               <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>="Codes representing the status of Atrial Fibrillation or Flutter assessment."/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>="false"/&gt;
+               <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>="Codes for findings related to the circumstances of stroke onset (In-hospital, Wake-up)."/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="complete"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.count">count</a> <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">value</a>="4"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.count">count</a> <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">value</a>="2"/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="detected"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Detected"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="in-hospital"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="In-hospital Stroke"/&gt;
     &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>
-                <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Indicates that atrial fibrillation or flutter has been identified during screening or recent evaluation."/&gt;
+                <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Indicates that the stroke occurred while the patient was already admitted to the hospital for another reason."/&gt;
   &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="known-af"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Known AF"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="wake-up"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Wake-up Stroke"/&gt;
     &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>
-                <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Signifies that the patient has a pre-existing, documented diagnosis of atrial fibrillation."/&gt;
-  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="no-af"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="No AF"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>
-                <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Denotes that the patient does not exhibit atrial fibrillation or atrial flutter."/&gt;
-  &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="not-screened"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Not Screened"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>
-                <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Means that no screening for atrial fibrillation or flutter has been performed."/&gt;
+                <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Indicates that the stroke symptoms were first noticed upon waking from sleep, with an unknown time of onset."/&gt;
   &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
 &lt;/<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem">CodeSystem</a>&gt;</code></pre>
 
@@ -258,8 +244,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l545">​</a>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 9, 2025 09:29+0000">2025-09-09</span>
+        <p><a name="l485">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Sep 12, 2025 08:57+0000">2025-09-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

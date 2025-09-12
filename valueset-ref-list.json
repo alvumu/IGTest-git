@@ -12,10 +12,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.109"],
       "uses" : {
       },
+      "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)",
       "StructureDefinition-stroke-thrombolysis-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)",
       "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
-      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)"
+      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)"
     },
     {
       "url" : "http://testSK.org/ValueSet/admission-source-vs",
@@ -33,7 +33,7 @@
       "name" : "AfibFlutterStatusVS",
       "title" : "Atrial Fibrillation or Flutter Status ValueSet",
       "description" : "ValueSet for the status of Atrial Fibrillation or Flutter assessment.",
-      "systems" : ["http://testSK.org/CodeSystem/afib-flutter-status-cs"]
+      "systems" : ["http://snomed.info/sct"]
     },
     {
       "url" : "http://testSK.org/ValueSet/assessment-context-vs",
@@ -69,10 +69,7 @@
       "name" : "CarotidImagingModalityVS",
       "title" : "Carotid Arteries Imaging Modality ValueSet",
       "description" : "Defines codes for different types of carotid artery imaging.",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)"
+      "systems" : ["http://snomed.info/sct"]
     },
     {
       "url" : "http://testSK.org/ValueSet/discharge-dept-vs",
@@ -248,7 +245,7 @@
       "name" : "StrokeCircumstanceCodesVS",
       "title" : "Stroke Circumstance Codes ValueSet",
       "description" : "Codes for findings related to the circumstances of stroke onset (In-hospital, Wake-up).",
-      "systems" : ["http://snomed.info/sct"],
+      "systems" : ["http://testSK.org/CodeSystem/stroke-circumstance-codes-cs"],
       "uses" : {
       },
       "StructureDefinition-stroke-circumstance-observation-profile.html" : "Stroke Circumstance Observation Profile (R5)"
@@ -322,10 +319,10 @@
       ],
       "uses" : {
       },
+      "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)",
       "StructureDefinition-stroke-thrombolysis-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)",
       "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
-      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)"
+      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)"
     },
     {
       "url" : "http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs",

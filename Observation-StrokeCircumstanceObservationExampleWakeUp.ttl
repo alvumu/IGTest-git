@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://testSK.org/Observation/StrokeCircumstanceObservationExampleWakeUp> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "StrokeCircumstanceObservationExampleWakeUp"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile"^^xsd:anyURI ;
+       fhir:link <http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation StrokeCircumstanceObservationExampleWakeUp</b></p><a name=\"StrokeCircumstanceObservationExampleWakeUp\"> </a><a name=\"hcStrokeCircumstanceObservationExampleWakeUp\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-stroke-circumstance-observation-profile.html\">Stroke Circumstance Observation Profile (R5)</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://testSK.org/CodeSystem/stroke-circumstance-codes-cs wake-up}\">Wake-up Stroke</span></p><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>focus</b>: <code>ConditionExample</code></p><p><b>encounter</b>: <a href=\"Encounter-StrokeEncounterExample.html\">Encounter: extension = true,ICU / Stroke Unit,false,Neurology department (environment); status = completed; type = Inpatient Encounter; actualPeriod = 2025-03-01 08:00:00+0000 --&gt; 2025-03-10 12:00:00+0000</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://testSK.org/CodeSystem/stroke-circumstance-codes-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "wake-up" ] ;
+       fhir:display [ fhir:v "Wake-up Stroke" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://testSK.org/Patient/example-patient> ;
+     fhir:reference [ fhir:v "Patient/example-patient" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:reference [ fhir:v "ConditionExample" ]
+  ] ) ; # 
+  fhir:encounter [
+     fhir:link <http://testSK.org/Encounter/StrokeEncounterExample> ;
+     fhir:reference [ fhir:v "Encounter/StrokeEncounterExample" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

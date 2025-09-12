@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-09-09T09:28:44+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-12T08:57:32+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -145,21 +145,6 @@
        ] ;
        fhir:name [ fhir:v "Assessment Context ValueSet" ] ;
        fhir:description [ fhir:v "ValueSet for assessment context codes (e.g., timing of functional scores)." ] ;
-       fhir:isExample [ fhir:v false ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "CodeSystem"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://testSK.org/CodeSystem/afib-flutter-status-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/afib-flutter-status-cs" ]
-       ] ;
-       fhir:name [ fhir:v "Atrial Fibrillation or Flutter Status Codes" ] ;
-       fhir:description [ fhir:v "Codes representing the status of Atrial Fibrillation or Flutter assessment." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -1037,6 +1022,21 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/stroke-circumstance-codes-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/stroke-circumstance-codes-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Circumstance Codes CodeSystem" ] ;
+       fhir:description [ fhir:v "Codes for findings related to the circumstances of stroke onset (In-hospital, Wake-up)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -1422,10 +1422,10 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://testSK.org/Observation/StrokeCircumstanceObservationExample> ;
-         fhir:reference [ fhir:v "Observation/StrokeCircumstanceObservationExample" ]
+         fhir:link <http://testSK.org/Observation/StrokeCircumstanceObservationExampleWakeUp> ;
+         fhir:reference [ fhir:v "Observation/StrokeCircumstanceObservationExampleWakeUp" ]
        ] ;
-       fhir:name [ fhir:v "StrokeCircumstanceObservationExample" ] ;
+       fhir:name [ fhir:v "StrokeCircumstanceObservationExampleWakeUp" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile"^^xsd:anyURI ;
@@ -1645,6 +1645,21 @@
        ] ;
        fhir:name [ fhir:v "Swallowing Screening Timing Category ValueSet" ] ;
        fhir:description [ fhir:v "Temporal categories relative to stroke onset for swallowing screening." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://testSK.org/CodeSystem/thrombectomy-complication-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/thrombectomy-complication-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Thrombectomy Complication Code System" ] ;
+       fhir:description [ fhir:v "Codes specifying the specific complications of thrombectomy to record." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [

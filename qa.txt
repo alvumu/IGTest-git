@@ -1,11 +1,10 @@
 IGTest : Validation Results
 =========================================
 
-err = 30, warn = 135, info = 37
-IG Publisher Version: 2.0.17
-Generated Tue Sep 09 09:30:35 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
- Build Errors : 692 / 29 / 0
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-afib-flutter-status-cs : 0 / 0 / 1
+err = 26, warn = 139, info = 37
+IG Publisher Version: 2.0.17 Out of date - current version is null
+Generated Fri Sep 12 08:59:11 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
+ Build Errors : 698 / 29 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-brain-imaging-type-cs : 0 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs : 2 / 2 / 2
@@ -18,12 +17,14 @@ Generated Tue Sep 09 09:30:35 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (c
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-score-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-procedure-timing-context-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-arrival-mode-cs : 0 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-circumstance-codes-cs : 0 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-discharge-destination-cs : 0 / 1 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-etiology-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-proc-not-done-reason-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-procedures-cs : 0 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-screen-time-cs : 0 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-timing-metric-codes-cs : 0 / 3 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-thrombectomy-complication-cs : 0 / 2 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-timing-metric-codes-cs : 0 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFib : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFlutter : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionExample : 0 / 0 / 1
@@ -34,11 +35,11 @@ Generated Tue Sep 09 09:30:35 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (c
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationStatement-PriorMedicationStatementExample : 1 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-AgeAtOnsetObservationExample : 0 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-FunctionalScoreObservationExample : 0 / 2 / 3
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-SpecificFindingObservationExample : 0 / 2 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-SpecificFindingObservationExample : 0 / 3 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-SpecificFindingObservationExampleMTICI : 2 / 2 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-StrokeCircumstanceObservationExample : 0 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-StrokeCircumstanceObservationExampleWakeUp : 1 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-TimingMetricObservationExample : 0 / 2 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-VitalSignObservationExample : 5 / 2 / 3
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-VitalSignObservationExample : 0 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Organization-ExampleOrganization : 1 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Patient-PatientAgeGenderSnomedExample : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Patient-example-patient : 0 / 0 / 1
@@ -129,7 +130,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/SpecificFindingObservationExampleMTICI.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/StrokeBrainImagingExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/StrokeCarotidImagingExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/StrokeCircumstanceObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/StrokeCircumstanceObservationExampleWakeUp.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/StrokeDiagnosisConditionAFib.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/StrokeDiagnosisConditionAFlutter.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/StrokeDiagnosisConditionExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -139,12 +140,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/StrokeThrombolysisExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/TimingMetricObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/VitalSignObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: CodeSystem-afib-flutter-status-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: CodeSystem-afib-flutter-status-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: CodeSystem-afib-flutter-status-cs.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: CodeSystem-afib-flutter-status-cs.json.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: CodeSystem-afib-flutter-status-cs.ttl.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: CodeSystem-afib-flutter-status-cs.xml.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-assessment-context-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-assessment-context-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-assessment-context-cs.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -217,6 +212,12 @@ ERROR: CodeSystem-stroke-arrival-mode-cs.html#/html/body/div/div/div/p/a at Line
 ERROR: CodeSystem-stroke-arrival-mode-cs.json.html#/html/body/div/div/div/p/a at Line 275, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-stroke-arrival-mode-cs.ttl.html#/html/body/div/div/div/p/a at Line 274, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-stroke-arrival-mode-cs.xml.html#/html/body/div/div/div/p/a at Line 275, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-circumstance-codes-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-circumstance-codes-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-circumstance-codes-cs.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-circumstance-codes-cs.json.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-circumstance-codes-cs.ttl.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-stroke-circumstance-codes-cs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-stroke-discharge-destination-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-stroke-discharge-destination-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-stroke-discharge-destination-cs.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -247,6 +248,12 @@ ERROR: CodeSystem-swallow-screen-time-cs.html#/html/body/div/div/div/p/a at Line
 ERROR: CodeSystem-swallow-screen-time-cs.json.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-swallow-screen-time-cs.ttl.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-swallow-screen-time-cs.xml.html#/html/body/div/div/div/p/a at Line 245, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-thrombectomy-complication-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-thrombectomy-complication-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-thrombectomy-complication-cs.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-thrombectomy-complication-cs.json.html#/html/body/div/div/div/p/a at Line 248, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-thrombectomy-complication-cs.ttl.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: CodeSystem-thrombectomy-complication-cs.xml.html#/html/body/div/div/div/p/a at Line 244, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-timing-metric-codes-cs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-timing-metric-codes-cs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: CodeSystem-timing-metric-codes-cs.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -308,11 +315,11 @@ ERROR: Observation-SpecificFindingObservationExampleMTICI.html#/html/body/div/di
 ERROR: Observation-SpecificFindingObservationExampleMTICI.json.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Observation-SpecificFindingObservationExampleMTICI.ttl.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Observation-SpecificFindingObservationExampleMTICI.xml.html#/html/body/div/div/div/p/a at Line 231, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: Observation-StrokeCircumstanceObservationExample.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: Observation-StrokeCircumstanceObservationExample.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: Observation-StrokeCircumstanceObservationExample.json.html#/html/body/div/div/div/p/a at Line 227, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: Observation-StrokeCircumstanceObservationExample.ttl.html#/html/body/div/div/div/p/a at Line 240, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: Observation-StrokeCircumstanceObservationExample.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Observation-StrokeCircumstanceObservationExampleWakeUp.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Observation-StrokeCircumstanceObservationExampleWakeUp.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Observation-StrokeCircumstanceObservationExampleWakeUp.json.html#/html/body/div/div/div/p/a at Line 231, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Observation-StrokeCircumstanceObservationExampleWakeUp.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Observation-StrokeCircumstanceObservationExampleWakeUp.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Observation-TimingMetricObservationExample.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Observation-TimingMetricObservationExample.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Observation-TimingMetricObservationExample.json.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -320,9 +327,9 @@ ERROR: Observation-TimingMetricObservationExample.ttl.html#/html/body/div/div/di
 ERROR: Observation-TimingMetricObservationExample.xml.html#/html/body/div/div/div/p/a at Line 236, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Observation-VitalSignObservationExample.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Observation-VitalSignObservationExample.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: Observation-VitalSignObservationExample.json.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: Observation-VitalSignObservationExample.ttl.html#/html/body/div/div/div/p/a at Line 248, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: Observation-VitalSignObservationExample.xml.html#/html/body/div/div/div/p/a at Line 236, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Observation-VitalSignObservationExample.json.html#/html/body/div/div/div/p/a at Line 272, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Observation-VitalSignObservationExample.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: Observation-VitalSignObservationExample.xml.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Organization-ExampleOrganization.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Organization-ExampleOrganization.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: Organization-ExampleOrganization.json.html#/html/body/div/div/div/p/a at Line 205, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -540,24 +547,24 @@ ERROR: StructureDefinition-stroke-brain-imaging-procedure-profile.profile.histor
 ERROR: StructureDefinition-stroke-brain-imaging-procedure-profile.profile.json.html#/html/body/div/div/div/p/a at Line 2769, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-brain-imaging-procedure-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2153, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-brain-imaging-procedure-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2561, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile-definitions.html#/html/body/div/div/div/p/a at Line 524, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile-definitions.html#/html/body/div/div/div/p/a at Line 526, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile-mappings.html#/html/body/div/div/div/p/a at Line 707, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile-testing.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile.html#/html/body/div/div/div/p/a at Line 1588, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile.html#/html/body/div/div/div/p/a at Line 1846, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile.profile.json.html#/html/body/div/div/div/p/a at Line 2764, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2150, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2556, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-circumstance-observation-profile-definitions.html#/html/body/div/div/div/p/a at Line 645, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile.profile.json.html#/html/body/div/div/div/p/a at Line 2785, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2166, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-carotid-imaging-procedure-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2573, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-circumstance-observation-profile-definitions.html#/html/body/div/div/div/p/a at Line 643, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-circumstance-observation-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-circumstance-observation-profile-mappings.html#/html/body/div/div/div/p/a at Line 1053, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-circumstance-observation-profile-testing.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-circumstance-observation-profile.html#/html/body/div/div/div/p/a at Line 1860, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-circumstance-observation-profile.html#/html/body/div/div/div/p/a at Line 2136, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-circumstance-observation-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-circumstance-observation-profile.profile.json.html#/html/body/div/div/div/p/a at Line 3410, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-circumstance-observation-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2546, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-stroke-circumstance-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3176, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-circumstance-observation-profile.profile.json.html#/html/body/div/div/div/p/a at Line 3438, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-circumstance-observation-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2555, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-stroke-circumstance-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3205, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-diagnosis-condition-profile-definitions.html#/html/body/div/div/div/p/a at Line 524, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-diagnosis-condition-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-stroke-diagnosis-condition-profile-mappings.html#/html/body/div/div/div/p/a at Line 708, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -620,15 +627,15 @@ ERROR: StructureDefinition-timing-metric-observation-profile.profile.history.htm
 ERROR: StructureDefinition-timing-metric-observation-profile.profile.json.html#/html/body/div/div/div/p/a at Line 3773, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-timing-metric-observation-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2811, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-timing-metric-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3499, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-vital-sign-observation-profile-definitions.html#/html/body/div/div/div/p/a at Line 701, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-vital-sign-observation-profile-definitions.html#/html/body/div/div/div/p/a at Line 738, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-vital-sign-observation-profile-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-vital-sign-observation-profile-mappings.html#/html/body/div/div/div/p/a at Line 1144, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-vital-sign-observation-profile-testing.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-vital-sign-observation-profile.html#/html/body/div/div/div/p/a at Line 2272, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-vital-sign-observation-profile.html#/html/body/div/div/div/p/a at Line 2728, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: StructureDefinition-vital-sign-observation-profile.profile.history.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-vital-sign-observation-profile.profile.json.html#/html/body/div/div/div/p/a at Line 3762, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-vital-sign-observation-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2807, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: StructureDefinition-vital-sign-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3493, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-vital-sign-observation-profile.profile.json.html#/html/body/div/div/div/p/a at Line 3790, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-vital-sign-observation-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2828, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: StructureDefinition-vital-sign-observation-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 3521, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-admission-source-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-admission-source-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-admission-source-vs.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -638,9 +645,9 @@ ERROR: ValueSet-admission-source-vs.xml.html#/html/body/div/div/div/p/a at Line 
 ERROR: ValueSet-afib-flutter-status-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-afib-flutter-status-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-afib-flutter-status-vs.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-afib-flutter-status-vs.json.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-afib-flutter-status-vs.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-afib-flutter-status-vs.xml.html#/html/body/div/div/div/p/a at Line 241, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-afib-flutter-status-vs.json.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-afib-flutter-status-vs.ttl.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-afib-flutter-status-vs.xml.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-assessment-context-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-assessment-context-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-assessment-context-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -655,7 +662,7 @@ ERROR: ValueSet-brain-imaging-modality-vs.ttl.html#/html/body/div/div/div/p/a at
 ERROR: ValueSet-brain-imaging-modality-vs.xml.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-carotid-imaging-modality-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-carotid-imaging-modality-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-carotid-imaging-modality-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-carotid-imaging-modality-vs.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-carotid-imaging-modality-vs.json.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-carotid-imaging-modality-vs.ttl.html#/html/body/div/div/div/p/a at Line 258, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-carotid-imaging-modality-vs.xml.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -746,9 +753,9 @@ ERROR: ValueSet-stroke-arrival-mode-vs.xml.html#/html/body/div/div/div/p/a at Li
 ERROR: ValueSet-stroke-circumstance-codes-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-circumstance-codes-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-circumstance-codes-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-circumstance-codes-vs.json.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-circumstance-codes-vs.ttl.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: ValueSet-stroke-circumstance-codes-vs.xml.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-circumstance-codes-vs.json.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-circumstance-codes-vs.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: ValueSet-stroke-circumstance-codes-vs.xml.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-diagnosis-vs-testing.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-diagnosis-vs.change.history.html#/html/body/div/div/div/p/a at Line 189, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-stroke-diagnosis-vs.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
@@ -827,14 +834,13 @@ ERROR: ValueSet-vs-gender-snomed.html#/html/body/div/div/div/p/a at Line 289, co
 ERROR: ValueSet-vs-gender-snomed.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-vs-gender-snomed.ttl.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: ValueSet-vs-gender-snomed.xml.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 1084, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 1093, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: general-principles.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: index.html#/html/body/div/div/div/p/a at Line 335, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: toc.html#/html/body/div/div/div/p/a at Line 145, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-== fsh-generated/resources/CodeSystem-afib-flutter-status-cs.json ==
 == fsh-generated/resources/CodeSystem-assessment-context-cs.json ==
 == fsh-generated/resources/CodeSystem-brain-imaging-type-cs.json ==
 INFORMATION: CodeSystem/brain-imaging-type-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
@@ -865,6 +871,10 @@ WARNING: CodeSystem/mtici-code-cs: CodeSystem: Constraint failed: cnl-0: 'Name s
 == fsh-generated/resources/CodeSystem-mtici-score-cs.json ==
 == fsh-generated/resources/CodeSystem-procedure-timing-context-cs.json ==
 == fsh-generated/resources/CodeSystem-stroke-arrival-mode-cs.json ==
+== fsh-generated/resources/CodeSystem-stroke-circumstance-codes-cs.json ==
+INFORMATION: CodeSystem/stroke-circumstance-codes-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/stroke-circumstance-codes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/stroke-circumstance-codes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-stroke-discharge-destination-cs.json ==
 INFORMATION: CodeSystem/stroke-discharge-destination-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/stroke-discharge-destination-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
@@ -875,8 +885,11 @@ INFORMATION: CodeSystem/swallow-procedures-cs: CodeSystem: CodeSystems SHOULD ha
 WARNING: CodeSystem/swallow-procedures-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/swallow-procedures-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-swallow-screen-time-cs.json ==
+== fsh-generated/resources/CodeSystem-thrombectomy-complication-cs.json ==
+INFORMATION: CodeSystem/thrombectomy-complication-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/thrombectomy-complication-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/thrombectomy-complication-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-timing-metric-codes-cs.json ==
-WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem.concept[0].definition: value should not start or finish with whitespace ' Time (in minutes) from hospital arrival to the groin puncture for mechanical thrombectomy'
 INFORMATION: CodeSystem/timing-metric-codes-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
@@ -923,7 +936,7 @@ INFORMATION: Observation/FunctionalScoreObservationExample: Observation.value.of
 WARNING: Observation/FunctionalScoreObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/FunctionalScoreObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-SpecificFindingObservationExample.json ==
-INFORMATION: Observation/SpecificFindingObservationExample: Observation.value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/afib-flutter-status-cs|0.1.0
+WARNING: Observation/SpecificFindingObservationExample: Observation.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://testSK.org/CodeSystem/afib-flutter-status-cs' could not be found, so the code cannot be validated
 WARNING: Observation/SpecificFindingObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/SpecificFindingObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-SpecificFindingObservationExampleMTICI.json ==
@@ -932,19 +945,14 @@ ERROR: Observation/SpecificFindingObservationExampleMTICI: Observation.code: Non
 INFORMATION: Observation/SpecificFindingObservationExampleMTICI: Observation.value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/mtici-score-cs|0.1.0
 WARNING: Observation/SpecificFindingObservationExampleMTICI: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/SpecificFindingObservationExampleMTICI: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-== fsh-generated/resources/Observation-StrokeCircumstanceObservationExample.json ==
-WARNING: Observation/StrokeCircumstanceObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Observation/StrokeCircumstanceObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-StrokeCircumstanceObservationExampleWakeUp.json ==
+ERROR: Observation/StrokeCircumstanceObservationExampleWakeUp: Observation.focus[0]: Unable to resolve resource with reference 'ConditionExample'
+WARNING: Observation/StrokeCircumstanceObservationExampleWakeUp: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/StrokeCircumstanceObservationExampleWakeUp: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-TimingMetricObservationExample.json ==
 WARNING: Observation/TimingMetricObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/TimingMetricObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-VitalSignObservationExample.json ==
-INFORMATION: Observation/VitalSignObservationExample: Observation.value.ofType(Quantity): This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|5.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/VitalSignObservationExample: Observation: Observation.effective[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|5.0.0)
-ERROR: Observation/VitalSignObservationExample: Observation: Observation.component: minimum required = 2, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|5.0.0)
-ERROR: Observation/VitalSignObservationExample: Observation: Slice 'Observation.component:SystolicBP': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/bp|5.0.0). Note that other slices are allowed in addition to this required slice
-ERROR: Observation/VitalSignObservationExample: Observation: Slice 'Observation.component:DiastolicBP': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/bp|5.0.0). Note that other slices are allowed in addition to this required slice
-ERROR: Observation/VitalSignObservationExample: Observation.code: BPCode: magic LOINC code 85354-9 required, but not found (from http://hl7.org/fhir/StructureDefinition/bp|5.0.0). Note that other Observation codes are allowed in addition to this required magic code
 WARNING: Observation/VitalSignObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/VitalSignObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Organization-ExampleOrganization.json ==
@@ -1045,10 +1053,10 @@ WARNING: StructureDefinition/stroke-thrombolysis-procedure-profile: StructureDef
 WARNING: StructureDefinition/timing-metric-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/timing-metric-observation-profile: StructureDefinition.snapshot.element[52].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-vital-sign-observation-profile.json ==
-WARNING: StructureDefinition/vital-sign-observation-profile: StructureDefinition.differential.element[2].binding: The definition for the element 'Observation.code' binds to the value set 'http://testSK.org/ValueSet/vital-sign-codes-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/vital-sign-observation-profile: StructureDefinition.differential.element[4].binding: The definition for the element 'Observation.component.code' binds to the value set 'http://testSK.org/ValueSet/vital-sign-codes-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/vital-sign-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/vital-sign-observation-profile: StructureDefinition.snapshot.element[22].binding: The definition for the element 'Observation.code' binds to the value set 'http://testSK.org/ValueSet/vital-sign-codes-vs' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/vital-sign-observation-profile: StructureDefinition.snapshot.element[52].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/vital-sign-observation-profile: StructureDefinition.snapshot.element[45].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/vital-sign-observation-profile: StructureDefinition.snapshot.element[55].binding: The definition for the element 'Observation.component.code' binds to the value set 'http://testSK.org/ValueSet/vital-sign-codes-vs' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/ValueSet-admission-source-vs.json ==
 == fsh-generated/resources/ValueSet-afib-flutter-status-vs.json ==
 WARNING: ValueSet/afib-flutter-status-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

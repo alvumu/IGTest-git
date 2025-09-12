@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for IGTest</h1>
- <p>Generated Tue Sep 09 09:30:35 UTC 2025, FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = <a href="http://testSK.org">http://testSK.org</a> (<a href="http://testSK.org/history.html">history</a>))</p>
+ <p>Generated Fri Sep 12 08:59:11 UTC 2025, FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = <a href="http://testSK.org">http://testSK.org</a> (<a href="http://testSK.org/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -92,6 +92,13 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r5</td>
     <td>http://tx.fhir.org/r5</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r5</td>
+    <td>http://tx.fhir.org/r5</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
     <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
@@ -197,7 +204,14 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r5</td>
     <td>http://tx.fhir.org/r5</td>
-    <td></td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r5</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
     <td>http://snomed.info/sct</td>
     <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
   </tr>
@@ -559,6 +573,20 @@
     <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
   </tr>
   <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://testSK.org/CodeSystem/afib-flutter-status-cs</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>https://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://testSK.org/CodeSystem/afib-flutter-status-cs</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
     <td>Found candidate server http://tx.fhir.org/r5</td>
     <td>http://tx.fhir.org/r5</td>
     <td>null</td>
@@ -576,22 +604,22 @@
     <td>Found candidate server http://tx.fhir.org/r5</td>
     <td>http://tx.fhir.org/r5</td>
     <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r5</td>
-    <td>http://tx.fhir.org/r5</td>
-    <td>http://testSK.org/ValueSet/stroke-circumstance-codes-vs--0|0.1.0</td>
-    <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r5</td>
     <td>http://tx.fhir.org/r5</td>
     <td>null</td>
-    <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r5</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://testSK.org/ValueSet/vital-sign-codes-vs--0|0.1.0</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r5</td>
@@ -632,20 +660,6 @@
     <td>Found candidate server http://tx.fhir.org/r5</td>
     <td>http://tx.fhir.org/r5</td>
     <td>http://testSK.org/ValueSet/brain-imaging-modality-vs--0|0.1.0</td>
-    <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r5</td>
-    <td>http://tx.fhir.org/r5</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r5</td>
-    <td>http://tx.fhir.org/r5</td>
-    <td>http://testSK.org/ValueSet/carotid-imaging-modality-vs--0|0.1.0</td>
     <td>http://snomed.info/sct</td>
     <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
   </tr>
@@ -848,14 +862,7 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r5</td>
     <td>http://tx.fhir.org/r5</td>
-    <td></td>
-    <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r5</td>
-    <td>http://tx.fhir.org/r5</td>
-    <td></td>
+    <td>null</td>
     <td>http://snomed.info/sct</td>
     <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
   </tr>
@@ -895,8 +902,14 @@
   </tr>
   <tr>
     <td>http://snomed.info/sct</td>
-    <td>42</td>
-    <td>70</td>
+    <td>40</td>
+    <td>71</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>http://testSK.org/CodeSystem/afib-flutter-status-cs</td>
+    <td>0</td>
+    <td>1</td>
     <td></td>
   </tr>
   <tr>
