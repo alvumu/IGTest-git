@@ -23,20 +23,20 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, nor can they have their own independent transaction scope. This is allowed to be a Parameters resource if and only if it is referenced by a resource that provides context/meaning.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags in their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"dom-2
 dom-4dom-3dom-5","","N/A"
-"Encounter.extension","Encounter.extension","","","",4,*,"","","","Extension {[]} {[]}
+"Encounter.extension","Encounter.extension","","","",0,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Encounter.extension:isFirstHospital","Encounter.extension","isFirstHospital","","",1,1,"Y","","","Extension {[CanonicalType[http://testSK.org/StructureDefinition/first-hospital-ext]]} {[]}
+"Encounter.extension:isFirstHospital","Encounter.extension","isFirstHospital","","",0,1,"Y","","","Extension {[CanonicalType[http://testSK.org/StructureDefinition/first-hospital-ext]]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Encounter.extension:initialCareIntensity","Encounter.extension","initialCareIntensity","","",1,1,"Y","","","Extension {[CanonicalType[http://testSK.org/StructureDefinition/initial-care-intensity-ext]]} {[]}
+"Encounter.extension:initialCareIntensity","Encounter.extension","initialCareIntensity","","",0,1,"Y","","","Extension {[CanonicalType[http://testSK.org/StructureDefinition/initial-care-intensity-ext]]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Encounter.extension:requiredPostAcuteCare","Encounter.extension","requiredPostAcuteCare","","",1,1,"Y","","","Extension {[CanonicalType[http://testSK.org/StructureDefinition/required-post-acute-care-ext]]} {[]}
+"Encounter.extension:requiredPostAcuteCare","Encounter.extension","requiredPostAcuteCare","","",0,1,"Y","","","Extension {[CanonicalType[http://testSK.org/StructureDefinition/required-post-acute-care-ext]]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Encounter.extension:dischargeDepartmentService","Encounter.extension","dischargeDepartmentService","","",1,1,"Y","","","Extension {[CanonicalType[http://testSK.org/StructureDefinition/discharge-department-service-ext]]} {[]}
+"Encounter.extension:dischargeDepartmentService","Encounter.extension","dischargeDepartmentService","","",0,1,"Y","","","Extension {[CanonicalType[http://testSK.org/StructureDefinition/discharge-department-service-ext]]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Encounter.modifierExtension","Encounter.modifierExtension","","extensions

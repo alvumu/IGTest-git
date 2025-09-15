@@ -12,13 +12,9 @@
   <sch:pattern>
     <sch:title>f:Encounter</sch:title>
     <sch:rule context="f:Encounter">
-      <sch:assert test="count(f:extension[@url = 'http://testSK.org/StructureDefinition/first-hospital-ext']) &gt;= 1">extension with URL = 'http://testSK.org/StructureDefinition/first-hospital-ext': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://testSK.org/StructureDefinition/first-hospital-ext']) &lt;= 1">extension with URL = 'http://testSK.org/StructureDefinition/first-hospital-ext': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://testSK.org/StructureDefinition/initial-care-intensity-ext']) &gt;= 1">extension with URL = 'http://testSK.org/StructureDefinition/initial-care-intensity-ext': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://testSK.org/StructureDefinition/initial-care-intensity-ext']) &lt;= 1">extension with URL = 'http://testSK.org/StructureDefinition/initial-care-intensity-ext': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://testSK.org/StructureDefinition/required-post-acute-care-ext']) &gt;= 1">extension with URL = 'http://testSK.org/StructureDefinition/required-post-acute-care-ext': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://testSK.org/StructureDefinition/required-post-acute-care-ext']) &lt;= 1">extension with URL = 'http://testSK.org/StructureDefinition/required-post-acute-care-ext': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://testSK.org/StructureDefinition/discharge-department-service-ext']) &gt;= 1">extension with URL = 'http://testSK.org/StructureDefinition/discharge-department-service-ext': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://testSK.org/StructureDefinition/discharge-department-service-ext']) &lt;= 1">extension with URL = 'http://testSK.org/StructureDefinition/discharge-department-service-ext': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>
       <sch:assert test="count(f:actualPeriod) &gt;= 1">actualPeriod: minimum cardinality of 'actualPeriod' is 1</sch:assert>
