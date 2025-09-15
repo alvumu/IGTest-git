@@ -18,6 +18,12 @@ Alias: AdmissionSourceVS_URL = http://testSK.org/ValueSet/admission-source-vs
 Alias: HemorrhagicStrokeBleedingReasonVS_URL = http://testSK.org/ValueSet/hemorrhagic-stroke-bleeding-reason-vs
 Alias: StrokeEtiologyVS_URL = http://testSK.org/ValueSet/stroke-etiology-vs
 
+Alias: HemorrhagicStrokeBleedingReasonEXT_URL = http://testSK.org/StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext
+Alias: StrokeStrokeEtiologyEXT_URL = http://testSK.org/StructureDefinition/ischemic-stroke-etiology-ext
+Alias: OnsetDateEXT_URL = http://testSK.org/StructureDefinition/onset-date-ext
+Alias: OnsetTimeEXT_URL = http://testSK.org/StructureDefinition/onset-time-ext
+
+
 // ValueSet for Stroke Diagnosis (with Displays)
 ValueSet: StrokeDiagnosisVS
 Id: stroke-diagnosis-vs
@@ -164,6 +170,7 @@ Description: "Specifies the determined etiology of an stroke."
 // (No changes from previous version)
 Extension: HemorrhagicStrokeBleedingReasonExt
 Id: hemorrhagic-stroke-bleeding-reason-ext
+* ^url = HemorrhagicStrokeBleedingReasonEXT_URL
 * ^context.type = #element
 * ^context.expression = "Condition"
 * value[x] only CodeableConcept
@@ -173,6 +180,7 @@ Extension: StrokeStrokeEtiologyExt
 Id: ischemic-stroke-etiology-ext
 * ^context.type = #element
 * ^context.expression = "Condition"
+* ^url = StrokeStrokeEtiologyEXT_URL
 * value[x] only CodeableConcept
 * valueCodeableConcept from StrokeEtiologyVS (required)
 
@@ -180,6 +188,7 @@ Extension: OnsetDateExt
 Id: onset-date-ext
 * ^context.type = #element
 * ^context.expression = "Condition"
+* ^url = OnsetDateEXT_URL
 * value[x] only date
 
 
@@ -187,6 +196,7 @@ Extension: OnsetTimeExt
 Id: onset-time-ext
 * ^context.type = #element
 * ^context.expression = "Condition"
+* ^url = OnsetTimeEXT_URL
 * value[x] only time
 
 // ------------------ Condition Profiles -------------------------
