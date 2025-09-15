@@ -167,10 +167,10 @@ Parent: Encounter
 * ^status = #active
 
 // Extensions
-* extension contains FirstHospitalExtension named isFirstHospital 1..1 MS and
-    InitialCareIntensityExtension named initialCareIntensity 1..1 MS and
-    RequiredPostAcuteCareExtension named requiredPostAcuteCare 1..1 MS and
-    DischargeDepartmentServiceExtension named dischargeDepartmentService 1..1 MS
+* extension contains FirstHospitalExtension named isFirstHospital 0..1 MS and
+    InitialCareIntensityExtension named initialCareIntensity 0..1 MS and
+    RequiredPostAcuteCareExtension named requiredPostAcuteCare 0..1 MS and
+    DischargeDepartmentServiceExtension named dischargeDepartmentService 0..1 MS
 
 // Standard Encounter Elements
 * status 1..1 MS
