@@ -149,7 +149,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Encounter.plannedEndDate","Encounter.plannedEndDate","","","",0,1,"","","","dateTime {[]} {[]}
 ","The planned end date/time (or discharge date) of the encounter","The planned end date/time (or discharge date) of the encounter.","","","","","","","","","",,,,,"",,,,"Encounter.plannedEndDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PV2-9"
-"Encounter.length","Encounter.length","","","",0,1,"Y","","","Duration {[]} {[]}
+"Encounter.length","Encounter.length","","","",0,1,"","","","Duration {[]} {[]}
 ","Actual quantity of time the encounter lasted (less time absent)","Actual quantity of time the encounter lasted. This excludes the time during leaves of absence.When missing it is the time in between the start and end values.","If the precision on these values is low (e.g. to the day only) then this may be considered was an all day (or multi-day) encounter, unless the duration is included, where that amount of time occurred sometime during the interval.May differ from the time in `Encounter.period` due to leave of absence(s).","","","","","","","","",,,,,"",,,,"Encounter.length",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.occurrence[x]",".lengthOfStayQuantity","(PV1-45 less PV1-44) iff ( (PV1-44 not empty) and (PV1-45 not empty) ); units in minutes or PV2-11 (which is actual length in days)"
 "Encounter.reason","Encounter.reason","","","",0,*,"","","Y","BackboneElement {[]} {[]}
