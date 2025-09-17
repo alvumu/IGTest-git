@@ -337,7 +337,7 @@ Parent: BaseStrokeObservation
 * code 1..1 MS
 * code from FunctionalScoreCodesVS_URL (required)
 * value[x] 1..1 MS
-* valueQuantity 0..1 MS
+* valueInteger 0..1 MS
 * valueCodeableConcept 0..1 MS
 
 * valueCodeableConcept from MRsScoreVS_URL
@@ -415,10 +415,8 @@ Parent: BaseStrokeObservation
 * code = SCT#445518008 "Age at onset of clinical finding (observable entity)"
 * code 1..1 MS
 * value[x] 1..1 MS
-* value[x] only Quantity
-* value[x].unit = "years"
-* value[x].system = UCUM
-* value[x].code = #a
+* value[x] only Integer
+
 
 // ------------------------- Invariants ---------------------------------
 // Invariant for FunctionalScoreObservationProfile slicing

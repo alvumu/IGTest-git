@@ -186,8 +186,7 @@ Parent: Encounter
 * subject 1..1 
 * subject MS // Reference to the patient
 * subject only Reference(Patient) // Reference to the patient resource
-// Length of Stay
-* length MS
+
 
 // Hospitalization Details
 * admission 1..1 MS
@@ -209,13 +208,11 @@ InstanceOf: StrokeEncounterProfile
 
 * actualPeriod.start = 2025-03-01T08:00:00Z
 * actualPeriod.end   = 2025-03-10T12:00:00Z
-* length.value = 9
-* length.unit  = "days"
-* length.system = "http://unitsofmeasure.org"
+
 
 * subject = Reference(PatientExample)
 
-* admission.admitSource = SCT#715537001 "Transportation by ambulance (procedure)"
+* admission.admitSource = StrokeArrivalModeCS_URL#ems-home "EMS from Home"
 * admission.dischargeDisposition = SCT#306689006 "Discharge to home (procedure)"
 * extension[isFirstHospital].valueBoolean = true
 * extension[initialCareIntensity].valueCodeableConcept = InitialCareIntensityCS_URL#icu-stroke "ICU / Stroke Unit"
