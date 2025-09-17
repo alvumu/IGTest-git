@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 698, errors = 26, warn = 143, info = 41-->
+<!-- broken links = 698, errors = 21, warn = 143, info = 41-->
 <head>
   <title>IGTest : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for IGTest</h1>
- <p>Generated Wed Sep 17 16:28:05 UTC 2025, FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = <a href="http://testSK.org">http://testSK.org</a> (<a href="http://testSK.org/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Wed Sep 17 17:00:50 UTC 2025, FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = <a href="http://testSK.org">http://testSK.org</a> (<a href="http://testSK.org/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.17</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = SKtestIG, Canonical = http://testSK.org</td></tr>
@@ -132,7 +132,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R5/medicationstatement.html">MedicationStatement</a>
  (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-statement-status.html">MedicationStatementStatusCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R5/diagnosticreport.html">DiagnosticReport</a>
- (12 uses),     <a href="http://hl7.org/fhir/R5/valueset-reason-medication-status-codes.html">SNOMEDCTDrugTherapyStatusCodes</a>
+ (12 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-statement-adherence.html">MedicationStatementAdherenceCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-reason-medication-status-codes.html">SNOMEDCTDrugTherapyStatusCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R5/plandefinition.html">PlanDefinition</a>
  (4 uses),     <a href="http://hl7.org/fhir/R5/activitydefinition.html">ActivityDefinition</a>
  (4 uses),     <a href="http://hl7.org/fhir/R5/measure.html">Measure</a>
@@ -187,7 +188,7 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 26, warn = 143, info = 41, broken links = 698, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 21, warn = 143, info = 41, broken links = 698, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -277,8 +278,8 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_MedicationRequest-discharge-medication-request-001"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationRequest-discharge-medication-request-001</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_MedicationStatement-PriorMedicationStatementExample"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationStatement-PriorMedicationStatementExample</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_MedicationStatement-PriorMedicationStatementExample"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationStatement-PriorMedicationStatementExample</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_Observation-AgeAtOnsetObservationExample"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-AgeAtOnsetObservationExample</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>0</b></td>
@@ -373,8 +374,8 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_StructureDefinition-patient-age-gender-snomed-profile"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-patient-age-gender-snomed-profile</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_StructureDefinition-prior-medication-statement-profile"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-prior-medication-statement-profile</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_StructureDefinition-prior-medication-statement-profile"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-prior-medication-statement-profile</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_StructureDefinition-procedure-timing-context-ext"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-procedure-timing-context-ext</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -1706,7 +1707,7 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
      <td><b><a href="StructureDefinition-prior-medication-statement-profile-testing.html#l346">StructureDefinition-prior-medication-statement-profile-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 253, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-prior-medication-statement-profile.html#l5111">StructureDefinition-prior-medication-statement-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1292, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-prior-medication-statement-profile.html#l5123">StructureDefinition-prior-medication-statement-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1292, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-prior-medication-statement-profile.profile.history.html#l319">StructureDefinition-prior-medication-statement-profile&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://testSK.org/umu' for &quot;UMU&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
@@ -2820,10 +2821,10 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
      <td><b>CodeSystem</b></td><td><b>information</b></td><td><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem (l1/c2692)</b></td><td><b>warning</b></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td>
+     <td><b>CodeSystem (l1/c2704)</b></td><td><b>warning</b></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem (l1/c2692)</b></td><td><b>warning</b></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td>
+     <td><b>CodeSystem (l1/c2704)</b></td><td><b>warning</b></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td>
    </tr>
 </table>
 <hr/>
@@ -3153,10 +3154,7 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>MedicationStatement&#8203;.adherence&#8203;.code (l17&#8203;/c6)</b></td><td><b>error</b></td><td><b>Found a reference to a CodeSystem 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' where a ValueSet belongs</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_ValueSet_NotFound_CS</span></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -3647,19 +3645,7 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[29]&#8203;.binding&#8203;.valueSet (l1&#8203;/c60126)</b></td><td><b>error</b></td><td><b>Canonical URL 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.binding&#8203;.valueSet (l1&#8203;/c62360)</b></td><td><b>error</b></td><td><b>Canonical URL 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.binding</b></td><td><b>error</b></td><td><b>The valueSet reference http://hl7.org/fhir/CodeSystem/medication-statement-adherence on element MedicationStatement.adherence.code points to something that is not a value set (CodeSystem)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_BIND_NOT_VS</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[29]&#8203;.binding</b></td><td><b>error</b></td><td><b>The valueSet reference http://hl7.org/fhir/CodeSystem/medication-statement-adherence on element MedicationStatement.adherence.code points to something that is not a value set (CodeSystem)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_BIND_NOT_VS</span></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -4574,17 +4560,6 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
    </tr>
 </table>
 <hr/>
-<a name="SD_ED_BIND_NOT_VS"> </a>
-<h2>SD_ED_BIND_NOT_VS</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-prior-medication-statement-profile.html">fsh-generated/resources/StructureDefinition-prior-medication-statement-profile.json</a></td><td><b>The valueSet reference http://hl7.org/fhir/CodeSystem/medication-statement-adherence on element MedicationStatement.adherence.code points to something that is not a value set (CodeSystem)</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-prior-medication-statement-profile.html">fsh-generated/resources/StructureDefinition-prior-medication-statement-profile.json</a></td><td><b>The valueSet reference http://hl7.org/fhir/CodeSystem/medication-statement-adherence on element MedicationStatement.adherence.code points to something that is not a value set (CodeSystem)</b></td>
-   </tr>
-</table>
-<hr/>
 <a name="SD_ED_EXPERIMENTAL_BINDING"> </a>
 <h2>SD_ED_EXPERIMENTAL_BINDING</h2>
  <table class="grid">
@@ -4715,17 +4690,6 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
    </tr>
 </table>
 <hr/>
-<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE"> </a>
-<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-prior-medication-statement-profile.html">fsh-generated/resources/StructureDefinition-prior-medication-statement-profile.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-prior-medication-statement-profile.html">fsh-generated/resources/StructureDefinition-prior-medication-statement-profile.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b></td>
-   </tr>
-</table>
-<hr/>
 <a name="Terminology_TX_NoValid_1_CC"> </a>
 <h2>Terminology_TX_NoValid_1_CC</h2>
  <table class="grid">
@@ -4743,14 +4707,6 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="Observation-SpecificFindingObservationExampleMTICI.html">fsh-generated/resources/Observation-SpecificFindingObservationExampleMTICI.json</a></td><td><b>None of the codings provided are in the value set 'Specific Stroke Finding Codes ValueSet' (http://testSK.org/ValueSet/stroke-finding-codes-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#1156911000)</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Terminology_TX_ValueSet_NotFound_CS"> </a>
-<h2>Terminology_TX_ValueSet_NotFound_CS</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="MedicationStatement-PriorMedicationStatementExample.html">fsh-generated/resources/MedicationStatement-PriorMedicationStatementExample.json</a></td><td><b>Found a reference to a CodeSystem 'http://hl7.org/fhir/CodeSystem/medication-statement-adherence' where a ValueSet belongs</b></td>
    </tr>
 </table>
 <hr/>

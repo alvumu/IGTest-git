@@ -1,6 +1,18 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/CodeSystem/medication-statement-adherence",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MedicationStatementAdherenceCodes",
+      "title" : "MedicationStatement Adherence Codes",
+      "description" : "MedicationStatement Adherence Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1981"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medication-statement-adherence.html" : "MedicationStatement Adherence Codes"
+    },
+    {
       "url" : "http://hl7.org/fhir/event-status",
       "version" : "5.0.0",
       "status" : "draft",
@@ -98,8 +110,8 @@
       "description" : "CodeSystem containing the codes to represent the mTICI score.",
       "uses" : {
       },
-      "ValueSet-mtici-code-vs.html" : "mTICI Score Codes ValueSet",
-      "ValueSet-mtici-score-vs.html" : "mTICI Score ValueSet"
+      "ValueSet-mtici-score-vs.html" : "mTICI Score ValueSet",
+      "ValueSet-mtici-code-vs.html" : "mTICI Score Codes ValueSet"
     },
     {
       "url" : "http://testSK.org/CodeSystem/procedure-timing-context-cs",
