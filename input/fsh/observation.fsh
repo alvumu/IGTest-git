@@ -482,7 +482,7 @@ Instance: TimingMetricObservationExample
 InstanceOf: TimingMetricObservationProfile
 * code = TimingMetricCodesCS_URL#D2N "Door to Needle"
 * valueQuantity.value = 30
-* valueQuantity.unit = "minutes"
+* valueQuantity.unit = "minute"
 * valueQuantity.system = UCUM
 * valueQuantity.code = #min
 * subject = Reference(PatientExample)
