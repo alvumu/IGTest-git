@@ -1,7 +1,7 @@
 // ------------------------- Aliases ----------------------------------
 Alias: SCT = http://snomed.info/sct
 Alias: LOINC = http://loinc.org
-Alias: UCUM = http://unitsofmeasure.org
+Alias: UCUM = https://ucum.org/ucum
 Alias: ObsCatCS = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: ObsInterpCS = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 
