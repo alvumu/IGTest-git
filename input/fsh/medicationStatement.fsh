@@ -1,7 +1,7 @@
 // ------------------ Aliases ------------------------------------
 Alias: SCT = http://snomed.info/sct
 Alias: FHIR = http://hl7.org/fhir
-Alias: UCUM = http://unitsofmeasure.org
+Alias: UCUM = https://ucum.org/ucum
 // Alias R5 Adherence CodeSystem/ValueSet
 Alias: MedStatementMedsCS_URL = http://testSK.org/CodeSystem/medication-statement-cs
 Alias: MedStatementAdherenceVS_URL = http://hl7.org/fhir/ValueSet/medication-statement-adherence

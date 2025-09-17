@@ -1,7 +1,7 @@
 // ------------------------- Aliases ----------------------------------
 Alias: SCT = http://snomed.info/sct
-Alias: FHIR = http://hl7.org/fhir // Needed for R5 status code system? Check binding
-Alias: UCUM = http://unitsofmeasure.org
+Alias: FHIR = http://hl7.org/fhir 
+Alias: UCUM = https://ucum.org/ucum
 
 // FHIR R5 Resource Aliases
 Alias: FHIR_Procedure = http://hl7.org/fhir/StructureDefinition/Procedure
