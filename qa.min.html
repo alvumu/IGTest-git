@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 698, errors = 26, warn = 140, info = 38-->
+<!-- broken links = 698, errors = 26, warn = 143, info = 41-->
 <head>
   <title>IGTest : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for IGTest</h1>
- <p>Generated Wed Sep 17 10:43:27 UTC 2025, FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = <a href="http://testSK.org">http://testSK.org</a> (<a href="http://testSK.org/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Wed Sep 17 12:23:27 UTC 2025, FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = <a href="http://testSK.org">http://testSK.org</a> (<a href="http://testSK.org/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.17</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = SKtestIG, Canonical = http://testSK.org</td></tr>
@@ -187,7 +187,7 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 26, warn = 140, info = 38, broken links = 698, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 26, warn = 143, info = 41, broken links = 698, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -257,10 +257,10 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
      <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_Observation-StrokeCircumstanceObservationExampleWakeUp"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-StrokeCircumstanceObservationExampleWakeUp</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_Observation-TimingMetricObservationExample"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-TimingMetricObservationExample</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_Observation-TimingMetricObservationExample"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-TimingMetricObservationExample</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_Observation-VitalSignObservationExample"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-VitalSignObservationExample</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_Observation-VitalSignObservationExample"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-VitalSignObservationExample</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_Organization-ExampleOrganization"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Organization-ExampleOrganization</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -2977,6 +2977,12 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation&#8203;.value&#8203;.ofType(Quantity) (l9&#8203;/c4)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation&#8203;.value&#8203;.ofType(Quantity)&#8203;.system (l11&#8203;/c38)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'https://ucum.org/ucum'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_a_performer</span></td>
    </tr>
@@ -2992,6 +2998,18 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation&#8203;.component[0]&#8203;.value&#8203;.ofType(Quantity) (l11&#8203;/c8)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation&#8203;.component[0]&#8203;.value&#8203;.ofType(Quantity)&#8203;.system (l13&#8203;/c42)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'https://ucum.org/ucum'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation&#8203;.component[1]&#8203;.value&#8203;.ofType(Quantity) (l28&#8203;/c8)</b></td><td><b>information</b></td><td><b>A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation&#8203;.component[1]&#8203;.value&#8203;.ofType(Quantity)&#8203;.system (l30&#8203;/c42)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'https://ucum.org/ucum'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td><b>Best Practice Recommendation: In general, all observations should have a performer</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_a_performer</span></td>
@@ -4153,11 +4171,34 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
    </tr>
 </table>
 <hr/>
+<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
+<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-TimingMetricObservationExample.html">fsh-generated/resources/Observation-TimingMetricObservationExample.json</a></td><td><b>No definition could be found for URL value 'https://ucum.org/ucum'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-VitalSignObservationExample.html">fsh-generated/resources/Observation-VitalSignObservationExample.json</a></td><td><b>No definition could be found for URL value 'https://ucum.org/ucum'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-VitalSignObservationExample.html">fsh-generated/resources/Observation-VitalSignObservationExample.json</a></td><td><b>No definition could be found for URL value 'https://ucum.org/ucum'</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="UNKNOWN_CODESYSTEM"> </a>
 <h2>UNKNOWN_CODESYSTEM</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
      <td><a href="Observation-SpecificFindingObservationExample.html">fsh-generated/resources/Observation-SpecificFindingObservationExample.json</a></td><td><b>A definition for CodeSystem 'http://testSK.org/CodeSystem/afib-flutter-status-cs' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-TimingMetricObservationExample.html">fsh-generated/resources/Observation-TimingMetricObservationExample.json</a></td><td><b>A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-VitalSignObservationExample.html">fsh-generated/resources/Observation-VitalSignObservationExample.json</a></td><td><b>A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-VitalSignObservationExample.html">fsh-generated/resources/Observation-VitalSignObservationExample.json</a></td><td><b>A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>

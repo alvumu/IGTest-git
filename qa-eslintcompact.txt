@@ -804,8 +804,14 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-StrokeCircumstanceObservationExampleWakeUp.json: line 10, col 6, Error - Unable to resolve resource with reference 'ConditionExample' (STRUCTURE)
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-StrokeCircumstanceObservationExampleWakeUp.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-StrokeCircumstanceObservationExampleWakeUp.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have an effective[x] () (INVALID)
+/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-TimingMetricObservationExample.json: line 9, col 4, Info - A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated (UNKNOWN)
+/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-TimingMetricObservationExample.json: line 11, col 38, Warning - No definition could be found for URL value 'https://ucum.org/ucum' (INVALID)
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-TimingMetricObservationExample.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-TimingMetricObservationExample.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have an effective[x] () (INVALID)
+/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-VitalSignObservationExample.json: line 11, col 8, Info - A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated (UNKNOWN)
+/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-VitalSignObservationExample.json: line 13, col 42, Warning - No definition could be found for URL value 'https://ucum.org/ucum' (INVALID)
+/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-VitalSignObservationExample.json: line 28, col 8, Info - A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated (UNKNOWN)
+/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-VitalSignObservationExample.json: line 30, col 42, Warning - No definition could be found for URL value 'https://ucum.org/ucum' (INVALID)
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-VitalSignObservationExample.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-VitalSignObservationExample.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have an effective[x] () (INVALID)
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Organization-ExampleOrganization.json: line 1, col 2, Error - Constraint failed: org-1: 'The organization SHALL at least have a name or an identifier, and possibly more than one' (defined in http://hl7.org/fhir/StructureDefinition/Organization) (INVARIANT)
@@ -904,5 +910,5 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-thrombectomy-complication-vs.json: line 1, col 1234, Warning - Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present (REQUIRED)
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-timing-metric-codes-vs.json: line 1, col 973, Warning - Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present (REQUIRED)
 
-err = 26, warn = 140, info = 38
+err = 26, warn = 143, info = 41
 IG Publisher Version: 2.0.17

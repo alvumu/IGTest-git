@@ -1,7 +1,7 @@
 IGTest : Validation Results
 =========================================
 
-err = 26, warn = 140, info = 38
+err = 26, warn = 143, info = 41
 $--
 Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
  Build Errors : 698 / 29 / 0
@@ -38,8 +38,8 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = http://testSK.org)
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-SpecificFindingObservationExample : 0 / 3 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-SpecificFindingObservationExampleMTICI : 2 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-StrokeCircumstanceObservationExampleWakeUp : 1 / 2 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-TimingMetricObservationExample : 0 / 2 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-VitalSignObservationExample : 0 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-TimingMetricObservationExample : 0 / 3 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-VitalSignObservationExample : 0 / 4 / 3
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Organization-ExampleOrganization : 1 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Patient-PatientAgeGenderSnomedExample : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Patient-example-patient : 0 / 0 / 1
@@ -951,9 +951,15 @@ ERROR: Observation/StrokeCircumstanceObservationExampleWakeUp: Observation.focus
 WARNING: Observation/StrokeCircumstanceObservationExampleWakeUp: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/StrokeCircumstanceObservationExampleWakeUp: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-TimingMetricObservationExample.json ==
+INFORMATION: Observation/TimingMetricObservationExample: Observation.value.ofType(Quantity): A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated
+WARNING: Observation/TimingMetricObservationExample: Observation.value.ofType(Quantity).system: No definition could be found for URL value 'https://ucum.org/ucum'
 WARNING: Observation/TimingMetricObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/TimingMetricObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-VitalSignObservationExample.json ==
+INFORMATION: Observation/VitalSignObservationExample: Observation.component[0].value.ofType(Quantity): A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated
+WARNING: Observation/VitalSignObservationExample: Observation.component[0].value.ofType(Quantity).system: No definition could be found for URL value 'https://ucum.org/ucum'
+INFORMATION: Observation/VitalSignObservationExample: Observation.component[1].value.ofType(Quantity): A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated
+WARNING: Observation/VitalSignObservationExample: Observation.component[1].value.ofType(Quantity).system: No definition could be found for URL value 'https://ucum.org/ucum'
 WARNING: Observation/VitalSignObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/VitalSignObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Organization-ExampleOrganization.json ==
