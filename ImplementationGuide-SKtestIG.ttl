@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-09-15T14:05:10+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-17T09:29:40+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -1296,8 +1296,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://testSK.org/StructureDefinition/stroke-thrombolysis-procedure-profile> ;
-         fhir:reference [ fhir:v "StructureDefinition/stroke-thrombolysis-procedure-profile" ]
+         fhir:link <http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/stroke-mechanical-procedure-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Thrombolysis Procedure Profile (R5)" ] ;
        fhir:description [ fhir:v "Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context." ] ;
@@ -1568,8 +1568,8 @@
        fhir:name [ fhir:v "StrokeThrombolysisExample" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
-         fhir:v "http://testSK.org/StructureDefinition/stroke-thrombolysis-procedure-profile"^^xsd:anyURI ;
-         fhir:link <http://testSK.org/StructureDefinition/stroke-thrombolysis-procedure-profile>
+         fhir:v "http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile>
        ] )
      ] [
        fhir:extension ( [
