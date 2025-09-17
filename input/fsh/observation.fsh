@@ -365,7 +365,7 @@ Parent: BaseStrokeObservation
 * code from TimingMetricCodesVS_URL (required)
 * value[x] 1..1 MS
 * value[x] only Quantity
-* value[x].unit = "minutes"
+* value[x].unit = "minute"
 * value[x].system = UCUM
 * value[x].code = #min
 * hasMember 0..* MS
