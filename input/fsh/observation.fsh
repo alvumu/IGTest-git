@@ -415,7 +415,7 @@ Parent: BaseStrokeObservation
 * code = SCT#445518008 "Age at onset of clinical finding (observable entity)"
 * code 1..1 MS
 * value[x] 1..1 MS
-* value[x] only Integer
+* value[x] only integer
 
 
 // ------------------------- Invariants ---------------------------------
@@ -444,7 +444,7 @@ Expression: "code.coding.where($this.system = 'http://snomed.info/sct' and $this
 
 Instance: AgeAtOnsetObservationExample
 InstanceOf: AgeAtOnsetObservationProfile
-* valueQuantity.value = 65
+* valueInteger.value = 65
 * subject = Reference(PatientExample)
 * encounter = Reference(StrokeEncounterExample)
 
