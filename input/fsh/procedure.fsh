@@ -300,10 +300,10 @@ Parent: FHIR_Procedure // R5 Procedure Base
 
 
 Profile: StrokeThrombolysisProcedureProfile
-Id: stroke-thrombolysis-procedure-profile
+Id: stroke-mechanical-procedure-profile 
 Parent: FHIR_Procedure // R5 Procedure Base
 * ^fhirVersion = #5.0.0 // Specify R5
-* ^url = "http://testSK.org/StructureDefinition/stroke-thrombolysis-procedure-profile"
+* ^url = "http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile"
 * ^version = "1.2.0" // Incremented version for R5 update
 * ^name = "StrokeThrombolysisProcedureProfile"
 * ^title = "Stroke Thrombolysis Procedure Profile (R5)" // Indicate R5
