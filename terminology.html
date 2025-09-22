@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Examples -  v0.1.0</title>
+    <title>Terminology -  v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"7"}
-    h3,h4,h5,h6{--heading-prefix:"7"}</style>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -82,11 +82,11 @@
   <li>
     <a href="index.html">Home</a>
   </li>
-  <li>
-    <a href="general-principles.html">General Principles</a>
+  <li><a name="l142">​</a>
+    <a href="conformance/index.html">Conformance</a>
   </li>
-  <li>
-    <a href="artifacts.html">Artifacts (auto)</a>
+  <li><a name="l148">​</a>
+    <a href="guidance/index.html">Guidance</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Clinical Artifacts
@@ -97,18 +97,18 @@
         <a href="profiles/index.html">Profiles</a>
       </li>
       <li><a name="l169">​</a>
-        <a href="valuesets/index.html">ValueSets</a>
-      </li>
-      <li><a name="l175">​</a>
-        <a href="codesystems/index.html">CodeSystems</a>
-      </li>
-      <li><a name="l181">​</a>
-        <a href="extensions/index.html">Extensions</a>
-      </li>
-      <li><a name="l187">​</a>
-        <a href="examples/index.html">Examples</a>
+        <a href="terminology/index.html">Terminology</a>
       </li>
     </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts (auto)</a>
+  </li>
+  <li><a name="l183">​</a>
+    <a href="downloads/index.html">Downloads</a>
+  </li>
+  <li><a name="l189">​</a>
+    <a href="history/index.html">History</a>
   </li>
 </ul>
             </div>    <!-- /.nav-collapse -->
@@ -122,7 +122,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Examples</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Terminology</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -143,7 +143,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">IGTest - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://testSK.org/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  <h2>Examples</h2>
+  <h2>Terminology</h2>
   
 
 
@@ -162,8 +162,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
 
-<h1 id="examples">Examples</h1>
+<h1 id="terminology">Terminology</h1>
+
+<p>Terminology artifacts used in this IG.</p>
+
+<ul>
+  <li><strong>ValueSets</strong> (bindings for profiles):<br/>
+See the list below and <strong><a href="artifacts.html">Artifacts</a></strong> for generated binding tables.</li>
+</ul>
+
 <ul class="list"><li><em>No entries found in /profiles/</em></li></ul>
+
+<hr/>
+
+<ul>
+  <li><strong>CodeSystems</strong> (custom code systems defined by this IG):</li>
+</ul>
+
+<ul class="list"><li><em>No entries found in /profiles/</em></li></ul>
+
+<h2 id="binding-strength-quick-guide">Binding Strength Quick Guide</h2>
+
+<ul>
+  <li><strong>Required:</strong> only codes from the bound ValueSet are allowed.</li>
+  <li><strong>Extensible:</strong> prefer the ValueSet; use external codes only if no suitable match exists.</li>
+  <li><strong>Preferred / Example:</strong> advisory.</li>
+</ul>
 
 
 
@@ -183,8 +207,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l323">​</a>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Sep 22, 2025 15:14+0000">2025-09-22</span>
+        <p><a name="l376">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Sep 22, 2025 16:06+0000">2025-09-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

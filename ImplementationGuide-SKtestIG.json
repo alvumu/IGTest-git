@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-09-22T15:14:25+00:00",
+  "date" : "2025-09-22T16:06:01+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -45,6 +45,26 @@
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
       "valueCode" : "hl7.fhir.uv.tools.r5#0.8.0"
+    }],
+    "grouping" : [{
+      "id" : "Profiles",
+      "name" : "Profiles",
+      "description" : "Clinical and administrative profiles"
+    },
+    {
+      "id" : "Extensions",
+      "name" : "Extensions",
+      "description" : "Custom extensions"
+    },
+    {
+      "id" : "Terminology",
+      "name" : "Terminology",
+      "description" : "CodeSystems and ValueSets"
+    },
+    {
+      "id" : "Examples",
+      "name" : "Examples",
+      "description" : "Example instances"
     }],
     "resource" : [{
       "extension" : [{
@@ -283,7 +303,8 @@
       },
       "name" : "First Hospital Extension",
       "description" : "Indicates if the reporting hospital was the first medical facility to admit the patient for this stroke episode.",
-      "isExample" : false
+      "isExample" : false,
+      "groupingId" : "Extensions"
     },
     {
       "extension" : [{
@@ -390,7 +411,8 @@
       },
       "name" : "Initial Care Intensity Extension",
       "description" : "Specifies the level of care provided during the patient's initial day(s) in the hospital (e.g., standard bed, monitored, ICU/Stroke Unit).",
-      "isExample" : false
+      "isExample" : false,
+      "groupingId" : "Extensions"
     },
     {
       "extension" : [{
@@ -486,7 +508,8 @@
       },
       "name" : "mTICI Score Code System",
       "description" : "CodeSystem containing the codes to represent the mTICI score.",
-      "isExample" : false
+      "isExample" : false,
+      "groupingId" : "Terminology"
     },
     {
       "extension" : [{
@@ -627,7 +650,8 @@
       },
       "name" : "Prior Medication Statement Profile (R5)",
       "description" : "Represents a statement about the patient's medication use *before* the index event.",
-      "isExample" : false
+      "isExample" : false,
+      "groupingId" : "Profiles"
     },
     {
       "extension" : [{
@@ -843,7 +867,8 @@
       },
       "name" : "Stroke Diagnosis ValueSet",
       "description" : "Defines the SNOMED CT codes for final stroke diagnoses, including specific types and etiologies where applicable.",
-      "isExample" : false
+      "isExample" : false,
+      "groupingId" : "Terminology"
     },
     {
       "extension" : [{
@@ -879,7 +904,8 @@
       },
       "name" : "Stroke Encounter Profile",
       "description" : "Profile for an Encounter resource representing a patient's hospital admission and stay for a stroke event, including key administrative and workflow details.",
-      "isExample" : false
+      "isExample" : false,
+      "groupingId" : "Profiles"
     },
     {
       "extension" : [{
@@ -927,7 +953,8 @@
       },
       "name" : "Stroke Functional Score Observation Profile (R5, Timing Ext)",
       "description" : "Profile for recording functional scores (mRS, NIHSS), using an extension for timing context.",
-      "isExample" : false
+      "isExample" : false,
+      "groupingId" : "Profiles"
     },
     {
       "extension" : [{
@@ -1155,7 +1182,8 @@
       },
       "name" : "StrokeEncounterExample",
       "isExample" : true,
-      "profile" : ["http://testSK.org/StructureDefinition/stroke-encounter-profile"]
+      "profile" : ["http://testSK.org/StructureDefinition/stroke-encounter-profile"],
+      "groupingId" : "Examples"
     },
     {
       "extension" : [{
@@ -1310,7 +1338,8 @@
       },
       "name" : "VitalSignObservationExample",
       "isExample" : true,
-      "profile" : ["http://testSK.org/StructureDefinition/vital-sign-observation-profile"]
+      "profile" : ["http://testSK.org/StructureDefinition/vital-sign-observation-profile"],
+      "groupingId" : "Examples"
     }],
     "page" : {
       "sourceUrl" : "toc.html",
@@ -1320,13 +1349,19 @@
       "page" : [{
         "sourceUrl" : "index.html",
         "name" : "index.html",
-        "title" : "Stroke Care Implementation Guide",
+        "title" : "Home",
         "generation" : "markdown"
       },
       {
-        "sourceUrl" : "general-principles.html",
-        "name" : "general-principles.html",
-        "title" : "General Principles",
+        "sourceUrl" : "conformance.html",
+        "name" : "conformance.html",
+        "title" : "Conformance",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "guidance.html",
+        "name" : "guidance.html",
+        "title" : "Guidance",
         "generation" : "markdown"
       },
       {
@@ -1336,27 +1371,21 @@
         "generation" : "markdown"
       },
       {
-        "sourceUrl" : "valuesets.html",
-        "name" : "valuesets.html",
-        "title" : "ValueSets",
+        "sourceUrl" : "terminology.html",
+        "name" : "terminology.html",
+        "title" : "Terminology",
         "generation" : "markdown"
       },
       {
-        "sourceUrl" : "codesystems.html",
-        "name" : "codesystems.html",
-        "title" : "CodeSystems",
+        "sourceUrl" : "downloads.html",
+        "name" : "downloads.html",
+        "title" : "Downloads",
         "generation" : "markdown"
       },
       {
-        "sourceUrl" : "extensions.html",
-        "name" : "extensions.html",
-        "title" : "Extensions",
-        "generation" : "markdown"
-      },
-      {
-        "sourceUrl" : "examples.html",
-        "name" : "examples.html",
-        "title" : "Examples",
+        "sourceUrl" : "history.html",
+        "name" : "history.html",
+        "title" : "History",
         "generation" : "markdown"
       }]
     },
