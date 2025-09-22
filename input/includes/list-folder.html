@@ -1,37 +1,39 @@
 <ul class="list">
-{%- assign section   = include.section   | default: '/' -%}
-{%- assign contains  = include.contains  | default: ''  -%}
-{%- assign nav       = include.nav       | default: ''  -%}
-{%- assign termKind  = include.termKind  | default: ''  -%}
+{%- assign section   = include.section   | default: '' -%}
+{%- assign contains  = include.contains  | default: '' -%}
+{%- assign nav       = include.nav       | default: '' -%}
+{%- assign termKind  = include.termKind  | default: '' -%}
 
+{%- comment -%} Selecciona todas las páginas HTML generadas {%- endcomment -%}
 {%- assign pages = site.pages | where_exp: "p", "p.output_ext == '.html'" -%}
 
-/* Filtra por URL si se pide 'section' */
+{%- comment -%} Filtra por URL si se pide 'section' {%- endcomment -%}
 {%- if section != '' -%}
   {%- assign pages = pages | where_exp: "p", "p.url contains section" -%}
 {%- endif -%}
 
-/* Filtra por subcadena en la URL si se pide 'contains' */
+{%- comment -%} Filtra por subcadena en la URL si se pide 'contains' {%- endcomment -%}
 {%- if contains != '' -%}
   {%- assign pages = pages | where_exp: "p", "p.url contains contains" -%}
 {%- endif -%}
 
-/* Filtra por metadato navSection */
+{%- comment -%} Filtra por metadato navSection (front-matter) {%- endcomment -%}
 {%- if nav != '' -%}
   {%- assign pages = pages | where: "navSection", nav -%}
 {%- endif -%}
 
-/* Filtra por metadato termKind (valueset/codesystem) */
+{%- comment -%} Filtra por metadato termKind (front-matter) {%- endcomment -%}
 {%- if termKind != '' -%}
   {%- assign pages = pages | where: "termKind", termKind -%}
 {%- endif -%}
 
 {%- assign sorted = pages | sort: "title" -%}
+
 {%- for p in sorted -%}
   <li><a href="{{ p.url | relative_url }}">{{ p.title | default: p.name }}</a></li>
 {%- endfor -%}
 
 {%- if sorted == empty -%}
-  <li><em>No entries found</em></li>
+  <li><em>No entries found{% if section != '' %} in {{ section }}{% endif %}{% if contains != '' %} (filter: {{ contains }}){% endif %}{% if nav != '' %} [nav={{ nav }}]{% endif %}{% if termKind != '' %} [term={{ termKind }}]{% endif %}</em></li>
 {%- endif -%}
 </ul>
