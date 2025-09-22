@@ -5,4 +5,4 @@ permalink: /examples/
 ---
 
 # Examples
-{% include list-folder.html section:'/examples/' %}
+{% include list-folder.html param='/examples/' %}

@@ -5,4 +5,4 @@ permalink: /codesystems/
 ---
 
 # CodeSystems
-{% include list-folder.html section:'/codesystems/' %}
+{% include list-folder.html param='/codesystems/' %}

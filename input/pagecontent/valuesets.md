@@ -5,4 +5,4 @@ permalink: /valuesets/
 ---
 
 # ValueSets
-{% include list-folder.html section:'/valuesets/' %}
+{% include list-folder.html param='/valuesets/' %}

@@ -5,4 +5,4 @@ permalink: /extensions/
 ---
 
 # Extensions
-{% include list-folder.html section:'/extensions/' %}
+{% include list-folder.html param='/extensions/' %}

@@ -5,4 +5,4 @@ permalink: /profiles/   # esto genera /profiles/index.html
 ---
 
 # Profiles
-{% include list-folder.html section:'/profiles/' %}
+{% include list-folder.html param='/profiles/' %}
