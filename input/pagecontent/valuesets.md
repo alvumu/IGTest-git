@@ -4,4 +4,4 @@ layout: default
 ---
 
 # ValueSets
-{% include list-folder.html section='/profiles/' %}
+{% include list-folder.html nav='terminology' termKind='valueset' %}
