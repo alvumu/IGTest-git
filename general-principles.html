@@ -144,7 +144,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h2 id="implementation-centered-design">Implementation-centered design</h2>
 <ul>
-  <li><strong>Minimal but sufficient</strong> profiles to cover key clinical indicators and reporting.</li>
+  <li><strong>Minimal but sufficient</strong> profiles to cover key clinical indicators and reporting needs.</li>
   <li><strong>Compatibility</strong> with R5 base resources.</li>
 </ul>
 
@@ -153,23 +153,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>SNOMED CT</strong> for clinical concepts.</li>
   <li><strong>LOINC</strong> for observations/measurements.</li>
   <li><strong>UCUM</strong> for units.</li>
-  <li><strong>ICD-10</strong> for secondary coding if required.</li>
+  <li><strong>ICD-10</strong> for secondary coding when required.</li>
 </ul>
 
 <h2 id="critical-stroke-timings">Critical stroke timings</h2>
 <ul>
-  <li>Model <em>Door</em>, <em>Imaging</em>, <em>Needle</em>, <em>Groin puncture</em>, <em>Recanalization</em> times as <code class="language-plaintext highlighter-rouge">Observation</code> with timing profiles, and <strong>reference event</strong> + <strong>offset</strong> attributes when applicable.</li>
+  <li>Model <em>Door</em>, <em>Imaging</em>, <em>Needle</em>, <em>Groin puncture</em>, and <em>Recanalization</em> times as <code class="language-plaintext highlighter-rouge">Observation</code> with timing-focused profiles, including <strong>reference event</strong> + <strong>offset</strong> attributes where applicable.</li>
 </ul>
 
 <h2 id="data-quality">Data quality</h2>
 <ul>
   <li>Cardinalities and <code class="language-plaintext highlighter-rouge">mustSupport</code> aligned with quality indicators.</li>
-  <li>Invariants (FHIRPath) for consistency, e.g., if <code class="language-plaintext highlighter-rouge">Procedure.code = Thrombolysis</code> ⇒ <em>Needle</em> time must exist.</li>
+  <li>Invariants (FHIRPath) to ensure consistency; e.g., if <code class="language-plaintext highlighter-rouge">Procedure.code = Thrombolysis</code> ⇒ a <em>Needle</em> time must exist.</li>
 </ul>
 
 <h2 id="interoperability">Interoperability</h2>
 <ul>
-  <li>Avoid local concepts if standard equivalents exist; when local ones are used, map via <code class="language-plaintext highlighter-rouge">ConceptMap</code>.</li>
+  <li>Avoid local concepts when standard equivalents exist; when local codes are necessary, map them via <code class="language-plaintext highlighter-rouge">ConceptMap</code>.</li>
 </ul>
 
 
@@ -191,7 +191,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p><a name="l385">​</a>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Sep 22, 2025 09:39+0000">2025-09-22</span>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Sep 22, 2025 11:47+0000">2025-09-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
