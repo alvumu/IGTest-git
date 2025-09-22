@@ -4,29 +4,29 @@ layout: default
 ---
 
 
-# Principios Generales de Modelado
+# General Modeling Principles
 
 
-## Diseño centrado en la implementación
-- Perfiles **mínimos pero suficientes** para cubrir indicadores clínicos clave y reporting.
-- **Compatibilidad** con recursos base R5.
+## Implementation-centered design
+- **Minimal but sufficient** profiles to cover key clinical indicators and reporting.
+- **Compatibility** with R5 base resources.
 
 
-## Reutilización de terminologías
-- **SNOMED CT** para conceptos clínicos.
-- **LOINC** para observaciones/mediciones.
-- **UCUM** para unidades.
-- **ICD-10** para codificación secundaria si se requiere.
+## Terminology reuse
+- **SNOMED CT** for clinical concepts.
+- **LOINC** for observations/measurements.
+- **UCUM** for units.
+- **ICD-10** for secondary coding if required.
 
 
-## Temporizaciones críticas del ictus
-- Modelar tiempos *Door*, *Imaging*, *Needle*, *Groin puncture*, *Recanalization* como `Observation` con perfiles de timing, y atributos de **evento de referencia** + **offset** cuando aplique.
+## Critical stroke timings
+- Model *Door*, *Imaging*, *Needle*, *Groin puncture*, *Recanalization* times as `Observation` with timing profiles, and **reference event** + **offset** attributes when applicable.
 
 
-## Calidad de datos
-- Cardinalidades y `mustSupport` alineados con indicadores de calidad.
-- Invariantes (FHIRPath) para coherencia, p.ej., si `Procedure.code = Thrombolysis` ⇒ debe existir tiempo *Needle*.
+## Data quality
+- Cardinalities and `mustSupport` aligned with quality indicators.
+- Invariants (FHIRPath) for consistency, e.g., if `Procedure.code = Thrombolysis` ⇒ *Needle* time must exist.
 
 
-## Interoperabilidad
-- Evitar conceptos locales si existen equivalentes estándar; cuando se usen locales, mapear mediante `ConceptMap`.
+## Interoperability
+- Avoid local concepts if standard equivalents exist; when local ones are used, map via `ConceptMap`.
