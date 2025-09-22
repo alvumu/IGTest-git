@@ -139,9 +139,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
   <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
-<h1 id="general-principles">General Principles</h1>
 
-<p>This page outlines a few general principles to ensure the Implementation Guide is generated and navigated correctly.</p>
+<h1 id="principios-generales-de-modelado">Principios Generales de Modelado</h1>
+
+<h2 id="diseño-centrado-en-la-implementación">Diseño centrado en la implementación</h2>
+<ul>
+  <li>Perfiles <strong>mínimos pero suficientes</strong> para cubrir indicadores clínicos clave y reporting.</li>
+  <li><strong>Compatibilidad</strong> con recursos base R5.</li>
+</ul>
+
+<h2 id="reutilización-de-terminologías">Reutilización de terminologías</h2>
+<ul>
+  <li><strong>SNOMED CT</strong> para conceptos clínicos.</li>
+  <li><strong>LOINC</strong> para observaciones/mediciones.</li>
+  <li><strong>UCUM</strong> para unidades.</li>
+  <li><strong>ICD-10</strong> para codificación secundaria si se requiere.</li>
+</ul>
+
+<h2 id="temporizaciones-críticas-del-ictus">Temporizaciones críticas del ictus</h2>
+<ul>
+  <li>Modelar tiempos <em>Door</em>, <em>Imaging</em>, <em>Needle</em>, <em>Groin puncture</em>, <em>Recanalization</em> como <code class="language-plaintext highlighter-rouge">Observation</code> con perfiles de timing, y atributos de <strong>evento de referencia</strong> + <strong>offset</strong> cuando aplique.</li>
+</ul>
+
+<h2 id="calidad-de-datos">Calidad de datos</h2>
+<ul>
+  <li>Cardinalidades y <code class="language-plaintext highlighter-rouge">mustSupport</code> alineados con indicadores de calidad.</li>
+  <li>Invariantes (FHIRPath) para coherencia, p.ej., si <code class="language-plaintext highlighter-rouge">Procedure.code = Thrombolysis</code> ⇒ debe existir tiempo <em>Needle</em>.</li>
+</ul>
+
+<h2 id="interoperabilidad">Interoperabilidad</h2>
+<ul>
+  <li>Evitar conceptos locales si existen equivalentes estándar; cuando se usen locales, mapear mediante <code class="language-plaintext highlighter-rouge">ConceptMap</code>.</li>
+</ul>
 
 
 
@@ -161,8 +190,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l280">​</a>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Sep 17, 2025 16:59+0000">2025-09-17</span>
+        <p><a name="l386">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Sep 22, 2025 08:26+0000">2025-09-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
