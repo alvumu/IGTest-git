@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-09-22T17:48:18+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-22T18:03:45+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -1758,6 +1758,14 @@
        ] [
          fhir:source [
            a fhir:url ;
+           fhir:v "codesystems.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "codesystems.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Codesystems" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
            fhir:v "conformance.html"^^xsd:anyURI
          ] ;
          fhir:name [ fhir:v "conformance.html"^^xsd:anyURI ] ;
@@ -1766,10 +1774,50 @@
        ] [
          fhir:source [
            a fhir:url ;
+           fhir:v "downloads.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Downloads" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "examples.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "examples.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Examples" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "extensions.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "extensions.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Extensions" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "general-principles.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "general-principles.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "General Principles" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
            fhir:v "guidance.html"^^xsd:anyURI
          ] ;
          fhir:name [ fhir:v "guidance.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Guidance" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "history.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "history.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "History" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:source [
@@ -1790,18 +1838,10 @@
        ] [
          fhir:source [
            a fhir:url ;
-           fhir:v "downloads.html"^^xsd:anyURI
+           fhir:v "valuesets.html"^^xsd:anyURI
          ] ;
-         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Downloads" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:source [
-           a fhir:url ;
-           fhir:v "history.html"^^xsd:anyURI
-         ] ;
-         fhir:name [ fhir:v "history.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "History" ] ;
+         fhir:name [ fhir:v "valuesets.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Valuesets" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;
