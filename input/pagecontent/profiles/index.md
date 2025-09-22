@@ -1,7 +1,8 @@
 ---
 title: Profiles
 layout: default
+permalink: /profiles/   # esto genera /profiles/index.html
 ---
 
 # Profiles
-Below are all profile pages in this guide.
+{% include list-folder.html section:'/profiles/' %}

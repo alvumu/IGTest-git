@@ -1,8 +1,8 @@
 ---
 title: CodeSystems
 layout: default
+permalink: /codesystems/
 ---
 
 # CodeSystems
-All CodeSystem documentation pages.
-
+{% include list-folder.html section:'/codesystems/' %}

@@ -1,8 +1,8 @@
 ---
 title: ValueSets
 layout: default
+permalink: /valuesets/
 ---
 
 # ValueSets
-All ValueSet documentation pages.
-
+{% include list-folder.html section:'/valuesets/' %}
