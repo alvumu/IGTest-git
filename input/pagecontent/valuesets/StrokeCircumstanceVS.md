@@ -1,6 +1,8 @@
 ---
 title: Stroke Circumstance ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # StrokeCircumstanceCodesVS (ValueSet)

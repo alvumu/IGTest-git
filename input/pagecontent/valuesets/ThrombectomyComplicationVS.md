@@ -1,6 +1,8 @@
 ---
 title: Thrombectomy Complication ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # ThrombectomyComplicationVS (ValueSet)

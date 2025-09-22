@@ -1,6 +1,8 @@
 ---
 title: Atrial Fibrillation/Flutter Status ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # AfibFlutterStatusVS (ValueSet)

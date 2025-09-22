@@ -1,6 +1,8 @@
 ---
 title: Functional Score Codes ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # FunctionalScoreCodesVS (ValueSet)

@@ -1,6 +1,7 @@
 ---
 title: First Hospital Extension
-layout: profile
+layout: default
+navSection: extension
 ---
 
 # FirstHospitalExtension

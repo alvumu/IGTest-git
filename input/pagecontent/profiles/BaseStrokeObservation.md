@@ -1,6 +1,7 @@
 ---
 title: Base Stroke Observation Profile
 layout: default
+navSection: profiles
 ---
 
 # BaseStrokeObservation (Observation)

@@ -1,6 +1,8 @@
 ---
 title: Discharge Medication ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # DischargeMedicationVS (ValueSet)

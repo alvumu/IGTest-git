@@ -1,8 +1,8 @@
 ---
 title: Specific Stroke Finding Observation Profile (R5)
 layout: default
+navSection: profiles
 ---
-
 # SpecificFindingObservationProfile (Observation)
 
 **URL:** http://testSK.org/StructureDefinition/specific-finding-observation-profile  

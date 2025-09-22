@@ -1,6 +1,8 @@
 ---
 title: Brain Imaging Modality ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # BrainImagingModalityVS (ValueSet)

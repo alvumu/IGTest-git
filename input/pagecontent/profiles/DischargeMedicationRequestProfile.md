@@ -1,6 +1,7 @@
 ---
 title: Discharge Medication Request Profile
 layout: default
+navSection: profiles
 ---
 
 # DischargeMedicationRequestProfile (MedicationRequest)

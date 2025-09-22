@@ -1,6 +1,8 @@
 ---
 title: Initial Care Intensity CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
 
 # InitialCareIntensityCS (CodeSystem)

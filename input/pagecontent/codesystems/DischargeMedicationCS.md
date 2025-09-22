@@ -1,6 +1,8 @@
 ---
 title: Discharge Medications CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
 
 # DischargeMedicationCS (CodeSystem)

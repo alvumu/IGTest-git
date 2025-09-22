@@ -1,6 +1,7 @@
 ---
 title: Prior Medication Statement Profile (R5)
 layout: default
+navSection: profiles
 ---
 
 # PriorMedicationStatementProfile (MedicationStatement)

@@ -1,6 +1,8 @@
 ---
 title: MedicationStatement Therapy/Finding ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # MedicationStatementMedsCodesVS (ValueSet)

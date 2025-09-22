@@ -1,6 +1,8 @@
 ---
 title: Brain Imaging Type CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
 
 # BrainImagingTypeCS (CodeSystem)

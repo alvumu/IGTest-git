@@ -1,6 +1,8 @@
 ---
 title: Thrombectomy Complication CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
 
 # ThrombectomyComplicationCS (CodeSystem)

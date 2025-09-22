@@ -1,6 +1,8 @@
 ---
 title: Perforation Procedures ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # PerforationProceduresVS (ValueSet)

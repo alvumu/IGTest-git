@@ -1,6 +1,8 @@
 ---
 title: Procedure Timing Context ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # ProcedureTimingContextVS (ValueSet)

@@ -1,3 +1,10 @@
+---
+title: Stroke Diagnosis ValueSet
+layout: default
+navSection: terminology
+termKind: valueset
+---
+
 ## StrokeDiagnosisVS (ValueSet)
 
 **URL:** http://testSK.org/ValueSet/stroke-diagnosis-vs

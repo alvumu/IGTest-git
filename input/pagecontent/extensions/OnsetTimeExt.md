@@ -1,3 +1,9 @@
+---
+title: Onset Time Extension
+layout: default
+navSection: extension
+---
+
 ## OnsetTimeExt
 
 **URL:** `http://testSK.org/StructureDefinition/onset-time-ext`

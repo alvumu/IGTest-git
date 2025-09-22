@@ -1,3 +1,10 @@
+---
+title: Stroke Risk Factor ValueSet
+layout: default
+navSection: terminology
+termKind: valueset
+---
+
 ## StrokeRiskFactorVS (ValueSet)
 
 **URL:** `http://testSK.org/ValueSet/stroke-risk-factor-vs`

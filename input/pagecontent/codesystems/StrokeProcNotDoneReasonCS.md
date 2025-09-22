@@ -1,6 +1,8 @@
 ---
 title: Stroke Procedure Not Done Reason CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
 
 # StrokeProcNotDoneReasonCS (CodeSystem)

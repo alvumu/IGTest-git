@@ -1,8 +1,9 @@
 ---
 title: Stroke Finding Codes ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
-
 # StrokeFindingCodesVS (ValueSet)
 
 **URL:** http://testSK.org/ValueSet/stroke-finding-codes-vs  

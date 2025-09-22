@@ -1,8 +1,9 @@
 ---
 title: Assessment Context CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
-
 # AssessmentContextCS (CodeSystem)
 
 **URL:** http://testSK.org/CodeSystem/assessment-context-cs  

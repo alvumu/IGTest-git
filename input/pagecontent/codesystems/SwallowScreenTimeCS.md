@@ -1,6 +1,8 @@
 ---
 title: Swallowing Screening Timing Category CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
 
 # SwallowScreenTimeCS (CodeSystem)

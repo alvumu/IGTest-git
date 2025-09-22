@@ -1,6 +1,7 @@
 ---
 title: Patient with SNOMED Gender and Age (extensions)
 layout: default
+navSection: profiles
 ---
 
 # PatientAgeGenderSNOMEDProfile (Patient)

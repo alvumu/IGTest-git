@@ -1,6 +1,7 @@
 ---
 title: Stroke Circumstance Observation Profile (R5)
 layout: default
+navSection: profiles
 ---
 
 # StrokeCircumstanceObservationProfile (Observation)

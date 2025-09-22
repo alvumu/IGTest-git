@@ -1,6 +1,8 @@
 ---
 title: Procedure Timing Context CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
 
 # ProcedureTimingContextCS (CodeSystem)

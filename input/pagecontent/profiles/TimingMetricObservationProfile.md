@@ -1,8 +1,8 @@
 ---
 title: Stroke Timing Metric Observation Profile (R5)
 layout: default
+navSection: profiles
 ---
-
 # TimingMetricObservationProfile (Observation)
 
 **URL:** http://testSK.org/StructureDefinition/timing-metric-observation-profile  

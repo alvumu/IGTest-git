@@ -1,6 +1,7 @@
 ---
 title: Stroke Functional Score Observation Profile (R5)
 layout: default
+navSection: profiles
 ---
 
 # FunctionalScoreObservationProfile (Observation)

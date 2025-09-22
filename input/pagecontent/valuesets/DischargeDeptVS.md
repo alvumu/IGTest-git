@@ -1,6 +1,8 @@
 ---
 title: Discharge Department/Service ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # DischargeDeptVS (ValueSet)

@@ -1,6 +1,8 @@
 ---
 title: Assessment Context ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # AssessmentContextVS (ValueSet)

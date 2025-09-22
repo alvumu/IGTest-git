@@ -1,3 +1,10 @@
+---
+title: Stroke Etiology CodeSystem
+layout: default
+navSection: terminology
+termKind: codesystem
+---
+
 ## StrokeEtiologyCS (CodeSystem)
 
 **URL:** http://testSK.org/CodeSystem/stroke-etiology-cs

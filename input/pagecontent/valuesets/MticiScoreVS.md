@@ -1,6 +1,8 @@
 ---
 title: mTICI Score ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # MTICIScoreValueSet (ValueSet)

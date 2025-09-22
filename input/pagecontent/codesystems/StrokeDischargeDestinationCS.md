@@ -1,6 +1,8 @@
 ---
 title: Stroke Discharge Destination CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
 
 # StrokeDischargeDestinationCS (CodeSystem)

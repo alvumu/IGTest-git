@@ -1,6 +1,7 @@
 ---
 title: Observation Timing Context Extension
-layout: profile
+layout: default
+navSection: extension
 ---
 
 # ObservationTimingContextExtension

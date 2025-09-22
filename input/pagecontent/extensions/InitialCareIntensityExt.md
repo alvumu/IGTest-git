@@ -1,6 +1,7 @@
 ---
 title: Initial Care Intensity Extension
-layout: profile
+layout: default
+navSection: extension
 ---
 
 # InitialCareIntensityExtension

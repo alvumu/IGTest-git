@@ -1,6 +1,8 @@
 ---
 title: Stroke Arrival Mode CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
 
 # StrokeArrivalModeCS (CodeSystem)

@@ -1,6 +1,8 @@
 ---
 title: Gender (SNOMED CT) ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # GenderSNOMEDVS (ValueSet)

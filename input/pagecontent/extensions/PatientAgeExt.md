@@ -1,6 +1,7 @@
 ---
 title: Patient Age (integer) Extension
-layout: profile
+layout: default
+navSection: extension
 ---
 
 # PatientAge (Extension)

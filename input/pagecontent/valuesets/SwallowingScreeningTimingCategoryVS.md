@@ -1,6 +1,8 @@
 ---
 title: Swallowing Screening Timing Category ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # SwallowingScreeningTimingCategoryVS (ValueSet)

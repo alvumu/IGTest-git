@@ -1,6 +1,8 @@
 ---
 title: Carotid Arteries Imaging Modality ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # CarotidImagingModalityVS (ValueSet)

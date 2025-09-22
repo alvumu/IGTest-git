@@ -1,6 +1,8 @@
 ---
 title: Hemorrhagic Stroke Bleeding Reason CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
 
 # HemorrhagicStrokeBleedingReasonCS (CodeSystem)

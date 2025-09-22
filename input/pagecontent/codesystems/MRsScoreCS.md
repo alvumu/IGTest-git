@@ -1,6 +1,8 @@
 ---
 title: Modified Rankin Scale (mRS) CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
 
 # MRsScoreCS (CodeSystem)

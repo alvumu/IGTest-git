@@ -1,6 +1,8 @@
 ---
 title: Swallow Procedures ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # SwallowProceduresVS (ValueSet)

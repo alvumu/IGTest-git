@@ -1,6 +1,7 @@
 ---
 title: Gender (SNOMED CT) Extension
-layout: profile
+layout: default
+navSection: extension
 ---
 
 # GenderSNOMED (Extension)

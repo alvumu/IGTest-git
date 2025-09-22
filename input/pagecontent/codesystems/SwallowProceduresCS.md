@@ -1,8 +1,9 @@
 ---
 title: Swallow Procedures CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
-
 # SwallowProceduresCS (CodeSystem)
 
 **URL:** http://testSK.org/CodeSystem/swallow-procedures-cs  

@@ -1,6 +1,7 @@
 ---
 title: Procedure Timing Context Extension
-layout: profile
+layout: default
+navSection: extension
 ---
 
 # ProcedureTimingContextExtension (Extension)

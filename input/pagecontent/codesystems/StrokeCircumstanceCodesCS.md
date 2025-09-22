@@ -1,6 +1,8 @@
 ---
 title: Stroke Circumstance CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
 
 # StrokeCircumstanceCodesCS (CodeSystem)

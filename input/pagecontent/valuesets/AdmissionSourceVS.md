@@ -1,3 +1,10 @@
+---
+title: Admission Source Valueset
+layout: default
+navSection: terminology
+termKind: valueset
+---
+
 ## AdmissionSourceVS (ValueSet)
 
 **URL:** `http://testSK.org/ValueSet/admission-source-vs`

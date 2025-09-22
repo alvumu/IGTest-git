@@ -1,6 +1,7 @@
 ---
 title: Discharge Department/Service Extension
-layout: profile
+layout: default
+navSection: extension
 ---
 
 # DischargeDepartmentServiceExtension

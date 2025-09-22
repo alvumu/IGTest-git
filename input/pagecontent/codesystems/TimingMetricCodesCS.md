@@ -1,6 +1,8 @@
 ---
 title: Stroke Timing Metric CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
 
 # TimingMetricCodesCS (CodeSystem)

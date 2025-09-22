@@ -1,6 +1,8 @@
 ---
 title: mTICI Score CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
 
 # MticiScoreCS (CodeSystem)

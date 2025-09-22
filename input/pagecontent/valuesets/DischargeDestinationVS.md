@@ -1,3 +1,10 @@
+---
+title: Discharge Destination ValueSet
+layout: default
+navSection: terminology
+termKind: valueset
+---
+
 ## DischargeDestinationVS (ValueSet)
 
 **URL:** `http://testSK.org/ValueSet/discharge-destination-vs`

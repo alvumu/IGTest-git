@@ -1,3 +1,9 @@
+---
+title: Hemorrhagic Stroke Bleeding Reason ValueSet
+layout: default
+navSection: terminology
+termKind: valueset
+---
 ## HemorrhagicStrokeBleedingReasonVS (ValueSet)
 
 **URL:** `http://testSK.org/ValueSet/hemorrhagic-stroke-bleeding-reason-vs`

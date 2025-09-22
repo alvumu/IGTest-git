@@ -1,6 +1,8 @@
 ---
 title: MedicationStatement CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
 
 # MedicationStatementCS (CodeSystem)

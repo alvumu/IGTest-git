@@ -1,6 +1,8 @@
 ---
 title: Specific Stroke Finding Codes ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # SpecificFindingCodesVS (ValueSet)

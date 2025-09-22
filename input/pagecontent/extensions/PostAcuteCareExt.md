@@ -1,6 +1,7 @@
 ---
 title: Required Post-Acute Care Extension
-layout: profile
+layout: default
+navSection: extension
 ---
 
 # RequiredPostAcuteCareExtension

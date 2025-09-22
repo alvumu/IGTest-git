@@ -1,7 +1,7 @@
 ---
 title: StrokeEncounterProfile
 layout: default
-author: Clinical-FHIR Team
+navSection: profiles
 ---
 
 # StrokeEncounterProfile (Encounter)

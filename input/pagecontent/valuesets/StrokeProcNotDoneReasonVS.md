@@ -1,6 +1,8 @@
 ---
 title: Stroke Procedure Not Done Reason ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # StrokeProcNotDoneReasonVS (ValueSet)

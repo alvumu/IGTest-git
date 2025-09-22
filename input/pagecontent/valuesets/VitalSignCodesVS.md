@@ -1,6 +1,8 @@
 ---
 title: Stroke Vital Sign Codes ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # VitalSignCodesVS (ValueSet)

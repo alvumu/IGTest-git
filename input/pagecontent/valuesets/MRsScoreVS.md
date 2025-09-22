@@ -1,6 +1,8 @@
 ---
 title: Modified Rankin Scale (mRS) ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # MRsScoreVS (ValueSet)

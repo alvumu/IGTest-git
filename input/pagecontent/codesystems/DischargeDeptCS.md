@@ -1,8 +1,9 @@
 ---
 title: Discharge Department/Service CodeSystem
-layout: terminology
+layout: default
+navSection: terminology
+termKind: codesystem
 ---
-
 # DischargeDeptCS (CodeSystem)
 
 **URL:** http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs  

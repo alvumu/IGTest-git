@@ -1,6 +1,7 @@
 ---
 title: Stroke Thrombolysis Procedure Profile
 layout: default
+navSection: profiles
 ---
 
 # StrokeThrombolysisProcedureProfile (Procedure)

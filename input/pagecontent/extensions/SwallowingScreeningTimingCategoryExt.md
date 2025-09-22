@@ -1,6 +1,7 @@
 ---
 title: Swallowing Screening Timing Category Extension
-layout: profile
+layout: default
+navSection: extension
 ---
 
 # SwallowingScreeningTimingCategoryExt (Extension)

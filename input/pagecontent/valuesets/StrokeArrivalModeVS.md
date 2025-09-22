@@ -1,6 +1,8 @@
 ---
 title: Stroke Arrival Mode ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # StrokeArrivalModeVS (ValueSet)

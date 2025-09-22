@@ -1,3 +1,10 @@
+---
+title: Stroke Risk Factor Snomed ValueSet
+layout: default
+navSection: terminology
+termKind: valueset
+---
+
 ## StrokeRiskFactorSNOMEDVS (ValueSet)
 
 **URL:** `http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs`

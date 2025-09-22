@@ -1,6 +1,7 @@
 ---
 title: Stroke Encounter Profile
 layout: default
+navSection: profiles
 ---
 
 

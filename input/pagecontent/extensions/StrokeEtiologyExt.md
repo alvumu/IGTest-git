@@ -1,4 +1,10 @@
-## StrokeStrokeEtiologyExt
+---
+title: Stroke Etiology Extension
+layout: default
+navSection: extension
+---
+
+## StrokeEtiologyExt
 
 **URL:** `http://testSK.org/StructureDefinition/ischemic-stroke-etiology-ext`
 **Context:** `Condition` (ischemic stroke diagnoses)

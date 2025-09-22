@@ -1,6 +1,8 @@
 ---
 title: Initial Care Intensity ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # InitialCareIntensityVS (ValueSet)

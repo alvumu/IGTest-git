@@ -1,3 +1,10 @@
+---
+title: Stroke Etiology ValueSet
+layout: default
+navSection: terminology
+termKind: valueset
+---
+
 ## StrokeEtiologyVS (ValueSet)
 
 **URL:** `http://testSK.org/ValueSet/stroke-etiology-vs`

@@ -1,8 +1,9 @@
 ---
 title: Stroke Discharge Destination ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
-
 # StrokeDischargeDestinationVS (ValueSet)
 
 **URL:** http://testSK.org/ValueSet/stroke-discharge-destination-vs  

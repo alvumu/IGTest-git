@@ -1,6 +1,8 @@
 ---
 title: Stroke Timing Metric ValueSet
-layout: terminology
+layout: default
+navSection: terminology
+termKind: valueset
 ---
 
 # TimingMetricCodesVS (ValueSet)
