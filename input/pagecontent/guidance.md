@@ -1,7 +1,6 @@
 ---
 title: Guidance
 layout: default
-permalink: /guidance/
 ---
 
 # Implementation Guidance

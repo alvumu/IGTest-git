@@ -1,7 +1,6 @@
 ---
 title: Downloads
 layout: default
-permalink: /downloads/
 ---
 
 # Downloads

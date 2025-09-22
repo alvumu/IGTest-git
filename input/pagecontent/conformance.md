@@ -1,7 +1,6 @@
 ---
 title: Conformance
 layout: default
-permalink: /conformance/
 ---
 
 # Conformance

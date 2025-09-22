@@ -1,7 +1,6 @@
 ---
 title: History
 layout: default
-permalink: /history/
 ---
 
 # Version History
