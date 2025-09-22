@@ -62,9 +62,10 @@ publisher:
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
-# parameters:
-#   excludettl: true
-#   validation: [allow-any-extensions, no-broken-links]
+parameters:
+  validation:
+    - no-broken-links
+  excludettl: true
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
@@ -77,7 +78,13 @@ publisher:
 menu:
   Home: index.html
   General Principles: general-principles.html
-  Artifacts: artifacts.html
+  Artifacts (auto): artifacts.html
+  Clinical Artifacts:
+    Profiles: profiles/index.html
+    ValueSets: valuesets/index.html
+    CodeSystems: codesystems/index.html
+    Extensions: extensions/index.html
+    Examples: examples/index.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
