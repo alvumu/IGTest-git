@@ -86,7 +86,29 @@
     <a href="general-principles.html">General Principles</a>
   </li>
   <li>
-    <a href="artifacts.html">Artifacts</a>
+    <a href="artifacts.html">Artifacts (auto)</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Clinical Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a name="l163">​</a>
+        <a href="profiles/index.html">Profiles</a>
+      </li>
+      <li><a name="l169">​</a>
+        <a href="valuesets/index.html">ValueSets</a>
+      </li>
+      <li><a name="l175">​</a>
+        <a href="codesystems/index.html">CodeSystems</a>
+      </li>
+      <li><a name="l181">​</a>
+        <a href="extensions/index.html">Extensions</a>
+      </li>
+      <li><a name="l187">​</a>
+        <a href="examples/index.html">Examples</a>
+      </li>
+    </ul>
   </li>
 </ul>
             </div>    <!-- /.nav-collapse -->
@@ -165,12 +187,6 @@
     </li>
   
 
-
-  
-    <li>
-      <a href="StructureDefinition-patient-age-ext.profile.ttl.html">TTL</a>
-    </li>
-  
 
 
 </ul>
@@ -271,10 +287,6 @@ Element ID:     <code>
       </li> -->
 
 
-        <!-- <li>
-        <a href="#tabs-ttl">Pseudo-TTL</a>
-      </li> -->
-
       <li>
         <a href="#tabs-summ">Statistics/References</a>
       </li>
@@ -309,7 +321,7 @@ Element ID:     <code>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#integer">integer</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Age in years (integer)</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 9fd1115f-c186-4a12-aa81-f9f5543946f7
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 914fb594-4694-495a-83c0-0df1968fc463
 document.getElementById('cbpatient-age-extD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('patient-age-extD'), 'binding', document.getElementById('cbpatient-age-extD-binding').checked, document.getElementById('pppatient-age-extD'));
 document.getElementById('cbpatient-age-extD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -350,7 +362,7 @@ filterDesc(document.getElementById('patient-age-extD'), 'obligation', document.g
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#integer">integer</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Age in years (integer)</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 9fd1115f-c186-4a12-aa81-f9f5543946f7
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 914fb594-4694-495a-83c0-0df1968fc463
 document.getElementById('cbpatient-age-extS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('patient-age-extS'), 'binding', document.getElementById('cbpatient-age-extS-binding').checked, document.getElementById('pppatient-age-extS'));
 document.getElementById('cbpatient-age-extS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -388,16 +400,6 @@ filterDesc(document.getElementById('patient-age-extS'), 'obligation', document.g
       </div>
     </div> -->
 
-
-      <!-- <a name="tabs-ttl"> </a>
-    <div id="tabs-ttl">
-      <div id="ttl">
-        <div id="ttl-inner">
-          <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
-
-        </div>
-      </div>
-    </div> -->
 
     <a name="tabs-summ"> </a>
     <div id="tabs-summ">
@@ -444,7 +446,7 @@ Summary
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#integer">integer</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Age in years (integer)</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 9fd1115f-c186-4a12-aa81-f9f5543946f7
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 914fb594-4694-495a-83c0-0df1968fc463
 document.getElementById('cbpatient-age-extDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('patient-age-extDA'), 'binding', document.getElementById('cbpatient-age-extDA-binding').checked, document.getElementById('pppatient-age-extDA'));
 document.getElementById('cbpatient-age-extDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -485,7 +487,7 @@ filterDesc(document.getElementById('patient-age-extDA'), 'obligation', document.
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#integer">integer</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Age in years (integer)</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 9fd1115f-c186-4a12-aa81-f9f5543946f7
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 914fb594-4694-495a-83c0-0df1968fc463
 document.getElementById('cbpatient-age-extSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('patient-age-extSA'), 'binding', document.getElementById('cbpatient-age-extSA-binding').checked, document.getElementById('pppatient-age-extSA'));
 document.getElementById('cbpatient-age-extSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -522,16 +524,6 @@ filterDesc(document.getElementById('patient-age-extSA'), 'obligation', document.
         </div>
       </div> -->
 
-
-        <!-- <div id="all-ttl">
-        <p>
-          <b>TTL Template</b>
-        </p>
-        <div id="all-ttl-inner">
-          <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
-
-        </div>
-      </div> -->
 
       <div id="all-summ">
         <p>This structure is derived from <a href="http://hl7.org/fhir/R5/extensibility.html#Extension">Extension</a>
@@ -590,8 +582,8 @@ Summary
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l1287">​</a>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Sep 22, 2025 11:47+0000">2025-09-22</span>
+        <p><a name="l1316">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Sep 22, 2025 13:12+0000">2025-09-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
