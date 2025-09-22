@@ -1,8 +1,14 @@
 ---
 title: Profiles
 layout: default
-permalink: /profiles/   # esto genera /profiles/index.html
+permalink: /profiles/
 ---
 
 # Profiles
-{% include list-folder.html param='/profiles/' %}
+
+This section lists all **profile narrative pages** included in the guide.
+
+> For the auto-generated summary tables of all artifacts (including StructureDefinitions), see **[Artifacts](artifacts.html)**.
+
+{% include list-folder.html section:'/profiles/' %}
+

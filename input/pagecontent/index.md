@@ -12,11 +12,7 @@ authors:
 # FHIR Implementation Guide – Hospital Stroke Care
 
 ## Introduction
-This Implementation Guide (IG) provides a standardized framework for capturing, exchanging, and analyzing clinical and administrative data related to in-hospital stroke care. It draws on patterns and best practices from existing guides such as:
-- https://build.fhir.org/ig/HL7/fhir-ips/
-- https://hl7.org/fhir/us/core/
-- https://simplifier.net/guide/ca-fex?version=2.2.0-DFT-Ballot
-- https://simplifier.net/guide/fhir-standards-wales-implementation-guide?version=2.2.0
+This Implementation Guide (IG) provides a standardized framework for capturing, exchanging, and analyzing clinical and administrative data related to in-hospital stroke care. 
 
 ### Purpose
 - **Standardize** the representation of data for patients admitted with acute stroke events (“Stroke Encounter”), including admission details, in-hospital care intensity, discharge planning, diagnoses, risk factors, vital signs, functional scores, procedures, and follow-up.
@@ -85,5 +81,3 @@ This IG is organized into discrete sections to facilitate navigation and modular
    - Maintainers’ contact information.
    - Licensing and usage policies.
   
-+ ## More Pages  
-+ - [General Principles](general-principles.html)  

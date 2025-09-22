@@ -45,19 +45,19 @@ publisher:
 #
 pages:
   index.md:
-    title: Stroke Care Implementation Guide
-  general-principles.md:
-    title: General Principles
+    title: Home
+  conformance.md:
+    title: Conformance
+  guidance.md:
+    title: Guidance
   profiles.md:
     title: Profiles
-  valuesets.md:
-    title: ValueSets
-  codesystems.md:
-    title: CodeSystems
-  extensions.md:
-    title: Extensions
-  examples.md:
-    title: Examples
+  terminology.md:
+    title: Terminology
+  downloads.md:
+    title: Downloads
+  history.md:
+    title: History
 
 #
 #
@@ -85,15 +85,14 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  General Principles: general-principles.html
-  Artifacts (auto): artifacts.html
+  Conformance: conformance/index.html
+  Guidance: guidance/index.html
   Clinical Artifacts:
     Profiles: profiles/index.html
-    ValueSets: valuesets/index.html
-    CodeSystems: codesystems/index.html
-    Extensions: extensions/index.html
-    Examples: examples/index.html
-
+    Terminology: terminology/index.html
+  Artifacts (auto): artifacts.html
+  Downloads: downloads/index.html
+  History: history/index.html
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │
@@ -175,7 +174,33 @@ menu:
 #     - StructureDefinition/bark-control
 #     - StructureDefinition/bee-sting
 #
-#
+groups:
+  Profiles:
+    name: Profiles
+    description: Clinical and administrative profiles
+    resources:
+      - StructureDefinition/stroke-encounter-profile
+      - StructureDefinition/prior-medication-statement-profile
+      - StructureDefinition/functional-score-observation-profile
+  Extensions:
+    name: Extensions
+    description: Custom extensions
+    resources:
+      - StructureDefinition/first-hospital-ext
+      - StructureDefinition/initial-care-intensity-ext
+  Terminology:
+    name: Terminology
+    description: CodeSystems and ValueSets
+    resources:
+      - ValueSet/stroke-diagnosis-vs
+      - CodeSystem/mtici-score-cs
+  Examples:
+    name: Examples
+    description: Example instances
+    resources:
+      - Encounter/StrokeEncounterExample
+      - Observation/VitalSignObservationExample
+
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
 # should follow the format defined in ImplementationGuide:
