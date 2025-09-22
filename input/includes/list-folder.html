@@ -1,0 +1,26 @@
+<ul class="list">
+{%- assign section = include.section | default: '/profiles/' -%}
+
+{%- comment -%}
+  Lista todas las páginas HTML dentro de la carpeta indicada en 'section'.
+  - Filtra solo páginas que generan .html
+  - Excluye el index de esa carpeta
+  - Ordena por 'title' si existe; si no, por nombre de archivo
+{%- endcomment -%}
+
+{%- assign all_pages = site.pages | where_exp: "p", "p.output_ext == '.html'" -%}
+{%- assign in_section = all_pages | where_exp: "p", "p.url contains section" -%}
+
+{%- assign idxurl = section | append: 'index.html' -%}
+{%- assign sorted = in_section | sort: "title" -%}
+
+{%- for p in sorted -%}
+  {%- if p.url != idxurl -%}
+    <li><a href="{{ p.url | relative_url }}">{{ p.title | default: p.name }}</a></li>
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if sorted == empty -%}
+  <li><em>No entries found in {{ section }}</em></li>
+{%- endif -%}
+</ul>
