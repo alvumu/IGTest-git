@@ -1,5 +1,5 @@
 ---
-title: Stroke Diagnosis Profile
+title: Stroke Encounter Profile
 layout: default
 ---
 

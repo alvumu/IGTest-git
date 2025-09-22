@@ -1,6 +1,6 @@
 ---
 title: StrokeEncounterProfile
-layout: profile
+layout: default
 author: Clinical-FHIR Team
 ---
 

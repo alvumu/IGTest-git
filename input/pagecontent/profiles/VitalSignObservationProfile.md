@@ -1,6 +1,6 @@
 ---
 title: Stroke Vital Sign Observation Profile (R5)
-layout: profile
+layout: default
 ---
 
 # VitalSignObservationProfile (Observation)

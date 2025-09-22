@@ -1,6 +1,6 @@
 ---
 title: Stroke Thrombolysis Procedure Profile
-layout: profile
+layout: default
 ---
 
 # StrokeThrombolysisProcedureProfile (Procedure)

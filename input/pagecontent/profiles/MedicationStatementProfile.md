@@ -1,6 +1,6 @@
 ---
 title: Prior Medication Statement Profile (R5)
-layout: profile
+layout: default
 ---
 
 # PriorMedicationStatementProfile (MedicationStatement)

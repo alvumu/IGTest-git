@@ -1,6 +1,6 @@
 ---
 title: Encounter Provider Provenance Profile (R5)
-layout: profile
+layout: default
 ---
 
 # EncounterProviderProvenanceProfile (Provenance)

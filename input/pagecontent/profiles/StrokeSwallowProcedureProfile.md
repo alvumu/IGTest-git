@@ -1,6 +1,6 @@
 ---
 title: Stroke Swallow Procedure Profile
-layout: profile
+layout: default
 ---
 
 # StrokeSwallowProcedureProfile (Procedure)

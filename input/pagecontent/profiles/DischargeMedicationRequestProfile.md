@@ -1,6 +1,6 @@
 ---
 title: Discharge Medication Request Profile
-layout: profile
+layout: default
 ---
 
 # DischargeMedicationRequestProfile (MedicationRequest)

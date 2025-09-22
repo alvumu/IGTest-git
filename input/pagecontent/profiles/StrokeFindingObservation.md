@@ -1,6 +1,6 @@
 ---
 title: Specific Stroke Finding Observation Profile (R5)
-layout: profile
+layout: default
 ---
 
 # SpecificFindingObservationProfile (Observation)

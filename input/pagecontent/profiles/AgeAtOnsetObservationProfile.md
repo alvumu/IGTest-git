@@ -1,6 +1,6 @@
 ---
 title: Age at Stroke Onset Observation Profile (R5)
-layout: profile
+layout: default
 ---
 
 # AgeAtOnsetObservationProfile (Observation)

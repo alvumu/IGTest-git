@@ -1,6 +1,6 @@
 ---
 title: Stroke Timing Metric Observation Profile (R5)
-layout: profile
+layout: default
 ---
 
 # TimingMetricObservationProfile (Observation)

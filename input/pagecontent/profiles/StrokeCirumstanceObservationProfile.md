@@ -1,6 +1,6 @@
 ---
 title: Stroke Circumstance Observation Profile (R5)
-layout: profile
+layout: default
 ---
 
 # StrokeCircumstanceObservationProfile (Observation)

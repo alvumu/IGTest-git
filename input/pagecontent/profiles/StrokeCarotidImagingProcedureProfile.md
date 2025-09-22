@@ -1,6 +1,6 @@
 ---
 title: Stroke Carotid Imaging Procedure Profile
-layout: profile
+layout: default
 ---
 
 # StrokeCarotidImagingProcedureProfile (Procedure)

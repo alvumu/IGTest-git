@@ -1,6 +1,6 @@
 ---
 title: Stroke Brain Imaging Procedure Profile (R5)
-layout: profile
+layout: default
 ---
 
 # StrokeBrainImagingProcedureProfile (Procedure)

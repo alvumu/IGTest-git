@@ -1,6 +1,6 @@
 ---
 title: Base Stroke Observation Profile
-layout: profile
+layout: default
 ---
 
 # BaseStrokeObservation (Observation)

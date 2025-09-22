@@ -1,3 +1,8 @@
+---
+title: Stroke Risk Factor Profile (R5)
+layout: default
+---
+
 ## StrokeRiskFactorConditionProfile (Condition)
 
 **Purpose:** Represent a **known condition or risk factor** relevant to stroke (e.g., AF, diabetes, hypertension) on the problem list; optionally includes “unknown/absent” patterns via IPS ValueSet.
