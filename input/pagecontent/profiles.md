@@ -1,6 +1,7 @@
 ---
 title: Profiles
 layout: default
+permalink: /profiles/
 ---
 
 # Profiles
