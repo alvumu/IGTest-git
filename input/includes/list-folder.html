@@ -1,24 +1,18 @@
 <ul class="list">
+{% assign pathContains = include.pathContains | default: '' %}
 {% assign section      = include.section      | default: '' %}
-{% assign contains     = include.contains     | default: '' %}
 {% assign nav          = include.nav          | default: '' %}
 {% assign termKind     = include.termKind     | default: '' %}
-{% assign srcpath      = include.srcpath      | default: '' %}
 {% assign excludeIndex = include.excludeIndex | default: true %}
 
-{% assign pages = site.pages | concat: site.html_pages %}
-{% assign pages = pages | where_exp:'p','p.url contains ".html"' %}
+{% assign pages = site.html_pages | concat: site.pages %}
 
-{% if srcpath != '' %}
-  {% assign pages = pages | where_exp:'p','p.path contains srcpath' %}
+{% if pathContains != '' %}
+  {% assign pages = pages | where_exp:'p','p.path contains pathContains' %}
 {% endif %}
 
 {% if section != '' %}
   {% assign pages = pages | where_exp:'p','p.url contains section' %}
-{% endif %}
-
-{% if contains != '' %}
-  {% assign pages = pages | where_exp:'p','p.url contains contains' %}
 {% endif %}
 
 {% if nav != '' %}
@@ -29,23 +23,16 @@
   {% assign pages = pages | where:'termKind', termKind %}
 {% endif %}
 
-{% if excludeIndex and section != '' %}
-  {% assign idxurl = section | append: 'index.html' %}
-  {% assign pages = pages | where_exp:'p','p.url != idxurl' %}
-{% endif %}
-
-{% if excludeIndex and srcpath != '' %}
-  {% assign pages = pages | where_exp:'p','p.path contains "/index.md" == false' %}
-{% endif %}
-
 {% assign pages = pages | uniq | sort:'title' %}
 
+{% assign any = false %}
 {% for p in pages %}
-  {% assign title = p.title | default: p.name | default: p.url %}
+  {% assign title = p.title | default:p.name | default:p.url %}
   <li><a href="{{ p.url | relative_url }}">{{ title }}</a></li>
+  {% assign any = true %}
 {% endfor %}
 
-{% if pages == empty %}
+{% unless any %}
   <li><em>No entries found</em></li>
-{% endif %}
+{% endunless %}
 </ul>

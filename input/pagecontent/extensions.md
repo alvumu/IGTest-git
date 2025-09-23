@@ -4,4 +4,4 @@ layout: default
 ---
 
 # Extensions
-{% include list-folder.html section='/profiles/' %}
+{% include list-folder.html pathContains='pagecontent/extensions/' %}
