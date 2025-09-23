@@ -8,12 +8,4 @@ This section lists all **profile narrative pages** included in the guide.
 
 {% include list-folder.html dir='profiles' %}
 
-<p><small>DEBUG (profiles visibles):</small></p>
-<ul>
-{% for p in site.pages %}
-  {% if p.output_ext == '.html' and p.path contains 'profiles/' %}
-    <li>{{ p.path }} → {{ p.url }}</li>
-  {% endif %}
-{% endfor %}
-</ul>
-
+<p>DEBUG baseurl=<code>{{ site.baseurl }}</code></p>
