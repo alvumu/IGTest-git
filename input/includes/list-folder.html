@@ -51,20 +51,36 @@
 
 {%- assign out = out | uniq | sort: 'title' -%}
 
+{%- assign base = include.base | default: site.baseurl | default: '/IGTest-git' -%}
+{%- comment -%} Normaliza base: empieza con '/', sin '/' final {%- endcomment -%}
+{%- unless base -%}{%- assign base = '' -%}{%- endunless -%}
+{%- assign bfirst = base | slice: 0, 1 -%}
+{%- unless bfirst == '/' -%}{%- assign base = '/' | append: base -%}{%- endunless -%}
+{%- assign base = base | replace: '//','/' -%}
+{%- if base != '/' and base endswith '/' -%}{%- assign base = base | slice: 0, base.size-1 -%}{%- endif -%}
+
 {%- for p in out -%}
   {%- assign title = p.title | default: p.name | default: p.url -%}
   {%- assign href = p.url | default: '' -%}
 
   {%- if dir != '' and href != '' -%}
-    {# Estamos dentro de /<dir>/ → genera link relativo al directorio actual #}
-    {%- assign href = href | remove_first: dir -%}
+    {# normaliza dir a '/subcarpeta/' #}
+    {%- assign first = dir | slice: 0, 1 -%}
+    {%- unless first == '/' -%}{%- assign dir = '/' | append: dir -%}{%- endunless -%}
+    {%- assign last = dir | slice: -1, 1 -%}
+    {%- unless last == '/' -%}{%- assign dir = dir | append: '/' -%}{%- endunless -%}
+
+    {%- assign fname = href | remove_first: dir -%}      {# 'AgeAt…html' #}
+    {%- assign path  = dir | append: fname -%}           {# '/profiles/AgeAt…html' #}
+    {%- assign final = base | append: path -%}           {# '/IGTest-git/profiles/AgeAt…html' #}
   {%- else -%}
-    {# Sin dir: usa relative_url (aprovecha baseurl si está disponible) #}
-    {%- assign href = href | relative_url -%}
+    {%- comment -%} Sin dir: también fuerza base para coherencia {%- endcomment -%}
+    {%- assign final = base | append: href -%}
   {%- endif -%}
 
-  <li><a href="{{ href }}">{{ title }}</a></li>
+  <li><a href="{{ final }}">{{ title }}</a></li>
 {%- endfor -%}
+
 
 {%- if out == empty -%}
   <li><em>No entries found{% if dir != '' %} in {{ dir }}{% endif %}{% if srcpath != '' %} (srcpath={{ srcpath }}){% endif %}{% if nameContains != '' %} (name contains '{{ nameContains }}'){% endif %}</em></li>
