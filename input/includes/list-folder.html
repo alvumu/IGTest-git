@@ -1,22 +1,48 @@
 <ul class="list">
-{%- assign section = include.section | default: '' -%}
-{%- assign pages = site.pages | concat: site.html_pages -%}
-{%- assign pages = pages | where_exp:'p','p.url' -%}
-{%- if section != '' -%}
-  {%- assign pages = pages | where_exp:'p','p.url contains section' -%}
+{%- assign dir     = include.dir     | default: '' -%}      {# subcarpeta destino, p.ej. 'profiles' #}
+{%- assign srcpath = include.srcpath | default: '' -%}      {# ruta fuente, p.ej. '/input/pagecontent/profiles/' #}
+
+{%- comment -%} Usaremos solo páginas HTML reales {%- endcomment -%}
+{%- assign pages = site.html_pages -%}
+
+{%- assign out = '' | split: '' -%}
+
+{%- if dir != '' -%}
+  {%- comment -%} Normaliza dir para que sea del tipo '/profiles/' {%- endcomment -%}
+  {%- assign first = dir | slice: 0,1 -%}
+  {%- unless first == '/' -%}{%- assign dir = '/' | append: dir -%}{%- endunless -%}
+  {%- assign last = dir | slice: -1 -%}
+  {%- unless last == '/' -%}{%- assign dir = dir | append: '/' -%}{%- endunless -%}
+  {%- assign idxurl = dir | append: 'index.html' -%}
+
+  {%- for p in pages -%}
+    {%- if p.url and p.url != '' -%}
+      {%- assign prefix = p.url | slice: 0, dir | size -%}
+      {%- if prefix == dir and p.url != idxurl -%}
+        {%- assign out = out | push: p -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+{%- elsif srcpath != '' -%}
+  {%- comment -%} Filtra por ruta del fichero fuente (útil si no usas permalinks por carpeta) {%- endcomment -%}
+  {%- for p in pages -%}
+    {%- if p.path and p.path contains srcpath -%}
+      {%- assign out = out | push: p -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+{%- else -%}
+  {%- assign out = pages -%}
 {%- endif -%}
 
-{%- comment -%} Excluye el index de esa sección {%- endcomment -%}
-{%- if section != '' -%}
-  {%- assign idxurl = section | append:'index.html' -%}
-  {%- assign pages = pages | where_exp:'p','p.url != idxurl' -%}
-{%- endif -%}
-
-{%- assign pages = pages | uniq | sort: 'title' -%}
-{%- for p in pages -%}
-  <li><a href="{{ p.url | relative_url }}">{{ p.title | default:p.name | default:p.url }}</a></li>
+{%- assign out = out | uniq | sort: 'title' -%}
+{%- for p in out -%}
+  {%- assign title = p.title | default: p.name | default: p.url -%}
+  <li><a href="{{ p.url | relative_url }}">{{ title }}</a></li>
 {%- endfor -%}
-{%- if pages == empty -%}
-  <li><em>No entries found{% if section != '' %} in {{ section }}{% endif %}</em></li>
+
+{%- if out == empty -%}
+  <li><em>No entries found{% if dir != '' %} in {{ dir }}{% endif %}{% if srcpath != '' %} (srcpath={{ srcpath }}){% endif %}</em></li>
 {%- endif -%}
 </ul>
