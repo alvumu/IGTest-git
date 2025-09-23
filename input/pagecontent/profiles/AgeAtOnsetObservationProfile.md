@@ -1,7 +1,7 @@
 ---
 title: Age at Stroke Onset Observation Profile (R5)
 layout: default
-permalink: /profiles/age-at-onset-observation-profile.html
+permalink: /profiles/StructureDefinition-age-at-onset-observation-profile.html
 ---
 
 
