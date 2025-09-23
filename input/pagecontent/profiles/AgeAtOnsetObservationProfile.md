@@ -21,3 +21,5 @@ layout: default
 |---|---:|:---:|---|
 | `Observation.code` | 1..1 | ✓ | Fixed to `SCT#445518008` (*Age at onset of clinical finding*) |
 | `Observation.valueInteger` | 1..1 | ✓ | Age in years |
+
+<p>DEBUG baseurl=<code>{{ site.baseurl }}</code></p>

@@ -4,7 +4,7 @@
 {%- assign nameContains = include.nameContains | default: '' -%}
 {%- assign excludeIndex = include.excludeIndex | default: true -%}
 
-{%- comment -%} Usamos solo páginas HTML reales {%- endcomment -%}
+{%- comment -%} Usamos todas las páginas conocidas por Jekyll/IG {%- endcomment -%}
 {%- assign pages = site.pages -%}
 {%- assign out = '' | split: '' -%}
 
@@ -57,7 +57,16 @@
 
 {%- for p in out -%}
   {%- assign title = p.title | default: p.name | default: p.url -%}
-  <li><a href="{{ p.url | relative_url }}">{{ title }}</a></li>
+  {%- assign href = p.url | default: '' -%}
+  {%- if dir != '' and href != '' -%}
+    {%- comment -%}
+      Si estamos listando dentro de /profiles/ (o similar), hacemos el href relativo:
+      '/profiles/AgeAtOnsetObservationProfile.html' -> 'AgeAtOnsetObservationProfile.html'
+      Esto evita depender de baseurl en GitHub Pages (/IGTest-git).
+    {%- endcomment -%}
+    {%- assign href = href | remove_first: dir -%}
+  {%- endif -%}
+<li><a href="{{ p.url | relative_url }}">{{ title }}</a></li>
 {%- endfor -%}
 
 {%- if out == empty -%}
