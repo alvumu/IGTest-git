@@ -7,7 +7,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://alvumu.github.io/MedicationStatement/PriorMedicationStatementExample> a fhir:MedicationStatement ;
+<http://testSK.org/MedicationStatement/PriorMedicationStatementExample> a fhir:MedicationStatement ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "PriorMedicationStatementExample"] ; # 
   fhir:meta [
@@ -32,12 +32,12 @@
      ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://alvumu.github.io/Patient/example-patient> ;
+     fhir:link <http://testSK.org/Patient/example-patient> ;
      fhir:reference [ fhir:v "Patient/example-patient" ]
   ] ; # 
   fhir:reason ( [
      fhir:reference [
-       fhir:link <https://alvumu.github.io/Condition/StrokeDiagnosisConditionExample> ;
+       fhir:link <http://testSK.org/Condition/StrokeDiagnosisConditionExample> ;
        fhir:reference [ fhir:v "Condition/StrokeDiagnosisConditionExample" ]
      ]
   ] ) ; # 

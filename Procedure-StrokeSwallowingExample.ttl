@@ -7,7 +7,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://alvumu.github.io/Procedure/StrokeSwallowingExample> a fhir:Procedure ;
+<http://testSK.org/Procedure/StrokeSwallowingExample> a fhir:Procedure ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "StrokeSwallowingExample"] ; # 
   fhir:meta [
@@ -51,7 +51,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://alvumu.github.io/Patient/example-patient> ;
+     fhir:link <http://testSK.org/Patient/example-patient> ;
      fhir:reference [ fhir:v "Patient/example-patient" ]
   ] ; # 
   fhir:occurrence [

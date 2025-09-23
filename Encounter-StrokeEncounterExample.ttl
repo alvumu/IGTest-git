@@ -7,7 +7,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://alvumu.github.io/Encounter/StrokeEncounterExample> a fhir:Encounter ;
+<http://testSK.org/Encounter/StrokeEncounterExample> a fhir:Encounter ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "StrokeEncounterExample"] ; # 
   fhir:meta [
@@ -62,7 +62,7 @@
      ] )
   ] ) ; # 
   fhir:subject [
-     fhir:link <https://alvumu.github.io/Patient/example-patient> ;
+     fhir:link <http://testSK.org/Patient/example-patient> ;
      fhir:reference [ fhir:v "Patient/example-patient" ]
   ] ; # 
   fhir:actualPeriod [

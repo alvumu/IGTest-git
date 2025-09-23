@@ -6,18 +6,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://alvumu.github.io/ImplementationGuide/SKtestIG> a fhir:ImplementationGuide ;
+<http://testSK.org/ImplementationGuide/SKtestIG> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "SKtestIG"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide SKtestIG</b></p><a name=\"SKtestIG\"> </a><a name=\"hcSKtestIG\"> </a><h2>IGTest</h2><p>The official URL for this implementation guide is: </p><pre>https://alvumu.github.io</pre></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide SKtestIG</b></p><a name=\"SKtestIG\"> </a><a name=\"hcSKtestIG\"> </a><h2>IGTest</h2><p>The official URL for this implementation guide is: </p><pre>http://testSK.org/ImplementationGuide/SKtestIG</pre></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "https://alvumu.github.io"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://testSK.org/ImplementationGuide/SKtestIG"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-09-23T14:01:22+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-23T14:15:20+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -94,7 +94,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/admission-source-vs> ;
+         fhir:link <http://testSK.org/ValueSet/admission-source-vs> ;
          fhir:reference [ fhir:v "ValueSet/admission-source-vs" ]
        ] ;
        fhir:name [ fhir:v "Admission Sources ValueSet" ] ;
@@ -109,7 +109,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/age-at-onset-observation-profile> ;
+         fhir:link <http://testSK.org/StructureDefinition/age-at-onset-observation-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/age-at-onset-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Age at Stroke Onset Observation Profile (R5)" ] ;
@@ -124,7 +124,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Observation/AgeAtOnsetObservationExample> ;
+         fhir:link <http://testSK.org/Observation/AgeAtOnsetObservationExample> ;
          fhir:reference [ fhir:v "Observation/AgeAtOnsetObservationExample" ]
        ] ;
        fhir:name [ fhir:v "AgeAtOnsetObservationExample" ] ;
@@ -142,7 +142,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/assessment-context-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/assessment-context-cs> ;
          fhir:reference [ fhir:v "CodeSystem/assessment-context-cs" ]
        ] ;
        fhir:name [ fhir:v "Assessment Context Code System" ] ;
@@ -157,7 +157,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/assessment-context-vs> ;
+         fhir:link <http://testSK.org/ValueSet/assessment-context-vs> ;
          fhir:reference [ fhir:v "ValueSet/assessment-context-vs" ]
        ] ;
        fhir:name [ fhir:v "Assessment Context ValueSet" ] ;
@@ -172,7 +172,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/afib-flutter-status-vs> ;
+         fhir:link <http://testSK.org/ValueSet/afib-flutter-status-vs> ;
          fhir:reference [ fhir:v "ValueSet/afib-flutter-status-vs" ]
        ] ;
        fhir:name [ fhir:v "Atrial Fibrillation or Flutter Status ValueSet" ] ;
@@ -187,7 +187,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/base-stroke-observation> ;
+         fhir:link <http://testSK.org/StructureDefinition/base-stroke-observation> ;
          fhir:reference [ fhir:v "StructureDefinition/base-stroke-observation" ]
        ] ;
        fhir:name [ fhir:v "Base Profile for Stroke-Related Observations" ] ;
@@ -202,7 +202,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/brain-imaging-modality-vs> ;
+         fhir:link <http://testSK.org/ValueSet/brain-imaging-modality-vs> ;
          fhir:reference [ fhir:v "ValueSet/brain-imaging-modality-vs" ]
        ] ;
        fhir:name [ fhir:v "Brain Imaging Modality ValueSet" ] ;
@@ -217,7 +217,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/brain-imaging-type-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/brain-imaging-type-cs> ;
          fhir:reference [ fhir:v "CodeSystem/brain-imaging-type-cs" ]
        ] ;
        fhir:name [ fhir:v "Brain Imaging Type Code System" ] ;
@@ -232,7 +232,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/carotid-imaging-modality-vs> ;
+         fhir:link <http://testSK.org/ValueSet/carotid-imaging-modality-vs> ;
          fhir:reference [ fhir:v "ValueSet/carotid-imaging-modality-vs" ]
        ] ;
        fhir:name [ fhir:v "Carotid Arteries Imaging Modality ValueSet" ] ;
@@ -247,7 +247,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/discharge-dept-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/discharge-dept-cs> ;
          fhir:reference [ fhir:v "CodeSystem/discharge-dept-cs" ]
        ] ;
        fhir:name [ fhir:v "Discharge Department/Service Code System" ] ;
@@ -262,7 +262,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/discharge-department-service-ext> ;
+         fhir:link <http://testSK.org/StructureDefinition/discharge-department-service-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/discharge-department-service-ext" ]
        ] ;
        fhir:name [ fhir:v "Discharge Department/Service Extension" ] ;
@@ -277,7 +277,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/discharge-dept-vs> ;
+         fhir:link <http://testSK.org/ValueSet/discharge-dept-vs> ;
          fhir:reference [ fhir:v "ValueSet/discharge-dept-vs" ]
        ] ;
        fhir:name [ fhir:v "Discharge Department/Service ValueSet" ] ;
@@ -292,7 +292,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/discharge-destination-vs> ;
+         fhir:link <http://testSK.org/ValueSet/discharge-destination-vs> ;
          fhir:reference [ fhir:v "ValueSet/discharge-destination-vs" ]
        ] ;
        fhir:name [ fhir:v "Discharge Destination ValueSet" ] ;
@@ -307,7 +307,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/discharge-medication-request-profile> ;
+         fhir:link <http://testSK.org/StructureDefinition/discharge-medication-request-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/discharge-medication-request-profile" ]
        ] ;
        fhir:name [ fhir:v "Discharge Medication Request Profile" ] ;
@@ -322,7 +322,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/MedicationRequest/discharge-medication-request-001> ;
+         fhir:link <http://testSK.org/MedicationRequest/discharge-medication-request-001> ;
          fhir:reference [ fhir:v "MedicationRequest/discharge-medication-request-001" ]
        ] ;
        fhir:name [ fhir:v "DischargeMedicationRequest" ] ;
@@ -340,7 +340,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/encounter-provider-provenance> ;
+         fhir:link <http://testSK.org/StructureDefinition/encounter-provider-provenance> ;
          fhir:reference [ fhir:v "StructureDefinition/encounter-provider-provenance" ]
        ] ;
        fhir:name [ fhir:v "Encounter Provider Provenance Profile (R5)" ] ;
@@ -355,7 +355,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Provenance/ExampleEncounterProviderProvenance> ;
+         fhir:link <http://testSK.org/Provenance/ExampleEncounterProviderProvenance> ;
          fhir:reference [ fhir:v "Provenance/ExampleEncounterProviderProvenance" ]
        ] ;
        fhir:name [ fhir:v "ExampleEncounterProviderProvenance" ] ;
@@ -373,7 +373,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Organization/ExampleOrganization> ;
+         fhir:link <http://testSK.org/Organization/ExampleOrganization> ;
          fhir:reference [ fhir:v "Organization/ExampleOrganization" ]
        ] ;
        fhir:name [ fhir:v "ExampleOrganization" ] ;
@@ -387,7 +387,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/first-hospital-ext> ;
+         fhir:link <http://testSK.org/StructureDefinition/first-hospital-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/first-hospital-ext" ]
        ] ;
        fhir:name [ fhir:v "First Hospital Extension" ] ;
@@ -403,7 +403,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Observation/FunctionalScoreObservationExample> ;
+         fhir:link <http://testSK.org/Observation/FunctionalScoreObservationExample> ;
          fhir:reference [ fhir:v "Observation/FunctionalScoreObservationExample" ]
        ] ;
        fhir:name [ fhir:v "FunctionalScoreObservationExample" ] ;
@@ -421,7 +421,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/gender-snomed-ext> ;
+         fhir:link <http://testSK.org/StructureDefinition/gender-snomed-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/gender-snomed-ext" ]
        ] ;
        fhir:name [ fhir:v "Gender (SNOMED CT)" ] ;
@@ -436,7 +436,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/vs-gender-snomed> ;
+         fhir:link <http://testSK.org/ValueSet/vs-gender-snomed> ;
          fhir:reference [ fhir:v "ValueSet/vs-gender-snomed" ]
        ] ;
        fhir:name [ fhir:v "Gender (SNOMED CT)" ] ;
@@ -451,7 +451,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs> ;
          fhir:reference [ fhir:v "CodeSystem/hemorrhagic-stroke-bleeding-reason-cs" ]
        ] ;
        fhir:name [ fhir:v "Hemorrhagic Stroke Bleeding Reason Code System" ] ;
@@ -466,7 +466,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/hemorrhagic-stroke-bleeding-reason-vs> ;
+         fhir:link <http://testSK.org/ValueSet/hemorrhagic-stroke-bleeding-reason-vs> ;
          fhir:reference [ fhir:v "ValueSet/hemorrhagic-stroke-bleeding-reason-vs" ]
        ] ;
        fhir:name [ fhir:v "Hemorrhagic Stroke Bleeding Reason ValueSet" ] ;
@@ -481,7 +481,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext> ;
+         fhir:link <http://testSK.org/StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext" ]
        ] ;
        fhir:name [ fhir:v "HemorrhagicStrokeBleedingReasonExt" ] ;
@@ -495,7 +495,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/stroke-arrival-mode-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/stroke-arrival-mode-cs> ;
          fhir:reference [ fhir:v "CodeSystem/stroke-arrival-mode-cs" ]
        ] ;
        fhir:name [ fhir:v "Initial Care Intensity Code System" ] ;
@@ -510,7 +510,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/initial-care-intensity-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/initial-care-intensity-cs> ;
          fhir:reference [ fhir:v "CodeSystem/initial-care-intensity-cs" ]
        ] ;
        fhir:name [ fhir:v "Initial Care Intensity Code System" ] ;
@@ -525,7 +525,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/initial-care-intensity-ext> ;
+         fhir:link <http://testSK.org/StructureDefinition/initial-care-intensity-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/initial-care-intensity-ext" ]
        ] ;
        fhir:name [ fhir:v "Initial Care Intensity Extension" ] ;
@@ -541,7 +541,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/initial-care-intensity-vs> ;
+         fhir:link <http://testSK.org/ValueSet/initial-care-intensity-vs> ;
          fhir:reference [ fhir:v "ValueSet/initial-care-intensity-vs" ]
        ] ;
        fhir:name [ fhir:v "Initial Care Intensity ValueSet" ] ;
@@ -556,7 +556,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/discharge-medication-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/discharge-medication-cs> ;
          fhir:reference [ fhir:v "CodeSystem/discharge-medication-cs" ]
        ] ;
        fhir:name [ fhir:v "Medications CodeSystem" ] ;
@@ -571,7 +571,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/discharge-medication-vs> ;
+         fhir:link <http://testSK.org/ValueSet/discharge-medication-vs> ;
          fhir:reference [ fhir:v "ValueSet/discharge-medication-vs" ]
        ] ;
        fhir:name [ fhir:v "Medications ValueSet" ] ;
@@ -586,7 +586,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/medication-statement-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/medication-statement-cs> ;
          fhir:reference [ fhir:v "CodeSystem/medication-statement-cs" ]
        ] ;
        fhir:name [ fhir:v "MedicationStatement CodeSystem" ] ;
@@ -601,7 +601,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/medicationStatement-meds-codes-vs> ;
+         fhir:link <http://testSK.org/ValueSet/medicationStatement-meds-codes-vs> ;
          fhir:reference [ fhir:v "ValueSet/medicationStatement-meds-codes-vs" ]
        ] ;
        fhir:name [ fhir:v "MedicationStatement Therapy/Finding Codes" ] ;
@@ -616,7 +616,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/mrs-score-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/mrs-score-cs> ;
          fhir:reference [ fhir:v "CodeSystem/mrs-score-cs" ]
        ] ;
        fhir:name [ fhir:v "modified Rankin Scale (mRS) Score Code System" ] ;
@@ -631,7 +631,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/mrs-score-vs> ;
+         fhir:link <http://testSK.org/ValueSet/mrs-score-vs> ;
          fhir:reference [ fhir:v "ValueSet/mrs-score-vs" ]
        ] ;
        fhir:name [ fhir:v "modified Rankin Scale (mRS) Score ValueSet" ] ;
@@ -646,7 +646,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/mtici-score-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/mtici-score-cs> ;
          fhir:reference [ fhir:v "CodeSystem/mtici-score-cs" ]
        ] ;
        fhir:name [ fhir:v "mTICI Score Code System" ] ;
@@ -662,7 +662,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/mtici-code-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/mtici-code-cs> ;
          fhir:reference [ fhir:v "CodeSystem/mtici-code-cs" ]
        ] ;
        fhir:name [ fhir:v "mTICI Score Codes CodeSystem" ] ;
@@ -677,7 +677,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/mtici-code-vs> ;
+         fhir:link <http://testSK.org/ValueSet/mtici-code-vs> ;
          fhir:reference [ fhir:v "ValueSet/mtici-code-vs" ]
        ] ;
        fhir:name [ fhir:v "mTICI Score Codes ValueSet" ] ;
@@ -692,7 +692,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/mtici-score-vs> ;
+         fhir:link <http://testSK.org/ValueSet/mtici-score-vs> ;
          fhir:reference [ fhir:v "ValueSet/mtici-score-vs" ]
        ] ;
        fhir:name [ fhir:v "mTICI Score ValueSet" ] ;
@@ -707,7 +707,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/observation-timing-context-ext> ;
+         fhir:link <http://testSK.org/StructureDefinition/observation-timing-context-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/observation-timing-context-ext" ]
        ] ;
        fhir:name [ fhir:v "Observation Timing Context Extension" ] ;
@@ -722,7 +722,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/onset-date-ext> ;
+         fhir:link <http://testSK.org/StructureDefinition/onset-date-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/onset-date-ext" ]
        ] ;
        fhir:name [ fhir:v "OnsetDateExt" ] ;
@@ -736,7 +736,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/onset-time-ext> ;
+         fhir:link <http://testSK.org/StructureDefinition/onset-time-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/onset-time-ext" ]
        ] ;
        fhir:name [ fhir:v "OnsetTimeExt" ] ;
@@ -750,7 +750,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/patient-age-ext> ;
+         fhir:link <http://testSK.org/StructureDefinition/patient-age-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/patient-age-ext" ]
        ] ;
        fhir:name [ fhir:v "Patient Age (integer)" ] ;
@@ -765,7 +765,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/patient-age-gender-snomed-profile> ;
+         fhir:link <http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/patient-age-gender-snomed-profile" ]
        ] ;
        fhir:name [ fhir:v "Patient with SNOMED Gender and Age (extensions)" ] ;
@@ -780,7 +780,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Patient/PatientAgeGenderSnomedExample> ;
+         fhir:link <http://testSK.org/Patient/PatientAgeGenderSnomedExample> ;
          fhir:reference [ fhir:v "Patient/PatientAgeGenderSnomedExample" ]
        ] ;
        fhir:name [ fhir:v "PatientAgeGenderSnomedExample" ] ;
@@ -798,7 +798,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Patient/example-patient> ;
+         fhir:link <http://testSK.org/Patient/example-patient> ;
          fhir:reference [ fhir:v "Patient/example-patient" ]
        ] ;
        fhir:name [ fhir:v "PatientExample" ] ;
@@ -812,7 +812,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/perforation-procedures-vs> ;
+         fhir:link <http://testSK.org/ValueSet/perforation-procedures-vs> ;
          fhir:reference [ fhir:v "ValueSet/perforation-procedures-vs" ]
        ] ;
        fhir:name [ fhir:v "Perforation Procedures ValueSet" ] ;
@@ -827,7 +827,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/prior-medication-statement-profile> ;
+         fhir:link <http://testSK.org/StructureDefinition/prior-medication-statement-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/prior-medication-statement-profile" ]
        ] ;
        fhir:name [ fhir:v "Prior Medication Statement Profile (R5)" ] ;
@@ -843,7 +843,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/MedicationStatement/PriorMedicationStatementExample> ;
+         fhir:link <http://testSK.org/MedicationStatement/PriorMedicationStatementExample> ;
          fhir:reference [ fhir:v "MedicationStatement/PriorMedicationStatementExample" ]
        ] ;
        fhir:name [ fhir:v "PriorMedicationStatementExample" ] ;
@@ -861,7 +861,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/procedure-timing-context-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/procedure-timing-context-cs> ;
          fhir:reference [ fhir:v "CodeSystem/procedure-timing-context-cs" ]
        ] ;
        fhir:name [ fhir:v "Procedure Timing Context Code System" ] ;
@@ -876,7 +876,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/procedure-timing-context-ext> ;
+         fhir:link <http://testSK.org/StructureDefinition/procedure-timing-context-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/procedure-timing-context-ext" ]
        ] ;
        fhir:name [ fhir:v "Procedure Timing Context Extension" ] ;
@@ -891,7 +891,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/procedure-timing-context-vs> ;
+         fhir:link <http://testSK.org/ValueSet/procedure-timing-context-vs> ;
          fhir:reference [ fhir:v "ValueSet/procedure-timing-context-vs" ]
        ] ;
        fhir:name [ fhir:v "Procedure Timing Context ValueSet" ] ;
@@ -906,7 +906,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/required-post-acute-care-ext> ;
+         fhir:link <http://testSK.org/StructureDefinition/required-post-acute-care-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/required-post-acute-care-ext" ]
        ] ;
        fhir:name [ fhir:v "Required Post-Acute Care Extension" ] ;
@@ -921,7 +921,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/specific-finding-codes-vs> ;
+         fhir:link <http://testSK.org/ValueSet/specific-finding-codes-vs> ;
          fhir:reference [ fhir:v "ValueSet/specific-finding-codes-vs" ]
        ] ;
        fhir:name [ fhir:v "Specific Stroke Finding Codes ValueSet" ] ;
@@ -936,7 +936,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/stroke-finding-codes-vs> ;
+         fhir:link <http://testSK.org/ValueSet/stroke-finding-codes-vs> ;
          fhir:reference [ fhir:v "ValueSet/stroke-finding-codes-vs" ]
        ] ;
        fhir:name [ fhir:v "Specific Stroke Finding Codes ValueSet" ] ;
@@ -951,7 +951,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/specific-finding-observation-profile> ;
+         fhir:link <http://testSK.org/StructureDefinition/specific-finding-observation-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/specific-finding-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Specific Stroke Finding Observation Profile (R5)" ] ;
@@ -966,7 +966,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Observation/SpecificFindingObservationExample> ;
+         fhir:link <http://testSK.org/Observation/SpecificFindingObservationExample> ;
          fhir:reference [ fhir:v "Observation/SpecificFindingObservationExample" ]
        ] ;
        fhir:name [ fhir:v "SpecificFindingObservationExample" ] ;
@@ -984,7 +984,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Observation/SpecificFindingObservationExampleMTICI> ;
+         fhir:link <http://testSK.org/Observation/SpecificFindingObservationExampleMTICI> ;
          fhir:reference [ fhir:v "Observation/SpecificFindingObservationExampleMTICI" ]
        ] ;
        fhir:name [ fhir:v "SpecificFindingObservationExampleMTICI" ] ;
@@ -1002,7 +1002,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/stroke-arrival-mode-vs> ;
+         fhir:link <http://testSK.org/ValueSet/stroke-arrival-mode-vs> ;
          fhir:reference [ fhir:v "ValueSet/stroke-arrival-mode-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Arrival Mode ValueSet" ] ;
@@ -1017,7 +1017,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-brain-imaging-procedure-profile> ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-brain-imaging-procedure-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/stroke-brain-imaging-procedure-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Brain Imaging Procedure Profile (R5)" ] ;
@@ -1032,7 +1032,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-carotid-imaging-procedure-profile> ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-carotid-imaging-procedure-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/stroke-carotid-imaging-procedure-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Carotid Imaging Procedure Profile (R5)" ] ;
@@ -1047,7 +1047,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/stroke-circumstance-codes-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/stroke-circumstance-codes-cs> ;
          fhir:reference [ fhir:v "CodeSystem/stroke-circumstance-codes-cs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Circumstance Codes CodeSystem" ] ;
@@ -1062,7 +1062,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/stroke-circumstance-codes-vs> ;
+         fhir:link <http://testSK.org/ValueSet/stroke-circumstance-codes-vs> ;
          fhir:reference [ fhir:v "ValueSet/stroke-circumstance-codes-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Circumstance Codes ValueSet" ] ;
@@ -1077,7 +1077,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-circumstance-observation-profile> ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/stroke-circumstance-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Circumstance Observation Profile (R5)" ] ;
@@ -1092,7 +1092,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-diagnosis-condition-profile> ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-diagnosis-condition-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/stroke-diagnosis-condition-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Diagnosis Condition Profile" ] ;
@@ -1107,7 +1107,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/stroke-diagnosis-vs> ;
+         fhir:link <http://testSK.org/ValueSet/stroke-diagnosis-vs> ;
          fhir:reference [ fhir:v "ValueSet/stroke-diagnosis-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Diagnosis ValueSet" ] ;
@@ -1123,7 +1123,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/stroke-discharge-destination-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/stroke-discharge-destination-cs> ;
          fhir:reference [ fhir:v "CodeSystem/stroke-discharge-destination-cs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Discharge Destination Code System" ] ;
@@ -1138,7 +1138,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/stroke-discharge-destination-vs> ;
+         fhir:link <http://testSK.org/ValueSet/stroke-discharge-destination-vs> ;
          fhir:reference [ fhir:v "ValueSet/stroke-discharge-destination-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Discharge Destination ValueSet" ] ;
@@ -1153,7 +1153,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-encounter-profile> ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-encounter-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/stroke-encounter-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Encounter Profile" ] ;
@@ -1169,7 +1169,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/stroke-etiology-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/stroke-etiology-cs> ;
          fhir:reference [ fhir:v "CodeSystem/stroke-etiology-cs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Etiology Code System" ] ;
@@ -1184,7 +1184,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/stroke-etiology-vs> ;
+         fhir:link <http://testSK.org/ValueSet/stroke-etiology-vs> ;
          fhir:reference [ fhir:v "ValueSet/stroke-etiology-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Etiology ValueSet" ] ;
@@ -1199,7 +1199,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/functional-score-codes-vs> ;
+         fhir:link <http://testSK.org/ValueSet/functional-score-codes-vs> ;
          fhir:reference [ fhir:v "ValueSet/functional-score-codes-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Functional Score Codes ValueSet" ] ;
@@ -1214,7 +1214,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/functional-score-observation-profile> ;
+         fhir:link <http://testSK.org/StructureDefinition/functional-score-observation-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/functional-score-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Functional Score Observation Profile (R5, Timing Ext)" ] ;
@@ -1230,7 +1230,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/stroke-proc-not-done-reason-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/stroke-proc-not-done-reason-cs> ;
          fhir:reference [ fhir:v "CodeSystem/stroke-proc-not-done-reason-cs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Procedure Not Done Reason Code System" ] ;
@@ -1245,7 +1245,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/stroke-proc-not-done-reason-vs> ;
+         fhir:link <http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs> ;
          fhir:reference [ fhir:v "ValueSet/stroke-proc-not-done-reason-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Procedure Not Done Reason ValueSet" ] ;
@@ -1260,7 +1260,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-risk-factor-condition-profile> ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/stroke-risk-factor-condition-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Risk Factor Condition Profile" ] ;
@@ -1275,7 +1275,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/stroke-risk-factor-snomed-vs> ;
+         fhir:link <http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs> ;
          fhir:reference [ fhir:v "ValueSet/stroke-risk-factor-snomed-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Risk Factor ValueSet" ] ;
@@ -1290,7 +1290,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/stroke-risk-factor-vs> ;
+         fhir:link <http://testSK.org/ValueSet/stroke-risk-factor-vs> ;
          fhir:reference [ fhir:v "ValueSet/stroke-risk-factor-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Risk Factor ValueSet" ] ;
@@ -1305,7 +1305,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-swallow-procedure-profile> ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-swallow-procedure-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/stroke-swallow-procedure-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Swallow Procedure Profile (R5)" ] ;
@@ -1320,7 +1320,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-mechanical-procedure-profile> ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/stroke-mechanical-procedure-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Thrombolysis Procedure Profile (R5)" ] ;
@@ -1335,7 +1335,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/timing-metric-codes-vs> ;
+         fhir:link <http://testSK.org/ValueSet/timing-metric-codes-vs> ;
          fhir:reference [ fhir:v "ValueSet/timing-metric-codes-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Timing Metric Codes ValueSet" ] ;
@@ -1350,7 +1350,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/timing-metric-codes-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/timing-metric-codes-cs> ;
          fhir:reference [ fhir:v "CodeSystem/timing-metric-codes-cs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Timing Metric Codes ValueSet" ] ;
@@ -1365,7 +1365,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/timing-metric-observation-profile> ;
+         fhir:link <http://testSK.org/StructureDefinition/timing-metric-observation-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/timing-metric-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Timing Metric Observation Profile (R5)" ] ;
@@ -1380,7 +1380,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/vital-sign-codes-vs> ;
+         fhir:link <http://testSK.org/ValueSet/vital-sign-codes-vs> ;
          fhir:reference [ fhir:v "ValueSet/vital-sign-codes-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Vital Sign Codes ValueSet" ] ;
@@ -1395,7 +1395,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/vital-sign-observation-profile> ;
+         fhir:link <http://testSK.org/StructureDefinition/vital-sign-observation-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/vital-sign-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Vital Sign Observation Profile (R5)" ] ;
@@ -1410,7 +1410,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Procedure/StrokeBrainImagingExample> ;
+         fhir:link <http://testSK.org/Procedure/StrokeBrainImagingExample> ;
          fhir:reference [ fhir:v "Procedure/StrokeBrainImagingExample" ]
        ] ;
        fhir:name [ fhir:v "StrokeBrainImagingExample" ] ;
@@ -1428,7 +1428,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Procedure/StrokeCarotidImagingExample> ;
+         fhir:link <http://testSK.org/Procedure/StrokeCarotidImagingExample> ;
          fhir:reference [ fhir:v "Procedure/StrokeCarotidImagingExample" ]
        ] ;
        fhir:name [ fhir:v "StrokeCarotidImagingExample" ] ;
@@ -1446,7 +1446,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Observation/StrokeCircumstanceObservationExampleWakeUp> ;
+         fhir:link <http://testSK.org/Observation/StrokeCircumstanceObservationExampleWakeUp> ;
          fhir:reference [ fhir:v "Observation/StrokeCircumstanceObservationExampleWakeUp" ]
        ] ;
        fhir:name [ fhir:v "StrokeCircumstanceObservationExampleWakeUp" ] ;
@@ -1464,7 +1464,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Condition/StrokeDiagnosisConditionAFib> ;
+         fhir:link <http://testSK.org/Condition/StrokeDiagnosisConditionAFib> ;
          fhir:reference [ fhir:v "Condition/StrokeDiagnosisConditionAFib" ]
        ] ;
        fhir:name [ fhir:v "StrokeDiagnosisConditionAFib" ] ;
@@ -1482,7 +1482,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Condition/StrokeDiagnosisConditionAFlutter> ;
+         fhir:link <http://testSK.org/Condition/StrokeDiagnosisConditionAFlutter> ;
          fhir:reference [ fhir:v "Condition/StrokeDiagnosisConditionAFlutter" ]
        ] ;
        fhir:name [ fhir:v "StrokeDiagnosisConditionAFlutter" ] ;
@@ -1500,7 +1500,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Condition/StrokeDiagnosisConditionExample> ;
+         fhir:link <http://testSK.org/Condition/StrokeDiagnosisConditionExample> ;
          fhir:reference [ fhir:v "Condition/StrokeDiagnosisConditionExample" ]
        ] ;
        fhir:name [ fhir:v "StrokeDiagnosisConditionExample" ] ;
@@ -1518,7 +1518,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Encounter/StrokeEncounterExample> ;
+         fhir:link <http://testSK.org/Encounter/StrokeEncounterExample> ;
          fhir:reference [ fhir:v "Encounter/StrokeEncounterExample" ]
        ] ;
        fhir:name [ fhir:v "StrokeEncounterExample" ] ;
@@ -1537,7 +1537,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Condition/StrokeRiskFactorConditionExample> ;
+         fhir:link <http://testSK.org/Condition/StrokeRiskFactorConditionExample> ;
          fhir:reference [ fhir:v "Condition/StrokeRiskFactorConditionExample" ]
        ] ;
        fhir:name [ fhir:v "StrokeRiskFactorConditionExample" ] ;
@@ -1555,7 +1555,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/ischemic-stroke-etiology-ext> ;
+         fhir:link <http://testSK.org/StructureDefinition/ischemic-stroke-etiology-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/ischemic-stroke-etiology-ext" ]
        ] ;
        fhir:name [ fhir:v "StrokeStrokeEtiologyExt" ] ;
@@ -1569,7 +1569,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Procedure/StrokeSwallowingExample> ;
+         fhir:link <http://testSK.org/Procedure/StrokeSwallowingExample> ;
          fhir:reference [ fhir:v "Procedure/StrokeSwallowingExample" ]
        ] ;
        fhir:name [ fhir:v "StrokeSwallowingExample" ] ;
@@ -1587,7 +1587,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Procedure/StrokeThrombolysisExample> ;
+         fhir:link <http://testSK.org/Procedure/StrokeThrombolysisExample> ;
          fhir:reference [ fhir:v "Procedure/StrokeThrombolysisExample" ]
        ] ;
        fhir:name [ fhir:v "StrokeThrombolysisExample" ] ;
@@ -1605,7 +1605,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/swallow-procedures-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/swallow-procedures-cs> ;
          fhir:reference [ fhir:v "CodeSystem/swallow-procedures-cs" ]
        ] ;
        fhir:name [ fhir:v "Swallow Procedures Code System" ] ;
@@ -1620,7 +1620,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/swallow-procedures-vs> ;
+         fhir:link <http://testSK.org/ValueSet/swallow-procedures-vs> ;
          fhir:reference [ fhir:v "ValueSet/swallow-procedures-vs" ]
        ] ;
        fhir:name [ fhir:v "Swallow Procedures ValueSet" ] ;
@@ -1635,7 +1635,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/swallowing-screening-timing-category-ext> ;
+         fhir:link <http://testSK.org/StructureDefinition/swallowing-screening-timing-category-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/swallowing-screening-timing-category-ext" ]
        ] ;
        fhir:name [ fhir:v "Swallowing Screening Timing Category" ] ;
@@ -1650,7 +1650,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/swallow-screen-time-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/swallow-screen-time-cs> ;
          fhir:reference [ fhir:v "CodeSystem/swallow-screen-time-cs" ]
        ] ;
        fhir:name [ fhir:v "Swallowing Screening Timing Category Code System" ] ;
@@ -1665,7 +1665,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/swallowing-screening-timing-category-vs> ;
+         fhir:link <http://testSK.org/ValueSet/swallowing-screening-timing-category-vs> ;
          fhir:reference [ fhir:v "ValueSet/swallowing-screening-timing-category-vs" ]
        ] ;
        fhir:name [ fhir:v "Swallowing Screening Timing Category ValueSet" ] ;
@@ -1680,7 +1680,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/thrombectomy-complication-cs> ;
+         fhir:link <http://testSK.org/CodeSystem/thrombectomy-complication-cs> ;
          fhir:reference [ fhir:v "CodeSystem/thrombectomy-complication-cs" ]
        ] ;
        fhir:name [ fhir:v "Thrombectomy Complication Code System" ] ;
@@ -1695,7 +1695,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/thrombectomy-complication-vs> ;
+         fhir:link <http://testSK.org/ValueSet/thrombectomy-complication-vs> ;
          fhir:reference [ fhir:v "ValueSet/thrombectomy-complication-vs" ]
        ] ;
        fhir:name [ fhir:v "Thrombectomy Complication ValueSet" ] ;
@@ -1710,7 +1710,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Observation/TimingMetricObservationExample> ;
+         fhir:link <http://testSK.org/Observation/TimingMetricObservationExample> ;
          fhir:reference [ fhir:v "Observation/TimingMetricObservationExample" ]
        ] ;
        fhir:name [ fhir:v "TimingMetricObservationExample" ] ;
@@ -1728,7 +1728,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Observation/VitalSignObservationExample> ;
+         fhir:link <http://testSK.org/Observation/VitalSignObservationExample> ;
          fhir:reference [ fhir:v "Observation/VitalSignObservationExample" ]
        ] ;
        fhir:name [ fhir:v "VitalSignObservationExample" ] ;
@@ -1993,7 +1993,7 @@
          fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-history" ]
        ] ;
-       fhir:value [ fhir:v "history.html" ]
+       fhir:value [ fhir:v "http://testSK.org/history.html" ]
      ] [
        fhir:code [
          fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;

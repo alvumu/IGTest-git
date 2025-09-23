@@ -7,7 +7,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://alvumu.github.io/Observation/AgeAtOnsetObservationExample> a fhir:Observation ;
+<http://testSK.org/Observation/AgeAtOnsetObservationExample> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "AgeAtOnsetObservationExample"] ; # 
   fhir:meta [
@@ -30,11 +30,11 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://alvumu.github.io/Patient/example-patient> ;
+     fhir:link <http://testSK.org/Patient/example-patient> ;
      fhir:reference [ fhir:v "Patient/example-patient" ]
   ] ; # 
   fhir:encounter [
-     fhir:link <https://alvumu.github.io/Encounter/StrokeEncounterExample> ;
+     fhir:link <http://testSK.org/Encounter/StrokeEncounterExample> ;
      fhir:reference [ fhir:v "Encounter/StrokeEncounterExample" ]
   ] ; # 
   fhir:value [
