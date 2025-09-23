@@ -1,39 +1,57 @@
 <ul class="list">
-{% assign pathContains = include.pathContains | default: '' %}
-{% assign section      = include.section      | default: '' %}
-{% assign nav          = include.nav          | default: '' %}
-{% assign termKind     = include.termKind     | default: '' %}
-{% assign excludeIndex = include.excludeIndex | default: true %}
+{%- assign section      = include.section      | default: '' -%}
+{%- assign pathContains = include.pathContains | default: '' -%}
+{%- assign nameContains = include.nameContains | default: '' -%}
+{%- assign excludeIndex = include.excludeIndex | default: true -%}
 
-{% assign pages = site.html_pages | concat: site.pages %}
+<!-- DEBUG: params section='{{ section }}' pathContains='{{ pathContains }}' nameContains='{{ nameContains }}' -->
 
-{% if pathContains != '' %}
-  {% assign pages = pages | where_exp:'p','p.path contains pathContains' %}
-{% endif %}
+{%- assign pages_all = site.html_pages | concat: site.pages -%}
+<!-- DEBUG: pages_all size = {{ pages_all | size }} -->
 
-{% if section != '' %}
-  {% assign pages = pages | where_exp:'p','p.url contains section' %}
-{% endif %}
+{%- assign pages = pages_all -%}
 
-{% if nav != '' %}
-  {% assign pages = pages | where:'navSection', nav %}
-{% endif %}
-{% if termKind != '' %}
-  {% assign pages = pages | where:'termKind', termKind %}
-{% endif %}
+{%- if section != '' -%}
+  {%- assign pages = pages | where_exp:'p','p.url contains section' -%}
+  <!-- DEBUG: after section filter, size={{ pages | size }} -->
+{%- endif -%}
 
-{% assign pages = pages | uniq | sort:'title' %}
+{%- if pathContains != '' -%}
+  {%- assign pages = pages | where_exp:'p','p.path contains pathContains' -%}
+  <!-- DEBUG: after pathContains filter, size={{ pages | size }} -->
+{%- endif -%}
 
-{% assign any = false %}
-{% for p in pages %}
-  {% assign title = p.title | default:p.name | default:p.url %}
-  <li><a href="{{ p.url | relative_url }}">{{ title }}</a></li>
-  {% assign any = true %}
-{% endfor %}
+{%- if nameContains != '' -%}
+  {%- assign needle = nameContains | downcase -%}
+  {%- assign filtered = '' | split: '' -%}
+  {%- for p in pages -%}
+    {%- assign fname = p.name | default:p.path | downcase -%}
+    {%- if fname contains needle -%}
+      {%- assign filtered = filtered | push:p -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign pages = filtered -%}
+  <!-- DEBUG: after nameContains filter '{{ nameContains }}', size={{ pages | size }} -->
+{%- endif -%}
 
-{% unless any %}
-{% unless any %}
+{%- if excludeIndex and section != '' -%}
+  {%- assign idxurl = section | append:'index.html' -%}
+  {%- assign pages = pages | where_exp:'p','p.url != idxurl' -%}
+  <!-- DEBUG: after exclude index {{ idxurl }}, size={{ pages | size }} -->
+{%- endif -%}
+
+{%- assign pages = pages | uniq | sort:'title' -%}
+<!-- DEBUG: final size={{ pages | size }} -->
+
+{%- for p in pages -%}
+  {%- assign title = p.title | default:p.name | default:p.url -%}
+  <li>
+    <a href="{{ p.url | relative_url }}">{{ title }}</a>
+    <!-- DEBUG item: title='{{ title }}' name='{{ p.name }}' url='{{ p.url }}' path='{{ p.path }}' -->
+  </li>
+{%- endfor -%}
+
+{%- if pages == empty -%}
   <li><em>No entries found</em></li>
-{% endunless %}
-{% endunless %}
+{%- endif -%}
 </ul>
