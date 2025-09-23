@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Conformance -  v0.1.0</title>
+    <title>Age at Stroke Onset Observation Profile (R5) -  v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"2"}
-    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <style type="text/css">h2{--heading-prefix:"1.1"}
+    h3,h4,h5,h6{--heading-prefix:"1.1"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -79,13 +79,13 @@
                 <!-- menu.xml -->
 
 <ul class="nav navbar-nav">
-  <li>
+  <li><a name="l136">​</a>
     <a href="index.html">Home</a>
   </li>
-  <li>
+  <li><a name="l142">​</a>
     <a href="conformance.html">Conformance</a>
   </li>
-  <li>
+  <li><a name="l148">​</a>
     <a href="guidance.html">Guidance</a>
   </li>
   <li class="dropdown">
@@ -93,18 +93,18 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
+      <li><a name="l163">​</a>
         <a href="profiles.html">Profiles</a>
       </li>
-      <li>
+      <li><a name="l169">​</a>
         <a href="terminology.html">Terminology</a>
       </li>
     </ul>
   </li>
-  <li>
+  <li><a name="l177">​</a>
     <a href="downloads.html">Downloads</a>
   </li>
-  <li>
+  <li><a name="l183">​</a>
     <a href="history.html">History</a>
   </li>
 </ul>
@@ -119,7 +119,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Conformance</b></li>
+          <li><a name="l219">​</a><a href="toc.html"><b>Table of Contents</b></a></li><li><a name="l223">​</a><a href="profiles.html"><b>Profiles</b></a></li><li><b>Age at Stroke Onset Observation Profile (R5)</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -140,7 +140,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">IGTest - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://testSK.org/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  <h2>Conformance</h2>
+  <h2>Age at Stroke Onset Observation Profile (R5)</h2>
   
 
 
@@ -159,84 +159,43 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
 
-<h1 id="conformance">Conformance</h1>
+<h1 id="ageatonsetobservationprofile-observation">AgeAtOnsetObservationProfile (Observation)</h1>
 
-<p>This section describes how implementers can claim conformance to the <strong>Stroke Care Implementation Guide (IG)</strong> and what requirements apply to servers and clients.</p>
+<p><strong>URL:</strong> http://testSK.org/StructureDefinition/age-at-onset-observation-profile<br/>
+<strong>Version:</strong> 1.0.0 · <strong>Status:</strong> active<br/>
+<strong>Base:</strong> BaseStrokeObservation</p>
 
-<h2 id="scope">Scope</h2>
-
-<p>This IG defines:</p>
-<ul>
-  <li><strong>Profiles</strong> on core FHIR R5 resources (e.g., Encounter, Observation, Procedure, Condition, MedicationRequest, MedicationStatement).</li>
-  <li><strong>Terminology artifacts</strong> (ValueSets and CodeSystems) that bind to profile elements.</li>
-  <li><strong>Extensions</strong> to capture stroke-specific data not covered by the base resources.</li>
-  <li><strong>Examples</strong> illustrating compliant data instances.</li>
-</ul>
-
-<h2 id="claiming-conformance">Claiming Conformance</h2>
-
-<p>An implementation <strong>conforms</strong> to this IG if it:</p>
-<ol>
-  <li>Supports the <strong>Must Support</strong> data elements on each relevant profile.</li>
-  <li>Uses the <strong>required</strong>/appropriate <strong>terminology bindings</strong> (e.g., Required, Extensible).</li>
-  <li>Satisfies <strong>cardinality</strong> and <strong>invariants</strong> defined in the profiles.</li>
-  <li>Implements applicable <strong>search parameters</strong> and <strong>operations</strong> (if defined for your use case).</li>
-  <li>Satisfies any defined <strong>CapabilityStatement</strong> requirements (server/client).</li>
-</ol>
-
-<blockquote>
-  <p>See the <strong>Artifacts</strong> page for the full list of profiles and their element tables.</p>
-</blockquote>
+<p><strong>Purpose:</strong> Record the <strong>patient’s age</strong> at <strong>stroke onset</strong>.</p>
 
 <h2 id="must-support">Must Support</h2>
+<p><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">valueInteger</code></p>
 
-<ul>
-  <li><strong>Definition:</strong> If an element is marked <strong>Must Support</strong>, systems <strong>SHALL</strong> be able to <em>send, receive, and persist</em> the element when it is relevant and present in the source data.</li>
-  <li><strong>Empty Data:</strong> If a Must Support element is unknown or not present, systems SHALL follow the guidance in <strong>Data Absent/Unknown</strong> (see <em>Guidance</em> page).</li>
-  <li><strong>Choice Types:</strong> When multiple data types are allowed, at least one SHALL be supported as documented in the profile narrative.</li>
-</ul>
+<h2 id="elements-and-constraints">Elements and Constraints</h2>
 
-<h2 id="cardinality--invariants">Cardinality &amp; Invariants</h2>
-
-<ul>
-  <li><strong>Cardinality</strong> is authoritative; elements SHALL satisfy the minimum/maximum occurrences.</li>
-  <li><strong>Invariants</strong> (FHIRPath) are <strong>required</strong> constraints; validation SHALL fail if violated (e.g., “if status = <code class="language-plaintext highlighter-rouge">not-done</code> then <code class="language-plaintext highlighter-rouge">statusReason</code> must exist”).</li>
-</ul>
-
-<h2 id="terminology-binding-strength">Terminology Binding Strength</h2>
-
-<ul>
-  <li><strong>Required:</strong> Only concepts from the bound value set are allowed.</li>
-  <li><strong>Extensible:</strong> Prefer concepts from the value set; other concepts are allowed <strong>only</strong> if a suitable match is not available.</li>
-  <li><strong>Preferred / Example:</strong> Use is recommended, but not enforced.</li>
-</ul>
-
-<p>See <strong>Terminology</strong> for full lists of ValueSets and CodeSystems.</p>
-
-<h2 id="server-requirements">Server Requirements</h2>
-
-<p>If a <strong>server</strong> claims conformance:</p>
-<ul>
-  <li>It SHALL publish a <strong>CapabilityStatement</strong> (or declare conformance via the one provided by this IG, if defined).</li>
-  <li>It SHALL advertise supported <strong>profiles</strong> (<code class="language-plaintext highlighter-rouge">StructureDefinition.url</code>) for each resource type it exposes.</li>
-  <li>It SHOULD support <strong>_include</strong>, <strong>_revinclude</strong>, and common search params for clinical exchange (e.g., <code class="language-plaintext highlighter-rouge">subject</code>, <code class="language-plaintext highlighter-rouge">encounter</code>, <code class="language-plaintext highlighter-rouge">date</code>, <code class="language-plaintext highlighter-rouge">code</code>), when relevant to the profile.</li>
-</ul>
-
-<h2 id="client-requirements">Client Requirements</h2>
-
-<p>If a <strong>client</strong> claims conformance:</p>
-<ul>
-  <li>It SHALL be capable of producing/consuming resources that <strong>validate</strong> against the profiles it claims to support.</li>
-  <li>It SHALL be able to process <strong>Must Support</strong> elements and required <strong>terminology bindings</strong>.</li>
-</ul>
-
-<h2 id="security-and-privacy-informative">Security and Privacy (Informative)</h2>
-
-<ul>
-  <li>Follow local privacy law and institutional policy for PHI/PII.</li>
-  <li>Use TLS for transport (HTTPS).</li>
-  <li>Consider OAuth2/SMART-on-FHIR (or equivalent) for authorization in interactive workflows.</li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th style="text-align: right">Card.</th>
+      <th style="text-align: center">MS</th>
+      <th>Binding/Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Observation.code</code></td>
+      <td style="text-align: right">1..1</td>
+      <td style="text-align: center">✓</td>
+      <td>Fixed to <code class="language-plaintext highlighter-rouge">SCT#445518008</code> (<em>Age at onset of clinical finding</em>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Observation.valueInteger</code></td>
+      <td style="text-align: right">1..1</td>
+      <td style="text-align: center">✓</td>
+      <td>Age in years</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
@@ -256,10 +215,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l588">​</a>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 23, 2025 11:03+0000">2025-09-23</span>
+        <p><a name="l420">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 23, 2025 11:44+0000">2025-09-23</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)">
+          <span style="color: var(--footer-highlight-text-color)"><a name="l433">​</a>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
