@@ -10,12 +10,13 @@ Terminology artifacts used in this IG.
 - **ValueSets** (bindings for profiles):  
   See the list below and **[Artifacts](artifacts.html)** for generated binding tables.
 
-{% include list-folder.html pathContains='pagecontent/valuesets/' %}
+{% include list-folder.html pathContains='pagecontent/valuesets/' nameContains='vs' %}
+
 ---
 
 - **CodeSystems** (custom code systems defined by this IG):  
 
-{% include list-folder.html pathContains='pagecontent/codesystems/' %}
+{% include list-folder.html pathContains='pagecontent/codesystems/' nameContains='cs' %}
 
 ## Binding Strength Quick Guide
 
