@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Conformance -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - 5
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="conformance.html">Conformance</a>
+  </li>
+  <li>
+    <a href="guidance.html">Guidance</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Clinical Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profiles.html">Profiles</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="history.html">History</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Conformance</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">IGTest - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://testSK.org/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Conformance</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+
+<h1 id="conformance">Conformance</h1>
+
+<p>This section describes how implementers can claim conformance to the <strong>Stroke Care Implementation Guide (IG)</strong> and what requirements apply to servers and clients.</p>
+
+<h2 id="scope">Scope</h2>
+
+<p>This IG defines:</p>
+<ul>
+  <li><strong>Profiles</strong> on core FHIR R5 resources (e.g., Encounter, Observation, Procedure, Condition, MedicationRequest, MedicationStatement).</li>
+  <li><strong>Terminology artifacts</strong> (ValueSets and CodeSystems) that bind to profile elements.</li>
+  <li><strong>Extensions</strong> to capture stroke-specific data not covered by the base resources.</li>
+  <li><strong>Examples</strong> illustrating compliant data instances.</li>
+</ul>
+
+<h2 id="claiming-conformance">Claiming Conformance</h2>
+
+<p>An implementation <strong>conforms</strong> to this IG if it:</p>
+<ol>
+  <li>Supports the <strong>Must Support</strong> data elements on each relevant profile.</li>
+  <li>Uses the <strong>required</strong>/appropriate <strong>terminology bindings</strong> (e.g., Required, Extensible).</li>
+  <li>Satisfies <strong>cardinality</strong> and <strong>invariants</strong> defined in the profiles.</li>
+  <li>Implements applicable <strong>search parameters</strong> and <strong>operations</strong> (if defined for your use case).</li>
+  <li>Satisfies any defined <strong>CapabilityStatement</strong> requirements (server/client).</li>
+</ol>
+
+<blockquote>
+  <p>See the <strong>Artifacts</strong> page for the full list of profiles and their element tables.</p>
+</blockquote>
+
+<h2 id="must-support">Must Support</h2>
+
+<ul>
+  <li><strong>Definition:</strong> If an element is marked <strong>Must Support</strong>, systems <strong>SHALL</strong> be able to <em>send, receive, and persist</em> the element when it is relevant and present in the source data.</li>
+  <li><strong>Empty Data:</strong> If a Must Support element is unknown or not present, systems SHALL follow the guidance in <strong>Data Absent/Unknown</strong> (see <em>Guidance</em> page).</li>
+  <li><strong>Choice Types:</strong> When multiple data types are allowed, at least one SHALL be supported as documented in the profile narrative.</li>
+</ul>
+
+<h2 id="cardinality--invariants">Cardinality &amp; Invariants</h2>
+
+<ul>
+  <li><strong>Cardinality</strong> is authoritative; elements SHALL satisfy the minimum/maximum occurrences.</li>
+  <li><strong>Invariants</strong> (FHIRPath) are <strong>required</strong> constraints; validation SHALL fail if violated (e.g., “if status = <code class="language-plaintext highlighter-rouge">not-done</code> then <code class="language-plaintext highlighter-rouge">statusReason</code> must exist”).</li>
+</ul>
+
+<h2 id="terminology-binding-strength">Terminology Binding Strength</h2>
+
+<ul>
+  <li><strong>Required:</strong> Only concepts from the bound value set are allowed.</li>
+  <li><strong>Extensible:</strong> Prefer concepts from the value set; other concepts are allowed <strong>only</strong> if a suitable match is not available.</li>
+  <li><strong>Preferred / Example:</strong> Use is recommended, but not enforced.</li>
+</ul>
+
+<p>See <strong>Terminology</strong> for full lists of ValueSets and CodeSystems.</p>
+
+<h2 id="server-requirements">Server Requirements</h2>
+
+<p>If a <strong>server</strong> claims conformance:</p>
+<ul>
+  <li>It SHALL publish a <strong>CapabilityStatement</strong> (or declare conformance via the one provided by this IG, if defined).</li>
+  <li>It SHALL advertise supported <strong>profiles</strong> (<code class="language-plaintext highlighter-rouge">StructureDefinition.url</code>) for each resource type it exposes.</li>
+  <li>It SHOULD support <strong>_include</strong>, <strong>_revinclude</strong>, and common search params for clinical exchange (e.g., <code class="language-plaintext highlighter-rouge">subject</code>, <code class="language-plaintext highlighter-rouge">encounter</code>, <code class="language-plaintext highlighter-rouge">date</code>, <code class="language-plaintext highlighter-rouge">code</code>), when relevant to the profile.</li>
+</ul>
+
+<h2 id="client-requirements">Client Requirements</h2>
+
+<p>If a <strong>client</strong> claims conformance:</p>
+<ul>
+  <li>It SHALL be capable of producing/consuming resources that <strong>validate</strong> against the profiles it claims to support.</li>
+  <li>It SHALL be able to process <strong>Must Support</strong> elements and required <strong>terminology bindings</strong>.</li>
+</ul>
+
+<h2 id="security-and-privacy-informative">Security and Privacy (Informative)</h2>
+
+<ul>
+  <li>Follow local privacy law and institutional policy for PHI/PII.</li>
+  <li>Use TLS for transport (HTTPS).</li>
+  <li>Consider OAuth2/SMART-on-FHIR (or equivalent) for authorization in interactive workflows.</li>
+</ul>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="l588">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 23, 2025 12:01+0000">2025-09-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
