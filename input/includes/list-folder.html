@@ -4,12 +4,10 @@
 {%- assign nameContains = include.nameContains | default: '' -%}
 {%- assign excludeIndex = include.excludeIndex | default: true -%}
 
-{%- comment -%} Usamos todas las páginas conocidas por Jekyll/IG {%- endcomment -%}
 {%- assign pages = site.pages -%}
 {%- assign out = '' | split: '' -%}
 
 {%- if dir != '' -%}
-  {%- comment -%} Normaliza dir a '/subcarpeta/' {%- endcomment -%}
   {%- assign first = dir | slice: 0, 1 -%}
   {%- unless first == '/' -%}{%- assign dir = '/' | append: dir -%}{%- endunless -%}
   {%- assign last = dir | slice: -1, 1 -%}
@@ -25,14 +23,12 @@
       {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
-
 {%- elsif srcpath != '' -%}
   {%- for p in pages -%}
     {%- if p.path and p.path contains srcpath -%}
       {%- assign out = out | push: p -%}
     {%- endif -%}
   {%- endfor -%}
-
 {%- else -%}
   {%- assign out = pages -%}
 {%- endif -%}
@@ -58,15 +54,16 @@
 {%- for p in out -%}
   {%- assign title = p.title | default: p.name | default: p.url -%}
   {%- assign href = p.url | default: '' -%}
+
   {%- if dir != '' and href != '' -%}
-    {%- comment -%}
-      Si estamos listando dentro de /profiles/ (o similar), hacemos el href relativo:
-      '/profiles/AgeAtOnsetObservationProfile.html' -> 'AgeAtOnsetObservationProfile.html'
-      Esto evita depender de baseurl en GitHub Pages (/IGTest-git).
-    {%- endcomment -%}
+    {# Estamos dentro de /<dir>/ → genera link relativo al directorio actual #}
     {%- assign href = href | remove_first: dir -%}
+  {%- else -%}
+    {# Sin dir: usa relative_url (aprovecha baseurl si está disponible) #}
+    {%- assign href = href | relative_url -%}
   {%- endif -%}
-<li><a href="{{ p.url | relative_url }}">{{ title }}</a></li>
+
+  <li><a href="{{ href }}">{{ title }}</a></li>
 {%- endfor -%}
 
 {%- if out == empty -%}
