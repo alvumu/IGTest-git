@@ -18,7 +18,6 @@
 {% if nav != '' %}
   {% assign pages = pages | where:'navSection', nav %}
 {% endif %}
-
 {% if termKind != '' %}
   {% assign pages = pages | where:'termKind', termKind %}
 {% endif %}
@@ -33,6 +32,8 @@
 {% endfor %}
 
 {% unless any %}
+{% unless any %}
   <li><em>No entries found</em></li>
+{% endunless %}
 {% endunless %}
 </ul>
