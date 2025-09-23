@@ -42,7 +42,13 @@ publisher:
 # file name extension.  Any subproperties that are valid filenames
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
-# pages:
+pages:
+  profiles.md:
+    title: Profiles
+    generation: markdown
+    profiles/AgeAtOnsetObservationProfile.md:
+      title: Age at Stroke Onset Observation Profile (R5)
+      generation: markdown
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
