@@ -1,23 +1,25 @@
 <ul class="list">
-{%- assign dir     = include.dir     | default: '' -%}      {# subcarpeta destino, p.ej. 'profiles' #}
-{%- assign srcpath = include.srcpath | default: '' -%}      {# ruta fuente, p.ej. '/input/pagecontent/profiles/' #}
+{%- assign dir          = include.dir          | default: '' -%}
+{%- assign srcpath      = include.srcpath      | default: '' -%}
+{%- assign nameContains = include.nameContains | default: '' -%}
+{%- assign excludeIndex = include.excludeIndex | default: true -%}
 
-{%- comment -%} Usaremos solo páginas HTML reales {%- endcomment -%}
+{%- comment -%} Usamos solo páginas HTML reales {%- endcomment -%}
 {%- assign pages = site.html_pages -%}
-
 {%- assign out = '' | split: '' -%}
 
 {%- if dir != '' -%}
-  {%- comment -%} Normaliza dir para que sea del tipo '/profiles/' {%- endcomment -%}
-  {%- assign first = dir | slice: 0,1 -%}
+  {%- comment -%} Normaliza dir a '/subcarpeta/' {%- endcomment -%}
+  {%- assign first = dir | slice: 0, 1 -%}
   {%- unless first == '/' -%}{%- assign dir = '/' | append: dir -%}{%- endunless -%}
-  {%- assign last = dir | slice: -1 -%}
+  {%- assign last = dir | slice: -1, 1 -%}
   {%- unless last == '/' -%}{%- assign dir = dir | append: '/' -%}{%- endunless -%}
+  {%- assign dlen = dir | size -%}
   {%- assign idxurl = dir | append: 'index.html' -%}
 
   {%- for p in pages -%}
     {%- if p.url and p.url != '' -%}
-      {%- assign prefix = p.url | slice: 0, dir | size -%}
+      {%- assign prefix = p.url | slice: 0, dlen -%}
       {%- if prefix == dir and p.url != idxurl -%}
         {%- assign out = out | push: p -%}
       {%- endif -%}
@@ -25,7 +27,6 @@
   {%- endfor -%}
 
 {%- elsif srcpath != '' -%}
-  {%- comment -%} Filtra por ruta del fichero fuente (útil si no usas permalinks por carpeta) {%- endcomment -%}
   {%- for p in pages -%}
     {%- if p.path and p.path contains srcpath -%}
       {%- assign out = out | push: p -%}
@@ -36,13 +37,30 @@
   {%- assign out = pages -%}
 {%- endif -%}
 
+{%- if nameContains != '' -%}
+  {%- assign needle = nameContains | downcase -%}
+  {%- assign filtered = '' | split: '' -%}
+  {%- for p in out -%}
+    {%- assign fname = p.name | default: p.path | downcase -%}
+    {%- if fname contains needle -%}
+      {%- assign filtered = filtered | push: p -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign out = filtered -%}
+{%- endif -%}
+
+{%- if excludeIndex and dir != '' -%}
+  {%- assign out = out | where_exp:'p','p.url != idxurl' -%}
+{%- endif -%}
+
 {%- assign out = out | uniq | sort: 'title' -%}
+
 {%- for p in out -%}
   {%- assign title = p.title | default: p.name | default: p.url -%}
   <li><a href="{{ p.url | relative_url }}">{{ title }}</a></li>
 {%- endfor -%}
 
 {%- if out == empty -%}
-  <li><em>No entries found{% if dir != '' %} in {{ dir }}{% endif %}{% if srcpath != '' %} (srcpath={{ srcpath }}){% endif %}</em></li>
+  <li><em>No entries found{% if dir != '' %} in {{ dir }}{% endif %}{% if srcpath != '' %} (srcpath={{ srcpath }}){% endif %}{% if nameContains != '' %} (name contains '{{ nameContains }}'){% endif %}</em></li>
 {%- endif -%}
 </ul>
