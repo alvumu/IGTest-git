@@ -13,8 +13,7 @@ Bienvenido. Aquí tienes una visión completa de los contenidos del IG, agrupado
 
 ## 🔖 Narrativas por carpeta
 
-Las siguientes listas muestran **todas las páginas Markdown** incluidas en el sitio dentro de cada carpeta.  
-(Se generan con `{% raw %}{% include list-folder.html %}{% endraw %}` y se actualizan automáticamente.)
+Se generan con `{% raw %}{% include list-folder.html %}{% endraw %}` y se actualizan cuando declares las páginas en `pages:`.
 
 ### Profiles
 {% include list-folder.html dir='profiles' %}
@@ -35,12 +34,11 @@ Las siguientes listas muestran **todas las páginas Markdown** incluidas en el s
 
 ## 🧬 Artefactos generados por el Publisher
 
-A continuación se listan las páginas **auto-generadas** por el Publisher.  
-Se detectan por su patrón de URL (por ejemplo, `StructureDefinition-*.html`).
+Se detectan por patrón de nombre (sin barra inicial).
 
 ### StructureDefinitions
 <ul class="list">
-{%- assign sdefs = site.pages | where_exp:'p','p.url and p.url contains "/StructureDefinition-" and p.output_ext == ".html"' | sort: 'title' -%}
+{%- assign sdefs = site.pages | where_exp:'p','p.url and p.url contains "StructureDefinition-" and p.output_ext == ".html"' | sort: 'title' -%}
 {%- for p in sdefs -%}
   <li><a href="{{ p.url | relative_url }}">{{ p.title | default: p.name | default: p.url }}</a></li>
 {%- endfor -%}
@@ -51,7 +49,7 @@ Se detectan por su patrón de URL (por ejemplo, `StructureDefinition-*.html`).
 
 ### ValueSets
 <ul class="list">
-{%- assign vsets = site.pages | where_exp:'p','p.url and p.url contains "/ValueSet-" and p.output_ext == ".html"' | sort: 'title' -%}
+{%- assign vsets = site.pages | where_exp:'p','p.url and p.url contains "ValueSet-" and p.output_ext == ".html"' | sort: 'title' -%}
 {%- for p in vsets -%}
   <li><a href="{{ p.url | relative_url }}">{{ p.title | default: p.name | default: p.url }}</a></li>
 {%- endfor -%}
@@ -62,7 +60,7 @@ Se detectan por su patrón de URL (por ejemplo, `StructureDefinition-*.html`).
 
 ### CodeSystems
 <ul class="list">
-{%- assign csys = site.pages | where_exp:'p','p.url and p.url contains "/CodeSystem-" and p.output_ext == ".html"' | sort: 'title' -%}
+{%- assign csys = site.pages | where_exp:'p','p.url and p.url contains "CodeSystem-" and p.output_ext == ".html"' | sort: 'title' -%}
 {%- for p in csys -%}
   <li><a href="{{ p.url | relative_url }}">{{ p.title | default: p.name | default: p.url }}</a></li>
 {%- endfor -%}
@@ -73,7 +71,7 @@ Se detectan por su patrón de URL (por ejemplo, `StructureDefinition-*.html`).
 
 ### Examples (instancias)
 <ul class="list">
-{%- assign ex = site.pages | where_exp:'p','p.url and p.url contains "/Example-" and p.output_ext == ".html"' | sort: 'title' -%}
+{%- assign ex = site.pages | where_exp:'p','p.url and p.url contains "Example-" and p.output_ext == ".html"' | sort: 'title' -%}
 {%- for p in ex -%}
   <li><a href="{{ p.url | relative_url }}">{{ p.title | default: p.name | default: p.url }}</a></li>
 {%- endfor -%}
@@ -82,8 +80,4 @@ Se detectan por su patrón de URL (por ejemplo, `StructureDefinition-*.html`).
 {%- endif -%}
 </ul>
 
----
-
-<p><small>
-DEBUG: baseurl = <code>{{ site.baseurl }}</code> · url = <code>{{ site.url }}</code>
-</small></p>
+<p><small>DEBUG: baseurl = <code>{{ site.baseurl }}</code> · url = <code>{{ site.url }}</code></small></p>
