@@ -7,7 +7,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://testSK.org/Procedure/StrokeBrainImagingExample> a fhir:Procedure ;
+<https://alvumu.github.io/Procedure/StrokeBrainImagingExample> a fhir:Procedure ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "StrokeBrainImagingExample"] ; # 
   fhir:meta [
@@ -41,7 +41,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://testSK.org/Patient/example-patient> ;
+     fhir:link <https://alvumu.github.io/Patient/example-patient> ;
      fhir:reference [ fhir:v "Patient/example-patient" ]
   ] ; # 
   fhir:occurrence [
