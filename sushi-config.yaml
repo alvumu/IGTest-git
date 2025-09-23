@@ -42,8 +42,116 @@ publisher:
 # file name extension.  Any subproperties that are valid filenames
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
-# pages:
-#
+pages:
+  index.md:
+    title: Home
+  conformance.md:
+    title: Conformance
+  guidance.md:
+    title: Guidance
+
+  # === Sección PROFILES ===
+  profiles.md:
+    title: Profiles
+    profiles/AgeAtOnsetObservationProfile.md:
+    profiles/BaseStrokeObservation.md:
+    profiles/DischargeMedicationRequestProfile.md:
+    profiles/FunctionalScoreObservationProfile.md:
+    profiles/MedicationStatementProfile.md:
+    profiles/PatientProfile.md:
+    profiles/ProviderProfile.md:
+    profiles/StrokeBrainImagingProcedureProfile.md:
+    profiles/StrokeCarotidImagingProcedureProfile.md:
+    profiles/StrokeCirumstanceObservationProfile.md:
+    profiles/StrokeDiagnosisConditionProfile.md:
+    profiles/StrokeEncounterProfile.md:
+    profiles/StrokeFindingObservation.md:
+    profiles/StrokeRiskFactorConditionProfile.md:
+    profiles/StrokeSwallowProcedureProfile.md:
+    profiles/StrokeThrombolysisProcedureProfile.md:
+    profiles/TimingMetricObservationProfile.md:
+    profiles/VitalSignObservationProfile.md:
+
+  # === Sección TERMINOLOGY (ValueSets + CodeSystems) ===
+  terminology.md:
+    title: Terminology
+    # ValueSets
+    valuesets/AdmissionSourceVS.md:
+    valuesets/AfibFlutterStatusVS.md:
+    valuesets/AssesmentContextVS.md:
+    valuesets/BrainImagingModalityVS.md:
+    valuesets/CarotidImagingModalityVS.md:
+    valuesets/DischargeDeptVS.md:
+    valuesets/DischargeDestinationVS.md:
+    valuesets/DischargeMedicationVS.md:
+    valuesets/FunctionalScoreCodesVS.md:
+    valuesets/GenderSNOMEDVS.md:
+    valuesets/HemorrhagicStrokeBleedingReasonVS.md:
+    valuesets/InitialCareIntensityVS.md:
+    valuesets/MedicationStatementMedsCodesVS.md:
+    valuesets/MRsScoreVS.md:
+    valuesets/mTiciCodeVS.md:
+    valuesets/MticiScoreVS.md:
+    valuesets/PerforationProceduresVS.md:
+    valuesets/ProcedureTimingContextVS.md:
+    valuesets/SpecificFindingCodesVS.md:
+    valuesets/StrokeArrivalModeVS.md:
+    valuesets/StrokeCircumstanceVS.md:
+    valuesets/StrokeDiagnosisVS.md:
+    valuesets/StrokeDischargeDestinationVS.md:
+    valuesets/StrokeEtiologyVS.md:
+    valuesets/StrokeFindingCodesVS.md:
+    valuesets/StrokeProcNotDoneReasonVS.md:
+    valuesets/StrokeRiskFactorSNOMEDVS.md:
+    valuesets/StrokeRiskFactorVS.md:
+    valuesets/SwallowingScreeningTimingCategoryVS.md:
+    valuesets/SwallowProceduresVS.md:
+    valuesets/ThrombectomyComplicationVS.md:
+    valuesets/TimingMetricCodesVS.md:
+    valuesets/VitalSignCodesVS.md:
+    # CodeSystems
+    codesystems/AssesmentContextCS.md:
+    codesystems/BrainImagingTypeCS.md:
+    codesystems/DischargeDeptCS.md:
+    codesystems/DischargeMedicationCS.md:
+    codesystems/HemorragicStrokeBleedingReasonCS.md:
+    codesystems/InitialCareIntensityCS.md:
+    codesystems/MedicationStatementCS.md:
+    codesystems/MRsScoreCS.md:
+    codesystems/mTiciCodeCS.md:
+    codesystems/MticiScoreCS.md:
+    codesystems/ProcedureTimingContextCS.md:
+    codesystems/StrokeArrivalModeCS.md:
+    codesystems/StrokeCircumstanceCodesCS.md:
+    codesystems/StrokeDischargeDestinationCS.md:
+    codesystems/StrokeEtiologyCS.md:
+    codesystems/StrokeProcNotDoneReasonCS.md:
+    codesystems/SwallowProceduresCS.md:
+    codesystems/SwallowScreenTimeCS.md:
+    codesystems/ThrombectomyComplicationCS.md:
+    codesystems/TimingMetricCodesCS.md:
+
+  # === Sección EXTENSIONS ===
+  extensions.md:
+    title: Extensions
+    extensions/DischargeDepartmentExt.md:
+    extensions/FirstHospitalExt.md:
+    extensions/GenderSNOMED.md:
+    extensions/InitialCareIntensityExt.md:
+    extensions/ObservationTimingContextExt.md:
+    extensions/OnsetDateExt.md:
+    extensions/OnsetTimeExt.md:
+    extensions/PatientAgeExt.md:
+    extensions/PostAcuteCareExt.md:
+    extensions/ProcedureTimingContextExtension.md:
+    extensions/StrokeEtiologyExt.md:
+    extensions/SwallowingScreeningTimingCategoryExt.md:
+
+  downloads.md:
+    title: Downloads
+  history.md:
+    title: History
+
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
