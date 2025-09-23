@@ -3,8 +3,8 @@ IGTest : Validation Results
 
 err = 23, warn = 144, info = 43
 IG Publisher Version: 2.0.17
-Generated Tue Sep 23 16:39:23 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
- Build Errors : 906 / 29 / 0
+Generated Tue Sep 23 17:03:03 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
+ Build Errors : 942 / 29 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-brain-imaging-type-cs : 0 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs : 2 / 2 / 2
@@ -839,8 +839,44 @@ ERROR: conformance.html#/html/body/div/div/div/p/a at Line 260, column 28: The l
 ERROR: downloads.html#/html/body/div/div/div/p/a at Line 205, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: guidance.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: history.html#/html/body/div/div/div/p/a at Line 192, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: index.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: profiles.html#/html/body/div/div/div/p/a at Line 193, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/li/a at Line 225, column 98: The link 'AgeAtOnsetObservationProfile.html' for "AgeAtOnsetObservationProfile.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/dir/li/a at Line 225, column 263: The link 'BaseStrokeObservation.html' for "BaseStrokeObservation.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/li/a at Line 225, column 414: The link 'DischargeMedicationRequestProfile.html' for "DischargeMedicationRequestProfile.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/li/a at Line 225, column 589: The link 'FunctionalScoreObservationProfile.html' for "FunctionalScoreObservationProfile.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/li/a at Line 225, column 764: The link 'MedicationStatementProfile.html' for "MedicationStatementProfile.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/li/a at Line 225, column 925: The link 'PatientProfile.html' for "PatientProfile.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/li/a at Line 225, column 1062: The link 'ProviderProfile.html' for "ProviderProfile.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 225, column 1201: The link 'StrokeBrainImagingProcedureProfile.html' for "StrokeBrainImagingProcedureProfile.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 225, column 1378: The link 'StrokeCarotidImagingProcedureProfile.html' for "StrokeCarotidImagingProcedureProfile.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 225, column 1559: The link 'StrokeCirumstanceObservationProfile.html' for "StrokeCirumstanceObservationProfile.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 225, column 1738: The link 'StrokeDiagnosisConditionProfile.html' for "StrokeDiagnosisConditionProfile.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 225, column 1909: The link 'StrokeEncounterProfile.html' for "StrokeEncounterProfile.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 225, column 2062: The link 'StrokeFindingObservation.html' for "StrokeFindingObservation.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 225, column 2219: The link 'StrokeRiskFactorConditionProfile.html' for "StrokeRiskFactorConditionProfile.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 225, column 2392: The link 'StrokeSwallowProcedureProfile.html' for "StrokeSwallowProcedureProfile.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 225, column 2559: The link 'StrokeThrombolysisProcedureProfile.html' for "StrokeThrombolysisProcedureProfile.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 225, column 2736: The link 'TimingMetricObservationProfile.html' for "TimingMetricObservationProfile.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 225, column 2905: The link 'VitalSignObservationProfile.html' for "VitalSignObservationProfile.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/p/a at Line 284, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/li/a at Line 170, column 98: The link 'AgeAtOnsetObservationProfile.html' for "AgeAtOnsetObservationProfile.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/dir/li/a at Line 170, column 263: The link 'BaseStrokeObservation.html' for "BaseStrokeObservation.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/li/a at Line 170, column 414: The link 'DischargeMedicationRequestProfile.html' for "DischargeMedicationRequestProfile.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/li/a at Line 170, column 589: The link 'FunctionalScoreObservationProfile.html' for "FunctionalScoreObservationProfile.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/li/a at Line 170, column 764: The link 'MedicationStatementProfile.html' for "MedicationStatementProfile.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/li/a at Line 170, column 925: The link 'PatientProfile.html' for "PatientProfile.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/li/a at Line 170, column 1062: The link 'ProviderProfile.html' for "ProviderProfile.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 170, column 1201: The link 'StrokeBrainImagingProcedureProfile.html' for "StrokeBrainImagingProcedureProfile.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 170, column 1378: The link 'StrokeCarotidImagingProcedureProfile.html' for "StrokeCarotidImagingProcedureProfile.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 170, column 1559: The link 'StrokeCirumstanceObservationProfile.html' for "StrokeCirumstanceObservationProfile.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 170, column 1738: The link 'StrokeDiagnosisConditionProfile.html' for "StrokeDiagnosisConditionProfile.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 170, column 1909: The link 'StrokeEncounterProfile.html' for "StrokeEncounterProfile.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 170, column 2062: The link 'StrokeFindingObservation.html' for "StrokeFindingObservation.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 170, column 2219: The link 'StrokeRiskFactorConditionProfile.html' for "StrokeRiskFactorConditionProfile.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 170, column 2392: The link 'StrokeSwallowProcedureProfile.html' for "StrokeSwallowProcedureProfile.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 170, column 2559: The link 'StrokeThrombolysisProcedureProfile.html' for "StrokeThrombolysisProcedureProfile.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 170, column 2736: The link 'TimingMetricObservationProfile.html' for "TimingMetricObservationProfile.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/div/div/ul/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/li/a at Line 170, column 2905: The link 'VitalSignObservationProfile.html' for "VitalSignObservationProfile.html" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: profiles/AgeAtOnsetObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
 ERROR: profiles/AgeAtOnsetObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
 ERROR: profiles/AgeAtOnsetObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
