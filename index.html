@@ -196,123 +196,82 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#fhir-implementation-guide--hospital-stroke-care" id="markdown-toc-fhir-implementation-guide--hospital-stroke-care">FHIR Implementation Guide – Hospital Stroke Care</a>    <ul>
-      <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a>        <ul>
-          <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
-          <li><a href="#scope" id="markdown-toc-scope">Scope</a></li>
-          <li><a href="#audience" id="markdown-toc-audience">Audience</a></li>
+  <li><a href="#igtest--index" id="markdown-toc-igtest--index">IGTest — Index</a>    <ul>
+      <li><a href="#-narrativas-por-carpeta" id="markdown-toc--narrativas-por-carpeta">&#x1F516; Narrativas por carpeta</a>        <ul>
+          <li><a href="#profiles" id="markdown-toc-profiles">Profiles</a></li>
+          <li><a href="#extensions" id="markdown-toc-extensions">Extensions</a></li>
+          <li><a href="#codesystems" id="markdown-toc-codesystems">CodeSystems</a></li>
+          <li><a href="#valuesets" id="markdown-toc-valuesets">ValueSets</a></li>
+          <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
         </ul>
       </li>
-      <li><a href="#guide-structure" id="markdown-toc-guide-structure">Guide Structure</a></li>
+      <li><a href="#-artefactos-generados-por-el-publisher" id="markdown-toc--artefactos-generados-por-el-publisher">&#x1F9EC; Artefactos generados por el Publisher</a>        <ul>
+          <li><a href="#structuredefinitions" id="markdown-toc-structuredefinitions">StructureDefinitions</a></li>
+          <li><a href="#valuesets-1" id="markdown-toc-valuesets-1">ValueSets</a></li>
+          <li><a href="#codesystems-1" id="markdown-toc-codesystems-1">CodeSystems</a></li>
+          <li><a href="#examples-instancias" id="markdown-toc-examples-instancias">Examples (instancias)</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>
 
 </div>
 
-<h1 id="fhir-implementation-guide--hospital-stroke-care">FHIR Implementation Guide – Hospital Stroke Care</h1>
+<h1 id="igtest--index">IGTest — Index</h1>
 
-<h2 id="introduction">Introduction</h2>
-<p>This Implementation Guide (IG) provides a standardized framework for capturing, exchanging, and analyzing clinical and administrative data related to in-hospital stroke care.</p>
+<p>Bienvenido. Aquí tienes una visión completa de los contenidos del IG, agrupados por <strong>narrativas</strong> (páginas Markdown) y <strong>artefactos generados</strong> (páginas que crea el Publisher).</p>
 
-<h3 id="purpose">Purpose</h3>
-<ul>
-  <li><strong>Standardize</strong> the representation of data for patients admitted with acute stroke events (“Stroke Encounter”), including admission details, in-hospital care intensity, discharge planning, diagnoses, risk factors, vital signs, functional scores, procedures, and follow-up.</li>
-  <li><strong>Facilitate</strong> interoperability among hospital information systems, electronic health records, and data registries by using consistent profiles, ValueSets, CodeSystems, and extensions.</li>
-  <li><strong>Provide</strong> clear, example-driven documentation for implementers (developers, clinical informaticists, data analysts) to speed adoption and ensure consistent data capture.</li>
-</ul>
-
-<h3 id="scope">Scope</h3>
-<ul>
-  <li><strong>Inclusions</strong>:
-    <ul>
-      <li>Profiles for Encounter (“StrokeEncounterProfile”), MedicationRequest at discharge, MedicationStatement for prior medications, Observations (vital signs, functional scores, timing metrics, circumstances, specific findings, age at onset), Procedures (imaging, thrombolysis, thrombectomy, swallowing screening), Conditions (stroke diagnosis, stroke risk factors).</li>
-      <li>Custom CodeSystems and ValueSets for stroke-specific concepts (arrival mode, discharge destination, initial care intensity, mTICI, mRS, AFib/Flutter status, timing contexts, procedure reasons, etc.).</li>
-      <li>Extensions for recording information not covered by base FHIR (first-hospital indicator, care intensity, post-acute care requirement, department/service at discharge, observation timing, procedure timing, bleeding reason, stroke etiology).</li>
-      <li>Example instances demonstrating how to populate each profile with real-world data.</li>
-    </ul>
-  </li>
-  <li><strong>Exclusions</strong>:
-    <ul>
-      <li>Outpatient stroke management beyond the acute hospitalization (post-discharge rehab in the community).</li>
-      <li>Pediatric stroke protocols (focus is on adult acute stroke).</li>
-      <li>Billing, administrative workflows outside core clinical documentation.</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="audience">Audience</h3>
-<ul>
-  <li><strong>Developers</strong> implementing FHIR servers or applications to capture stroke data.</li>
-  <li><strong>Clinical informaticists</strong> designing local data models or integrating multiple systems.</li>
-  <li><strong>Data analysts/researchers</strong> needing consistent FHIR-based data extracts for stroke registries.</li>
-  <li><strong>Hospital IT teams</strong> configuring EHRs to comply with interoperability requirements.</li>
-</ul>
+<blockquote>
+  <p>&#x1F4E6; Resumen automático de artefactos: ver <a href="artifacts.html">Artifacts</a>.</p>
+</blockquote>
 
 <hr/>
 
-<h2 id="guide-structure">Guide Structure</h2>
+<h2 id="-narrativas-por-carpeta">&#x1F516; Narrativas por carpeta</h2>
 
-<p>This IG is organized into discrete sections to facilitate navigation and modular implementation. Each major section corresponds to a folder or page in the generated site:</p>
+<p>Las siguientes listas muestran <strong>todas las páginas Markdown</strong> incluidas en el sitio dentro de cada carpeta.<br/>
+(Se generan con <code class="language-plaintext highlighter-rouge">{% include list-folder.html %}</code> y se actualizan automáticamente.)</p>
 
-<ol>
-  <li><strong>Introduction</strong>
-    <ul>
-      <li>Overview, purpose, scope, and intended audience.</li>
-    </ul>
-  </li>
-  <li><strong>Guide Organization</strong>
-    <ul>
-      <li>Explanation of how content is structured (this section).</li>
-      <li>High-level map of folders/pages and their relationships.</li>
-    </ul>
-  </li>
-  <li><strong>Clinical Profiles</strong>
-    <ul>
-      <li>Detailed definitions of each FHIR profile, including constraints, element tables, bindings, and invariants.</li>
-      <li>Each profile lives in its own markdown/HTML page under a <code class="language-plaintext highlighter-rouge">profiles/</code> folder.</li>
-    </ul>
-  </li>
-  <li><strong>CodeSystems &amp; ValueSets</strong>
-    <ul>
-      <li>Definitions for all custom CodeSystems and ValueSets used by profiles.</li>
-      <li>Each resource in this section appears in a <code class="language-plaintext highlighter-rouge">terminology/</code> folder with its own page.</li>
-    </ul>
-  </li>
-  <li><strong>Extensions</strong>
-    <ul>
-      <li>Definitions for all custom extensions that augment FHIR base resources.</li>
-      <li>Each extension has a dedicated page under <code class="language-plaintext highlighter-rouge">extensions/</code>.</li>
-    </ul>
-  </li>
-  <li><strong>Example Instances</strong>
-    <ul>
-      <li>Concrete FHIR resources (JSON or Turtle) demonstrating how to populate each profile.</li>
-      <li>These examples reside in an <code class="language-plaintext highlighter-rouge">examples/</code> folder, with one file per instance (e.g., <code class="language-plaintext highlighter-rouge">StrokeEncounterExample.json</code>).</li>
-    </ul>
-  </li>
-  <li><strong>Technical Documentation</strong>
-    <ul>
-      <li>Guidance on using FHIR Shorthand (FSH) and SUSHI to build the IG.</li>
-      <li>Explanation of invariants (FHIRPath/CQL) and naming conventions.</li>
-      <li>Validation recommendations.</li>
-    </ul>
-  </li>
-  <li><strong>Downloads &amp; Resources</strong>
-    <ul>
-      <li>Direct links to download the complete IG bundle (JSON/XML).</li>
-      <li>Link to the SUSHI-generated ImplementationGuide resource.</li>
-      <li>Any OpenAPI/Swagger documentation (if provided).</li>
-    </ul>
-  </li>
-  <li><strong>Contributing &amp; Contact</strong>
-    <ul>
-      <li>Instructions for submitting issues or pull requests.</li>
-      <li>Maintainers’ contact information.</li>
-      <li>Licensing and usage policies.</li>
-    </ul>
-  </li>
-</ol>
+<h3 id="profiles">Profiles</h3>
+<ul class="list"><li><a href="/profiles/AgeAtOnsetObservationProfile.html">AgeAtOnsetObservationProfile.html</a></li></ul>
+
+<h3 id="extensions">Extensions</h3>
+<ul class="list"><li><em>No entries found in /extensions/</em></li></ul>
+
+<h3 id="codesystems">CodeSystems</h3>
+<ul class="list"><li><em>No entries found in /codesystems/</em></li></ul>
+
+<h3 id="valuesets">ValueSets</h3>
+<ul class="list"><li><em>No entries found in /valuesets/</em></li></ul>
+
+<h3 id="examples">Examples</h3>
+<ul class="list"><li><em>No entries found in /examples/</em></li></ul>
+
+<hr/>
+
+<h2 id="-artefactos-generados-por-el-publisher">&#x1F9EC; Artefactos generados por el Publisher</h2>
+
+<p>A continuación se listan las páginas <strong>auto-generadas</strong> por el Publisher.<br/>
+Se detectan por su patrón de URL (por ejemplo, <code class="language-plaintext highlighter-rouge">StructureDefinition-*.html</code>).</p>
+
+<h3 id="structuredefinitions">StructureDefinitions</h3>
+<ul class="list"><li><em>No StructureDefinitions found.</em></li></ul>
+
+<h3 id="valuesets-1">ValueSets</h3>
+<ul class="list"><li><em>No ValueSets found.</em></li></ul>
+
+<h3 id="codesystems-1">CodeSystems</h3>
+<ul class="list"><li><em>No CodeSystems found.</em></li></ul>
+
+<h3 id="examples-instancias">Examples (instancias)</h3>
+<ul class="list"><li><em>No Examples found.</em></li></ul>
+
+<hr/>
+
+<p><small>
+DEBUG: baseurl = <code></code> · url = <code></code>
+</small></p>
 
 
 
@@ -332,8 +291,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l636">​</a>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 23, 2025 14:15+0000">2025-09-23</span>
+        <p><a name="l542">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 23, 2025 14:32+0000">2025-09-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
