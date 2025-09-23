@@ -1,48 +1,51 @@
 <ul class="list">
-{%- assign section      = include.section      | default: '' -%}
-{%- assign contains     = include.contains     | default: '' -%}
-{%- assign nav          = include.nav          | default: '' -%}   {%- comment -%} front-matter navSection {%- endcomment -%}
-{%- assign termKind     = include.termKind     | default: '' -%}   {%- comment -%} valueset | codesystem | ... {%- endcomment -%}
-{%- assign srcpath      = include.srcpath      | default: '' -%}   {%- comment -%} ruta del archivo fuente {%- endcomment -%}
-{%- assign excludeIndex = include.excludeIndex | default: true -%}
+{% assign section      = include.section      | default: '' %}
+{% assign contains     = include.contains     | default: '' %}
+{% assign nav          = include.nav          | default: '' %}
+{% assign termKind     = include.termKind     | default: '' %}
+{% assign srcpath      = include.srcpath      | default: '' %}
+{% assign excludeIndex = include.excludeIndex | default: true %}
 
-{%- comment -%} Combina pages y html_pages (según build solo se rellena una) {%- endcomment -%}
-{%- assign pages = site.pages | concat: site.html_pages -%}
+{% assign pages = site.pages | concat: site.html_pages %}
+{% assign pages = pages | where_exp:'p','p.url contains ".html"' %}
 
-{%- comment -%} Quédate con las que generan HTML {%- endcomment -%}
-{%- assign pages = pages | where_exp: "p", "p.url contains '.html'" -%}
+{% if srcpath != '' %}
+  {% assign pages = pages | where_exp:'p','p.path contains srcpath' %}
+{% endif %}
 
-{%- comment -%} Filtra por carpeta de ORIGEN (ruta del .md de input) {%- endcomment -%}
-{%- if srcpath != '' -%}
-  {%- assign pages = pages | where_exp: "p", "p.path contains srcpath" -%}
-{%- endif -%}
+{% if section != '' %}
+  {% assign pages = pages | where_exp:'p','p.url contains section' %}
+{% endif %}
 
-{%- comment -%} Filtra por subcarpeta en la URL de SALIDA {%- endcomment -%}
-{%- if section != '' -%}
-  {%- assign pages = pages | where_exp: "p", "p.url contains section" -%}
-{%- endif -%}
+{% if contains != '' %}
+  {% assign pages = pages | where_exp:'p','p.url contains contains' %}
+{% endif %}
 
-{%- comment -%} Filtra por subcadena libre en la URL {%- endcomment -%}
-{%- if contains != '' -%}
-  {%- assign pages = pages | where_exp: "p", "p.url contains contains" -%}
-{%- endif -%}
+{% if nav != '' %}
+  {% assign pages = pages | where:'navSection', nav %}
+{% endif %}
 
-{%- comment -%} Filtra por metadatos del front-matter {%- endcomment -%}
-{%- if nav != '' -%}
-  {%- assign pages = pages | where: "navSection", nav -%}
-{%- endif -%}
-{%- if termKind != '' -%}
-  {%- assign pages = pages | where: "termKind", termKind -%}
-{%- endif -%}
+{% if termKind != '' %}
+  {% assign pages = pages | where:'termKind', termKind %}
+{% endif %}
 
-{%- comment -%} Excluye index.html de la misma sección (si aplica) {%- endcomment -%}
-{%- if excludeIndex and section != '' -%}
-  {%- assign idxurl = section | append: 'index.html' -%}
-  {%- assign pages = pages | where_exp: "p", "p.url != idxurl" -%}
-{%- endif -%}
-{%- if excludeIndex and srcpath != '' -%}
-  {%- comment -%} ¡Ojo! Nada de '| not'. Usa == false {%- endcomment -%}
-  {%- assign pages = pages | where_exp: "p", "p.path contains '/index.md' == false" -%}
-{%- endif -%}
+{% if excludeIndex and section != '' %}
+  {% assign idxurl = section | append: 'index.html' %}
+  {% assign pages = pages | where_exp:'p','p.url != idxurl' %}
+{% endif %}
 
-{%- assign pages = pages | u
+{% if excludeIndex and srcpath != '' %}
+  {% assign pages = pages | where_exp:'p','p.path contains "/index.md" == false' %}
+{% endif %}
+
+{% assign pages = pages | uniq | sort:'title' %}
+
+{% for p in pages %}
+  {% assign title = p.title | default: p.name | default: p.url %}
+  <li><a href="{{ p.url | relative_url }}">{{ title }}</a></li>
+{% endfor %}
+
+{% if pages == empty %}
+  <li><em>No entries found</em></li>
+{% endif %}
+</ul>
