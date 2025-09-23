@@ -5,7 +5,7 @@
 {%- assign excludeIndex = include.excludeIndex | default: true -%}
 
 {%- comment -%} Usamos solo páginas HTML reales {%- endcomment -%}
-{%- assign pages = site.html_pages -%}
+{%- assign pages = site.pages -%}
 {%- assign out = '' | split: '' -%}
 
 {%- if dir != '' -%}
