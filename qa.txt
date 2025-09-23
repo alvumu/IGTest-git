@@ -3,8 +3,8 @@ IGTest : Validation Results
 
 err = 23, warn = 144, info = 43
 IG Publisher Version: 2.0.17
-Generated Tue Sep 23 14:34:49 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
- Build Errors : 714 / 29 / 0
+Generated Tue Sep 23 16:19:48 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = http://testSK.org)
+ Build Errors : 906 / 29 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-brain-imaging-type-cs : 0 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs : 2 / 2 / 2
@@ -839,8 +839,8 @@ ERROR: conformance.html#/html/body/div/div/div/p/a at Line 260, column 28: The l
 ERROR: downloads.html#/html/body/div/div/div/p/a at Line 205, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: guidance.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: history.html#/html/body/div/div/div/p/a at Line 192, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: index.html#/html/body/div/div/div/p/a at Line 295, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
-ERROR: profiles.html#/html/body/div/div/div/p/a at Line 1604, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles.html#/html/body/div/div/div/p/a at Line 1638, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: profiles/AgeAtOnsetObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
 ERROR: profiles/AgeAtOnsetObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
 ERROR: profiles/AgeAtOnsetObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
@@ -852,6 +852,198 @@ ERROR: profiles/AgeAtOnsetObservationProfile.html#/html/body/div/div/ul/li/a at 
 ERROR: profiles/AgeAtOnsetObservationProfile.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
 ERROR: profiles/AgeAtOnsetObservationProfile.html#/html/body/div/div/div/p/a at Line 219, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: profiles/AgeAtOnsetObservationProfile.html#/html/body/div/div/div/p/span/a at Line 222, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/BaseStrokeObservation.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: profiles/BaseStrokeObservation.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
+ERROR: profiles/BaseStrokeObservation.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
+ERROR: profiles/BaseStrokeObservation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/BaseStrokeObservation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 100, column 10: The link 'terminology.html' for "Terminology" cannot be resolved
+ERROR: profiles/BaseStrokeObservation.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: profiles/BaseStrokeObservation.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'history.html' for "History" cannot be resolved
+ERROR: profiles/BaseStrokeObservation.html#/html/body/div/div/ul/li/a at Line 122, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/BaseStrokeObservation.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/BaseStrokeObservation.html#/html/body/div/div/div/p/a at Line 237, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles/BaseStrokeObservation.html#/html/body/div/div/div/p/span/a at Line 240, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/DischargeMedicationRequestProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: profiles/DischargeMedicationRequestProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
+ERROR: profiles/DischargeMedicationRequestProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
+ERROR: profiles/DischargeMedicationRequestProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/DischargeMedicationRequestProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 100, column 10: The link 'terminology.html' for "Terminology" cannot be resolved
+ERROR: profiles/DischargeMedicationRequestProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: profiles/DischargeMedicationRequestProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'history.html' for "History" cannot be resolved
+ERROR: profiles/DischargeMedicationRequestProfile.html#/html/body/div/div/ul/li/a at Line 122, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/DischargeMedicationRequestProfile.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/DischargeMedicationRequestProfile.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles/DischargeMedicationRequestProfile.html#/html/body/div/div/div/p/span/a at Line 265, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/FunctionalScoreObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: profiles/FunctionalScoreObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
+ERROR: profiles/FunctionalScoreObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
+ERROR: profiles/FunctionalScoreObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/FunctionalScoreObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 100, column 10: The link 'terminology.html' for "Terminology" cannot be resolved
+ERROR: profiles/FunctionalScoreObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: profiles/FunctionalScoreObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'history.html' for "History" cannot be resolved
+ERROR: profiles/FunctionalScoreObservationProfile.html#/html/body/div/div/ul/li/a at Line 122, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/FunctionalScoreObservationProfile.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/FunctionalScoreObservationProfile.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles/FunctionalScoreObservationProfile.html#/html/body/div/div/div/p/span/a at Line 246, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/MedicationStatementProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: profiles/MedicationStatementProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
+ERROR: profiles/MedicationStatementProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
+ERROR: profiles/MedicationStatementProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/MedicationStatementProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 100, column 10: The link 'terminology.html' for "Terminology" cannot be resolved
+ERROR: profiles/MedicationStatementProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: profiles/MedicationStatementProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'history.html' for "History" cannot be resolved
+ERROR: profiles/MedicationStatementProfile.html#/html/body/div/div/ul/li/a at Line 122, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/MedicationStatementProfile.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/MedicationStatementProfile.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles/MedicationStatementProfile.html#/html/body/div/div/div/p/span/a at Line 263, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/PatientProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: profiles/PatientProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
+ERROR: profiles/PatientProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
+ERROR: profiles/PatientProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/PatientProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 100, column 10: The link 'terminology.html' for "Terminology" cannot be resolved
+ERROR: profiles/PatientProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: profiles/PatientProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'history.html' for "History" cannot be resolved
+ERROR: profiles/PatientProfile.html#/html/body/div/div/ul/li/a at Line 122, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/PatientProfile.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/PatientProfile.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles/PatientProfile.html#/html/body/div/div/div/p/span/a at Line 255, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/ProviderProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: profiles/ProviderProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
+ERROR: profiles/ProviderProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
+ERROR: profiles/ProviderProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/ProviderProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 100, column 10: The link 'terminology.html' for "Terminology" cannot be resolved
+ERROR: profiles/ProviderProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: profiles/ProviderProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'history.html' for "History" cannot be resolved
+ERROR: profiles/ProviderProfile.html#/html/body/div/div/ul/li/a at Line 122, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/ProviderProfile.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/ProviderProfile.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles/ProviderProfile.html#/html/body/div/div/div/p/span/a at Line 267, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeBrainImagingProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: profiles/StrokeBrainImagingProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
+ERROR: profiles/StrokeBrainImagingProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
+ERROR: profiles/StrokeBrainImagingProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeBrainImagingProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 100, column 10: The link 'terminology.html' for "Terminology" cannot be resolved
+ERROR: profiles/StrokeBrainImagingProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: profiles/StrokeBrainImagingProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'history.html' for "History" cannot be resolved
+ERROR: profiles/StrokeBrainImagingProcedureProfile.html#/html/body/div/div/ul/li/a at Line 122, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeBrainImagingProcedureProfile.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeBrainImagingProcedureProfile.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles/StrokeBrainImagingProcedureProfile.html#/html/body/div/div/div/p/span/a at Line 252, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeCarotidImagingProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: profiles/StrokeCarotidImagingProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
+ERROR: profiles/StrokeCarotidImagingProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
+ERROR: profiles/StrokeCarotidImagingProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeCarotidImagingProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 100, column 10: The link 'terminology.html' for "Terminology" cannot be resolved
+ERROR: profiles/StrokeCarotidImagingProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: profiles/StrokeCarotidImagingProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'history.html' for "History" cannot be resolved
+ERROR: profiles/StrokeCarotidImagingProcedureProfile.html#/html/body/div/div/ul/li/a at Line 122, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeCarotidImagingProcedureProfile.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeCarotidImagingProcedureProfile.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles/StrokeCarotidImagingProcedureProfile.html#/html/body/div/div/div/p/span/a at Line 245, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeCirumstanceObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: profiles/StrokeCirumstanceObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
+ERROR: profiles/StrokeCirumstanceObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
+ERROR: profiles/StrokeCirumstanceObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeCirumstanceObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 100, column 10: The link 'terminology.html' for "Terminology" cannot be resolved
+ERROR: profiles/StrokeCirumstanceObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: profiles/StrokeCirumstanceObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'history.html' for "History" cannot be resolved
+ERROR: profiles/StrokeCirumstanceObservationProfile.html#/html/body/div/div/ul/li/a at Line 122, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeCirumstanceObservationProfile.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeCirumstanceObservationProfile.html#/html/body/div/div/div/p/a at Line 219, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles/StrokeCirumstanceObservationProfile.html#/html/body/div/div/div/p/span/a at Line 222, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeDiagnosisConditionProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: profiles/StrokeDiagnosisConditionProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
+ERROR: profiles/StrokeDiagnosisConditionProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
+ERROR: profiles/StrokeDiagnosisConditionProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeDiagnosisConditionProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 100, column 10: The link 'terminology.html' for "Terminology" cannot be resolved
+ERROR: profiles/StrokeDiagnosisConditionProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: profiles/StrokeDiagnosisConditionProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'history.html' for "History" cannot be resolved
+ERROR: profiles/StrokeDiagnosisConditionProfile.html#/html/body/div/div/ul/li/a at Line 122, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeDiagnosisConditionProfile.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeDiagnosisConditionProfile.html#/html/body/div/div/div/div/div/ul/li/a at Line 290, column 8: The link '../examples/Condition-StrokeDiagnosisConditionExample.json' for "Condition/StrokeDiagnosisConditionExample" cannot be resolved
+ERROR: profiles/StrokeDiagnosisConditionProfile.html#/html/body/div/div/div/p/a at Line 312, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles/StrokeDiagnosisConditionProfile.html#/html/body/div/div/div/p/span/a at Line 315, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeEncounterProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: profiles/StrokeEncounterProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
+ERROR: profiles/StrokeEncounterProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
+ERROR: profiles/StrokeEncounterProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeEncounterProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 100, column 10: The link 'terminology.html' for "Terminology" cannot be resolved
+ERROR: profiles/StrokeEncounterProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: profiles/StrokeEncounterProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'history.html' for "History" cannot be resolved
+ERROR: profiles/StrokeEncounterProfile.html#/html/body/div/div/ul/li/a at Line 122, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeEncounterProfile.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeEncounterProfile.html#/html/body/div/div/div/div/div/ul/li/a at Line 201, column 8: The link '../examples/Encounter-stroke-enc-001.json' for "Encounter/stroke-enc-001" cannot be resolved
+ERROR: profiles/StrokeEncounterProfile.html#/html/body/div/div/div/p/a at Line 223, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles/StrokeEncounterProfile.html#/html/body/div/div/div/p/span/a at Line 226, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeFindingObservation.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: profiles/StrokeFindingObservation.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
+ERROR: profiles/StrokeFindingObservation.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
+ERROR: profiles/StrokeFindingObservation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeFindingObservation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 100, column 10: The link 'terminology.html' for "Terminology" cannot be resolved
+ERROR: profiles/StrokeFindingObservation.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: profiles/StrokeFindingObservation.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'history.html' for "History" cannot be resolved
+ERROR: profiles/StrokeFindingObservation.html#/html/body/div/div/ul/li/a at Line 122, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeFindingObservation.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeFindingObservation.html#/html/body/div/div/div/p/a at Line 225, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles/StrokeFindingObservation.html#/html/body/div/div/div/p/span/a at Line 228, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeRiskFactorConditionProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: profiles/StrokeRiskFactorConditionProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
+ERROR: profiles/StrokeRiskFactorConditionProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
+ERROR: profiles/StrokeRiskFactorConditionProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeRiskFactorConditionProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 100, column 10: The link 'terminology.html' for "Terminology" cannot be resolved
+ERROR: profiles/StrokeRiskFactorConditionProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: profiles/StrokeRiskFactorConditionProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'history.html' for "History" cannot be resolved
+ERROR: profiles/StrokeRiskFactorConditionProfile.html#/html/body/div/div/ul/li/a at Line 122, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeRiskFactorConditionProfile.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeRiskFactorConditionProfile.html#/html/body/div/div/div/div/div/ul/li/a at Line 250, column 8: The link '../examples/Condition-StrokeDiagnosisConditionAFlutter.json' for "Condition/StrokeDiagnosisConditionAFlutter" cannot be resolved
+ERROR: profiles/StrokeRiskFactorConditionProfile.html#/html/body/div/div/div/div/div/ul/li/a at Line 251, column 8: The link '../examples/Condition-StrokeDiagnosisConditionAFib.json' for "Condition/StrokeDiagnosisConditionAFib" cannot be resolved
+ERROR: profiles/StrokeRiskFactorConditionProfile.html#/html/body/div/div/div/div/div/ul/li/a at Line 252, column 8: The link '../examples/Condition-StrokeRiskFactorConditionExample.json' for "Condition/StrokeRiskFactorConditionExample" cannot be resolved
+ERROR: profiles/StrokeRiskFactorConditionProfile.html#/html/body/div/div/div/p/a at Line 274, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles/StrokeRiskFactorConditionProfile.html#/html/body/div/div/div/p/span/a at Line 277, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeSwallowProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: profiles/StrokeSwallowProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
+ERROR: profiles/StrokeSwallowProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
+ERROR: profiles/StrokeSwallowProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeSwallowProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 100, column 10: The link 'terminology.html' for "Terminology" cannot be resolved
+ERROR: profiles/StrokeSwallowProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: profiles/StrokeSwallowProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'history.html' for "History" cannot be resolved
+ERROR: profiles/StrokeSwallowProcedureProfile.html#/html/body/div/div/ul/li/a at Line 122, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeSwallowProcedureProfile.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeSwallowProcedureProfile.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles/StrokeSwallowProcedureProfile.html#/html/body/div/div/div/p/span/a at Line 270, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeThrombolysisProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: profiles/StrokeThrombolysisProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
+ERROR: profiles/StrokeThrombolysisProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
+ERROR: profiles/StrokeThrombolysisProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeThrombolysisProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 100, column 10: The link 'terminology.html' for "Terminology" cannot be resolved
+ERROR: profiles/StrokeThrombolysisProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: profiles/StrokeThrombolysisProcedureProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'history.html' for "History" cannot be resolved
+ERROR: profiles/StrokeThrombolysisProcedureProfile.html#/html/body/div/div/ul/li/a at Line 122, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/StrokeThrombolysisProcedureProfile.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/StrokeThrombolysisProcedureProfile.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles/StrokeThrombolysisProcedureProfile.html#/html/body/div/div/div/p/span/a at Line 259, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/TimingMetricObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: profiles/TimingMetricObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
+ERROR: profiles/TimingMetricObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
+ERROR: profiles/TimingMetricObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/TimingMetricObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 100, column 10: The link 'terminology.html' for "Terminology" cannot be resolved
+ERROR: profiles/TimingMetricObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: profiles/TimingMetricObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'history.html' for "History" cannot be resolved
+ERROR: profiles/TimingMetricObservationProfile.html#/html/body/div/div/ul/li/a at Line 122, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/TimingMetricObservationProfile.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/TimingMetricObservationProfile.html#/html/body/div/div/div/p/a at Line 227, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles/TimingMetricObservationProfile.html#/html/body/div/div/div/p/span/a at Line 230, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/VitalSignObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
+ERROR: profiles/VitalSignObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
+ERROR: profiles/VitalSignObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
+ERROR: profiles/VitalSignObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/VitalSignObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 100, column 10: The link 'terminology.html' for "Terminology" cannot be resolved
+ERROR: profiles/VitalSignObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 105, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: profiles/VitalSignObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 108, column 6: The link 'history.html' for "History" cannot be resolved
+ERROR: profiles/VitalSignObservationProfile.html#/html/body/div/div/ul/li/a at Line 122, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
+ERROR: profiles/VitalSignObservationProfile.html#/html/body/div/div/ul/li/a at Line 122, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
+ERROR: profiles/VitalSignObservationProfile.html#/html/body/div/div/div/p/a at Line 239, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
+ERROR: profiles/VitalSignObservationProfile.html#/html/body/div/div/div/p/span/a at Line 242, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
 ERROR: terminology.html#/html/body/div/div/div/p/a at Line 208, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 ERROR: toc.html#/html/body/div/div/div/p/a at Line 164, column 28: The link 'http://testSK.org/umu' for "UMU" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
