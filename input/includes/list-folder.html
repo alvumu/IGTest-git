@@ -1,43 +1,22 @@
 <ul class="list">
-{%- assign pathContains = include.pathContains | default: '' -%}
-{%- assign nameContains = include.nameContains | default: '' -%}
-{%- assign excludeIndex = include.excludeIndex | default: true -%}
-
-{%- comment -%} Toma todas las páginas que realmente generan HTML {%- endcomment -%}
-{%- assign pages = site.pages | where_exp: "p", "p.output_ext == '.html'" -%}
-
-{%- comment -%} Filtra por carpeta de origen dentro de input/pagecontent (copiada a temp/pages) {%- endcomment -%}
-{%- if pathContains != '' -%}
-  {%- assign pages = pages | where_exp:'p','p.path contains pathContains' -%}
+{%- assign section = include.section | default: '' -%}
+{%- assign pages = site.pages | concat: site.html_pages -%}
+{%- assign pages = pages | where_exp:'p','p.url' -%}
+{%- if section != '' -%}
+  {%- assign pages = pages | where_exp:'p','p.url contains section' -%}
 {%- endif -%}
 
-{%- comment -%} Opcional: filtra por subcadena en el nombre/archivo {%- endcomment -%}
-{%- if nameContains != '' -%}
-  {%- assign needle = nameContains | downcase -%}
-  {%- assign filtered = '' | split: '' -%}
-  {%- for p in pages -%}
-    {%- assign fname = p.name | default:p.path | downcase -%}
-    {%- if fname contains needle -%}
-      {%- assign filtered = filtered | push:p -%}
-    {%- endif -%}
-  {%- endfor -%}
-  {%- assign pages = filtered -%}
+{%- comment -%} Excluye el index de esa sección {%- endcomment -%}
+{%- if section != '' -%}
+  {%- assign idxurl = section | append:'index.html' -%}
+  {%- assign pages = pages | where_exp:'p','p.url != idxurl' -%}
 {%- endif -%}
 
-{%- comment -%} Excluye el index.md de esa carpeta si aplica {%- endcomment -%}
-{%- if excludeIndex and pathContains != '' -%}
-  {%- assign pages = pages | where_exp:'p','p.path contains "/index.md" | not' -%}
-  {%- assign pages = pages | where_exp:'p','p.path contains "index.md" | not' -%}
-{%- endif -%}
-
-{%- assign pages = pages | uniq | sort:'title' -%}
-
+{%- assign pages = pages | uniq | sort: 'title' -%}
 {%- for p in pages -%}
-  {%- assign title = p.title | default:p.name | default:p.url -%}
-  <li><a href="{{ p.url | relative_url }}">{{ title }}</a></li>
+  <li><a href="{{ p.url | relative_url }}">{{ p.title | default:p.name | default:p.url }}</a></li>
 {%- endfor -%}
-
 {%- if pages == empty -%}
-  <li><em>No entries found{% if pathContains != '' %} (dir={{ pathContains }}){% endif %}</em></li>
+  <li><em>No entries found{% if section != '' %} in {{ section }}{% endif %}</em></li>
 {%- endif -%}
 </ul>
