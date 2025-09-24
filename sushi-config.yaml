@@ -44,70 +44,29 @@ publisher:
 # sub-pages.
 pages:
   index.md:
-    title: Home
-    generation: markdown
-
-  conformance.md:
-    title: Conformance
-    generation: markdown
-
-  guidance.md:
-    title: Guidance
-    generation: markdown
-
-  terminology.md:
-    title: Terminology
-    generation: markdown
-
+    title: Inicio
   profiles.md:
     title: Profiles
-    generation: markdown
-    profiles/AgeAtOnsetObservationProfile.md:
-      title: Age at Stroke Onset Observation (Narrative)
-      generation: markdown
-    profiles/BaseStrokeObservation.md:
-      generation: markdown
-    profiles/DischargeMedicationRequestProfile.md:
-      generation: markdown
-    profiles/FunctionalScoreObservationProfile.md:
-      generation: markdown
-    profiles/MedicationStatementProfile.md:
-      generation: markdown
-    profiles/PatientProfile.md:
-      generation: markdown
-    profiles/ProviderProfile.md:
-      generation: markdown
-    profiles/StrokeBrainImagingProcedureProfile.md:
-      generation: markdown
-    profiles/StrokeCarotidImagingProcedureProfile.md:
-      generation: markdown
-    profiles/StrokeCirumstanceObservationProfile.md:
-      generation: markdown
-    profiles/StrokeDiagnosisConditionProfile.md:
-      generation: markdown
-    profiles/StrokeEncounterProfile.md:
-      generation: markdown
-    profiles/StrokeFindingObservation.md:
-      generation: markdown
-    profiles/StrokeRiskFactorConditionProfile.md:
-      generation: markdown
-    profiles/StrokeSwallowProcedureProfile.md:
-      generation: markdown
-    profiles/StrokeThrombolysisProcedureProfile.md:
-      generation: markdown
-    profiles/TimingMetricObservationProfile.md:
-      generation: markdown
-    profiles/VitalSignObservationProfile.md:
-      generation: markdown
-
-
+  extensions.md:
+    title: Extensions
+  examples.md:
+    title: Examples
+  terminology.md:
+    title: Terminology (Descripción)
+    valuesets.md:
+      title: ValueSets
+    codesystems.md:
+      title: CodeSystems and ValueSets
+  conformance.md:
+    title: Conformance
   downloads.md:
     title: Downloads
-    generation: markdown
-
   history.md:
     title: History
-    generation: markdown
+  general-principles.md:
+    title: General Principles
+  guidance.md:
+    title: Guidance
 
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -141,7 +100,12 @@ menu:
   Guidance: guidance.html
   Clinical Artifacts:
     Profiles: profiles.html
-    Terminology: terminology.html
+    Extensions: extensions.html
+    Examples: examples.html
+    Terminology:
+      Overview: terminology.html
+      ValueSets: valuesets.html
+      CodeSystems: codesystems.html
   #Artifacts (auto): artifacts.html
   Downloads: downloads.html
   History: history.html
