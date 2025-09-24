@@ -57,7 +57,13 @@
 {%- assign bfirst = base | slice: 0, 1 -%}
 {%- unless bfirst == '/' -%}{%- assign base = '/' | append: base -%}{%- endunless -%}
 {%- assign base = base | replace: '//','/' -%}
-{%- if base != '/' and base endswith '/' -%}{%- assign base = base | slice: 0, base.size-1 -%}{%- endif -%}
+
+{%- assign base_last = base | slice: -1, 1 -%}
+{%- if base != '/' and base_last == '/' -%}
+  {%- assign base_len = base | size -%}
+  {%- assign base_len_minus1 = base_len | minus: 1 -%}
+  {%- assign base = base | slice: 0, base_len_minus1 -%}
+{%- endif -%}
 
 {%- for p in out -%}
   {%- assign title = p.title | default: p.name | default: p.url -%}
