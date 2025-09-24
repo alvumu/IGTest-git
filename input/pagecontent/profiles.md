@@ -12,3 +12,5 @@ This section lists all **profile narrative pages** included in the guide.
 
 {% include list-folder.html srcpath="pagecontent/profiles/" %}
 
+{% include list-folder.html dir="profiles" %}
+
