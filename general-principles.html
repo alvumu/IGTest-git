@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Profiles Stroke Thrombolysis Procedure Profile -  v0.1.0</title>
+    <title>General Principles -  v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"5.16"}
-    h3,h4,h5,h6{--heading-prefix:"5.16"}</style>
+    <style type="text/css">h2{--heading-prefix:"9"}
+    h3,h4,h5,h6{--heading-prefix:"9"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -79,13 +79,13 @@
                 <!-- menu.xml -->
 
 <ul class="nav navbar-nav">
-  <li><a name="l136">​</a>
+  <li>
     <a href="index.html">Home</a>
   </li>
-  <li><a name="l142">​</a>
+  <li>
     <a href="conformance.html">Conformance</a>
   </li>
-  <li><a name="l148">​</a>
+  <li>
     <a href="guidance.html">Guidance</a>
   </li>
   <li class="dropdown">
@@ -93,18 +93,37 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="l163">​</a>
+      <li>
         <a href="profiles.html">Profiles</a>
       </li>
-      <li><a name="l169">​</a>
-        <a href="terminology.html">Terminology</a>
+      <li>
+        <a href="extensions.html">Extensions</a>
+      </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
+      <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Terminology
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="terminology.html">Overview</a>
+          </li>
+          <li>
+            <a href="valuesets.html">ValueSets</a>
+          </li>
+          <li>
+            <a href="codesystems.html">CodeSystems</a>
+          </li>
+        </ul>
       </li>
     </ul>
   </li>
-  <li><a name="l177">​</a>
+  <li>
     <a href="downloads.html">Downloads</a>
   </li>
-  <li><a name="l183">​</a>
+  <li>
     <a href="history.html">History</a>
   </li>
 </ul>
@@ -119,7 +138,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a name="l219">​</a><a href="toc.html"><b>Table of Contents</b></a></li><li><a name="l223">​</a><a href="profiles.html"><b>Profiles</b></a></li><li><b>Profiles Stroke Thrombolysis Procedure Profile</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>General Principles</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -140,7 +159,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">IGTest - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://testSK.org/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  <h2>Profiles Stroke Thrombolysis Procedure Profile</h2>
+  <h2>General Principles</h2>
   
 
 
@@ -159,79 +178,36 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
 
-<h1 id="strokethrombolysisprocedureprofile-procedure">StrokeThrombolysisProcedureProfile (Procedure)</h1>
+<h1 id="general-modeling-principles">General Modeling Principles</h1>
 
-<p><strong>URL:</strong> http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile<br/>
-<strong>Version:</strong> 1.2.0 · <strong>Status:</strong> active · <strong>Base:</strong> Procedure</p>
-
-<p><strong>Purpose:</strong> Record <strong>IV thrombolysis / arterial thrombectomy</strong> with timing, reasons-not-done, complications, and context.</p>
-
-<h2 id="must-support">Must Support</h2>
-<p><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">statusReason</code>, <code class="language-plaintext highlighter-rouge">occurrence[x]</code>, <code class="language-plaintext highlighter-rouge">complication</code>, <code class="language-plaintext highlighter-rouge">extension[timingContext]</code></p>
-
-<h2 id="elements-and-constraints">Elements and Constraints</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Element</th>
-      <th style="text-align: right">Card.</th>
-      <th style="text-align: center">MS</th>
-      <th>Binding/Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">Procedure.code</code></td>
-      <td style="text-align: right">1..1</td>
-      <td style="text-align: center">✓</td>
-      <td><strong>Required</strong> binding to <code class="language-plaintext highlighter-rouge">PerforationProceduresVS</code> (thrombolysis/thrombectomy)</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">Procedure.status</code></td>
-      <td style="text-align: right">1..1</td>
-      <td style="text-align: center">✓</td>
-      <td>From <code class="language-plaintext highlighter-rouge">event-status</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">Procedure.statusReason</code></td>
-      <td style="text-align: right">0..1</td>
-      <td style="text-align: center">✓</td>
-      <td><strong>Required</strong> binding to <code class="language-plaintext highlighter-rouge">StrokeProcNotDoneReasonVS</code> when used</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">Procedure.occurrence[x]</code></td>
-      <td style="text-align: right">0..1</td>
-      <td style="text-align: center">✓</td>
-      <td><strong>Only <code class="language-plaintext highlighter-rouge">Period</code></strong> (start/end supported)</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">Procedure.complication</code></td>
-      <td style="text-align: right">0..*</td>
-      <td style="text-align: center">✓</td>
-      <td><code class="language-plaintext highlighter-rouge">CodeableReference(Condition)</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">Procedure.extension(timingContext)</code></td>
-      <td style="text-align: right">0..1</td>
-      <td style="text-align: center">✓</td>
-      <td><code class="language-plaintext highlighter-rouge">ProcedureTimingContextExtension</code></td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>Invariants:</strong></p>
+<h2 id="implementation-centered-design">Implementation-centered design</h2>
 <ul>
-  <li><strong>mt-not-done-reason-binding:</strong> If code = <code class="language-plaintext highlighter-rouge">SCT#397046001</code> (thrombectomy) and <code class="language-plaintext highlighter-rouge">status = 'not-done'</code>, then <code class="language-plaintext highlighter-rouge">statusReason</code> <strong>must</strong> memberOf <code class="language-plaintext highlighter-rouge">StrokeProcNotDoneReasonVS</code>.</li>
-  <li><strong>ivt-not-done-reason-binding:</strong> If code = <code class="language-plaintext highlighter-rouge">SCT#472191000119101</code> (IV thrombolysis) and <code class="language-plaintext highlighter-rouge">status = 'not-done'</code>, then <code class="language-plaintext highlighter-rouge">statusReason</code> <strong>must</strong> memberOf <code class="language-plaintext highlighter-rouge">StrokeProcNotDoneReasonVS</code>.</li>
-  <li><strong>mt-complication-only-if-completed:</strong> If <code class="language-plaintext highlighter-rouge">complication</code> exists, then code must be thrombectomy and <code class="language-plaintext highlighter-rouge">status = 'completed'</code>.</li>
+  <li><strong>Minimal but sufficient</strong> profiles to cover key clinical indicators and reporting needs.</li>
+  <li><strong>Compatibility</strong> with R5 base resources.</li>
 </ul>
 
-<p><strong>Example (excerpt):</strong></p>
+<h2 id="terminology-reuse">Terminology reuse</h2>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">code = SCT#472191000119101</code> (<em>IV thrombolysis</em>), <code class="language-plaintext highlighter-rouge">status = completed</code></li>
-  <li><code class="language-plaintext highlighter-rouge">occurrencePeriod.start/end = 2025-03-01T10:00:00Z / 10:30:00Z</code></li>
-  <li><code class="language-plaintext highlighter-rouge">extension[timingContext] = ProcedureTimingContextCS#unknown</code></li>
+  <li><strong>SNOMED CT</strong> for clinical concepts.</li>
+  <li><strong>LOINC</strong> for observations/measurements.</li>
+  <li><strong>UCUM</strong> for units.</li>
+  <li><strong>ICD-10</strong> for secondary coding when required.</li>
+</ul>
+
+<h2 id="critical-stroke-timings">Critical stroke timings</h2>
+<ul>
+  <li>Model <em>Door</em>, <em>Imaging</em>, <em>Needle</em>, <em>Groin puncture</em>, and <em>Recanalization</em> times as <code class="language-plaintext highlighter-rouge">Observation</code> with timing-focused profiles, including <strong>reference event</strong> + <strong>offset</strong> attributes where applicable.</li>
+</ul>
+
+<h2 id="data-quality">Data quality</h2>
+<ul>
+  <li>Cardinalities and <code class="language-plaintext highlighter-rouge">mustSupport</code> aligned with quality indicators.</li>
+  <li>Invariants (FHIRPath) to ensure consistency; e.g., if <code class="language-plaintext highlighter-rouge">Procedure.code = Thrombolysis</code> ⇒ a <em>Needle</em> time must exist.</li>
+</ul>
+
+<h2 id="interoperability">Interoperability</h2>
+<ul>
+  <li>Avoid local concepts when standard equivalents exist; when local codes are necessary, map them via <code class="language-plaintext highlighter-rouge">ConceptMap</code>.</li>
 </ul>
 
 
@@ -252,10 +228,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l586">​</a>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 23, 2025 17:01+0000">2025-09-23</span>
+        <p><a name="l455">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Sep 24, 2025 09:25+0000">2025-09-24</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"><a name="l599">​</a>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  

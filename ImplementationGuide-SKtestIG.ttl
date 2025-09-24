@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-09-23T17:01:11+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-24T09:25:22+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -1753,31 +1753,7 @@
            fhir:v "index.html"^^xsd:anyURI
          ] ;
          fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Home" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:source [
-           a fhir:url ;
-           fhir:v "conformance.html"^^xsd:anyURI
-         ] ;
-         fhir:name [ fhir:v "conformance.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Conformance" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:source [
-           a fhir:url ;
-           fhir:v "guidance.html"^^xsd:anyURI
-         ] ;
-         fhir:name [ fhir:v "guidance.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Guidance" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:source [
-           a fhir:url ;
-           fhir:v "terminology.html"^^xsd:anyURI
-         ] ;
-         fhir:name [ fhir:v "terminology.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Terminology" ] ;
+         fhir:title [ fhir:v "Inicio" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:source [
@@ -1786,152 +1762,56 @@
          ] ;
          fhir:name [ fhir:v "profiles.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Profiles" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "extensions.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "extensions.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Extensions" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "examples.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "examples.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Examples" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "terminology.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "terminology.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Terminology (Descripción)" ] ;
          fhir:generation [ fhir:v "markdown" ] ;
          fhir:page ( [
            fhir:source [
              a fhir:url ;
-             fhir:v "profiles/AgeAtOnsetObservationProfile.html"^^xsd:anyURI
+             fhir:v "valuesets.html"^^xsd:anyURI
            ] ;
-           fhir:name [ fhir:v "profiles/AgeAtOnsetObservationProfile.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Age at Stroke Onset Observation (Narrative)" ] ;
+           fhir:name [ fhir:v "valuesets.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "ValueSets" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:source [
              a fhir:url ;
-             fhir:v "profiles/BaseStrokeObservation.html"^^xsd:anyURI
+             fhir:v "codesystems.html"^^xsd:anyURI
            ] ;
-           fhir:name [ fhir:v "profiles/BaseStrokeObservation.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Profiles Base Stroke Observation" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:source [
-             a fhir:url ;
-             fhir:v "profiles/DischargeMedicationRequestProfile.html"^^xsd:anyURI
-           ] ;
-           fhir:name [ fhir:v "profiles/DischargeMedicationRequestProfile.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Profiles Discharge Medication Request Profile" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:source [
-             a fhir:url ;
-             fhir:v "profiles/FunctionalScoreObservationProfile.html"^^xsd:anyURI
-           ] ;
-           fhir:name [ fhir:v "profiles/FunctionalScoreObservationProfile.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Profiles Functional Score Observation Profile" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:source [
-             a fhir:url ;
-             fhir:v "profiles/MedicationStatementProfile.html"^^xsd:anyURI
-           ] ;
-           fhir:name [ fhir:v "profiles/MedicationStatementProfile.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Profiles Medication Statement Profile" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:source [
-             a fhir:url ;
-             fhir:v "profiles/PatientProfile.html"^^xsd:anyURI
-           ] ;
-           fhir:name [ fhir:v "profiles/PatientProfile.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Profiles Patient Profile" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:source [
-             a fhir:url ;
-             fhir:v "profiles/ProviderProfile.html"^^xsd:anyURI
-           ] ;
-           fhir:name [ fhir:v "profiles/ProviderProfile.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Profiles Provider Profile" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:source [
-             a fhir:url ;
-             fhir:v "profiles/StrokeBrainImagingProcedureProfile.html"^^xsd:anyURI
-           ] ;
-           fhir:name [ fhir:v "profiles/StrokeBrainImagingProcedureProfile.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Profiles Stroke Brain Imaging Procedure Profile" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:source [
-             a fhir:url ;
-             fhir:v "profiles/StrokeCarotidImagingProcedureProfile.html"^^xsd:anyURI
-           ] ;
-           fhir:name [ fhir:v "profiles/StrokeCarotidImagingProcedureProfile.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Profiles Stroke Carotid Imaging Procedure Profile" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:source [
-             a fhir:url ;
-             fhir:v "profiles/StrokeCirumstanceObservationProfile.html"^^xsd:anyURI
-           ] ;
-           fhir:name [ fhir:v "profiles/StrokeCirumstanceObservationProfile.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Profiles Stroke Cirumstance Observation Profile" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:source [
-             a fhir:url ;
-             fhir:v "profiles/StrokeDiagnosisConditionProfile.html"^^xsd:anyURI
-           ] ;
-           fhir:name [ fhir:v "profiles/StrokeDiagnosisConditionProfile.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Profiles Stroke Diagnosis Condition Profile" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:source [
-             a fhir:url ;
-             fhir:v "profiles/StrokeEncounterProfile.html"^^xsd:anyURI
-           ] ;
-           fhir:name [ fhir:v "profiles/StrokeEncounterProfile.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Profiles Stroke Encounter Profile" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:source [
-             a fhir:url ;
-             fhir:v "profiles/StrokeFindingObservation.html"^^xsd:anyURI
-           ] ;
-           fhir:name [ fhir:v "profiles/StrokeFindingObservation.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Profiles Stroke Finding Observation" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:source [
-             a fhir:url ;
-             fhir:v "profiles/StrokeRiskFactorConditionProfile.html"^^xsd:anyURI
-           ] ;
-           fhir:name [ fhir:v "profiles/StrokeRiskFactorConditionProfile.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Profiles Stroke Risk Factor Condition Profile" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:source [
-             a fhir:url ;
-             fhir:v "profiles/StrokeSwallowProcedureProfile.html"^^xsd:anyURI
-           ] ;
-           fhir:name [ fhir:v "profiles/StrokeSwallowProcedureProfile.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Profiles Stroke Swallow Procedure Profile" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:source [
-             a fhir:url ;
-             fhir:v "profiles/StrokeThrombolysisProcedureProfile.html"^^xsd:anyURI
-           ] ;
-           fhir:name [ fhir:v "profiles/StrokeThrombolysisProcedureProfile.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Profiles Stroke Thrombolysis Procedure Profile" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:source [
-             a fhir:url ;
-             fhir:v "profiles/TimingMetricObservationProfile.html"^^xsd:anyURI
-           ] ;
-           fhir:name [ fhir:v "profiles/TimingMetricObservationProfile.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Profiles Timing Metric Observation Profile" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:source [
-             a fhir:url ;
-             fhir:v "profiles/VitalSignObservationProfile.html"^^xsd:anyURI
-           ] ;
-           fhir:name [ fhir:v "profiles/VitalSignObservationProfile.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Profiles Vital Sign Observation Profile" ] ;
+           fhir:name [ fhir:v "codesystems.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "CodeSystems" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "conformance.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "conformance.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Conformance" ] ;
+         fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:source [
            a fhir:url ;
@@ -1947,6 +1827,22 @@
          ] ;
          fhir:name [ fhir:v "history.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "History" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "general-principles.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "general-principles.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "General Principles" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "guidance.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "guidance.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Guidance" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;
