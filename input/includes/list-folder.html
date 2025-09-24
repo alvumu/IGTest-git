@@ -6,9 +6,9 @@
 
 {%- assign pages = site.pages -%}
 {%- assign out = '' | split: '' -%}
-{%- assign out = out | where_exp:'p','p.url != page.url' -%}
 
 {%- if dir != '' -%}
+  {%- comment %} Normaliza dir a '/subcarpeta/' {% endcomment -%}
   {%- assign first = dir | slice: 0, 1 -%}
   {%- unless first == '/' -%}{%- assign dir = '/' | append: dir -%}{%- endunless -%}
   {%- assign last = dir | slice: -1, 1 -%}
@@ -16,20 +16,28 @@
   {%- assign dlen = dir | size -%}
   {%- assign idxurl = dir | append: 'index.html' -%}
 
+  {%- comment %} Quita site.baseurl de p.url antes de comparar {% endcomment -%}
+  {%- assign sb = site.baseurl | default: '' -%}
   {%- for p in pages -%}
-    {%- if p.url and p.url != '' -%}
-      {%- assign prefix = p.url | slice: 0, dlen -%}
-      {%- if prefix == dir and p.url != idxurl -%}
+    {%- assign url_nb = p.url | default: '' -%}
+    {%- if url_nb != '' and sb != '' and url_nb | slice: 0, sb.size == sb -%}
+      {%- assign url_nb = url_nb | remove_first: sb -%}
+    {%- endif -%}
+    {%- if url_nb != '' -%}
+      {%- assign prefix = url_nb | slice: 0, dlen -%}
+      {%- if prefix == dir and url_nb != idxurl -%}
         {%- assign out = out | push: p -%}
       {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
+
 {%- elsif srcpath != '' -%}
   {%- for p in pages -%}
     {%- if p.path and p.path contains srcpath -%}
       {%- assign out = out | push: p -%}
     {%- endif -%}
   {%- endfor -%}
+
 {%- else -%}
   {%- assign out = pages -%}
 {%- endif -%}
@@ -50,44 +58,15 @@
   {%- assign out = out | where_exp:'p','p.url != idxurl' -%}
 {%- endif -%}
 
+{%- comment %} No listarse a sí misma {% endcomment -%}
+{%- assign out = out | where_exp:'p','p.url != page.url' -%}
+
 {%- assign out = out | uniq | sort: 'title' -%}
-
-{%- assign base = include.base | default: site.baseurl | default: '/IGTest-git' -%}
-{%- comment -%} Normaliza base: empieza con '/', sin '/' final {%- endcomment -%}
-{%- unless base -%}{%- assign base = '' -%}{%- endunless -%}
-{%- assign bfirst = base | slice: 0, 1 -%}
-{%- unless bfirst == '/' -%}{%- assign base = '/' | append: base -%}{%- endunless -%}
-{%- assign base = base | replace: '//','/' -%}
-
-{%- assign base_last = base | slice: -1, 1 -%}
-{%- if base != '/' and base_last == '/' -%}
-  {%- assign base_len = base | size -%}
-  {%- assign base_len_minus1 = base_len | minus: 1 -%}
-  {%- assign base = base | slice: 0, base_len_minus1 -%}
-{%- endif -%}
 
 {%- for p in out -%}
   {%- assign title = p.title | default: p.name | default: p.url -%}
-  {%- assign href = p.url | default: '' -%}
-
-  {%- if dir != '' and href != '' -%}
-    {# normaliza dir a '/subcarpeta/' #}
-    {%- assign first = dir | slice: 0, 1 -%}
-    {%- unless first == '/' -%}{%- assign dir = '/' | append: dir -%}{%- endunless -%}
-    {%- assign last = dir | slice: -1, 1 -%}
-    {%- unless last == '/' -%}{%- assign dir = dir | append: '/' -%}{%- endunless -%}
-
-    {%- assign fname = href | remove_first: dir -%}      {# 'AgeAt…html' #}
-    {%- assign path  = dir | append: fname -%}           {# '/profiles/AgeAt…html' #}
-    {%- assign final = base | append: path -%}           {# '/IGTest-git/profiles/AgeAt…html' #}
-  {%- else -%}
-    {%- comment -%} Sin dir: también fuerza base para coherencia {%- endcomment -%}
-    {%- assign final = base | append: href -%}
-  {%- endif -%}
-
-  <li><a href="{{ final }}">{{ title }}</a></li>
+  <li><a href="{{ p.url | relative_url }}">{{ title }}</a></li>
 {%- endfor -%}
-
 
 {%- if out == empty -%}
   <li><em>No entries found{% if dir != '' %} in {{ dir }}{% endif %}{% if srcpath != '' %} (srcpath={{ srcpath }}){% endif %}{% if nameContains != '' %} (name contains '{{ nameContains }}'){% endif %}</em></li>
