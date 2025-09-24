@@ -1,6 +1,7 @@
 ---
 title: Age at Stroke Onset Observation (Narrative)
 layout: default
+permalink: /profiles/AgeAtOnsetObservationProfile.html
 ---
 
 

@@ -6,6 +6,7 @@
 
 {%- assign pages = site.pages -%}
 {%- assign out = '' | split: '' -%}
+{%- assign out = out | where_exp:'p','p.url != page.url' -%}
 
 {%- if dir != '' -%}
   {%- assign first = dir | slice: 0, 1 -%}
