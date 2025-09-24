@@ -1,7 +1,7 @@
 ---
 title: Age at Stroke Onset Observation (Narrative)
 layout: default
-permalink: IGTest-git/profiles/AgeAtOnsetObservationProfile.html
+permalink: /profiles/AgeAtOnsetObservationProfile.html
 ---
 
 
