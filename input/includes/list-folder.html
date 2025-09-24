@@ -65,7 +65,12 @@
 
 {%- for p in out -%}
   {%- assign title = p.title | default: p.name | default: p.url -%}
-  <li><a href="{{ p.url | relative_url }}">{{ title }}</a></li>
+  {%- assign href = p.url | default: '' -%}
+  {%- if href != '' and href | slice: 0, 1 != '/' -%}
+    {%- assign href = '/' | append: href -%}
+  {%- endif -%}
+  {%- assign b = site.baseurl | default: '/IGTest-git' -%}
+  <li><a href="{{ b | append: href }}">{{ title }}</a></li>
 {%- endfor -%}
 
 {%- if out == empty -%}

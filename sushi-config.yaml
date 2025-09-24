@@ -43,10 +43,15 @@ publisher:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 pages:
+  index.md:
+    title: Home
+
   profiles.md:
     title: Profiles
-    profiles/AgeAtOnsetObservationProfile.md:
-      title: Age at Stroke Onset Observation (Narrative)
+    profiles:
+      AgeAtOnsetObservationProfile.md:
+        title: Age at Stroke Onset Observation (Narrative)
+
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
