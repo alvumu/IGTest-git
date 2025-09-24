@@ -2,4 +2,4 @@
 
 Listado de **ValueSets** definidos en esta guía:
 
-{% include list-folder.html folder:"valuesets" %}
+{% include list-folder.html folder="valuesets" %}

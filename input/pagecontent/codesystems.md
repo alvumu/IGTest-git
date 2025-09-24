@@ -2,4 +2,4 @@
 
 Listado de **CodeSystems** definidos en esta guía:
 
-{% include list-folder.html folder:"codesystems" %}
+{% include list-folder.html folder="codesystems" %}
