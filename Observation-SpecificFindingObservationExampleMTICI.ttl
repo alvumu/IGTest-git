@@ -7,7 +7,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://testSK.org/Observation/SpecificFindingObservationExampleMTICI> a fhir:Observation ;
+<https://alvumu.github.io/Observation/SpecificFindingObservationExampleMTICI> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "SpecificFindingObservationExampleMTICI"] ; # 
   fhir:meta [
@@ -30,11 +30,11 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://testSK.org/Patient/example-patient> ;
+     fhir:link <https://alvumu.github.io/Patient/example-patient> ;
      fhir:reference [ fhir:v "Patient/example-patient" ]
   ] ; # 
   fhir:encounter [
-     fhir:link <http://testSK.org/Encounter/StrokeEncounterExample> ;
+     fhir:link <https://alvumu.github.io/Encounter/StrokeEncounterExample> ;
      fhir:reference [ fhir:v "Encounter/StrokeEncounterExample" ]
   ] ; # 
   fhir:value [
