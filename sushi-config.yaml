@@ -19,6 +19,10 @@ publisher:
   name: UMU
   url: http://testSK.org/umu
   # email: test@example.org
+  
+url: https://alvumu.github.io
+baseurl: /IGTest-git
+
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
@@ -43,6 +47,15 @@ publisher:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 pages:
+  index.md:
+    title: Home
+    generation: markdown
+  conformance.md:
+    title: Conformance
+    generation: markdown
+  guidance.md:
+    title: Guidance
+    generation: markdown
   profiles.md:
     title: Profiles
     generation: markdown
