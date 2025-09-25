@@ -23,11 +23,11 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, nor can they have their own independent transaction scope. This is allowed to be a Parameters resource if and only if it is referenced by a resource that provides context/meaning.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags in their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"dom-2
 dom-4dom-3dom-5","","N/A"
-"Encounter.extension","Encounter.extension","","","",0,*,"","","","Extension {[]} {[]}
+"Encounter.extension","Encounter.extension","","","",1,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Encounter.extension:isFirstHospital","Encounter.extension","isFirstHospital","","",0,1,"Y","","","Extension {[CanonicalType[http://testSK.org/StructureDefinition/first-hospital-ext]]} {[]}
+"Encounter.extension:isFirstHospital","Encounter.extension","isFirstHospital","","",1,1,"Y","","","Extension {[CanonicalType[http://testSK.org/StructureDefinition/first-hospital-ext]]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Encounter.extension:initialCareIntensity","Encounter.extension","initialCareIntensity","","",0,1,"Y","","","Extension {[CanonicalType[http://testSK.org/StructureDefinition/initial-care-intensity-ext]]} {[]}
@@ -135,11 +135,11 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"Encounter.actualPeriod.start","Encounter.actualPeriod.start","","","",1,1,"Y","","Y","dateTime {[]} {[]}
+"Encounter.actualPeriod.start","Encounter.actualPeriod.start","","","",0,1,"Y","","Y","dateTime {[]} {[]}
 ","Starting time with inclusive boundary","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"per-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./low","DR.1"
-"Encounter.actualPeriod.end","Encounter.actualPeriod.end","","","",0,1,"Y","","Y","dateTime {[]} {[]}
+"Encounter.actualPeriod.end","Encounter.actualPeriod.end","","","",1,1,"Y","","Y","dateTime {[]} {[]}
 ","End time with inclusive boundary, if not ongoing","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The end value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"per-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./high","DR.2"
@@ -241,7 +241,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Encounter.admission.destination","Encounter.admission.destination","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location|5.0.0], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization|5.0.0]]}
 ","Location/organization to which the patient is discharged","Location/organization to which the patient is discharged.","","","","","","","","","",,,,,"",,,,"Encounter.admission.destination",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".participation[typeCode=DST]","PV1-37"
-"Encounter.admission.dischargeDisposition","Encounter.admission.dischargeDisposition","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
+"Encounter.admission.dischargeDisposition","Encounter.admission.dischargeDisposition","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Category or kind of location after discharge","Category or kind of location after discharge.","","","","","","","","","",,"required","","http://testSK.org/ValueSet/stroke-discharge-destination-vs","",,,,"Encounter.admission.dischargeDisposition",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".dischargeDispositionCode","PV1-36"
 "Encounter.location","Encounter.location","","","",0,*,"","","","BackboneElement {[]} {[]}
