@@ -1,7 +1,6 @@
 ---
 title: Profiles
 layout: default
-navSection: profiles
 ---
 
 # Profiles

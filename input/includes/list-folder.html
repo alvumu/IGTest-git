@@ -49,7 +49,7 @@
 
 {%- comment %} No listarse a sí misma y quedarse solo con páginas HTML generadas {% endcomment -%}
 {%- assign out = out | where_exp:'p','p.url != page.url' -%}
-{%- assign out = out | where_exp:'p','p.output_ext == ".html"' -%}
+{%- assign out = out | where_exp:'p','p.url and p.url contains ".html"' -%}
 
 {%- comment %} Filtro por nombre (opcional) {% endcomment -%}
 {%- if nameContains != '' -%}

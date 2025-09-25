@@ -46,22 +46,74 @@ baseurl: /IGTest-git
 # file name extension.  Any subproperties that are valid filenames
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
-# pages:
-#   index.md:
-#     title: Home
-#     generation: markdown
-#   conformance.md:
-#     title: Conformance
-#     generation: markdown
-#   guidance.md:
-#     title: Guidance
-#     generation: markdown
-#   profiles.md:
-#     title: Profiles
-#     generation: markdown
-#     profiles/AgeAtOnsetObservationProfile.md:
-#       title: Age at Stroke Onset Observation (Narrative)
-#       generation: markdown
+pages:
+  index.md:
+    title: Home
+    generation: markdown
+  conformance.md:
+    title: Conformance
+    generation: markdown
+  guidance.md:
+    title: Guidance
+    generation: markdown
+  profiles.md:
+    title: Profiles
+    generation: markdown
+    profiles/AgeAtOnsetObservationProfile.md:
+      title: Age at Stroke Onset Observation (Narrative)
+      generation: markdown
+    profiles/BaseStrokeObservation.md:
+      title: Base Stroke Observation (Narrative)
+      generation: markdown
+    profiles/DischargeMedicationRequestProfile.md:
+      title: Discharge Medication Request (Narrative)
+      generation: markdown
+    profiles/FunctionalScoreObservationProfile.md:
+      title: Functional Score Observation (Narrative)
+      generation: markdown
+    profiles/MedicationStatementProfile.md:
+      title: Medication Statement (Narrative)
+      generation: markdown
+    profiles/PatientProfile.md:
+      title: Patient Profile (Narrative)
+      generation: markdown
+    profiles/ProviderProfile.md:
+      title: Provider Profile (Narrative)
+      generation: markdown
+    profiles/StrokeBrainImagingProcedureProfile.md:
+      title: Stroke Brain Imaging Procedure (Narrative)
+      generation: markdown
+    profiles/StrokeCarotidImagingProcedureProfile.md:
+      title: Stroke Carotid Imaging Procedure (Narrative)
+      generation: markdown
+    profiles/StrokeCirumstanceObservationProfile.md:
+      title: Stroke Circumstance Observation (Narrative)
+      generation: markdown
+    profiles/StrokeDiagnosisConditionProfile.md:
+      title: Stroke Diagnosis Condition (Narrative)
+      generation: markdown
+    profiles/StrokeEncounterProfile.md:
+      title: Stroke Encounter (Narrative)
+      generation: markdown
+    profiles/StrokeFindingObservation.md:
+      title: Stroke Finding Observation (Narrative)
+      generation: markdown
+    profiles/StrokeRiskFactorConditionProfile.md:
+      title: Stroke Risk Factor Condition (Narrative)
+      generation: markdown
+    profiles/StrokeSwallowProcedureProfile.md:
+      title: Stroke Swallow Procedure (Narrative)
+      generation: markdown
+    profiles/StrokeThrombolysisProcedureProfile.md:
+      title: Stroke Thrombolysis Procedure (Narrative)
+      generation: markdown
+    profiles/TimingMetricObservationProfile.md:
+      title: Timing Metric Observation (Narrative)
+      generation: markdown
+    profiles/VitalSignObservationProfile.md:
+      title: Vital Sign Observation (Narrative)
+      generation: markdown
+
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
