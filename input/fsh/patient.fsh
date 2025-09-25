@@ -41,7 +41,7 @@ Parent: Patient
 Id: patient-age-gender-snomed-profile
 Title: "Patient with SNOMED Gender and Age (extensions)"
 Description: "Profile that adds an integer age extension and a SNOMED-based gender extension."
-* extension contains PatientAge named age 0..1 MS
+* extension contains PatientAge named age 1..1 MS
 * extension contains GenderSNOMED named gender-sct 0..1 MS
 * gender 0..0 
 

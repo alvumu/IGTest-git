@@ -167,7 +167,7 @@ Parent: Encounter
 * ^status = #active
 
 // Extensions
-* extension contains FirstHospitalExtension named isFirstHospital 0..1 MS and
+* extension contains FirstHospitalExtension named isFirstHospital 1..1 MS and
     InitialCareIntensityExtension named initialCareIntensity 0..1 MS and
     RequiredPostAcuteCareExtension named requiredPostAcuteCare 0..1 MS and
     DischargeDepartmentServiceExtension named dischargeDepartmentService 0..1 MS
@@ -180,8 +180,8 @@ Parent: Encounter
 
 // Period (Start/End Dates)
 * actualPeriod 1..1 MS
-* actualPeriod.start 1..1 MS // hospital timestamp
-* actualPeriod.end 0..1 MS // discharge date
+* actualPeriod.start 0..1 MS // hospital timestamp
+* actualPeriod.end 1..1 MS // discharge date
 
 * subject 1..1 
 * subject MS // Reference to the patient
@@ -192,7 +192,7 @@ Parent: Encounter
 * admission 1..1 MS
 * admission.admitSource 0..1 MS // arrival mode
 * admission.admitSource from StrokeArrivalModeVS (required)
-* admission.dischargeDisposition 0..1 MS // discharge destination
+* admission.dischargeDisposition 1..1 MS // discharge destination
 * admission.dischargeDisposition from StrokeDischargeDestinationVS (required)
 
 
