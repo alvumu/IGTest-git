@@ -13,7 +13,6 @@ Bienvenido. Aquí tienes una visión completa de los contenidos del IG, agrupado
 
 ## 🔖 Narrativas por carpeta
 
-Se generan con `{% raw %}{% include list-folder.html %}{% endraw %}` y se actualizan cuando declares las páginas en `pages:`.
 
 ### Profiles
 {% include list-folder.html dir='profiles' %}

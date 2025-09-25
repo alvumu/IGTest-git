@@ -5,7 +5,7 @@ navSection: profiles
 ---
 
 
-# AgeAtOnsetObservationProfile (Observation)
+# AgeAtOnsetObservationProfile (Observation) {: #AgeAtOnsetObservationProfile }
 
 **URL:** http://testSK.org/StructureDefinition/age-at-onset-observation-profile  
 **Version:** 1.0.0 · **Status:** active  
