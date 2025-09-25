@@ -43,15 +43,12 @@ publisher:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 pages:
-  index.md:
-    title: Home
-
   profiles.md:
     title: Profiles
-    profiles:
-      AgeAtOnsetObservationProfile.md:
-        title: Age at Stroke Onset Observation (Narrative)
-
+    generation: markdown
+    profiles/AgeAtOnsetObservationProfile.md:
+      title: Age at Stroke Onset Observation (Narrative)
+      generation: markdown
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -78,21 +75,21 @@ parameters:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  Home: index.html
-  Conformance: conformance.html
-  Guidance: guidance.html
-  Clinical Artifacts:
-    Profiles: profiles.html
-    Extensions: extensions.html
-    Examples: examples.html
-    Terminology:
-      Overview: terminology.html
-      ValueSets: valuesets.html
-      CodeSystems: codesystems.html
-  #Artifacts (auto): artifacts.html
-  Downloads: downloads.html
-  History: history.html
+# menu:
+#   Home: index.html
+#   Conformance: conformance.html
+#   Guidance: guidance.html
+#   Clinical Artifacts:
+#     Profiles: profiles.html
+#     Extensions: extensions.html
+#     Examples: examples.html
+#     Terminology:
+#       Overview: terminology.html
+#       ValueSets: valuesets.html
+#       CodeSystems: codesystems.html
+#   #Artifacts (auto): artifacts.html
+#   Downloads: downloads.html
+#   History: history.html
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │
