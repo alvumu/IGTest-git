@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="IGTest"/>
   <status value="draft"/>
-  <date value="2025-09-25T10:34:09+00:00"/>
+  <date value="2025-09-25T11:37:39+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -41,22 +41,6 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
       <valueCode value="hl7.fhir.uv.tools.r5#0.8.0"/>
     </extension>
-    <grouping id="Profiles">
-      <name value="Profiles"/>
-      <description value="Clinical and administrative profiles"/>
-    </grouping>
-    <grouping id="Extensions">
-      <name value="Extensions"/>
-      <description value="Custom extensions"/>
-    </grouping>
-    <grouping id="Terminology">
-      <name value="Terminology"/>
-      <description value="CodeSystems and ValueSets"/>
-    </grouping>
-    <grouping id="Examples">
-      <name value="Examples"/>
-      <description value="Example instances"/>
-    </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
@@ -275,7 +259,6 @@
       <name value="First Hospital Extension"/>
       <description value="Indicates if the reporting hospital was the first medical facility to admit the patient for this stroke episode."/>
       <isExample value="false"/>
-      <groupingId value="Extensions"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -374,7 +357,6 @@
       <name value="Initial Care Intensity Extension"/>
       <description value="Specifies the level of care provided during the patient's initial day(s) in the hospital (e.g., standard bed, monitored, ICU/Stroke Unit)."/>
       <isExample value="false"/>
-      <groupingId value="Extensions"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -463,7 +445,6 @@
       <name value="mTICI Score Code System"/>
       <description value="CodeSystem containing the codes to represent the mTICI score."/>
       <isExample value="false"/>
-      <groupingId value="Terminology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -593,7 +574,6 @@
       <name value="Prior Medication Statement Profile (R5)"/>
       <description value="Represents a statement about the patient's medication use *before* the index event."/>
       <isExample value="false"/>
-      <groupingId value="Profiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -792,7 +772,6 @@
       <name value="Stroke Diagnosis ValueSet"/>
       <description value="Defines the SNOMED CT codes for final stroke diagnoses, including specific types and etiologies where applicable."/>
       <isExample value="false"/>
-      <groupingId value="Terminology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -826,7 +805,6 @@
       <name value="Stroke Encounter Profile"/>
       <description value="Profile for an Encounter resource representing a patient's hospital admission and stay for a stroke event, including key administrative and workflow details."/>
       <isExample value="false"/>
-      <groupingId value="Profiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -871,7 +849,6 @@
       <name value="Stroke Functional Score Observation Profile (R5, Timing Ext)"/>
       <description value="Profile for recording functional scores (mRS, NIHSS), using an extension for timing context."/>
       <isExample value="false"/>
-      <groupingId value="Profiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1081,7 +1058,6 @@
       <name value="StrokeEncounterExample"/>
       <isExample value="true"/>
       <profile value="http://testSK.org/StructureDefinition/stroke-encounter-profile"/>
-      <groupingId value="Examples"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1224,7 +1200,6 @@
       <name value="VitalSignObservationExample"/>
       <isExample value="true"/>
       <profile value="http://testSK.org/StructureDefinition/vital-sign-observation-profile"/>
-      <groupingId value="Examples"/>
     </resource>
     <page>
       <sourceUrl value="toc.html"/>
@@ -1238,9 +1213,39 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <sourceUrl value="codesystems.html"/>
+        <name value="codesystems.html"/>
+        <title value="Codesystems"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <sourceUrl value="conformance.html"/>
         <name value="conformance.html"/>
         <title value="Conformance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="downloads.html"/>
+        <name value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="examples.html"/>
+        <name value="examples.html"/>
+        <title value="Examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions.html"/>
+        <name value="extensions.html"/>
+        <title value="Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="general-principles.html"/>
+        <name value="general-principles.html"/>
+        <title value="General Principles"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -1250,16 +1255,28 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <sourceUrl value="history.html"/>
+        <name value="history.html"/>
+        <title value="History"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <sourceUrl value="profiles.html"/>
         <name value="profiles.html"/>
         <title value="Profiles"/>
         <generation value="markdown"/>
-        <page>
-          <sourceUrl value="profiles/AgeAtOnsetObservationProfile.html"/>
-          <name value="profiles/AgeAtOnsetObservationProfile.html"/>
-          <title value="Age at Stroke Onset Observation (Narrative)"/>
-          <generation value="markdown"/>
-        </page>
+      </page>
+      <page>
+        <sourceUrl value="terminology.html"/>
+        <name value="terminology.html"/>
+        <title value="Terminology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="valuesets.html"/>
+        <name value="valuesets.html"/>
+        <title value="Valuesets"/>
+        <generation value="markdown"/>
       </page>
     </page>
     <parameter>

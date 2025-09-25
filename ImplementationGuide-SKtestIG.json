@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-09-25T10:34:09+00:00",
+  "date" : "2025-09-25T11:37:39+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -45,26 +45,6 @@
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
       "valueCode" : "hl7.fhir.uv.tools.r5#0.8.0"
-    }],
-    "grouping" : [{
-      "id" : "Profiles",
-      "name" : "Profiles",
-      "description" : "Clinical and administrative profiles"
-    },
-    {
-      "id" : "Extensions",
-      "name" : "Extensions",
-      "description" : "Custom extensions"
-    },
-    {
-      "id" : "Terminology",
-      "name" : "Terminology",
-      "description" : "CodeSystems and ValueSets"
-    },
-    {
-      "id" : "Examples",
-      "name" : "Examples",
-      "description" : "Example instances"
     }],
     "resource" : [{
       "extension" : [{
@@ -303,8 +283,7 @@
       },
       "name" : "First Hospital Extension",
       "description" : "Indicates if the reporting hospital was the first medical facility to admit the patient for this stroke episode.",
-      "isExample" : false,
-      "groupingId" : "Extensions"
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -411,8 +390,7 @@
       },
       "name" : "Initial Care Intensity Extension",
       "description" : "Specifies the level of care provided during the patient's initial day(s) in the hospital (e.g., standard bed, monitored, ICU/Stroke Unit).",
-      "isExample" : false,
-      "groupingId" : "Extensions"
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -508,8 +486,7 @@
       },
       "name" : "mTICI Score Code System",
       "description" : "CodeSystem containing the codes to represent the mTICI score.",
-      "isExample" : false,
-      "groupingId" : "Terminology"
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -650,8 +627,7 @@
       },
       "name" : "Prior Medication Statement Profile (R5)",
       "description" : "Represents a statement about the patient's medication use *before* the index event.",
-      "isExample" : false,
-      "groupingId" : "Profiles"
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -867,8 +843,7 @@
       },
       "name" : "Stroke Diagnosis ValueSet",
       "description" : "Defines the SNOMED CT codes for final stroke diagnoses, including specific types and etiologies where applicable.",
-      "isExample" : false,
-      "groupingId" : "Terminology"
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -904,8 +879,7 @@
       },
       "name" : "Stroke Encounter Profile",
       "description" : "Profile for an Encounter resource representing a patient's hospital admission and stay for a stroke event, including key administrative and workflow details.",
-      "isExample" : false,
-      "groupingId" : "Profiles"
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -953,8 +927,7 @@
       },
       "name" : "Stroke Functional Score Observation Profile (R5, Timing Ext)",
       "description" : "Profile for recording functional scores (mRS, NIHSS), using an extension for timing context.",
-      "isExample" : false,
-      "groupingId" : "Profiles"
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -1182,8 +1155,7 @@
       },
       "name" : "StrokeEncounterExample",
       "isExample" : true,
-      "profile" : ["http://testSK.org/StructureDefinition/stroke-encounter-profile"],
-      "groupingId" : "Examples"
+      "profile" : ["http://testSK.org/StructureDefinition/stroke-encounter-profile"]
     },
     {
       "extension" : [{
@@ -1338,8 +1310,7 @@
       },
       "name" : "VitalSignObservationExample",
       "isExample" : true,
-      "profile" : ["http://testSK.org/StructureDefinition/vital-sign-observation-profile"],
-      "groupingId" : "Examples"
+      "profile" : ["http://testSK.org/StructureDefinition/vital-sign-observation-profile"]
     }],
     "page" : {
       "sourceUrl" : "toc.html",
@@ -1353,9 +1324,39 @@
         "generation" : "markdown"
       },
       {
+        "sourceUrl" : "codesystems.html",
+        "name" : "codesystems.html",
+        "title" : "Codesystems",
+        "generation" : "markdown"
+      },
+      {
         "sourceUrl" : "conformance.html",
         "name" : "conformance.html",
         "title" : "Conformance",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "downloads.html",
+        "name" : "downloads.html",
+        "title" : "Downloads",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "examples.html",
+        "name" : "examples.html",
+        "title" : "Examples",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "extensions.html",
+        "name" : "extensions.html",
+        "title" : "Extensions",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "general-principles.html",
+        "name" : "general-principles.html",
+        "title" : "General Principles",
         "generation" : "markdown"
       },
       {
@@ -1365,16 +1366,28 @@
         "generation" : "markdown"
       },
       {
+        "sourceUrl" : "history.html",
+        "name" : "history.html",
+        "title" : "History",
+        "generation" : "markdown"
+      },
+      {
         "sourceUrl" : "profiles.html",
         "name" : "profiles.html",
         "title" : "Profiles",
-        "generation" : "markdown",
-        "page" : [{
-          "sourceUrl" : "profiles/AgeAtOnsetObservationProfile.html",
-          "name" : "profiles/AgeAtOnsetObservationProfile.html",
-          "title" : "Age at Stroke Onset Observation (Narrative)",
-          "generation" : "markdown"
-        }]
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "terminology.html",
+        "name" : "terminology.html",
+        "title" : "Terminology",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "valuesets.html",
+        "name" : "valuesets.html",
+        "title" : "Valuesets",
+        "generation" : "markdown"
       }]
     },
     "parameter" : [{

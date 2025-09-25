@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5"}
-    h3,h4,h5,h6{--heading-prefix:"5.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"13"}
+    h3,h4,h5,h6{--heading-prefix:"13.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -142,31 +142,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Profiles</a>
+         <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Extensions</a>
+         <a href="#2">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#3">Terminology</a>
+         <a href="#3">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#4">Examples</a>
+         <a href="#4">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#5">Structures: Resource Profiles</a>
-      </li>
-      <li>
-         <a href="#6">Structures: Extension Definitions</a>
-      </li>
-      <li>
-         <a href="#7">Terminology: Value Sets</a>
-      </li>
-      <li>
-         <a href="#8">Terminology: Code Systems</a>
-      </li>
-      <li>
-         <a href="#9">Example: Example Instances</a>
+         <a href="#5">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -175,112 +163,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
-   <h3>Profiles </h3>
-    <p>Clinical and administrative profiles</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-prior-medication-statement-profile.html"
-                  title="StructureDefinition/prior-medication-statement-profile">Prior Medication Statement Profile (R5)</a>
-            </td>
-            <td>
-<p>Represents a statement about the patient's medication use <em>before</em> the index event.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-stroke-encounter-profile.html"
-                  title="StructureDefinition/stroke-encounter-profile">Stroke Encounter Profile</a>
-            </td>
-            <td>
-<p>Profile for an Encounter resource representing a patient's hospital admission and stay for a stroke event, including key administrative and workflow details.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-functional-score-observation-profile.html"
-                  title="StructureDefinition/functional-score-observation-profile">Stroke Functional Score Observation Profile (R5, Timing Ext)</a>
-            </td>
-            <td>
-<p>Profile for recording functional scores (mRS, NIHSS), using an extension for timing context.</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="2"> </a>
-   <h3>Extensions </h3>
-    <p>Custom extensions</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-first-hospital-ext.html"
-                  title="StructureDefinition/first-hospital-ext">First Hospital Extension</a>
-            </td>
-            <td>
-<p>Indicates if the reporting hospital was the first medical facility to admit the patient for this stroke episode.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-initial-care-intensity-ext.html"
-                  title="StructureDefinition/initial-care-intensity-ext">Initial Care Intensity Extension</a>
-            </td>
-            <td>
-<p>Specifies the level of care provided during the patient's initial day(s) in the hospital (e.g., standard bed, monitored, ICU/Stroke Unit).</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="3"> </a>
-   <h3>Terminology </h3>
-    <p>CodeSystems and ValueSets</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-mtici-score-cs.html" title="CodeSystem/mtici-score-cs">mTICI Score Code System</a>
-            </td>
-            <td>
-<p>CodeSystem containing the codes to represent the mTICI score.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-stroke-diagnosis-vs.html"
-                  title="ValueSet/stroke-diagnosis-vs">Stroke Diagnosis ValueSet</a>
-            </td>
-            <td>
-<p>Defines the SNOMED CT codes for final stroke diagnoses, including specific types and etiologies where applicable.</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="4"> </a>
-   <h3>Examples </h3>
-    <p>Example instances</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Encounter-StrokeEncounterExample.html"
-                  title="Encounter/StrokeEncounterExample">StrokeEncounterExample</a>
-            </td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-VitalSignObservationExample.html"
-                  title="Observation/VitalSignObservationExample">VitalSignObservationExample</a>
-            </td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="5"> </a>
    <h3>Structures: Resource Profiles </h3>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -333,6 +215,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-prior-medication-statement-profile.html"
+                  title="StructureDefinition/prior-medication-statement-profile">Prior Medication Statement Profile (R5)</a>
+            </td>
+            <td>
+<p>Represents a statement about the patient's medication use <em>before</em> the index event.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-specific-finding-observation-profile.html"
                   title="StructureDefinition/specific-finding-observation-profile">Specific Stroke Finding Observation Profile (R5)</a>
             </td>
@@ -374,6 +265,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Represents the final diagnosis of the current stroke event.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-stroke-encounter-profile.html"
+                  title="StructureDefinition/stroke-encounter-profile">Stroke Encounter Profile</a>
+            </td>
+            <td>
+<p>Profile for an Encounter resource representing a patient's hospital admission and stay for a stroke event, including key administrative and workflow details.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-functional-score-observation-profile.html"
+                  title="StructureDefinition/functional-score-observation-profile">Stroke Functional Score Observation Profile (R5, Timing Ext)</a>
+            </td>
+            <td>
+<p>Profile for recording functional scores (mRS, NIHSS), using an extension for timing context.</p>
 </td>
          </tr>
          <tr>
@@ -423,7 +332,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
+   <a name="2"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -436,6 +345,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Specifies the type of department or service the patient was discharged or transferred to.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-first-hospital-ext.html"
+                  title="StructureDefinition/first-hospital-ext">First Hospital Extension</a>
+            </td>
+            <td>
+<p>Indicates if the reporting hospital was the first medical facility to admit the patient for this stroke episode.</p>
 </td>
          </tr>
          <tr>
@@ -454,6 +372,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-initial-care-intensity-ext.html"
+                  title="StructureDefinition/initial-care-intensity-ext">Initial Care Intensity Extension</a>
+            </td>
+            <td>
+<p>Specifies the level of care provided during the patient's initial day(s) in the hospital (e.g., standard bed, monitored, ICU/Stroke Unit).</p>
 </td>
          </tr>
          <tr>
@@ -530,7 +457,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="7"> </a>
+   <a name="3"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -699,6 +626,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-stroke-diagnosis-vs.html"
+                  title="ValueSet/stroke-diagnosis-vs">Stroke Diagnosis ValueSet</a>
+            </td>
+            <td>
+<p>Defines the SNOMED CT codes for final stroke diagnoses, including specific types and etiologies where applicable.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-stroke-discharge-destination-vs.html"
                   title="ValueSet/stroke-discharge-destination-vs">Stroke Discharge Destination ValueSet</a>
             </td>
@@ -822,7 +758,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="8"> </a>
+   <a name="4"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -983,6 +919,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-mtici-score-cs.html" title="CodeSystem/mtici-score-cs">mTICI Score Code System</a>
+            </td>
+            <td>
+<p>CodeSystem containing the codes to represent the mTICI score.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-mtici-code-cs.html" title="CodeSystem/mtici-code-cs">mTICI Score Codes CodeSystem</a>
             </td>
             <td>
@@ -999,7 +943,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="9"> </a>
+   <a name="5"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -1102,6 +1046,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Encounter-StrokeEncounterExample.html"
+                  title="Encounter/StrokeEncounterExample">StrokeEncounterExample</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Condition-StrokeRiskFactorConditionExample.html"
                   title="Condition/StrokeRiskFactorConditionExample">StrokeRiskFactorConditionExample</a>
             </td>
@@ -1124,6 +1074,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="Observation/TimingMetricObservationExample">TimingMetricObservationExample</a>
             </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-VitalSignObservationExample.html"
+                  title="Observation/VitalSignObservationExample">VitalSignObservationExample</a>
+            </td>
+         </tr>
       </tbody>
    </table>
 </div>
@@ -1144,7 +1100,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Sep 25, 2025 10:34+0000">2025-09-25</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Sep 25, 2025 11:37+0000">2025-09-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

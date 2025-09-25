@@ -4,7 +4,7 @@ IGTest : Validation Results
 err = 189, warn = 145, info = 43
 $--
 Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.github.io)
- Build Errors : 9 / 30 / 0
+ Build Errors : 0 / 30 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-brain-imaging-type-cs : 2 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs : 2 / 2 / 2
@@ -115,8 +115,6 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.git
 </table>
 == n/a ==
 WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/StrokeEncounterExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/VitalSignObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/onset-date-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/onset-time-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -137,19 +135,12 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/StrokeDiagnosisConditionAFib.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/StrokeDiagnosisConditionAFlutter.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/StrokeDiagnosisConditionExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/StrokeEncounterExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/StrokeRiskFactorConditionExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/StrokeSwallowingExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/StrokeThrombolysisExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/TimingMetricObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: index.html#/html/body/div/div/div/div/div/ul/li/a at Line 227, column 23: The link '/IGTest-git//profiles/AgeAtOnsetObservationProfile.html' for "AgeAtOnsetObservationProfile.html" cannot be resolved
-ERROR: profiles.html#/html/body/div/div/div/div/div/ul/li/a at Line 161, column 23: The link '/IGTest-git//profiles/AgeAtOnsetObservationProfile.html' for "AgeAtOnsetObservationProfile.html" cannot be resolved
-ERROR: profiles/AgeAtOnsetObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 83, column 6: The link 'index.html' for "Home" cannot be resolved
-ERROR: profiles/AgeAtOnsetObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 86, column 6: The link 'conformance.html' for "Conformance" cannot be resolved
-ERROR: profiles/AgeAtOnsetObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/a at Line 89, column 6: The link 'guidance.html' for "Guidance" cannot be resolved
-ERROR: profiles/AgeAtOnsetObservationProfile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 97, column 10: The link 'profiles.html' for "Profiles" cannot be resolved
-ERROR: profiles/AgeAtOnsetObservationProfile.html#/html/body/div/div/ul/li/a at Line 113, column 16: The link 'toc.html' for "Table of Contents" cannot be resolved
-ERROR: profiles/AgeAtOnsetObservationProfile.html#/html/body/div/div/ul/li/a at Line 113, column 72: The link 'profiles.html' for "Profiles" cannot be resolved
-ERROR: profiles/AgeAtOnsetObservationProfile.html#/html/body/div/div/div/p/span/a at Line 215, column 31: The link 'toc.html' for "Table of Contents" cannot be resolved
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/VitalSignObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 9, errors = 189, warn = 145, info = 43-->
+<!-- broken links = 0, errors = 189, warn = 145, info = 43-->
 <head>
   <title>IGTest : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for IGTest</h1>
- <p>Generated Thu Sep 25 10:35:54 UTC 2025, FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = <a href="https://alvumu.github.io">https://alvumu.github.io</a> (<a href="https://alvumu.github.io/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Thu Sep 25 11:39:30 UTC 2025, FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = <a href="https://alvumu.github.io">https://alvumu.github.io</a> (<a href="https://alvumu.github.io/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.17</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = SKtestIG, Canonical = https://alvumu.github.io</td></tr>
@@ -189,14 +189,14 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 189, warn = 145, info = 43, broken links = 9, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 189, warn = 145, info = 43, broken links = 0, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>9</b></td><td><b>30</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>30</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_CodeSystem-assessment-context-cs"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -499,12 +499,6 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
      <td><b>ImplementationGuide.url</b></td><td><b>warning</b></td><td><b>The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/StrokeEncounterExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/VitalSignObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -565,6 +559,9 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
      <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Condition/StrokeDiagnosisConditionExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/StrokeEncounterExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Condition/StrokeRiskFactorConditionExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -576,32 +573,8 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/TimingMetricObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#l391">index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 227, column 23</a></b></td><td><b>error</b></td><td><b>The link '/IGTest-git//profiles/AgeAtOnsetObservationProfile.html' for &quot;AgeAtOnsetObservationProfile.html&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="profiles.html#l274">profiles&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 161, column 23</a></b></td><td><b>error</b></td><td><b>The link '/IGTest-git//profiles/AgeAtOnsetObservationProfile.html' for &quot;AgeAtOnsetObservationProfile.html&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="profiles/AgeAtOnsetObservationProfile.html#l136">profiles&#8203;/AgeAtOnsetObservationProfile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 83, column 6</a></b></td><td><b>error</b></td><td><b>The link 'index.html' for &quot;Home&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="profiles/AgeAtOnsetObservationProfile.html#l142">profiles&#8203;/AgeAtOnsetObservationProfile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 86, column 6</a></b></td><td><b>error</b></td><td><b>The link 'conformance.html' for &quot;Conformance&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="profiles/AgeAtOnsetObservationProfile.html#l148">profiles&#8203;/AgeAtOnsetObservationProfile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 89, column 6</a></b></td><td><b>error</b></td><td><b>The link 'guidance.html' for &quot;Guidance&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="profiles/AgeAtOnsetObservationProfile.html#l163">profiles&#8203;/AgeAtOnsetObservationProfile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/nav&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 97, column 10</a></b></td><td><b>error</b></td><td><b>The link 'profiles.html' for &quot;Profiles&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="profiles/AgeAtOnsetObservationProfile.html#l201">profiles&#8203;/AgeAtOnsetObservationProfile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 113, column 16</a></b></td><td><b>error</b></td><td><b>The link 'toc.html' for &quot;Table of Contents&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="profiles/AgeAtOnsetObservationProfile.html#l205">profiles&#8203;/AgeAtOnsetObservationProfile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 113, column 72</a></b></td><td><b>error</b></td><td><b>The link 'profiles.html' for &quot;Profiles&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="profiles/AgeAtOnsetObservationProfile.html#l419">profiles&#8203;/AgeAtOnsetObservationProfile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 215, column 31</a></b></td><td><b>error</b></td><td><b>The link 'toc.html' for &quot;Table of Contents&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/VitalSignObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>1</b></td><td><b>warning</b></td><td><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
@@ -1103,61 +1076,61 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
      <td><b>fsh-generated&#8203;/resources&#8203;/ImplementationGuide-SKtestIG</b></td><td><b>warning</b></td><td><b>Unknown Parameters: [broken-links=warning, check-urls=true]</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[2]&#8203;.code&#8203;.code (l1&#8203;/c40343)</b></td><td><b>error</b></td><td><b>Unknown code 'broken-links' in the CodeSystem 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters' version '0.8.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[2]&#8203;.code&#8203;.code (l1&#8203;/c40414)</b></td><td><b>error</b></td><td><b>Unknown code 'broken-links' in the CodeSystem 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters' version '0.8.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[3]&#8203;.code&#8203;.code (l1&#8203;/c40454)</b></td><td><b>error</b></td><td><b>Unknown code 'check-urls' in the CodeSystem 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters' version '0.8.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[3]&#8203;.code&#8203;.code (l1&#8203;/c40525)</b></td><td><b>error</b></td><td><b>Unknown code 'check-urls' in the CodeSystem 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters' version '0.8.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[5]&#8203;.code (l1&#8203;/c40660)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[5]&#8203;.code (l1&#8203;/c40731)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[6]&#8203;.code (l1&#8203;/c40771)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[6]&#8203;.code (l1&#8203;/c40842)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[8]&#8203;.code (l1&#8203;/c41006)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[8]&#8203;.code (l1&#8203;/c41077)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[9]&#8203;.code (l1&#8203;/c41121)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[9]&#8203;.code (l1&#8203;/c41192)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[10]&#8203;.code (l1&#8203;/c41232)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[10]&#8203;.code (l1&#8203;/c41303)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[11]&#8203;.code (l1&#8203;/c41345)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[11]&#8203;.code (l1&#8203;/c41416)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[12]&#8203;.code (l1&#8203;/c41454)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[12]&#8203;.code (l1&#8203;/c41525)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[13]&#8203;.code (l1&#8203;/c41567)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[13]&#8203;.code (l1&#8203;/c41638)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[14]&#8203;.code (l1&#8203;/c41678)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[14]&#8203;.code (l1&#8203;/c41749)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[15]&#8203;.code (l1&#8203;/c41790)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[15]&#8203;.code (l1&#8203;/c41861)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[16]&#8203;.code (l1&#8203;/c41903)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[16]&#8203;.code (l1&#8203;/c41974)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[17]&#8203;.code (l1&#8203;/c42010)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[17]&#8203;.code (l1&#8203;/c42081)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[18]&#8203;.code (l1&#8203;/c42120)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[18]&#8203;.code (l1&#8203;/c42191)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[19]&#8203;.code (l1&#8203;/c42230)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[19]&#8203;.code (l1&#8203;/c42301)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[20]&#8203;.code (l1&#8203;/c42347)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[20]&#8203;.code (l1&#8203;/c42418)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[21]&#8203;.code (l1&#8203;/c42456)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[21]&#8203;.code (l1&#8203;/c42527)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[27]&#8203;.code (l1&#8203;/c43134)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[27]&#8203;.code (l1&#8203;/c43205)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>fsh-generated&#8203;/resources&#8203;/ImplementationGuide-SKtestIG</b></td><td><b>error</b></td><td><b>URL Mismatch https://alvumu.github.io/ImplementationGuide/SKtestIG vs https://alvumu.github.io</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>

@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-09-25T10:34:09+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-25T11:37:39+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -67,23 +67,6 @@
          a fhir:code ;
          fhir:v "hl7.fhir.uv.tools.r5#0.8.0"
        ]
-     ] ) ;
-     fhir:grouping ( [
-       fhir:id [ fhir:v "Profiles" ] ;
-       fhir:name [ fhir:v "Profiles" ] ;
-       fhir:description [ fhir:v "Clinical and administrative profiles" ]
-     ] [
-       fhir:id [ fhir:v "Extensions" ] ;
-       fhir:name [ fhir:v "Extensions" ] ;
-       fhir:description [ fhir:v "Custom extensions" ]
-     ] [
-       fhir:id [ fhir:v "Terminology" ] ;
-       fhir:name [ fhir:v "Terminology" ] ;
-       fhir:description [ fhir:v "CodeSystems and ValueSets" ]
-     ] [
-       fhir:id [ fhir:v "Examples" ] ;
-       fhir:name [ fhir:v "Examples" ] ;
-       fhir:description [ fhir:v "Example instances" ]
      ] ) ;
      fhir:resource ( [
        fhir:extension ( [
@@ -392,8 +375,7 @@
        ] ;
        fhir:name [ fhir:v "First Hospital Extension" ] ;
        fhir:description [ fhir:v "Indicates if the reporting hospital was the first medical facility to admit the patient for this stroke episode." ] ;
-       fhir:isExample [ fhir:v false ] ;
-       fhir:groupingId [ fhir:v "Extensions" ]
+       fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -530,8 +512,7 @@
        ] ;
        fhir:name [ fhir:v "Initial Care Intensity Extension" ] ;
        fhir:description [ fhir:v "Specifies the level of care provided during the patient's initial day(s) in the hospital (e.g., standard bed, monitored, ICU/Stroke Unit)." ] ;
-       fhir:isExample [ fhir:v false ] ;
-       fhir:groupingId [ fhir:v "Extensions" ]
+       fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -651,8 +632,7 @@
        ] ;
        fhir:name [ fhir:v "mTICI Score Code System" ] ;
        fhir:description [ fhir:v "CodeSystem containing the codes to represent the mTICI score." ] ;
-       fhir:isExample [ fhir:v false ] ;
-       fhir:groupingId [ fhir:v "Terminology" ]
+       fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -832,8 +812,7 @@
        ] ;
        fhir:name [ fhir:v "Prior Medication Statement Profile (R5)" ] ;
        fhir:description [ fhir:v "Represents a statement about the patient's medication use *before* the index event." ] ;
-       fhir:isExample [ fhir:v false ] ;
-       fhir:groupingId [ fhir:v "Profiles" ]
+       fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1112,8 +1091,7 @@
        ] ;
        fhir:name [ fhir:v "Stroke Diagnosis ValueSet" ] ;
        fhir:description [ fhir:v "Defines the SNOMED CT codes for final stroke diagnoses, including specific types and etiologies where applicable." ] ;
-       fhir:isExample [ fhir:v false ] ;
-       fhir:groupingId [ fhir:v "Terminology" ]
+       fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1158,8 +1136,7 @@
        ] ;
        fhir:name [ fhir:v "Stroke Encounter Profile" ] ;
        fhir:description [ fhir:v "Profile for an Encounter resource representing a patient's hospital admission and stay for a stroke event, including key administrative and workflow details." ] ;
-       fhir:isExample [ fhir:v false ] ;
-       fhir:groupingId [ fhir:v "Profiles" ]
+       fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1219,8 +1196,7 @@
        ] ;
        fhir:name [ fhir:v "Stroke Functional Score Observation Profile (R5, Timing Ext)" ] ;
        fhir:description [ fhir:v "Profile for recording functional scores (mRS, NIHSS), using an extension for timing context." ] ;
-       fhir:isExample [ fhir:v false ] ;
-       fhir:groupingId [ fhir:v "Profiles" ]
+       fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1526,8 +1502,7 @@
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/stroke-encounter-profile"^^xsd:anyURI ;
          fhir:link <http://testSK.org/StructureDefinition/stroke-encounter-profile>
-       ] ) ;
-       fhir:groupingId [ fhir:v "Examples" ]
+       ] )
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1736,8 +1711,7 @@
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/vital-sign-observation-profile"^^xsd:anyURI ;
          fhir:link <http://testSK.org/StructureDefinition/vital-sign-observation-profile>
-       ] ) ;
-       fhir:groupingId [ fhir:v "Examples" ]
+       ] )
      ] ) ;
      fhir:page [
        fhir:source [
@@ -1758,10 +1732,50 @@
        ] [
          fhir:source [
            a fhir:url ;
+           fhir:v "codesystems.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "codesystems.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Codesystems" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
            fhir:v "conformance.html"^^xsd:anyURI
          ] ;
          fhir:name [ fhir:v "conformance.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Conformance" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "downloads.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Downloads" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "examples.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "examples.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Examples" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "extensions.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "extensions.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Extensions" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "general-principles.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "general-principles.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "General Principles" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:source [
@@ -1774,20 +1788,35 @@
        ] [
          fhir:source [
            a fhir:url ;
+           fhir:v "history.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "history.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "History" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
            fhir:v "profiles.html"^^xsd:anyURI
          ] ;
          fhir:name [ fhir:v "profiles.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Profiles" ] ;
-         fhir:generation [ fhir:v "markdown" ] ;
-         fhir:page ( [
-           fhir:source [
-             a fhir:url ;
-             fhir:v "profiles/AgeAtOnsetObservationProfile.html"^^xsd:anyURI
-           ] ;
-           fhir:name [ fhir:v "profiles/AgeAtOnsetObservationProfile.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Age at Stroke Onset Observation (Narrative)" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] )
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "terminology.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "terminology.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Terminology" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "valuesets.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "valuesets.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Valuesets" ] ;
+         fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;
      fhir:parameter ( [
