@@ -2,6 +2,7 @@
 title: Age at Stroke Onset Observation (Narrative)
 layout: default
 navSection: profiles
+permalink: profiles/AgeAtOnsetObservationProfile.html
 ---
 
 
