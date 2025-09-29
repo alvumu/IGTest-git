@@ -80,7 +80,7 @@
     {%- if href_rel != '' and href_rel | slice: 0, 1 == '/' -%}
       {%- assign href_rel = href_rel | slice: 1, href_rel.size -%}
     {%- endif -%}
-    <li><a href="{{ href_rel }}">{{ title }}</a></li>
+    <li><a href="{{ site.baseurl }}/{{ href_rel }}">{{ title }}</a></li>
   {%- endif -%}
 {%- endfor -%}
 
