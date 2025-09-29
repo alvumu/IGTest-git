@@ -36,83 +36,162 @@ baseurl: /IGTest-git
 #     version: 1.0.0
 #
 #
-# The pages property corresponds to IG.definition.page. SUSHI can
-# auto-generate the page list, but if the author includes pages in
-# this file, it is assumed that the author will fully manage the
-# pages section and SUSHI will not generate any page entries.
-# The page file name is used as the key. If title is not provided,
-# then the title will be generated from the file name.  If a
-# generation value is not provided, it will be inferred from the
-# file name extension.  Any subproperties that are valid filenames
-# with supported extensions (e.g., .md/.xml) will be treated as
-# sub-pages.
+# The pages property corresponds to IG.definition.page. If included, SUSHI assumes you will
+# fully manage all page entries and will not auto-generate page entries. To enable
+# auto-discovery of pages under input/pagecontent, do not include a pages block here.
 pages:
   index.md:
-    title: Home
     generation: markdown
   conformance.md:
-    title: Conformance
     generation: markdown
   guidance.md:
-    title: Guidance
     generation: markdown
   profiles.md:
-    title: Profiles
     generation: markdown
-    AgeAtOnsetObservationProfile.md:
-      title: Age at Stroke Onset Observation (Narrative)
+    profiles/BaseStrokeObservation.md:
       generation: markdown
-    # profiles/BaseStrokeObservation.md:
-    #   title: Base Stroke Observation (Narrative)
-    #   generation: markdown
-    # profiles/DischargeMedicationRequestProfile.md:
-    #   title: Discharge Medication Request (Narrative)
-    #   generation: markdown
-    # profiles/FunctionalScoreObservationProfile.md:
-    #   title: Functional Score Observation (Narrative)
-    #   generation: markdown
-    # profiles/MedicationStatementProfile.md:
-    #   title: Medication Statement (Narrative)
-    #   generation: markdown
-    # profiles/PatientProfile.md:
-    #   title: Patient Profile (Narrative)
-    #   generation: markdown
-    # profiles/ProviderProfile.md:
-    #   title: Provider Profile (Narrative)
-    #   generation: markdown
-    # profiles/StrokeBrainImagingProcedureProfile.md:
-    #   title: Stroke Brain Imaging Procedure (Narrative)
-    #   generation: markdown
-    # profiles/StrokeCarotidImagingProcedureProfile.md:
-    #   title: Stroke Carotid Imaging Procedure (Narrative)
-    #   generation: markdown
-    # profiles/StrokeCirumstanceObservationProfile.md:
-    #   title: Stroke Circumstance Observation (Narrative)
-    #   generation: markdown
-    # profiles/StrokeDiagnosisConditionProfile.md:
-    #   title: Stroke Diagnosis Condition (Narrative)
-    #   generation: markdown
-    # profiles/StrokeEncounterProfile.md:
-    #   title: Stroke Encounter (Narrative)
-    #   generation: markdown
-    # profiles/StrokeFindingObservation.md:
-    #   title: Stroke Finding Observation (Narrative)
-    #   generation: markdown
-    # profiles/StrokeRiskFactorConditionProfile.md:
-    #   title: Stroke Risk Factor Condition (Narrative)
-    #   generation: markdown
-    # profiles/StrokeSwallowProcedureProfile.md:
-    #   title: Stroke Swallow Procedure (Narrative)
-    #   generation: markdown
-    # profiles/StrokeThrombolysisProcedureProfile.md:
-    #   title: Stroke Thrombolysis Procedure (Narrative)
-    #   generation: markdown
-    # profiles/TimingMetricObservationProfile.md:
-    #   title: Timing Metric Observation (Narrative)
-    #   generation: markdown
-    # profiles/VitalSignObservationProfile.md:
-    #   title: Vital Sign Observation (Narrative)
-    #   generation: markdown
+    profiles/DischargeMedicationRequestProfile.md:
+      generation: markdown
+    profiles/FunctionalScoreObservationProfile.md:
+      generation: markdown
+    profiles/MedicationStatementProfile.md:
+      generation: markdown
+    profiles/PatientProfile.md:
+      generation: markdown
+    profiles/ProviderProfile.md:
+      generation: markdown
+    profiles/StrokeBrainImagingProcedureProfile.md:
+      generation: markdown
+    profiles/StrokeCarotidImagingProcedureProfile.md:
+      generation: markdown
+    profiles/StrokeCirumstanceObservationProfile.md:
+      generation: markdown
+    profiles/StrokeDiagnosisConditionProfile.md:
+      generation: markdown
+    profiles/StrokeEncounterProfile.md:
+      generation: markdown
+    profiles/StrokeFindingObservation.md:
+      generation: markdown
+    profiles/StrokeRiskFactorConditionProfile.md:
+      generation: markdown
+    profiles/StrokeSwallowProcedureProfile.md:
+      generation: markdown
+    profiles/StrokeThrombolysisProcedureProfile.md:
+      generation: markdown
+    profiles/TimingMetricObservationProfile.md:
+      generation: markdown
+    profiles/VitalSignObservationProfile.md:
+      generation: markdown
+  codesystems.md:
+    generation: markdown
+    codesystems/AssesmentContextCS.md:
+      generation: markdown
+    codesystems/BrainImagingTypeCS.md:
+      generation: markdown
+    codesystems/DischargeDeptCS.md:
+      generation: markdown
+    codesystems/DischargeMedicationCS.md:
+      generation: markdown
+    codesystems/HemorragicStrokeBleedingReasonCS.md:
+      generation: markdown
+    codesystems/InitialCareIntensityCS.md:
+      generation: markdown
+    codesystems/MedicationStatementCS.md:
+      generation: markdown
+    codesystems/MRsScoreCS.md:
+      generation: markdown
+    codesystems/mTiciCodeCS.md:
+      generation: markdown
+    codesystems/MticiScoreCS.md:
+      generation: markdown
+    codesystems/ProcedureTimingContextCS.md:
+      generation: markdown
+    codesystems/StrokeArrivalModeCS.md:
+      generation: markdown
+    codesystems/StrokeCircumstanceCodesCS.md:
+      generation: markdown
+    codesystems/StrokeDischargeDestinationCS.md:
+      generation: markdown
+    codesystems/StrokeEtiologyCS.md:
+      generation: markdown
+    codesystems/StrokeProcNotDoneReasonCS.md:
+      generation: markdown
+    codesystems/SwallowProceduresCS.md:
+      generation: markdown
+    codesystems/SwallowScreenTimeCS.md:
+      generation: markdown
+    codesystems/ThrombectomyComplicationCS.md:
+      generation: markdown
+    codesystems/TimingMetricCodesCS.md:
+      generation: markdown
+  valuesets.md:
+    generation: markdown
+    valuesets/AdmissionSourceVS.md:
+      generation: markdown
+    valuesets/AfibFlutterStatusVS.md:
+      generation: markdown
+    valuesets/AssesmentContextVS.md:
+      generation: markdown
+    valuesets/BrainImagingModalityVS.md:
+      generation: markdown
+    valuesets/CarotidImagingModalityVS.md:
+      generation: markdown
+    valuesets/DischargeDeptVS.md:
+      generation: markdown
+    valuesets/DischargeDestinationVS.md:
+      generation: markdown
+    valuesets/DischargeMedicationVS.md:
+      generation: markdown
+    valuesets/FunctionalScoreCodesVS.md:
+      generation: markdown
+    valuesets/GenderSNOMEDVS.md:
+      generation: markdown
+    valuesets/HemorrhagicStrokeBleedingReasonVS.md:
+      generation: markdown
+    valuesets/InitialCareIntensityVS.md:
+      generation: markdown
+    valuesets/MedicationStatementMedsCodesVS.md:
+      generation: markdown
+    valuesets/MRsScoreVS.md:
+      generation: markdown
+    valuesets/mTiciCodeVS.md:
+      generation: markdown
+    valuesets/MticiScoreVS.md:
+      generation: markdown
+    valuesets/PerforationProceduresVS.md:
+      generation: markdown
+    valuesets/ProcedureTimingContextVS.md:
+      generation: markdown
+    valuesets/SpecificFindingCodesVS.md:
+      generation: markdown
+    valuesets/StrokeArrivalModeVS.md:
+      generation: markdown
+    valuesets/StrokeCircumstanceVS.md:
+      generation: markdown
+    valuesets/StrokeDiagnosisVS.md:
+      generation: markdown
+    valuesets/StrokeDischargeDestinationVS.md:
+      generation: markdown
+    valuesets/StrokeEtiologyVS.md:
+      generation: markdown
+    valuesets/StrokeFindingCodesVS.md:
+      generation: markdown
+    valuesets/StrokeProcNotDoneReasonVS.md:
+      generation: markdown
+    valuesets/StrokeRiskFactorSNOMEDVS.md:
+      generation: markdown
+    valuesets/StrokeRiskFactorVS.md:
+      generation: markdown
+    valuesets/SwallowingScreeningTimingCategoryVS.md:
+      generation: markdown
+    valuesets/SwallowProceduresVS.md:
+      generation: markdown
+    valuesets/ThrombectomyComplicationVS.md:
+      generation: markdown
+    valuesets/TimingMetricCodesVS.md:
+      generation: markdown
+    valuesets/VitalSignCodesVS.md:
+      generation: markdown
 
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -130,6 +209,9 @@ parameters:
   excludettl: true
   path-pages:
     - input/pagecontent
+    - input/pagecontent/profiles
+    - input/pagecontent/codesystems
+    - input/pagecontent/valuesets
     - fsh-generated/includes
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮

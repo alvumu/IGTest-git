@@ -15,19 +15,19 @@ Bienvenido. Aquí tienes una visión completa de los contenidos del IG, agrupado
 
 
 ### Profiles
-{% include list-folder.html dir='profiles' %}
+{% include list-folder.html srcpath='profiles' %}
 
 ### Extensions
-{% include list-folder.html dir='extensions' %}
+{% include list-folder.html srcpath='extensions' %}
 
 ### CodeSystems
-{% include list-folder.html dir='codesystems' %}
+{% include list-folder.html srcpath='codesystems' %}
 
 ### ValueSets
-{% include list-folder.html dir='valuesets' %}
+{% include list-folder.html srcpath='valuesets' %}
 
 ### Examples
-{% include list-folder.html dir='examples' %}
+{% include list-folder.html srcpath='examples' %}
 
 ---
 
