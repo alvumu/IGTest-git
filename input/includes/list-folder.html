@@ -80,6 +80,7 @@
   {%- endif -%}
 {%- endfor -%}
 
+
 {%- if out == empty -%}
   <li><em>No entries found{% if dir != '' %} in {{ dir }}{% endif %}{% if srcpath != '' %} (srcpath={{ srcpath }}){% endif %}{% if nameContains != '' %} (name contains '{{ nameContains }}'){% endif %}{% if navSection != '' %} (navSection='{{ navSection }}'){% endif %}</em></li>
 {%- endif -%}
