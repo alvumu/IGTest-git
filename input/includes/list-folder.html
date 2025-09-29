@@ -76,7 +76,11 @@
   {%- assign title = p.title | default: p.name | default: p.url -%}
   {%- assign href = p.url | default: '' -%}
   {%- if href != '' -%}
-    <li><a href="{{ href | relative_url }}">{{ title }}</a></li>
+    {%- assign href_rel = href -%}
+    {%- if href_rel != '' and href_rel | slice: 0, 1 == '/' -%}
+      {%- assign href_rel = href_rel | slice: 1, href_rel.size -%}
+    {%- endif -%}
+    <li><a href="{{ href_rel }}">{{ title }}</a></li>
   {%- endif -%}
 {%- endfor -%}
 
