@@ -1,7 +1,7 @@
 ---
 title: Terminology
 layout: default
-permalink: /terminology/
+permalink: terminology/
 ---
 
 # Terminology
