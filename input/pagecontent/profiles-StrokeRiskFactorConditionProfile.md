@@ -31,7 +31,3 @@ navSection: profiles
 - **Risk Factor:** `StrokeRiskFactorVS` (required)
 
 **Examples:**
-- [`Condition/StrokeDiagnosisConditionAFlutter`](../examples/Condition-StrokeDiagnosisConditionAFlutter.json)  
-- [`Condition/StrokeDiagnosisConditionAFib`](../examples/Condition-StrokeDiagnosisConditionAFib.json)  
-- [`Condition/StrokeRiskFactorConditionExample`](../examples/Condition-StrokeRiskFactorConditionExample.json)
-

@@ -36,4 +36,3 @@ navSection: profiles
 - **Care intensity:** `InitialCareIntensityVS`
 
 ## Examples
-- [`Encounter/stroke-enc-001`](../examples/Encounter-stroke-enc-001.json)

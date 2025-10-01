@@ -50,4 +50,3 @@ with supportive **ValueSets/CodeSystems** and timing/etiology **extensions**.
 - **Diagnosis:** `StrokeDiagnosisVS` (required)
 
 **Examples:**
-- [`Condition/StrokeDiagnosisConditionExample`](../examples/Condition-StrokeDiagnosisConditionExample.json)
