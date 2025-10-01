@@ -45,8 +45,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.9"}
-    h3,h4,h5,h6{--heading-prefix:"7.9"}</style>
+    <style type="text/css">h2{--heading-prefix:"78.9"}
+    h3,h4,h5,h6{--heading-prefix:"78.9"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -227,7 +227,7 @@
         
           Active
           
-            as of 2025-09-30
+            as of 2025-10-01
           
         
       </td>
@@ -407,7 +407,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/references.html">Reference</a>(<a href="http://hl7.org/fhir/R5/patient.html">Patient</a> | <a href="http://hl7.org/fhir/R5/group.html">Group</a> | <a href="http://hl7.org/fhir/R5/device.html">Device</a> | <a href="http://hl7.org/fhir/R5/practitioner.html">Practitioner</a> | <a href="http://hl7.org/fhir/R5/organization.html">Organization</a> | <a href="http://hl7.org/fhir/R5/location.html">Location</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Individual or entity the procedure was performed on</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbstroke-carotid-imaging-procedure-profileK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileK'), 'binding', document.getElementById('cbstroke-carotid-imaging-procedure-profileK-binding').checked, document.getElementById('ppstroke-carotid-imaging-procedure-profileK'));
 document.getElementById('cbstroke-carotid-imaging-procedure-profileK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -417,11 +417,70 @@ filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileK'),
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Procedure.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-event-status.html">EventStatus</a><div><code>http://hl7.org/fhir/ValueSet/event-status</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/event-status"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.statusReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-proc-not-done-reason-vs.html">StrokeProcNotDoneReasonVS</a>(a valid code from <a href="CodeSystem-stroke-proc-not-done-reason-cs.html">Stroke Procedure Not Done Reason Code System</a>)<div><code>http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Procedure.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="A code to identify a specific procedure .">Pattern Value: SNOMED-CT Code 58920005("Angiography of carotid artery (procedure)")<div><code>http://hl7.org/fhir/ValueSet/procedure-code|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-code|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.status</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/valueset-event-status.html" opacity="1.0">EventStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/event-status" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 5.0.0, the version found through the package references">&#x1F4E6;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.statusReason</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-proc-not-done-reason-vs.html" opacity="1.0">Stroke Procedure Not Done Reason ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Procedure.code</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="A code to identify a specific procedure .">
+      <a href="http://hl7.org/fhir/R5/valueset-procedure-code.html" opacity="1.0">Procedure Codes (SNOMED CT)</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-code|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -431,15 +490,91 @@ filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileK'),
             <a name="inv-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Procedure</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Procedure</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Procedure</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Procedure</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Procedure</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Procedure</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Procedure</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Procedure</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Procedure</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Procedure</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -503,7 +638,7 @@ filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileK'),
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Representation defined by the system<br/><span style="font-weight: bold">Fixed Value: </span><span style="color: darkgreen">Angiography of carotid artery (procedure)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbstroke-carotid-imaging-procedure-profileD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileD'), 'binding', document.getElementById('cbstroke-carotid-imaging-procedure-profileD-binding').checked, document.getElementById('ppstroke-carotid-imaging-procedure-profileD'));
 document.getElementById('cbstroke-carotid-imaging-procedure-profileD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -514,10 +649,55 @@ filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileD'),
           <a name="tx"> </a>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Procedure.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-event-status.html">EventStatus</a><div><code>http://hl7.org/fhir/ValueSet/event-status</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/event-status"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.statusReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-proc-not-done-reason-vs.html">StrokeProcNotDoneReasonVS</a>(a valid code from <a href="CodeSystem-stroke-proc-not-done-reason-cs.html">Stroke Procedure Not Done Reason Code System</a>)<div><code>http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs"></button></div><div>From this IG</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.status</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/valueset-event-status.html" opacity="0.5">EventStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/event-status" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 5.0.0, the version found through the package references">&#x1F4E6;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.statusReason</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-proc-not-done-reason-vs.html" opacity="0.5">Stroke Procedure Not Done Reason ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
 </table>
 
         
@@ -886,7 +1066,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/references.html">Reference</a>(<a href="http://hl7.org/fhir/R5/resource.html">Resource</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Extra information relevant to the procedure<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbstroke-carotid-imaging-procedure-profileS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileS'), 'binding', document.getElementById('cbstroke-carotid-imaging-procedure-profileS-binding').checked, document.getElementById('ppstroke-carotid-imaging-procedure-profileS'));
 document.getElementById('cbstroke-carotid-imaging-procedure-profileS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -896,21 +1076,220 @@ filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileS'),
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Procedure.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="IETF language tag for a human language"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-all-languages.html">AllLanguages</a><div><code>http://hl7.org/fhir/ValueSet/all-languages|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-event-status.html">EventStatus</a><div><code>http://hl7.org/fhir/ValueSet/event-status</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/event-status"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.statusReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-proc-not-done-reason-vs.html">StrokeProcNotDoneReasonVS</a>(a valid code from <a href="CodeSystem-stroke-proc-not-done-reason-cs.html">Stroke Procedure Not Done Reason Code System</a>)<div><code>http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Procedure.category</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="A code that classifies a procedure for searching, sorting and display purposes."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-procedure-category.html">ProcedureCategoryCodesSNOMEDCT</a><div><code>http://hl7.org/fhir/ValueSet/procedure-category|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-category|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="A code to identify a specific procedure .">Pattern Value: SNOMED-CT Code 58920005("Angiography of carotid artery (procedure)")<div><code>http://hl7.org/fhir/ValueSet/procedure-code|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-code|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.performer.function</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="A code that identifies the role of a performer of the procedure."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-performer-role.html">ProcedurePerformerRoleCodes</a><div><code>http://hl7.org/fhir/ValueSet/performer-role|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/performer-role|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.reason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="A code that identifies the reason a procedure is  required."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-procedure-reason.html">ProcedureReasonCodes</a><div><code>http://hl7.org/fhir/ValueSet/procedure-reason|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-reason|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.bodySite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="SNOMED CT Body site concepts"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-body-site.html">SNOMEDCTBodyStructures</a><div><code>http://hl7.org/fhir/ValueSet/body-site|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/body-site|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.outcome</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="An outcome of a procedure - whether it was resolved or otherwise."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-procedure-outcome.html">ProcedureOutcomeCodesSNOMEDCT</a><div><code>http://hl7.org/fhir/ValueSet/procedure-outcome|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-outcome|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.complication</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="Codes describing complications that resulted from a procedure."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-condition-code.html">ConditionProblemDiagnosisCodes</a><div><code>http://hl7.org/fhir/ValueSet/condition-code|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/condition-code|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.followUp</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="Specific follow up required for a procedure e.g. removal of sutures."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-procedure-followup.html">ProcedureFollowUpCodesSNOMEDCT</a><div><code>http://hl7.org/fhir/ValueSet/procedure-followup|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-followup|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.focalDevice.action</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#preferred">preferred</a></td><td title="A kind of change that happened to the device during the procedure."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-device-action.html">ProcedureDeviceActionCodes</a><div><code>http://hl7.org/fhir/ValueSet/device-action|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/device-action|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.used</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="Codes describing items used during a procedure."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-device-type.html">DeviceType</a><div><code>http://hl7.org/fhir/ValueSet/device-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/device-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.language</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="IETF language tag for a human language">
+      <a href="http://hl7.org/fhir/R5/valueset-all-languages.html" opacity="1.0">All Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.status</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/valueset-event-status.html" opacity="1.0">EventStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/event-status" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 5.0.0, the version found through the package references">&#x1F4E6;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.statusReason</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-proc-not-done-reason-vs.html" opacity="1.0">Stroke Procedure Not Done Reason ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Procedure.category</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="A code that classifies a procedure for searching, sorting and display purposes.">
+      <a href="http://hl7.org/fhir/R5/valueset-procedure-category.html" opacity="1.0">Procedure Category Codes (SNOMED CT)</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-category|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.code</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="A code to identify a specific procedure .">
+      <a href="http://hl7.org/fhir/R5/valueset-procedure-code.html" opacity="1.0">Procedure Codes (SNOMED CT)</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-code|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.performer.​function</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="A code that identifies the role of a performer of the procedure.">
+      <a href="http://hl7.org/fhir/R5/valueset-performer-role.html" opacity="1.0">Procedure Performer Role Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/performer-role|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.reason</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="A code that identifies the reason a procedure is  required.">
+      <a href="http://hl7.org/fhir/R5/valueset-procedure-reason.html" opacity="1.0">Procedure Reason Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-reason|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.bodySite</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="SNOMED CT Body site concepts">
+      <a href="http://hl7.org/fhir/R5/valueset-body-site.html" opacity="1.0">SNOMED CT Body Structures</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/body-site|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.outcome</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="An outcome of a procedure - whether it was resolved or otherwise.">
+      <a href="http://hl7.org/fhir/R5/valueset-procedure-outcome.html" opacity="1.0">Procedure Outcome Codes (SNOMED CT)</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-outcome|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.complication</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes describing complications that resulted from a procedure.">
+      <a href="http://hl7.org/fhir/R5/valueset-condition-code.html" opacity="1.0">Condition/Problem/Diagnosis Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/condition-code|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.followUp</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Specific follow up required for a procedure e.g. removal of sutures.">
+      <a href="http://hl7.org/fhir/R5/valueset-procedure-followup.html" opacity="1.0">Procedure Follow up Codes (SNOMED CT)</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-followup|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.focalDevice.​action</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
+    </td>
+    <td title="A kind of change that happened to the device during the procedure.">
+      <a href="http://hl7.org/fhir/R5/valueset-device-action.html" opacity="1.0">Procedure Device Action Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/device-action|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.used</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes describing items used during a procedure.">
+      <a href="http://hl7.org/fhir/R5/valueset-device-type.html" opacity="1.0">Device Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/device-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -920,16 +1299,100 @@ filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileS'),
             <a name="inv-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Procedure</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Procedure</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Procedure</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Procedure</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Procedure</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>prc-1</td><td>error</td><td>Procedure.performer</td><td>Procedure.performer.onBehalfOf can only be populated when performer.actor isn't Practitioner or PractitionerRole<br/>: onBehalfOf.exists() and actor.resolve().exists() implies actor.resolve().where($this is Practitioner or $this is PractitionerRole).empty()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Procedure</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Procedure</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Procedure</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Procedure</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Procedure</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>prc-1</td>
+    <td>error</td>
+    <td>Procedure.performer</td>
+    <td>Procedure.performer.onBehalfOf can only be populated when performer.actor isn't Practitioner or PractitionerRole</td>
+    <td>
+      <code>onBehalfOf.exists() and actor.resolve().exists() implies actor.resolve().where($this is Practitioner or $this is PractitionerRole).empty()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1159,7 +1622,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/references.html">Reference</a>(<a href="http://hl7.org/fhir/R5/patient.html">Patient</a> | <a href="http://hl7.org/fhir/R5/group.html">Group</a> | <a href="http://hl7.org/fhir/R5/device.html">Device</a> | <a href="http://hl7.org/fhir/R5/practitioner.html">Practitioner</a> | <a href="http://hl7.org/fhir/R5/organization.html">Organization</a> | <a href="http://hl7.org/fhir/R5/location.html">Location</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Individual or entity the procedure was performed on</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbstroke-carotid-imaging-procedure-profileKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileKA'), 'binding', document.getElementById('cbstroke-carotid-imaging-procedure-profileKA-binding').checked, document.getElementById('ppstroke-carotid-imaging-procedure-profileKA'));
 document.getElementById('cbstroke-carotid-imaging-procedure-profileKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1169,11 +1632,70 @@ filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileKA')
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Procedure.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-event-status.html">EventStatus</a><div><code>http://hl7.org/fhir/ValueSet/event-status</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/event-status"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.statusReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-proc-not-done-reason-vs.html">StrokeProcNotDoneReasonVS</a>(a valid code from <a href="CodeSystem-stroke-proc-not-done-reason-cs.html">Stroke Procedure Not Done Reason Code System</a>)<div><code>http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Procedure.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="A code to identify a specific procedure .">Pattern Value: SNOMED-CT Code 58920005("Angiography of carotid artery (procedure)")<div><code>http://hl7.org/fhir/ValueSet/procedure-code|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-code|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.status</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/valueset-event-status.html" opacity="1.0">EventStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/event-status" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 5.0.0, the version found through the package references">&#x1F4E6;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.statusReason</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-proc-not-done-reason-vs.html" opacity="1.0">Stroke Procedure Not Done Reason ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Procedure.code</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="A code to identify a specific procedure .">
+      <a href="http://hl7.org/fhir/R5/valueset-procedure-code.html" opacity="1.0">Procedure Codes (SNOMED CT)</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-code|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -1183,15 +1705,91 @@ filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileKA')
             <a name="inv-all-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Procedure</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Procedure</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Procedure</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Procedure</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Procedure</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Procedure</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Procedure</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Procedure</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Procedure</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Procedure</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1255,7 +1853,7 @@ filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileKA')
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Representation defined by the system<br/><span style="font-weight: bold">Fixed Value: </span><span style="color: darkgreen">Angiography of carotid artery (procedure)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbstroke-carotid-imaging-procedure-profileDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileDA'), 'binding', document.getElementById('cbstroke-carotid-imaging-procedure-profileDA-binding').checked, document.getElementById('ppstroke-carotid-imaging-procedure-profileDA'));
 document.getElementById('cbstroke-carotid-imaging-procedure-profileDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1265,10 +1863,55 @@ filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileDA')
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Procedure.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-event-status.html">EventStatus</a><div><code>http://hl7.org/fhir/ValueSet/event-status</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/event-status"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.statusReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-proc-not-done-reason-vs.html">StrokeProcNotDoneReasonVS</a>(a valid code from <a href="CodeSystem-stroke-proc-not-done-reason-cs.html">Stroke Procedure Not Done Reason Code System</a>)<div><code>http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs"></button></div><div>From this IG</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.status</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/valueset-event-status.html" opacity="0.5">EventStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/event-status" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 5.0.0, the version found through the package references">&#x1F4E6;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.statusReason</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-proc-not-done-reason-vs.html" opacity="0.5">Stroke Procedure Not Done Reason ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
 </table>
 
         
@@ -1637,7 +2280,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/references.html">Reference</a>(<a href="http://hl7.org/fhir/R5/resource.html">Resource</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Extra information relevant to the procedure<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbstroke-carotid-imaging-procedure-profileSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileSA'), 'binding', document.getElementById('cbstroke-carotid-imaging-procedure-profileSA-binding').checked, document.getElementById('ppstroke-carotid-imaging-procedure-profileSA'));
 document.getElementById('cbstroke-carotid-imaging-procedure-profileSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1647,21 +2290,220 @@ filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileSA')
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Procedure.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="IETF language tag for a human language"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-all-languages.html">AllLanguages</a><div><code>http://hl7.org/fhir/ValueSet/all-languages|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-event-status.html">EventStatus</a><div><code>http://hl7.org/fhir/ValueSet/event-status</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/event-status"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.statusReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-proc-not-done-reason-vs.html">StrokeProcNotDoneReasonVS</a>(a valid code from <a href="CodeSystem-stroke-proc-not-done-reason-cs.html">Stroke Procedure Not Done Reason Code System</a>)<div><code>http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Procedure.category</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="A code that classifies a procedure for searching, sorting and display purposes."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-procedure-category.html">ProcedureCategoryCodesSNOMEDCT</a><div><code>http://hl7.org/fhir/ValueSet/procedure-category|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-category|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="A code to identify a specific procedure .">Pattern Value: SNOMED-CT Code 58920005("Angiography of carotid artery (procedure)")<div><code>http://hl7.org/fhir/ValueSet/procedure-code|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-code|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.performer.function</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="A code that identifies the role of a performer of the procedure."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-performer-role.html">ProcedurePerformerRoleCodes</a><div><code>http://hl7.org/fhir/ValueSet/performer-role|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/performer-role|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.reason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="A code that identifies the reason a procedure is  required."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-procedure-reason.html">ProcedureReasonCodes</a><div><code>http://hl7.org/fhir/ValueSet/procedure-reason|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-reason|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.bodySite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="SNOMED CT Body site concepts"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-body-site.html">SNOMEDCTBodyStructures</a><div><code>http://hl7.org/fhir/ValueSet/body-site|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/body-site|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.outcome</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="An outcome of a procedure - whether it was resolved or otherwise."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-procedure-outcome.html">ProcedureOutcomeCodesSNOMEDCT</a><div><code>http://hl7.org/fhir/ValueSet/procedure-outcome|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-outcome|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.complication</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="Codes describing complications that resulted from a procedure."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-condition-code.html">ConditionProblemDiagnosisCodes</a><div><code>http://hl7.org/fhir/ValueSet/condition-code|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/condition-code|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.followUp</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="Specific follow up required for a procedure e.g. removal of sutures."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-procedure-followup.html">ProcedureFollowUpCodesSNOMEDCT</a><div><code>http://hl7.org/fhir/ValueSet/procedure-followup|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-followup|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.focalDevice.action</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#preferred">preferred</a></td><td title="A kind of change that happened to the device during the procedure."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-device-action.html">ProcedureDeviceActionCodes</a><div><code>http://hl7.org/fhir/ValueSet/device-action|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/device-action|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Procedure.used</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="Codes describing items used during a procedure."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-device-type.html">DeviceType</a><div><code>http://hl7.org/fhir/ValueSet/device-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/device-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.language</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="IETF language tag for a human language">
+      <a href="http://hl7.org/fhir/R5/valueset-all-languages.html" opacity="1.0">All Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.status</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/valueset-event-status.html" opacity="1.0">EventStatus</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/event-status" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 5.0.0, the version found through the package references">&#x1F4E6;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.statusReason</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-proc-not-done-reason-vs.html" opacity="1.0">Stroke Procedure Not Done Reason ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Procedure.category</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="A code that classifies a procedure for searching, sorting and display purposes.">
+      <a href="http://hl7.org/fhir/R5/valueset-procedure-category.html" opacity="1.0">Procedure Category Codes (SNOMED CT)</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-category|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.code</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="A code to identify a specific procedure .">
+      <a href="http://hl7.org/fhir/R5/valueset-procedure-code.html" opacity="1.0">Procedure Codes (SNOMED CT)</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-code|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.performer.​function</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="A code that identifies the role of a performer of the procedure.">
+      <a href="http://hl7.org/fhir/R5/valueset-performer-role.html" opacity="1.0">Procedure Performer Role Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/performer-role|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.reason</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="A code that identifies the reason a procedure is  required.">
+      <a href="http://hl7.org/fhir/R5/valueset-procedure-reason.html" opacity="1.0">Procedure Reason Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-reason|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.bodySite</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="SNOMED CT Body site concepts">
+      <a href="http://hl7.org/fhir/R5/valueset-body-site.html" opacity="1.0">SNOMED CT Body Structures</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/body-site|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.outcome</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="An outcome of a procedure - whether it was resolved or otherwise.">
+      <a href="http://hl7.org/fhir/R5/valueset-procedure-outcome.html" opacity="1.0">Procedure Outcome Codes (SNOMED CT)</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-outcome|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.complication</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes describing complications that resulted from a procedure.">
+      <a href="http://hl7.org/fhir/R5/valueset-condition-code.html" opacity="1.0">Condition/Problem/Diagnosis Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/condition-code|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.followUp</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Specific follow up required for a procedure e.g. removal of sutures.">
+      <a href="http://hl7.org/fhir/R5/valueset-procedure-followup.html" opacity="1.0">Procedure Follow up Codes (SNOMED CT)</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/procedure-followup|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.focalDevice.​action</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
+    </td>
+    <td title="A kind of change that happened to the device during the procedure.">
+      <a href="http://hl7.org/fhir/R5/valueset-device-action.html" opacity="1.0">Procedure Device Action Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/device-action|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Procedure.used</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Codes describing items used during a procedure.">
+      <a href="http://hl7.org/fhir/R5/valueset-device-type.html" opacity="1.0">Device Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/device-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -1671,16 +2513,100 @@ filterDesc(document.getElementById('stroke-carotid-imaging-procedure-profileSA')
             <a name="inv-all-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Procedure</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Procedure</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Procedure</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Procedure</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Procedure</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>prc-1</td><td>error</td><td>Procedure.performer</td><td>Procedure.performer.onBehalfOf can only be populated when performer.actor isn't Practitioner or PractitionerRole<br/>: onBehalfOf.exists() and actor.resolve().exists() implies actor.resolve().where($this is Practitioner or $this is PractitionerRole).empty()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Procedure</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Procedure</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Procedure</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Procedure</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Procedure</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>prc-1</td>
+    <td>error</td>
+    <td>Procedure.performer</td>
+    <td>Procedure.performer.onBehalfOf can only be populated when performer.actor isn't Practitioner or PractitionerRole</td>
+    <td>
+      <code>onBehalfOf.exists() and actor.resolve().exists() implies actor.resolve().where($this is Practitioner or $this is PractitionerRole).empty()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1823,7 +2749,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 30, 2025 09:58+0000">2025-09-30</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Oct 1, 2025 11:45+0000">2025-10-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

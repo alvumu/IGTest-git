@@ -45,8 +45,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.5"}
-    h3,h4,h5,h6{--heading-prefix:"7.5"}</style>
+    <style type="text/css">h2{--heading-prefix:"78.5"}
+    h3,h4,h5,h6{--heading-prefix:"78.5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -227,7 +227,7 @@
         
           Draft
           
-            as of 2025-09-30
+            as of 2025-10-01
           
         
       </td>
@@ -384,7 +384,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">replaced-by | replaces | refer | seealso<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://hl7.org/fhir/R5/valueset-link-type.html" title="http://hl7.org/fhir/ValueSet/link-type" class="binding">LinkType</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">The type of link between this patient resource and another Patient resource, or Patient/RelatedPerson when using the </span><span style="padding: 2px 4px; color: #005c00; background-color: #f9f2f4; white-space: nowrap; border-radius: 4px" title="null" class="binding">seealso</span><span title="null" class="binding"> code</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbpatient-age-gender-snomed-profileK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('patient-age-gender-snomed-profileK'), 'binding', document.getElementById('cbpatient-age-gender-snomed-profileK-binding').checked, document.getElementById('pppatient-age-gender-snomed-profileK'));
 document.getElementById('cbpatient-age-gender-snomed-profileK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -394,9 +394,42 @@ filterDesc(document.getElementById('patient-age-gender-snomed-profileK'), 'oblig
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Patient.link.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="The type of link between this patient resource and another Patient resource, or Patient/RelatedPerson when using the `seealso` code"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-link-type.html">LinkType</a><div><code>http://hl7.org/fhir/ValueSet/link-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/link-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Patient.link.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="The type of link between this patient resource and another Patient resource, or Patient/RelatedPerson when using the `seealso` code">
+      <a href="http://hl7.org/fhir/R5/valueset-link-type.html" opacity="1.0">Link Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/link-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -406,15 +439,91 @@ filterDesc(document.getElementById('patient-age-gender-snomed-profileK'), 'oblig
             <a name="inv-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Patient</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Patient</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Patient</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Patient</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Patient</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Patient</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Patient</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Patient</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Patient</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Patient</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -453,7 +562,7 @@ filterDesc(document.getElementById('patient-age-gender-snomed-profileK'), 'oblig
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbpatient-age-gender-snomed-profileD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('patient-age-gender-snomed-profileD'), 'binding', document.getElementById('cbpatient-age-gender-snomed-profileD-binding').checked, document.getElementById('pppatient-age-gender-snomed-profileD'));
 document.getElementById('cbpatient-age-gender-snomed-profileD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -745,7 +854,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">replaced-by | replaces | refer | seealso<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://hl7.org/fhir/R5/valueset-link-type.html" title="http://hl7.org/fhir/ValueSet/link-type" class="binding">LinkType</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">The type of link between this patient resource and another Patient resource, or Patient/RelatedPerson when using the </span><span style="padding: 2px 4px; color: #005c00; background-color: #f9f2f4; white-space: nowrap; border-radius: 4px" title="null" class="binding">seealso</span><span title="null" class="binding"> code</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbpatient-age-gender-snomed-profileS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('patient-age-gender-snomed-profileS'), 'binding', document.getElementById('cbpatient-age-gender-snomed-profileS-binding').checked, document.getElementById('pppatient-age-gender-snomed-profileS'));
 document.getElementById('cbpatient-age-gender-snomed-profileS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -755,14 +864,117 @@ filterDesc(document.getElementById('patient-age-gender-snomed-profileS'), 'oblig
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Patient.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="IETF language tag for a human language"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-all-languages.html">AllLanguages</a><div><code>http://hl7.org/fhir/ValueSet/all-languages|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Patient.maritalStatus</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#extensible">extensible</a></td><td title="The domestic partnership status of a person."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-marital-status.html">MaritalStatusCodes</a><div><code>http://hl7.org/fhir/ValueSet/marital-status|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/marital-status|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Patient.contact.relationship</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#extensible">extensible</a></td><td title="The nature of the relationship between a patient and a contact person for that patient."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-patient-contactrelationship.html">PatientContactRelationship</a><div><code>http://hl7.org/fhir/ValueSet/patient-contactrelationship|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/patient-contactrelationship|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Patient.contact.gender</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="The gender of a person used for administrative purposes."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-administrative-gender.html">AdministrativeGender</a><div><code>http://hl7.org/fhir/ValueSet/administrative-gender|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/administrative-gender|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Patient.communication.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="IETF language tag for a human language"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-all-languages.html">AllLanguages</a><div><code>http://hl7.org/fhir/ValueSet/all-languages|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Patient.link.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="The type of link between this patient resource and another Patient resource, or Patient/RelatedPerson when using the `seealso` code"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-link-type.html">LinkType</a><div><code>http://hl7.org/fhir/ValueSet/link-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/link-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Patient.language</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="IETF language tag for a human language">
+      <a href="http://hl7.org/fhir/R5/valueset-all-languages.html" opacity="1.0">All Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Patient.maritalStatus</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[extensible]" opacity="1.0">extensible</a>
+    </td>
+    <td title="The domestic partnership status of a person.">
+      <a href="http://hl7.org/fhir/R5/valueset-marital-status.html" opacity="1.0">Marital Status Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/marital-status|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Patient.contact.relationship</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[extensible]" opacity="1.0">extensible</a>
+    </td>
+    <td title="The nature of the relationship between a patient and a contact person for that patient.">
+      <a href="http://hl7.org/fhir/R5/valueset-patient-contactrelationship.html" opacity="1.0">Patient Contact Relationship </a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/patient-contactrelationship|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Patient.contact.gender</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="The gender of a person used for administrative purposes.">
+      <a href="http://hl7.org/fhir/R5/valueset-administrative-gender.html" opacity="1.0">AdministrativeGender</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/administrative-gender|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Patient.communication.​language</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="IETF language tag for a human language">
+      <a href="http://hl7.org/fhir/R5/valueset-all-languages.html" opacity="1.0">All Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Patient.link.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="The type of link between this patient resource and another Patient resource, or Patient/RelatedPerson when using the `seealso` code">
+      <a href="http://hl7.org/fhir/R5/valueset-link-type.html" opacity="1.0">Link Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/link-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -772,16 +984,100 @@ filterDesc(document.getElementById('patient-age-gender-snomed-profileS'), 'oblig
             <a name="inv-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Patient</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Patient</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Patient</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Patient</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Patient</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>pat-1</td><td>error</td><td>Patient.contact</td><td>SHALL at least contain a contact's details or a reference to an organization<br/>: name.exists() or telecom.exists() or address.exists() or organization.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Patient</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Patient</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Patient</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Patient</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Patient</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>pat-1</td>
+    <td>error</td>
+    <td>Patient.contact</td>
+    <td>SHALL at least contain a contact's details or a reference to an organization</td>
+    <td>
+      <code>name.exists() or telecom.exists() or address.exists() or organization.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -989,7 +1285,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">replaced-by | replaces | refer | seealso<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://hl7.org/fhir/R5/valueset-link-type.html" title="http://hl7.org/fhir/ValueSet/link-type" class="binding">LinkType</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">The type of link between this patient resource and another Patient resource, or Patient/RelatedPerson when using the </span><span style="padding: 2px 4px; color: #005c00; background-color: #f9f2f4; white-space: nowrap; border-radius: 4px" title="null" class="binding">seealso</span><span title="null" class="binding"> code</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbpatient-age-gender-snomed-profileKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('patient-age-gender-snomed-profileKA'), 'binding', document.getElementById('cbpatient-age-gender-snomed-profileKA-binding').checked, document.getElementById('pppatient-age-gender-snomed-profileKA'));
 document.getElementById('cbpatient-age-gender-snomed-profileKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -999,9 +1295,42 @@ filterDesc(document.getElementById('patient-age-gender-snomed-profileKA'), 'obli
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Patient.link.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="The type of link between this patient resource and another Patient resource, or Patient/RelatedPerson when using the `seealso` code"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-link-type.html">LinkType</a><div><code>http://hl7.org/fhir/ValueSet/link-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/link-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Patient.link.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="The type of link between this patient resource and another Patient resource, or Patient/RelatedPerson when using the `seealso` code">
+      <a href="http://hl7.org/fhir/R5/valueset-link-type.html" opacity="1.0">Link Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/link-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -1011,15 +1340,91 @@ filterDesc(document.getElementById('patient-age-gender-snomed-profileKA'), 'obli
             <a name="inv-all-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Patient</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Patient</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Patient</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Patient</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Patient</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Patient</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Patient</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Patient</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Patient</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Patient</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1058,7 +1463,7 @@ filterDesc(document.getElementById('patient-age-gender-snomed-profileKA'), 'obli
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbpatient-age-gender-snomed-profileDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('patient-age-gender-snomed-profileDA'), 'binding', document.getElementById('cbpatient-age-gender-snomed-profileDA-binding').checked, document.getElementById('pppatient-age-gender-snomed-profileDA'));
 document.getElementById('cbpatient-age-gender-snomed-profileDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1349,7 +1754,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">replaced-by | replaces | refer | seealso<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://hl7.org/fhir/R5/valueset-link-type.html" title="http://hl7.org/fhir/ValueSet/link-type" class="binding">LinkType</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">The type of link between this patient resource and another Patient resource, or Patient/RelatedPerson when using the </span><span style="padding: 2px 4px; color: #005c00; background-color: #f9f2f4; white-space: nowrap; border-radius: 4px" title="null" class="binding">seealso</span><span title="null" class="binding"> code</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbpatient-age-gender-snomed-profileSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('patient-age-gender-snomed-profileSA'), 'binding', document.getElementById('cbpatient-age-gender-snomed-profileSA-binding').checked, document.getElementById('pppatient-age-gender-snomed-profileSA'));
 document.getElementById('cbpatient-age-gender-snomed-profileSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1359,14 +1764,117 @@ filterDesc(document.getElementById('patient-age-gender-snomed-profileSA'), 'obli
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Patient.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="IETF language tag for a human language"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-all-languages.html">AllLanguages</a><div><code>http://hl7.org/fhir/ValueSet/all-languages|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Patient.maritalStatus</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#extensible">extensible</a></td><td title="The domestic partnership status of a person."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-marital-status.html">MaritalStatusCodes</a><div><code>http://hl7.org/fhir/ValueSet/marital-status|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/marital-status|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Patient.contact.relationship</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#extensible">extensible</a></td><td title="The nature of the relationship between a patient and a contact person for that patient."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-patient-contactrelationship.html">PatientContactRelationship</a><div><code>http://hl7.org/fhir/ValueSet/patient-contactrelationship|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/patient-contactrelationship|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Patient.contact.gender</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="The gender of a person used for administrative purposes."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-administrative-gender.html">AdministrativeGender</a><div><code>http://hl7.org/fhir/ValueSet/administrative-gender|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/administrative-gender|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Patient.communication.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="IETF language tag for a human language"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-all-languages.html">AllLanguages</a><div><code>http://hl7.org/fhir/ValueSet/all-languages|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Patient.link.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="The type of link between this patient resource and another Patient resource, or Patient/RelatedPerson when using the `seealso` code"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-link-type.html">LinkType</a><div><code>http://hl7.org/fhir/ValueSet/link-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/link-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Patient.language</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="IETF language tag for a human language">
+      <a href="http://hl7.org/fhir/R5/valueset-all-languages.html" opacity="1.0">All Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Patient.maritalStatus</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[extensible]" opacity="1.0">extensible</a>
+    </td>
+    <td title="The domestic partnership status of a person.">
+      <a href="http://hl7.org/fhir/R5/valueset-marital-status.html" opacity="1.0">Marital Status Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/marital-status|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Patient.contact.relationship</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[extensible]" opacity="1.0">extensible</a>
+    </td>
+    <td title="The nature of the relationship between a patient and a contact person for that patient.">
+      <a href="http://hl7.org/fhir/R5/valueset-patient-contactrelationship.html" opacity="1.0">Patient Contact Relationship </a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/patient-contactrelationship|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Patient.contact.gender</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="The gender of a person used for administrative purposes.">
+      <a href="http://hl7.org/fhir/R5/valueset-administrative-gender.html" opacity="1.0">AdministrativeGender</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/administrative-gender|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Patient.communication.​language</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="IETF language tag for a human language">
+      <a href="http://hl7.org/fhir/R5/valueset-all-languages.html" opacity="1.0">All Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Patient.link.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="The type of link between this patient resource and another Patient resource, or Patient/RelatedPerson when using the `seealso` code">
+      <a href="http://hl7.org/fhir/R5/valueset-link-type.html" opacity="1.0">Link Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/link-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -1376,16 +1884,100 @@ filterDesc(document.getElementById('patient-age-gender-snomed-profileSA'), 'obli
             <a name="inv-all-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Patient</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Patient</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Patient</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Patient</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Patient</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>pat-1</td><td>error</td><td>Patient.contact</td><td>SHALL at least contain a contact's details or a reference to an organization<br/>: name.exists() or telecom.exists() or address.exists() or organization.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Patient</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Patient</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Patient</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Patient</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Patient</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>pat-1</td>
+    <td>error</td>
+    <td>Patient.contact</td>
+    <td>SHALL at least contain a contact's details or a reference to an organization</td>
+    <td>
+      <code>name.exists() or telecom.exists() or address.exists() or organization.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1529,7 +2121,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 30, 2025 09:58+0000">2025-09-30</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Oct 1, 2025 11:45+0000">2025-10-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

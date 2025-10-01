@@ -45,8 +45,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.4"}
-    h3,h4,h5,h6{--heading-prefix:"7.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"78.4"}
+    h3,h4,h5,h6{--heading-prefix:"78.4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -227,7 +227,7 @@
         
           Active
           
-            as of 2025-09-30
+            as of 2025-10-01
           
         
       </td>
@@ -446,7 +446,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/references.html">Reference</a>(<a href="http://hl7.org/fhir/R5/practitioner.html">Practitioner</a> | <a href="http://hl7.org/fhir/R5/practitionerrole.html">PractitionerRole</a> | <a href="http://hl7.org/fhir/R5/organization.html">Organization</a> | <a href="http://hl7.org/fhir/R5/careteam.html">CareTeam</a> | <a href="http://hl7.org/fhir/R5/patient.html">Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The agent that delegated</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbencounter-provider-provenanceK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('encounter-provider-provenanceK'), 'binding', document.getElementById('cbencounter-provider-provenanceK-binding').checked, document.getElementById('ppencounter-provider-provenanceK'));
 document.getElementById('cbencounter-provider-provenanceK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -456,9 +456,42 @@ filterDesc(document.getElementById('encounter-provider-provenanceK'), 'obligatio
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Provenance.agent:ProviderOrg.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="The type of participation that a provenance agent played with respect to the activity.">Pattern Value: <a title="Provenance participant type" href="http://terminology.hl7.org/6.5.0/CodeSystem-provenance-participant-type.html#provenance-participant-type-author">author</a><div><code>http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.agent:ProviderOrg.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The type of participation that a provenance agent played with respect to the activity.">
+      <a href="http://hl7.org/fhir/R5/valueset-participation-role-type.html" opacity="1.0">Participation Role Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -468,18 +501,118 @@ filterDesc(document.getElementById('encounter-provider-provenanceK'), 'obligatio
             <a name="inv-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Provenance</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Provenance</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Provenance</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Provenance</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Provenance</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>prov-1</td><td>error</td><td>Provenance.agent, Provenance.agent:ProviderOrg</td><td>Who and onBehalfOf cannot be the same<br/>: who.resolve().exists() and onBehalfOf.resolve().exists() implies who.resolve() != onBehalfOf.resolve()</td><td></td></tr>
-<tr><td>prov-2</td><td>error</td><td>Provenance.agent, Provenance.agent:ProviderOrg</td><td>If who is a PractitionerRole, onBehalfOf can't reference the same Practitioner<br/>: who.resolve().ofType(PractitionerRole).practitioner.resolve().exists() and onBehalfOf.resolve().ofType(Practitioner).exists() implies who.resolve().practitioner.resolve() != onBehalfOf.resolve()</td><td></td></tr>
-<tr><td>prov-3</td><td>error</td><td>Provenance.agent, Provenance.agent:ProviderOrg</td><td>If who is an organization, onBehalfOf can't be a PractitionerRole within that organization<br/>: who.resolve().ofType(Organization).exists() and onBehalfOf.resolve().ofType(PractitionerRole).organization.resolve().exists() implies who.resolve() != onBehalfOf.resolve().organization.resolve()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Provenance</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Provenance</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Provenance</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Provenance</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Provenance</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>prov-1</td>
+    <td>error</td>
+    <td>Provenance.agent, Provenance.agent:ProviderOrg</td>
+    <td>Who and onBehalfOf cannot be the same</td>
+    <td>
+      <code>who.resolve().exists() and onBehalfOf.resolve().exists() implies who.resolve() != onBehalfOf.resolve()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>prov-2</td>
+    <td>error</td>
+    <td>Provenance.agent, Provenance.agent:ProviderOrg</td>
+    <td>If who is a PractitionerRole, onBehalfOf can't reference the same Practitioner</td>
+    <td>
+      <code>who.resolve().ofType(PractitionerRole).practitioner.resolve().exists() and onBehalfOf.resolve().ofType(Practitioner).exists() implies who.resolve().practitioner.resolve() != onBehalfOf.resolve()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>prov-3</td>
+    <td>error</td>
+    <td>Provenance.agent, Provenance.agent:ProviderOrg</td>
+    <td>If who is an organization, onBehalfOf can't be a PractitionerRole within that organization</td>
+    <td>
+      <code>who.resolve().ofType(Organization).exists() and onBehalfOf.resolve().ofType(PractitionerRole).organization.resolve().exists() implies who.resolve() != onBehalfOf.resolve().organization.resolve()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -543,7 +676,7 @@ filterDesc(document.getElementById('encounter-provider-provenanceK'), 'obligatio
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Text alternative for the resource</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbencounter-provider-provenanceD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('encounter-provider-provenanceD'), 'binding', document.getElementById('cbencounter-provider-provenanceD-binding').checked, document.getElementById('ppencounter-provider-provenanceD'));
 document.getElementById('cbencounter-provider-provenanceD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -894,7 +1027,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#Signature">Signature</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signature on target<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbencounter-provider-provenanceS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('encounter-provider-provenanceS'), 'binding', document.getElementById('cbencounter-provider-provenanceS-binding').checked, document.getElementById('ppencounter-provider-provenanceS'));
 document.getElementById('cbencounter-provider-provenanceS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -904,17 +1037,162 @@ filterDesc(document.getElementById('encounter-provider-provenanceS'), 'obligatio
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Provenance.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="IETF language tag for a human language"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-all-languages.html">AllLanguages</a><div><code>http://hl7.org/fhir/ValueSet/all-languages|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Provenance.authorization</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="The authorized purposeOfUse for the activity."><a style="opacity: 1.0" href="http://terminology.hl7.org/6.5.0/ValueSet-v3-PurposeOfUse.html">PurposeOfUse</a><div><code>http://terminology.hl7.org/ValueSet/v3-PurposeOfUse</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-PurposeOfUse"></button></div></td></tr>
-<tr><td>Provenance.activity</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="The activity that took place."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-provenance-activity-type.html">ProvenanceActivityType</a><div><code>http://hl7.org/fhir/ValueSet/provenance-activity-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-activity-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Provenance.agent.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="The type of participation that a provenance agent played with respect to the activity."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-participation-role-type.html">ParticipationRoleType</a><div><code>http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Provenance.agent.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="The role that a provenance agent played with respect to the activity."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-security-role-type.html">SecurityRoleType</a><div><code>http://hl7.org/fhir/ValueSet/security-role-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Provenance.agent:ProviderOrg.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="The type of participation that a provenance agent played with respect to the activity.">Pattern Value: <a title="Provenance participant type" href="http://terminology.hl7.org/6.5.0/CodeSystem-provenance-participant-type.html#provenance-participant-type-author">author</a><div><code>http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Provenance.agent:ProviderOrg.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="The role that a provenance agent played with respect to the activity."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-security-role-type.html">SecurityRoleType</a><div><code>http://hl7.org/fhir/ValueSet/security-role-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Provenance.agent:ProviderOrg.who.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#extensible">extensible</a></td><td title="Aa resource (or, for logical models, the URI of the logical model)."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-resource-types.html">ResourceType</a><div><code>http://hl7.org/fhir/ValueSet/resource-types|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/resource-types|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Provenance.entity.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="How an entity was used in an activity."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-provenance-entity-role.html">ProvenanceEntityRole</a><div><code>http://hl7.org/fhir/ValueSet/provenance-entity-role|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-entity-role|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.language</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="IETF language tag for a human language">
+      <a href="http://hl7.org/fhir/R5/valueset-all-languages.html" opacity="1.0">All Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.authorization</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The authorized purposeOfUse for the activity.">
+      <a href="http://terminology.hl7.org/6.5.0/ValueSet-v3-PurposeOfUse.html" opacity="1.0">PurposeOfUse</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-PurposeOfUse" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 3.1.0, the version found through the package references">&#x1F4E6;3.1.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0">THO v6.5</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.activity</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The activity that took place.">
+      <a href="http://hl7.org/fhir/R5/valueset-provenance-activity-type.html" opacity="1.0">ValueSet of sample of representative activity type codes.</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-activity-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.agent.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The type of participation that a provenance agent played with respect to the activity.">
+      <a href="http://hl7.org/fhir/R5/valueset-participation-role-type.html" opacity="1.0">Participation Role Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.agent.role</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The role that a provenance agent played with respect to the activity.">
+      <a href="http://hl7.org/fhir/R5/valueset-security-role-type.html" opacity="1.0">Security Role Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.agent:ProviderOrg.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The type of participation that a provenance agent played with respect to the activity.">
+      <a href="http://hl7.org/fhir/R5/valueset-participation-role-type.html" opacity="1.0">Participation Role Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.agent:ProviderOrg.​role</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The role that a provenance agent played with respect to the activity.">
+      <a href="http://hl7.org/fhir/R5/valueset-security-role-type.html" opacity="1.0">Security Role Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.agent:ProviderOrg.​who.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[extensible]" opacity="1.0">extensible</a>
+    </td>
+    <td title="Aa resource (or, for logical models, the URI of the logical model).">
+      <a href="http://hl7.org/fhir/R5/valueset-resource-types.html" opacity="1.0">Resource Types</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/resource-types|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.entity.role</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="How an entity was used in an activity.">
+      <a href="http://hl7.org/fhir/R5/valueset-provenance-entity-role.html" opacity="1.0">Provenance Entity Role</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-entity-role|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -924,18 +1202,118 @@ filterDesc(document.getElementById('encounter-provider-provenanceS'), 'obligatio
             <a name="inv-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Provenance</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Provenance</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Provenance</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Provenance</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Provenance</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>prov-1</td><td>error</td><td>Provenance.agent, Provenance.agent:ProviderOrg</td><td>Who and onBehalfOf cannot be the same<br/>: who.resolve().exists() and onBehalfOf.resolve().exists() implies who.resolve() != onBehalfOf.resolve()</td><td></td></tr>
-<tr><td>prov-2</td><td>error</td><td>Provenance.agent, Provenance.agent:ProviderOrg</td><td>If who is a PractitionerRole, onBehalfOf can't reference the same Practitioner<br/>: who.resolve().ofType(PractitionerRole).practitioner.resolve().exists() and onBehalfOf.resolve().ofType(Practitioner).exists() implies who.resolve().practitioner.resolve() != onBehalfOf.resolve()</td><td></td></tr>
-<tr><td>prov-3</td><td>error</td><td>Provenance.agent, Provenance.agent:ProviderOrg</td><td>If who is an organization, onBehalfOf can't be a PractitionerRole within that organization<br/>: who.resolve().ofType(Organization).exists() and onBehalfOf.resolve().ofType(PractitionerRole).organization.resolve().exists() implies who.resolve() != onBehalfOf.resolve().organization.resolve()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Provenance</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Provenance</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Provenance</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Provenance</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Provenance</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>prov-1</td>
+    <td>error</td>
+    <td>Provenance.agent, Provenance.agent:ProviderOrg</td>
+    <td>Who and onBehalfOf cannot be the same</td>
+    <td>
+      <code>who.resolve().exists() and onBehalfOf.resolve().exists() implies who.resolve() != onBehalfOf.resolve()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>prov-2</td>
+    <td>error</td>
+    <td>Provenance.agent, Provenance.agent:ProviderOrg</td>
+    <td>If who is a PractitionerRole, onBehalfOf can't reference the same Practitioner</td>
+    <td>
+      <code>who.resolve().ofType(PractitionerRole).practitioner.resolve().exists() and onBehalfOf.resolve().ofType(Practitioner).exists() implies who.resolve().practitioner.resolve() != onBehalfOf.resolve()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>prov-3</td>
+    <td>error</td>
+    <td>Provenance.agent, Provenance.agent:ProviderOrg</td>
+    <td>If who is an organization, onBehalfOf can't be a PractitionerRole within that organization</td>
+    <td>
+      <code>who.resolve().ofType(Organization).exists() and onBehalfOf.resolve().ofType(PractitionerRole).organization.resolve().exists() implies who.resolve() != onBehalfOf.resolve().organization.resolve()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1192,7 +1570,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/references.html">Reference</a>(<a href="http://hl7.org/fhir/R5/practitioner.html">Practitioner</a> | <a href="http://hl7.org/fhir/R5/practitionerrole.html">PractitionerRole</a> | <a href="http://hl7.org/fhir/R5/organization.html">Organization</a> | <a href="http://hl7.org/fhir/R5/careteam.html">CareTeam</a> | <a href="http://hl7.org/fhir/R5/patient.html">Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The agent that delegated</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbencounter-provider-provenanceKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('encounter-provider-provenanceKA'), 'binding', document.getElementById('cbencounter-provider-provenanceKA-binding').checked, document.getElementById('ppencounter-provider-provenanceKA'));
 document.getElementById('cbencounter-provider-provenanceKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1202,9 +1580,42 @@ filterDesc(document.getElementById('encounter-provider-provenanceKA'), 'obligati
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Provenance.agent:ProviderOrg.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="The type of participation that a provenance agent played with respect to the activity.">Pattern Value: <a title="Provenance participant type" href="http://terminology.hl7.org/6.5.0/CodeSystem-provenance-participant-type.html#provenance-participant-type-author">author</a><div><code>http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.agent:ProviderOrg.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The type of participation that a provenance agent played with respect to the activity.">
+      <a href="http://hl7.org/fhir/R5/valueset-participation-role-type.html" opacity="1.0">Participation Role Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -1214,18 +1625,118 @@ filterDesc(document.getElementById('encounter-provider-provenanceKA'), 'obligati
             <a name="inv-all-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Provenance</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Provenance</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Provenance</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Provenance</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Provenance</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>prov-1</td><td>error</td><td>Provenance.agent, Provenance.agent:ProviderOrg</td><td>Who and onBehalfOf cannot be the same<br/>: who.resolve().exists() and onBehalfOf.resolve().exists() implies who.resolve() != onBehalfOf.resolve()</td><td></td></tr>
-<tr><td>prov-2</td><td>error</td><td>Provenance.agent, Provenance.agent:ProviderOrg</td><td>If who is a PractitionerRole, onBehalfOf can't reference the same Practitioner<br/>: who.resolve().ofType(PractitionerRole).practitioner.resolve().exists() and onBehalfOf.resolve().ofType(Practitioner).exists() implies who.resolve().practitioner.resolve() != onBehalfOf.resolve()</td><td></td></tr>
-<tr><td>prov-3</td><td>error</td><td>Provenance.agent, Provenance.agent:ProviderOrg</td><td>If who is an organization, onBehalfOf can't be a PractitionerRole within that organization<br/>: who.resolve().ofType(Organization).exists() and onBehalfOf.resolve().ofType(PractitionerRole).organization.resolve().exists() implies who.resolve() != onBehalfOf.resolve().organization.resolve()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Provenance</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Provenance</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Provenance</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Provenance</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Provenance</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>prov-1</td>
+    <td>error</td>
+    <td>Provenance.agent, Provenance.agent:ProviderOrg</td>
+    <td>Who and onBehalfOf cannot be the same</td>
+    <td>
+      <code>who.resolve().exists() and onBehalfOf.resolve().exists() implies who.resolve() != onBehalfOf.resolve()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>prov-2</td>
+    <td>error</td>
+    <td>Provenance.agent, Provenance.agent:ProviderOrg</td>
+    <td>If who is a PractitionerRole, onBehalfOf can't reference the same Practitioner</td>
+    <td>
+      <code>who.resolve().ofType(PractitionerRole).practitioner.resolve().exists() and onBehalfOf.resolve().ofType(Practitioner).exists() implies who.resolve().practitioner.resolve() != onBehalfOf.resolve()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>prov-3</td>
+    <td>error</td>
+    <td>Provenance.agent, Provenance.agent:ProviderOrg</td>
+    <td>If who is an organization, onBehalfOf can't be a PractitionerRole within that organization</td>
+    <td>
+      <code>who.resolve().ofType(Organization).exists() and onBehalfOf.resolve().ofType(PractitionerRole).organization.resolve().exists() implies who.resolve() != onBehalfOf.resolve().organization.resolve()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1289,7 +1800,7 @@ filterDesc(document.getElementById('encounter-provider-provenanceKA'), 'obligati
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Text alternative for the resource</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbencounter-provider-provenanceDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('encounter-provider-provenanceDA'), 'binding', document.getElementById('cbencounter-provider-provenanceDA-binding').checked, document.getElementById('ppencounter-provider-provenanceDA'));
 document.getElementById('cbencounter-provider-provenanceDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1639,7 +2150,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#Signature">Signature</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signature on target<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbencounter-provider-provenanceSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('encounter-provider-provenanceSA'), 'binding', document.getElementById('cbencounter-provider-provenanceSA-binding').checked, document.getElementById('ppencounter-provider-provenanceSA'));
 document.getElementById('cbencounter-provider-provenanceSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1649,17 +2160,162 @@ filterDesc(document.getElementById('encounter-provider-provenanceSA'), 'obligati
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Provenance.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="IETF language tag for a human language"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-all-languages.html">AllLanguages</a><div><code>http://hl7.org/fhir/ValueSet/all-languages|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Provenance.authorization</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="The authorized purposeOfUse for the activity."><a style="opacity: 1.0" href="http://terminology.hl7.org/6.5.0/ValueSet-v3-PurposeOfUse.html">PurposeOfUse</a><div><code>http://terminology.hl7.org/ValueSet/v3-PurposeOfUse</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-PurposeOfUse"></button></div></td></tr>
-<tr><td>Provenance.activity</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="The activity that took place."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-provenance-activity-type.html">ProvenanceActivityType</a><div><code>http://hl7.org/fhir/ValueSet/provenance-activity-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-activity-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Provenance.agent.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="The type of participation that a provenance agent played with respect to the activity."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-participation-role-type.html">ParticipationRoleType</a><div><code>http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Provenance.agent.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="The role that a provenance agent played with respect to the activity."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-security-role-type.html">SecurityRoleType</a><div><code>http://hl7.org/fhir/ValueSet/security-role-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Provenance.agent:ProviderOrg.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="The type of participation that a provenance agent played with respect to the activity.">Pattern Value: <a title="Provenance participant type" href="http://terminology.hl7.org/6.5.0/CodeSystem-provenance-participant-type.html#provenance-participant-type-author">author</a><div><code>http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Provenance.agent:ProviderOrg.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="The role that a provenance agent played with respect to the activity."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-security-role-type.html">SecurityRoleType</a><div><code>http://hl7.org/fhir/ValueSet/security-role-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Provenance.agent:ProviderOrg.who.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#extensible">extensible</a></td><td title="Aa resource (or, for logical models, the URI of the logical model)."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-resource-types.html">ResourceType</a><div><code>http://hl7.org/fhir/ValueSet/resource-types|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/resource-types|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Provenance.entity.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="How an entity was used in an activity."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-provenance-entity-role.html">ProvenanceEntityRole</a><div><code>http://hl7.org/fhir/ValueSet/provenance-entity-role|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-entity-role|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.language</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="IETF language tag for a human language">
+      <a href="http://hl7.org/fhir/R5/valueset-all-languages.html" opacity="1.0">All Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.authorization</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The authorized purposeOfUse for the activity.">
+      <a href="http://terminology.hl7.org/6.5.0/ValueSet-v3-PurposeOfUse.html" opacity="1.0">PurposeOfUse</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-PurposeOfUse" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 3.1.0, the version found through the package references">&#x1F4E6;3.1.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0">THO v6.5</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.activity</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The activity that took place.">
+      <a href="http://hl7.org/fhir/R5/valueset-provenance-activity-type.html" opacity="1.0">ValueSet of sample of representative activity type codes.</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-activity-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.agent.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The type of participation that a provenance agent played with respect to the activity.">
+      <a href="http://hl7.org/fhir/R5/valueset-participation-role-type.html" opacity="1.0">Participation Role Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.agent.role</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The role that a provenance agent played with respect to the activity.">
+      <a href="http://hl7.org/fhir/R5/valueset-security-role-type.html" opacity="1.0">Security Role Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.agent:ProviderOrg.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The type of participation that a provenance agent played with respect to the activity.">
+      <a href="http://hl7.org/fhir/R5/valueset-participation-role-type.html" opacity="1.0">Participation Role Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.agent:ProviderOrg.​role</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The role that a provenance agent played with respect to the activity.">
+      <a href="http://hl7.org/fhir/R5/valueset-security-role-type.html" opacity="1.0">Security Role Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.agent:ProviderOrg.​who.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[extensible]" opacity="1.0">extensible</a>
+    </td>
+    <td title="Aa resource (or, for logical models, the URI of the logical model).">
+      <a href="http://hl7.org/fhir/R5/valueset-resource-types.html" opacity="1.0">Resource Types</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/resource-types|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Provenance.entity.role</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="How an entity was used in an activity.">
+      <a href="http://hl7.org/fhir/R5/valueset-provenance-entity-role.html" opacity="1.0">Provenance Entity Role</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-entity-role|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -1669,18 +2325,118 @@ filterDesc(document.getElementById('encounter-provider-provenanceSA'), 'obligati
             <a name="inv-all-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Provenance</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Provenance</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Provenance</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Provenance</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Provenance</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>prov-1</td><td>error</td><td>Provenance.agent, Provenance.agent:ProviderOrg</td><td>Who and onBehalfOf cannot be the same<br/>: who.resolve().exists() and onBehalfOf.resolve().exists() implies who.resolve() != onBehalfOf.resolve()</td><td></td></tr>
-<tr><td>prov-2</td><td>error</td><td>Provenance.agent, Provenance.agent:ProviderOrg</td><td>If who is a PractitionerRole, onBehalfOf can't reference the same Practitioner<br/>: who.resolve().ofType(PractitionerRole).practitioner.resolve().exists() and onBehalfOf.resolve().ofType(Practitioner).exists() implies who.resolve().practitioner.resolve() != onBehalfOf.resolve()</td><td></td></tr>
-<tr><td>prov-3</td><td>error</td><td>Provenance.agent, Provenance.agent:ProviderOrg</td><td>If who is an organization, onBehalfOf can't be a PractitionerRole within that organization<br/>: who.resolve().ofType(Organization).exists() and onBehalfOf.resolve().ofType(PractitionerRole).organization.resolve().exists() implies who.resolve() != onBehalfOf.resolve().organization.resolve()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Provenance</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Provenance</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Provenance</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Provenance</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Provenance</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>prov-1</td>
+    <td>error</td>
+    <td>Provenance.agent, Provenance.agent:ProviderOrg</td>
+    <td>Who and onBehalfOf cannot be the same</td>
+    <td>
+      <code>who.resolve().exists() and onBehalfOf.resolve().exists() implies who.resolve() != onBehalfOf.resolve()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>prov-2</td>
+    <td>error</td>
+    <td>Provenance.agent, Provenance.agent:ProviderOrg</td>
+    <td>If who is a PractitionerRole, onBehalfOf can't reference the same Practitioner</td>
+    <td>
+      <code>who.resolve().ofType(PractitionerRole).practitioner.resolve().exists() and onBehalfOf.resolve().ofType(Practitioner).exists() implies who.resolve().practitioner.resolve() != onBehalfOf.resolve()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>prov-3</td>
+    <td>error</td>
+    <td>Provenance.agent, Provenance.agent:ProviderOrg</td>
+    <td>If who is an organization, onBehalfOf can't be a PractitionerRole within that organization</td>
+    <td>
+      <code>who.resolve().ofType(Organization).exists() and onBehalfOf.resolve().ofType(PractitionerRole).organization.resolve().exists() implies who.resolve() != onBehalfOf.resolve().organization.resolve()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1811,7 +2567,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 30, 2025 09:58+0000">2025-09-30</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Oct 1, 2025 11:45+0000">2025-10-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

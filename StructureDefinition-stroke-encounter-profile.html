@@ -45,8 +45,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.12"}
-    h3,h4,h5,h6{--heading-prefix:"7.12"}</style>
+    <style type="text/css">h2{--heading-prefix:"78.12"}
+    h3,h4,h5,h6{--heading-prefix:"78.12"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -227,7 +227,7 @@
         
           Active
           
-            as of 2025-09-30
+            as of 2025-10-01
           
         
       </td>
@@ -459,7 +459,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Category or kind of location after discharge<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-stroke-discharge-destination-vs.html" title="http://testSK.org/ValueSet/stroke-discharge-destination-vs" class="binding">Stroke Discharge Destination ValueSet</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbstroke-encounter-profileK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('stroke-encounter-profileK'), 'binding', document.getElementById('cbstroke-encounter-profileK-binding').checked, document.getElementById('ppstroke-encounter-profileK'));
 document.getElementById('cbstroke-encounter-profileK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -469,13 +469,98 @@ filterDesc(document.getElementById('stroke-encounter-profileK'), 'obligation', d
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Encounter.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="Current state of the encounter."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-status.html">EncounterStatus</a><div><code>http://hl7.org/fhir/ValueSet/encounter-status|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-status|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.class</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#preferred">preferred</a></td><td title="Classification of the encounter.">Pattern Value: <span title="null">IMP</a>("inpatient encounter")<div><code>http://terminology.hl7.org/ValueSet/encounter-class</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/encounter-class"></button></div></td></tr>
-<tr><td>Encounter.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="A specific code indicating type of service provided"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-type.html">EncounterType</a><div><code>http://hl7.org/fhir/ValueSet/encounter-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.admission.admitSource</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-arrival-mode-vs.html">StrokeArrivalModeVS</a>(a valid code from <a href="CodeSystem-stroke-arrival-mode-cs.html">Initial Care Intensity Code System</a>)<div><code>http://testSK.org/ValueSet/stroke-arrival-mode-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-arrival-mode-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Encounter.admission.dischargeDisposition</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-discharge-destination-vs.html">StrokeDischargeDestinationVS</a><div><code>http://testSK.org/ValueSet/stroke-discharge-destination-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-discharge-destination-vs"></button></div><div>From this IG</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.status</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="Current state of the encounter.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-status.html" opacity="1.0">Encounter Status</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-status|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.class</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
+    </td>
+    <td title="Classification of the encounter.">
+      <a href="http://terminology.hl7.org/6.5.0/ValueSet-encounter-class.html" opacity="1.0">Encounter class</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/encounter-class" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 2.0.1, the version found through the package references">&#x1F4E6;2.0.1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0">THO v6.5</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="A specific code indicating type of service provided">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-type.html" opacity="1.0">Encounter Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.admission.​admitSource</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-arrival-mode-vs.html" opacity="1.0">Stroke Arrival Mode ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-arrival-mode-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Encounter.admission.​dischargeDisposition</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-discharge-destination-vs.html" opacity="1.0">Stroke Discharge Destination ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-discharge-destination-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
 </table>
 
         
@@ -485,15 +570,91 @@ filterDesc(document.getElementById('stroke-encounter-profileK'), 'obligation', d
             <a name="inv-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Encounter</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Encounter</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Encounter</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Encounter</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Encounter</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Encounter</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -602,7 +763,7 @@ filterDesc(document.getElementById('stroke-encounter-profileK'), 'obligation', d
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Category or kind of location after discharge</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-stroke-discharge-destination-vs.html" title="http://testSK.org/ValueSet/stroke-discharge-destination-vs" class="binding">Stroke Discharge Destination ValueSet</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbstroke-encounter-profileD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('stroke-encounter-profileD'), 'binding', document.getElementById('cbstroke-encounter-profileD-binding').checked, document.getElementById('ppstroke-encounter-profileD'));
 document.getElementById('cbstroke-encounter-profileD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -613,10 +774,53 @@ filterDesc(document.getElementById('stroke-encounter-profileD'), 'obligation', d
           <a name="tx"> </a>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Encounter.admission.admitSource</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-arrival-mode-vs.html">StrokeArrivalModeVS</a>(a valid code from <a href="CodeSystem-stroke-arrival-mode-cs.html">Initial Care Intensity Code System</a>)<div><code>http://testSK.org/ValueSet/stroke-arrival-mode-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-arrival-mode-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Encounter.admission.dischargeDisposition</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-discharge-destination-vs.html">StrokeDischargeDestinationVS</a><div><code>http://testSK.org/ValueSet/stroke-discharge-destination-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-discharge-destination-vs"></button></div><div>From this IG</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.admission.​admitSource</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-arrival-mode-vs.html" opacity="0.5">Stroke Arrival Mode ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-arrival-mode-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Encounter.admission.​dischargeDisposition</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-discharge-destination-vs.html" opacity="0.5">Stroke Discharge Destination ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-discharge-destination-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
 </table>
 
         
@@ -1086,7 +1290,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#Period">Period</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Time period during which the patient was present at the location</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbstroke-encounter-profileS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('stroke-encounter-profileS'), 'binding', document.getElementById('cbstroke-encounter-profileS-binding').checked, document.getElementById('ppstroke-encounter-profileS'));
 document.getElementById('cbstroke-encounter-profileS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1096,28 +1300,323 @@ filterDesc(document.getElementById('stroke-encounter-profileS'), 'obligation', d
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Encounter.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="IETF language tag for a human language"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-all-languages.html">AllLanguages</a><div><code>http://hl7.org/fhir/ValueSet/all-languages|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="Current state of the encounter."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-status.html">EncounterStatus</a><div><code>http://hl7.org/fhir/ValueSet/encounter-status|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-status|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.class</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#preferred">preferred</a></td><td title="Classification of the encounter.">Pattern Value: <span title="null">IMP</a>("inpatient encounter")<div><code>http://terminology.hl7.org/ValueSet/encounter-class</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/encounter-class"></button></div></td></tr>
-<tr><td>Encounter.priority</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="Indicates the urgency of the encounter."><a style="opacity: 1.0" href="http://terminology.hl7.org/6.5.0/ValueSet-v3-ActPriority.html">ActPriority</a><div><code>http://terminology.hl7.org/ValueSet/v3-ActPriority</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActPriority"></button></div></td></tr>
-<tr><td>Encounter.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="A specific code indicating type of service provided"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-type.html">EncounterType</a><div><code>http://hl7.org/fhir/ValueSet/encounter-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.serviceType</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="Broad categorization of the service that is to be provided."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-service-type.html">ServiceType</a><div><code>http://hl7.org/fhir/ValueSet/service-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/service-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.subjectStatus</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="Current status of the subject  within the encounter."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-subject-status.html">EncounterSubjectStatus</a><div><code>http://hl7.org/fhir/ValueSet/encounter-subject-status|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-subject-status|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.participant.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#extensible">extensible</a></td><td title="Role of participant in encounter."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-participant-type.html">ParticipantType</a><div><code>http://hl7.org/fhir/ValueSet/encounter-participant-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-participant-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.reason.use</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-reason-use.html">EncounterReasonUse</a><div><code>http://hl7.org/fhir/ValueSet/encounter-reason-use|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-reason-use|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.reason.value</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#preferred">preferred</a></td><td title="Reason why the encounter takes place."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-reason.html">EncounterReasonCodes</a><div><code>http://hl7.org/fhir/ValueSet/encounter-reason|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-reason|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.diagnosis.condition</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-condition-code.html">ConditionProblemDiagnosisCodes</a><div><code>http://hl7.org/fhir/ValueSet/condition-code|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/condition-code|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.diagnosis.use</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#preferred">preferred</a></td><td title="The type of diagnosis this condition represents."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-diagnosis-use.html">EncounterDiagnosisUse</a><div><code>http://hl7.org/fhir/ValueSet/encounter-diagnosis-use|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-diagnosis-use|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.dietPreference</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="Medical, cultural or ethical food preferences to help with catering requirements."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-diet.html">EncounterDiet</a><div><code>http://hl7.org/fhir/ValueSet/encounter-diet|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-diet|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.specialArrangement</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#preferred">preferred</a></td><td title="Special arrangements."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-special-arrangements.html">SpecialArrangements</a><div><code>http://hl7.org/fhir/ValueSet/encounter-special-arrangements|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-special-arrangements|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.specialCourtesy</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#preferred">preferred</a></td><td title="Special courtesies."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html">SpecialCourtesy</a><div><code>http://hl7.org/fhir/ValueSet/encounter-special-courtesy|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-special-courtesy|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.admission.admitSource</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-arrival-mode-vs.html">StrokeArrivalModeVS</a>(a valid code from <a href="CodeSystem-stroke-arrival-mode-cs.html">Initial Care Intensity Code System</a>)<div><code>http://testSK.org/ValueSet/stroke-arrival-mode-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-arrival-mode-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Encounter.admission.reAdmission</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="The reason for re-admission of this admission encounter."><a style="opacity: 1.0" href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0092.html">Hl7VSReAdmissionIndicator</a><div><code>http://terminology.hl7.org/ValueSet/v2-0092</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0092"></button></div></td></tr>
-<tr><td>Encounter.admission.dischargeDisposition</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-discharge-destination-vs.html">StrokeDischargeDestinationVS</a><div><code>http://testSK.org/ValueSet/stroke-discharge-destination-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-discharge-destination-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Encounter.location.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="The status of the location."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-location-status.html">EncounterLocationStatus</a><div><code>http://hl7.org/fhir/ValueSet/encounter-location-status|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-location-status|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.location.form</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="Physical form of the location."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-location-form.html">LocationForm</a><div><code>http://hl7.org/fhir/ValueSet/location-form|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/location-form|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.language</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="IETF language tag for a human language">
+      <a href="http://hl7.org/fhir/R5/valueset-all-languages.html" opacity="1.0">All Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.status</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="Current state of the encounter.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-status.html" opacity="1.0">Encounter Status</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-status|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.class</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
+    </td>
+    <td title="Classification of the encounter.">
+      <a href="http://terminology.hl7.org/6.5.0/ValueSet-encounter-class.html" opacity="1.0">Encounter class</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/encounter-class" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 2.0.1, the version found through the package references">&#x1F4E6;2.0.1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0">THO v6.5</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.priority</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Indicates the urgency of the encounter.">
+      <a href="http://terminology.hl7.org/6.5.0/ValueSet-v3-ActPriority.html" opacity="1.0">ActPriority</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActPriority" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 3.0.0, the version found through the package references">&#x1F4E6;3.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0">THO v6.5</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="A specific code indicating type of service provided">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-type.html" opacity="1.0">Encounter Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.serviceType</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Broad categorization of the service that is to be provided.">
+      <a href="http://hl7.org/fhir/R5/valueset-service-type.html" opacity="1.0">Service Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/service-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.subjectStatus</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Current status of the subject  within the encounter.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-subject-status.html" opacity="1.0">Encounter Subject Status</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-subject-status|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.participant.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[extensible]" opacity="1.0">extensible</a>
+    </td>
+    <td title="Role of participant in encounter.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-participant-type.html" opacity="1.0">Participant Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-participant-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.reason.use</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-reason-use.html" opacity="1.0">Encounter Reason Use</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-reason-use|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.reason.value</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
+    </td>
+    <td title="Reason why the encounter takes place.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-reason.html" opacity="1.0">Encounter Reason Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-reason|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.diagnosis.​condition</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/valueset-condition-code.html" opacity="1.0">Condition/Problem/Diagnosis Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/condition-code|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.diagnosis.​use</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
+    </td>
+    <td title="The type of diagnosis this condition represents.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-diagnosis-use.html" opacity="1.0">Encounter Diagnosis Use</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-diagnosis-use|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.dietPreference</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Medical, cultural or ethical food preferences to help with catering requirements.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-diet.html" opacity="1.0">Diet</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-diet|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.specialArrangement</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
+    </td>
+    <td title="Special arrangements.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-special-arrangements.html" opacity="1.0">Special Arrangements</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-special-arrangements|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.specialCourtesy</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
+    </td>
+    <td title="Special courtesies.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" opacity="1.0">Special Courtesy</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-special-courtesy|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.admission.​admitSource</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-arrival-mode-vs.html" opacity="1.0">Stroke Arrival Mode ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-arrival-mode-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Encounter.admission.​reAdmission</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The reason for re-admission of this admission encounter.">
+      <a href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0092.html" opacity="1.0">hl7VS-re-admissionIndicator</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0092" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 2.0.0, the version found through the package references">&#x1F4E6;2.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0">THO v6.5</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.admission.​dischargeDisposition</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-discharge-destination-vs.html" opacity="1.0">Stroke Discharge Destination ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-discharge-destination-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Encounter.location.status</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="The status of the location.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-location-status.html" opacity="1.0">Encounter Location Status</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-location-status|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.location.form</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Physical form of the location.">
+      <a href="http://hl7.org/fhir/R5/valueset-location-form.html" opacity="1.0">Location Form</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/location-form|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -1127,17 +1626,109 @@ filterDesc(document.getElementById('stroke-encounter-profileS'), 'obligation', d
             <a name="inv-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Encounter</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Encounter</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Encounter</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Encounter</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Encounter</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>enc-1</td><td>error</td><td>Encounter.participant</td><td>A type must be provided when no explicit actor is specified<br/>: actor.exists() or type.exists()</td><td></td></tr>
-<tr><td>enc-2</td><td>error</td><td>Encounter.participant</td><td>A type cannot be provided for a patient or group participant<br/>: actor.exists(resolve() is Patient or resolve() is Group) implies type.exists().not()</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Encounter</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>enc-1</td>
+    <td>error</td>
+    <td>Encounter.participant</td>
+    <td>A type must be provided when no explicit actor is specified</td>
+    <td>
+      <code>actor.exists() or type.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>enc-2</td>
+    <td>error</td>
+    <td>Encounter.participant</td>
+    <td>A type cannot be provided for a patient or group participant</td>
+    <td>
+      <code>actor.exists(resolve() is Patient or resolve() is Group) implies type.exists().not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1451,7 +2042,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Category or kind of location after discharge<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-stroke-discharge-destination-vs.html" title="http://testSK.org/ValueSet/stroke-discharge-destination-vs" class="binding">Stroke Discharge Destination ValueSet</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbstroke-encounter-profileKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('stroke-encounter-profileKA'), 'binding', document.getElementById('cbstroke-encounter-profileKA-binding').checked, document.getElementById('ppstroke-encounter-profileKA'));
 document.getElementById('cbstroke-encounter-profileKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1461,13 +2052,98 @@ filterDesc(document.getElementById('stroke-encounter-profileKA'), 'obligation', 
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Encounter.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="Current state of the encounter."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-status.html">EncounterStatus</a><div><code>http://hl7.org/fhir/ValueSet/encounter-status|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-status|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.class</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#preferred">preferred</a></td><td title="Classification of the encounter.">Pattern Value: <span title="null">IMP</a>("inpatient encounter")<div><code>http://terminology.hl7.org/ValueSet/encounter-class</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/encounter-class"></button></div></td></tr>
-<tr><td>Encounter.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="A specific code indicating type of service provided"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-type.html">EncounterType</a><div><code>http://hl7.org/fhir/ValueSet/encounter-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.admission.admitSource</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-arrival-mode-vs.html">StrokeArrivalModeVS</a>(a valid code from <a href="CodeSystem-stroke-arrival-mode-cs.html">Initial Care Intensity Code System</a>)<div><code>http://testSK.org/ValueSet/stroke-arrival-mode-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-arrival-mode-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Encounter.admission.dischargeDisposition</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-discharge-destination-vs.html">StrokeDischargeDestinationVS</a><div><code>http://testSK.org/ValueSet/stroke-discharge-destination-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-discharge-destination-vs"></button></div><div>From this IG</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.status</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="Current state of the encounter.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-status.html" opacity="1.0">Encounter Status</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-status|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.class</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
+    </td>
+    <td title="Classification of the encounter.">
+      <a href="http://terminology.hl7.org/6.5.0/ValueSet-encounter-class.html" opacity="1.0">Encounter class</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/encounter-class" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 2.0.1, the version found through the package references">&#x1F4E6;2.0.1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0">THO v6.5</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="A specific code indicating type of service provided">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-type.html" opacity="1.0">Encounter Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.admission.​admitSource</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-arrival-mode-vs.html" opacity="1.0">Stroke Arrival Mode ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-arrival-mode-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Encounter.admission.​dischargeDisposition</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-discharge-destination-vs.html" opacity="1.0">Stroke Discharge Destination ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-discharge-destination-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
 </table>
 
         
@@ -1477,15 +2153,91 @@ filterDesc(document.getElementById('stroke-encounter-profileKA'), 'obligation', 
             <a name="inv-all-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Encounter</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Encounter</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Encounter</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Encounter</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Encounter</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Encounter</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1594,7 +2346,7 @@ filterDesc(document.getElementById('stroke-encounter-profileKA'), 'obligation', 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Category or kind of location after discharge</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-stroke-discharge-destination-vs.html" title="http://testSK.org/ValueSet/stroke-discharge-destination-vs" class="binding">Stroke Discharge Destination ValueSet</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbstroke-encounter-profileDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('stroke-encounter-profileDA'), 'binding', document.getElementById('cbstroke-encounter-profileDA-binding').checked, document.getElementById('ppstroke-encounter-profileDA'));
 document.getElementById('cbstroke-encounter-profileDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1604,10 +2356,53 @@ filterDesc(document.getElementById('stroke-encounter-profileDA'), 'obligation', 
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Encounter.admission.admitSource</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-arrival-mode-vs.html">StrokeArrivalModeVS</a>(a valid code from <a href="CodeSystem-stroke-arrival-mode-cs.html">Initial Care Intensity Code System</a>)<div><code>http://testSK.org/ValueSet/stroke-arrival-mode-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-arrival-mode-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Encounter.admission.dischargeDisposition</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-discharge-destination-vs.html">StrokeDischargeDestinationVS</a><div><code>http://testSK.org/ValueSet/stroke-discharge-destination-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-discharge-destination-vs"></button></div><div>From this IG</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.admission.​admitSource</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-arrival-mode-vs.html" opacity="0.5">Stroke Arrival Mode ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-arrival-mode-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Encounter.admission.​dischargeDisposition</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-discharge-destination-vs.html" opacity="0.5">Stroke Discharge Destination ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-discharge-destination-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
 </table>
 
         
@@ -2077,7 +2872,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#Period">Period</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Time period during which the patient was present at the location</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 680c3b60-3533-4371-a591-51050d36ada5
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4ad89b2d-b517-4aa9-8f4d-485ce832f35d
 document.getElementById('cbstroke-encounter-profileSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('stroke-encounter-profileSA'), 'binding', document.getElementById('cbstroke-encounter-profileSA-binding').checked, document.getElementById('ppstroke-encounter-profileSA'));
 document.getElementById('cbstroke-encounter-profileSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2087,28 +2882,323 @@ filterDesc(document.getElementById('stroke-encounter-profileSA'), 'obligation', 
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Encounter.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="IETF language tag for a human language"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-all-languages.html">AllLanguages</a><div><code>http://hl7.org/fhir/ValueSet/all-languages|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="Current state of the encounter."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-status.html">EncounterStatus</a><div><code>http://hl7.org/fhir/ValueSet/encounter-status|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-status|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.class</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#preferred">preferred</a></td><td title="Classification of the encounter.">Pattern Value: <span title="null">IMP</a>("inpatient encounter")<div><code>http://terminology.hl7.org/ValueSet/encounter-class</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/encounter-class"></button></div></td></tr>
-<tr><td>Encounter.priority</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="Indicates the urgency of the encounter."><a style="opacity: 1.0" href="http://terminology.hl7.org/6.5.0/ValueSet-v3-ActPriority.html">ActPriority</a><div><code>http://terminology.hl7.org/ValueSet/v3-ActPriority</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActPriority"></button></div></td></tr>
-<tr><td>Encounter.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="A specific code indicating type of service provided"><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-type.html">EncounterType</a><div><code>http://hl7.org/fhir/ValueSet/encounter-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.serviceType</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="Broad categorization of the service that is to be provided."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-service-type.html">ServiceType</a><div><code>http://hl7.org/fhir/ValueSet/service-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/service-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.subjectStatus</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="Current status of the subject  within the encounter."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-subject-status.html">EncounterSubjectStatus</a><div><code>http://hl7.org/fhir/ValueSet/encounter-subject-status|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-subject-status|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.participant.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#extensible">extensible</a></td><td title="Role of participant in encounter."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-participant-type.html">ParticipantType</a><div><code>http://hl7.org/fhir/ValueSet/encounter-participant-type|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-participant-type|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.reason.use</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-reason-use.html">EncounterReasonUse</a><div><code>http://hl7.org/fhir/ValueSet/encounter-reason-use|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-reason-use|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.reason.value</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#preferred">preferred</a></td><td title="Reason why the encounter takes place."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-reason.html">EncounterReasonCodes</a><div><code>http://hl7.org/fhir/ValueSet/encounter-reason|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-reason|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.diagnosis.condition</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-condition-code.html">ConditionProblemDiagnosisCodes</a><div><code>http://hl7.org/fhir/ValueSet/condition-code|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/condition-code|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.diagnosis.use</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#preferred">preferred</a></td><td title="The type of diagnosis this condition represents."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-diagnosis-use.html">EncounterDiagnosisUse</a><div><code>http://hl7.org/fhir/ValueSet/encounter-diagnosis-use|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-diagnosis-use|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.dietPreference</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="Medical, cultural or ethical food preferences to help with catering requirements."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-diet.html">EncounterDiet</a><div><code>http://hl7.org/fhir/ValueSet/encounter-diet|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-diet|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.specialArrangement</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#preferred">preferred</a></td><td title="Special arrangements."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-special-arrangements.html">SpecialArrangements</a><div><code>http://hl7.org/fhir/ValueSet/encounter-special-arrangements|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-special-arrangements|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.specialCourtesy</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#preferred">preferred</a></td><td title="Special courtesies."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html">SpecialCourtesy</a><div><code>http://hl7.org/fhir/ValueSet/encounter-special-courtesy|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-special-courtesy|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.admission.admitSource</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-arrival-mode-vs.html">StrokeArrivalModeVS</a>(a valid code from <a href="CodeSystem-stroke-arrival-mode-cs.html">Initial Care Intensity Code System</a>)<div><code>http://testSK.org/ValueSet/stroke-arrival-mode-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-arrival-mode-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Encounter.admission.reAdmission</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="The reason for re-admission of this admission encounter."><a style="opacity: 1.0" href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0092.html">Hl7VSReAdmissionIndicator</a><div><code>http://terminology.hl7.org/ValueSet/v2-0092</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0092"></button></div></td></tr>
-<tr><td>Encounter.admission.dischargeDisposition</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-stroke-discharge-destination-vs.html">StrokeDischargeDestinationVS</a><div><code>http://testSK.org/ValueSet/stroke-discharge-destination-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://testSK.org/ValueSet/stroke-discharge-destination-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Encounter.location.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#required">required</a></td><td title="The status of the location."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-encounter-location-status.html">EncounterLocationStatus</a><div><code>http://hl7.org/fhir/ValueSet/encounter-location-status|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-location-status|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Encounter.location.form</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/terminologies.html#example">example</a></td><td title="Physical form of the location."><a style="opacity: 1.0" href="http://hl7.org/fhir/R5/valueset-location-form.html">LocationForm</a><div><code>http://hl7.org/fhir/ValueSet/location-form|5.0.0</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/location-form|5.0.0"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.language</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="IETF language tag for a human language">
+      <a href="http://hl7.org/fhir/R5/valueset-all-languages.html" opacity="1.0">All Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/all-languages|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.status</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="Current state of the encounter.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-status.html" opacity="1.0">Encounter Status</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-status|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.class</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
+    </td>
+    <td title="Classification of the encounter.">
+      <a href="http://terminology.hl7.org/6.5.0/ValueSet-encounter-class.html" opacity="1.0">Encounter class</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/encounter-class" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 2.0.1, the version found through the package references">&#x1F4E6;2.0.1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0">THO v6.5</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.priority</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Indicates the urgency of the encounter.">
+      <a href="http://terminology.hl7.org/6.5.0/ValueSet-v3-ActPriority.html" opacity="1.0">ActPriority</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActPriority" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 3.0.0, the version found through the package references">&#x1F4E6;3.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0">THO v6.5</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="A specific code indicating type of service provided">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-type.html" opacity="1.0">Encounter Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.serviceType</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Broad categorization of the service that is to be provided.">
+      <a href="http://hl7.org/fhir/R5/valueset-service-type.html" opacity="1.0">Service Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/service-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.subjectStatus</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Current status of the subject  within the encounter.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-subject-status.html" opacity="1.0">Encounter Subject Status</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-subject-status|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.participant.​type</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[extensible]" opacity="1.0">extensible</a>
+    </td>
+    <td title="Role of participant in encounter.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-participant-type.html" opacity="1.0">Participant Type</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-participant-type|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.reason.use</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-reason-use.html" opacity="1.0">Encounter Reason Use</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-reason-use|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.reason.value</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
+    </td>
+    <td title="Reason why the encounter takes place.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-reason.html" opacity="1.0">Encounter Reason Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-reason|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.diagnosis.​condition</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/valueset-condition-code.html" opacity="1.0">Condition/Problem/Diagnosis Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/condition-code|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.diagnosis.​use</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
+    </td>
+    <td title="The type of diagnosis this condition represents.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-diagnosis-use.html" opacity="1.0">Encounter Diagnosis Use</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-diagnosis-use|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.dietPreference</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Medical, cultural or ethical food preferences to help with catering requirements.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-diet.html" opacity="1.0">Diet</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-diet|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.specialArrangement</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
+    </td>
+    <td title="Special arrangements.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-special-arrangements.html" opacity="1.0">Special Arrangements</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-special-arrangements|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.specialCourtesy</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[preferred]" opacity="1.0">preferred</a>
+    </td>
+    <td title="Special courtesies.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" opacity="1.0">Special Courtesy</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-special-courtesy|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.admission.​admitSource</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-arrival-mode-vs.html" opacity="1.0">Stroke Arrival Mode ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-arrival-mode-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Encounter.admission.​reAdmission</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="The reason for re-admission of this admission encounter.">
+      <a href="http://terminology.hl7.org/6.5.0/ValueSet-v2-0092.html" opacity="1.0">hl7VS-re-admissionIndicator</a>
+      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0092" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to 2.0.0, the version found through the package references">&#x1F4E6;2.0.0</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0">THO v6.5</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.admission.​dischargeDisposition</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td>
+      <a href="ValueSet-stroke-discharge-destination-vs.html" opacity="1.0">Stroke Discharge Destination ValueSet</a>
+      <button data-clipboard-text="http://testSK.org/ValueSet/stroke-discharge-destination-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Encounter.location.status</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]" opacity="1.0">required</a>
+    </td>
+    <td title="The status of the location.">
+      <a href="http://hl7.org/fhir/R5/valueset-encounter-location-status.html" opacity="1.0">Encounter Location Status</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-location-status|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.location.form</td>
+    <td>Base</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[example]" opacity="1.0">example</a>
+    </td>
+    <td title="Physical form of the location.">
+      <a href="http://hl7.org/fhir/R5/valueset-location-form.html" opacity="1.0">Location Form</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/location-form|5.0.0" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 5.0.0">&#x1F4CD;5.0.0</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -2118,17 +3208,109 @@ filterDesc(document.getElementById('stroke-encounter-profileSA'), 'obligation', 
             <a name="inv-all-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Encounter</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Encounter</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Encounter</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Encounter</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Encounter</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>enc-1</td><td>error</td><td>Encounter.participant</td><td>A type must be provided when no explicit actor is specified<br/>: actor.exists() or type.exists()</td><td></td></tr>
-<tr><td>enc-2</td><td>error</td><td>Encounter.participant</td><td>A type cannot be provided for a patient or group participant<br/>: actor.exists(resolve() is Patient or resolve() is Group) implies type.exists().not()</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Encounter</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>enc-1</td>
+    <td>error</td>
+    <td>Encounter.participant</td>
+    <td>A type must be provided when no explicit actor is specified</td>
+    <td>
+      <code>actor.exists() or type.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>enc-2</td>
+    <td>error</td>
+    <td>Encounter.participant</td>
+    <td>A type cannot be provided for a patient or group participant</td>
+    <td>
+      <code>actor.exists(resolve() is Patient or resolve() is Group) implies type.exists().not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -2303,7 +3485,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Sep 30, 2025 09:58+0000">2025-09-30</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Oct 1, 2025 11:45+0000">2025-10-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
