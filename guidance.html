@@ -167,15 +167,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#design-conventions" id="markdown-toc-design-conventions">Design Conventions</a></li>
+  <li><a href="#terminology-reuse" id="markdown-toc-terminology-reuse">Terminology reuse</a></li>
+  <li><a href="#data-absent--unknown" id="markdown-toc-data-absent--unknown">Data Absent / Unknown</a></li>
+  <li><a href="#dates-times-and-time-zones" id="markdown-toc-dates-times-and-time-zones">Dates, Times, and Time Zones</a></li>
+  <li><a href="#identifiers-and-references" id="markdown-toc-identifiers-and-references">Identifiers and References</a></li>
+  <li><a href="#profiles-overview" id="markdown-toc-profiles-overview">Profiles Overview</a></li>
+  <li><a href="#validation--testing" id="markdown-toc-validation--testing">Validation &amp; Testing</a></li>
+  <li><a href="#versioning--history" id="markdown-toc-versioning--history">Versioning &amp; History</a></li>
+</ul>
 
-<h1 id="implementation-guidance">Implementation Guidance</h1>
+</div>
 
 <p>This page provides practical guidance and conventions to implement the Stroke Care IG consistently.</p>
 
-<h2 id="design-conventions">Design Conventions</h2>
+<h3 id="design-conventions">Design Conventions</h3>
 
 <ul>
   <li><strong>Minimal but sufficient</strong> profiles focused on key stroke indicators and reporting.</li>
@@ -183,7 +191,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Keep <strong>time-critical</strong> events (Door, Imaging, Needle, Groin puncture, Recanalization) as <code class="language-plaintext highlighter-rouge">Observation</code> with timing context and/or offsets where applicable.</li>
 </ul>
 
-<h2 id="data-absent--unknown">Data Absent / Unknown</h2>
+<h3 id="terminology-reuse">Terminology reuse</h3>
+<ul>
+  <li><strong>SNOMED CT</strong> for clinical concepts including observations and measurements.</li>
+  <li><strong>UCUM</strong> for units.</li>
+</ul>
+
+<h3 id="data-absent--unknown">Data Absent / Unknown</h3>
 
 <ul>
   <li>When data are unknown or not captured, use appropriate <strong>data-absent-reason</strong> patterns:
@@ -195,21 +209,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Do <strong>not</strong> invent local placeholder codes when a standard absent/unknown pattern exists.</li>
 </ul>
 
-<h2 id="dates-times-and-time-zones">Dates, Times, and Time Zones</h2>
+<h3 id="dates-times-and-time-zones">Dates, Times, and Time Zones</h3>
 
 <ul>
   <li>Use <strong>FHIR R5</strong> date/time types according to the profile (e.g., <code class="language-plaintext highlighter-rouge">dateTime</code>, <code class="language-plaintext highlighter-rouge">Period</code>).</li>
   <li>Include timezone offsets where relevant to clinical interpretation.</li>
 </ul>
 
-<h2 id="identifiers-and-references">Identifiers and References</h2>
-
+<h3 id="identifiers-and-references">Identifiers and References</h3>
 <ul>
   <li>Use stable, resolvable <strong>references</strong> (<code class="language-plaintext highlighter-rouge">Reference</code>) for <code class="language-plaintext highlighter-rouge">subject</code>, <code class="language-plaintext highlighter-rouge">encounter</code>, and relationships across resources.</li>
   <li>Align identifiers with institutional or national registries where available.</li>
 </ul>
 
-<h2 id="profiles-overview">Profiles Overview</h2>
+<h3 id="profiles-overview">Profiles Overview</h3>
 
 <ul>
   <li><strong>Encounter:</strong> Admission, class = inpatient, period, admit/discharge info, extensions (first hospital, initial care intensity, etc.).</li>
@@ -221,7 +234,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Refer to <strong>Profiles</strong> and <strong>Terminology</strong> sections for details and bindings.</p>
 
-<h2 id="validation--testing">Validation &amp; Testing</h2>
+<h3 id="validation--testing">Validation &amp; Testing</h3>
 
 <ul>
   <li>Validate resources with the <strong>FHIR Validator</strong> against this IG’s <code class="language-plaintext highlighter-rouge">package.tgz</code>.</li>
@@ -229,10 +242,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Use <strong>Examples</strong> as implementation patterns.</li>
 </ul>
 
-<h2 id="versioning--history">Versioning &amp; History</h2>
+<h3 id="versioning--history">Versioning &amp; History</h3>
 
 <ul>
-  <li>See <strong>History</strong> for the version list and release notes.</li>
+  <li>See <strong>Change Log</strong> for the version list and release notes.</li>
   <li>Breaking changes will be documented in the release notes.</li>
 </ul>
 
@@ -255,7 +268,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Oct 2, 2025 11:01+0000">2025-10-02</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Oct 2, 2025 11:31+0000">2025-10-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
