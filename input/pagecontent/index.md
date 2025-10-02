@@ -3,8 +3,6 @@ title: Home
 layout: default
 ---
 
-## Home
-
 The [RES-Q Stroke Registry](https://stroke.qualityregistry.org/) mission is to empower hospitals and healthcare providers to monitor, evaluate, and enhance the quality of health care. Today, more than 2,000 hospitals across 89 countries actively contribute data to RES-Q, making it one of the largest international stroke quality registries. 
 The RES-Q platform provides hospitals with interactive dashboards and customizable reports, enabling them to benchmark performance, identify gaps, and implement targeted improvements in clinical practice.
 Within RES-Q, stroke-related data is systematically collected using a dedicated [data collection form](https://stroke.qualityregistry.org/useful-information/data-collection-form) which ensures consistency in reporting across participating institutions. However, integrating data from external systems into RES-Q can be complex and often requires manual work or bespoke ETL pipelines.
