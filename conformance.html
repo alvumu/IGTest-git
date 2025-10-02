@@ -167,15 +167,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#scope" id="markdown-toc-scope">Scope</a></li>
+  <li><a href="#claiming-conformance" id="markdown-toc-claiming-conformance">Claiming Conformance</a></li>
+  <li><a href="#must-support" id="markdown-toc-must-support">Must Support</a></li>
+  <li><a href="#cardinality--invariants" id="markdown-toc-cardinality--invariants">Cardinality &amp; Invariants</a></li>
+  <li><a href="#terminology-binding-strength" id="markdown-toc-terminology-binding-strength">Terminology Binding Strength</a></li>
+  <li><a href="#server-requirements" id="markdown-toc-server-requirements">Server Requirements</a></li>
+  <li><a href="#client-requirements" id="markdown-toc-client-requirements">Client Requirements</a></li>
+  <li><a href="#security-and-privacy-informative" id="markdown-toc-security-and-privacy-informative">Security and Privacy (Informative)</a></li>
+</ul>
 
-<h2 id="conformance">Conformance</h2>
+</div>
 
 <p>This section describes how implementers can claim conformance to the <strong>RES-Q Stroke Registry Implementation Guide (IG)</strong> and what requirements apply to servers and clients.</p>
 
-<h2 id="scope">Scope</h2>
+<h3 id="scope">Scope</h3>
 
 <p>This IG defines:</p>
 <ul>
@@ -185,7 +193,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Examples</strong> illustrating compliant data instances.</li>
 </ul>
 
-<h2 id="claiming-conformance">Claiming Conformance</h2>
+<h3 id="claiming-conformance">Claiming Conformance</h3>
 
 <p>An implementation <strong>conforms</strong> to this IG if it:</p>
 <ol>
@@ -196,7 +204,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Satisfies any defined <strong>CapabilityStatement</strong> requirements (server/client).</li>
 </ol>
 
-<h2 id="must-support">Must Support</h2>
+<h3 id="must-support">Must Support</h3>
 
 <ul>
   <li><strong>Definition:</strong> If an element is marked <strong>Must Support</strong>, systems <strong>SHALL</strong> be able to <em>send, receive, and persist</em> the element when it is relevant and present in the source data.</li>
@@ -204,14 +212,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Choice Types:</strong> When multiple data types are allowed, at least one SHALL be supported as documented in the profile narrative.</li>
 </ul>
 
-<h2 id="cardinality--invariants">Cardinality &amp; Invariants</h2>
+<h3 id="cardinality--invariants">Cardinality &amp; Invariants</h3>
 
 <ul>
   <li><strong>Cardinality</strong> is authoritative; elements SHALL satisfy the minimum/maximum occurrences.</li>
   <li><strong>Invariants</strong> (FHIRPath) are <strong>required</strong> constraints; validation SHALL fail if violated (e.g., “if status = <code class="language-plaintext highlighter-rouge">not-done</code> then <code class="language-plaintext highlighter-rouge">statusReason</code> must exist”).</li>
 </ul>
 
-<h2 id="terminology-binding-strength">Terminology Binding Strength</h2>
+<h3 id="terminology-binding-strength">Terminology Binding Strength</h3>
 
 <ul>
   <li><strong>Required:</strong> Only concepts from the bound value set are allowed.</li>
@@ -219,7 +227,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Preferred / Example:</strong> Use is recommended, but not enforced.</li>
 </ul>
 
-<h2 id="server-requirements">Server Requirements</h2>
+<h3 id="server-requirements">Server Requirements</h3>
 
 <p>If a <strong>server</strong> claims conformance:</p>
 <ul>
@@ -228,7 +236,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>It SHOULD support <strong>_include</strong>, <strong>_revinclude</strong>, and common search params for clinical exchange (e.g., <code class="language-plaintext highlighter-rouge">subject</code>, <code class="language-plaintext highlighter-rouge">encounter</code>, <code class="language-plaintext highlighter-rouge">date</code>, <code class="language-plaintext highlighter-rouge">code</code>), when relevant to the profile.</li>
 </ul>
 
-<h2 id="client-requirements">Client Requirements</h2>
+<h3 id="client-requirements">Client Requirements</h3>
 
 <p>If a <strong>client</strong> claims conformance:</p>
 <ul>
@@ -236,7 +244,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>It SHALL be able to process <strong>Must Support</strong> elements and required <strong>terminology bindings</strong>.</li>
 </ul>
 
-<h2 id="security-and-privacy-informative">Security and Privacy (Informative)</h2>
+<h3 id="security-and-privacy-informative">Security and Privacy (Informative)</h3>
 
 <ul>
   <li>Follow local privacy law and institutional policy for PHI/PII.</li>
@@ -263,7 +271,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Oct 2, 2025 10:56+0000">2025-10-02</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Oct 2, 2025 11:00+0000">2025-10-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
