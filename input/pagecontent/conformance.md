@@ -41,8 +41,6 @@ An implementation **conforms** to this IG if it:
 - **Extensible:** Prefer concepts from the value set; other concepts are allowed **only** if a suitable match is not available.
 - **Preferred / Example:** Use is recommended, but not enforced.
 
-See **Terminology** for full lists of ValueSets and CodeSystems.
-
 ## Server Requirements
 
 If a **server** claims conformance:
