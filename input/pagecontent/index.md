@@ -23,26 +23,8 @@ This work has been made as part of the [RES-Q+ project](https://www.resqplus.eu)
 
 | Role           | Name              | Organization                  | Contact                          |
 |----------------|-------------------|-------------------------------|----------------------------------|
-| Primary Editor | Álvaro Riquelme   | University of Murcia, Spain   | alvaro.riquelmet@um.es           |
+| Primary Editor | Álvaro Riquelme Tornel   | University of Murcia, Spain   | alvaro.riquelmet@um.es           |
 | Primary Editor | Catalina Martínez Costa     | University of Murcia, Spain             | cmartinezcosta@um.es      |
 
-
-## 🔖 Narratives by folder
-
-
-### Profiles
-{% include list-folder.html srcpath='profiles' %}
-
-### Extensions
-{% include list-folder.html srcpath='extensions' %}
-
-### CodeSystems
-{% include list-folder.html srcpath='codesystems' %}
-
-### ValueSets
-{% include list-folder.html srcpath='valuesets' %}
-
-### Examples
-{% include list-folder.html srcpath='examples' %}
 
 ---
