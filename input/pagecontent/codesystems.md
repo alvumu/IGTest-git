@@ -5,7 +5,6 @@ navSection: codesystems
 ---
 
 # CodeSystems
-Listado de **CodeSystems** definidos en esta guía:
+List of **CodeSystems** defined in this guide:
 
 {% include list-folder.html srcpath="codesystems" %}
-
