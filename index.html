@@ -209,32 +209,65 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#home" id="markdown-toc-home">Home</a>    <ul>
-      <li><a href="#-narratives-by-folder" id="markdown-toc--narratives-by-folder">🔖 Narratives by folder</a>        <ul>
-          <li><a href="#profiles" id="markdown-toc-profiles">Profiles</a></li>
-          <li><a href="#extensions" id="markdown-toc-extensions">Extensions</a></li>
-          <li><a href="#codesystems" id="markdown-toc-codesystems">CodeSystems</a></li>
-          <li><a href="#valuesets" id="markdown-toc-valuesets">ValueSets</a></li>
-          <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
-        </ul>
-      </li>
+      <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+      <li><a href="#project-backgound" id="markdown-toc-project-backgound">Project Backgound</a></li>
+      <li><a href="#authors-and-contributors" id="markdown-toc-authors-and-contributors">Authors and Contributors</a></li>
+    </ul>
+  </li>
+  <li><a href="#-narratives-by-folder" id="markdown-toc--narratives-by-folder">🔖 Narratives by folder</a>    <ul>
+      <li><a href="#profiles" id="markdown-toc-profiles">Profiles</a></li>
+      <li><a href="#extensions" id="markdown-toc-extensions">Extensions</a></li>
+      <li><a href="#codesystems" id="markdown-toc-codesystems">CodeSystems</a></li>
+      <li><a href="#valuesets" id="markdown-toc-valuesets">ValueSets</a></li>
+      <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
     </ul>
   </li>
 </ul>
 
 </div>
 
-<h1 id="home">Home</h1>
+<h2 id="home">Home</h2>
 
-<p>The <a href="https://stroke.qualityregistry.org/">RES-Q Stroke Registry</a> mission is to empower hospitals and healthcare providers to monitor, evaluate, and enhance the quality of health care. Today, more than 2,000 hospitals across 89 countries actively contribute data to RES-Q, making it one of the largest international stroke quality registries. The platform provides hospitals with interactive dashboards and customizable reports, enabling them to benchmark performance, identify gaps, and implement targeted improvements in clinical practice. Within RES-Q, stroke-related data is systematically collected using a dedicated <a href="https://stroke.qualityregistry.org/useful-information/data-collection-form">data collection form</a> which ensures consistency in reporting across participating institutions. However, integrating data from external systems into RES-Q can be complex and often requires manual work or bespoke ETL pipelines.
+<p>The <a href="https://stroke.qualityregistry.org/">RES-Q Stroke Registry</a> mission is to empower hospitals and healthcare providers to monitor, evaluate, and enhance the quality of health care. Today, more than 2,000 hospitals across 89 countries actively contribute data to RES-Q, making it one of the largest international stroke quality registries. 
+The RES-Q platform provides hospitals with interactive dashboards and customizable reports, enabling them to benchmark performance, identify gaps, and implement targeted improvements in clinical practice.
+Within RES-Q, stroke-related data is systematically collected using a dedicated <a href="https://stroke.qualityregistry.org/useful-information/data-collection-form">data collection form</a> which ensures consistency in reporting across participating institutions. However, integrating data from external systems into RES-Q can be complex and often requires manual work or bespoke ETL pipelines.
 This implementation guide addresses that challenge by describing how to model your data using HL7 FHIR, following the RES-Q profiles and value sets. By adopting this standardized approach, registries and hospitals can align their data with RES-Q requirements, reduce integration effort, and benefit from a uniform interface for exchanging information. Ultimately, this not only simplifies participation in RES-Q but also strengthens interoperability with other health information systems.</p>
 
-<p>Welcome. Here is a complete overview of the IG contents, grouped by <strong>narratives</strong> (Markdown pages) and <strong>generated artifacts</strong> (pages created by the Publisher).</p>
-
-<blockquote>
-  <p>📦 Automatic artifact summary: see <a href="artifacts.html">Artifacts</a>.</p>
-</blockquote>
-
 <hr />
+<h3 id="purpose">Purpose</h3>
+
+<p>The goal of this Implementation Guide is to specify how to represent in HL7 FHIR the RES-Q Stroke registry.</p>
+
+<h3 id="project-backgound">Project Backgound</h3>
+
+<p>This work has been made as part of the <a href="https://www.resqplus.eu">RES-Q+ project</a></p>
+
+<h3 id="authors-and-contributors">Authors and Contributors</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Role</th>
+      <th>Name</th>
+      <th>Organization</th>
+      <th>Contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Primary Editor</td>
+      <td>Álvaro Riquelme</td>
+      <td>University of Murcia, Spain</td>
+      <td>alvaro.riquelmet@um.es</td>
+    </tr>
+    <tr>
+      <td>Primary Editor</td>
+      <td>Catalina Martínez Costa</td>
+      <td>University of Murcia, Spain</td>
+      <td>cmartinezcosta@um.es</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="-narratives-by-folder">🔖 Narratives by folder</h2>
 
@@ -274,7 +307,7 @@ This implementation guide addresses that challenge by describing how to model yo
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Oct 2, 2025 09:37+0000">2025-10-02</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Oct 2, 2025 10:13+0000">2025-10-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
