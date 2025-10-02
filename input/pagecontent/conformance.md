@@ -1,11 +1,11 @@
 ---
-
+title: Conformance
 layout: default
 ---
 
-# Conformance
+## Conformance
 
-This section describes how implementers can claim conformance to the **Stroke Care Implementation Guide (IG)** and what requirements apply to servers and clients.
+This section describes how implementers can claim conformance to the **RES-Q Stroke Registry Implementation Guide (IG)** and what requirements apply to servers and clients.
 
 ## Scope
 
@@ -23,8 +23,6 @@ An implementation **conforms** to this IG if it:
 3. Satisfies **cardinality** and **invariants** defined in the profiles.
 4. Implements applicable **search parameters** and **operations** (if defined for your use case).
 5. Satisfies any defined **CapabilityStatement** requirements (server/client).
-
-> See the **Artifacts** page for the full list of profiles and their element tables.
 
 ## Must Support
 
