@@ -79,30 +79,45 @@ Description: "Defines the SNOMED CT codes for conditions or risk factors relevan
 * SCT#230690007 "Cerebrovascular accident (disorder)"
 
 
+
 ValueSet: StrokeRiskFactorVS
 Id: stroke-risk-factor-vs
 Title: "Stroke Risk Factor ValueSet"
 Description: "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status."
 * ^url = StrokeRiskFactorVS_URL
+* ^name = "StrokeRiskFactorValueSet"
+* ^status = #active
 * ^version = "1.0.0"
-* ^name = "StrokeRiskFactorValueset"
+* ^date = "2025-10-07"
+* ^experimental = false
+* ^publisher = "Tecnomod"
+* ^contact[0].telecom[0].system = #email
+* ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
+* ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
+* ^purpose = "To aggregate core stroke risk factors and unknown/absent problem concepts for comprehensive capture and validation."
+* ^copyright = "This value set includes SNOMED CT® content and may include HL7 IPS value set content. SNOMED CT® is distributed by SNOMED International."
+* ^immutable = false
 * include codes from valueset StrokeRiskFactorSNOMEDVS_URL
 * include codes from valueset StrokeRiskFactorUnknVS_URL
+
 
 ValueSet: DischargeDestinationVS
 Id: discharge-destination-vs
 Title: "Discharge Destination ValueSet"
 Description: "Defines possible patient discharge destinations."
 * ^url = DischargeDestinationVS_URL
-* ^version = "1.0.0"
-* ^name = "DischargeDestinationValueset"
+* ^name = "DischargeDestinationValueSet"
 * ^status = #draft
-* ^experimental = true
+* ^version = "1.0.0"
 * ^date = "2025-03-31"
-* ^publisher = "Example Organization"
-* ^contact[0].name = "Example Organization"
+* ^experimental = true
+* ^publisher = "Tecnomod"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "info@example.org"
+* ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
+* ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
+* ^purpose = "To support consistent recording of discharge destinations for analytics, reporting, and care coordination."
+* ^copyright = "This value set includes SNOMED CT® content. SNOMED CT® is distributed by SNOMED International."
+* ^immutable = false
 * include SCT#306689006 "Discharge to home (procedure)"
 * include SCT#306706006 "Discharge to ward (procedure)"
 * include SCT#19712007 "Patient transfer, to another health care facility (procedure)"
@@ -115,30 +130,45 @@ Id: admission-source-vs
 Title: "Admission Sources ValueSet"
 Description: "Defines the modes of transport or pathways by which the patient arrived."
 * ^url = AdmissionSourceVS_URL
-* ^version = "1.0.0"
-* ^name = "AdmissionSourceValueset"
+* ^name = "AdmissionSourceValueSet"
 * ^status = #draft
-* ^experimental = true
+* ^version = "1.0.0"
 * ^date = "2025-03-31"
-* ^publisher = "Example Organization"
-* ^contact[0].name = "Example Organization"
+* ^experimental = true
+* ^publisher = "Tecnomod"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "info@example.org"
+* ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
+* ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
+* ^purpose = "To standardize the capture of patient admission sources for workflow, reporting, and interoperability."
+* ^copyright = "This value set includes SNOMED CT® content. SNOMED CT® is distributed by SNOMED International."
+* ^immutable = false
 * include SCT#715537001 "Transportation by ambulance (procedure)"
-* include SCT#715957006 "Transportation by own transport (procedure)" // Note: Verify this code, was corrected per input.
+* include SCT#715957006 "Transportation by own transport (procedure)"
 * include SCT#384762007 "Transportation procedure (procedure)"
+
 
 CodeSystem: HemorrhagicStrokeBleedingReasonCS
 Id: hemorrhagic-stroke-bleeding-reason-cs
 * ^url = HemorrhagicStrokeBleedingReasonCS_URL
+* ^name = "HemorrhagicStrokeBleedingReasonCS"
 * ^title = "Hemorrhagic Stroke Bleeding Reason Code System"
 * ^description = "Codes indicating the reason for bleeding in hemorrhagic stroke cases."
 * ^status = #active
-* ^experimental = true 
-* ^caseSensitive = false  
+* ^experimental = false
+* ^version = "1.0.0"
+* ^date = "2025-10-07"
+* ^publisher = "Tecnomod"
+* ^contact[0].telecom[0].system = #email
+* ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
+* ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
+* ^purpose = "To provide locally governed codes for the identified cause of bleeding in hemorrhagic stroke."
+* ^copyright = "© Tecnomod. This CodeSystem is provided for use within this Implementation Guide."
+* ^caseSensitive = false
+* ^content = #complete
 * #aneurysm "Bleeding Reason Aneurysm" "A cerebral aneurysm was identified as the cause of the patient's hemorrhagic stroke"
 * #malformation "Bleeding Reason Malformation" "A vascular malformation was identified as the cause of the patient's hemorrhagic stroke"
 * #other "Bleeding Reason Other" "Another, less common or unspecified cause of intracranial hemorrhage was identified"
+
 
 
 ValueSet: HemorrhagicStrokeBleedingReasonVS
@@ -146,26 +176,40 @@ Id: hemorrhagic-stroke-bleeding-reason-vs
 Title: "Hemorrhagic Stroke Bleeding Reason ValueSet"
 * ^description = "Specifies the identified cause of a hemorrhagic stroke, typically used with an extension."
 * ^url = HemorrhagicStrokeBleedingReasonVS_URL
-* ^version = "1.0.0"
 * ^name = "HemorrhagicStrokeBleedingReasonVS"
 * ^status = #draft
-* ^experimental = true
+* ^version = "1.0.0"
 * ^date = "2025-09-08"
-* ^publisher = "Example Organization"
-* ^contact[0].name = "Example Organization"
+* ^experimental = true
+* ^publisher = "Tecnomod"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "info@example.org"
+* ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
+* ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
+* ^purpose = "To enable consistent capture of the underlying cause of bleeding in hemorrhagic stroke."
+* ^copyright = "© Tecnomod. This value set includes locally defined codes."
+* ^immutable = false
 * include codes from system HemorrhagicStrokeBleedingReasonCS_URL
+
 
 
 CodeSystem: StrokeEtiologyCS
 Id: stroke-etiology-cs
 * ^url = StrokeEtiologyCS_URL
+* ^name = "StrokeEtiologyCS"
 * ^title = "Stroke Etiology Code System"
 * ^description = "Codes indicating the etiology of strokes."
 * ^status = #active
-* ^experimental = true 
-* ^caseSensitive = false  
+* ^experimental = false
+* ^version = "1.0.0"
+* ^date = "2025-10-07"
+* ^publisher = "Tecnomod"
+* ^contact[0].telecom[0].system = #email
+* ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
+* ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
+* ^purpose = "To provide locally governed codes for classifying ischemic stroke etiology."
+* ^copyright = "© Tecnomod. This CodeSystem is provided for use within this Implementation Guide."
+* ^caseSensitive = false
+* ^content = #complete
 * #atherosclerosis "Stroke Etiology Atherosclerosis" "Specifies that large artery atherosclerosis (for example, significant stenosis in the carotid or basilar arteries) was identified as the cause of the stroke."
 * #other "Stroke Etiology Other" "Specifies that the stroke etiology falls into a rarer category not covered by the main classifications, such as vasculitis or hypercoagulable states."
 * #lacunar "Stroke Etiology Lacunar" "Specifies that the stroke is attributed to small vessel disease, often manifesting as a lacunar infarct."
@@ -175,25 +219,40 @@ Id: stroke-etiology-vs
 Title: "Stroke Etiology ValueSet"
 Description: "Specifies the determined etiology of an stroke."
 * ^url = StrokeEtiologyVS_URL
-* ^version = "1.0.0"
 * ^name = "StrokeEtiologyVS"
 * ^status = #draft
-* ^experimental = true
+* ^version = "1.0.0"
 * ^date = "2025-03-31"
-* ^publisher = "Example Organization"
-* ^contact[0].name = "Example Organization"
+* ^experimental = true
+* ^publisher = "Tecnomod"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "info@example.org"
+* ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
+* ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
+* ^purpose = "To support classification of stroke etiology using a mix of local codes and selected SNOMED CT concepts."
+* ^copyright = "This value set includes locally governed concepts and SNOMED CT® content. SNOMED CT® is distributed by SNOMED International."
+* ^immutable = false
 * include codes from system StrokeEtiologyCS_URL
 * include SCT#16891111000119104 "Cryptogenic stroke (disorder)"
 * include SCT#413758000 "Cardioembolic stroke (disorder)"
 
 
 // ------------------ Extensions ---------------------------------
-// (No changes from previous version)
 Extension: HemorrhagicStrokeBleedingReasonExt
 Id: hemorrhagic-stroke-bleeding-reason-ext
+Title: "Hemorrhagic Stroke – Bleeding Reason"
+Description: "Captures, as a CodeableConcept bound (required) to HemorrhagicStrokeBleedingReasonVS, the identified cause of intracranial bleeding in hemorrhagic stroke (e.g., aneurysm, vascular malformation, other). Use when coding a definitive hemorrhagic stroke Condition to support analytics and decision support; do not use for non-hemorrhagic etiologies or when the cause is unknown/undetermined."
 * ^url = HemorrhagicStrokeBleedingReasonEXT_URL
+* ^name = "HemorrhagicStrokeBleedingReasonExt"
+* ^status = #active
+* ^version = "1.0.0"
+* ^date = "2025-10-07"
+* ^experimental = false
+* ^publisher = "Tecnomod"
+* ^contact[0].telecom[0].system = #email
+* ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
+* ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
+* ^purpose = "To standardize capture of the bleeding cause in hemorrhagic stroke conditions for decision support and analytics."
+* ^isModifier = false
 * ^context.type = #element
 * ^context.expression = "Condition"
 * value[x] only CodeableConcept
@@ -201,26 +260,68 @@ Id: hemorrhagic-stroke-bleeding-reason-ext
 
 Extension: StrokeStrokeEtiologyExt
 Id: ischemic-stroke-etiology-ext
+Title: "Ischemic Stroke – Etiology"
+Description: "Records the determined ischemic stroke etiology as a CodeableConcept bound (required) to StrokeEtiologyVS (e.g., cardioembolic, large artery atherosclerosis, lacunar, cryptogenic). Apply to definitive ischemic stroke Conditions after diagnostic workup; avoid use for hemorrhagic strokes or provisional hypotheses not yet established."
+* ^url = StrokeStrokeEtiologyEXT_URL
+* ^name = "StrokeStrokeEtiologyExt"
+* ^status = #active
+* ^version = "1.0.0"
+* ^date = "2025-10-07"
+* ^experimental = false
+* ^publisher = "Tecnomod"
+* ^contact[0].telecom[0].system = #email
+* ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
+* ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
+* ^purpose = "To enable consistent categorization of ischemic stroke etiology for interoperability and analysis."
+* ^isModifier = false
 * ^context.type = #element
 * ^context.expression = "Condition"
-* ^url = StrokeStrokeEtiologyEXT_URL
 * value[x] only CodeableConcept
 * valueCodeableConcept from StrokeEtiologyVS (required)
 
+
 Extension: OnsetDateExt
 Id: onset-date-ext
+Title: "Stroke Onset Date"
+Description: "Captures the calendar date (value[x] = date) of symptom onset for the indexed stroke event when known, enabling calculation of onset-to-door metrics and adherence to time-sensitive pathways. Use alongside OnsetTimeExt when hour/minute precision is available; omit if onset is unknown or inapplicable."
+* ^url = OnsetDateEXT_URL
+* ^name = "OnsetDateExt"
+* ^status = #active
+* ^version = "1.0.0"
+* ^date = "2025-10-07"
+* ^experimental = false
+* ^publisher = "Tecnomod"
+* ^contact[0].telecom[0].system = #email
+* ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
+* ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
+* ^purpose = "To record stroke onset date for clinical decision making and quality metrics."
+* ^isModifier = false
 * ^context.type = #element
 * ^context.expression = "Condition"
-* ^url = OnsetDateEXT_URL
 * value[x] only date
+
 
 
 Extension: OnsetTimeExt
 Id: onset-time-ext
+Title: "Stroke Onset Time"
+Description: "Captures the clock time (value[x] = time) of symptom onset for the indexed stroke event when available, complementing OnsetDateExt to support precise onset-to-treatment intervals. Use local time of the clinical setting; omit if time is unknown or estimated beyond acceptable precision."
+* ^url = OnsetTimeEXT_URL
+* ^name = "OnsetTimeExt"
+* ^status = #active
+* ^version = "1.0.0"
+* ^date = "2025-10-07"
+* ^experimental = false
+* ^publisher = "Tecnomod"
+* ^contact[0].telecom[0].system = #email
+* ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
+* ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
+* ^purpose = "To record stroke onset time for adherence to time-sensitive treatment pathways."
+* ^isModifier = false
 * ^context.type = #element
 * ^context.expression = "Condition"
-* ^url = OnsetTimeEXT_URL
 * value[x] only time
+
 
 // ------------------ Condition Profiles -------------------------
 
@@ -229,8 +330,21 @@ Profile: StrokeDiagnosisConditionProfile
 Id: stroke-diagnosis-condition-profile
 Parent: Condition
 Title: "Stroke Diagnosis Condition Profile"
-Description: "Represents the final diagnosis of the current stroke event."
+Description: "Defines a Condition profile constrained to represent the definitive diagnosis of the current stroke event during the indexed encounter. The profile fixes category to encounter-diagnosis, binds code (required) to StrokeDiagnosisVS, and prohibits onset[x] to avoid ambiguity with symptom-onset capture via dedicated extensions. Use this profile for final/confirmed stroke diagnoses recorded at discharge or after diagnostic workup; do not use it for history-of conditions, screening findings, or provisional ‘rule-out’ statements. Optional extensions capture hemorrhagic bleeding reason, ischemic etiology, and structured onset date/time when clinically known."
+* ^url = "http://testSK.org/StructureDefinition/stroke-diagnosis-condition-profile"
+* ^name = "StrokeDiagnosisConditionProfile"
 * ^status = #active
+* ^version = "1.0.0"
+* ^date = "2025-10-07"
+* ^experimental = false
+* ^publisher = "Tecnomod"
+* ^contact[0].telecom[0].system = #email
+* ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
+* ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
+* ^purpose = "To standardize the representation of definitive stroke diagnoses to support interoperability, validation, and analytics."
+* ^copyright = "© Tecnomod. This profile is provided for use within this Implementation Guide."
+* ^type = "Condition"
+* ^derivation = #constraint
 
 * clinicalStatus MS
 * verificationStatus MS
@@ -262,8 +376,21 @@ Profile: StrokeRiskFactorConditionProfile
 Id: stroke-risk-factor-condition-profile
 Parent: Condition
 Title: "Stroke Risk Factor Condition Profile"
-Description: "Represents a known condition or risk factor relevant to stroke."
+Description: "Defines a Condition profile for pre-existing or concurrent conditions that increase stroke risk (e.g., atrial fibrillation/flutter, diabetes, hypertension, coronary disease). The profile fixes category to problem-list-item, binds code (required) to StrokeRiskFactorVS, and supports onset[x] and recordedDate to document chronology and longitudinal tracking. Use this profile to maintain the problem list and to support risk assessment and CDS; do not use it to code the acute stroke event itself."
+* ^url = "http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile"
+* ^name = "StrokeRiskFactorConditionProfile"
 * ^status = #active
+* ^version = "1.0.0"
+* ^date = "2025-10-07"
+* ^experimental = false
+* ^publisher = "Tecnomod"
+* ^contact[0].telecom[0].system = #email
+* ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
+* ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
+* ^purpose = "To standardize capture of stroke-related risk factor conditions for longitudinal tracking, CDS, and reporting."
+* ^copyright = "© Tecnomod. This profile is provided for use within this Implementation Guide."
+* ^type = "Condition"
+* ^derivation = #constraint
 
 * clinicalStatus MS
 * verificationStatus MS
