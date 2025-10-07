@@ -252,7 +252,6 @@ Description: "Captures, as a CodeableConcept bound (required) to HemorrhagicStro
 * ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
 * ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
 * ^purpose = "To standardize capture of the bleeding cause in hemorrhagic stroke conditions for decision support and analytics."
-* ^isModifier = false
 * ^context.type = #element
 * ^context.expression = "Condition"
 * value[x] only CodeableConcept
@@ -273,7 +272,6 @@ Description: "Records the determined ischemic stroke etiology as a CodeableConce
 * ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
 * ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
 * ^purpose = "To enable consistent categorization of ischemic stroke etiology for interoperability and analysis."
-* ^isModifier = false
 * ^context.type = #element
 * ^context.expression = "Condition"
 * value[x] only CodeableConcept
@@ -295,7 +293,6 @@ Description: "Captures the calendar date (value[x] = date) of symptom onset for 
 * ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
 * ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
 * ^purpose = "To record stroke onset date for clinical decision making and quality metrics."
-* ^isModifier = false
 * ^context.type = #element
 * ^context.expression = "Condition"
 * value[x] only date
@@ -317,7 +314,6 @@ Description: "Captures the clock time (value[x] = time) of symptom onset for the
 * ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
 * ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
 * ^purpose = "To record stroke onset time for adherence to time-sensitive treatment pathways."
-* ^isModifier = false
 * ^context.type = #element
 * ^context.expression = "Condition"
 * value[x] only time
