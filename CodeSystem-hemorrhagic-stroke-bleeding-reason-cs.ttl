@@ -18,8 +18,8 @@
   fhir:name [ fhir:v "HemorrhagicStrokeBleedingReasonCS"] ; # 
   fhir:title [ fhir:v "Hemorrhagic Stroke Bleeding Reason Code System"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2025-10-07T10:46:08+00:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-07"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -29,6 +29,8 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Codes indicating the reason for bleeding in hemorrhagic stroke cases."] ; # 
+  fhir:purpose [ fhir:v "To provide locally governed codes for the identified cause of bleeding in hemorrhagic stroke."] ; # 
+  fhir:copyright [ fhir:v "© Tecnomod. This CodeSystem is provided for use within this Implementation Guide."] ; # 
   fhir:caseSensitive [ fhir:v false] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 

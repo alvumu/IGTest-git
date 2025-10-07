@@ -1,10 +1,10 @@
 IGTest : Validation Results
 =========================================
 
-err = 189, warn = 147, info = 41
+err = 189, warn = 142, info = 41
 $--
 Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.github.io)
- Build Errors : 0 / 31 / 0
+ Build Errors : 0 / 27 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-brain-imaging-type-cs : 2 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs : 2 / 2 / 2
@@ -105,7 +105,7 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.git
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-finding-codes-vs : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-vs : 4 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-vs : 4 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallow-procedures-vs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallowing-screening-timing-category-vs : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-thrombectomy-complication-vs : 2 / 1 / 1
@@ -115,10 +115,6 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.git
 </table>
 == n/a ==
 WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/onset-date-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/onset-time-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ischemic-stroke-etiology-ext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/AgeAtOnsetObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/discharge-medication-request-001.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Provenance/ExampleEncounterProviderProvenance.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -574,7 +570,6 @@ ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/stroke-risk-factor-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/stroke-risk-factor-vs) does not match the URL (http://testSK.org/ValueSet/stroke-risk-factor-vs). Use the special-url parameter if you really mean for it not to match
 ERROR: ValueSet/stroke-risk-factor-vs: ValueSet.compose.include[1].valueSet[0]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips'
 WARNING: ValueSet/stroke-risk-factor-vs: ValueSet.compose.include[1].valueSet[0]: The value set import http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips could not be found so cannot be checked
-WARNING: ValueSet/stroke-risk-factor-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: ValueSet.where(id = 'stroke-risk-factor-vs'): Unable to find included value set 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips'
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-vs: URL Mismatch https://alvumu.github.io/ValueSet/stroke-risk-factor-vs vs http://testSK.org/ValueSet/stroke-risk-factor-vs
 == fsh-generated/resources/ValueSet-swallow-procedures-vs.json ==

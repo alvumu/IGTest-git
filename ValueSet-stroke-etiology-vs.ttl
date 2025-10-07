@@ -29,6 +29,9 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Specifies the determined etiology of an stroke."] ; # 
+  fhir:immutable [ fhir:v false] ; # 
+  fhir:purpose [ fhir:v "To support classification of stroke etiology using a mix of local codes and selected SNOMED CT concepts."] ; # 
+  fhir:copyright [ fhir:v "This value set includes locally governed concepts and SNOMED CT® content. SNOMED CT® is distributed by SNOMED International."] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [ fhir:v "http://testSK.org/CodeSystem/stroke-etiology-cs"^^xsd:anyURI ]

@@ -7,10 +7,11 @@
   },
   "url" : "http://testSK.org/ValueSet/stroke-risk-factor-vs",
   "version" : "0.1.0",
-  "name" : "StrokeRiskFactorValueset",
+  "name" : "StrokeRiskFactorValueSet",
   "title" : "Stroke Risk Factor ValueSet",
-  "status" : "draft",
-  "date" : "2025-10-07T10:46:08+00:00",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-07",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -20,6 +21,9 @@
     }]
   }],
   "description" : "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status.",
+  "immutable" : false,
+  "purpose" : "To aggregate core stroke risk factors and unknown/absent problem concepts for comprehensive capture and validation.",
+  "copyright" : "This value set includes SNOMED CT® content and may include HL7 IPS value set content. SNOMED CT® is distributed by SNOMED International.",
   "compose" : {
     "include" : [{
       "valueSet" : ["http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs"]

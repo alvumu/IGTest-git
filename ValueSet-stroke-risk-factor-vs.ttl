@@ -15,10 +15,11 @@
   ] ; # 
   fhir:url [ fhir:v "http://testSK.org/ValueSet/stroke-risk-factor-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
-  fhir:name [ fhir:v "StrokeRiskFactorValueset"] ; # 
+  fhir:name [ fhir:v "StrokeRiskFactorValueSet"] ; # 
   fhir:title [ fhir:v "Stroke Risk Factor ValueSet"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-07T10:46:08+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-07"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -28,6 +29,9 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status."] ; # 
+  fhir:immutable [ fhir:v false] ; # 
+  fhir:purpose [ fhir:v "To aggregate core stroke risk factors and unknown/absent problem concepts for comprehensive capture and validation."] ; # 
+  fhir:copyright [ fhir:v "This value set includes SNOMED CT® content and may include HL7 IPS value set content. SNOMED CT® is distributed by SNOMED International."] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:valueSet ( [

@@ -10,7 +10,8 @@
   "name" : "StrokeRiskFactorConditionProfile",
   "title" : "Stroke Risk Factor Condition Profile",
   "status" : "active",
-  "date" : "2025-10-07T10:46:08+00:00",
+  "experimental" : false,
+  "date" : "2025-10-07",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -19,7 +20,9 @@
       "value" : "http://testSK.org/umu"
     }]
   }],
-  "description" : "Represents a known condition or risk factor relevant to stroke.",
+  "description" : "Defines a Condition profile for pre-existing or concurrent conditions that increase stroke risk (e.g., atrial fibrillation/flutter, diabetes, hypertension, coronary disease). The profile fixes category to problem-list-item, binds code (required) to StrokeRiskFactorVS, and supports onset[x] and recordedDate to document chronology and longitudinal tracking. Use this profile to maintain the problem list and to support risk assessment and CDS; do not use it to code the acute stroke event itself.",
+  "purpose" : "To standardize capture of stroke-related risk factor conditions for longitudinal tracking, CDS, and reporting.",
+  "copyright" : "© Tecnomod. This profile is provided for use within this Implementation Guide.",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "w5",

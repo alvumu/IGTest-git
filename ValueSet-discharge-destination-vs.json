@@ -7,7 +7,7 @@
   },
   "url" : "http://testSK.org/ValueSet/discharge-destination-vs",
   "version" : "0.1.0",
-  "name" : "DischargeDestinationValueset",
+  "name" : "DischargeDestinationValueSet",
   "title" : "Discharge Destination ValueSet",
   "status" : "draft",
   "experimental" : true,
@@ -21,6 +21,9 @@
     }]
   }],
   "description" : "Defines possible patient discharge destinations.",
+  "immutable" : false,
+  "purpose" : "To support consistent recording of discharge destinations for analytics, reporting, and care coordination.",
+  "copyright" : "This value set includes SNOMED CT® content. SNOMED CT® is distributed by SNOMED International.",
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",

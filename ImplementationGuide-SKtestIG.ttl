@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-07T10:46:08+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-07T11:37:10+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -466,7 +466,8 @@
          fhir:link <https://alvumu.github.io/StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext" ]
        ] ;
-       fhir:name [ fhir:v "HemorrhagicStrokeBleedingReasonExt" ] ;
+       fhir:name [ fhir:v "Hemorrhagic Stroke – Bleeding Reason" ] ;
+       fhir:description [ fhir:v "Captures, as a CodeableConcept bound (required) to HemorrhagicStrokeBleedingReasonVS, the identified cause of intracranial bleeding in hemorrhagic stroke (e.g., aneurysm, vascular malformation, other). Use when coding a definitive hemorrhagic stroke Condition to support analytics and decision support; do not use for non-hemorrhagic etiologies or when the cause is unknown/undetermined." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -527,6 +528,21 @@
        ] ;
        fhir:name [ fhir:v "Initial Care Intensity ValueSet" ] ;
        fhir:description [ fhir:v "ValueSet indicating the level of care provided initially." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://alvumu.github.io/StructureDefinition/ischemic-stroke-etiology-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/ischemic-stroke-etiology-ext" ]
+       ] ;
+       fhir:name [ fhir:v "Ischemic Stroke – Etiology" ] ;
+       fhir:description [ fhir:v "Records the determined ischemic stroke etiology as a CodeableConcept bound (required) to StrokeEtiologyVS (e.g., cardioembolic, large artery atherosclerosis, lacunar, cryptogenic). Apply to definitive ischemic stroke Conditions after diagnostic workup; avoid use for hemorrhagic strokes or provisional hypotheses not yet established." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -692,34 +708,6 @@
        ] ;
        fhir:name [ fhir:v "Observation Timing Context Extension" ] ;
        fhir:description [ fhir:v "Specifies the timing context or phase (e.g., pre-stroke, admission, discharge, 3-month) in which an observation or assessment was made." ] ;
-       fhir:isExample [ fhir:v false ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/onset-date-ext> ;
-         fhir:reference [ fhir:v "StructureDefinition/onset-date-ext" ]
-       ] ;
-       fhir:name [ fhir:v "OnsetDateExt" ] ;
-       fhir:isExample [ fhir:v false ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/onset-time-ext> ;
-         fhir:reference [ fhir:v "StructureDefinition/onset-time-ext" ]
-       ] ;
-       fhir:name [ fhir:v "OnsetTimeExt" ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -1075,7 +1063,7 @@
          fhir:reference [ fhir:v "StructureDefinition/stroke-diagnosis-condition-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Diagnosis Condition Profile" ] ;
-       fhir:description [ fhir:v "Represents the final diagnosis of the current stroke event." ] ;
+       fhir:description [ fhir:v "Defines a Condition profile constrained to represent the definitive diagnosis of the current stroke event during the indexed encounter. The profile fixes category to encounter-diagnosis, binds code (required) to StrokeDiagnosisVS, and prohibits onset[x] to avoid ambiguity with symptom-onset capture via dedicated extensions. Use this profile for final/confirmed stroke diagnoses recorded at discharge or after diagnostic workup; do not use it for history-of conditions, screening findings, or provisional ‘rule-out’ statements. Optional extensions capture hemorrhagic bleeding reason, ischemic etiology, and structured onset date/time when clinically known." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -1202,6 +1190,36 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://alvumu.github.io/StructureDefinition/onset-date-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/onset-date-ext" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Onset Date" ] ;
+       fhir:description [ fhir:v "Captures the calendar date (value[x] = date) of symptom onset for the indexed stroke event when known, enabling calculation of onset-to-door metrics and adherence to time-sensitive pathways. Use alongside OnsetTimeExt when hour/minute precision is available; omit if onset is unknown or inapplicable." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://alvumu.github.io/StructureDefinition/onset-time-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/onset-time-ext" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Onset Time" ] ;
+       fhir:description [ fhir:v "Captures the clock time (value[x] = time) of symptom onset for the indexed stroke event when available, complementing OnsetDateExt to support precise onset-to-treatment intervals. Use local time of the clinical setting; omit if time is unknown or estimated beyond acceptable precision." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
@@ -1240,7 +1258,7 @@
          fhir:reference [ fhir:v "StructureDefinition/stroke-risk-factor-condition-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Risk Factor Condition Profile" ] ;
-       fhir:description [ fhir:v "Represents a known condition or risk factor relevant to stroke." ] ;
+       fhir:description [ fhir:v "Defines a Condition profile for pre-existing or concurrent conditions that increase stroke risk (e.g., atrial fibrillation/flutter, diabetes, hypertension, coronary disease). The profile fixes category to problem-list-item, binds code (required) to StrokeRiskFactorVS, and supports onset[x] and recordedDate to document chronology and longitudinal tracking. Use this profile to maintain the problem list and to support risk assessment and CDS; do not use it to code the acute stroke event itself." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -1521,20 +1539,6 @@
          fhir:v "http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile"^^xsd:anyURI ;
          fhir:link <http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile>
        ] )
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/ischemic-stroke-etiology-ext> ;
-         fhir:reference [ fhir:v "StructureDefinition/ischemic-stroke-etiology-ext" ]
-       ] ;
-       fhir:name [ fhir:v "StrokeStrokeEtiologyExt" ] ;
-       fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

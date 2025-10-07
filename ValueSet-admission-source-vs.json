@@ -7,7 +7,7 @@
   },
   "url" : "http://testSK.org/ValueSet/admission-source-vs",
   "version" : "0.1.0",
-  "name" : "AdmissionSourceValueset",
+  "name" : "AdmissionSourceValueSet",
   "title" : "Admission Sources ValueSet",
   "status" : "draft",
   "experimental" : true,
@@ -21,6 +21,9 @@
     }]
   }],
   "description" : "Defines the modes of transport or pathways by which the patient arrived.",
+  "immutable" : false,
+  "purpose" : "To standardize the capture of patient admission sources for workflow, reporting, and interoperability.",
+  "copyright" : "This value set includes SNOMED CT® content. SNOMED CT® is distributed by SNOMED International.",
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",

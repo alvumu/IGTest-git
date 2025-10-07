@@ -188,12 +188,12 @@
 
 <h2 id="root">: Stroke Risk Factor ValueSet - XML Representation</h2>
 
-  <table class="colsd">
+  <table class="colsi">
     <tr>
 
       <td colspan="2">
         
-          Draft
+          Active
           
             as of 2025-10-07
           
@@ -220,10 +220,11 @@
   &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.text">text</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.url">url</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://testSK.org/ValueSet/stroke-risk-factor-vs&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;StrokeRiskFactorValueset&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;StrokeRiskFactorValueSet&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Stroke Risk Factor ValueSet&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2025-10-07T10:46:08+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2025-10-07&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;UMU&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;UMU&quot;/&gt;
@@ -234,6 +235,11 @@
   &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.contact">contact</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.description">description</a>
                <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status.&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.immutable">immutable</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.purpose">purpose</a>
+           <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;To aggregate core stroke risk factors and unknown/absent problem concepts for comprehensive capture and validation.&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.copyright">copyright</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;This value set includes SNOMED CT® content and may include HL7 IPS value set content. SNOMED CT® is distributed by SNOMED International.&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose">compose</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">include</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.valueSet">valueSet</a>
@@ -268,7 +274,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Oct 7, 2025 10:46+0000">2025-10-07</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Oct 7, 2025 11:37+0000">2025-10-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

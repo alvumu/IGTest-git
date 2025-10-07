@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-10-07T10:46:08+00:00",
+  "date" : "2025-10-07T11:37:10+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -353,7 +353,8 @@
       "reference" : {
         "reference" : "StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext"
       },
-      "name" : "HemorrhagicStrokeBleedingReasonExt",
+      "name" : "Hemorrhagic Stroke – Bleeding Reason",
+      "description" : "Captures, as a CodeableConcept bound (required) to HemorrhagicStrokeBleedingReasonVS, the identified cause of intracranial bleeding in hemorrhagic stroke (e.g., aneurysm, vascular malformation, other). Use when coding a definitive hemorrhagic stroke Condition to support analytics and decision support; do not use for non-hemorrhagic etiologies or when the cause is unknown/undetermined.",
       "isExample" : false
     },
     {
@@ -402,6 +403,18 @@
       },
       "name" : "Initial Care Intensity ValueSet",
       "description" : "ValueSet indicating the level of care provided initially.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ischemic-stroke-etiology-ext"
+      },
+      "name" : "Ischemic Stroke – Etiology",
+      "description" : "Records the determined ischemic stroke etiology as a CodeableConcept bound (required) to StrokeEtiologyVS (e.g., cardioembolic, large artery atherosclerosis, lacunar, cryptogenic). Apply to definitive ischemic stroke Conditions after diagnostic workup; avoid use for hemorrhagic strokes or provisional hypotheses not yet established.",
       "isExample" : false
     },
     {
@@ -534,28 +547,6 @@
       },
       "name" : "Observation Timing Context Extension",
       "description" : "Specifies the timing context or phase (e.g., pre-stroke, admission, discharge, 3-month) in which an observation or assessment was made.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/onset-date-ext"
-      },
-      "name" : "OnsetDateExt",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/onset-time-ext"
-      },
-      "name" : "OnsetTimeExt",
       "isExample" : false
     },
     {
@@ -830,7 +821,7 @@
         "reference" : "StructureDefinition/stroke-diagnosis-condition-profile"
       },
       "name" : "Stroke Diagnosis Condition Profile",
-      "description" : "Represents the final diagnosis of the current stroke event.",
+      "description" : "Defines a Condition profile constrained to represent the definitive diagnosis of the current stroke event during the indexed encounter. The profile fixes category to encounter-diagnosis, binds code (required) to StrokeDiagnosisVS, and prohibits onset[x] to avoid ambiguity with symptom-onset capture via dedicated extensions. Use this profile for final/confirmed stroke diagnoses recorded at discharge or after diagnostic workup; do not use it for history-of conditions, screening findings, or provisional ‘rule-out’ statements. Optional extensions capture hemorrhagic bleeding reason, ischemic etiology, and structured onset date/time when clinically known.",
       "isExample" : false
     },
     {
@@ -932,6 +923,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/onset-date-ext"
+      },
+      "name" : "Stroke Onset Date",
+      "description" : "Captures the calendar date (value[x] = date) of symptom onset for the indexed stroke event when known, enabling calculation of onset-to-door metrics and adherence to time-sensitive pathways. Use alongside OnsetTimeExt when hour/minute precision is available; omit if onset is unknown or inapplicable.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/onset-time-ext"
+      },
+      "name" : "Stroke Onset Time",
+      "description" : "Captures the clock time (value[x] = time) of symptom onset for the indexed stroke event when available, complementing OnsetDateExt to support precise onset-to-treatment intervals. Use local time of the clinical setting; omit if time is unknown or estimated beyond acceptable precision.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -962,7 +977,7 @@
         "reference" : "StructureDefinition/stroke-risk-factor-condition-profile"
       },
       "name" : "Stroke Risk Factor Condition Profile",
-      "description" : "Represents a known condition or risk factor relevant to stroke.",
+      "description" : "Defines a Condition profile for pre-existing or concurrent conditions that increase stroke risk (e.g., atrial fibrillation/flutter, diabetes, hypertension, coronary disease). The profile fixes category to problem-list-item, binds code (required) to StrokeRiskFactorVS, and supports onset[x] and recordedDate to document chronology and longitudinal tracking. Use this profile to maintain the problem list and to support risk assessment and CDS; do not use it to code the acute stroke event itself.",
       "isExample" : false
     },
     {
@@ -1168,17 +1183,6 @@
       "name" : "StrokeRiskFactorConditionExample",
       "isExample" : true,
       "profile" : ["http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ischemic-stroke-etiology-ext"
-      },
-      "name" : "StrokeStrokeEtiologyExt",
-      "isExample" : false
     },
     {
       "extension" : [{

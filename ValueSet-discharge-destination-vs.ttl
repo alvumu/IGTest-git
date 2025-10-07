@@ -15,7 +15,7 @@
   ] ; # 
   fhir:url [ fhir:v "http://testSK.org/ValueSet/discharge-destination-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
-  fhir:name [ fhir:v "DischargeDestinationValueset"] ; # 
+  fhir:name [ fhir:v "DischargeDestinationValueSet"] ; # 
   fhir:title [ fhir:v "Discharge Destination ValueSet"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v true] ; # 
@@ -29,6 +29,9 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Defines possible patient discharge destinations."] ; # 
+  fhir:immutable [ fhir:v false] ; # 
+  fhir:purpose [ fhir:v "To support consistent recording of discharge destinations for analytics, reporting, and care coordination."] ; # 
+  fhir:copyright [ fhir:v "This value set includes SNOMED CT® content. SNOMED CT® is distributed by SNOMED International."] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;

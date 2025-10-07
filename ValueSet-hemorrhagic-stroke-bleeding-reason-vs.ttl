@@ -29,6 +29,9 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Specifies the identified cause of a hemorrhagic stroke, typically used with an extension."] ; # 
+  fhir:immutable [ fhir:v false] ; # 
+  fhir:purpose [ fhir:v "To enable consistent capture of the underlying cause of bleeding in hemorrhagic stroke."] ; # 
+  fhir:copyright [ fhir:v "© Tecnomod. This value set includes locally defined codes."] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [ fhir:v "http://testSK.org/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs"^^xsd:anyURI ]
