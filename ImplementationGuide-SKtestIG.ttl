@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-07T12:40:55+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-07T16:03:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -646,8 +646,8 @@
          fhir:link <https://alvumu.github.io/CodeSystem/mtici-score-cs> ;
          fhir:reference [ fhir:v "CodeSystem/mtici-score-cs" ]
        ] ;
-       fhir:name [ fhir:v "mTICI Score Code System" ] ;
-       fhir:description [ fhir:v "CodeSystem containing the codes to represent the mTICI score." ] ;
+       fhir:name [ fhir:v "MTICI Score Code System" ] ;
+       fhir:description [ fhir:v "CodeSystem containing the codes to represent the MTICI score." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -691,8 +691,8 @@
          fhir:link <https://alvumu.github.io/ValueSet/mtici-score-vs> ;
          fhir:reference [ fhir:v "ValueSet/mtici-score-vs" ]
        ] ;
-       fhir:name [ fhir:v "mTICI Score ValueSet" ] ;
-       fhir:description [ fhir:v "ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure." ] ;
+       fhir:name [ fhir:v "MTICI Score ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet containing the codes to represent the MTICI score used to assess the degree of reperfusion after a thrombectomy procedure." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -892,7 +892,7 @@
          fhir:reference [ fhir:v "ValueSet/specific-finding-codes-vs" ]
        ] ;
        fhir:name [ fhir:v "Specific Stroke Finding Codes ValueSet" ] ;
-       fhir:description [ fhir:v "Codes for specific clinical findings relevant to stroke (Afib/Flutter status, mTICI score)." ] ;
+       fhir:description [ fhir:v "Codes for specific clinical findings relevant to stroke (Afib/Flutter status, MTICI score)." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [

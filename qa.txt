@@ -1,10 +1,10 @@
 IGTest : Validation Results
 =========================================
 
-err = 189, warn = 142, info = 41
+err = 189, warn = 139, info = 41
 IG Publisher Version: 2.0.19
-Generated Tue Oct 07 12:43:02 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = https://alvumu.github.io)
- Build Errors : 0 / 27 / 0
+Generated Tue Oct 07 16:06:04 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = https://alvumu.github.io)
+ Build Errors : 0 / 26 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-brain-imaging-type-cs : 2 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs : 2 / 2 / 2
@@ -13,7 +13,7 @@ Generated Tue Oct 07 12:43:02 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (c
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-initial-care-intensity-cs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-medication-statement-cs : 2 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mrs-score-cs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-code-cs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-code-cs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-score-cs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-procedure-timing-context-cs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-arrival-mode-cs : 2 / 0 / 1
@@ -92,7 +92,7 @@ Generated Tue Oct 07 12:43:02 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (c
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-initial-care-intensity-vs : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-medicationStatement-meds-codes-vs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mrs-score-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mtici-code-vs : 2 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mtici-code-vs : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mtici-score-vs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-perforation-procedures-vs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-procedure-timing-context-vs : 2 / 1 / 1
@@ -137,7 +137,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/StrokeThrombolysisExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/TimingMetricObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/VitalSignObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: /home/runner/work/IGTest-git/IGTest-git/output/downloads.html: Illegal HTML: illegal html element: your-file (.json -ig package.tgz)
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
@@ -179,7 +178,6 @@ ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/mrs-score-cs'): Conf
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mrs-score-cs: URL Mismatch https://alvumu.github.io/CodeSystem/mrs-score-cs vs http://testSK.org/CodeSystem/mrs-score-cs
 == fsh-generated/resources/CodeSystem-mtici-code-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/mtici-code-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-code-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/mtici-code-cs) does not match the URL (http://testSK.org/CodeSystem/mtici-code-cs). Use the special-url parameter if you really mean for it not to match
-WARNING: CodeSystem/mtici-code-cs: CodeSystem: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CodeSystem)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-code-cs: URL Mismatch https://alvumu.github.io/CodeSystem/mtici-code-cs vs http://testSK.org/CodeSystem/mtici-code-cs
 == fsh-generated/resources/CodeSystem-mtici-score-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/mtici-score-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-score-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/mtici-score-cs) does not match the URL (http://testSK.org/CodeSystem/mtici-score-cs). Use the special-url parameter if you really mean for it not to match
@@ -520,7 +518,6 @@ WARNING: ValueSet/mrs-score-vs: ValueSet: Published value sets SHOULD conform to
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mrs-score-vs: URL Mismatch https://alvumu.github.io/ValueSet/mrs-score-vs vs http://testSK.org/ValueSet/mrs-score-vs
 == fsh-generated/resources/ValueSet-mtici-code-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/mtici-code-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mtici-code-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/mtici-code-vs) does not match the URL (http://testSK.org/ValueSet/mtici-code-vs). Use the special-url parameter if you really mean for it not to match
-WARNING: ValueSet/mtici-code-vs: ValueSet: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/ValueSet)
 WARNING: ValueSet/mtici-code-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mtici-code-vs: URL Mismatch https://alvumu.github.io/ValueSet/mtici-code-vs vs http://testSK.org/ValueSet/mtici-code-vs
 == fsh-generated/resources/ValueSet-mtici-score-vs.json ==
