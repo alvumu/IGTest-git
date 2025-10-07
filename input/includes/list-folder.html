@@ -51,6 +51,20 @@
 {%- assign out = out | where_exp:'p','p.url != page.url' -%}
 {%- assign out = out | where_exp:'p','p.url and p.url contains ".html"' -%}
 
+{%- comment %} Mantener solo las páginas canónicas de ValueSet (sin json/xml/ttl/testing/change.history) {% endcomment -%}
+{%- assign filtered = '' | split: '' -%}
+{%- for p in out -%}
+  {%- assign fname = p.name | default: p.path | downcase -%}
+  {%- unless fname contains '.json.' 
+        or fname contains '.xml.' 
+        or fname contains '.ttl.' 
+        or fname contains '.change.history.' 
+        or fname contains '-testing.' -%}
+    {%- assign filtered = filtered | push: p -%}
+  {%- endunless -%}
+{%- endfor -%}
+{%- assign out = filtered -%}
+
 {%- comment %} Filtro por nombre (opcional) {% endcomment -%}
 {%- if nameContains != '' -%}
   {%- assign needle = nameContains | downcase -%}
@@ -83,7 +97,6 @@
     <li><a href="{{ href_rel }}">{{ title }}</a></li>
   {%- endif -%}
 {%- endfor -%}
-
 
 {%- if out == empty -%}
   <li><em>No entries found{% if dir != '' %} in {{ dir }}{% endif %}{% if srcpath != '' %} (srcpath={{ srcpath }}){% endif %}{% if nameContains != '' %} (name contains '{{ nameContains }}'){% endif %}{% if navSection != '' %} (navSection='{{ navSection }}'){% endif %}</em></li>

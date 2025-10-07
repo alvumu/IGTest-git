@@ -73,8 +73,8 @@ CodeSystem: MticiScoreCS
 Id: mtici-score-cs
 * ^url = MticiScoreCS_URL
 * ^version = "1.0.0"
-* ^title = "mTICI Score Code System"
-* ^description = "CodeSystem containing the codes to represent the mTICI score."
+* ^title = "MTICI Score Code System"
+* ^description = "CodeSystem containing the codes to represent the MTICI score."
 * ^status = #draft
 * ^experimental = true
 * ^caseSensitive = false  
@@ -95,9 +95,9 @@ ValueSet: MTICIScoreValueSet // Name from JSON
 Id: mtici-score-vs // Id from JSON
 * ^url = MticiScoreVS_URL
 * ^version = "1.0.0"
-* ^title = "mTICI Score ValueSet"
+* ^title = "MTICI Score ValueSet"
 * ^name = "MTICIScoreValueSet" // Added name from JSON
-* ^description = "ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure."
+* ^description = "ValueSet containing the codes to represent the MTICI score used to assess the degree of reperfusion after a thrombectomy procedure."
 * ^status = #draft
 * ^experimental = true
 * ^date = "2025-03-31"
@@ -225,12 +225,12 @@ Id: specific-finding-codes-vs
 * ^url = SpecificFindingCodesVS_URL
 * ^version = "1.0.0"
 * ^title = "Specific Stroke Finding Codes ValueSet"
-* ^description = "Codes for specific clinical findings relevant to stroke (Afib/Flutter status, mTICI score)."
+* ^description = "Codes for specific clinical findings relevant to stroke (Afib/Flutter status, MTICI score)."
 * ^status = #active
 * include SCT#49436004 "Atrial fibrillation (disorder)"
 * include SCT#5370000 "Atrial flutter (disorder)"
 
-CodeSystem: mTICICodeCS
+CodeSystem: MTICICodeCS
 Id: mtici-code-cs
 * ^url = MticiCodeCS_URL
 * ^version = "1.0.0"
@@ -241,7 +241,7 @@ Id: mtici-code-cs
 * ^caseSensitive = false
 * #mTICI "mTICI" "Modified Thrombolysis in Cerebral Infarction" 
 
-ValueSet: mTICICodeVS
+ValueSet: MTICICodeVS
 Id: mtici-code-vs
 * ^url = MticiCodeVS_URL
 * ^version = "1.0.0"

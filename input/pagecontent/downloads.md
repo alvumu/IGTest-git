@@ -22,3 +22,4 @@ To validate against this IG:
 
 ```bash
 java -jar validator-cli.jar <your-file>.json -ig package.tgz
+```
