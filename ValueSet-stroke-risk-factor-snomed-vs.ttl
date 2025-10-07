@@ -18,7 +18,8 @@
   fhir:name [ fhir:v "StrokeRiskFactorSNOMEDVS"] ; # 
   fhir:title [ fhir:v "Stroke Risk Factor ValueSet"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-10-06T07:31:52+00:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-07"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -28,6 +29,9 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke."] ; # 
+  fhir:immutable [ fhir:v false] ; # 
+  fhir:purpose [ fhir:v "To provide a standardized set of SNOMED CT concepts representing stroke-related risk factors for coding and validation."] ; # 
+  fhir:copyright [ fhir:v "This value set includes SNOMED CT® content. SNOMED CT® is distributed by SNOMED International."] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;

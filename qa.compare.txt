@@ -1,7 +1,7 @@
 IGTest : Validation Results
 =========================================
 
-err = 189, warn = 149, info = 41
+err = 189, warn = 147, info = 41
 $--
 Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.github.io)
  Build Errors : 0 / 31 / 0
@@ -99,12 +99,12 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.git
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-specific-finding-codes-vs : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-arrival-mode-vs : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-circumstance-codes-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-diagnosis-vs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-diagnosis-vs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-discharge-destination-vs : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-etiology-vs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-finding-codes-vs : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-vs : 4 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallow-procedures-vs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallowing-screening-timing-category-vs : 2 / 1 / 1
@@ -551,7 +551,6 @@ WARNING: ValueSet/stroke-circumstance-codes-vs: ValueSet: Published value sets S
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-circumstance-codes-vs: URL Mismatch https://alvumu.github.io/ValueSet/stroke-circumstance-codes-vs vs http://testSK.org/ValueSet/stroke-circumstance-codes-vs
 == fsh-generated/resources/ValueSet-stroke-diagnosis-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/stroke-diagnosis-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-diagnosis-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/stroke-diagnosis-vs) does not match the URL (http://testSK.org/ValueSet/stroke-diagnosis-vs). Use the special-url parameter if you really mean for it not to match
-WARNING: ValueSet/stroke-diagnosis-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-diagnosis-vs: URL Mismatch https://alvumu.github.io/ValueSet/stroke-diagnosis-vs vs http://testSK.org/ValueSet/stroke-diagnosis-vs
 == fsh-generated/resources/ValueSet-stroke-discharge-destination-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/stroke-discharge-destination-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-discharge-destination-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/stroke-discharge-destination-vs) does not match the URL (http://testSK.org/ValueSet/stroke-discharge-destination-vs). Use the special-url parameter if you really mean for it not to match
@@ -570,7 +569,6 @@ WARNING: ValueSet/stroke-proc-not-done-reason-vs: ValueSet: Published value sets
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs: URL Mismatch https://alvumu.github.io/ValueSet/stroke-proc-not-done-reason-vs vs http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs
 == fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/stroke-risk-factor-snomed-vs) does not match the URL (http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs). Use the special-url parameter if you really mean for it not to match
-WARNING: ValueSet/stroke-risk-factor-snomed-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs: URL Mismatch https://alvumu.github.io/ValueSet/stroke-risk-factor-snomed-vs vs http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs
 == fsh-generated/resources/ValueSet-stroke-risk-factor-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/stroke-risk-factor-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/stroke-risk-factor-vs) does not match the URL (http://testSK.org/ValueSet/stroke-risk-factor-vs). Use the special-url parameter if you really mean for it not to match

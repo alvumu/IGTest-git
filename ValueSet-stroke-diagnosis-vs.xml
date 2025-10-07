@@ -10,7 +10,8 @@
   <name value="StrokeDiagnosisVS"/>
   <title value="Stroke Diagnosis ValueSet"/>
   <status value="active"/>
-  <date value="2025-10-06T07:31:52+00:00"/>
+  <experimental value="false"/>
+  <date value="2025-10-07"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -19,7 +20,10 @@
       <value value="http://testSK.org/umu"/>
     </telecom>
   </contact>
-  <description value="Defines the SNOMED CT codes for final stroke diagnoses, including specific types and etiologies where applicable."/>
+  <description value="SNOMED CT concepts representing final stroke-related diagnoses intended for use in Condition.code (and similar elements) within this IG. The scope covers ischemic stroke, intracerebral hemorrhage, subarachnoid hemorrhage, cerebral venous thrombosis, and transient ischemic attack (TIA). This value set is designed to support consistent capture, validation, analytics, and decision support. Implementers should expand against a terminology server using the appropriate SNOMED CT edition/version and preferred language(s) for display. Localizations or national derivatives MAY provide additional designations without altering the canonical definition. This value set is not intended for history-of, screening, or procedural concepts."/>
+  <immutable value="false"/>
+  <purpose value="To provide a consistent set of SNOMED CT concepts for coding definitive stroke-related diagnoses in this IG."/>
+  <copyright value="This value set includes SNOMED CT® content. SNOMED CT® is distributed by SNOMED International."/>
   <compose>
     <include>
       <system value="http://snomed.info/sct"/>

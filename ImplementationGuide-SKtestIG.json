@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-10-06T07:31:52+00:00",
+  "date" : "2025-10-07T10:46:08+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -842,7 +842,7 @@
         "reference" : "ValueSet/stroke-diagnosis-vs"
       },
       "name" : "Stroke Diagnosis ValueSet",
-      "description" : "Defines the SNOMED CT codes for final stroke diagnoses, including specific types and etiologies where applicable.",
+      "description" : "SNOMED CT concepts representing final stroke-related diagnoses intended for use in Condition.code (and similar elements) within this IG. The scope covers ischemic stroke, intracerebral hemorrhage, subarachnoid hemorrhage, cerebral venous thrombosis, and transient ischemic attack (TIA). This value set is designed to support consistent capture, validation, analytics, and decision support. Implementers should expand against a terminology server using the appropriate SNOMED CT edition/version and preferred language(s) for display. Localizations or national derivatives MAY provide additional designations without altering the canonical definition. This value set is not intended for history-of, screening, or procedural concepts.",
       "isExample" : false
     },
     {
@@ -1369,12 +1369,6 @@
         "sourceUrl" : "examples.html",
         "name" : "examples.html",
         "title" : "Examples",
-        "generation" : "markdown"
-      },
-      {
-        "sourceUrl" : "terminology.html",
-        "name" : "terminology.html",
-        "title" : "Terminology",
         "generation" : "markdown"
       },
       {

@@ -10,7 +10,8 @@
   "name" : "StrokeRiskFactorSNOMEDVS",
   "title" : "Stroke Risk Factor ValueSet",
   "status" : "active",
-  "date" : "2025-10-06T07:31:52+00:00",
+  "experimental" : false,
+  "date" : "2025-10-07",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -20,6 +21,9 @@
     }]
   }],
   "description" : "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke.",
+  "immutable" : false,
+  "purpose" : "To provide a standardized set of SNOMED CT concepts representing stroke-related risk factors for coding and validation.",
+  "copyright" : "This value set includes SNOMED CT® content. SNOMED CT® is distributed by SNOMED International.",
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
