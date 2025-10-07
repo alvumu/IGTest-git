@@ -7,4 +7,4 @@ navSection: codesystems
 # CodeSystems
 List of **CodeSystems** defined in this guide:
 
-{% include list-folder.html srcpath="codesystems" %}
+{% include list-folder.html srcpath="CodeSystem" %}

@@ -15,4 +15,18 @@ Each example is organized under its corresponding profile to make navigation and
 
 > 💡 Tip: If you’re new to the guide, start by opening a profile you care about and then review its related examples here to see the profile “in action”.
 
-{% include list-folder.html srcpath='examples' %}
+
+## Condition Examples
+{% include list-folder.html srcpath='Condition' %}
+
+## Encounter Examples
+{% include list-folder.html srcpath='Encounter' %}
+
+## Observation Examples
+{% include list-folder.html srcpath='Observation' %}
+
+## Procedure Examples
+{% include list-folder.html srcpath='Procedure' %}
+
+## Patient Examples
+{% include list-folder.html srcpath='Patient' %}

@@ -7,4 +7,4 @@ navSection: valuesets
 
 The **ValueSets** implemented in this implementation guide are listed below.
 
-{% include list-folder.html srcpath="valueset" %}
+{% include list-folder.html srcpath="ValueSet" %}
