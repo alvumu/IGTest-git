@@ -5,6 +5,6 @@ navSection: valuesets
 ---
 # ValueSets
 
-Listado de **ValueSets** definidos en esta guía:
+The **ValueSets** implemented in this implementation guide are listed below.
 
 {% include list-folder.html srcpath="valueset" %}

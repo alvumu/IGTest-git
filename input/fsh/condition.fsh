@@ -28,9 +28,20 @@ Alias: OnsetTimeEXT_URL = http://testSK.org/StructureDefinition/onset-time-ext
 ValueSet: StrokeDiagnosisVS
 Id: stroke-diagnosis-vs
 Title: "Stroke Diagnosis ValueSet"
-Description: "Defines the SNOMED CT codes for final stroke diagnoses, including specific types and etiologies where applicable."
+Description: "SNOMED CT concepts representing final stroke-related diagnoses intended for use in Condition.code (and similar elements) within this IG. The scope covers ischemic stroke, intracerebral hemorrhage, subarachnoid hemorrhage, cerebral venous thrombosis, and transient ischemic attack (TIA). This value set is designed to support consistent capture, validation, analytics, and decision support. Implementers should expand against a terminology server using the appropriate SNOMED CT edition/version and preferred language(s) for display. Localizations or national derivatives MAY provide additional designations without altering the canonical definition. This value set is not intended for history-of, screening, or procedural concepts."
 * ^url = StrokeDiagnosisVS_URL
+* ^name = "StrokeDiagnosisVS"
 * ^status = #active
+* ^version = "1.0.0"
+* ^date = "2025-10-07"
+* ^experimental = false
+* ^publisher = "Tecnomod"
+* ^contact[0].telecom[0].system = #email
+* ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
+* ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
+* ^purpose = "To provide a consistent set of SNOMED CT concepts for coding definitive stroke-related diagnoses in this IG."
+* ^copyright = "This value set includes SNOMED CT® content. SNOMED CT® is distributed by SNOMED International."
+* ^immutable = false
 * include SCT#422504002 "Ischemic stroke (disorder)"
 * include SCT#274100004 "Cerebral hemorrhage (disorder)"
 * include SCT#266257000 "Transient ischemic attack (disorder)"
@@ -43,7 +54,18 @@ Id: stroke-risk-factor-snomed-vs
 Title: "Stroke Risk Factor ValueSet"
 Description: "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke."
 * ^url = StrokeRiskFactorSNOMEDVS_URL
+* ^name = "StrokeRiskFactorSNOMEDVS"
 * ^status = #active
+* ^version = "1.0.0"
+* ^date = "2025-10-07"
+* ^experimental = false
+* ^publisher = "Tecnomod"
+* ^contact[0].telecom[0].system = #email
+* ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
+* ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
+* ^purpose = "To provide a standardized set of SNOMED CT concepts representing stroke-related risk factors for coding and validation."
+* ^copyright = "This value set includes SNOMED CT® content. SNOMED CT® is distributed by SNOMED International."
+* ^immutable = false
 * SCT#5370000 "Atrial flutter (disorder)"
 * SCT#49436004 "Atrial fibrillation (disorder)"
 * SCT#22298006 "Myocardial infarction (disorder)"
@@ -55,6 +77,7 @@ Description: "Defines the SNOMED CT codes for conditions or risk factors relevan
 * SCT#266257000 "Transient ischemic attack (disorder)"
 * SCT#422504002 "Ischemic stroke (disorder)"
 * SCT#230690007 "Cerebrovascular accident (disorder)"
+
 
 ValueSet: StrokeRiskFactorVS
 Id: stroke-risk-factor-vs
