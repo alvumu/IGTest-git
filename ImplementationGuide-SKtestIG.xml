@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="IGTest"/>
   <status value="draft"/>
-  <date value="2025-10-07T16:03:53+00:00"/>
+  <date value="2025-10-09T10:11:37+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -219,35 +219,15 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/encounter-provider-provenance"/>
-      </reference>
-      <name value="Encounter Provider Provenance Profile (R5)"/>
-      <description value="R5 Profile for Provenance resource linking the healthcare provider organization (agent) to the specific Encounter resource (target)."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Provenance"/>
-      </extension>
-      <reference>
-        <reference value="Provenance/ExampleEncounterProviderProvenance"/>
-      </reference>
-      <name value="ExampleEncounterProviderProvenance"/>
-      <isExample value="true"/>
-      <profile value="http://testSK.org/StructureDefinition/encounter-provider-provenance"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
       </extension>
       <reference>
-        <reference value="Organization/ExampleOrganization"/>
+        <reference value="Organization/ExampleStrokeOrganization"/>
       </reference>
-      <name value="ExampleOrganization"/>
+      <name value="Example Stroke Registry Organization"/>
+      <description value="Matches build_organization: active=true, name from hospital_name, identifier from mapped_org_id."/>
       <isExample value="true"/>
+      <profile value="http://testSK.org/StructureDefinition/stroke-registry-organization-profile"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -884,6 +864,17 @@
       </reference>
       <name value="Stroke Procedure Not Done Reason ValueSet"/>
       <description value="ValueSet containing specific codes to indicate why thrombolysis or thrombectomy was not performed."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/stroke-registry-organization-profile"/>
+      </reference>
+      <name value="Stroke Registry Organization Profile"/>
+      <description value="Organization profile ensuring an active organization with a registry identifier (system=https://stroke.qualityregistry.org) and a required name, aligned with the build_organization() transformation."/>
       <isExample value="false"/>
     </resource>
     <resource>

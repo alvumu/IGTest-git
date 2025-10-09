@@ -1,0 +1,177 @@
+# Stroke Thrombolysis Procedure Profile (R5) - v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Stroke Thrombolysis Procedure Profile (R5)**
+
+## Resource Profile: Stroke Thrombolysis Procedure Profile (R5) 
+
+| | |
+| :--- | :--- |
+| *Official URL*:http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile | *Version*:0.1.0 |
+| Active as of 2025-10-09 | *Computable Name*:StrokeThrombolysisProcedureProfile |
+
+ 
+Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context. 
+
+**Usages:**
+
+* Examples for this Profile: [Procedure/StrokeThrombolysisExample](Procedure-StrokeThrombolysisExample.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SKtestIG|current/StructureDefinition/stroke-mechanical-procedure-profile)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-stroke-mechanical-procedure-profile.csv), [Excel](StructureDefinition-stroke-mechanical-procedure-profile.xlsx), [Schematron](StructureDefinition-stroke-mechanical-procedure-profile.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "stroke-mechanical-procedure-profile",
+  "url" : "http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile",
+  "version" : "0.1.0",
+  "name" : "StrokeThrombolysisProcedureProfile",
+  "title" : "Stroke Thrombolysis Procedure Profile (R5)",
+  "status" : "active",
+  "date" : "2025-10-09T10:11:37+00:00",
+  "publisher" : "UMU",
+  "contact" : [
+    {
+      "name" : "UMU",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://testSK.org/umu"
+        }
+      ]
+    }
+  ],
+  "description" : "Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [
+    {
+      "identity" : "workflow",
+      "uri" : "http://hl7.org/fhir/workflow",
+      "name" : "Workflow Pattern"
+    },
+    {
+      "identity" : "w5",
+      "uri" : "http://hl7.org/fhir/fivews",
+      "name" : "FiveWs Pattern Mapping"
+    },
+    {
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    },
+    {
+      "identity" : "v2",
+      "uri" : "http://hl7.org/v2",
+      "name" : "HL7 V2 Mapping"
+    }
+  ],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Procedure",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Procedure",
+        "path" : "Procedure"
+      },
+      {
+        "id" : "Procedure.extension",
+        "path" : "Procedure.extension",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "url"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "Procedure.extension:timingContext",
+        "path" : "Procedure.extension",
+        "sliceName" : "timingContext",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://testSK.org/StructureDefinition/procedure-timing-context-ext"
+            ]
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Procedure.status",
+        "path" : "Procedure.status",
+        "mustSupport" : true,
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://hl7.org/fhir/ValueSet/event-status"
+        }
+      },
+      {
+        "id" : "Procedure.statusReason",
+        "path" : "Procedure.statusReason",
+        "mustSupport" : true,
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs"
+        }
+      },
+      {
+        "id" : "Procedure.code",
+        "path" : "Procedure.code",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://testSK.org/ValueSet/perforation-procedures-vs"
+        }
+      },
+      {
+        "id" : "Procedure.occurrence[x]",
+        "path" : "Procedure.occurrence[x]",
+        "type" : [
+          {
+            "code" : "Period"
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Procedure.occurrence[x].start",
+        "path" : "Procedure.occurrence[x].start",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Procedure.occurrence[x].end",
+        "path" : "Procedure.occurrence[x].end",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Procedure.complication",
+        "path" : "Procedure.complication",
+        "mustSupport" : true
+      }
+    ]
+  }
+}
+
+```

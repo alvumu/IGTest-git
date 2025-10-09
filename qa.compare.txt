@@ -1,10 +1,10 @@
 IGTest : Validation Results
 =========================================
 
-err = 189, warn = 139, info = 41
+err = 188, warn = 135, info = 41
 $--
 Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.github.io)
- Build Errors : 0 / 26 / 0
+ Build Errors : 0 / 24 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-brain-imaging-type-cs : 2 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs : 2 / 2 / 2
@@ -40,19 +40,17 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.git
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-StrokeCircumstanceObservationExampleWakeUp : 1 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-TimingMetricObservationExample : 0 / 3 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-VitalSignObservationExample : 0 / 4 / 3
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Organization-ExampleOrganization : 1 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Organization-ExampleStrokeOrganization : 0 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Patient-PatientAgeGenderSnomedExample : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Patient-example-patient : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Procedure-StrokeBrainImagingExample : 0 / 0 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Procedure-StrokeCarotidImagingExample : 0 / 0 / 3
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Procedure-StrokeSwallowingExample : 0 / 0 / 3
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Procedure-StrokeThrombolysisExample : 0 / 0 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Provenance-ExampleEncounterProviderProvenance : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-age-at-onset-observation-profile : 2 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-base-stroke-observation : 2 / 3 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-discharge-department-service-ext : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-discharge-medication-request-profile : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-encounter-provider-provenance : 2 / 5 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-first-hospital-ext : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-functional-score-observation-profile : 2 / 3 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-gender-snomed-ext : 2 / 0 / 1
@@ -74,6 +72,7 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.git
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-diagnosis-condition-profile : 2 / 1 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-encounter-profile : 2 / 4 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-mechanical-procedure-profile : 2 / 4 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-registry-organization-profile : 2 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-risk-factor-condition-profile : 2 / 1 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-swallow-procedure-profile : 2 / 4 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-swallowing-screening-timing-category-ext : 2 / 0 / 1
@@ -117,8 +116,6 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.git
 WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/AgeAtOnsetObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/discharge-medication-request-001.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Provenance/ExampleEncounterProviderProvenance.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/ExampleOrganization.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/FunctionalScoreObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PatientAgeGenderSnomedExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/example-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -303,8 +300,8 @@ INFORMATION: Observation/VitalSignObservationExample: Observation.component[1].v
 WARNING: Observation/VitalSignObservationExample: Observation.component[1].value.ofType(Quantity).system: No definition could be found for URL value 'https://ucum.org/ucum'
 WARNING: Observation/VitalSignObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/VitalSignObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-== fsh-generated/resources/Organization-ExampleOrganization.json ==
-ERROR: Organization/ExampleOrganization: Organization: Constraint failed: org-1: 'The organization SHALL at least have a name or an identifier, and possibly more than one' (defined in http://hl7.org/fhir/StructureDefinition/Organization)
+== fsh-generated/resources/Organization-ExampleStrokeOrganization.json ==
+WARNING: Organization/ExampleStrokeOrganization: Organization.identifier[0].system: No definition could be found for URL value 'https://stroke.qualityregistry.org'
 == fsh-generated/resources/Patient-PatientAgeGenderSnomedExample.json ==
 == fsh-generated/resources/Patient-example-patient.json ==
 == fsh-generated/resources/Procedure-StrokeBrainImagingExample.json ==
@@ -317,7 +314,6 @@ INFORMATION: Procedure/StrokeSwallowingExample: Procedure.extension[0].value.ofT
 INFORMATION: Procedure/StrokeSwallowingExample: Procedure.extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/procedure-timing-context-cs|0.1.0
 == fsh-generated/resources/Procedure-StrokeThrombolysisExample.json ==
 INFORMATION: Procedure/StrokeThrombolysisExample: Procedure.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/procedure-timing-context-cs|0.1.0
-== fsh-generated/resources/Provenance-ExampleEncounterProviderProvenance.json ==
 == fsh-generated/resources/StructureDefinition-age-at-onset-observation-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/age-at-onset-observation-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-age-at-onset-observation-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/age-at-onset-observation-profile) does not match the URL (http://testSK.org/StructureDefinition/age-at-onset-observation-profile). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/age-at-onset-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
@@ -336,14 +332,6 @@ ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Structure
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/discharge-medication-request-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-discharge-medication-request-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/discharge-medication-request-profile) does not match the URL (http://testSK.org/StructureDefinition/discharge-medication-request-profile). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/discharge-medication-request-profile: StructureDefinition.snapshot.element[18].binding: The definition for the element 'MedicationRequest.priority' binds to the value set 'http://hl7.org/fhir/ValueSet/request-priority|5.0.0' which is experimental, but this structure is not labeled as experimental
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-discharge-medication-request-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/discharge-medication-request-profile vs http://testSK.org/StructureDefinition/discharge-medication-request-profile
-== fsh-generated/resources/StructureDefinition-encounter-provider-provenance.json ==
-ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/encounter-provider-provenance'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-encounter-provider-provenance.json - the canonical URL (https://alvumu.github.io/StructureDefinition/encounter-provider-provenance) does not match the URL (http://testSK.org/StructureDefinition/encounter-provider-provenance). Use the special-url parameter if you really mean for it not to match
-WARNING: StructureDefinition/encounter-provider-provenance: StructureDefinition.snapshot.element[19].slicing.discriminator[0].type: The concept 'pattern' is deprecated and its use should be reviewed
-WARNING: StructureDefinition/encounter-provider-provenance: StructureDefinition.differential.element[2].slicing.discriminator[0].type: The concept 'pattern' is deprecated and its use should be reviewed
-WARNING: StructureDefinition/encounter-provider-provenance: StructureDefinition.differential.element[2].slicing.discriminator[0]: The discriminator type 'pattern' has been deprecated. Use type=value with a pattern[x] instead (if this is not an inherited slicing)
-WARNING: StructureDefinition/encounter-provider-provenance: StructureDefinition.snapshot.element[19].slicing.discriminator[0]: The discriminator type 'pattern' has been deprecated. Use type=value with a pattern[x] instead (if this is not an inherited slicing)
-WARNING: StructureDefinition/encounter-provider-provenance: StructureDefinition.snapshot.element[37].binding: The definition for the element 'Provenance.agent.who.type' binds to the value set 'http://hl7.org/fhir/ValueSet/resource-types|5.0.0' which is experimental, but this structure is not labeled as experimental
-ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-encounter-provider-provenance: URL Mismatch https://alvumu.github.io/StructureDefinition/encounter-provider-provenance vs http://testSK.org/StructureDefinition/encounter-provider-provenance
 == fsh-generated/resources/StructureDefinition-first-hospital-ext.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/first-hospital-ext'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-first-hospital-ext.json - the canonical URL (https://alvumu.github.io/StructureDefinition/first-hospital-ext) does not match the URL (http://testSK.org/StructureDefinition/first-hospital-ext). Use the special-url parameter if you really mean for it not to match
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-first-hospital-ext: URL Mismatch https://alvumu.github.io/StructureDefinition/first-hospital-ext vs http://testSK.org/StructureDefinition/first-hospital-ext
@@ -437,6 +425,11 @@ WARNING: StructureDefinition/stroke-mechanical-procedure-profile: StructureDefin
 WARNING: StructureDefinition/stroke-mechanical-procedure-profile: StructureDefinition.snapshot.element[15].binding: The definition for the element 'Procedure.status' binds to the value set 'http://hl7.org/fhir/ValueSet/event-status' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/stroke-mechanical-procedure-profile: StructureDefinition.snapshot.element[18].binding: The definition for the element 'Procedure.code' binds to the value set 'http://testSK.org/ValueSet/perforation-procedures-vs' which is experimental, but this structure is not labeled as experimental
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-mechanical-procedure-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/stroke-mechanical-procedure-profile vs http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile
+== fsh-generated/resources/StructureDefinition-stroke-registry-organization-profile.json ==
+ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/stroke-registry-organization-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-registry-organization-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/stroke-registry-organization-profile) does not match the URL (http://testSK.org/StructureDefinition/stroke-registry-organization-profile). Use the special-url parameter if you really mean for it not to match
+WARNING: StructureDefinition/stroke-registry-organization-profile: StructureDefinition.snapshot.element[15]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/stroke-registry-organization-profile: StructureDefinition.differential.element[3]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-registry-organization-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/stroke-registry-organization-profile vs http://testSK.org/StructureDefinition/stroke-registry-organization-profile
 == fsh-generated/resources/StructureDefinition-stroke-risk-factor-condition-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-risk-factor-condition-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/stroke-risk-factor-condition-profile) does not match the URL (http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile). Use the special-url parameter if you really mean for it not to match
 INFORMATION: StructureDefinition/stroke-risk-factor-condition-profile: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)

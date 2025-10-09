@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-07T16:03:53+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-09T10:11:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -319,48 +319,20 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/encounter-provider-provenance> ;
-         fhir:reference [ fhir:v "StructureDefinition/encounter-provider-provenance" ]
-       ] ;
-       fhir:name [ fhir:v "Encounter Provider Provenance Profile (R5)" ] ;
-       fhir:description [ fhir:v "R5 Profile for Provenance resource linking the healthcare provider organization (agent) to the specific Encounter resource (target)." ] ;
-       fhir:isExample [ fhir:v false ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Provenance"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://alvumu.github.io/Provenance/ExampleEncounterProviderProvenance> ;
-         fhir:reference [ fhir:v "Provenance/ExampleEncounterProviderProvenance" ]
-       ] ;
-       fhir:name [ fhir:v "ExampleEncounterProviderProvenance" ] ;
-       fhir:isExample [ fhir:v true ] ;
-       fhir:profile ( [
-         fhir:v "http://testSK.org/StructureDefinition/encounter-provider-provenance"^^xsd:anyURI ;
-         fhir:link <http://testSK.org/StructureDefinition/encounter-provider-provenance>
-       ] )
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "Organization"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/Organization/ExampleOrganization> ;
-         fhir:reference [ fhir:v "Organization/ExampleOrganization" ]
+         fhir:link <https://alvumu.github.io/Organization/ExampleStrokeOrganization> ;
+         fhir:reference [ fhir:v "Organization/ExampleStrokeOrganization" ]
        ] ;
-       fhir:name [ fhir:v "ExampleOrganization" ] ;
-       fhir:isExample [ fhir:v true ]
+       fhir:name [ fhir:v "Example Stroke Registry Organization" ] ;
+       fhir:description [ fhir:v "Matches build_organization: active=true, name from hospital_name, identifier from mapped_org_id." ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://testSK.org/StructureDefinition/stroke-registry-organization-profile"^^xsd:anyURI ;
+         fhir:link <http://testSK.org/StructureDefinition/stroke-registry-organization-profile>
+       ] )
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1244,6 +1216,21 @@
        ] ;
        fhir:name [ fhir:v "Stroke Procedure Not Done Reason ValueSet" ] ;
        fhir:description [ fhir:v "ValueSet containing specific codes to indicate why thrombolysis or thrombectomy was not performed." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-registry-organization-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/stroke-registry-organization-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Registry Organization Profile" ] ;
+       fhir:description [ fhir:v "Organization profile ensuring an active organization with a registry identifier (system=https://stroke.qualityregistry.org) and a required name, aligned with the build_organization() transformation." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [

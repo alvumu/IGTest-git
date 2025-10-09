@@ -218,15 +218,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-encounter-provider-provenance.html"
-                  title="StructureDefinition/encounter-provider-provenance">Encounter Provider Provenance Profile (R5)</a>
-            </td>
-            <td>
-<p>R5 Profile for Provenance resource linking the healthcare provider organization (agent) to the specific Encounter resource (target).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-patient-age-gender-snomed-profile.html"
                   title="StructureDefinition/patient-age-gender-snomed-profile">Patient with SNOMED Gender and Age (extensions)</a>
             </td>
@@ -304,6 +295,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Profile for recording functional scores (mRS, NIHSS), using an extension for timing context.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-stroke-registry-organization-profile.html"
+                  title="StructureDefinition/stroke-registry-organization-profile">Stroke Registry Organization Profile</a>
+            </td>
+            <td>
+<p>Organization profile ensuring an active organization with a registry identifier (system=https://stroke.qualityregistry.org) and a required name, aligned with the build_organization() transformation.</p>
 </td>
          </tr>
          <tr>
@@ -975,131 +975,188 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <a href="Observation-AgeAtOnsetObservationExample.html"
                   title="Observation/AgeAtOnsetObservationExample">AgeAtOnsetObservationExample</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="MedicationRequest-discharge-medication-request-001.html"
                   title="MedicationRequest/discharge-medication-request-001">DischargeMedicationRequest</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Provenance-ExampleEncounterProviderProvenance.html"
-                  title="Provenance/ExampleEncounterProviderProvenance">ExampleEncounterProviderProvenance</a>
+               <a href="Organization-ExampleStrokeOrganization.html"
+                  title="Organization/ExampleStrokeOrganization">Example Stroke Registry Organization</a>
             </td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-ExampleOrganization.html"
-                  title="Organization/ExampleOrganization">ExampleOrganization</a>
-            </td>
+            <td>
+<p>Matches build_organization: active=true, name from hospital_name, identifier from mapped_org_id.</p>
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-FunctionalScoreObservationExample.html"
                   title="Observation/FunctionalScoreObservationExample">FunctionalScoreObservationExample</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Patient-PatientAgeGenderSnomedExample.html"
                   title="Patient/PatientAgeGenderSnomedExample">PatientAgeGenderSnomedExample</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Patient-example-patient.html" title="Patient/example-patient">PatientExample</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="MedicationStatement-PriorMedicationStatementExample.html"
                   title="MedicationStatement/PriorMedicationStatementExample">PriorMedicationStatementExample</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-SpecificFindingObservationExample.html"
                   title="Observation/SpecificFindingObservationExample">SpecificFindingObservationExample</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-SpecificFindingObservationExampleMTICI.html"
                   title="Observation/SpecificFindingObservationExampleMTICI">SpecificFindingObservationExampleMTICI</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Procedure-StrokeBrainImagingExample.html"
                   title="Procedure/StrokeBrainImagingExample">StrokeBrainImagingExample</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Procedure-StrokeCarotidImagingExample.html"
                   title="Procedure/StrokeCarotidImagingExample">StrokeCarotidImagingExample</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-StrokeCircumstanceObservationExampleWakeUp.html"
                   title="Observation/StrokeCircumstanceObservationExampleWakeUp">StrokeCircumstanceObservationExampleWakeUp</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Condition-StrokeDiagnosisConditionAFib.html"
                   title="Condition/StrokeDiagnosisConditionAFib">StrokeDiagnosisConditionAFib</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Condition-StrokeDiagnosisConditionAFlutter.html"
                   title="Condition/StrokeDiagnosisConditionAFlutter">StrokeDiagnosisConditionAFlutter</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Condition-StrokeDiagnosisConditionExample.html"
                   title="Condition/StrokeDiagnosisConditionExample">StrokeDiagnosisConditionExample</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Encounter-StrokeEncounterExample.html"
                   title="Encounter/StrokeEncounterExample">StrokeEncounterExample</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Condition-StrokeRiskFactorConditionExample.html"
                   title="Condition/StrokeRiskFactorConditionExample">StrokeRiskFactorConditionExample</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Procedure-StrokeSwallowingExample.html"
                   title="Procedure/StrokeSwallowingExample">StrokeSwallowingExample</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Procedure-StrokeThrombolysisExample.html"
                   title="Procedure/StrokeThrombolysisExample">StrokeThrombolysisExample</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-TimingMetricObservationExample.html"
                   title="Observation/TimingMetricObservationExample">TimingMetricObservationExample</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-VitalSignObservationExample.html"
                   title="Observation/VitalSignObservationExample">VitalSignObservationExample</a>
             </td>
+            <td>
+
+</td>
          </tr>
       </tbody>
    </table>
@@ -1121,7 +1178,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Oct 7, 2025 16:04+0000">2025-10-07</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Oct 9, 2025 10:11+0000">2025-10-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

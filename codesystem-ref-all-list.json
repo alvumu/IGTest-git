@@ -152,16 +152,16 @@
       "http://hl7.org/fhir/R5/valueset-event-status.html" : "EventStatus"
     },
     {
-      "url" : "http://hl7.org/fhir/fhir-types",
+      "url" : "http://hl7.org/fhir/identifier-use",
       "version" : "5.0.0",
       "status" : "active",
-      "name" : "FHIRTypes",
-      "title" : "All FHIR Types",
-      "description" : "One of the types defined as part of this version of FHIR.",
-      "oids" : ["2.16.840.1.113883.4.642.4.1802"],
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "oids" : ["2.16.840.1.113883.4.642.1.58"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-resource-types.html" : "Resource Types"
+      "http://hl7.org/fhir/R5/valueset-identifier-use.html" : "IdentifierUse"
     },
     {
       "url" : "http://hl7.org/fhir/link-type",
@@ -220,22 +220,6 @@
       "http://hl7.org/fhir/R5/valueset-observation-triggeredbytype.html" : "triggered Bytype"
     },
     {
-      "url" : "http://hl7.org/fhir/provenance-entity-role",
-      "version" : "5.0.0",
-      "status" : "active",
-      "name" : "ProvenanceEntityRole",
-      "title" : "Provenance Entity Role",
-      "description" : "How an entity was used in an activity.",
-      "oids" : [
-        "2.16.840.1.113883.4.642.1.428",
-        "2.16.840.1.113883.4.642.2.247",
-        "2.16.840.1.113883.4.642.4.437"
-      ],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R5/valueset-provenance-entity-role.html" : "Provenance Entity Role"
-    },
-    {
       "url" : "http://hl7.org/fhir/quantity-comparator",
       "version" : "5.0.0",
       "status" : "active",
@@ -258,18 +242,6 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R5/valueset-request-priority.html" : "RequestPriority"
-    },
-    {
-      "url" : "http://hl7.org/fhir/sample-security-structural-roles",
-      "version" : "5.0.0",
-      "status" : "draft",
-      "name" : "SampleSecurityStructuralRoles",
-      "title" : "Sample Codes for Security Structural Role",
-      "description" : "This codeSystem contains example structural roles. In general, two types of roles can be distinguished: structural roles and functional roles. Structural Roles reflect human or organizational categories (hierarchies), and describe prerequisites, feasibilities, or competences for actions. Functional roles are bound to the realization or performance of actions..",
-      "oids" : ["2.16.840.1.113883.4.642.4.1800"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R5/valueset-security-role-type.html" : "Security Role Type"
     },
     {
       "url" : "http://loinc.org",
@@ -391,17 +363,6 @@
       "http://hl7.org/fhir/R5/valueset-participation-role-type.html" : "Participation Role Type"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "Iso_21089_2017_Health_Record_Lifecycle_Events",
-      "title" : "ISO 21089 2017 Health Record Lifecycle Events",
-      "description" : "Attached is vocabulary for the 27 record lifecycle events, as per ISO TS 21089-2017, Health Informatics - Trusted End-to-End Information Flows, Section 3, Terms and Definitions (2017, at ISO Central Secretariat, passed ballot and ready for publication).  This will also be included in the FHIR EHR Record Lifecycle Event Implementation Guide, balloted and (to be) published with FHIR STU-3.",
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R5/valueset-provenance-activity-type.html" : "ValueSet of sample of representative activity type codes."
-    },
-    {
       "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
       "version" : "2.0.1",
       "status" : "active",
@@ -460,6 +421,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R5/valueset-observation-category.html" : "Observation Category Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1128"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-organization-type.html" : "Organization Type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/participant-type",
@@ -522,6 +495,18 @@
       "http://hl7.org/fhir/R5/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "identifierType",
+      "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+      "oids" : ["2.16.840.1.113883.18.108"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-identifier-type.html" : "Identifier Type Codes"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
       "version" : "9.0.0",
       "status" : "active",
@@ -555,8 +540,7 @@
       "oids" : ["2.16.840.1.113883.5.8"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason",
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse"
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
@@ -592,8 +576,8 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" : "Special Courtesy",
-      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes"
+      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes",
+      "http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" : "Special Courtesy"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",

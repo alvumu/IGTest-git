@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-10-07T16:03:53+00:00",
+  "date" : "2025-10-09T10:11:37+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -241,37 +241,15 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/encounter-provider-provenance"
-      },
-      "name" : "Encounter Provider Provenance Profile (R5)",
-      "description" : "R5 Profile for Provenance resource linking the healthcare provider organization (agent) to the specific Encounter resource (target).",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Provenance"
-      }],
-      "reference" : {
-        "reference" : "Provenance/ExampleEncounterProviderProvenance"
-      },
-      "name" : "ExampleEncounterProviderProvenance",
-      "isExample" : true,
-      "profile" : ["http://testSK.org/StructureDefinition/encounter-provider-provenance"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
       }],
       "reference" : {
-        "reference" : "Organization/ExampleOrganization"
+        "reference" : "Organization/ExampleStrokeOrganization"
       },
-      "name" : "ExampleOrganization",
-      "isExample" : true
+      "name" : "Example Stroke Registry Organization",
+      "description" : "Matches build_organization: active=true, name from hospital_name, identifier from mapped_org_id.",
+      "isExample" : true,
+      "profile" : ["http://testSK.org/StructureDefinition/stroke-registry-organization-profile"]
     },
     {
       "extension" : [{
@@ -966,6 +944,18 @@
       },
       "name" : "Stroke Procedure Not Done Reason ValueSet",
       "description" : "ValueSet containing specific codes to indicate why thrombolysis or thrombectomy was not performed.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/stroke-registry-organization-profile"
+      },
+      "name" : "Stroke Registry Organization Profile",
+      "description" : "Organization profile ensuring an active organization with a registry identifier (system=https://stroke.qualityregistry.org) and a required name, aligned with the build_organization() transformation.",
       "isExample" : false
     },
     {
