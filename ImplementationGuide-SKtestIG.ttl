@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-09T10:11:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-16T13:22:06+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -680,21 +680,6 @@
        ] ;
        fhir:name [ fhir:v "Observation Timing Context Extension" ] ;
        fhir:description [ fhir:v "Specifies the timing context or phase (e.g., pre-stroke, admission, discharge, 3-month) in which an observation or assessment was made." ] ;
-       fhir:isExample [ fhir:v false ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://alvumu.github.io/StructureDefinition/patient-age-ext> ;
-         fhir:reference [ fhir:v "StructureDefinition/patient-age-ext" ]
-       ] ;
-       fhir:name [ fhir:v "Patient Age (integer)" ] ;
-       fhir:description [ fhir:v "Patient age in years represented as an integer." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [

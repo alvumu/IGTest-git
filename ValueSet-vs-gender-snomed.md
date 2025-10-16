@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/vs-gender-snomed | *Version*:0.1.0 |
-| Active as of 2025-10-09 | *Computable Name*:GenderSNOMEDVS |
+| Active as of 2025-10-16 | *Computable Name*:GenderSNOMEDVS |
 
  
 Value set to represent patient gender using SNOMED CT codes, analogous to AdministrativeGender. 
@@ -55,7 +55,7 @@ This value set contains 3 concepts
   "title" : "Gender (SNOMED CT)",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-09T10:11:37+00:00",
+  "date" : "2025-10-16T13:22:06+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

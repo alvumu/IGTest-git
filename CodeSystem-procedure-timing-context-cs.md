@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/procedure-timing-context-cs | *Version*:0.1.0 |
-| Active as of 2025-10-09 | *Computable Name*:ProcedureTimingContextCS |
+| Active as of 2025-10-16 | *Computable Name*:ProcedureTimingContextCS |
 
  
 Codes defining the timing phase of a procedure relative to the encounter start (e.g., acute vs. post-acute). 
@@ -32,7 +32,7 @@ Codes defining the timing phase of a procedure relative to the encounter start (
   "title" : "Procedure Timing Context Code System",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-10-09T10:11:37+00:00",
+  "date" : "2025-10-16T13:22:06+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

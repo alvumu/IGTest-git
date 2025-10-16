@@ -15,7 +15,6 @@ Anonymous Patient (no stated gender), DoB Unknown
 | | |
 | :--- | :--- |
 | [Gender (SNOMED CT)](StructureDefinition-gender-snomed-ext.md) | Male |
-| [Patient Age (integer)](StructureDefinition-patient-age-ext.md) | 45 |
 
 
 
@@ -31,10 +30,6 @@ Anonymous Patient (no stated gender), DoB Unknown
     ]
   },
   "extension" : [
-    {
-      "url" : "http://testSK.org/StructureDefinition/patient-age-ext",
-      "valueInteger" : 45
-    },
     {
       "url" : "http://testSK.org/StructureDefinition/gender-snomed-ext",
       "valueCodeableConcept" : {

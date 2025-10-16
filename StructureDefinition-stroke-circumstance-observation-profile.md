@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile | *Version*:0.1.0 |
-| Draft as of 2025-10-09 | *Computable Name*:StrokeCircumstanceObservationProfile |
+| Draft as of 2025-10-16 | *Computable Name*:StrokeCircumstanceObservationProfile |
 
  
 Profile for recording findings about stroke onset circumstances (In-hospital, Wake-up). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-stroke-circumstance-
   "name" : "StrokeCircumstanceObservationProfile",
   "title" : "Stroke Circumstance Observation Profile (R5)",
   "status" : "draft",
-  "date" : "2025-10-09T10:11:37+00:00",
+  "date" : "2025-10-16T13:22:06+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

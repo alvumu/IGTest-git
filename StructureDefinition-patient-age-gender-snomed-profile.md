@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile | *Version*:0.1.0 |
-| Draft as of 2025-10-09 | *Computable Name*:PatientAgeGenderSNOMEDProfile |
+| Draft as of 2025-10-16 | *Computable Name*:PatientAgeGenderSNOMEDProfile |
 
  
 Profile that adds an integer age extension and a SNOMED-based gender extension. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-patient-age-gender-s
   "name" : "PatientAgeGenderSNOMEDProfile",
   "title" : "Patient with SNOMED Gender and Age (extensions)",
   "status" : "draft",
-  "date" : "2025-10-09T10:11:37+00:00",
+  "date" : "2025-10-16T13:22:06+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
@@ -111,22 +111,7 @@ Other representations of profile: [CSV](StructureDefinition-patient-age-gender-s
           ],
           "ordered" : false,
           "rules" : "open"
-        },
-        "min" : 1
-      },
-      {
-        "id" : "Patient.extension:age",
-        "path" : "Patient.extension",
-        "sliceName" : "age",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : ["http://testSK.org/StructureDefinition/patient-age-ext"]
-          }
-        ],
-        "mustSupport" : true
+        }
       },
       {
         "id" : "Patient.extension:gender-sct",

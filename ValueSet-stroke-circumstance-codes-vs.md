@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/stroke-circumstance-codes-vs | *Version*:0.1.0 |
-| Active as of 2025-10-09 | *Computable Name*:StrokeCircumstanceCodesVS |
+| Active as of 2025-10-16 | *Computable Name*:StrokeCircumstanceCodesVS |
 
  
 Codes for findings related to the circumstances of stroke onset (In-hospital, Wake-up). 
@@ -20,7 +20,7 @@ Codes for findings related to the circumstances of stroke onset (In-hospital, Wa
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://testSK.org/CodeSystem/stroke-circumstance-codes-cs`](CodeSystem-stroke-circumstance-codes-cs.md) version 📦0.1.0
+* Include all codes defined in [`http://testSK.org/CodeSystem/stroke-circumstance-codes-cs`](CodeSystem-stroke-circumstance-codes-cs.md)version 📦0.1.0
 
  
 
@@ -52,7 +52,7 @@ Codes for findings related to the circumstances of stroke onset (In-hospital, Wa
   "name" : "StrokeCircumstanceCodesVS",
   "title" : "Stroke Circumstance Codes ValueSet",
   "status" : "active",
-  "date" : "2025-10-09T10:11:37+00:00",
+  "date" : "2025-10-16T13:22:06+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

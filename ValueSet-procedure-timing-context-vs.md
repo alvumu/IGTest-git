@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/procedure-timing-context-vs | *Version*:0.1.0 |
-| Active as of 2025-10-09 | *Computable Name*:ProcedureTimingContextVS |
+| Active as of 2025-10-16 | *Computable Name*:ProcedureTimingContextVS |
 
  
 ValueSet for codes defining the timing phase of a procedure relative to the encounter start. 
@@ -20,7 +20,7 @@ ValueSet for codes defining the timing phase of a procedure relative to the enco
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://testSK.org/CodeSystem/procedure-timing-context-cs`](CodeSystem-procedure-timing-context-cs.md) version 📦0.1.0
+* Include all codes defined in [`http://testSK.org/CodeSystem/procedure-timing-context-cs`](CodeSystem-procedure-timing-context-cs.md)version 📦0.1.0
 
  
 
@@ -52,7 +52,7 @@ ValueSet for codes defining the timing phase of a procedure relative to the enco
   "name" : "ProcedureTimingContextVS",
   "title" : "Procedure Timing Context ValueSet",
   "status" : "active",
-  "date" : "2025-10-09T10:11:37+00:00",
+  "date" : "2025-10-16T13:22:06+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

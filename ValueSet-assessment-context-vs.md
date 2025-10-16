@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/assessment-context-vs | *Version*:0.1.0 |
-| Active as of 2025-10-09 | *Computable Name*:AssessmentContextVS |
+| Active as of 2025-10-16 | *Computable Name*:AssessmentContextVS |
 
  
 ValueSet for assessment context codes (e.g., timing of functional scores). 
@@ -20,7 +20,7 @@ ValueSet for assessment context codes (e.g., timing of functional scores).
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://testSK.org/CodeSystem/assessment-context-cs`](CodeSystem-assessment-context-cs.md) version 📦0.1.0
+* Include all codes defined in [`http://testSK.org/CodeSystem/assessment-context-cs`](CodeSystem-assessment-context-cs.md)version 📦0.1.0
 
  
 
@@ -52,7 +52,7 @@ ValueSet for assessment context codes (e.g., timing of functional scores).
   "name" : "AssessmentContextVS",
   "title" : "Assessment Context ValueSet",
   "status" : "active",
-  "date" : "2025-10-09T10:11:37+00:00",
+  "date" : "2025-10-16T13:22:06+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

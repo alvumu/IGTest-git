@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/mrs-score-vs | *Version*:0.1.0 |
-| Active as of 2025-10-09 | *Computable Name*:MRsScoreVS |
+| Active as of 2025-10-16 | *Computable Name*:MRsScoreVS |
 
  
 ValueSet containing the codes for the modified Rankin Scale (mRS) score. 
@@ -20,7 +20,7 @@ ValueSet containing the codes for the modified Rankin Scale (mRS) score.
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://testSK.org/CodeSystem/mrs-score-cs`](CodeSystem-mrs-score-cs.md) version 📦0.1.0
+* Include all codes defined in [`http://testSK.org/CodeSystem/mrs-score-cs`](CodeSystem-mrs-score-cs.md)version 📦0.1.0
 
  
 
@@ -52,7 +52,7 @@ ValueSet containing the codes for the modified Rankin Scale (mRS) score.
   "name" : "MRsScoreVS",
   "title" : "modified Rankin Scale (mRS) Score ValueSet",
   "status" : "active",
-  "date" : "2025-10-09T10:11:37+00:00",
+  "date" : "2025-10-16T13:22:06+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

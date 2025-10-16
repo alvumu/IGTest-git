@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/discharge-dept-vs | *Version*:0.1.0 |
-| Active as of 2025-10-09 | *Computable Name*:DischargeDeptVS |
+| Active as of 2025-10-16 | *Computable Name*:DischargeDeptVS |
 
  
 ValueSet specifying the type of department or service the patient was discharged or transferred to. 
@@ -20,7 +20,7 @@ ValueSet specifying the type of department or service the patient was discharged
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs`](CodeSystem-discharge-dept-cs.md) version 📦0.1.0
+* Include all codes defined in [`http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs`](CodeSystem-discharge-dept-cs.md)version 📦0.1.0
 
  
 
@@ -52,7 +52,7 @@ ValueSet specifying the type of department or service the patient was discharged
   "name" : "DischargeDeptVS",
   "title" : "Discharge Department/Service ValueSet",
   "status" : "active",
-  "date" : "2025-10-09T10:11:37+00:00",
+  "date" : "2025-10-16T13:22:06+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/mtici-code-cs | *Version*:0.1.0 |
-| Active as of 2025-10-09 | *Computable Name*:MTICICodeCS |
+| Active as of 2025-10-16 | *Computable Name*:MTICICodeCS |
 
  
 Codes representing the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure. 
@@ -32,7 +32,7 @@ Codes representing the mTICI score used to assess the degree of reperfusion afte
   "title" : "mTICI Score Codes CodeSystem",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-10-09T10:11:37+00:00",
+  "date" : "2025-10-16T13:22:06+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

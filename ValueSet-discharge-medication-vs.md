@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/discharge-medication-vs | *Version*:0.1.0 |
-| Draft as of 2025-10-09 | *Computable Name*:DischargeMedicationVS |
+| Draft as of 2025-10-16 | *Computable Name*:DischargeMedicationVS |
 
  
 Codes for drug products or substances representing the Medications on the patient discharge. 
@@ -22,7 +22,7 @@ Codes for drug products or substances representing the Medications on the patien
 
 This value set includes codes based on the following rules:
 
-* Include all codes defined in [`http://testSK.org/ValueSet/medication-vs`](CodeSystem-discharge-medication-cs.md) version 📦0.1.0
+* Include all codes defined in [`http://testSK.org/ValueSet/medication-vs`](CodeSystem-discharge-medication-cs.md)version 📦0.1.0
 * Import all the codes that are contained in https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html
 
  
@@ -57,7 +57,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "DischargeMedicationVS",
   "title" : "Medications ValueSet",
   "status" : "draft",
-  "date" : "2025-10-09T10:11:37+00:00",
+  "date" : "2025-10-16T13:22:06+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

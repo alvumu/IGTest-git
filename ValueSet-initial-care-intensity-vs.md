@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/initial-care-intensity-vs | *Version*:0.1.0 |
-| Active as of 2025-10-09 | *Computable Name*:InitialCareIntensityVS |
+| Active as of 2025-10-16 | *Computable Name*:InitialCareIntensityVS |
 
  
 ValueSet indicating the level of care provided initially. 
@@ -20,7 +20,7 @@ ValueSet indicating the level of care provided initially.
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://testSK.org/CodeSystem/initial-care-intensity-cs`](CodeSystem-initial-care-intensity-cs.md) version 📦0.1.0
+* Include all codes defined in [`http://testSK.org/CodeSystem/initial-care-intensity-cs`](CodeSystem-initial-care-intensity-cs.md)version 📦0.1.0
 
  
 
@@ -52,7 +52,7 @@ ValueSet indicating the level of care provided initially.
   "name" : "InitialCareIntensityVS",
   "title" : "Initial Care Intensity ValueSet",
   "status" : "active",
-  "date" : "2025-10-09T10:11:37+00:00",
+  "date" : "2025-10-16T13:22:06+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

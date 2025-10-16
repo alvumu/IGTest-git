@@ -1,9 +1,9 @@
 IGTest : Validation Results
 =========================================
 
-err = 188, warn = 135, info = 41
-IG Publisher Version: 2.0.20
-Generated Thu Oct 09 10:13:13 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = https://alvumu.github.io)
+err = 186, warn = 135, info = 41
+IG Publisher Version: 2.0.21
+Generated Thu Oct 16 13:24:04 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = https://alvumu.github.io)
  Build Errors : 0 / 24 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-brain-imaging-type-cs : 2 / 2 / 2
@@ -60,7 +60,6 @@ Generated Thu Oct 09 10:13:13 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (c
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-observation-timing-context-ext : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-onset-date-ext : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-onset-time-ext : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-patient-age-ext : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-patient-age-gender-snomed-profile : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-prior-medication-statement-profile : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-procedure-timing-context-ext : 2 / 0 / 1
@@ -370,9 +369,6 @@ ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Structure
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/onset-time-ext'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-onset-time-ext.json - the canonical URL (https://alvumu.github.io/StructureDefinition/onset-time-ext) does not match the URL (http://testSK.org/StructureDefinition/onset-time-ext). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/onset-time-ext'): The Implementation Guide contains no examples for this extension
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-onset-time-ext: URL Mismatch https://alvumu.github.io/StructureDefinition/onset-time-ext vs http://testSK.org/StructureDefinition/onset-time-ext
-== fsh-generated/resources/StructureDefinition-patient-age-ext.json ==
-ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/patient-age-ext'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-patient-age-ext.json - the canonical URL (https://alvumu.github.io/StructureDefinition/patient-age-ext) does not match the URL (http://testSK.org/StructureDefinition/patient-age-ext). Use the special-url parameter if you really mean for it not to match
-ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-patient-age-ext: URL Mismatch https://alvumu.github.io/StructureDefinition/patient-age-ext vs http://testSK.org/StructureDefinition/patient-age-ext
 == fsh-generated/resources/StructureDefinition-patient-age-gender-snomed-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-patient-age-gender-snomed-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/patient-age-gender-snomed-profile) does not match the URL (http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile). Use the special-url parameter if you really mean for it not to match
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-patient-age-gender-snomed-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/patient-age-gender-snomed-profile vs http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile
