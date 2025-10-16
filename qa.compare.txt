@@ -1,7 +1,7 @@
 IGTest : Validation Results
 =========================================
 
-err = 186, warn = 135, info = 41
+err = 187, warn = 135, info = 42
 $--
 Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.github.io)
  Build Errors : 0 / 24 / 0
@@ -31,7 +31,7 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.git
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeRiskFactorConditionExample : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Encounter-StrokeEncounterExample : 1 / 1 / 3
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG : 5 / 1 / 16
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationRequest-discharge-medication-request-001 : 0 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationRequest-discharge-medication-request-001 : 1 / 0 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationStatement-PriorMedicationStatementExample : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-AgeAtOnsetObservationExample : 1 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-FunctionalScoreObservationExample : 0 / 2 / 3
@@ -263,6 +263,8 @@ INFORMATION: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parame
 INFORMATION: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[25].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG: URL Mismatch https://alvumu.github.io/ImplementationGuide/SKtestIG vs https://alvumu.github.io
 == fsh-generated/resources/MedicationRequest-discharge-medication-request-001.json ==
+INFORMATION: MedicationRequest/discharge-medication-request-001: MedicationRequest.medication.concept: Reference to draft CodeSystem http://testSK.org/ValueSet/medication-vs|0.1.0
+ERROR: MedicationRequest/discharge-medication-request-001: MedicationRequest.medication.concept.coding[0].display: Wrong Display Name 'Warfarin (substance)' for http://testSK.org/ValueSet/medication-vs#warfarin. Valid display is 'Warfarin' (for the language(s) 'en-US')
 == fsh-generated/resources/MedicationStatement-PriorMedicationStatementExample.json ==
 == fsh-generated/resources/Observation-AgeAtOnsetObservationExample.json ==
 ERROR: Observation/AgeAtOnsetObservationExample: Observation.value.ofType(integer): The property 'value' is invalid

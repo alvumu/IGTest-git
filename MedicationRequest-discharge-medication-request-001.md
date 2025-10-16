@@ -54,8 +54,8 @@ Profile: [Discharge Medication Request Profile](StructureDefinition-discharge-me
     "concept" : {
       "coding" : [
         {
-          "system" : "http://snomed.info/sct",
-          "code" : "372756006",
+          "system" : "http://testSK.org/ValueSet/medication-vs",
+          "code" : "warfarin",
           "display" : "Warfarin (substance)"
         }
       ]

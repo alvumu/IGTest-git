@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 186, warn = 135, info = 41-->
+<!-- broken links = 0, errors = 187, warn = 135, info = 42-->
 <head>
   <title>IGTest : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for IGTest</h1>
- <p>Generated Thu Oct 16 13:24:04 UTC 2025, FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = <a href="https://alvumu.github.io">https://alvumu.github.io</a> (<a href="https://alvumu.github.io/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Thu Oct 16 13:25:38 UTC 2025, FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = <a href="https://alvumu.github.io">https://alvumu.github.io</a> (<a href="https://alvumu.github.io/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.21</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = SKtestIG, Canonical = https://alvumu.github.io</td></tr>
@@ -186,7 +186,7 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 186, warn = 135, info = 41, broken links = 0, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 187, warn = 135, info = 42, broken links = 0, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -273,8 +273,8 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_ImplementationGuide-SKtestIG"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG</b></a></td><td><b>5</b></td><td><b>1</b></td><td><b>15</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_MedicationRequest-discharge-medication-request-001"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationRequest-discharge-medication-request-001</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_MedicationRequest-discharge-medication-request-001"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationRequest-discharge-medication-request-001</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IGTest-git_IGTest-git_fsh-generated_resources_MedicationStatement-PriorMedicationStatementExample"><b>/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationStatement-PriorMedicationStatementExample</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -1156,7 +1156,13 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
 </div>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationRequest&#8203;.medication&#8203;.concept (l21&#8203;/c6)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem http://testSK.org/ValueSet/medication-vs|0.1.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationRequest&#8203;.medication&#8203;.concept&#8203;.coding[0]&#8203;.display (l21&#8203;/c6)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'Warfarin (substance)' for http://testSK.org/ValueSet/medication-vs#warfarin. Valid display is 'Warfarin' (for the language(s) 'en-US')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Display_Name_for__should_be_one_of__instead_of</span></td>
    </tr>
 </table>
 <hr/>
@@ -1239,10 +1245,10 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Observation&#8203;.code&#8203;.coding[0]&#8203;.code (l10&#8203;/c4)</b></td><td><b>error</b></td><td><b>Unknown code '1156911000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r5">https://tx.fhir.org/r5</a>, see <a href="qa-tx.html#l79">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span></td>
+     <td><b>Observation&#8203;.code&#8203;.coding[0]&#8203;.code (l10&#8203;/c4)</b></td><td><b>error</b></td><td><b>Unknown code '1156911000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r5">https://tx.fhir.org/r5</a>, see <a href="qa-tx.html#l78">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Observation.code (l10/c4)</b></td><td><b>error</b></td><td><b>None of the codings provided are in the value set 'Specific Stroke Finding Codes ValueSet' (http://testSK.org/ValueSet/stroke-finding-codes-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#1156911000)</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l79">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_NoValid_1_CC</span></td>
+     <td><b>Observation.code (l10/c4)</b></td><td><b>error</b></td><td><b>None of the codings provided are in the value set 'Specific Stroke Finding Codes ValueSet' (http://testSK.org/ValueSet/stroke-finding-codes-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#1156911000)</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l78">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_NoValid_1_CC</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Observation&#8203;.value&#8203;.ofType(CodeableConcept) (l19&#8203;/c4)</b></td><td><b>information</b></td><td><b>Reference to experimental CodeSystem http://testSK.org/CodeSystem/mtici-score-cs|0.1.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_EXPERIMENTAL</span></td>
@@ -2780,11 +2786,27 @@ hl7.fhir.uv.extensions.r5#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2
    </tr>
 </table>
 <hr/>
+<a name="Display_Name_for__should_be_one_of__instead_of"> </a>
+<h2>Display_Name_for__should_be_one_of__instead_of</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationRequest-discharge-medication-request-001.html">fsh-generated/resources/MedicationRequest-discharge-medication-request-001.json</a></td><td><b>Wrong Display Name 'Warfarin (substance)' for http://testSK.org/ValueSet/medication-vs#warfarin. Valid display is 'Warfarin' (for the language(s) 'en-US')</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="ILLEGAL_PROPERTY"> </a>
 <h2>ILLEGAL_PROPERTY</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
      <td><a href="Observation-AgeAtOnsetObservationExample.html">fsh-generated/resources/Observation-AgeAtOnsetObservationExample.json</a></td><td><b>The property 'value' is invalid</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_DRAFT"> </a>
+<h2>MSG_DRAFT</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationRequest-discharge-medication-request-001.html">fsh-generated/resources/MedicationRequest-discharge-medication-request-001.json</a></td><td><b>Reference to draft CodeSystem http://testSK.org/ValueSet/medication-vs|0.1.0</b></td>
    </tr>
 </table>
 <hr/>

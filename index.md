@@ -43,7 +43,7 @@ This work has been made as part of the [RES-Q+ project](https://www.resqplus.eu)
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-10-16T13:22:06+00:00",
+  "date" : "2025-10-16T13:23:59+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
