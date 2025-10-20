@@ -18,9 +18,9 @@ Profile: [Stroke Vital Sign Observation Profile (R5)](StructureDefinition-vital-
 
 **encounter**: [Encounter: extension = true,ICU / Stroke Unit,false,Neurology department (environment); status = completed; type = Inpatient Encounter; actualPeriod = 2025-03-01 08:00:00+0000 --> 2025-03-10 12:00:00+0000](Encounter-StrokeEncounterExample.md)
 
-> **component****code**:Systolic blood pressure (observable entity)**value**: 120 mmHg(Details: ucum codemm[Hg] = 'mm[Hg]')
+> **component****code**:Systolic blood pressure (observable entity)**value**: 120 millimeter Mercury column(Details: ucum codemm[Hg] = 'mm[Hg]')
 
-> **component****code**:Diastolic blood pressure (observable entity)**value**: 80 mmHg(Details: ucum codemm[Hg] = 'mm[Hg]')
+> **component****code**:Diastolic blood pressure (observable entity)**value**: 80 millimeter Mercury column(Details: ucum codemm[Hg] = 'mm[Hg]')
 
 
 
@@ -74,7 +74,7 @@ Profile: [Stroke Vital Sign Observation Profile (R5)](StructureDefinition-vital-
       },
       "valueQuantity" : {
         "value" : 120,
-        "unit" : "mmHg",
+        "unit" : "millimeter Mercury column",
         "system" : "https://ucum.org/ucum",
         "code" : "mm[Hg]"
       }
@@ -91,7 +91,7 @@ Profile: [Stroke Vital Sign Observation Profile (R5)](StructureDefinition-vital-
       },
       "valueQuantity" : {
         "value" : 80,
-        "unit" : "mmHg",
+        "unit" : "millimeter Mercury column",
         "system" : "https://ucum.org/ucum",
         "code" : "mm[Hg]"
       }

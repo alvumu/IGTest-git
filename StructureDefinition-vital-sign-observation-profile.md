@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-vital-sign-observati
   "name" : "VitalSignObservationProfile",
   "title" : "Stroke Vital Sign Observation Profile (R5)",
   "status" : "draft",
-  "date" : "2025-10-20T13:57:50+00:00",
+  "date" : "2025-10-20T14:31:52+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
@@ -156,7 +156,7 @@ Other representations of profile: [CSV](StructureDefinition-vital-sign-observati
       {
         "id" : "Observation.component.value[x].unit",
         "path" : "Observation.component.value[x].unit",
-        "patternString" : "mmHg"
+        "patternString" : "millimeter Mercury column"
       },
       {
         "id" : "Observation.component.value[x].system",
