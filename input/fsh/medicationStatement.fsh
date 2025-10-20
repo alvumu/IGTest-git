@@ -87,3 +87,5 @@ InstanceOf: PriorMedicationStatementProfile
 * reason = Reference(StrokeDiagnosisConditionExample)
 * adherence.code = http://hl7.org/fhir/CodeSystem/medication-statement-adherence#taking // Using R5 adherence codes
 * status = #recorded // Status of the prior medication statement
+* encounter = Reference(EncounterExample)
+
