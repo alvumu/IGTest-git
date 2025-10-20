@@ -54,7 +54,7 @@ This value set contains 3 concepts
   "name" : "AfibFlutterStatusVS",
   "title" : "Atrial Fibrillation or Flutter Status ValueSet",
   "status" : "active",
-  "date" : "2025-10-20T09:52:43+00:00",
+  "date" : "2025-10-20T12:40:55+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-functional-score-obs
   "name" : "FunctionalScoreObservationProfile",
   "title" : "Stroke Functional Score Observation Profile (R5, Timing Ext)",
   "status" : "draft",
-  "date" : "2025-10-20T09:52:43+00:00",
+  "date" : "2025-10-20T12:40:55+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

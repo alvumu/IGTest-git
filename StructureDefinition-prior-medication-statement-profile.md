@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-prior-medication-sta
   "title" : "Prior Medication Statement Profile (R5)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-10-20T09:52:43+00:00",
+  "date" : "2025-10-20T12:40:55+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
@@ -89,6 +89,11 @@ Other representations of profile: [CSV](StructureDefinition-prior-medication-sta
       {
         "id" : "MedicationStatement",
         "path" : "MedicationStatement"
+      },
+      {
+        "id" : "MedicationStatement.status",
+        "path" : "MedicationStatement.status",
+        "mustSupport" : true
       },
       {
         "id" : "MedicationStatement.medication",

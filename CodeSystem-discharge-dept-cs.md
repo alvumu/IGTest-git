@@ -31,7 +31,7 @@ Code system specifying the type of department or service the patient was dischar
   "name" : "DischargeDeptCS",
   "title" : "Discharge Department/Service Code System",
   "status" : "active",
-  "date" : "2025-10-20T09:52:43+00:00",
+  "date" : "2025-10-20T12:40:55+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
