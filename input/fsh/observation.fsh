@@ -315,7 +315,7 @@ Parent: BaseStrokeObservation
 * component.code from VitalSignCodesVS_URL (required)
 * component.value[x] 1..1 MS
 * component.value[x] only Quantity
-* component.value[x].unit = "mmHg"
+* component.value[x].unit = "millimeter Mercury column"
 * component.value[x].system = UCUM
 * component.value[x].code = #"mm[Hg]"
 
