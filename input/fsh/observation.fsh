@@ -459,12 +459,12 @@ Instance: VitalSignObservationExample
 InstanceOf: VitalSignObservationProfile
 * component[+].code = SCT#271649006 "Systolic blood pressure (observable entity)"
 * component[=].valueQuantity.value = 120
-* component[=].valueQuantity.unit = "mmHg"
+* component[=].valueQuantity.unit = "millimeter Mercury column"
 * component[=].valueQuantity.system = UCUM
 * component[=].valueQuantity.code = #"mm[Hg]"
 * component[+].code = SCT#271650006 "Diastolic blood pressure (observable entity)"
 * component[=].valueQuantity.value = 80
-* component[=].valueQuantity.unit = "mmHg"
+* component[=].valueQuantity.unit = "millimeter Mercury column"
 * component[=].valueQuantity.system = UCUM
 * component[=].valueQuantity.code = #"mm[Hg]"
 * subject = Reference(PatientExample)
