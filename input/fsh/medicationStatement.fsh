@@ -72,7 +72,7 @@ Parent: MedicationStatement // Base R5 MedicationStatement
 * subject only Reference(Patient)
 * reason 0..* MS 
 * reason only CodeableReference(Condition or Observation or DiagnosticReport) // Allowed targets for reason in R5
-
+* status 1..1 MS
 // Adherence field to represent Taking / Not Taking in R5
 * adherence 0..1 MS // Make the adherence block optional but supported
 * adherence.code 1..1 MS // If adherence block is present, code is mandatory
