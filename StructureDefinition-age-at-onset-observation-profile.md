@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/StructureDefinition/age-at-onset-observation-profile | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:AgeAtOnsetObservationProfile |
+| Draft as of 2025-10-20 | *Computable Name*:AgeAtOnsetObservationProfile |
 
  
 Profile specifically for recording the patient's age at stroke onset. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-age-at-onset-observa
   "name" : "AgeAtOnsetObservationProfile",
   "title" : "Age at Stroke Onset Observation Profile (R5)",
   "status" : "draft",
-  "date" : "2025-10-16T13:23:59+00:00",
+  "date" : "2025-10-20T09:52:43+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

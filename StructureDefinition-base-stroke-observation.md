@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/StructureDefinition/base-stroke-observation | *Version*:0.1.0 |
-| Active as of 2025-10-16 | *Computable Name*:BaseStrokeObservation |
+| Active as of 2025-10-20 | *Computable Name*:BaseStrokeObservation |
 
  
 Constraints for observations recorded in the context of stroke care. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-base-stroke-observat
   "name" : "BaseStrokeObservation",
   "title" : "Base Profile for Stroke-Related Observations",
   "status" : "active",
-  "date" : "2025-10-16T13:23:59+00:00",
+  "date" : "2025-10-20T09:52:43+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

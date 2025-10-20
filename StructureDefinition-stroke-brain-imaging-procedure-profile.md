@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/StructureDefinition/stroke-brain-imaging-procedure-profile | *Version*:0.1.0 |
-| Active as of 2025-10-16 | *Computable Name*:StrokeBrainImagingProcedureProfile |
+| Active as of 2025-10-20 | *Computable Name*:StrokeBrainImagingProcedureProfile |
 
  
 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-stroke-brain-imaging
   "name" : "StrokeBrainImagingProcedureProfile",
   "title" : "Stroke Brain Imaging Procedure Profile (R5)",
   "status" : "active",
-  "date" : "2025-10-16T13:23:59+00:00",
+  "date" : "2025-10-20T09:52:43+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/vital-sign-codes-vs | *Version*:0.1.0 |
-| Active as of 2025-10-16 | *Computable Name*:VitalSignCodesVS |
+| Active as of 2025-10-20 | *Computable Name*:VitalSignCodesVS |
 
  
 Codes for key vital signs relevant to stroke assessment (Systolic, Diastolic BP). 
@@ -55,7 +55,7 @@ This value set contains 2 concepts
   "title" : "Stroke Vital Sign Codes ValueSet",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-10-16T13:23:59+00:00",
+  "date" : "2025-10-20T09:52:43+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

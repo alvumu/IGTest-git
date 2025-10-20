@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/stroke-discharge-destination-vs | *Version*:0.1.0 |
-| Active as of 2025-10-16 | *Computable Name*:StrokeDischargeDestinationVS |
+| Active as of 2025-10-20 | *Computable Name*:StrokeDischargeDestinationVS |
 
  
 Defines the possible destinations of the patient upon discharge from the encounter. 
@@ -57,7 +57,7 @@ This value set contains 5 concepts
   "name" : "StrokeDischargeDestinationVS",
   "title" : "Stroke Discharge Destination ValueSet",
   "status" : "active",
-  "date" : "2025-10-16T13:23:59+00:00",
+  "date" : "2025-10-20T09:52:43+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

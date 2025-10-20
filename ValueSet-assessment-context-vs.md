@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/assessment-context-vs | *Version*:0.1.0 |
-| Active as of 2025-10-16 | *Computable Name*:AssessmentContextVS |
+| Active as of 2025-10-20 | *Computable Name*:AssessmentContextVS |
 
  
 ValueSet for assessment context codes (e.g., timing of functional scores). 
@@ -52,7 +52,7 @@ ValueSet for assessment context codes (e.g., timing of functional scores).
   "name" : "AssessmentContextVS",
   "title" : "Assessment Context ValueSet",
   "status" : "active",
-  "date" : "2025-10-16T13:23:59+00:00",
+  "date" : "2025-10-20T09:52:43+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

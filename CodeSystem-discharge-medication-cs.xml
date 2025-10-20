@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="discharge-medication-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem discharge-medication-cs</b></p><a name="discharge-medication-cs"> </a><a name="hcdischarge-medication-cs"> </a><p>This  code system <code>http://testSK.org/ValueSet/medication-vs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">anticoagulant<a name="discharge-medication-cs-anticoagulant"> </a></td><td>Any Anticoagulant</td><td>Any anticoagulant (such as warfarin or a NOAC) was prescribed at discharge</td></tr><tr><td style="white-space:nowrap">antiplatelet<a name="discharge-medication-cs-antiplatelet"> </a></td><td>Any Antiplatelet</td><td>Any antiplatelet medication (e.g., aspirin, clopidogrel) was prescribed at discharge</td></tr><tr><td style="white-space:nowrap">asa<a name="discharge-medication-cs-asa"> </a></td><td>Aspirin</td><td>Aspirin (acetylsalicylic acid) was prescribed at discharge</td></tr><tr><td style="white-space:nowrap">clopidogrel<a name="discharge-medication-cs-clopidogrel"> </a></td><td>Clopidogrel</td><td>Clopidogrel was prescribed at discharge</td></tr><tr><td style="white-space:nowrap">heparin<a name="discharge-medication-cs-heparin"> </a></td><td>Heparin</td><td>Heparin (either unfractionated or low-molecular-weight) was prescribed at discharge</td></tr><tr><td style="white-space:nowrap">warfarin<a name="discharge-medication-cs-warfarin"> </a></td><td>Warfarin</td><td>Warfarin, a vitamin K antagonist—was prescribed at discharge</td></tr><tr><td style="white-space:nowrap">other<a name="discharge-medication-cs-other"> </a></td><td>Other Medication</td><td>A medication other than those specifically listed was prescribed at discharge</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem discharge-medication-cs</b></p><a name="discharge-medication-cs"> </a><a name="hcdischarge-medication-cs"> </a><p>This  code system <code>http://testSK.org/ValueSet/medication-vs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">anticoagulant<a name="discharge-medication-cs-anticoagulant"> </a></td><td>Any Anticoagulant</td><td>Any anticoagulant (such as warfarin or a NOAC) was prescribed at discharge</td></tr><tr><td style="white-space:nowrap">antiplatelet<a name="discharge-medication-cs-antiplatelet"> </a></td><td>Any Antiplatelet</td><td>Any antiplatelet medication (e.g., aspirin, clopidogrel) was prescribed at discharge</td></tr><tr><td style="white-space:nowrap">asa<a name="discharge-medication-cs-asa"> </a></td><td>Aspirin</td><td>Aspirin (acetylsalicylic acid) was prescribed at discharge</td></tr><tr><td style="white-space:nowrap">clopidogrel<a name="discharge-medication-cs-clopidogrel"> </a></td><td>Clopidogrel</td><td>Clopidogrel was prescribed at discharge</td></tr><tr><td style="white-space:nowrap">heparin<a name="discharge-medication-cs-heparin"> </a></td><td>Heparin</td><td>Heparin (either unfractionated or low-molecular-weight) was prescribed at discharge</td></tr><tr><td style="white-space:nowrap">warfarin<a name="discharge-medication-cs-warfarin"> </a></td><td>Warfarin</td><td>Warfarin, a vitamin K antagonist—was prescribed at discharge</td></tr><tr><td style="white-space:nowrap">statin<a name="discharge-medication-cs-statin"> </a></td><td>Statin</td><td>Statins, used to lower LDL and triglycerides in the blood was prescribed at discharge</td></tr><tr><td style="white-space:nowrap">other<a name="discharge-medication-cs-other"> </a></td><td>Other Medication</td><td>A medication other than those specifically listed was prescribed at discharge</td></tr></table></div>
   </text>
   <url value="http://testSK.org/ValueSet/medication-vs"/>
   <version value="0.1.0"/>
   <name value="DischargeMedicationCS"/>
   <title value="Medications CodeSystem"/>
   <status value="draft"/>
-  <date value="2025-10-16T13:23:59+00:00"/>
+  <date value="2025-10-20T09:52:43+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -21,7 +21,7 @@
   </contact>
   <description value="Codes for drug products or substances representing the Medications on the patient discharge."/>
   <content value="complete"/>
-  <count value="7"/>
+  <count value="8"/>
   <concept>
     <code value="anticoagulant"/>
     <display value="Any Anticoagulant"/>
@@ -51,6 +51,11 @@
     <code value="warfarin"/>
     <display value="Warfarin"/>
     <definition value="Warfarin, a vitamin K antagonist—was prescribed at discharge"/>
+  </concept>
+  <concept>
+    <code value="statin"/>
+    <display value="Statin"/>
+    <definition value="Statins, used to lower LDL and triglycerides in the blood was prescribed at discharge"/>
   </concept>
   <concept>
     <code value="other"/>

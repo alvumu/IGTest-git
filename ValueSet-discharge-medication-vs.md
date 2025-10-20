@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/discharge-medication-vs | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:DischargeMedicationVS |
+| Draft as of 2025-10-20 | *Computable Name*:DischargeMedicationVS |
 
  
 Codes for drug products or substances representing the Medications on the patient discharge. 
@@ -57,7 +57,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "DischargeMedicationVS",
   "title" : "Medications ValueSet",
   "status" : "draft",
-  "date" : "2025-10-16T13:23:59+00:00",
+  "date" : "2025-10-20T09:52:43+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

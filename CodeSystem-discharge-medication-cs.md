@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/medication-vs | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:DischargeMedicationCS |
+| Draft as of 2025-10-20 | *Computable Name*:DischargeMedicationCS |
 
  
 Codes for drug products or substances representing the Medications on the patient discharge. 
@@ -31,7 +31,7 @@ Codes for drug products or substances representing the Medications on the patien
   "name" : "DischargeMedicationCS",
   "title" : "Medications CodeSystem",
   "status" : "draft",
-  "date" : "2025-10-16T13:23:59+00:00",
+  "date" : "2025-10-20T09:52:43+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
@@ -46,7 +46,7 @@ Codes for drug products or substances representing the Medications on the patien
   ],
   "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
   "content" : "complete",
-  "count" : 7,
+  "count" : 8,
   "concept" : [
     {
       "code" : "anticoagulant",
@@ -77,6 +77,11 @@ Codes for drug products or substances representing the Medications on the patien
       "code" : "warfarin",
       "display" : "Warfarin",
       "definition" : "Warfarin, a vitamin K antagonist—was prescribed at discharge"
+    },
+    {
+      "code" : "statin",
+      "display" : "Statin",
+      "definition" : "Statins, used to lower LDL and triglycerides in the blood was prescribed at discharge"
     },
     {
       "code" : "other",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/StructureDefinition/swallowing-screening-timing-category-ext | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:SwallowingScreeningTimingCategoryExt |
+| Draft as of 2025-10-20 | *Computable Name*:SwallowingScreeningTimingCategoryExt |
 
 Temporal category relative to stroke onset in which the swallowing screening was performed.
 
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-swallowing-screening
   "name" : "SwallowingScreeningTimingCategoryExt",
   "title" : "Swallowing Screening Timing Category",
   "status" : "draft",
-  "date" : "2025-10-16T13:23:59+00:00",
+  "date" : "2025-10-20T09:52:43+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
