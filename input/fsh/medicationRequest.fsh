@@ -51,6 +51,7 @@ Id: discharge-medication-cs
 * #clopidogrel "Clopidogrel" "Clopidogrel was prescribed at discharge"
 * #heparin "Heparin" "Heparin (either unfractionated or low-molecular-weight) was prescribed at discharge"
 * #warfarin "Warfarin" "Warfarin, a vitamin K antagonist—was prescribed at discharge"
+* #statin "Statin" "Statins, used to lower LDL and triglycerides in the blood was prescribed at discharge"
 * #other "Other Medication" "A medication other than those specifically listed was prescribed at discharge"
 
 ValueSet: DischargeMedicationVS
