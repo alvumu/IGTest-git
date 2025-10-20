@@ -19,6 +19,8 @@ Profile: [Prior Medication Statement Profile (R5)](StructureDefinition-prior-med
 
 **subject**: [Anonymous Patient (no stated gender), DoB Unknown](Patient-example-patient.md)
 
+**encounter**: `EncounterExample`
+
 ### Reasons
 
 | | |
@@ -60,6 +62,9 @@ Profile: [Prior Medication Statement Profile (R5)](StructureDefinition-prior-med
   },
   "subject" : {
     "reference" : "Patient/example-patient"
+  },
+  "encounter" : {
+    "reference" : "EncounterExample"
   },
   "reason" : [
     {

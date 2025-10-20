@@ -127,6 +127,7 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG.json: line 0, col 0, Error - URL Mismatch https://alvumu.github.io/ImplementationGuide/SKtestIG vs https://alvumu.github.io (BUSINESSRULE)
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationRequest-discharge-medication-request-001.json: line 21, col 6, Info - Reference to draft CodeSystem http://testSK.org/ValueSet/medication-vs|0.1.0 (BUSINESSRULE)
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationRequest-discharge-medication-request-001.json: line 21, col 6, Error - Wrong Display Name 'Warfarin (substance)' for http://testSK.org/ValueSet/medication-vs#warfarin. Valid display is 'Warfarin' (for the language(s) 'en-US') (INVALID)
+/home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationStatement-PriorMedicationStatementExample.json: line 41, col 4, Error - Unable to resolve resource with reference 'EncounterExample' (STRUCTURE)
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-AgeAtOnsetObservationExample.json: line 26, col 16, Error - The property 'value' is invalid (INVALID)
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-AgeAtOnsetObservationExample.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-AgeAtOnsetObservationExample.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have an effective[x] () (INVALID)
@@ -366,5 +367,5 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-vs-gender-snomed.json: line 0, col 0, Error - Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-vs-gender-snomed.json - the canonical URL (https://alvumu.github.io/ValueSet/vs-gender-snomed) does not match the URL (http://testSK.org/ValueSet/vs-gender-snomed). Use the special-url parameter if you really mean for it not to match (INVALID)
 /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-vs-gender-snomed.json: line 0, col 0, Error - URL Mismatch https://alvumu.github.io/ValueSet/vs-gender-snomed vs http://testSK.org/ValueSet/vs-gender-snomed (BUSINESSRULE)
 
-err = 187, warn = 135, info = 42
+err = 188, warn = 135, info = 42
 IG Publisher Version: 2.0.21

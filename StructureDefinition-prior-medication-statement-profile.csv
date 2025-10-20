@@ -57,7 +57,7 @@ This element is labeled as a modifier because the status contains codes that mar
 "MedicationStatement.subject","MedicationStatement.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
 ","Who is/was taking  the medication","The person, animal or group who is/was taking the medication.","","","","","","","","","",,,,,"",,,,"MedicationStatement.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject","FiveWs.subject[x]",".participation[typeCode=SBJ].role[classCode=PAT]","PID-3 Patient ID List"
-"MedicationStatement.encounter","MedicationStatement.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0]]}
+"MedicationStatement.encounter","MedicationStatement.encounter","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0]]}
 ","Encounter associated with MedicationStatement","The encounter that establishes the context for this MedicationStatement.","","","","","","","","","",,,,,"",,,,"MedicationStatement.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.encounter",".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=""type of encounter or episode""]"
 "MedicationStatement.effective[x]","MedicationStatement.effective[x]","","","",0,1,"","","Y","dateTime {[]} {[]}
