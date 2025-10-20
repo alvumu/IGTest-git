@@ -70,6 +70,8 @@ Parent: MedicationStatement // Base R5 MedicationStatement
 * medication from MedStatementMedsVS_URL (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
+* encounter 1..1 MS
+* encounter only Reference(Encounter)
 * reason 0..* MS 
 * reason only CodeableReference(Condition or Observation or DiagnosticReport) // Allowed targets for reason in R5
 * status 1..1 MS
