@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/discharge-dept-vs | *Version*:0.1.0 |
-| Active as of 2025-10-20 | *Computable Name*:DischargeDeptVS |
+| Active as of 2025-10-21 | *Computable Name*:DischargeDeptVS |
 
  
 ValueSet specifying the type of department or service the patient was discharged or transferred to. 
@@ -52,7 +52,7 @@ ValueSet specifying the type of department or service the patient was discharged
   "name" : "DischargeDeptVS",
   "title" : "Discharge Department/Service ValueSet",
   "status" : "active",
-  "date" : "2025-10-20T14:31:52+00:00",
+  "date" : "2025-10-21T11:09:58+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

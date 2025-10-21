@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/StructureDefinition/functional-score-observation-profile | *Version*:0.1.0 |
-| Draft as of 2025-10-20 | *Computable Name*:FunctionalScoreObservationProfile |
+| Draft as of 2025-10-21 | *Computable Name*:FunctionalScoreObservationProfile |
 
  
 Profile for recording functional scores (mRS, NIHSS), using an extension for timing context. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-functional-score-obs
   "name" : "FunctionalScoreObservationProfile",
   "title" : "Stroke Functional Score Observation Profile (R5, Timing Ext)",
   "status" : "draft",
-  "date" : "2025-10-20T14:31:52+00:00",
+  "date" : "2025-10-21T11:09:58+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

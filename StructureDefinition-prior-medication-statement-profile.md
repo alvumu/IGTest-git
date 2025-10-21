@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/StructureDefinition/prior-medication-statement-profile | *Version*:0.1.0 |
-| Active as of 2025-10-20 | *Computable Name*:PriorMedicationStatementProfile |
+| Active as of 2025-10-21 | *Computable Name*:PriorMedicationStatementProfile |
 
  
 Represents a statement about the patient's medication use**before**the index event. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-prior-medication-sta
   "title" : "Prior Medication Statement Profile (R5)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-10-20T14:31:52+00:00",
+  "date" : "2025-10-21T11:09:58+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/specific-finding-codes-vs | *Version*:0.1.0 |
-| Active as of 2025-10-20 | *Computable Name*:SpecificFindingCodesVS |
+| Active as of 2025-10-21 | *Computable Name*:SpecificFindingCodesVS |
 
  
 Codes for specific clinical findings relevant to stroke (Afib/Flutter status, MTICI score). 
@@ -54,7 +54,7 @@ This value set contains 2 concepts
   "name" : "SpecificFindingCodesVS",
   "title" : "Specific Stroke Finding Codes ValueSet",
   "status" : "active",
-  "date" : "2025-10-20T14:31:52+00:00",
+  "date" : "2025-10-21T11:09:58+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

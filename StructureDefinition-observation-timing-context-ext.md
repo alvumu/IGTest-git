@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/StructureDefinition/observation-timing-context-ext | *Version*:0.1.0 |
-| Draft as of 2025-10-20 | *Computable Name*:ObservationTimingContextExtension |
+| Draft as of 2025-10-21 | *Computable Name*:ObservationTimingContextExtension |
 
 Specifies the timing context or phase (e.g., pre-stroke, admission, discharge, 3-month) in which an observation or assessment was made.
 
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-observation-timing-c
   "name" : "ObservationTimingContextExtension",
   "title" : "Observation Timing Context Extension",
   "status" : "draft",
-  "date" : "2025-10-20T14:31:52+00:00",
+  "date" : "2025-10-21T11:09:58+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
