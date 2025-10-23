@@ -101,11 +101,7 @@ InstanceOf: DischargeMedicationRequestProfile
 * id = "discharge-medication-request-001"
 * status = #active
 * category = MedReqAdminLocCS#community
-<<<<<<< HEAD
 * medication = DischargeMedicationCS#warfarin
-=======
-* medication = DischargeMedicationCS#warfarin "Warfarin (substance)"
->>>>>>> 3ddf25b7a289c8005646858f6912faeaba9fca71
 * intent = #order // Intent for discharge medication request
 * subject = Reference(PatientExample) // Reference to the patient
 * encounter = Reference(StrokeEncounterExample) // Reference to the stroke encounter
