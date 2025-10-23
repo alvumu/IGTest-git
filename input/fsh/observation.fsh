@@ -32,7 +32,7 @@ Alias: FunctionalScoreCodesVS_URL = http://testSK.org/ValueSet/functional-score-
 Alias: TimingMetricCodesVS_URL = http://testSK.org/ValueSet/timing-metric-codes-vs
 Alias: StrokeCircumstanceCodesVS_URL = http://testSK.org/ValueSet/stroke-circumstance-codes-vs
 Alias: SpecificFindingCodesVS_URL = http://testSK.org/ValueSet/specific-finding-codes-vs
-Alias: StrokeFindingCodesVS_URL = http://testSK.org/ValueSet/stroke-finding-codes-vs
+//Alias: StrokeFindingCodesVS_URL = http://testSK.org/ValueSet/stroke-finding-codes-vs
 Alias: MticiCodeVS_URL = http://testSK.org/ValueSet/mtici-code-vs
 //Extension
 Alias: ObsTimingContextExt_URL = http://testSK.org/StructureDefinition/observation-timing-context-ext
@@ -398,7 +398,7 @@ Parent: BaseStrokeObservation
 * ^title = "Specific Stroke Finding Observation Profile (R5)"
 * ^description = "Profile for specific coded findings like Afib/Flutter status or mTICI score."
 * code 1..1 MS
-* code from StrokeFindingCodesVS_URL (required)
+* code from SpecificFindingCodesVS_URL (required)
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
 // Invariants 'obs-afib-code' and 'obs-mtici-code' handle the value binding validation
