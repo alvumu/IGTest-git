@@ -704,6 +704,17 @@
       "ValueSet-mrs-score-vs.html" : "modified Rankin Scale (mRS) Score ValueSet"
     },
     {
+      "url" : "http://testSK.org/CodeSystem/mtici-code-cs",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "MTICICodeCS",
+      "title" : "mTICI Score Codes CodeSystem",
+      "description" : "Codes representing the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure.",
+      "uses" : {
+      },
+      "ValueSet-specific-finding-codes-vs.html" : "Specific Stroke Finding Codes ValueSet"
+    },
+    {
       "url" : "http://testSK.org/CodeSystem/mtici-score-cs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -712,8 +723,7 @@
       "description" : "CodeSystem containing the codes to represent the MTICI score.",
       "uses" : {
       },
-      "ValueSet-mtici-score-vs.html" : "MTICI Score ValueSet",
-      "ValueSet-mtici-code-vs.html" : "mTICI Score Codes ValueSet"
+      "ValueSet-mtici-score-vs.html" : "MTICI Score ValueSet"
     },
     {
       "url" : "http://testSK.org/CodeSystem/procedure-timing-context-cs",
@@ -824,8 +834,8 @@
       "oids" : ["2.16.840.1.113883.6.121"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages",
-      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages"
+      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages",
+      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages"
     },
     {
       "url" : "urn:iso:std:iso:11073:10101",

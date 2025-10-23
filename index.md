@@ -43,7 +43,7 @@ This work has been made as part of the [RES-Q+ project](https://www.resqplus.eu)
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-10-23T09:52:59+00:00",
+  "date" : "2025-10-23T14:53:04+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
@@ -628,20 +628,6 @@ This work has been made as part of the [RES-Q+ project](https://www.resqplus.eu)
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/mtici-code-vs"
-        },
-        "name" : "mTICI Score Codes ValueSet",
-        "description" : "ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure.",
-        "isExample" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
           "reference" : "ValueSet/mtici-score-vs"
         },
         "name" : "MTICI Score ValueSet",
@@ -817,20 +803,6 @@ This work has been made as part of the [RES-Q+ project](https://www.resqplus.eu)
         },
         "name" : "Specific Stroke Finding Codes ValueSet",
         "description" : "Codes for specific clinical findings relevant to stroke (Afib/Flutter status, MTICI score).",
-        "isExample" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/stroke-finding-codes-vs"
-        },
-        "name" : "Specific Stroke Finding Codes ValueSet",
-        "description" : "ValueSet for specific coded findings like Afib/Flutter status or mTICI score.",
         "isExample" : false
       },
       {

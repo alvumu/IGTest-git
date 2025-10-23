@@ -12,10 +12,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.109"],
       "uses" : {
       },
-      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
       "StructureDefinition-stroke-mechanical-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)",
-      "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)"
+      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
+      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
+      "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-statement-adherence",
@@ -186,18 +186,6 @@
       "StructureDefinition-functional-score-observation-profile.html" : "Stroke Functional Score Observation Profile (R5, Timing Ext)"
     },
     {
-      "url" : "http://testSK.org/ValueSet/mtici-code-vs",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "MTICICodeVS",
-      "title" : "mTICI Score Codes ValueSet",
-      "description" : "ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure.",
-      "systems" : ["http://testSK.org/CodeSystem/mtici-score-cs"],
-      "uses" : {
-      },
-      "ValueSet-stroke-finding-codes-vs.html" : "Specific Stroke Finding Codes ValueSet"
-    },
-    {
       "url" : "http://testSK.org/ValueSet/mtici-score-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -237,10 +225,10 @@
       "name" : "SpecificFindingCodesVS",
       "title" : "Specific Stroke Finding Codes ValueSet",
       "description" : "Codes for specific clinical findings relevant to stroke (Afib/Flutter status, MTICI score).",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "ValueSet-stroke-finding-codes-vs.html" : "Specific Stroke Finding Codes ValueSet"
+      "systems" : [
+        "http://testSK.org/CodeSystem/mtici-code-cs",
+        "http://snomed.info/sct"
+      ]
     },
     {
       "url" : "http://testSK.org/ValueSet/stroke-arrival-mode-vs",
@@ -309,21 +297,6 @@
       "StructureDefinition-ischemic-stroke-etiology-ext.html" : "Ischemic Stroke – Etiology"
     },
     {
-      "url" : "http://testSK.org/ValueSet/stroke-finding-codes-vs",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "StrokeFindingCodesVS",
-      "title" : "Specific Stroke Finding Codes ValueSet",
-      "description" : "ValueSet for specific coded findings like Afib/Flutter status or mTICI score.",
-      "systems" : [
-        "http://testSK.org/CodeSystem/mtici-score-cs",
-        "http://snomed.info/sct"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-specific-finding-observation-profile.html" : "Specific Stroke Finding Observation Profile (R5)"
-    },
-    {
       "url" : "http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs",
       "version" : "0.1.0",
       "status" : "active",
@@ -335,10 +308,10 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
       "StructureDefinition-stroke-mechanical-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)",
-      "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)"
+      "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
+      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
+      "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)"
     },
     {
       "url" : "http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs",

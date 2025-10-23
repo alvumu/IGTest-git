@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-stroke-circumstance-
   "name" : "StrokeCircumstanceObservationProfile",
   "title" : "Stroke Circumstance Observation Profile (R5)",
   "status" : "draft",
-  "date" : "2025-10-23T09:52:59+00:00",
+  "date" : "2025-10-23T14:53:04+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

@@ -126,15 +126,6 @@
       "systems" : ["http://testSK.org/CodeSystem/mrs-score-cs"]
     },
     {
-      "url" : "http://testSK.org/ValueSet/mtici-code-vs",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "MTICICodeVS",
-      "title" : "mTICI Score Codes ValueSet",
-      "description" : "ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure.",
-      "systems" : ["http://testSK.org/CodeSystem/mtici-score-cs"]
-    },
-    {
       "url" : "http://testSK.org/ValueSet/mtici-score-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -168,7 +159,10 @@
       "name" : "SpecificFindingCodesVS",
       "title" : "Specific Stroke Finding Codes ValueSet",
       "description" : "Codes for specific clinical findings relevant to stroke (Afib/Flutter status, MTICI score).",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : [
+        "http://testSK.org/CodeSystem/mtici-code-cs",
+        "http://snomed.info/sct"
+      ]
     },
     {
       "url" : "http://testSK.org/ValueSet/stroke-arrival-mode-vs",
@@ -218,18 +212,6 @@
       "description" : "Specifies the determined etiology of an stroke.",
       "systems" : [
         "http://testSK.org/CodeSystem/stroke-etiology-cs",
-        "http://snomed.info/sct"
-      ]
-    },
-    {
-      "url" : "http://testSK.org/ValueSet/stroke-finding-codes-vs",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "StrokeFindingCodesVS",
-      "title" : "Specific Stroke Finding Codes ValueSet",
-      "description" : "ValueSet for specific coded findings like Afib/Flutter status or mTICI score.",
-      "systems" : [
-        "http://testSK.org/CodeSystem/mtici-score-cs",
         "http://snomed.info/sct"
       ]
     },

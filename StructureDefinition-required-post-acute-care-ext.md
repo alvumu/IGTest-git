@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-required-post-acute-
   "name" : "RequiredPostAcuteCareExtension",
   "title" : "Required Post-Acute Care Extension",
   "status" : "draft",
-  "date" : "2025-10-23T09:52:59+00:00",
+  "date" : "2025-10-23T14:53:04+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

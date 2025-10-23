@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for IGTest</h1>
- <p>Generated Thu Oct 23 09:54:58 UTC 2025, FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = <a href="https://alvumu.github.io">https://alvumu.github.io</a> (<a href="https://alvumu.github.io/history.html">history</a>))</p>
+ <p>Generated Thu Oct 23 14:55:08 UTC 2025, FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = <a href="https://alvumu.github.io">https://alvumu.github.io</a> (<a href="https://alvumu.github.io/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -470,6 +470,13 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r5</td>
     <td>http://tx.fhir.org/r5</td>
+    <td>http://testSK.org/ValueSet/stroke-finding-codes-vs</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r5</td>
+    <td>http://tx.fhir.org/r5</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
     <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
@@ -524,11 +531,11 @@
     <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
   </tr>
   <tr>
-    <td>Use primary server for http://snomed.info/sct</td>
-    <td>https://tx.fhir.org/r5</td>
-    <td>http://testSK.org/ValueSet/stroke-finding-codes-vs|0.1.0</td>
-    <td>[http://testSK.org/CodeSystem/mtici-score-cs, http://snomed.info/sct]</td>
-    <td>[auth = , candidates=, auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir]</td>
+    <td>Found candidate server http://tx.fhir.org/r5</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
@@ -545,11 +552,11 @@
     <td>auth = , candidates=</td>
   </tr>
   <tr>
-    <td>Use primary server for http://snomed.info/sct</td>
-    <td>https://tx.fhir.org/r5</td>
-    <td>http://testSK.org/ValueSet/stroke-finding-codes-vs|0.1.0</td>
-    <td>[http://testSK.org/CodeSystem/mtici-score-cs, http://snomed.info/sct]</td>
-    <td>[auth = , candidates=, auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir]</td>
+    <td>Found candidate server http://tx.fhir.org/r5</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
@@ -778,7 +785,7 @@
 </table>
 <h2>Primary Server: https://tx.fhir.org/r5</h2>
 <a href="https://tx.fhir.org/r5"></a>
-<p>Use Count: 108. Code Systems used: </p>
+<p>Use Count: 111. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -797,7 +804,7 @@
   <tr>
     <td>http://loinc.org</td>
     <td>2</td>
-    <td>0</td>
+    <td>1</td>
     <td>
       <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
     </td>
@@ -805,7 +812,7 @@
   <tr>
     <td>http://snomed.info/sct</td>
     <td>36</td>
-    <td>50</td>
+    <td>52</td>
     <td></td>
   </tr>
   <tr>
@@ -826,6 +833,7 @@
   <li>http://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html</li>
   <li>http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips</li>
   <li>http://snomed.info/sct</li>
+  <li>http://testSK.org/ValueSet/stroke-finding-codes-vs</li>
   <li>https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html</li>
 </ul>
 <h2>Server: https://tx.fhir.org/r5</h2>

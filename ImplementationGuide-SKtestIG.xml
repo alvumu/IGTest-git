@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="IGTest"/>
   <status value="draft"/>
-  <date value="2025-10-23T09:52:59+00:00"/>
+  <date value="2025-10-23T14:53:04+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -454,17 +454,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/mtici-code-vs"/>
-      </reference>
-      <name value="mTICI Score Codes ValueSet"/>
-      <description value="ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/mtici-score-vs"/>
       </reference>
       <name value="MTICI Score ValueSet"/>
@@ -600,17 +589,6 @@
       </reference>
       <name value="Specific Stroke Finding Codes ValueSet"/>
       <description value="Codes for specific clinical findings relevant to stroke (Afib/Flutter status, MTICI score)."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/stroke-finding-codes-vs"/>
-      </reference>
-      <name value="Specific Stroke Finding Codes ValueSet"/>
-      <description value="ValueSet for specific coded findings like Afib/Flutter status or mTICI score."/>
       <isExample value="false"/>
     </resource>
     <resource>

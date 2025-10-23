@@ -73,7 +73,6 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Perforation Procedures ValueSet](ValueSet-perforation-procedures-vs.md) | ValueSet containing SNOMED CT codes representing a range of perforation procedures. |
 | [Procedure Timing Context ValueSet](ValueSet-procedure-timing-context-vs.md) | ValueSet for codes defining the timing phase of a procedure relative to the encounter start. |
 | [Specific Stroke Finding Codes ValueSet](ValueSet-specific-finding-codes-vs.md) | Codes for specific clinical findings relevant to stroke (Afib/Flutter status, MTICI score). |
-| [Specific Stroke Finding Codes ValueSet](ValueSet-stroke-finding-codes-vs.md) | ValueSet for specific coded findings like Afib/Flutter status or mTICI score. |
 | [Stroke Arrival Mode ValueSet](ValueSet-stroke-arrival-mode-vs.md) | ValueSet specifying the mode and origin of the patient's arrival. |
 | [Stroke Circumstance Codes ValueSet](ValueSet-stroke-circumstance-codes-vs.md) | Codes for findings related to the circumstances of stroke onset (In-hospital, Wake-up). |
 | [Stroke Diagnosis ValueSet](ValueSet-stroke-diagnosis-vs.md) | SNOMED CT concepts representing final stroke-related diagnoses intended for use in Condition.code (and similar elements) within this IG. The scope covers ischemic stroke, intracerebral hemorrhage, subarachnoid hemorrhage, cerebral venous thrombosis, and transient ischemic attack (TIA). This value set is designed to support consistent capture, validation, analytics, and decision support. Implementers should expand against a terminology server using the appropriate SNOMED CT edition/version and preferred language(s) for display. Localizations or national derivatives MAY provide additional designations without altering the canonical definition. This value set is not intended for history-of, screening, or procedural concepts. |
@@ -88,7 +87,6 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Swallow Procedures ValueSet](ValueSet-swallow-procedures-vs.md) | ValueSet containing SNOMED CT codes representing a range of procedures used in the evaluation and management of stroke patients. |
 | [Swallowing Screening Timing Category ValueSet](ValueSet-swallowing-screening-timing-category-vs.md) | Temporal categories relative to stroke onset for swallowing screening. |
 | [Thrombectomy Complication ValueSet](ValueSet-thrombectomy-complication-vs.md) | Defines the specific complications of thrombectomy to record. |
-| [mTICI Score Codes ValueSet](ValueSet-mtici-code-vs.md) | ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure. |
 | [modified Rankin Scale (mRS) Score ValueSet](ValueSet-mrs-score-vs.md) | ValueSet containing the codes for the modified Rankin Scale (mRS) score. |
 
 ### Terminology: Code Systems 

@@ -16,7 +16,7 @@ Codes representing the mTICI score used to assess the degree of reperfusion afte
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+* [SpecificFindingCodesVS](ValueSet-specific-finding-codes-vs.md)
 
 
 
@@ -32,7 +32,7 @@ Codes representing the mTICI score used to assess the degree of reperfusion afte
   "title" : "mTICI Score Codes CodeSystem",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-10-23T09:52:59+00:00",
+  "date" : "2025-10-23T14:53:04+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

@@ -16,7 +16,6 @@ CodeSystem containing the codes to represent the MTICI score.
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [MTICICodeVS](ValueSet-mtici-code-vs.md)
 * [MTICIScoreValueSet](ValueSet-mtici-score-vs.md)
 
 

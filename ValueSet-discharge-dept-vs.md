@@ -52,7 +52,7 @@ ValueSet specifying the type of department or service the patient was discharged
   "name" : "DischargeDeptVS",
   "title" : "Discharge Department/Service ValueSet",
   "status" : "active",
-  "date" : "2025-10-23T09:52:59+00:00",
+  "date" : "2025-10-23T14:53:04+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

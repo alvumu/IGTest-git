@@ -16,7 +16,7 @@ Codes for specific clinical findings relevant to stroke (Afib/Flutter status, MT
 
  **References** 
 
-* Included into [StrokeFindingCodesVS](ValueSet-stroke-finding-codes-vs.md)
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
 
 ### Logical Definition (CLD)
 
@@ -24,9 +24,12 @@ Codes for specific clinical findings relevant to stroke (Afib/Flutter status, MT
 
 ### Expansion
 
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
+Expansion from tx.fhir.org based on:
 
-This value set contains 2 concepts
+* SNOMED CT International edition 01-Feb 2025
+* [codesystem mTICI Score Codes CodeSystem v0.1.0 (CodeSystem)](CodeSystem-mtici-code-cs.md)
+
+This value set contains 3 concepts
 
 -------
 
@@ -54,7 +57,7 @@ This value set contains 2 concepts
   "name" : "SpecificFindingCodesVS",
   "title" : "Specific Stroke Finding Codes ValueSet",
   "status" : "active",
-  "date" : "2025-10-23T09:52:59+00:00",
+  "date" : "2025-10-23T14:53:04+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
@@ -82,6 +85,9 @@ This value set contains 2 concepts
             "display" : "Atrial flutter (disorder)"
           }
         ]
+      },
+      {
+        "system" : "http://testSK.org/CodeSystem/mtici-code-cs"
       }
     ]
   }

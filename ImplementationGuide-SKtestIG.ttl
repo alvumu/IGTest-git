@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-23T09:52:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-23T14:53:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -645,21 +645,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/mtici-code-vs> ;
-         fhir:reference [ fhir:v "ValueSet/mtici-code-vs" ]
-       ] ;
-       fhir:name [ fhir:v "mTICI Score Codes ValueSet" ] ;
-       fhir:description [ fhir:v "ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure." ] ;
-       fhir:isExample [ fhir:v false ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://alvumu.github.io/ValueSet/mtici-score-vs> ;
          fhir:reference [ fhir:v "ValueSet/mtici-score-vs" ]
        ] ;
@@ -850,21 +835,6 @@
        ] ;
        fhir:name [ fhir:v "Specific Stroke Finding Codes ValueSet" ] ;
        fhir:description [ fhir:v "Codes for specific clinical findings relevant to stroke (Afib/Flutter status, MTICI score)." ] ;
-       fhir:isExample [ fhir:v false ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/stroke-finding-codes-vs> ;
-         fhir:reference [ fhir:v "ValueSet/stroke-finding-codes-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Specific Stroke Finding Codes ValueSet" ] ;
-       fhir:description [ fhir:v "ValueSet for specific coded findings like Afib/Flutter status or mTICI score." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [

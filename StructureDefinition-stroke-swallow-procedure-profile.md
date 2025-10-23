@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-stroke-swallow-proce
   "name" : "StrokeSwallowProcedureProfile",
   "title" : "Stroke Swallow Procedure Profile (R5)",
   "status" : "active",
-  "date" : "2025-10-23T09:52:59+00:00",
+  "date" : "2025-10-23T14:53:04+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
