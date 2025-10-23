@@ -81,7 +81,7 @@ Reflex | Repeat | Re-run.","","","","","","","","","",,"required","The type of T
 ","FiveWs.class",".outboundRelationship[typeCode=""COMP].target[classCode=""LIST"", moodCode=""EVN""].code"
 "Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Type of observation (code / type)","Describes what was observed. Sometimes this is called the observation ""name"".","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","","","","",,"required","","http://testSK.org/ValueSet/stroke-finding-codes-vs","",,,,"Observation.code",1,1,"obs-7
+","Type of observation (code / type)","Describes what was observed. Sometimes this is called the observation ""name"".","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","","","","",,"required","","http://testSK.org/ValueSet/specific-finding-codes-vs","",,,,"Observation.code",1,1,"obs-7
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","FiveWs.what[x]","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","116680003 |Is a|"
 "Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}

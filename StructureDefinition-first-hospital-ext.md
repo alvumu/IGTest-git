@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-first-hospital-ext.c
   "name" : "FirstHospitalExtension",
   "title" : "First Hospital Extension",
   "status" : "draft",
-  "date" : "2025-10-23T14:53:04+00:00",
+  "date" : "2025-10-23T15:20:30+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

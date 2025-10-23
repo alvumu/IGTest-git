@@ -1,7 +1,7 @@
 IGTest : Validation Results
 =========================================
 
-err = 182, warn = 137, info = 42
+err = 183, warn = 133, info = 42
 $--
 Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.github.io)
  Build Errors : 0 / 24 / 0
@@ -35,8 +35,8 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.git
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationStatement-PriorMedicationStatementExample : 1 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-AgeAtOnsetObservationExample : 1 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-FunctionalScoreObservationExample : 0 / 2 / 3
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-SpecificFindingObservationExample : 0 / 4 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-SpecificFindingObservationExampleMTICI : 1 / 3 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-SpecificFindingObservationExample : 0 / 3 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-SpecificFindingObservationExampleMTICI : 2 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-StrokeCircumstanceObservationExampleWakeUp : 1 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-TimingMetricObservationExample : 0 / 3 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-VitalSignObservationExample : 0 / 4 / 3
@@ -64,7 +64,7 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.git
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-prior-medication-statement-profile : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-procedure-timing-context-ext : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-required-post-acute-care-ext : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-specific-finding-observation-profile : 2 / 4 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-specific-finding-observation-profile : 2 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-brain-imaging-procedure-profile : 2 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-carotid-imaging-procedure-profile : 2 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-circumstance-observation-profile : 2 / 2 / 1
@@ -274,13 +274,12 @@ INFORMATION: Observation/FunctionalScoreObservationExample: Observation.value.of
 WARNING: Observation/FunctionalScoreObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/FunctionalScoreObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-SpecificFindingObservationExample.json ==
-WARNING: Observation/SpecificFindingObservationExample: Observation.code: ValueSet 'http://testSK.org/ValueSet/stroke-finding-codes-vs' not found
 WARNING: Observation/SpecificFindingObservationExample: Observation.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://testSK.org/CodeSystem/afib-flutter-status-cs' could not be found, so the code cannot be validated
 WARNING: Observation/SpecificFindingObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/SpecificFindingObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-SpecificFindingObservationExampleMTICI.json ==
-WARNING: Observation/SpecificFindingObservationExampleMTICI: Observation.code: ValueSet 'http://testSK.org/ValueSet/stroke-finding-codes-vs' not found
 ERROR: Observation/SpecificFindingObservationExampleMTICI: Observation.code.coding[0].code: Unknown code '1156911000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Observation/SpecificFindingObservationExampleMTICI: Observation.code: None of the codings provided are in the value set 'Specific Stroke Finding Codes ValueSet' (http://testSK.org/ValueSet/specific-finding-codes-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#1156911000)
 INFORMATION: Observation/SpecificFindingObservationExampleMTICI: Observation.value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/mtici-score-cs|0.1.0
 WARNING: Observation/SpecificFindingObservationExampleMTICI: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/SpecificFindingObservationExampleMTICI: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
@@ -384,8 +383,6 @@ ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/re
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-required-post-acute-care-ext: URL Mismatch https://alvumu.github.io/StructureDefinition/required-post-acute-care-ext vs http://testSK.org/StructureDefinition/required-post-acute-care-ext
 == fsh-generated/resources/StructureDefinition-specific-finding-observation-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/specific-finding-observation-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-specific-finding-observation-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/specific-finding-observation-profile) does not match the URL (http://testSK.org/StructureDefinition/specific-finding-observation-profile). Use the special-url parameter if you really mean for it not to match
-WARNING: StructureDefinition/specific-finding-observation-profile: StructureDefinition.snapshot.element[22].binding.valueSet: A definition could not be found for Canonical URL 'http://testSK.org/ValueSet/stroke-finding-codes-vs'
-WARNING: StructureDefinition/specific-finding-observation-profile: StructureDefinition.differential.element[1].binding.valueSet: A definition could not be found for Canonical URL 'http://testSK.org/ValueSet/stroke-finding-codes-vs'
 WARNING: StructureDefinition/specific-finding-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/specific-finding-observation-profile: StructureDefinition.snapshot.element[45].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-specific-finding-observation-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/specific-finding-observation-profile vs http://testSK.org/StructureDefinition/specific-finding-observation-profile

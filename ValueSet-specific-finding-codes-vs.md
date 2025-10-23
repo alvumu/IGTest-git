@@ -16,7 +16,7 @@ Codes for specific clinical findings relevant to stroke (Afib/Flutter status, MT
 
  **References** 
 
-This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+* [Specific Stroke Finding Observation Profile (R5)](StructureDefinition-specific-finding-observation-profile.md)
 
 ### Logical Definition (CLD)
 
@@ -57,7 +57,7 @@ This value set contains 3 concepts
   "name" : "SpecificFindingCodesVS",
   "title" : "Specific Stroke Finding Codes ValueSet",
   "status" : "active",
-  "date" : "2025-10-23T14:53:04+00:00",
+  "date" : "2025-10-23T15:20:30+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
