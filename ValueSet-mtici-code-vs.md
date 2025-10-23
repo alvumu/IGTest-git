@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/mtici-code-vs | *Version*:0.1.0 |
-| Active as of 2025-10-21 | *Computable Name*:MTICICodeVS |
+| Active as of 2025-10-23 | *Computable Name*:MTICICodeVS |
 
  
 ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure. 
@@ -52,7 +52,7 @@ ValueSet containing the codes to represent the mTICI score used to assess the de
   "name" : "MTICICodeVS",
   "title" : "mTICI Score Codes ValueSet",
   "status" : "active",
-  "date" : "2025-10-21T11:09:58+00:00",
+  "date" : "2025-10-23T09:52:59+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/timing-metric-codes-vs | *Version*:0.1.0 |
-| Active as of 2025-10-21 | *Computable Name*:TimingMetricCodesVS |
+| Active as of 2025-10-23 | *Computable Name*:TimingMetricCodesVS |
 
  
 ValueSet for key process timing metrics in acute stroke care (D2N, D2G). 
@@ -52,7 +52,7 @@ ValueSet for key process timing metrics in acute stroke care (D2N, D2G).
   "name" : "TimingMetricCodesVS",
   "title" : "Stroke Timing Metric Codes ValueSet",
   "status" : "active",
-  "date" : "2025-10-21T11:09:58+00:00",
+  "date" : "2025-10-23T09:52:59+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

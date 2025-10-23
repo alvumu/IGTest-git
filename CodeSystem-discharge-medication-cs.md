@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://testSK.org/ValueSet/medication-vs | *Version*:0.1.0 |
-| Draft as of 2025-10-21 | *Computable Name*:DischargeMedicationCS |
+| *Official URL*:http://testSK.org/CodeSystem/medication-cs | *Version*:0.1.0 |
+| Draft as of 2025-10-23 | *Computable Name*:DischargeMedicationCS |
 
  
 Codes for drug products or substances representing the Medications on the patient discharge. 
@@ -26,12 +26,12 @@ Codes for drug products or substances representing the Medications on the patien
 {
   "resourceType" : "CodeSystem",
   "id" : "discharge-medication-cs",
-  "url" : "http://testSK.org/ValueSet/medication-vs",
+  "url" : "http://testSK.org/CodeSystem/medication-cs",
   "version" : "0.1.0",
   "name" : "DischargeMedicationCS",
   "title" : "Medications CodeSystem",
   "status" : "draft",
-  "date" : "2025-10-21T11:09:58+00:00",
+  "date" : "2025-10-23T09:52:59+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

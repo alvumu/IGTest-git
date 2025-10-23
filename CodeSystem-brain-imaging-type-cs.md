@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/brain-imaging-type-cs | *Version*:0.1.0 |
-| Active as of 2025-10-21 | *Computable Name*:BrainImagingTypeCS |
+| Active as of 2025-10-23 | *Computable Name*:BrainImagingTypeCS |
 
  
 Codes specifying the type of brain imaging performed (e.g., CT, MRI). 
@@ -31,7 +31,7 @@ Codes specifying the type of brain imaging performed (e.g., CT, MRI).
   "name" : "BrainImagingTypeCS",
   "title" : "Brain Imaging Type Code System",
   "status" : "active",
-  "date" : "2025-10-21T11:09:58+00:00",
+  "date" : "2025-10-23T09:52:59+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/StructureDefinition/required-post-acute-care-ext | *Version*:0.1.0 |
-| Draft as of 2025-10-21 | *Computable Name*:RequiredPostAcuteCareExtension |
+| Draft as of 2025-10-23 | *Computable Name*:RequiredPostAcuteCareExtension |
 
 Indicates whether the patient required hospitalization beyond 24 hours after the designated acute phase of stroke care for this encounter.
 
@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-required-post-acute-
   "name" : "RequiredPostAcuteCareExtension",
   "title" : "Required Post-Acute Care Extension",
   "status" : "draft",
-  "date" : "2025-10-21T11:09:58+00:00",
+  "date" : "2025-10-23T09:52:59+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

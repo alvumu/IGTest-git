@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/medication-statement-cs | *Version*:0.1.0 |
-| Draft as of 2025-10-21 | *Computable Name*:MedicationStatementCS |
+| Draft as of 2025-10-23 | *Computable Name*:MedicationStatementCS |
 
  
 Codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use). 
@@ -31,7 +31,7 @@ Codes representing various medication-related procedures and findings (e.g., the
   "name" : "MedicationStatementCS",
   "title" : "MedicationStatement CodeSystem",
   "status" : "draft",
-  "date" : "2025-10-21T11:09:58+00:00",
+  "date" : "2025-10-23T09:52:59+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

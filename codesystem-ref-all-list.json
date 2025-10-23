@@ -671,6 +671,17 @@
       "ValueSet-initial-care-intensity-vs.html" : "Initial Care Intensity ValueSet"
     },
     {
+      "url" : "http://testSK.org/CodeSystem/medication-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DischargeMedicationCS",
+      "title" : "Medications CodeSystem",
+      "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
+      "uses" : {
+      },
+      "ValueSet-discharge-medication-vs.html" : "Medications ValueSet"
+    },
+    {
       "url" : "http://testSK.org/CodeSystem/medication-statement-cs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -701,8 +712,8 @@
       "description" : "CodeSystem containing the codes to represent the MTICI score.",
       "uses" : {
       },
-      "ValueSet-mtici-code-vs.html" : "mTICI Score Codes ValueSet",
-      "ValueSet-mtici-score-vs.html" : "MTICI Score ValueSet"
+      "ValueSet-mtici-score-vs.html" : "MTICI Score ValueSet",
+      "ValueSet-mtici-code-vs.html" : "mTICI Score Codes ValueSet"
     },
     {
       "url" : "http://testSK.org/CodeSystem/procedure-timing-context-cs",
@@ -804,17 +815,6 @@
       "ValueSet-timing-metric-codes-vs.html" : "Stroke Timing Metric Codes ValueSet"
     },
     {
-      "url" : "http://testSK.org/ValueSet/medication-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "DischargeMedicationCS",
-      "title" : "Medications CodeSystem",
-      "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
-      "uses" : {
-      },
-      "ValueSet-discharge-medication-vs.html" : "Medications ValueSet"
-    },
-    {
       "url" : "urn:ietf:bcp:47",
       "version" : "2.0.1",
       "status" : "active",
@@ -824,8 +824,8 @@
       "oids" : ["2.16.840.1.113883.6.121"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages",
-      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages"
+      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages",
+      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages"
     },
     {
       "url" : "urn:iso:std:iso:11073:10101",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/StructureDefinition/first-hospital-ext | *Version*:0.1.0 |
-| Draft as of 2025-10-21 | *Computable Name*:FirstHospitalExtension |
+| Draft as of 2025-10-23 | *Computable Name*:FirstHospitalExtension |
 
 Indicates if the reporting hospital was the first medical facility to admit the patient for this stroke episode.
 
@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-first-hospital-ext.c
   "name" : "FirstHospitalExtension",
   "title" : "First Hospital Extension",
   "status" : "draft",
-  "date" : "2025-10-21T11:09:58+00:00",
+  "date" : "2025-10-23T09:52:59+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

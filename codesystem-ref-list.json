@@ -80,6 +80,17 @@
       "ValueSet-initial-care-intensity-vs.html" : "Initial Care Intensity ValueSet"
     },
     {
+      "url" : "http://testSK.org/CodeSystem/medication-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DischargeMedicationCS",
+      "title" : "Medications CodeSystem",
+      "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
+      "uses" : {
+      },
+      "ValueSet-discharge-medication-vs.html" : "Medications ValueSet"
+    },
+    {
       "url" : "http://testSK.org/CodeSystem/medication-statement-cs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -110,8 +121,8 @@
       "description" : "CodeSystem containing the codes to represent the MTICI score.",
       "uses" : {
       },
-      "ValueSet-mtici-code-vs.html" : "mTICI Score Codes ValueSet",
-      "ValueSet-mtici-score-vs.html" : "MTICI Score ValueSet"
+      "ValueSet-mtici-score-vs.html" : "MTICI Score ValueSet",
+      "ValueSet-mtici-code-vs.html" : "mTICI Score Codes ValueSet"
     },
     {
       "url" : "http://testSK.org/CodeSystem/procedure-timing-context-cs",
@@ -211,17 +222,6 @@
       "uses" : {
       },
       "ValueSet-timing-metric-codes-vs.html" : "Stroke Timing Metric Codes ValueSet"
-    },
-    {
-      "url" : "http://testSK.org/ValueSet/medication-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "DischargeMedicationCS",
-      "title" : "Medications CodeSystem",
-      "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
-      "uses" : {
-      },
-      "ValueSet-discharge-medication-vs.html" : "Medications ValueSet"
     }
   ]
 }

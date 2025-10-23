@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/initial-care-intensity-cs | *Version*:0.1.0 |
-| Active as of 2025-10-21 | *Computable Name*:InitialCareIntensityCS |
+| Active as of 2025-10-23 | *Computable Name*:InitialCareIntensityCS |
 
  
 Codes indicating the level of care provided during the patient's initial day(s) in the hospital. 
@@ -32,7 +32,7 @@ Codes indicating the level of care provided during the patient's initial day(s) 
   "title" : "Initial Care Intensity Code System",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-10-21T11:09:58+00:00",
+  "date" : "2025-10-23T09:52:59+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

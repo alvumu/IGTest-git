@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/StructureDefinition/discharge-department-service-ext | *Version*:0.1.0 |
-| Draft as of 2025-10-21 | *Computable Name*:DischargeDepartmentServiceExtension |
+| Draft as of 2025-10-23 | *Computable Name*:DischargeDepartmentServiceExtension |
 
 Specifies the type of department or service the patient was discharged or transferred to.
 
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-discharge-department
   "name" : "DischargeDepartmentServiceExtension",
   "title" : "Discharge Department/Service Extension",
   "status" : "draft",
-  "date" : "2025-10-21T11:09:58+00:00",
+  "date" : "2025-10-23T09:52:59+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
