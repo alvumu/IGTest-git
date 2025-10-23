@@ -14,6 +14,7 @@ Alias: AbsentOrUnknownVS = https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknow
 
 // URLs for Medication ValueSets
 Alias: MedicationVS_URL = http://testSK.org/ValueSet/medication-vs
+Alias: MedicationCS_URL = http://testSK.org/CodeSystem/medication-cs
 
 // ValueSet: MedicationVS
 // Id: medication-vs
@@ -39,7 +40,7 @@ Alias: MedicationVS_URL = http://testSK.org/ValueSet/medication-vs
 
 CodeSystem: DischargeMedicationCS
 Id: discharge-medication-cs
-* ^url = MedicationVS_URL
+* ^url = MedicationCS_URL
 * ^version = "1.0.0"
 * ^name = "DischargeMedicationCS"
 * ^title = "Medications CodeSystem"
@@ -61,7 +62,7 @@ Id: discharge-medication-vs
 * ^title = "Medications ValueSet"
 * ^description = "Codes for drug products or substances representing the Medications on the patient discharge."
 * ^status = #draft
-*   include codes from system MedicationVS_URL
+*   include codes from system MedicationCS_URL
 *   include codes from valueset AbsentOrUnknownVS
 // ------------------ Profile: Discharge Medication Request (Updated) -----------------------
 
@@ -99,7 +100,7 @@ InstanceOf: DischargeMedicationRequestProfile
 * id = "discharge-medication-request-001"
 * status = #active
 * category = MedReqAdminLocCS#community
-* medication = SCT#372756006 "Warfarin (substance)"
+* medication = DischargeMedicationCS#warfarin
 * intent = #order // Intent for discharge medication request
 * subject = Reference(PatientExample) // Reference to the patient
 * encounter = Reference(StrokeEncounterExample) // Reference to the stroke encounter
