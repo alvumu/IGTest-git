@@ -52,6 +52,7 @@ Id: discharge-medication-cs
 * #clopidogrel "Clopidogrel" "Clopidogrel was prescribed at discharge"
 * #heparin "Heparin" "Heparin (either unfractionated or low-molecular-weight) was prescribed at discharge"
 * #warfarin "Warfarin" "Warfarin, a vitamin K antagonist—was prescribed at discharge"
+* #statin "Statin" "Statins, used to lower LDL and triglycerides in the blood was prescribed at discharge"
 * #other "Other Medication" "A medication other than those specifically listed was prescribed at discharge"
 
 ValueSet: DischargeMedicationVS
@@ -100,7 +101,11 @@ InstanceOf: DischargeMedicationRequestProfile
 * id = "discharge-medication-request-001"
 * status = #active
 * category = MedReqAdminLocCS#community
+<<<<<<< HEAD
 * medication = DischargeMedicationCS#warfarin
+=======
+* medication = DischargeMedicationCS#warfarin "Warfarin (substance)"
+>>>>>>> 3ddf25b7a289c8005646858f6912faeaba9fca71
 * intent = #order // Intent for discharge medication request
 * subject = Reference(PatientExample) // Reference to the patient
 * encounter = Reference(StrokeEncounterExample) // Reference to the stroke encounter

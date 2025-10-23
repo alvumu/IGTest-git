@@ -26,7 +26,7 @@ Id: medication-statement-cs
 * ^description = "Codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use)."
 * #antidiabetic "Any Antidiabetic" "The patient was taking antidiabetic medication prior to hospital admission or before the stroke event"
 * #antiplatelet "Any Antiplatelet" "The patient was taking antiplatelet medication prior to hospital admission or before the stroke event"
-* #aspirin "Aspirin" "The patient was taking aspirin (acetylsalicylic acid) prior to hospital admission or before the stroke event"
+* #asa "Aspirin" "The patient was taking aspirin (acetylsalicylic acid) prior to hospital admission or before the stroke event"
 * #clopidogrel "Clopidogrel" "The patient was taking clopidogrel prior to hospital admission or before the stroke event"
 
 
@@ -70,9 +70,11 @@ Parent: MedicationStatement // Base R5 MedicationStatement
 * medication from MedStatementMedsVS_URL (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
+* encounter 1..1 MS
+* encounter only Reference(Encounter)
 * reason 0..* MS 
 * reason only CodeableReference(Condition or Observation or DiagnosticReport) // Allowed targets for reason in R5
-
+* status 1..1 MS
 // Adherence field to represent Taking / Not Taking in R5
 * adherence 0..1 MS // Make the adherence block optional but supported
 * adherence.code 1..1 MS // If adherence block is present, code is mandatory
@@ -85,3 +87,5 @@ InstanceOf: PriorMedicationStatementProfile
 * reason = Reference(StrokeDiagnosisConditionExample)
 * adherence.code = http://hl7.org/fhir/CodeSystem/medication-statement-adherence#taking // Using R5 adherence codes
 * status = #recorded // Status of the prior medication statement
+* encounter = Reference(EncounterExample)
+
