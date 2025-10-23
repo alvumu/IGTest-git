@@ -229,6 +229,7 @@ Id: specific-finding-codes-vs
 * ^status = #active
 * include SCT#49436004 "Atrial fibrillation (disorder)"
 * include SCT#5370000 "Atrial flutter (disorder)"
+* include codes from system MticiCodeCS_URL
 
 CodeSystem: MTICICodeCS
 Id: mtici-code-cs
@@ -241,24 +242,24 @@ Id: mtici-code-cs
 * ^caseSensitive = false
 * #mTICI "mTICI" "Modified Thrombolysis in Cerebral Infarction" 
 
-ValueSet: MTICICodeVS
-Id: mtici-code-vs
-* ^url = MticiCodeVS_URL
-* ^version = "1.0.0"
-* ^title = "mTICI Score Codes ValueSet"
-* ^description = "ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure."
-* ^status = #active
-* include codes from system MticiScoreCS_URL
+//ValueSet: MTICICodeVS
+//Id: mtici-code-vs
+//* ^url = MticiCodeVS_URL
+//* ^version = "1.0.0"
+//* ^title = "mTICI Score Codes ValueSet"
+//* ^description = "ValueSet containing the codes to represent the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure."
+//* ^status = #active
+//* include codes from system MticiScoreCS_URL
 
-ValueSet: StrokeFindingCodesVS
-Id: stroke-finding-codes-vs
-* ^url = StrokeFindingCodesVS_URL
-* ^version = "1.0.0"
-* ^title = "Specific Stroke Finding Codes ValueSet"
-* ^description = "ValueSet for specific coded findings like Afib/Flutter status or mTICI score."
-* ^status = #active
-* include codes from valueset SpecificFindingCodesVS_URL
-* include codes from valueset MticiCodeVS_URL
+//ValueSet: StrokeFindingCodesVS
+// Id: stroke-finding-codes-vs
+//* ^url = StrokeFindingCodesVS_URL
+//* ^version = "1.0.0"
+//* ^title = "Specific Stroke Finding Codes ValueSet"
+//* ^description = "ValueSet for specific coded findings like Afib/Flutter status or mTICI score."
+//* ^status = #active
+//* include codes from valueset SpecificFindingCodesVS_URL
+
 
 
 // ------------------------- Extensions -------------------------------
