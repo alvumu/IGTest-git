@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/brain-imaging-modality-vs | *Version*:0.1.0 |
-| Active as of 2025-10-23 | *Computable Name*:BrainImagingModalityVS |
+| Active as of 2025-10-27 | *Computable Name*:BrainImagingModalityVS |
 
  
 Defines the SNOMED CT codes for individual brain imaging modalities performed as procedures. 
@@ -57,7 +57,7 @@ This value set contains 6 concepts
   "name" : "BrainImagingModalityVS",
   "title" : "Brain Imaging Modality ValueSet",
   "status" : "active",
-  "date" : "2025-10-23T15:20:30+00:00",
+  "date" : "2025-10-27T09:20:18+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

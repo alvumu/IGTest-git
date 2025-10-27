@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/swallow-procedures-cs | *Version*:0.1.0 |
-| Active as of 2025-10-23 | *Computable Name*:SwallowProceduresCS |
+| Active as of 2025-10-27 | *Computable Name*:SwallowProceduresCS |
 
  
 Codes representing various swallowing assessment procedures. 
@@ -31,7 +31,7 @@ Codes representing various swallowing assessment procedures.
   "name" : "SwallowProceduresCS",
   "title" : "Swallow Procedures Code System",
   "status" : "active",
-  "date" : "2025-10-23T15:20:30+00:00",
+  "date" : "2025-10-27T09:20:18+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

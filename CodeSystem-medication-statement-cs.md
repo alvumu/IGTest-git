@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/medication-statement-cs | *Version*:0.1.0 |
-| Draft as of 2025-10-23 | *Computable Name*:MedicationStatementCS |
+| Draft as of 2025-10-27 | *Computable Name*:MedicationStatementCS |
 
  
 Codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use). 
@@ -31,7 +31,7 @@ Codes representing various medication-related procedures and findings (e.g., the
   "name" : "MedicationStatementCS",
   "title" : "MedicationStatement CodeSystem",
   "status" : "draft",
-  "date" : "2025-10-23T15:20:30+00:00",
+  "date" : "2025-10-27T09:20:18+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
@@ -46,7 +46,7 @@ Codes representing various medication-related procedures and findings (e.g., the
   ],
   "description" : "Codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use).",
   "content" : "complete",
-  "count" : 4,
+  "count" : 2,
   "concept" : [
     {
       "code" : "antidiabetic",
@@ -57,16 +57,6 @@ Codes representing various medication-related procedures and findings (e.g., the
       "code" : "antiplatelet",
       "display" : "Any Antiplatelet",
       "definition" : "The patient was taking antiplatelet medication prior to hospital admission or before the stroke event"
-    },
-    {
-      "code" : "asa",
-      "display" : "Aspirin",
-      "definition" : "The patient was taking aspirin (acetylsalicylic acid) prior to hospital admission or before the stroke event"
-    },
-    {
-      "code" : "clopidogrel",
-      "display" : "Clopidogrel",
-      "definition" : "The patient was taking clopidogrel prior to hospital admission or before the stroke event"
     }
   ]
 }

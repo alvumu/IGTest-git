@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "medicationStatement-meds-codes-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet medicationStatement-meds-codes-vs</b></p><a name=\"medicationStatement-meds-codes-vs\"> </a><a name=\"hcmedicationStatement-meds-codes-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/308116003\">308116003</a></td><td>Antihypertensive therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/182764009\">182764009</a></td><td>Anticoagulant therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/1237404009\">1237404009</a></td><td>Uses hormone method of contraception (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/315053001\">315053001</a></td><td>Administration of prophylactic statin (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/722045009\">722045009</a></td><td>Warfarin therapy (procedure)</td></tr></table></li><li>Include all codes defined in <a href=\"CodeSystem-medication-statement-cs.html\"><code>http://testSK.org/CodeSystem/medication-statement-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet medicationStatement-meds-codes-vs</b></p><a name=\"medicationStatement-meds-codes-vs\"> </a><a name=\"hcmedicationStatement-meds-codes-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/372586001\">372586001</a></td><td>Hypotensive agent (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/372862008\">372862008</a></td><td>Anticoagulant (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/1237404009\">1237404009</a></td><td>Uses hormone method of contraception (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/372912004\">372912004</a></td><td>Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/372756006\">372756006</a></td><td>Warfarin (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/386952008\">386952008</a></td><td>Clopidogrel (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/387458008\">387458008</a></td><td>Aspirin (substance)</td></tr></table></li><li>Include all codes defined in <a href=\"CodeSystem-medication-statement-cs.html\"><code>http://testSK.org/CodeSystem/medication-statement-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://testSK.org/ValueSet/medicationStatement-meds-codes-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -33,20 +33,26 @@
      fhir:include ( [
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
        fhir:concept ( [
-         fhir:code [ fhir:v "308116003" ] ;
-         fhir:display [ fhir:v "Antihypertensive therapy (procedure)" ]
+         fhir:code [ fhir:v "372586001" ] ;
+         fhir:display [ fhir:v "Hypotensive agent (substance)" ]
        ] [
-         fhir:code [ fhir:v "182764009" ] ;
-         fhir:display [ fhir:v "Anticoagulant therapy (procedure)" ]
+         fhir:code [ fhir:v "372862008" ] ;
+         fhir:display [ fhir:v "Anticoagulant (substance)" ]
        ] [
          fhir:code [ fhir:v "1237404009" ] ;
          fhir:display [ fhir:v "Uses hormone method of contraception (finding)" ]
        ] [
-         fhir:code [ fhir:v "315053001" ] ;
-         fhir:display [ fhir:v "Administration of prophylactic statin (procedure)" ]
+         fhir:code [ fhir:v "372912004" ] ;
+         fhir:display [ fhir:v "Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)" ]
        ] [
-         fhir:code [ fhir:v "722045009" ] ;
-         fhir:display [ fhir:v "Warfarin therapy (procedure)" ]
+         fhir:code [ fhir:v "372756006" ] ;
+         fhir:display [ fhir:v "Warfarin (substance)" ]
+       ] [
+         fhir:code [ fhir:v "386952008" ] ;
+         fhir:display [ fhir:v "Clopidogrel (substance)" ]
+       ] [
+         fhir:code [ fhir:v "387458008" ] ;
+         fhir:display [ fhir:v "Aspirin (substance)" ]
        ] )
      ] [
        fhir:system [ fhir:v "http://testSK.org/CodeSystem/medication-statement-cs"^^xsd:anyURI ]

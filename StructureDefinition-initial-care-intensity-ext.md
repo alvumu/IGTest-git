@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/StructureDefinition/initial-care-intensity-ext | *Version*:0.1.0 |
-| Draft as of 2025-10-23 | *Computable Name*:InitialCareIntensityExtension |
+| Draft as of 2025-10-27 | *Computable Name*:InitialCareIntensityExtension |
 
 Specifies the level of care provided during the patient's initial day(s) in the hospital (e.g., standard bed, monitored, ICU/Stroke Unit).
 
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-initial-care-intensi
   "name" : "InitialCareIntensityExtension",
   "title" : "Initial Care Intensity Extension",
   "status" : "draft",
-  "date" : "2025-10-23T15:20:30+00:00",
+  "date" : "2025-10-27T09:20:18+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

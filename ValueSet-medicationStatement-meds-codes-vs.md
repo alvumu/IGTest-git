@@ -78,24 +78,32 @@ This value set contains 9 concepts
         "system" : "http://snomed.info/sct",
         "concept" : [
           {
-            "code" : "308116003",
-            "display" : "Antihypertensive therapy (procedure)"
+            "code" : "372586001",
+            "display" : "Hypotensive agent (substance)"
           },
           {
-            "code" : "182764009",
-            "display" : "Anticoagulant therapy (procedure)"
+            "code" : "372862008",
+            "display" : "Anticoagulant (substance)"
           },
           {
             "code" : "1237404009",
             "display" : "Uses hormone method of contraception (finding)"
           },
           {
-            "code" : "315053001",
-            "display" : "Administration of prophylactic statin (procedure)"
+            "code" : "372912004",
+            "display" : "Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)"
           },
           {
-            "code" : "722045009",
-            "display" : "Warfarin therapy (procedure)"
+            "code" : "372756006",
+            "display" : "Warfarin (substance)"
+          },
+          {
+            "code" : "386952008",
+            "display" : "Clopidogrel (substance)"
+          },
+          {
+            "code" : "387458008",
+            "display" : "Aspirin (substance)"
           }
         ]
       },

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs | *Version*:0.1.0 |
-| Active as of 2025-10-23 | *Computable Name*:StrokeProcNotDoneReasonVS |
+| Active as of 2025-10-27 | *Computable Name*:StrokeProcNotDoneReasonVS |
 
  
 ValueSet containing specific codes to indicate why thrombolysis or thrombectomy was not performed. 
@@ -55,7 +55,7 @@ ValueSet containing specific codes to indicate why thrombolysis or thrombectomy 
   "name" : "StrokeProcNotDoneReasonVS",
   "title" : "Stroke Procedure Not Done Reason ValueSet",
   "status" : "active",
-  "date" : "2025-10-23T15:20:30+00:00",
+  "date" : "2025-10-27T09:20:18+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
