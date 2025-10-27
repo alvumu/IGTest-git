@@ -33,10 +33,12 @@ Id: medication-vs
 * include SCT#387458008 "Aspirin (substance)"
 * include SCT#386952008 "Clopidogrel (substance)"
 * include SCT#372877000 "Heparin (substance)"
+* include codes from system MedicationCS_URL
+* include codes from valueset AbsentOrUnknownVS
 
 
-CodeSystem: DischargeMedicationCS
-Id: discharge-medication-cs
+CodeSystem: MedicationCS
+Id: medication-cs
 * ^url = MedicationCS_URL
 * ^version = "1.0.0"
 * ^name = "DischargeMedicationCS"
@@ -49,16 +51,6 @@ Id: discharge-medication-cs
 * #other "Other Medication" "A medication other than those specifically listed was prescribed at discharge"
 * #other-antiplatelet "Other Antiplatelet" "Other Antiplatelet"
 
-ValueSet: DischargeMedicationVS
-Id: discharge-medication-vs
-* ^url = "http://testSK.org/ValueSet/discharge-medication-vs"
-* ^version = "1.0.0"
-* ^name = "DischargeMedicationVS"
-* ^title = "Medications ValueSet"
-* ^description = "Codes for drug products or substances representing the Medications on the patient discharge."
-* ^status = #draft
-*   include codes from system MedicationCS_URL
-*   include codes from valueset AbsentOrUnknownVS
 
 // ------------------ Profile: Discharge Medication Request (Updated) -----------------------
 
