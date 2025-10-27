@@ -16,27 +16,24 @@ Alias: AbsentOrUnknownVS = https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknow
 Alias: MedicationVS_URL = http://testSK.org/ValueSet/medication-vs
 Alias: MedicationCS_URL = http://testSK.org/CodeSystem/medication-cs
 
-// ValueSet: MedicationVS
-// Id: medication-vs
-// * ^url = MedicationVS_URL
-// * ^version = "1.0.0"
-// * ^name = "MedicationVS"
-// * ^title = "Medications ValueSet"
-// * ^description = "SNOMED CT codes for drug products or substances."
-// * ^status = #draft
-// * include SCT#372756006 "Warfarin (substance)"
-// * include SCT#698871007 "Dabigatran (substance)"
-// * include SCT#442031002 "Rivaroxaban (substance)"
-// * include SCT#698090000 "Apixaban (substance)"
-// * include SCT#712778008 "Edoxaban (substance)"
-// * include SCT#372862008 "Anticoagulant (substance)"
-// * include SCT#387458008 "Aspirin (substance)"
-// * include SCT#386952008 "Clopidogrel (substance)"
-// * include SCT#698805004 "Ticagrelor (substance)"
-// * include SCT#443129001 "Prasugrel (substance)"
-// * include SCT#387371005 "Dipyridamole (substance)"
-// * include SCT#771451006 "Platelet aggregation inhibitor (disposition)"
-// * include SCT#372562003 "Enoxaparin (substance)"
+ValueSet: MedicationVS
+Id: medication-vs
+* ^url = MedicationVS_URL
+* ^version = "1.0.0"
+* ^name = "MedicationVS"
+* ^title = "Medications ValueSet"
+* ^description = "SNOMED CT codes for drug products or substances."
+* ^status = #draft
+* include SCT#372756006 "Warfarin (substance)"
+* include SCT#372586001 "Hypotensive agent (substance)"
+* include SCT#372862008 "Anticoagulant (substance)"
+* include SCT#1237404009 "Uses hormone method of contraception (finding)"
+* include SCT#372912004 "Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)"
+* include SCT#372756006 "Warfarin (substance)"
+* include SCT#387458008 "Aspirin (substance)"
+* include SCT#386952008 "Clopidogrel (substance)"
+* include SCT#372877000 "Heparin (substance)"
+
 
 CodeSystem: DischargeMedicationCS
 Id: discharge-medication-cs
@@ -46,14 +43,11 @@ Id: discharge-medication-cs
 * ^title = "Medications CodeSystem"
 * ^description = "Codes for drug products or substances representing the Medications on the patient discharge."
 * ^status = #draft
-* #anticoagulant "Any Anticoagulant" "Any anticoagulant (such as warfarin or a NOAC) was prescribed at discharge"
-* #antiplatelet "Any Antiplatelet" "Any antiplatelet medication (e.g., aspirin, clopidogrel) was prescribed at discharge"
-* #asa "Aspirin" "Aspirin (acetylsalicylic acid) was prescribed at discharge"
-* #clopidogrel "Clopidogrel" "Clopidogrel was prescribed at discharge"
-* #heparin "Heparin" "Heparin (either unfractionated or low-molecular-weight) was prescribed at discharge"
-* #warfarin "Warfarin" "Warfarin, a vitamin K antagonist—was prescribed at discharge"
-* #statin "Statin" "Statins, used to lower LDL and triglycerides in the blood was prescribed at discharge"
+* #other-anticoagulant "Other Anticoagulant" "Any anticoagulant medication"
+* #antiplatelet "Any Antiplatelet" "Any antiplatelet medication"
+* #antidiabetic "Any Antidiabetic" "Any antidiabetic medication"
 * #other "Other Medication" "A medication other than those specifically listed was prescribed at discharge"
+* #other-antiplatelet "Other Antiplatelet" "Other Antiplatelet"
 
 ValueSet: DischargeMedicationVS
 Id: discharge-medication-vs
@@ -65,6 +59,7 @@ Id: discharge-medication-vs
 * ^status = #draft
 *   include codes from system MedicationCS_URL
 *   include codes from valueset AbsentOrUnknownVS
+
 // ------------------ Profile: Discharge Medication Request (Updated) -----------------------
 
 Profile: DischargeMedicationRequestProfile
