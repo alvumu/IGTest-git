@@ -19,39 +19,7 @@ Alias: Condition = http://hl7.org/fhir/StructureDefinition/Condition
 
 
 
-ValueSet: MedicationVS
-Id: medication-vs
-* ^url = MedicationVS_URL
-* ^version = "1.0.0"
-* ^name = "MedicationVS"
-* ^title = "Medications ValueSet"
-* ^description = "SNOMED CT codes for drug products or substances."
-* ^status = #draft
-* include SCT#372756006 "Warfarin (substance)"
-* include SCT#372586001 "Hypotensive agent (substance)"
-* include SCT#372862008 "Anticoagulant (substance)"
-* include SCT#1237404009 "Uses hormone method of contraception (finding)"
-* include SCT#372912004 "Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)"
-* include SCT#387458008 "Aspirin (substance)"
-* include SCT#386952008 "Clopidogrel (substance)"
-* include SCT#372877000 "Heparin (substance)"
-* include codes from system MedicationCS_URL
-* include codes from valueset AbsentOrUnknownVS
 
-
-CodeSystem: MedicationCS
-Id: medication-cs
-* ^url = MedicationCS_URL
-* ^version = "1.0.0"
-* ^name = "DischargeMedicationCS"
-* ^title = "Medications CodeSystem"
-* ^description = "Codes for drug products or substances representing the Medications on the patient discharge."
-* ^status = #draft
-* #other-anticoagulant "Other Anticoagulant" "Any anticoagulant medication"
-* #antiplatelet "Any Antiplatelet" "Any antiplatelet medication"
-* #antidiabetic "Any Antidiabetic" "Any antidiabetic medication"
-* #other "Other Medication" "A medication other than those specifically listed was prescribed at discharge"
-* #other-antiplatelet "Other Antiplatelet" "Other Antiplatelet"
 
 // ValueSet: DischargeMedicationVS
 // Id: discharge-medication-vs
