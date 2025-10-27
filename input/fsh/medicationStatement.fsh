@@ -32,7 +32,6 @@ Id: medication-vs
 * include SCT#372862008 "Anticoagulant (substance)"
 * include SCT#1237404009 "Uses hormone method of contraception (finding)"
 * include SCT#372912004 "Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)"
-* include SCT#372756006 "Warfarin (substance)"
 * include SCT#387458008 "Aspirin (substance)"
 * include SCT#386952008 "Clopidogrel (substance)"
 * include SCT#372877000 "Heparin (substance)"
@@ -82,7 +81,7 @@ Parent: MedicationStatement // Base R5 MedicationStatement
 
 // Key fields for prior medication reporting
 * medication 1..1 MS
-* medication from MedStatementMedsVS_URL (required)
+* medication from MedicationVS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * encounter 1..1 MS
@@ -97,7 +96,7 @@ Parent: MedicationStatement // Base R5 MedicationStatement
 
 Instance: PriorMedicationStatementExample
 InstanceOf: PriorMedicationStatementProfile
-* medication = SCT#722045009 "Warfarin therapy (procedure)"
+* medication = SCT#372756006 "Warfarin (substance)"
 * subject = Reference(PatientExample) // Reference to the patient
 * reason = Reference(StrokeDiagnosisConditionExample)
 * adherence.code = http://hl7.org/fhir/CodeSystem/medication-statement-adherence#taking // Using R5 adherence codes

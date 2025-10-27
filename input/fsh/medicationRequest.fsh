@@ -29,7 +29,6 @@ Id: medication-vs
 * include SCT#372862008 "Anticoagulant (substance)"
 * include SCT#1237404009 "Uses hormone method of contraception (finding)"
 * include SCT#372912004 "Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)"
-* include SCT#372756006 "Warfarin (substance)"
 * include SCT#387458008 "Aspirin (substance)"
 * include SCT#386952008 "Clopidogrel (substance)"
 * include SCT#372877000 "Heparin (substance)"
@@ -41,7 +40,7 @@ CodeSystem: MedicationCS
 Id: medication-cs
 * ^url = MedicationCS_URL
 * ^version = "1.0.0"
-* ^name = "DischargeMedicationCS"
+* ^name = "MedicationCS"
 * ^title = "Medications CodeSystem"
 * ^description = "Codes for drug products or substances representing the Medications on the patient discharge."
 * ^status = #draft
@@ -73,7 +72,7 @@ Parent: FHIR_MedicationRequest
 * category 1..1 MS 
 
 * medication 1..1 MS
-* medication from DischargeMedicationVS (required)
+* medication from MedicationVS (required)
 * subject 1..1 MS
 * subject only Reference(FHIR_Patient)
 
@@ -88,7 +87,7 @@ InstanceOf: DischargeMedicationRequestProfile
 * id = "discharge-medication-request-001"
 * status = #active
 * category = MedReqAdminLocCS#community
-* medication = DischargeMedicationCS#warfarin
+* medication = SCT#372756006 "Warfarin (substance)"
 * intent = #order // Intent for discharge medication request
 * subject = Reference(PatientExample) // Reference to the patient
 * encounter = Reference(StrokeEncounterExample) // Reference to the stroke encounter
