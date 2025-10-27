@@ -43,7 +43,7 @@ This work has been made as part of the [RES-Q+ project](https://www.resqplus.eu)
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2025-10-27T09:20:18+00:00",
+  "date" : "2025-10-27T10:25:48+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
@@ -516,7 +516,7 @@ This work has been made as part of the [RES-Q+ project](https://www.resqplus.eu)
           }
         ],
         "reference" : {
-          "reference" : "CodeSystem/discharge-medication-cs"
+          "reference" : "CodeSystem/medication-cs"
         },
         "name" : "Medications CodeSystem",
         "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
@@ -530,38 +530,10 @@ This work has been made as part of the [RES-Q+ project](https://www.resqplus.eu)
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/discharge-medication-vs"
+          "reference" : "ValueSet/medication-vs"
         },
         "name" : "Medications ValueSet",
-        "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
-        "isExample" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/medication-statement-cs"
-        },
-        "name" : "MedicationStatement CodeSystem",
-        "description" : "Codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use).",
-        "isExample" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/medicationStatement-meds-codes-vs"
-        },
-        "name" : "MedicationStatement Therapy/Finding Codes",
-        "description" : "ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use).",
+        "description" : "SNOMED CT codes for drug products or substances.",
         "isExample" : false
       },
       {

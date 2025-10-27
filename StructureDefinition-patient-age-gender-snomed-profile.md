@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-patient-age-gender-s
   "name" : "PatientAgeGenderSNOMEDProfile",
   "title" : "Patient with SNOMED Gender and Age (extensions)",
   "status" : "draft",
-  "date" : "2025-10-27T09:20:18+00:00",
+  "date" : "2025-10-27T10:25:48+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

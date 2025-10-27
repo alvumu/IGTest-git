@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="IGTest"/>
   <status value="draft"/>
-  <date value="2025-10-27T09:20:18+00:00"/>
+  <date value="2025-10-27T10:25:48+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -366,7 +366,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/discharge-medication-cs"/>
+        <reference value="CodeSystem/medication-cs"/>
       </reference>
       <name value="Medications CodeSystem"/>
       <description value="Codes for drug products or substances representing the Medications on the patient discharge."/>
@@ -377,32 +377,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/discharge-medication-vs"/>
+        <reference value="ValueSet/medication-vs"/>
       </reference>
       <name value="Medications ValueSet"/>
-      <description value="Codes for drug products or substances representing the Medications on the patient discharge."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/medication-statement-cs"/>
-      </reference>
-      <name value="MedicationStatement CodeSystem"/>
-      <description value="Codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use)."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/medicationStatement-meds-codes-vs"/>
-      </reference>
-      <name value="MedicationStatement Therapy/Finding Codes"/>
-      <description value="ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use)."/>
+      <description value="SNOMED CT codes for drug products or substances."/>
       <isExample value="false"/>
     </resource>
     <resource>

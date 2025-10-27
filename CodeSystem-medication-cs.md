@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/medication-cs | *Version*:0.1.0 |
-| Draft as of 2025-10-27 | *Computable Name*:DischargeMedicationCS |
+| Draft as of 2025-10-27 | *Computable Name*:MedicationCS |
 
  
 Codes for drug products or substances representing the Medications on the patient discharge. 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [DischargeMedicationVS](ValueSet-discharge-medication-vs.md)
+* [MedicationVS](ValueSet-medication-vs.md)
 
 
 
@@ -25,13 +25,13 @@ Codes for drug products or substances representing the Medications on the patien
 ```json
 {
   "resourceType" : "CodeSystem",
-  "id" : "discharge-medication-cs",
+  "id" : "medication-cs",
   "url" : "http://testSK.org/CodeSystem/medication-cs",
   "version" : "0.1.0",
-  "name" : "DischargeMedicationCS",
+  "name" : "MedicationCS",
   "title" : "Medications CodeSystem",
   "status" : "draft",
-  "date" : "2025-10-27T09:20:18+00:00",
+  "date" : "2025-10-27T10:25:48+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
@@ -46,47 +46,32 @@ Codes for drug products or substances representing the Medications on the patien
   ],
   "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
   "content" : "complete",
-  "count" : 8,
+  "count" : 5,
   "concept" : [
     {
-      "code" : "anticoagulant",
-      "display" : "Any Anticoagulant",
-      "definition" : "Any anticoagulant (such as warfarin or a NOAC) was prescribed at discharge"
+      "code" : "other-anticoagulant",
+      "display" : "Other Anticoagulant",
+      "definition" : "Any anticoagulant medication"
     },
     {
       "code" : "antiplatelet",
       "display" : "Any Antiplatelet",
-      "definition" : "Any antiplatelet medication (e.g., aspirin, clopidogrel) was prescribed at discharge"
+      "definition" : "Any antiplatelet medication"
     },
     {
-      "code" : "asa",
-      "display" : "Aspirin",
-      "definition" : "Aspirin (acetylsalicylic acid) was prescribed at discharge"
-    },
-    {
-      "code" : "clopidogrel",
-      "display" : "Clopidogrel",
-      "definition" : "Clopidogrel was prescribed at discharge"
-    },
-    {
-      "code" : "heparin",
-      "display" : "Heparin",
-      "definition" : "Heparin (either unfractionated or low-molecular-weight) was prescribed at discharge"
-    },
-    {
-      "code" : "warfarin",
-      "display" : "Warfarin",
-      "definition" : "Warfarin, a vitamin K antagonist—was prescribed at discharge"
-    },
-    {
-      "code" : "statin",
-      "display" : "Statin",
-      "definition" : "Statins, used to lower LDL and triglycerides in the blood was prescribed at discharge"
+      "code" : "antidiabetic",
+      "display" : "Any Antidiabetic",
+      "definition" : "Any antidiabetic medication"
     },
     {
       "code" : "other",
       "display" : "Other Medication",
       "definition" : "A medication other than those specifically listed was prescribed at discharge"
+    },
+    {
+      "code" : "other-antiplatelet",
+      "display" : "Other Antiplatelet",
+      "definition" : "Other Antiplatelet"
     }
   ]
 }

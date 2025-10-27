@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://alvumu.github.io/CodeSystem/medication-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "medication-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem medication-cs</b></p><a name=\"medication-cs\"> </a><a name=\"hcmedication-cs\"> </a><p>This  code system <code>http://testSK.org/CodeSystem/medication-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">other-anticoagulant<a name=\"medication-cs-other-anticoagulant\"> </a></td><td>Other Anticoagulant</td><td>Any anticoagulant medication</td></tr><tr><td style=\"white-space:nowrap\">antiplatelet<a name=\"medication-cs-antiplatelet\"> </a></td><td>Any Antiplatelet</td><td>Any antiplatelet medication</td></tr><tr><td style=\"white-space:nowrap\">antidiabetic<a name=\"medication-cs-antidiabetic\"> </a></td><td>Any Antidiabetic</td><td>Any antidiabetic medication</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"medication-cs-other\"> </a></td><td>Other Medication</td><td>A medication other than those specifically listed was prescribed at discharge</td></tr><tr><td style=\"white-space:nowrap\">other-antiplatelet<a name=\"medication-cs-other-antiplatelet\"> </a></td><td>Other Antiplatelet</td><td>Other Antiplatelet</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://testSK.org/CodeSystem/medication-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "MedicationCS"] ; # 
+  fhir:title [ fhir:v "Medications CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-27T10:25:48+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UMU"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UMU" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://testSK.org/umu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for drug products or substances representing the Medications on the patient discharge."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "other-anticoagulant" ] ;
+     fhir:display [ fhir:v "Other Anticoagulant" ] ;
+     fhir:definition [ fhir:v "Any anticoagulant medication" ]
+  ] [
+     fhir:code [ fhir:v "antiplatelet" ] ;
+     fhir:display [ fhir:v "Any Antiplatelet" ] ;
+     fhir:definition [ fhir:v "Any antiplatelet medication" ]
+  ] [
+     fhir:code [ fhir:v "antidiabetic" ] ;
+     fhir:display [ fhir:v "Any Antidiabetic" ] ;
+     fhir:definition [ fhir:v "Any antidiabetic medication" ]
+  ] [
+     fhir:code [ fhir:v "other" ] ;
+     fhir:display [ fhir:v "Other Medication" ] ;
+     fhir:definition [ fhir:v "A medication other than those specifically listed was prescribed at discharge" ]
+  ] [
+     fhir:code [ fhir:v "other-antiplatelet" ] ;
+     fhir:display [ fhir:v "Other Antiplatelet" ] ;
+     fhir:definition [ fhir:v "Other Antiplatelet" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

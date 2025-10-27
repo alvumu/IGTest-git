@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>MedicationStatement Therapy/Finding Codes - XML Representation -  v0.1.0</title>
+    <title>Medications ValueSet - XML Representation -  v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"11.42"}
-    h3,h4,h5,h6{--heading-prefix:"11.42"}</style>
+    <style type="text/css">h2{--heading-prefix:"11.41"}
+    h3,h4,h5,h6{--heading-prefix:"11.41"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -133,7 +133,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MedicationStatement Therapy/Finding Codes</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Medications ValueSet</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -159,7 +159,7 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="ValueSet-medicationStatement-meds-codes-vs.html">Narrative Content</a>
+    <a href="ValueSet-medication-vs.html">Narrative Content</a>
   </li>
 
 
@@ -173,7 +173,7 @@
 
   
     <li>
-      <a href="ValueSet-medicationStatement-meds-codes-vs.json.html">JSON</a>
+      <a href="ValueSet-medication-vs.json.html">JSON</a>
     </li>
   
 
@@ -186,7 +186,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: MedicationStatement Therapy/Finding Codes - XML Representation</h2>
+<h2 id="root">: Medications ValueSet - XML Representation</h2>
 
   <table class="colsd">
     <tr>
@@ -195,7 +195,7 @@
         
           Draft
           
-            as of 2025-03-31
+            as of 2025-10-27
           
         
       </td>
@@ -204,7 +204,7 @@
   </table>
 
 
-<p><a href="ValueSet-medicationStatement-meds-codes-vs.xml" no-download="true">Raw xml</a> | <a href="ValueSet-medicationStatement-meds-codes-vs.xml" download>Download</a></p>
+<p><a href="ValueSet-medication-vs.xml" no-download="true">Raw xml</a> | <a href="ValueSet-medication-vs.xml" download>Download</a></p>
 
   <!-- insert intro if present -->
   
@@ -213,18 +213,17 @@
 
   <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;medicationStatement-meds-codes-vs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;medication-vs&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet medicationStatement-meds-codes-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;medicationStatement-meds-codes-vs&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcmedicationStatement-meds-codes-vs&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;http://www.snomed.org/&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;span title=&quot;Version is not explicity stated. No matching Code System found&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/372586001&quot;&gt;372586001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hypotensive agent (substance)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/372862008&quot;&gt;372862008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anticoagulant (substance)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/1237404009&quot;&gt;1237404009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uses hormone method of contraception (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/372912004&quot;&gt;372912004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/372756006&quot;&gt;372756006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Warfarin (substance)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/386952008&quot;&gt;386952008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clopidogrel (substance)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/387458008&quot;&gt;387458008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aspirin (substance)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include all codes defined in &lt;a href=&quot;CodeSystem-medication-statement-cs.html&quot;&gt;&lt;code&gt;http://testSK.org/CodeSystem/medication-statement-cs&lt;/code&gt;&lt;/a&gt;&lt;span title=&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification&quot;&gt; version &amp;#x1F4E6;0.1.0&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet medication-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;medication-vs&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcmedication-vs&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;http://www.snomed.org/&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;span title=&quot;Version is not explicity stated. No matching Code System found&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/372756006&quot;&gt;372756006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Warfarin (substance)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/372586001&quot;&gt;372586001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hypotensive agent (substance)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/372862008&quot;&gt;372862008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anticoagulant (substance)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/1237404009&quot;&gt;1237404009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uses hormone method of contraception (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/372912004&quot;&gt;372912004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/387458008&quot;&gt;387458008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aspirin (substance)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/386952008&quot;&gt;386952008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clopidogrel (substance)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/372877000&quot;&gt;372877000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Heparin (substance)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include all codes defined in &lt;a href=&quot;CodeSystem-medication-cs.html&quot;&gt;&lt;code&gt;http://testSK.org/CodeSystem/medication-cs&lt;/code&gt;&lt;/a&gt;&lt;span title=&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification&quot;&gt; version &amp;#x1F4E6;0.1.0&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Import all the codes that are contained in https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.text">text</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.url">url</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://testSK.org/ValueSet/medicationStatement-meds-codes-vs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.url">url</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://testSK.org/ValueSet/medication-vs&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;MedicationStatementMedsCodes&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;MedicationStatement Therapy/Finding Codes&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;MedicationVS&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Medications ValueSet&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2025-03-31&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2025-10-27T10:25:48+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;UMU&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;UMU&quot;/&gt;
@@ -233,11 +232,14 @@
       &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;http://testSK.org/umu&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.contact">contact</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.description">description</a>
-               <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use). &quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.description">description</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;SNOMED CT codes for drug products or substances.&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose">compose</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">include</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;372756006&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Warfarin (substance)&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;372586001&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Hypotensive agent (substance)&quot;/&gt;
@@ -256,20 +258,24 @@
                  <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;372756006&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Warfarin (substance)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;387458008&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aspirin (substance)&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;386952008&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Clopidogrel (substance)&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;387458008&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aspirin (substance)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;372877000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Heparin (substance)&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">include</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">include</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://testSK.org/CodeSystem/medication-statement-cs&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://testSK.org/CodeSystem/medication-cs&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">include</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">include</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.valueSet">valueSet</a>
+                <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">include</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose">compose</a>&gt;
 &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet">ValueSet</a>&gt;</code></pre>
@@ -296,7 +302,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Oct 27, 2025 09:20+0000">2025-10-27</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Oct 27, 2025 10:26+0000">2025-10-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

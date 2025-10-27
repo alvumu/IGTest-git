@@ -1,0 +1,50 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "medication-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem medication-cs</b></p><a name=\"medication-cs\"> </a><a name=\"hcmedication-cs\"> </a><p>This  code system <code>http://testSK.org/CodeSystem/medication-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">other-anticoagulant<a name=\"medication-cs-other-anticoagulant\"> </a></td><td>Other Anticoagulant</td><td>Any anticoagulant medication</td></tr><tr><td style=\"white-space:nowrap\">antiplatelet<a name=\"medication-cs-antiplatelet\"> </a></td><td>Any Antiplatelet</td><td>Any antiplatelet medication</td></tr><tr><td style=\"white-space:nowrap\">antidiabetic<a name=\"medication-cs-antidiabetic\"> </a></td><td>Any Antidiabetic</td><td>Any antidiabetic medication</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"medication-cs-other\"> </a></td><td>Other Medication</td><td>A medication other than those specifically listed was prescribed at discharge</td></tr><tr><td style=\"white-space:nowrap\">other-antiplatelet<a name=\"medication-cs-other-antiplatelet\"> </a></td><td>Other Antiplatelet</td><td>Other Antiplatelet</td></tr></table></div>"
+  },
+  "url" : "http://testSK.org/CodeSystem/medication-cs",
+  "version" : "0.1.0",
+  "name" : "MedicationCS",
+  "title" : "Medications CodeSystem",
+  "status" : "draft",
+  "date" : "2025-10-27T10:25:48+00:00",
+  "publisher" : "UMU",
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
+  "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "other-anticoagulant",
+    "display" : "Other Anticoagulant",
+    "definition" : "Any anticoagulant medication"
+  },
+  {
+    "code" : "antiplatelet",
+    "display" : "Any Antiplatelet",
+    "definition" : "Any antiplatelet medication"
+  },
+  {
+    "code" : "antidiabetic",
+    "display" : "Any Antidiabetic",
+    "definition" : "Any antidiabetic medication"
+  },
+  {
+    "code" : "other",
+    "display" : "Other Medication",
+    "definition" : "A medication other than those specifically listed was prescribed at discharge"
+  },
+  {
+    "code" : "other-antiplatelet",
+    "display" : "Other Antiplatelet",
+    "definition" : "Other Antiplatelet"
+  }]
+}

@@ -8,22 +8,18 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://testSK.org/ValueSet/discharge-medication-vs | *Version*:0.1.0 |
-| Draft as of 2025-10-27 | *Computable Name*:DischargeMedicationVS |
+| *Official URL*:http://testSK.org/ValueSet/medication-vs | *Version*:0.1.0 |
+| Draft as of 2025-10-27 | *Computable Name*:MedicationVS |
 
  
-Codes for drug products or substances representing the Medications on the patient discharge. 
+SNOMED CT codes for drug products or substances. 
 
  **References** 
 
 * [Discharge Medication Request Profile](StructureDefinition-discharge-medication-request-profile.md)
+* [Prior Medication Statement Profile (R5)](StructureDefinition-prior-medication-statement-profile.md)
 
 ### Logical Definition (CLD)
-
-This value set includes codes based on the following rules:
-
-* Include all codes defined in [`http://testSK.org/CodeSystem/medication-cs`](CodeSystem-discharge-medication-cs.md)version 📦0.1.0
-* Import all the codes that are contained in https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html
 
  
 
@@ -51,13 +47,13 @@ No Expansion for this valueset (not supported by Publication Tooling)
 ```json
 {
   "resourceType" : "ValueSet",
-  "id" : "discharge-medication-vs",
-  "url" : "http://testSK.org/ValueSet/discharge-medication-vs",
+  "id" : "medication-vs",
+  "url" : "http://testSK.org/ValueSet/medication-vs",
   "version" : "0.1.0",
-  "name" : "DischargeMedicationVS",
+  "name" : "MedicationVS",
   "title" : "Medications ValueSet",
   "status" : "draft",
-  "date" : "2025-10-27T09:20:18+00:00",
+  "date" : "2025-10-27T10:25:48+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
@@ -70,9 +66,46 @@ No Expansion for this valueset (not supported by Publication Tooling)
       ]
     }
   ],
-  "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
+  "description" : "SNOMED CT codes for drug products or substances.",
   "compose" : {
     "include" : [
+      {
+        "system" : "http://snomed.info/sct",
+        "concept" : [
+          {
+            "code" : "372756006",
+            "display" : "Warfarin (substance)"
+          },
+          {
+            "code" : "372586001",
+            "display" : "Hypotensive agent (substance)"
+          },
+          {
+            "code" : "372862008",
+            "display" : "Anticoagulant (substance)"
+          },
+          {
+            "code" : "1237404009",
+            "display" : "Uses hormone method of contraception (finding)"
+          },
+          {
+            "code" : "372912004",
+            "display" : "Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)"
+          },
+          {
+            "code" : "387458008",
+            "display" : "Aspirin (substance)"
+          },
+          {
+            "code" : "386952008",
+            "display" : "Clopidogrel (substance)"
+          },
+          {
+            "code" : "372877000",
+            "display" : "Heparin (substance)"
+          }
+        ]
+      },
       {
         "system" : "http://testSK.org/CodeSystem/medication-cs"
       },

@@ -1,17 +1,16 @@
 IGTest : Validation Results
 =========================================
 
-err = 183, warn = 133, info = 42
+err = 179, warn = 131, info = 40
 IG Publisher Version: 2.0.22
-Generated Mon Oct 27 09:22:34 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = https://alvumu.github.io)
+Generated Mon Oct 27 10:27:51 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = https://alvumu.github.io)
  Build Errors : 0 / 24 / 0
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-brain-imaging-type-cs : 2 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs : 2 / 2 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-medication-cs : 2 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-hemorrhagic-stroke-bleeding-reason-cs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-initial-care-intensity-cs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-medication-statement-cs : 2 / 2 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-medication-cs : 2 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mrs-score-cs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-code-cs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-score-cs : 2 / 0 / 1
@@ -31,7 +30,7 @@ Generated Mon Oct 27 09:22:34 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (c
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeRiskFactorConditionExample : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Encounter-StrokeEncounterExample : 1 / 1 / 3
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG : 5 / 1 / 16
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationRequest-discharge-medication-request-001 : 0 / 0 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationRequest-discharge-medication-request-001 : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationStatement-PriorMedicationStatementExample : 1 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-AgeAtOnsetObservationExample : 1 / 2 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-FunctionalScoreObservationExample : 0 / 2 / 3
@@ -84,11 +83,10 @@ Generated Mon Oct 27 09:22:34 UTC 2025. FHIR version 5.0.0 for SKtestIG#0.1.0 (c
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-carotid-imaging-modality-vs : 3 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-dept-vs : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-destination-vs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-medication-vs : 3 / 3 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-functional-score-codes-vs : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-hemorrhagic-stroke-bleeding-reason-vs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-initial-care-intensity-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-medicationStatement-meds-codes-vs : 2 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-medication-vs : 3 / 3 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mrs-score-vs : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mtici-score-vs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-perforation-procedures-vs : 2 / 0 / 1
@@ -149,24 +147,18 @@ INFORMATION: CodeSystem/discharge-dept-cs: CodeSystem: CodeSystems SHOULD have a
 WARNING: CodeSystem/discharge-dept-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/discharge-dept-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs: URL Mismatch https://alvumu.github.io/CodeSystem/discharge-dept-cs vs http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs
-== fsh-generated/resources/CodeSystem-discharge-medication-cs.json ==
-ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/medication-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-medication-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/discharge-medication-cs) does not match the URL (http://testSK.org/CodeSystem/medication-cs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: CodeSystem/discharge-medication-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/discharge-medication-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-WARNING: CodeSystem/discharge-medication-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
-ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-medication-cs: URL Mismatch https://alvumu.github.io/CodeSystem/discharge-medication-cs vs http://testSK.org/CodeSystem/medication-cs
 == fsh-generated/resources/CodeSystem-hemorrhagic-stroke-bleeding-reason-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-hemorrhagic-stroke-bleeding-reason-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs) does not match the URL (http://testSK.org/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs). Use the special-url parameter if you really mean for it not to match
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-hemorrhagic-stroke-bleeding-reason-cs: URL Mismatch https://alvumu.github.io/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs vs http://testSK.org/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs
 == fsh-generated/resources/CodeSystem-initial-care-intensity-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/initial-care-intensity-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-initial-care-intensity-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/initial-care-intensity-cs) does not match the URL (http://testSK.org/CodeSystem/initial-care-intensity-cs). Use the special-url parameter if you really mean for it not to match
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-initial-care-intensity-cs: URL Mismatch https://alvumu.github.io/CodeSystem/initial-care-intensity-cs vs http://testSK.org/CodeSystem/initial-care-intensity-cs
-== fsh-generated/resources/CodeSystem-medication-statement-cs.json ==
-ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/medication-statement-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-medication-statement-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/medication-statement-cs) does not match the URL (http://testSK.org/CodeSystem/medication-statement-cs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: CodeSystem/medication-statement-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/medication-statement-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-WARNING: CodeSystem/medication-statement-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
-ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-medication-statement-cs: URL Mismatch https://alvumu.github.io/CodeSystem/medication-statement-cs vs http://testSK.org/CodeSystem/medication-statement-cs
+== fsh-generated/resources/CodeSystem-medication-cs.json ==
+ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/medication-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-medication-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/medication-cs) does not match the URL (http://testSK.org/CodeSystem/medication-cs). Use the special-url parameter if you really mean for it not to match
+INFORMATION: CodeSystem/medication-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/medication-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/medication-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-medication-cs: URL Mismatch https://alvumu.github.io/CodeSystem/medication-cs vs http://testSK.org/CodeSystem/medication-cs
 == fsh-generated/resources/CodeSystem-mrs-score-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/mrs-score-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mrs-score-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/mrs-score-cs) does not match the URL (http://testSK.org/CodeSystem/mrs-score-cs). Use the special-url parameter if you really mean for it not to match
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mrs-score-cs: URL Mismatch https://alvumu.github.io/CodeSystem/mrs-score-cs vs http://testSK.org/CodeSystem/mrs-score-cs
@@ -261,7 +253,6 @@ INFORMATION: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parame
 INFORMATION: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[25].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG: URL Mismatch https://alvumu.github.io/ImplementationGuide/SKtestIG vs https://alvumu.github.io
 == fsh-generated/resources/MedicationRequest-discharge-medication-request-001.json ==
-INFORMATION: MedicationRequest/discharge-medication-request-001: MedicationRequest.medication.concept: Reference to draft CodeSystem http://testSK.org/CodeSystem/medication-cs|0.1.0
 == fsh-generated/resources/MedicationStatement-PriorMedicationStatementExample.json ==
 ERROR: MedicationStatement/PriorMedicationStatementExample: MedicationStatement.encounter: Unable to resolve resource with reference 'EncounterExample'
 == fsh-generated/resources/Observation-AgeAtOnsetObservationExample.json ==
@@ -480,13 +471,6 @@ ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-
 == fsh-generated/resources/ValueSet-discharge-destination-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/discharge-destination-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-destination-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/discharge-destination-vs) does not match the URL (http://testSK.org/ValueSet/discharge-destination-vs). Use the special-url parameter if you really mean for it not to match
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-destination-vs: URL Mismatch https://alvumu.github.io/ValueSet/discharge-destination-vs vs http://testSK.org/ValueSet/discharge-destination-vs
-== fsh-generated/resources/ValueSet-discharge-medication-vs.json ==
-ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/discharge-medication-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-medication-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/discharge-medication-vs) does not match the URL (http://testSK.org/ValueSet/discharge-medication-vs). Use the special-url parameter if you really mean for it not to match
-WARNING: ValueSet/discharge-medication-vs: ValueSet.compose.include[1].valueSet[0]: A definition could not be found for Canonical URL 'https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html'
-WARNING: ValueSet/discharge-medication-vs: ValueSet.compose.include[1].valueSet[0]: The value set import https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html could not be found so cannot be checked
-WARNING: ValueSet/discharge-medication-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: ValueSet.where(id = 'discharge-medication-vs'): Unable to find included value set 'https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html'
-ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-medication-vs: URL Mismatch https://alvumu.github.io/ValueSet/discharge-medication-vs vs http://testSK.org/ValueSet/discharge-medication-vs
 == fsh-generated/resources/ValueSet-functional-score-codes-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/functional-score-codes-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-functional-score-codes-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/functional-score-codes-vs) does not match the URL (http://testSK.org/ValueSet/functional-score-codes-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/functional-score-codes-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -498,9 +482,13 @@ ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/initial-care-intensity-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-initial-care-intensity-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/initial-care-intensity-vs) does not match the URL (http://testSK.org/ValueSet/initial-care-intensity-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/initial-care-intensity-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-initial-care-intensity-vs: URL Mismatch https://alvumu.github.io/ValueSet/initial-care-intensity-vs vs http://testSK.org/ValueSet/initial-care-intensity-vs
-== fsh-generated/resources/ValueSet-medicationStatement-meds-codes-vs.json ==
-ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/medicationStatement-meds-codes-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-medicationStatement-meds-codes-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/medicationStatement-meds-codes-vs) does not match the URL (http://testSK.org/ValueSet/medicationStatement-meds-codes-vs). Use the special-url parameter if you really mean for it not to match
-ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-medicationStatement-meds-codes-vs: URL Mismatch https://alvumu.github.io/ValueSet/medicationStatement-meds-codes-vs vs http://testSK.org/ValueSet/medicationStatement-meds-codes-vs
+== fsh-generated/resources/ValueSet-medication-vs.json ==
+ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/medication-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-medication-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/medication-vs) does not match the URL (http://testSK.org/ValueSet/medication-vs). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/medication-vs: ValueSet.compose.include[2].valueSet[0]: A definition could not be found for Canonical URL 'https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html'
+WARNING: ValueSet/medication-vs: ValueSet.compose.include[2].valueSet[0]: The value set import https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html could not be found so cannot be checked
+WARNING: ValueSet/medication-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'medication-vs'): Unable to find included value set 'https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html'
+ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-medication-vs: URL Mismatch https://alvumu.github.io/ValueSet/medication-vs vs http://testSK.org/ValueSet/medication-vs
 == fsh-generated/resources/ValueSet-mrs-score-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/mrs-score-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mrs-score-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/mrs-score-vs) does not match the URL (http://testSK.org/ValueSet/mrs-score-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/mrs-score-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

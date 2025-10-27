@@ -19,7 +19,7 @@ Profile: [Discharge Medication Request Profile](StructureDefinition-discharge-me
 | | |
 | :--- | :--- |
 | - | **Concept** |
-| * | Warfarin |
+| * | Warfarin (substance) |
 
 **subject**: [Anonymous Patient (no stated gender), DoB Unknown](Patient-example-patient.md)
 
@@ -54,8 +54,9 @@ Profile: [Discharge Medication Request Profile](StructureDefinition-discharge-me
     "concept" : {
       "coding" : [
         {
-          "system" : "http://testSK.org/CodeSystem/medication-cs",
-          "code" : "warfarin"
+          "system" : "http://snomed.info/sct",
+          "code" : "372756006",
+          "display" : "Warfarin (substance)"
         }
       ]
     }

@@ -67,15 +67,6 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "http://testSK.org/ValueSet/discharge-medication-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "DischargeMedicationVS",
-      "title" : "Medications ValueSet",
-      "description" : "Codes for drug products or substances representing the Medications on the patient discharge.",
-      "systems" : ["http://testSK.org/CodeSystem/medication-cs"]
-    },
-    {
       "url" : "http://testSK.org/ValueSet/functional-score-codes-vs",
       "version" : "0.1.0",
       "status" : "active",
@@ -105,14 +96,14 @@
       "systems" : ["http://testSK.org/CodeSystem/initial-care-intensity-cs"]
     },
     {
-      "url" : "http://testSK.org/ValueSet/medicationStatement-meds-codes-vs",
+      "url" : "http://testSK.org/ValueSet/medication-vs",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "MedicationStatementMedsCodes",
-      "title" : "MedicationStatement Therapy/Finding Codes",
-      "description" : "ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use).",
+      "name" : "MedicationVS",
+      "title" : "Medications ValueSet",
+      "description" : "SNOMED CT codes for drug products or substances.",
       "systems" : [
-        "http://testSK.org/CodeSystem/medication-statement-cs",
+        "http://testSK.org/CodeSystem/medication-cs",
         "http://snomed.info/sct"
       ]
     },

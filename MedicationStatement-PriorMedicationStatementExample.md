@@ -15,7 +15,7 @@ Profile: [Prior Medication Statement Profile (R5)](StructureDefinition-prior-med
 | | |
 | :--- | :--- |
 | - | **Concept** |
-| * | Warfarin therapy (procedure) |
+| * | Warfarin (substance) |
 
 **subject**: [Anonymous Patient (no stated gender), DoB Unknown](Patient-example-patient.md)
 
@@ -54,8 +54,8 @@ Profile: [Prior Medication Statement Profile (R5)](StructureDefinition-prior-med
       "coding" : [
         {
           "system" : "http://snomed.info/sct",
-          "code" : "722045009",
-          "display" : "Warfarin therapy (procedure)"
+          "code" : "372756006",
+          "display" : "Warfarin (substance)"
         }
       ]
     }

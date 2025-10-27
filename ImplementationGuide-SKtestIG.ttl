@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-27T09:20:18+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-27T10:25:48+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -525,8 +525,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/discharge-medication-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/discharge-medication-cs" ]
+         fhir:link <https://alvumu.github.io/CodeSystem/medication-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/medication-cs" ]
        ] ;
        fhir:name [ fhir:v "Medications CodeSystem" ] ;
        fhir:description [ fhir:v "Codes for drug products or substances representing the Medications on the patient discharge." ] ;
@@ -540,41 +540,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/discharge-medication-vs> ;
-         fhir:reference [ fhir:v "ValueSet/discharge-medication-vs" ]
+         fhir:link <https://alvumu.github.io/ValueSet/medication-vs> ;
+         fhir:reference [ fhir:v "ValueSet/medication-vs" ]
        ] ;
        fhir:name [ fhir:v "Medications ValueSet" ] ;
-       fhir:description [ fhir:v "Codes for drug products or substances representing the Medications on the patient discharge." ] ;
-       fhir:isExample [ fhir:v false ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "CodeSystem"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://alvumu.github.io/CodeSystem/medication-statement-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/medication-statement-cs" ]
-       ] ;
-       fhir:name [ fhir:v "MedicationStatement CodeSystem" ] ;
-       fhir:description [ fhir:v "Codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use)." ] ;
-       fhir:isExample [ fhir:v false ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://alvumu.github.io/ValueSet/medicationStatement-meds-codes-vs> ;
-         fhir:reference [ fhir:v "ValueSet/medicationStatement-meds-codes-vs" ]
-       ] ;
-       fhir:name [ fhir:v "MedicationStatement Therapy/Finding Codes" ] ;
-       fhir:description [ fhir:v "ValueSet containing SNOMED CT codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use)." ] ;
+       fhir:description [ fhir:v "SNOMED CT codes for drug products or substances." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
