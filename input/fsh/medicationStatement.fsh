@@ -26,8 +26,6 @@ Id: medication-statement-cs
 * ^description = "Codes representing various medication-related procedures and findings (e.g., therapies, administration procedures, findings about use)."
 * #antidiabetic "Any Antidiabetic" "The patient was taking antidiabetic medication prior to hospital admission or before the stroke event"
 * #antiplatelet "Any Antiplatelet" "The patient was taking antiplatelet medication prior to hospital admission or before the stroke event"
-* #asa "Aspirin" "The patient was taking aspirin (acetylsalicylic acid) prior to hospital admission or before the stroke event"
-* #clopidogrel "Clopidogrel" "The patient was taking clopidogrel prior to hospital admission or before the stroke event"
 
 
 ValueSet: MedicationStatementMedsCodesVS
@@ -44,11 +42,13 @@ Id: medicationStatement-meds-codes-vs
 * ^contact[0].name = "Example Organization"
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "info@example.org"
-* include SCT#308116003 "Antihypertensive therapy (procedure)"
-* include SCT#182764009 "Anticoagulant therapy (procedure)"
+* include SCT#372586001 "Hypotensive agent (substance)"
+* include SCT#372862008 "Anticoagulant (substance)"
 * include SCT#1237404009 "Uses hormone method of contraception (finding)"
-* include SCT#315053001 "Administration of prophylactic statin (procedure)"
-* include SCT#722045009 "Warfarin therapy (procedure)"
+* include SCT#372912004 "Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)"
+* include SCT#372756006 "Warfarin (substance)"
+* include SCT#386952008 "Clopidogrel (substance)"
+* include SCT#387458008 "Aspirin (substance)"
 * include codes from system MedStatementMedsCS_URL
 
 
