@@ -27,7 +27,7 @@ Id: medication-vs
 * include SCT#372756006 "Warfarin (substance)"
 * include SCT#372586001 "Hypotensive agent (substance)"
 * include SCT#372862008 "Anticoagulant (substance)"
-* include SCT#1237404009 "Uses hormone method of contraception (finding)"
+* include SCT#312263009 "Sex hormone (substance)"
 * include SCT#372912004 "Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)"
 * include SCT#387458008 "Aspirin (substance)"
 * include SCT#386952008 "Clopidogrel (substance)"
