@@ -13,32 +13,35 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://testSK.org/StructureDefinition/age-at-onset-observation-profile"^^xsd:anyURI ;
-       fhir:link <http://testSK.org/StructureDefinition/age-at-onset-observation-profile>
+       fhir:l <http://testSK.org/StructureDefinition/age-at-onset-observation-profile>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation AgeAtOnsetObservationExample</b></p><a name=\"AgeAtOnsetObservationExample\"> </a><a name=\"hcAgeAtOnsetObservationExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-age-at-onset-observation-profile.html\">Age at Stroke Onset Observation Profile (R5)</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 445518008}\">Age at onset of clinical finding (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>encounter</b>: <a href=\"Encounter-StrokeEncounterExample.html\">Encounter: extension = true,ICU / Stroke Unit,false,Neurology department (environment); status = completed; type = Inpatient Encounter; actualPeriod = 2025-03-01 08:00:00+0000 --&gt; 2025-03-10 12:00:00+0000</a></p><p><b>value</b>: </p></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation AgeAtOnsetObservationExample</b></p><a name=\"AgeAtOnsetObservationExample\"> </a><a name=\"hcAgeAtOnsetObservationExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-age-at-onset-observation-profile.html\">Age at Stroke Onset Observation Profile (R5)</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 445518008}\">Age at onset of clinical finding (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>encounter</b>: <a href=\"Encounter-StrokeEncounterExample.html\">Encounter: extension = true,ICU / Stroke Unit,false,Neurology department (environment); status = completed; type = Inpatient Encounter; actualPeriod = 2025-03-01 08:00:00+0000 --&gt; 2025-03-10 12:00:00+0000</a></p><p><b>value</b>: </p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
        a sct:445518008 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "445518008" ] ;
        fhir:display [ fhir:v "Age at onset of clinical finding (observable entity)" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://alvumu.github.io/Patient/example-patient> ;
+     fhir:l <https://alvumu.github.io/Patient/example-patient> ;
      fhir:reference [ fhir:v "Patient/example-patient" ]
   ] ; # 
   fhir:encounter [
-     fhir:link <https://alvumu.github.io/Encounter/StrokeEncounterExample> ;
+     fhir:l <https://alvumu.github.io/Encounter/StrokeEncounterExample> ;
      fhir:reference [ fhir:v "Encounter/StrokeEncounterExample" ]
   ] ; # 
   fhir:value [
-     a fhir:integer ;
+     a fhir:Integer ;
      fhir:value [ fhir:v 65 ]
   ] . # 
 

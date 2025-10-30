@@ -225,9 +225,12 @@
   <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;mtici-score-vs&quot;] ; # 
   <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet mtici-score-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;mtici-score-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcmtici-score-vs\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-mtici-score-cs.html\&quot;&gt;&lt;code&gt;http://testSK.org/CodeSystem/mtici-score-cs&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version ?0.1.0&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R5/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet mtici-score-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;mtici-score-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcmtici-score-vs\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-mtici-score-cs.html\&quot;&gt;&lt;code&gt;http://testSK.org/CodeSystem/mtici-score-cs&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version ?0.1.0&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
   ] ; # 
-  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://testSK.org/ValueSet/mtici-score-vs&quot;^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://testSK.org/ValueSet/mtici-score-vs&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://testSK.org/ValueSet/mtici-score-vs&gt;
+  ] ; # 
   <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;0.1.0&quot;] ; # 
   <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;MTICIScoreValueSet&quot;] ; # 
   <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;MTICI Score ValueSet&quot;] ; # 
@@ -244,7 +247,9 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;ValueSet containing the codes to represent the MTICI score used to assess the degree of reperfusion after a thrombectomy procedure.&quot;] ; # 
   <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose">fhir:compose</a> [
     ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">fhir:include</a> [
-<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://testSK.org/CodeSystem/mtici-score-cs&quot;^^xsd:anyURI ]     ] )
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://testSK.org/CodeSystem/mtici-score-cs&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://testSK.org/CodeSystem/mtici-score-cs&gt;       ]     ] )
   ] . # 
 
 </code></pre>
@@ -272,7 +277,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Oct 27, 2025 10:26+0000">2025-10-27</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Oct 30, 2025 10:04+0000">2025-10-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

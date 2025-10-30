@@ -13,41 +13,50 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://testSK.org/StructureDefinition/vital-sign-observation-profile"^^xsd:anyURI ;
-       fhir:link <http://testSK.org/StructureDefinition/vital-sign-observation-profile>
+       fhir:l <http://testSK.org/StructureDefinition/vital-sign-observation-profile>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation VitalSignObservationExample</b></p><a name=\"VitalSignObservationExample\"> </a><a name=\"hcVitalSignObservationExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vital-sign-observation-profile.html\">Stroke Vital Sign Observation Profile (R5)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 61746007}\">Taking patient vital signs (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>encounter</b>: <a href=\"Encounter-StrokeEncounterExample.html\">Encounter: extension = true,ICU / Stroke Unit,false,Neurology department (environment); status = completed; type = Inpatient Encounter; actualPeriod = 2025-03-01 08:00:00+0000 --&gt; 2025-03-10 12:00:00+0000</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 271649006}\">Systolic blood pressure (observable entity)</span></p><p><b>value</b>: 120 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: ucum  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 271650006}\">Diastolic blood pressure (observable entity)</span></p><p><b>value</b>: 80 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: ucum  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation VitalSignObservationExample</b></p><a name=\"VitalSignObservationExample\"> </a><a name=\"hcVitalSignObservationExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vital-sign-observation-profile.html\">Stroke Vital Sign Observation Profile (R5)</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 61746007}\">Taking patient vital signs (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>encounter</b>: <a href=\"Encounter-StrokeEncounterExample.html\">Encounter: extension = true,ICU / Stroke Unit,false,Neurology department (environment); status = completed; type = Inpatient Encounter; actualPeriod = 2025-03-01 08:00:00+0000 --&gt; 2025-03-10 12:00:00+0000</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 271649006}\">Systolic blood pressure (observable entity)</span></p><p><b>value</b>: 120 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: ucum  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 271650006}\">Diastolic blood pressure (observable entity)</span></p><p><b>value</b>: 80 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: ucum  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
        fhir:code [ fhir:v "vital-signs" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
        a sct:61746007 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "61746007" ] ;
        fhir:display [ fhir:v "Taking patient vital signs (procedure)" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://alvumu.github.io/Patient/example-patient> ;
+     fhir:l <https://alvumu.github.io/Patient/example-patient> ;
      fhir:reference [ fhir:v "Patient/example-patient" ]
   ] ; # 
   fhir:encounter [
-     fhir:link <https://alvumu.github.io/Encounter/StrokeEncounterExample> ;
+     fhir:l <https://alvumu.github.io/Encounter/StrokeEncounterExample> ;
      fhir:reference [ fhir:v "Encounter/StrokeEncounterExample" ]
   ] ; # 
   fhir:component ( [
      fhir:code [
        fhir:coding ( [
          a sct:271649006 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "271649006" ] ;
          fhir:display [ fhir:v "Systolic blood pressure (observable entity)" ]
        ] )
@@ -56,14 +65,20 @@
        a fhir:Quantity ;
        fhir:value [ fhir:v "120"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "millimeter Mercury column" ] ;
-       fhir:system [ fhir:v "https://ucum.org/ucum"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://ucum.org/ucum"^^xsd:anyURI ;
+         fhir:l <https://ucum.org/ucum>
+       ] ;
        fhir:code [ fhir:v "mm[Hg]" ]
      ]
   ] [
      fhir:code [
        fhir:coding ( [
          a sct:271650006 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "271650006" ] ;
          fhir:display [ fhir:v "Diastolic blood pressure (observable entity)" ]
        ] )
@@ -72,7 +87,10 @@
        a fhir:Quantity ;
        fhir:value [ fhir:v "80"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "millimeter Mercury column" ] ;
-       fhir:system [ fhir:v "https://ucum.org/ucum"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://ucum.org/ucum"^^xsd:anyURI ;
+         fhir:l <https://ucum.org/ucum>
+       ] ;
        fhir:code [ fhir:v "mm[Hg]" ]
      ]
   ] ) . # 

@@ -11,14 +11,17 @@
   fhir:id [ fhir:v "medication-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet medication-vs</b></p><a name=\"medication-vs\"> </a><a name=\"hcmedication-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/372756006\">372756006</a></td><td>Warfarin (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/372586001\">372586001</a></td><td>Hypotensive agent (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/372862008\">372862008</a></td><td>Anticoagulant (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/1237404009\">1237404009</a></td><td>Uses hormone method of contraception (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/372912004\">372912004</a></td><td>Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/387458008\">387458008</a></td><td>Aspirin (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/386952008\">386952008</a></td><td>Clopidogrel (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/372877000\">372877000</a></td><td>Heparin (substance)</td></tr></table></li><li>Include all codes defined in <a href=\"CodeSystem-medication-cs.html\"><code>http://testSK.org/CodeSystem/medication-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li><li>Import all the codes that are contained in https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html</li></ul></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet medication-vs</b></p><a name=\"medication-vs\"> </a><a name=\"hcmedication-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/372756006\">372756006</a></td><td>Warfarin (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/372586001\">372586001</a></td><td>Hypotensive agent (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/372862008\">372862008</a></td><td>Anticoagulant (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/312263009\">312263009</a></td><td>Sex hormone (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/372912004\">372912004</a></td><td>Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/387458008\">387458008</a></td><td>Aspirin (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/386952008\">386952008</a></td><td>Clopidogrel (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/372877000\">372877000</a></td><td>Heparin (substance)</td></tr></table></li><li>Include all codes defined in <a href=\"CodeSystem-medication-cs.html\"><code>http://testSK.org/CodeSystem/medication-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li><li>Import all the codes that are contained in https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html</li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://testSK.org/ValueSet/medication-vs"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://testSK.org/ValueSet/medication-vs"^^xsd:anyURI ;
+     fhir:l <http://testSK.org/ValueSet/medication-vs>
+  ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "MedicationVS"] ; # 
   fhir:title [ fhir:v "Medications ValueSet"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-27T10:25:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-30T10:04:33+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -30,7 +33,10 @@
   fhir:description [ fhir:v "SNOMED CT codes for drug products or substances."] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "372756006" ] ;
          fhir:display [ fhir:v "Warfarin (substance)" ]
@@ -41,8 +47,8 @@
          fhir:code [ fhir:v "372862008" ] ;
          fhir:display [ fhir:v "Anticoagulant (substance)" ]
        ] [
-         fhir:code [ fhir:v "1237404009" ] ;
-         fhir:display [ fhir:v "Uses hormone method of contraception (finding)" ]
+         fhir:code [ fhir:v "312263009" ] ;
+         fhir:display [ fhir:v "Sex hormone (substance)" ]
        ] [
          fhir:code [ fhir:v "372912004" ] ;
          fhir:display [ fhir:v "Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)" ]
@@ -57,11 +63,14 @@
          fhir:display [ fhir:v "Heparin (substance)" ]
        ] )
      ] [
-       fhir:system [ fhir:v "http://testSK.org/CodeSystem/medication-cs"^^xsd:anyURI ]
+       fhir:system [
+         fhir:v "http://testSK.org/CodeSystem/medication-cs"^^xsd:anyURI ;
+         fhir:l <http://testSK.org/CodeSystem/medication-cs>
+       ]
      ] [
        fhir:valueSet ( [
          fhir:v "https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html"^^xsd:anyURI ;
-         fhir:link <https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html>
+         fhir:l <https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html>
        ] )
      ] )
   ] . # 

@@ -11,14 +11,17 @@
   fhir:id [ fhir:v "thrombectomy-complication-cs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem thrombectomy-complication-cs</b></p><a name=\"thrombectomy-complication-cs\"> </a><a name=\"hcthrombectomy-complication-cs\"> </a><p>This  code system <code>http://testSK.org/CodeSystem/thrombectomy-complication-cs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">perforation<a name=\"thrombectomy-complication-cs-perforation\"> </a></td><td>Vessel Perforation</td><td>Vessel perforation occurred during the mechanical thrombectomy</td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem thrombectomy-complication-cs</b></p><a name=\"thrombectomy-complication-cs\"> </a><a name=\"hcthrombectomy-complication-cs\"> </a><p>This  code system <code>http://testSK.org/CodeSystem/thrombectomy-complication-cs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">perforation<a name=\"thrombectomy-complication-cs-perforation\"> </a></td><td>Vessel Perforation</td><td>Vessel perforation occurred during the mechanical thrombectomy</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://testSK.org/CodeSystem/thrombectomy-complication-cs"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://testSK.org/CodeSystem/thrombectomy-complication-cs"^^xsd:anyURI ;
+     fhir:l <http://testSK.org/CodeSystem/thrombectomy-complication-cs>
+  ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ThrombectomyComplicationCS"] ; # 
   fhir:title [ fhir:v "Thrombectomy Complication Code System"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-10-27T10:25:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-30T10:04:33+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;

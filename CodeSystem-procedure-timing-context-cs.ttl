@@ -11,15 +11,18 @@
   fhir:id [ fhir:v "procedure-timing-context-cs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem procedure-timing-context-cs</b></p><a name=\"procedure-timing-context-cs\"> </a><a name=\"hcprocedure-timing-context-cs\"> </a><p>This case-insensitive code system <code>http://testSK.org/CodeSystem/procedure-timing-context-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">acute<a name=\"procedure-timing-context-cs-acute\"> </a></td><td>Acute Phase (&lt;24h)</td><td>Procedure performed within 24 hours of encounter start time.</td></tr><tr><td style=\"white-space:nowrap\">post-acute<a name=\"procedure-timing-context-cs-post-acute\"> </a></td><td>Post-Acute Phase (&gt;=24h)</td><td>Procedure performed 24 hours or more after encounter start time.</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"procedure-timing-context-cs-unknown\"> </a></td><td>Unknown/Not Applicable</td><td>Timing relative to encounter start is unknown or not applicable.</td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem procedure-timing-context-cs</b></p><a name=\"procedure-timing-context-cs\"> </a><a name=\"hcprocedure-timing-context-cs\"> </a><p>This case-insensitive code system <code>http://testSK.org/CodeSystem/procedure-timing-context-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">acute<a name=\"procedure-timing-context-cs-acute\"> </a></td><td>Acute Phase (&lt;24h)</td><td>Procedure performed within 24 hours of encounter start time.</td></tr><tr><td style=\"white-space:nowrap\">post-acute<a name=\"procedure-timing-context-cs-post-acute\"> </a></td><td>Post-Acute Phase (&gt;=24h)</td><td>Procedure performed 24 hours or more after encounter start time.</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"procedure-timing-context-cs-unknown\"> </a></td><td>Unknown/Not Applicable</td><td>Timing relative to encounter start is unknown or not applicable.</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://testSK.org/CodeSystem/procedure-timing-context-cs"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://testSK.org/CodeSystem/procedure-timing-context-cs"^^xsd:anyURI ;
+     fhir:l <http://testSK.org/CodeSystem/procedure-timing-context-cs>
+  ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ProcedureTimingContextCS"] ; # 
   fhir:title [ fhir:v "Procedure Timing Context Code System"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2025-10-27T10:25:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-30T10:04:33+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;

@@ -13,41 +13,48 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://testSK.org/StructureDefinition/prior-medication-statement-profile"^^xsd:anyURI ;
-       fhir:link <http://testSK.org/StructureDefinition/prior-medication-statement-profile>
+       fhir:l <http://testSK.org/StructureDefinition/prior-medication-statement-profile>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement PriorMedicationStatementExample</b></p><a name=\"PriorMedicationStatementExample\"> </a><a name=\"hcPriorMedicationStatementExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-prior-medication-statement-profile.html\">Prior Medication Statement Profile (R5)</a></p></div><p><b>status</b>: Recorded</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 372756006}\">Warfarin (substance)</span></td></tr></table><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>encounter</b>: <code>EncounterExample</code></p><h3>Reasons</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition-StrokeDiagnosisConditionExample.html\">Condition Transient ischemic attack (disorder)</a></td></tr></table><h3>Adherences</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/CodeSystem/medication-statement-adherence taking}\">Taking</span></td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement PriorMedicationStatementExample</b></p><a name=\"PriorMedicationStatementExample\"> </a><a name=\"hcPriorMedicationStatementExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-prior-medication-statement-profile.html\">Prior Medication Statement Profile (R5)</a></p></div><p><b>status</b>: Recorded</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 372756006}\">Warfarin (substance)</span></td></tr></table><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>encounter</b>: <code>EncounterExample</code></p><h3>Reasons</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition-StrokeDiagnosisConditionExample.html\">Condition Transient ischemic attack (disorder)</a></td></tr></table><h3>Adherences</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/CodeSystem/medication-statement-adherence taking}\">Taking</span></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "recorded"] ; # 
   fhir:medication [
      fhir:concept [
        fhir:coding ( [
          a sct:372756006 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "372756006" ] ;
          fhir:display [ fhir:v "Warfarin (substance)" ]
        ] )
      ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://alvumu.github.io/Patient/example-patient> ;
+     fhir:l <https://alvumu.github.io/Patient/example-patient> ;
      fhir:reference [ fhir:v "Patient/example-patient" ]
   ] ; # 
   fhir:encounter [
+     fhir:l fhir:EncounterExample ;
      fhir:reference [ fhir:v "EncounterExample" ]
   ] ; # 
   fhir:reason ( [
      fhir:reference [
-       fhir:link <https://alvumu.github.io/Condition/StrokeDiagnosisConditionExample> ;
+       fhir:l <https://alvumu.github.io/Condition/StrokeDiagnosisConditionExample> ;
        fhir:reference [ fhir:v "Condition/StrokeDiagnosisConditionExample" ]
      ]
   ] ) ; # 
   fhir:adherence [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/CodeSystem/medication-statement-adherence"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/CodeSystem/medication-statement-adherence"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/CodeSystem/medication-statement-adherence>
+         ] ;
          fhir:code [ fhir:v "taking" ]
        ] )
      ]

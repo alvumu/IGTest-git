@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/medication-vs | *Version*:0.1.0 |
-| Draft as of 2025-10-27 | *Computable Name*:MedicationVS |
+| Draft as of 2025-10-30 | *Computable Name*:MedicationVS |
 
  
 SNOMED CT codes for drug products or substances. 
@@ -53,7 +53,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "MedicationVS",
   "title" : "Medications ValueSet",
   "status" : "draft",
-  "date" : "2025-10-27T10:25:48+00:00",
+  "date" : "2025-10-30T10:04:33+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
@@ -85,8 +85,8 @@ No Expansion for this valueset (not supported by Publication Tooling)
             "display" : "Anticoagulant (substance)"
           },
           {
-            "code" : "1237404009",
-            "display" : "Uses hormone method of contraception (finding)"
+            "code" : "312263009",
+            "display" : "Sex hormone (substance)"
           },
           {
             "code" : "372912004",

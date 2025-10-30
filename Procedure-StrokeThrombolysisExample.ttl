@@ -13,19 +13,25 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile"^^xsd:anyURI ;
-       fhir:link <http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile>
+       fhir:l <http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure StrokeThrombolysisExample</b></p><a name=\"StrokeThrombolysisExample\"> </a><a name=\"hcStrokeThrombolysisExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-stroke-mechanical-procedure-profile.html\">Stroke Thrombolysis Procedure Profile (R5)</a></p></div><p><b>Procedure Timing Context Extension</b>: <span title=\"Codes:{http://testSK.org/CodeSystem/procedure-timing-context-cs unknown}\">Unknown/Not Applicable</span></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 472191000119101}\">Thrombolysis of cerebral artery by intravenous infusion (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>occurrence</b>: 2025-03-01 10:00:00+0000 --&gt; 2025-03-01 10:30:00+0000</p></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure StrokeThrombolysisExample</b></p><a name=\"StrokeThrombolysisExample\"> </a><a name=\"hcStrokeThrombolysisExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-stroke-mechanical-procedure-profile.html\">Stroke Thrombolysis Procedure Profile (R5)</a></p></div><p><b>Procedure Timing Context Extension</b>: <span title=\"Codes:{http://testSK.org/CodeSystem/procedure-timing-context-cs unknown}\">Unknown/Not Applicable</span></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 472191000119101}\">Thrombolysis of cerebral artery by intravenous infusion (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>occurrence</b>: 2025-03-01 10:00:00+0000 --&gt; 2025-03-01 10:30:00+0000</p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://testSK.org/StructureDefinition/procedure-timing-context-ext"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://testSK.org/StructureDefinition/procedure-timing-context-ext"^^xsd:anyURI ;
+       fhir:l <http://testSK.org/StructureDefinition/procedure-timing-context-ext>
+     ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://testSK.org/CodeSystem/procedure-timing-context-cs"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://testSK.org/CodeSystem/procedure-timing-context-cs"^^xsd:anyURI ;
+           fhir:l <http://testSK.org/CodeSystem/procedure-timing-context-cs>
+         ] ;
          fhir:code [ fhir:v "unknown" ] ;
          fhir:display [ fhir:v "Unknown/Not Applicable" ]
        ] )
@@ -35,13 +41,16 @@
   fhir:code [
      fhir:coding ( [
        a sct:472191000119101 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "472191000119101" ] ;
        fhir:display [ fhir:v "Thrombolysis of cerebral artery by intravenous infusion (procedure)" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://alvumu.github.io/Patient/example-patient> ;
+     fhir:l <https://alvumu.github.io/Patient/example-patient> ;
      fhir:reference [ fhir:v "Patient/example-patient" ]
   ] ; # 
   fhir:occurrence [

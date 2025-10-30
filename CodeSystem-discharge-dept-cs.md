@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs | *Version*:0.1.0 |
-| Active as of 2025-10-27 | *Computable Name*:DischargeDeptCS |
+| Active as of 2025-10-30 | *Computable Name*:DischargeDeptCS |
 
  
 Code system specifying the type of department or service the patient was discharged or transferred to. 
@@ -31,7 +31,7 @@ Code system specifying the type of department or service the patient was dischar
   "name" : "DischargeDeptCS",
   "title" : "Discharge Department/Service Code System",
   "status" : "active",
-  "date" : "2025-10-27T10:25:48+00:00",
+  "date" : "2025-10-30T10:04:33+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

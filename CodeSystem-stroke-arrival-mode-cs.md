@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/stroke-arrival-mode-cs | *Version*:0.1.0 |
-| Active as of 2025-10-27 | *Computable Name*:StrokeArrivalModeCS |
+| Active as of 2025-10-30 | *Computable Name*:StrokeArrivalModeCS |
 
  
 Codes indicating the level of care provided during the patient's initial day(s) in the hospital. 
@@ -32,7 +32,7 @@ Codes indicating the level of care provided during the patient's initial day(s) 
   "title" : "Initial Care Intensity Code System",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-10-27T10:25:48+00:00",
+  "date" : "2025-10-30T10:04:33+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

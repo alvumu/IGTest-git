@@ -12,15 +12,18 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://testSK.org/StructureDefinition/stroke-registry-organization-profile"^^xsd:anyURI ;
-       fhir:link <http://testSK.org/StructureDefinition/stroke-registry-organization-profile>
+       fhir:l <http://testSK.org/StructureDefinition/stroke-registry-organization-profile>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization ExampleStrokeOrganization</b></p><a name=\"ExampleStrokeOrganization\"> </a><a name=\"hcExampleStrokeOrganization\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-stroke-registry-organization-profile.html\">Stroke Registry Organization Profile</a></p></div><p><b>identifier</b>: <code>https://stroke.qualityregistry.org</code>/987654</p><p><b>active</b>: true</p><p><b>name</b>: University Hospital of Boston</p></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization ExampleStrokeOrganization</b></p><a name=\"ExampleStrokeOrganization\"> </a><a name=\"hcExampleStrokeOrganization\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-stroke-registry-organization-profile.html\">Stroke Registry Organization Profile</a></p></div><p><b>identifier</b>: <code>https://stroke.qualityregistry.org</code>/987654</p><p><b>active</b>: true</p><p><b>name</b>: University Hospital of Boston</p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "https://stroke.qualityregistry.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "https://stroke.qualityregistry.org"^^xsd:anyURI ;
+       fhir:l <https://stroke.qualityregistry.org>
+     ] ;
      fhir:value [ fhir:v "987654" ]
   ] ) ; # 
   fhir:active [ fhir:v true] ; # 

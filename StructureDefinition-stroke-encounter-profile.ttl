@@ -11,14 +11,17 @@
   fhir:id [ fhir:v "stroke-encounter-profile"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition stroke-encounter-profile</b></p><a name=\"stroke-encounter-profile\"> </a><a name=\"hcstroke-encounter-profile\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter\">Encounter</a><a name=\"Encounter\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/encounter.html\">Encounter</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An interaction during which services are provided to the patient</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.extension\">Slices for extension</a><a name=\"Encounter.extension\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.extension:isFirstHospital\" title=\"Extension URL = http://testSK.org/StructureDefinition/first-hospital-ext\">extension:isFirstHospital</a><a name=\"Encounter.extension.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-first-hospital-ext.html\">http://testSK.org/StructureDefinition/first-hospital-ext</a></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.extension:initialCareIntensity\" title=\"Extension URL = http://testSK.org/StructureDefinition/initial-care-intensity-ext\">extension:initialCareIntensity</a><a name=\"Encounter.extension.3\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-initial-care-intensity-ext.html\">http://testSK.org/StructureDefinition/initial-care-intensity-ext</a><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-initial-care-intensity-vs.html\" title=\"http://testSK.org/ValueSet/initial-care-intensity-vs\" class=\"binding\">Initial Care Intensity ValueSet</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.extension:requiredPostAcuteCare\" title=\"Extension URL = http://testSK.org/StructureDefinition/required-post-acute-care-ext\">extension:requiredPostAcuteCare</a><a name=\"Encounter.extension.4\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-required-post-acute-care-ext.html\">http://testSK.org/StructureDefinition/required-post-acute-care-ext</a></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.extension:dischargeDepartmentService\" title=\"Extension URL = http://testSK.org/StructureDefinition/discharge-department-service-ext\">extension:dischargeDepartmentService</a><a name=\"Encounter.extension.5\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-discharge-department-service-ext.html\">http://testSK.org/StructureDefinition/discharge-department-service-ext</a><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-discharge-dept-vs.html\" title=\"http://testSK.org/ValueSet/discharge-dept-vs\" class=\"binding\">Discharge Department/Service ValueSet</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.status\">status</a><a name=\"Encounter.status\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">planned | in-progress | on-hold | discharged | completed | cancelled | discontinued | entered-in-error | unknown</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.class\">class</a><a name=\"Encounter.class\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Classification of patient encounter context - e.g. Inpatient, outpatient</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R5/datatypes-definitions.html#CodeableConcept.coding\">coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Code defined by a terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">(Complex)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R5/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">IMP</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R5/datatypes-definitions.html#Coding.display\">display</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Representation defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">inpatient encounter</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.type\">type</a><a name=\"Encounter.type\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Specific type of encounter (e.g. e-mail consultation, surgical day-care, ...)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.subject\">subject</a><a name=\"Encounter.subject\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"http://hl7.org/fhir/R5/patient.html\">Patient</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The patient or group related to this encounter</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.actualPeriod\">actualPeriod</a><a name=\"Encounter.actualPeriod\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The actual start and end time of the encounter</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.actualPeriod.start\">start</a><a name=\"Encounter.actualPeriod.start\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Starting time with inclusive boundary</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.actualPeriod.end\">end</a><a name=\"Encounter.actualPeriod.end\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">End time with inclusive boundary, if not ongoing</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.admission\">admission</a><a name=\"Encounter.admission\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/types.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Details about the admission to a healthcare service</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.admission.admitSource\">admitSource</a><a name=\"Encounter.admission.admitSource\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">From where patient was admitted (physician referral, transfer)</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-stroke-arrival-mode-vs.html\" title=\"http://testSK.org/ValueSet/stroke-arrival-mode-vs\" class=\"binding\">Stroke Arrival Mode ValueSet</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.admission.dischargeDisposition\">dischargeDisposition</a><a name=\"Encounter.admission.dischargeDisposition\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Category or kind of location after discharge</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-stroke-discharge-destination-vs.html\" title=\"http://testSK.org/ValueSet/stroke-discharge-destination-vs\" class=\"binding\">Stroke Discharge Destination ValueSet</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition stroke-encounter-profile</b></p><a name=\"stroke-encounter-profile\"> </a><a name=\"hcstroke-encounter-profile\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter\">Encounter</a><a name=\"Encounter\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/encounter.html\">Encounter</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An interaction during which services are provided to the patient</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.extension\">Slices for extension</a><a name=\"Encounter.extension\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.extension:isFirstHospital\" title=\"Extension URL = http://testSK.org/StructureDefinition/first-hospital-ext\">extension:isFirstHospital</a><a name=\"Encounter.extension.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-first-hospital-ext.html\">http://testSK.org/StructureDefinition/first-hospital-ext</a></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.extension:initialCareIntensity\" title=\"Extension URL = http://testSK.org/StructureDefinition/initial-care-intensity-ext\">extension:initialCareIntensity</a><a name=\"Encounter.extension.3\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-initial-care-intensity-ext.html\">http://testSK.org/StructureDefinition/initial-care-intensity-ext</a><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-initial-care-intensity-vs.html\" title=\"http://testSK.org/ValueSet/initial-care-intensity-vs\" class=\"binding\">Initial Care Intensity ValueSet</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.extension:requiredPostAcuteCare\" title=\"Extension URL = http://testSK.org/StructureDefinition/required-post-acute-care-ext\">extension:requiredPostAcuteCare</a><a name=\"Encounter.extension.4\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-required-post-acute-care-ext.html\">http://testSK.org/StructureDefinition/required-post-acute-care-ext</a></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.extension:dischargeDepartmentService\" title=\"Extension URL = http://testSK.org/StructureDefinition/discharge-department-service-ext\">extension:dischargeDepartmentService</a><a name=\"Encounter.extension.5\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-discharge-department-service-ext.html\">http://testSK.org/StructureDefinition/discharge-department-service-ext</a><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-discharge-dept-vs.html\" title=\"http://testSK.org/ValueSet/discharge-dept-vs\" class=\"binding\">Discharge Department/Service ValueSet</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.status\">status</a><a name=\"Encounter.status\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">planned | in-progress | on-hold | discharged | completed | cancelled | discontinued | entered-in-error | unknown</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.class\">class</a><a name=\"Encounter.class\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Classification of patient encounter context - e.g. Inpatient, outpatient</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R5/datatypes-definitions.html#CodeableConcept.coding\">coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Code defined by a terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">(Complex)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R5/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">IMP</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R5/datatypes-definitions.html#Coding.display\">display</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Representation defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">inpatient encounter</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.type\">type</a><a name=\"Encounter.type\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Specific type of encounter (e.g. e-mail consultation, surgical day-care, ...)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.subject\">subject</a><a name=\"Encounter.subject\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"http://hl7.org/fhir/R5/patient.html\">Patient</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The patient or group related to this encounter</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.actualPeriod\">actualPeriod</a><a name=\"Encounter.actualPeriod\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The actual start and end time of the encounter</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.actualPeriod.start\">start</a><a name=\"Encounter.actualPeriod.start\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Starting time with inclusive boundary</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.actualPeriod.end\">end</a><a name=\"Encounter.actualPeriod.end\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">End time with inclusive boundary, if not ongoing</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.admission\">admission</a><a name=\"Encounter.admission\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/types.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Details about the admission to a healthcare service</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.admission.admitSource\">admitSource</a><a name=\"Encounter.admission.admitSource\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">From where patient was admitted (physician referral, transfer)</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-stroke-arrival-mode-vs.html\" title=\"http://testSK.org/ValueSet/stroke-arrival-mode-vs\" class=\"binding\">Stroke Arrival Mode ValueSet</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-stroke-encounter-profile-definitions.html#Encounter.admission.dischargeDisposition\">dischargeDisposition</a><a name=\"Encounter.admission.dischargeDisposition\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Category or kind of location after discharge</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-stroke-discharge-destination-vs.html\" title=\"http://testSK.org/ValueSet/stroke-discharge-destination-vs\" class=\"binding\">Stroke Discharge Destination ValueSet</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://testSK.org/StructureDefinition/stroke-encounter-profile"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://testSK.org/StructureDefinition/stroke-encounter-profile"^^xsd:anyURI ;
+     fhir:l <http://testSK.org/StructureDefinition/stroke-encounter-profile>
+  ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "StrokeEncounterProfile"] ; # 
   fhir:title [ fhir:v "Stroke Encounter Profile"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-10-27T10:25:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-30T10:04:33+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -31,34 +34,52 @@
   fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "workflow" ] ;
-     fhir:uri [ fhir:v "http://hl7.org/fhir/workflow"^^xsd:anyURI ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/workflow"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/workflow>
+     ] ;
      fhir:name [ fhir:v "Workflow Pattern" ]
   ] [
      fhir:identity [ fhir:v "w5" ] ;
-     fhir:uri [ fhir:v "http://hl7.org/fhir/fivews"^^xsd:anyURI ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/fivews"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/fivews>
+     ] ;
      fhir:name [ fhir:v "FiveWs Pattern Mapping" ]
   ] [
      fhir:identity [ fhir:v "rim" ] ;
-     fhir:uri [ fhir:v "http://hl7.org/v3"^^xsd:anyURI ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/v3"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/v3>
+     ] ;
      fhir:name [ fhir:v "RIM Mapping" ]
   ] [
      fhir:identity [ fhir:v "v2" ] ;
-     fhir:uri [ fhir:v "http://hl7.org/v2"^^xsd:anyURI ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/v2"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/v2>
+     ] ;
      fhir:name [ fhir:v "HL7 V2 Mapping" ]
   ] ) ; # 
   fhir:kind [ fhir:v "resource"] ; # 
   fhir:abstract [ fhir:v false] ; # 
-  fhir:type [ fhir:v "Encounter"^^xsd:anyURI] ; # 
+  fhir:type [
+     fhir:v "Encounter"^^xsd:anyURI ;
+     fhir:l fhir:Encounter
+  ] ; # 
   fhir:baseDefinition [
      fhir:v "http://hl7.org/fhir/StructureDefinition/Encounter"^^xsd:anyURI ;
-     fhir:link <http://hl7.org/fhir/StructureDefinition/Encounter>
+     fhir:l <http://hl7.org/fhir/StructureDefinition/Encounter>
   ] ; # 
   fhir:derivation [ fhir:v "constraint"] ; # 
   fhir:snapshot [
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version>
+       ] ;
        fhir:value [
-         a fhir:string ;
+         a fhir:String ;
          fhir:v "5.0.0"
        ]
      ] ) ;
@@ -82,7 +103,7 @@
          fhir:expression [ fhir:v "contained.contained.empty()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] [
          fhir:key [ fhir:v "dom-3" ] ;
@@ -91,7 +112,7 @@
          fhir:expression [ fhir:v "contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] [
          fhir:key [ fhir:v "dom-4" ] ;
@@ -100,7 +121,7 @@
          fhir:expression [ fhir:v "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] [
          fhir:key [ fhir:v "dom-5" ] ;
@@ -109,19 +130,25 @@
          fhir:expression [ fhir:v "contained.meta.security.empty()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice>
+           ] ;
            fhir:value [
-             a fhir:boolean ;
+             a fhir:Boolean ;
              fhir:v true
            ]
          ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation>
+           ] ;
            fhir:value [
-             a fhir:markdown ;
+             a fhir:Markdown ;
              fhir:v "When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time."
            ]
          ] ) ;
@@ -131,7 +158,7 @@
          fhir:expression [ fhir:v "text.`div`.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -162,13 +189,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "id"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "id"^^xsd:anyURI ;
+             fhir:l fhir:id
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
        fhir:isModifier [ fhir:v false ] ;
@@ -186,7 +220,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Meta"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Meta"^^xsd:anyURI ;
+           fhir:l fhir:Meta
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -195,7 +232,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -215,7 +252,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "uri"^^xsd:anyURI ;
+           fhir:l fhir:uri
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -224,7 +264,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -245,7 +285,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -254,7 +297,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -262,9 +305,12 @@
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "Language"
            ]
          ] ) ;
@@ -272,13 +318,13 @@
          fhir:description [ fhir:v "IETF language tag for a human language" ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/all-languages|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/all-languages|5.0.0>
+           fhir:l <http://hl7.org/fhir/ValueSet/all-languages?version=5.0.0>
          ] ;
          fhir:additional ( [
            fhir:purpose [ fhir:v "starter" ] ;
            fhir:valueSet [
              fhir:v "http://hl7.org/fhir/ValueSet/languages|5.0.0"^^xsd:anyURI ;
-             fhir:link <http://hl7.org/fhir/ValueSet/languages|5.0.0>
+             fhir:l <http://hl7.org/fhir/ValueSet/languages?version=5.0.0>
            ]
          ] )
        ]
@@ -297,7 +343,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Narrative"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Narrative"^^xsd:anyURI ;
+           fhir:l fhir:Narrative
+         ]
        ] ) ;
        fhir:condition ( [ fhir:v "dom-6" ] ) ;
        fhir:constraint ( [
@@ -307,7 +356,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -332,7 +381,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Resource"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Resource"^^xsd:anyURI ;
+           fhir:l fhir:Resource
+         ]
        ] ) ;
        fhir:condition ( [ fhir:v "dom-2" ] [ fhir:v "dom-4" ] [ fhir:v "dom-3" ] [ fhir:v "dom-5" ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -363,7 +415,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -372,7 +427,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -381,7 +436,7 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -401,10 +456,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ] ;
          fhir:profile ( [
            fhir:v "http://testSK.org/StructureDefinition/first-hospital-ext"^^xsd:anyURI ;
-           fhir:link <http://testSK.org/StructureDefinition/first-hospital-ext>
+           fhir:l <http://testSK.org/StructureDefinition/first-hospital-ext>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -414,7 +472,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -423,7 +481,7 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -443,10 +501,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ] ;
          fhir:profile ( [
            fhir:v "http://testSK.org/StructureDefinition/initial-care-intensity-ext"^^xsd:anyURI ;
-           fhir:link <http://testSK.org/StructureDefinition/initial-care-intensity-ext>
+           fhir:l <http://testSK.org/StructureDefinition/initial-care-intensity-ext>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -456,7 +517,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -465,7 +526,7 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -485,10 +546,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ] ;
          fhir:profile ( [
            fhir:v "http://testSK.org/StructureDefinition/required-post-acute-care-ext"^^xsd:anyURI ;
-           fhir:link <http://testSK.org/StructureDefinition/required-post-acute-care-ext>
+           fhir:l <http://testSK.org/StructureDefinition/required-post-acute-care-ext>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -498,7 +562,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -507,7 +571,7 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -527,10 +591,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ] ;
          fhir:profile ( [
            fhir:v "http://testSK.org/StructureDefinition/discharge-department-service-ext"^^xsd:anyURI ;
-           fhir:link <http://testSK.org/StructureDefinition/discharge-department-service-ext>
+           fhir:l <http://testSK.org/StructureDefinition/discharge-department-service-ext>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -540,7 +607,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -549,7 +616,7 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -571,7 +638,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -580,7 +650,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -589,7 +659,7 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -613,7 +683,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -622,7 +695,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -655,7 +728,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -664,7 +740,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -673,9 +749,12 @@
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "EncounterStatus"
            ]
          ] ) ;
@@ -683,7 +762,7 @@
          fhir:description [ fhir:v "Current state of the encounter." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/encounter-status|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/encounter-status|5.0.0>
+           fhir:l <http://hl7.org/fhir/ValueSet/encounter-status?version=5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -712,7 +791,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:pattern [
          a fhir:CodeableConcept ;
@@ -728,7 +810,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -736,9 +818,12 @@
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "EncounterClass"
            ]
          ] ) ;
@@ -746,7 +831,7 @@
          fhir:description [ fhir:v "Classification of the encounter." ] ;
          fhir:valueSet [
            fhir:v "http://terminology.hl7.org/ValueSet/encounter-class"^^xsd:anyURI ;
-           fhir:link <http://terminology.hl7.org/ValueSet/encounter-class>
+           fhir:l <http://terminology.hl7.org/ValueSet/encounter-class>
          ]
        ] ;
        fhir:mapping ( [
@@ -772,7 +857,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -781,7 +869,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -789,9 +877,12 @@
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "Priority"
            ]
          ] ) ;
@@ -799,7 +890,7 @@
          fhir:description [ fhir:v "Indicates the urgency of the encounter." ] ;
          fhir:valueSet [
            fhir:v "http://terminology.hl7.org/ValueSet/v3-ActPriority"^^xsd:anyURI ;
-           fhir:link <http://terminology.hl7.org/ValueSet/v3-ActPriority>
+           fhir:l <http://terminology.hl7.org/ValueSet/v3-ActPriority>
          ]
        ] ;
        fhir:mapping ( [
@@ -826,7 +917,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -835,7 +929,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -843,9 +937,12 @@
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "EncounterType"
            ]
          ] ) ;
@@ -853,7 +950,7 @@
          fhir:description [ fhir:v "A specific code indicating type of service provided" ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/encounter-type|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/encounter-type|5.0.0>
+           fhir:l <http://hl7.org/fhir/ValueSet/encounter-type?version=5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -882,10 +979,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableReference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "CodeableReference"^^xsd:anyURI ;
+           fhir:l fhir:CodeableReference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/HealthcareService|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/HealthcareService|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/HealthcareService?version=5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -895,7 +995,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -903,9 +1003,12 @@
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "EncounterServiceType"
            ]
          ] ) ;
@@ -913,7 +1016,7 @@
          fhir:description [ fhir:v "Broad categorization of the service that is to be provided." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/service-type|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/service-type|5.0.0>
+           fhir:l <http://hl7.org/fhir/ValueSet/service-type?version=5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -941,10 +1044,13 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Patient>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -954,7 +1060,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -987,7 +1093,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -996,7 +1105,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1004,9 +1113,12 @@
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "SubjectStatus"
            ]
          ] ) ;
@@ -1014,7 +1126,7 @@
          fhir:description [ fhir:v "Current status of the subject  within the encounter." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/encounter-subject-status|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/encounter-subject-status|5.0.0>
+           fhir:l <http://hl7.org/fhir/ValueSet/encounter-subject-status?version=5.0.0>
          ]
        ]
      ] [
@@ -1030,10 +1142,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/EpisodeOfCare|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/EpisodeOfCare?version=5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1043,7 +1158,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1073,19 +1188,22 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/CarePlan|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/CarePlan|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/CarePlan?version=5.0.0>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceRequest|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DeviceRequest|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DeviceRequest?version=5.0.0>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationRequest|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationRequest|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/MedicationRequest?version=5.0.0>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/ServiceRequest|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ServiceRequest|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/ServiceRequest?version=5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1095,7 +1213,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1121,10 +1239,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/CareTeam|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/CareTeam|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/CareTeam?version=5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1134,7 +1255,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1159,16 +1280,22 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy>
+           ] ;
            fhir:value [
-             a fhir:boolean ;
+             a fhir:Boolean ;
              fhir:v true
            ]
          ] ) ;
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Encounter|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Encounter?version=5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1178,7 +1305,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1204,10 +1331,13 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Organization?version=5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1217,7 +1347,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1247,7 +1377,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "BackboneElement"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "BackboneElement"^^xsd:anyURI ;
+           fhir:l fhir:BackboneElement
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1256,7 +1389,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "enc-1" ] ;
@@ -1265,7 +1398,7 @@
          fhir:expression [ fhir:v "actor.exists() or type.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Encounter"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Encounter>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Encounter>
          ]
        ] [
          fhir:key [ fhir:v "enc-2" ] ;
@@ -1274,7 +1407,7 @@
          fhir:expression [ fhir:v "actor.exists(resolve() is Patient or resolve() is Group) implies type.exists().not()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Encounter"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Encounter>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Encounter>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1305,13 +1438,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -1335,7 +1475,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1344,7 +1487,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -1353,7 +1496,7 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -1378,7 +1521,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1387,7 +1533,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -1396,7 +1542,7 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v true ] ;
@@ -1420,7 +1566,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:condition ( [ fhir:v "enc-1" ] [ fhir:v "enc-2" ] ) ;
        fhir:constraint ( [
@@ -1430,7 +1579,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1438,9 +1587,12 @@
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "ParticipantType"
            ]
          ] ) ;
@@ -1448,7 +1600,7 @@
          fhir:description [ fhir:v "Role of participant in encounter." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/encounter-participant-type|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/encounter-participant-type|5.0.0>
+           fhir:l <http://hl7.org/fhir/ValueSet/encounter-participant-type?version=5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -1474,7 +1626,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Period"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Period"^^xsd:anyURI ;
+           fhir:l fhir:Period
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1483,7 +1638,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1510,28 +1665,31 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Patient|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Patient?version=5.0.0>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Group|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Group|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Group?version=5.0.0>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/RelatedPerson?version=5.0.0>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Practitioner?version=5.0.0>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/PractitionerRole?version=5.0.0>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Device|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Device|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Device?version=5.0.0>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/HealthcareService|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/HealthcareService|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/HealthcareService?version=5.0.0>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "enc-1" ] [ fhir:v "enc-2" ] ) ;
@@ -1542,7 +1700,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1574,10 +1732,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Appointment|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Appointment|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Appointment?version=5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1587,7 +1748,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1617,7 +1778,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "VirtualServiceDetail"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "VirtualServiceDetail"^^xsd:anyURI ;
+           fhir:l fhir:VirtualServiceDetail
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1626,7 +1790,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1650,7 +1814,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Period"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Period"^^xsd:anyURI ;
+           fhir:l fhir:Period
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1659,7 +1826,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -1693,13 +1860,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "id"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "id"^^xsd:anyURI ;
+             fhir:l fhir:id
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -1731,7 +1905,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1740,7 +1917,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -1749,7 +1926,7 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -1772,7 +1949,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
        ] ) ;
        fhir:condition ( [ fhir:v "per-1" ] ) ;
        fhir:constraint ( [
@@ -1782,7 +1962,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -1809,7 +1989,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
        ] ) ;
        fhir:meaningWhenMissing [ fhir:v "If the end of the period is missing, it means that the period is ongoing" ] ;
        fhir:condition ( [ fhir:v "per-1" ] ) ;
@@ -1820,7 +2003,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -1846,7 +2029,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1855,7 +2041,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1878,7 +2064,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1887,7 +2076,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1911,7 +2100,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Duration"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Duration"^^xsd:anyURI ;
+           fhir:l fhir:Duration
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1920,7 +2112,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1950,7 +2142,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "BackboneElement"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "BackboneElement"^^xsd:anyURI ;
+           fhir:l fhir:BackboneElement
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1959,7 +2154,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -1980,13 +2175,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2010,7 +2212,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2019,7 +2224,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -2028,7 +2233,7 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2053,7 +2258,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2062,7 +2270,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -2071,7 +2279,7 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v true ] ;
@@ -2094,7 +2302,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2103,7 +2314,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -2111,16 +2322,19 @@
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "reason-use"
            ]
          ] ) ;
          fhir:strength [ fhir:v "example" ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/encounter-reason-use|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/encounter-reason-use|5.0.0>
+           fhir:l <http://hl7.org/fhir/ValueSet/encounter-reason-use?version=5.0.0>
          ]
        ]
      ] [
@@ -2137,22 +2351,25 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableReference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "CodeableReference"^^xsd:anyURI ;
+           fhir:l fhir:CodeableReference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Condition|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Condition?version=5.0.0>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DiagnosticReport?version=5.0.0>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Observation?version=5.0.0>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation?version=5.0.0>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Procedure|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Procedure|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Procedure?version=5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2162,7 +2379,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -2170,9 +2387,12 @@
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "EncounterReason"
            ]
          ] ) ;
@@ -2180,7 +2400,7 @@
          fhir:description [ fhir:v "Reason why the encounter takes place." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/encounter-reason|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/encounter-reason|5.0.0>
+           fhir:l <http://hl7.org/fhir/ValueSet/encounter-reason?version=5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -2210,7 +2430,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "BackboneElement"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "BackboneElement"^^xsd:anyURI ;
+           fhir:l fhir:BackboneElement
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2219,7 +2442,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -2244,13 +2467,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2274,7 +2504,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2283,7 +2516,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -2292,7 +2525,7 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2317,7 +2550,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2326,7 +2562,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -2335,7 +2571,7 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v true ] ;
@@ -2359,10 +2595,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableReference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "CodeableReference"^^xsd:anyURI ;
+           fhir:l fhir:CodeableReference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Condition|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Condition?version=5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2372,7 +2611,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -2380,16 +2619,19 @@
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "condition-code"
            ]
          ] ) ;
          fhir:strength [ fhir:v "example" ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/condition-code|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/condition-code|5.0.0>
+           fhir:l <http://hl7.org/fhir/ValueSet/condition-code?version=5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -2418,7 +2660,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2427,7 +2672,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -2435,9 +2680,12 @@
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "DiagnosisUse"
            ]
          ] ) ;
@@ -2445,7 +2693,7 @@
          fhir:description [ fhir:v "The type of diagnosis this condition represents." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/encounter-diagnosis-use|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/encounter-diagnosis-use|5.0.0>
+           fhir:l <http://hl7.org/fhir/ValueSet/encounter-diagnosis-use?version=5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -2469,10 +2717,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Account|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Account|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Account?version=5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2482,7 +2733,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -2507,7 +2758,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2516,7 +2770,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -2524,9 +2778,12 @@
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "PatientDiet"
            ]
          ] ) ;
@@ -2534,7 +2791,7 @@
          fhir:description [ fhir:v "Medical, cultural or ethical food preferences to help with catering requirements." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/encounter-diet|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/encounter-diet|5.0.0>
+           fhir:l <http://hl7.org/fhir/ValueSet/encounter-diet?version=5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -2557,7 +2814,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2566,7 +2826,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -2574,9 +2834,12 @@
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "Arrangements"
            ]
          ] ) ;
@@ -2584,7 +2847,7 @@
          fhir:description [ fhir:v "Special arrangements." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/encounter-special-arrangements|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/encounter-special-arrangements|5.0.0>
+           fhir:l <http://hl7.org/fhir/ValueSet/encounter-special-arrangements?version=5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -2608,7 +2871,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2617,7 +2883,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -2625,9 +2891,12 @@
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "Courtesies"
            ]
          ] ) ;
@@ -2635,7 +2904,7 @@
          fhir:description [ fhir:v "Special courtesies." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/encounter-special-courtesy|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/encounter-special-courtesy|5.0.0>
+           fhir:l <http://hl7.org/fhir/ValueSet/encounter-special-courtesy?version=5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -2659,7 +2928,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "BackboneElement"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "BackboneElement"^^xsd:anyURI ;
+           fhir:l fhir:BackboneElement
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2668,7 +2940,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -2693,13 +2965,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2723,7 +3002,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2732,7 +3014,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -2741,7 +3023,7 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2766,7 +3048,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2775,7 +3060,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -2784,7 +3069,7 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v true ] ;
@@ -2807,7 +3092,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2816,7 +3104,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -2842,13 +3130,16 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Location|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Location|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Location?version=5.0.0>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Organization?version=5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2858,7 +3149,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -2881,7 +3172,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2890,7 +3184,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -2900,7 +3194,7 @@
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
            fhir:v "http://testSK.org/ValueSet/stroke-arrival-mode-vs"^^xsd:anyURI ;
-           fhir:link <http://testSK.org/ValueSet/stroke-arrival-mode-vs>
+           fhir:l <http://testSK.org/ValueSet/stroke-arrival-mode-vs>
          ]
        ] ;
        fhir:mapping ( [
@@ -2923,7 +3217,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2932,7 +3229,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -2940,9 +3237,12 @@
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "ReAdmissionType"
            ]
          ] ) ;
@@ -2950,7 +3250,7 @@
          fhir:description [ fhir:v "The reason for re-admission of this admission encounter." ] ;
          fhir:valueSet [
            fhir:v "http://terminology.hl7.org/ValueSet/v2-0092"^^xsd:anyURI ;
-           fhir:link <http://terminology.hl7.org/ValueSet/v2-0092>
+           fhir:l <http://terminology.hl7.org/ValueSet/v2-0092>
          ]
        ] ;
        fhir:mapping ( [
@@ -2973,13 +3273,16 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Location|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Location|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Location?version=5.0.0>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Organization?version=5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2989,7 +3292,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -3015,7 +3318,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3024,7 +3330,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -3034,7 +3340,7 @@
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
            fhir:v "http://testSK.org/ValueSet/stroke-discharge-destination-vs"^^xsd:anyURI ;
-           fhir:link <http://testSK.org/ValueSet/stroke-discharge-destination-vs>
+           fhir:l <http://testSK.org/ValueSet/stroke-discharge-destination-vs>
          ]
        ] ;
        fhir:mapping ( [
@@ -3058,7 +3364,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "BackboneElement"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "BackboneElement"^^xsd:anyURI ;
+           fhir:l fhir:BackboneElement
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3067,7 +3376,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -3092,13 +3401,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -3122,7 +3438,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3131,7 +3450,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -3140,7 +3459,7 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -3165,7 +3484,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3174,7 +3496,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -3183,7 +3505,7 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v true ] ;
@@ -3206,10 +3528,13 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Location|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Location|5.0.0>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Location?version=5.0.0>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -3219,7 +3544,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -3252,7 +3577,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3261,7 +3589,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -3269,9 +3597,12 @@
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "EncounterLocationStatus"
            ]
          ] ) ;
@@ -3279,7 +3610,7 @@
          fhir:description [ fhir:v "The status of the location." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/encounter-location-status|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/encounter-location-status|5.0.0>
+           fhir:l <http://hl7.org/fhir/ValueSet/encounter-location-status?version=5.0.0>
          ]
        ] ;
        fhir:mapping ( [
@@ -3300,7 +3631,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3309,7 +3643,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -3317,9 +3651,12 @@
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "LocationForm"
            ]
          ] ) ;
@@ -3327,7 +3664,7 @@
          fhir:description [ fhir:v "Physical form of the location." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/location-form|5.0.0"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/location-form|5.0.0>
+           fhir:l <http://hl7.org/fhir/ValueSet/location-form?version=5.0.0>
          ]
        ]
      ] [
@@ -3343,7 +3680,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Period"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Period"^^xsd:anyURI ;
+           fhir:l fhir:Period
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3352,7 +3692,7 @@
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v false ] ;
@@ -3387,10 +3727,13 @@
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ] ;
          fhir:profile ( [
            fhir:v "http://testSK.org/StructureDefinition/first-hospital-ext"^^xsd:anyURI ;
-           fhir:link <http://testSK.org/StructureDefinition/first-hospital-ext>
+           fhir:l <http://testSK.org/StructureDefinition/first-hospital-ext>
          ] )
        ] ) ;
        fhir:mustSupport [ fhir:v true ]
@@ -3401,10 +3744,13 @@
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ] ;
          fhir:profile ( [
            fhir:v "http://testSK.org/StructureDefinition/initial-care-intensity-ext"^^xsd:anyURI ;
-           fhir:link <http://testSK.org/StructureDefinition/initial-care-intensity-ext>
+           fhir:l <http://testSK.org/StructureDefinition/initial-care-intensity-ext>
          ] )
        ] ) ;
        fhir:mustSupport [ fhir:v true ]
@@ -3415,10 +3761,13 @@
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ] ;
          fhir:profile ( [
            fhir:v "http://testSK.org/StructureDefinition/required-post-acute-care-ext"^^xsd:anyURI ;
-           fhir:link <http://testSK.org/StructureDefinition/required-post-acute-care-ext>
+           fhir:l <http://testSK.org/StructureDefinition/required-post-acute-care-ext>
          ] )
        ] ) ;
        fhir:mustSupport [ fhir:v true ]
@@ -3429,10 +3778,13 @@
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ] ;
          fhir:profile ( [
            fhir:v "http://testSK.org/StructureDefinition/discharge-department-service-ext"^^xsd:anyURI ;
-           fhir:link <http://testSK.org/StructureDefinition/discharge-department-service-ext>
+           fhir:l <http://testSK.org/StructureDefinition/discharge-department-service-ext>
          ] )
        ] ) ;
        fhir:mustSupport [ fhir:v true ]
@@ -3460,10 +3812,13 @@
        fhir:path [ fhir:v "Encounter.subject" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Patient>
          ] )
        ] ) ;
        fhir:mustSupport [ fhir:v true ]
@@ -3494,7 +3849,7 @@
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
            fhir:v "http://testSK.org/ValueSet/stroke-arrival-mode-vs"^^xsd:anyURI ;
-           fhir:link <http://testSK.org/ValueSet/stroke-arrival-mode-vs>
+           fhir:l <http://testSK.org/ValueSet/stroke-arrival-mode-vs>
          ]
        ]
      ] [
@@ -3506,7 +3861,7 @@
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
            fhir:v "http://testSK.org/ValueSet/stroke-discharge-destination-vs"^^xsd:anyURI ;
-           fhir:link <http://testSK.org/ValueSet/stroke-discharge-destination-vs>
+           fhir:l <http://testSK.org/ValueSet/stroke-discharge-destination-vs>
          ]
        ]
      ] )

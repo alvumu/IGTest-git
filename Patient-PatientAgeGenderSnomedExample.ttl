@@ -13,20 +13,26 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile"^^xsd:anyURI ;
-       fhir:link <http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile>
+       fhir:l <http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientAgeGenderSnomedExample</b></p><a name=\"PatientAgeGenderSnomedExample\"> </a><a name=\"hcPatientAgeGenderSnomedExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-patient-age-gender-snomed-profile.html\">Patient with SNOMED Gender and Age (extensions)</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Patient gender represented with SNOMED CT codes.\"><a href=\"StructureDefinition-gender-snomed-ext.html\">Gender (SNOMED CT)</a></td><td colspan=\"3\"><span title=\"Codes:{http://snomed.info/sct 248153007}\">Male</span></td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientAgeGenderSnomedExample</b></p><a name=\"PatientAgeGenderSnomedExample\"> </a><a name=\"hcPatientAgeGenderSnomedExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-patient-age-gender-snomed-profile.html\">Patient with SNOMED Gender and Age (extensions)</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Patient gender represented with SNOMED CT codes.\"><a href=\"StructureDefinition-gender-snomed-ext.html\">Gender (SNOMED CT)</a></td><td colspan=\"3\"><span title=\"Codes:{http://snomed.info/sct 248153007}\">Male</span></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://testSK.org/StructureDefinition/gender-snomed-ext"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://testSK.org/StructureDefinition/gender-snomed-ext"^^xsd:anyURI ;
+       fhir:l <http://testSK.org/StructureDefinition/gender-snomed-ext>
+     ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
          a sct:248153007 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "248153007" ]
        ] )
      ]

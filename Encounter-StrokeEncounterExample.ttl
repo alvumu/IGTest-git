@@ -13,42 +13,60 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://testSK.org/StructureDefinition/stroke-encounter-profile"^^xsd:anyURI ;
-       fhir:link <http://testSK.org/StructureDefinition/stroke-encounter-profile>
+       fhir:l <http://testSK.org/StructureDefinition/stroke-encounter-profile>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter StrokeEncounterExample</b></p><a name=\"StrokeEncounterExample\"> </a><a name=\"hcStrokeEncounterExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-stroke-encounter-profile.html\">Stroke Encounter Profile</a></p></div><p><b>First Hospital Extension</b>: true</p><p><b>Initial Care Intensity Extension</b>: <span title=\"Codes:{http://testSK.org/CodeSystem/initial-care-intensity-cs icu-stroke}\">ICU / Stroke Unit</span></p><p><b>Required Post-Acute Care Extension</b>: false</p><p><b>Discharge Department/Service Extension</b>: <span title=\"Codes:{http://snomed.info/sct 309937004}\">Neurology department (environment)</span></p><p><b>status</b>: Completed</p><p><b>type</b>: <span title=\"Codes:\">Inpatient Encounter</span></p><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>actualPeriod</b>: 2025-03-01 08:00:00+0000 --&gt; 2025-03-10 12:00:00+0000</p><h3>Admissions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://testSK.org/CodeSystem/stroke-arrival-mode-cs ems-home}\">EMS from Home</span></td><td><span title=\"Codes:{http://snomed.info/sct 306689006}\">Discharge to home (procedure)</span></td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter StrokeEncounterExample</b></p><a name=\"StrokeEncounterExample\"> </a><a name=\"hcStrokeEncounterExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-stroke-encounter-profile.html\">Stroke Encounter Profile</a></p></div><p><b>First Hospital Extension</b>: true</p><p><b>Initial Care Intensity Extension</b>: <span title=\"Codes:{http://testSK.org/CodeSystem/initial-care-intensity-cs icu-stroke}\">ICU / Stroke Unit</span></p><p><b>Required Post-Acute Care Extension</b>: false</p><p><b>Discharge Department/Service Extension</b>: <span title=\"Codes:{http://snomed.info/sct 309937004}\">Neurology department (environment)</span></p><p><b>status</b>: Completed</p><p><b>type</b>: <span title=\"Codes:\">Inpatient Encounter</span></p><p><b>subject</b>: <a href=\"Patient-example-patient.html\">Anonymous Patient (no stated gender), DoB Unknown</a></p><p><b>actualPeriod</b>: 2025-03-01 08:00:00+0000 --&gt; 2025-03-10 12:00:00+0000</p><h3>Admissions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://testSK.org/CodeSystem/stroke-arrival-mode-cs ems-home}\">EMS from Home</span></td><td><span title=\"Codes:{http://snomed.info/sct 306689006}\">Discharge to home (procedure)</span></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://testSK.org/StructureDefinition/first-hospital-ext"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://testSK.org/StructureDefinition/first-hospital-ext"^^xsd:anyURI ;
+       fhir:l <http://testSK.org/StructureDefinition/first-hospital-ext>
+     ] ;
      fhir:value [
-       a fhir:boolean ;
+       a fhir:Boolean ;
        fhir:v true
      ]
   ] [
-     fhir:url [ fhir:v "http://testSK.org/StructureDefinition/initial-care-intensity-ext"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://testSK.org/StructureDefinition/initial-care-intensity-ext"^^xsd:anyURI ;
+       fhir:l <http://testSK.org/StructureDefinition/initial-care-intensity-ext>
+     ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://testSK.org/CodeSystem/initial-care-intensity-cs"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://testSK.org/CodeSystem/initial-care-intensity-cs"^^xsd:anyURI ;
+           fhir:l <http://testSK.org/CodeSystem/initial-care-intensity-cs>
+         ] ;
          fhir:code [ fhir:v "icu-stroke" ] ;
          fhir:display [ fhir:v "ICU / Stroke Unit" ]
        ] )
      ]
   ] [
-     fhir:url [ fhir:v "http://testSK.org/StructureDefinition/required-post-acute-care-ext"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://testSK.org/StructureDefinition/required-post-acute-care-ext"^^xsd:anyURI ;
+       fhir:l <http://testSK.org/StructureDefinition/required-post-acute-care-ext>
+     ] ;
      fhir:value [
-       a fhir:boolean ;
+       a fhir:Boolean ;
        fhir:v false
      ]
   ] [
-     fhir:url [ fhir:v "http://testSK.org/StructureDefinition/discharge-department-service-ext"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://testSK.org/StructureDefinition/discharge-department-service-ext"^^xsd:anyURI ;
+       fhir:l <http://testSK.org/StructureDefinition/discharge-department-service-ext>
+     ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
          a sct:309937004 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "309937004" ] ;
          fhir:display [ fhir:v "Neurology department (environment)" ]
        ] )
@@ -62,7 +80,7 @@
      ] )
   ] ) ; # 
   fhir:subject [
-     fhir:link <https://alvumu.github.io/Patient/example-patient> ;
+     fhir:l <https://alvumu.github.io/Patient/example-patient> ;
      fhir:reference [ fhir:v "Patient/example-patient" ]
   ] ; # 
   fhir:actualPeriod [
@@ -72,7 +90,10 @@
   fhir:admission [
      fhir:admitSource [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://testSK.org/CodeSystem/stroke-arrival-mode-cs"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://testSK.org/CodeSystem/stroke-arrival-mode-cs"^^xsd:anyURI ;
+           fhir:l <http://testSK.org/CodeSystem/stroke-arrival-mode-cs>
+         ] ;
          fhir:code [ fhir:v "ems-home" ] ;
          fhir:display [ fhir:v "EMS from Home" ]
        ] )
@@ -80,7 +101,10 @@
      fhir:dischargeDisposition [
        fhir:coding ( [
          a sct:306689006 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "306689006" ] ;
          fhir:display [ fhir:v "Discharge to home (procedure)" ]
        ] )

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/afib-flutter-status-vs | *Version*:0.1.0 |
-| Active as of 2025-10-27 | *Computable Name*:AfibFlutterStatusVS |
+| Active as of 2025-10-30 | *Computable Name*:AfibFlutterStatusVS |
 
  
 ValueSet for the status of Atrial Fibrillation or Flutter assessment. 
@@ -54,7 +54,7 @@ This value set contains 3 concepts
   "name" : "AfibFlutterStatusVS",
   "title" : "Atrial Fibrillation or Flutter Status ValueSet",
   "status" : "active",
-  "date" : "2025-10-27T10:25:48+00:00",
+  "date" : "2025-10-30T10:04:33+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

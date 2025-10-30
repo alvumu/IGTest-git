@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/thrombectomy-complication-vs | *Version*:0.1.0 |
-| Active as of 2025-10-27 | *Computable Name*:ThrombectomyComplicationVS |
+| Active as of 2025-10-30 | *Computable Name*:ThrombectomyComplicationVS |
 
  
 Defines the specific complications of thrombectomy to record. 
@@ -54,7 +54,7 @@ This value set contains 1 concepts
   "name" : "ThrombectomyComplicationVS",
   "title" : "Thrombectomy Complication ValueSet",
   "status" : "active",
-  "date" : "2025-10-27T10:25:48+00:00",
+  "date" : "2025-10-30T10:04:33+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
