@@ -24,8 +24,6 @@ To enable consistent capture of the underlying cause of bleeding in hemorrhagic 
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://testSK.org/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs`](CodeSystem-hemorrhagic-stroke-bleeding-reason-cs.md)version 📦0.1.0
-
  
 
 ### Expansion

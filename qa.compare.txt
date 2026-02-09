@@ -1,7 +1,7 @@
 IGTest : Validation Results
 =========================================
 
-err = 180, warn = 128, info = 40
+err = 172, warn = 127, info = 41
 $--
 Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.github.io)
  Build Errors : 0 / 24 / 0
@@ -24,10 +24,10 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.git
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-screen-time-cs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-thrombectomy-complication-cs : 2 / 2 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-timing-metric-codes-cs : 2 / 2 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFib : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFlutter : 2 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFib : 0 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFlutter : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionExample : 0 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeRiskFactorConditionExample : 2 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeRiskFactorConditionExample : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Encounter-StrokeEncounterExample : 1 / 1 / 3
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG : 5 / 1 / 16
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationRequest-discharge-medication-request-001 : 0 / 0 / 1
@@ -80,7 +80,7 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.git
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-afib-flutter-status-vs : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-assessment-context-vs : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-brain-imaging-modality-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-carotid-imaging-modality-vs : 4 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-carotid-imaging-modality-vs : 3 / 1 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-dept-vs : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-destination-vs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-functional-score-codes-vs : 2 / 1 / 1
@@ -99,7 +99,7 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.git
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-etiology-vs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-vs : 4 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-vs : 3 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallow-procedures-vs : 2 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallowing-screening-timing-category-vs : 2 / 1 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-thrombectomy-complication-vs : 2 / 1 / 1
@@ -213,15 +213,9 @@ WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem: Published code systems S
 WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-timing-metric-codes-cs: URL Mismatch https://alvumu.github.io/CodeSystem/timing-metric-codes-cs vs http://testSK.org/CodeSystem/timing-metric-codes-cs
 == fsh-generated/resources/Condition-StrokeDiagnosisConditionAFib.json ==
-ERROR: Condition/StrokeDiagnosisConditionAFib: Condition.code: A definition for the value Set 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips' could not be found
-ERROR: Condition/StrokeDiagnosisConditionAFib: Condition.code: None of the codings provided are in the value set 'Stroke Risk Factor ValueSet' (http://testSK.org/ValueSet/stroke-risk-factor-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#49436004)
 == fsh-generated/resources/Condition-StrokeDiagnosisConditionAFlutter.json ==
-ERROR: Condition/StrokeDiagnosisConditionAFlutter: Condition.code: A definition for the value Set 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips' could not be found
-ERROR: Condition/StrokeDiagnosisConditionAFlutter: Condition.code: None of the codings provided are in the value set 'Stroke Risk Factor ValueSet' (http://testSK.org/ValueSet/stroke-risk-factor-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#5370000)
 == fsh-generated/resources/Condition-StrokeDiagnosisConditionExample.json ==
 == fsh-generated/resources/Condition-StrokeRiskFactorConditionExample.json ==
-ERROR: Condition/StrokeRiskFactorConditionExample: Condition.code: A definition for the value Set 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips' could not be found
-ERROR: Condition/StrokeRiskFactorConditionExample: Condition.code: None of the codings provided are in the value set 'Stroke Risk Factor ValueSet' (http://testSK.org/ValueSet/stroke-risk-factor-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#422504002)
 == fsh-generated/resources/Encounter-StrokeEncounterExample.json ==
 INFORMATION: Encounter/StrokeEncounterExample: Encounter.extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/initial-care-intensity-cs|0.1.0
 ERROR: Encounter/StrokeEncounterExample: Encounter.extension[3].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Discharge Department/Service ValueSet' (http://testSK.org/ValueSet/discharge-dept-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#309937004)
@@ -231,8 +225,8 @@ INFORMATION: Encounter/StrokeEncounterExample: Encounter.admission.admitSource: 
 ERROR: ImplementationGuide.where(url = 'https://alvumu.github.io'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG.json - the canonical URL (https://alvumu.github.io/ImplementationGuide/SKtestIG) does not match the URL (https://alvumu.github.io). Use the special-url parameter if you really mean for it not to match
 ERROR: ImplementationGuide.url: Resource id/url mismatch: SKtestIG/https://alvumu.github.io
 WARNING: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG: Unknown Parameters: [broken-links=warning, check-urls=true]
-ERROR: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[2].code.code: Unknown code 'broken-links' in the CodeSystem 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters' version '0.8.0'
-ERROR: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[3].code.code: Unknown code 'check-urls' in the CodeSystem 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters' version '0.8.0'
+ERROR: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[2].code.code: Unknown code 'broken-links' in the CodeSystem 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters' version '0.9.0'
+ERROR: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[3].code.code: Unknown code 'check-urls' in the CodeSystem 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters' version '0.9.0'
 INFORMATION: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[6].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
 INFORMATION: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[7].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
 INFORMATION: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[8].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
@@ -266,7 +260,7 @@ WARNING: Observation/SpecificFindingObservationExample: Observation.value.ofType
 WARNING: Observation/SpecificFindingObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/SpecificFindingObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-SpecificFindingObservationExampleMTICI.json ==
-ERROR: Observation/SpecificFindingObservationExampleMTICI: Observation.code.coding[0].code: Unknown code '1156911000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Observation/SpecificFindingObservationExampleMTICI: Observation.code.coding[0].code: Unknown code '1156911000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
 ERROR: Observation/SpecificFindingObservationExampleMTICI: Observation.code: None of the codings provided are in the value set 'Specific Stroke Finding Codes ValueSet' (http://testSK.org/ValueSet/specific-finding-codes-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#1156911000)
 INFORMATION: Observation/SpecificFindingObservationExampleMTICI: Observation.value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/mtici-score-cs|0.1.0
 WARNING: Observation/SpecificFindingObservationExampleMTICI: Observation: Best Practice Recommendation: In general, all observations should have a performer
@@ -276,14 +270,14 @@ ERROR: Observation/StrokeCircumstanceObservationExampleWakeUp: Observation.focus
 WARNING: Observation/StrokeCircumstanceObservationExampleWakeUp: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/StrokeCircumstanceObservationExampleWakeUp: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-TimingMetricObservationExample.json ==
-INFORMATION: Observation/TimingMetricObservationExample: Observation.value.ofType(Quantity): A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated
+INFORMATION: Observation/TimingMetricObservationExample: Observation.value.ofType(Quantity).system: A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated
 WARNING: Observation/TimingMetricObservationExample: Observation.value.ofType(Quantity).system: No definition could be found for URL value 'https://ucum.org/ucum'
 WARNING: Observation/TimingMetricObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/TimingMetricObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-VitalSignObservationExample.json ==
-INFORMATION: Observation/VitalSignObservationExample: Observation.component[0].value.ofType(Quantity): A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated
+INFORMATION: Observation/VitalSignObservationExample: Observation.component[0].value.ofType(Quantity).system: A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated
 WARNING: Observation/VitalSignObservationExample: Observation.component[0].value.ofType(Quantity).system: No definition could be found for URL value 'https://ucum.org/ucum'
-INFORMATION: Observation/VitalSignObservationExample: Observation.component[1].value.ofType(Quantity): A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated
+INFORMATION: Observation/VitalSignObservationExample: Observation.component[1].value.ofType(Quantity).system: A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated
 WARNING: Observation/VitalSignObservationExample: Observation.component[1].value.ofType(Quantity).system: No definition could be found for URL value 'https://ucum.org/ucum'
 WARNING: Observation/VitalSignObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/VitalSignObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
@@ -411,8 +405,8 @@ WARNING: StructureDefinition/stroke-mechanical-procedure-profile: StructureDefin
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-mechanical-procedure-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/stroke-mechanical-procedure-profile vs http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile
 == fsh-generated/resources/StructureDefinition-stroke-registry-organization-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/stroke-registry-organization-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-registry-organization-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/stroke-registry-organization-profile) does not match the URL (http://testSK.org/StructureDefinition/stroke-registry-organization-profile). Use the special-url parameter if you really mean for it not to match
-WARNING: StructureDefinition/stroke-registry-organization-profile: StructureDefinition.snapshot.element[15]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
-WARNING: StructureDefinition/stroke-registry-organization-profile: StructureDefinition.differential.element[3]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/stroke-registry-organization-profile: StructureDefinition.snapshot.element[15]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x] (fixed.exists().not())' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/stroke-registry-organization-profile: StructureDefinition.differential.element[3]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x] (fixed.exists().not())' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-registry-organization-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/stroke-registry-organization-profile vs http://testSK.org/StructureDefinition/stroke-registry-organization-profile
 == fsh-generated/resources/StructureDefinition-stroke-risk-factor-condition-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-risk-factor-condition-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/stroke-risk-factor-condition-profile) does not match the URL (http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile). Use the special-url parameter if you really mean for it not to match
@@ -458,8 +452,8 @@ WARNING: ValueSet/brain-imaging-modality-vs: ValueSet: Published value sets SHOU
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-brain-imaging-modality-vs: URL Mismatch https://alvumu.github.io/ValueSet/brain-imaging-modality-vs vs http://testSK.org/ValueSet/brain-imaging-modality-vs
 == fsh-generated/resources/ValueSet-carotid-imaging-modality-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/carotid-imaging-modality-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-carotid-imaging-modality-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/carotid-imaging-modality-vs) does not match the URL (http://testSK.org/ValueSet/carotid-imaging-modality-vs). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet/carotid-imaging-modality-vs: ValueSet.compose.include[0].concept[1]: The code '416940007' is not valid in the system http://snomed.info/sct (Wrong Display Name 'Doppler ultrasonography of carotid arteries (procedure)' for http://snomed.info/sct#416940007. Valid display is 'Past history of procedure' (en) (for the language(s) 'en, en-US'))
-ERROR: ValueSet/carotid-imaging-modality-vs: ValueSet.compose.include[0].concept[3]: The code '1366357009' is not valid in the system http://snomed.info/sct (Unknown code '1366357009' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201')
+INFORMATION: ValueSet/carotid-imaging-modality-vs: ValueSet.compose.include[0].concept[1]: Wrong Display Name 'Doppler ultrasonography of carotid arteries (procedure)' for http://snomed.info/sct#416940007. Valid display is 'Past history of procedure' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+ERROR: ValueSet/carotid-imaging-modality-vs: ValueSet.compose.include[0].concept[3]: The code '1366357009' is not valid in the system http://snomed.info/sct (Unknown code '1366357009' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
 WARNING: ValueSet/carotid-imaging-modality-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-carotid-imaging-modality-vs: URL Mismatch https://alvumu.github.io/ValueSet/carotid-imaging-modality-vs vs http://testSK.org/ValueSet/carotid-imaging-modality-vs
 == fsh-generated/resources/ValueSet-discharge-dept-vs.json ==
@@ -532,9 +526,7 @@ ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/stroke-risk-factor-snome
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs: URL Mismatch https://alvumu.github.io/ValueSet/stroke-risk-factor-snomed-vs vs http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs
 == fsh-generated/resources/ValueSet-stroke-risk-factor-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/stroke-risk-factor-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/stroke-risk-factor-vs) does not match the URL (http://testSK.org/ValueSet/stroke-risk-factor-vs). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet/stroke-risk-factor-vs: ValueSet.compose.include[1].valueSet[0]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips'
-WARNING: ValueSet/stroke-risk-factor-vs: ValueSet.compose.include[1].valueSet[0]: The value set import http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips could not be found so cannot be checked
-ERROR: ValueSet.where(id = 'stroke-risk-factor-vs'): Unable to find included value set 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips'
+ERROR: ValueSet.where(id = 'stroke-risk-factor-vs'): Unable to expand included value set 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips': Unable to expand imported value set: Error from https://tx.fhir.org/r5: A definition for CodeSystem 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' could not be found, so the value set cannot be expanded (and Error from https://tx.fhir.org/r5: A definition for CodeSystem 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' could not be found, so the value set cannot be expanded)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-vs: URL Mismatch https://alvumu.github.io/ValueSet/stroke-risk-factor-vs vs http://testSK.org/ValueSet/stroke-risk-factor-vs
 == fsh-generated/resources/ValueSet-swallow-procedures-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/swallow-procedures-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallow-procedures-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/swallow-procedures-vs) does not match the URL (http://testSK.org/ValueSet/swallow-procedures-vs). Use the special-url parameter if you really mean for it not to match

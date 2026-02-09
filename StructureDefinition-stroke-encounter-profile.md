@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/StructureDefinition/stroke-encounter-profile | *Version*:0.1.0 |
-| Active as of 2025-10-30 | *Computable Name*:StrokeEncounterProfile |
+| Active as of 2026-02-09 | *Computable Name*:StrokeEncounterProfile |
 
  
 Profile for an Encounter resource representing a patient's hospital admission and stay for a stroke event, including key administrative and workflow details. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-stroke-encounter-pro
   "name" : "StrokeEncounterProfile",
   "title" : "Stroke Encounter Profile",
   "status" : "active",
-  "date" : "2025-10-30T10:04:33+00:00",
+  "date" : "2026-02-09T10:35:12+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

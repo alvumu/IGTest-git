@@ -20,8 +20,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://testSK.org/CodeSystem/mtici-score-cs`](CodeSystem-mtici-score-cs.md)version 📦0.1.0
-
  
 
 ### Expansion

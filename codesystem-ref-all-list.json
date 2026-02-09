@@ -244,20 +244,8 @@
       "http://hl7.org/fhir/R5/valueset-request-priority.html" : "RequestPriority"
     },
     {
-      "url" : "http://loinc.org",
-      "version" : "3.1.0",
-      "status" : "active",
-      "name" : "LOINC",
-      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
-      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
-      "oids" : ["2.16.840.1.113883.6.1"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R5/valueset-observation-codes.html" : "LOINC Codes"
-    },
-    {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
-      "version" : "1.0.1",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "ConditionCategoryCodes",
       "title" : "Condition Category Codes",
@@ -412,7 +400,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
-      "version" : "1.0.1",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "ObservationCategoryCodes",
       "title" : "Observation Category Codes",
@@ -472,7 +460,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0092",
-      "version" : "2.0.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "ReAdmissionIndicator",
       "title" : "re-admissionIndicator",
@@ -480,11 +468,11 @@
       "oids" : ["2.16.840.1.113883.18.36"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.5.0/ValueSet-v2-0092.html" : "hl7VS-re-admissionIndicator"
+      "http://terminology.hl7.org/7.0.1/ValueSet-v2-0092.html" : "hl7VS-re-admissionIndicator"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
-      "version" : "2.0.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "ContactRole2",
       "title" : "contactRole2",
@@ -516,7 +504,7 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.5.0/ValueSet-encounter-class.html" : "Encounter class"
+      "http://terminology.hl7.org/7.0.1/ValueSet-encounter-class.html" : "Encounter class"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
@@ -528,7 +516,7 @@
       "oids" : ["2.16.840.1.113883.5.7"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActPriority.html" : "ActPriority"
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActPriority.html" : "ActPriority"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
@@ -540,7 +528,7 @@
       "oids" : ["2.16.840.1.113883.5.8"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
@@ -576,8 +564,8 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes",
-      "http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" : "Special Courtesy"
+      "http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" : "Special Courtesy",
+      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -613,7 +601,7 @@
       "oids" : ["2.16.840.1.113883.5.1070"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html" : "ActSubstanceAdminSubstitutionCode"
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html" : "ActSubstanceAdminSubstitutionCode"
     },
     {
       "url" : "http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs",
@@ -812,31 +800,6 @@
       "uses" : {
       },
       "ValueSet-timing-metric-codes-vs.html" : "Stroke Timing Metric Codes ValueSet"
-    },
-    {
-      "url" : "urn:ietf:bcp:47",
-      "version" : "2.0.1",
-      "status" : "active",
-      "name" : "Ietf3066",
-      "title" : "Tags for the Identification of Languages",
-      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
-      "oids" : ["2.16.840.1.113883.6.121"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages",
-      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages"
-    },
-    {
-      "url" : "urn:iso:std:iso:11073:10101",
-      "version" : "20250520",
-      "status" : "active",
-      "name" : "Mdc",
-      "title" : "ISO/IEEE 11073 Medical Device Communication Nomenclature",
-      "description" : "The nomenclature relates primarily to vital signs monitoring, but also includes semantics of other medical devices that are commonly used in acute care settings. There are multiple coding partitions each of which has a systematic name consisting of a set of base concepts and differentiating criteria.",
-      "oids" : ["2.16.840.1.113883.6.24"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R5/valueset-device-type.html" : "Device Type"
     }
   ]
 }

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs | *Version*:0.1.0 |
-| Active as of 2025-10-30 | *Computable Name*:StrokeProcNotDoneReasonVS |
+| Active as of 2026-02-09 | *Computable Name*:StrokeProcNotDoneReasonVS |
 
  
 ValueSet containing specific codes to indicate why thrombolysis or thrombectomy was not performed. 
@@ -22,8 +22,6 @@ ValueSet containing specific codes to indicate why thrombolysis or thrombectomy 
 * [Stroke Swallow Procedure Profile (R5)](StructureDefinition-stroke-swallow-procedure-profile.md)
 
 ### Logical Definition (CLD)
-
-* Include all codes defined in [`http://testSK.org/CodeSystem/stroke-proc-not-done-reason-cs`](CodeSystem-stroke-proc-not-done-reason-cs.md)version 📦0.1.0
 
  
 
@@ -55,7 +53,7 @@ ValueSet containing specific codes to indicate why thrombolysis or thrombectomy 
   "name" : "StrokeProcNotDoneReasonVS",
   "title" : "Stroke Procedure Not Done Reason ValueSet",
   "status" : "active",
-  "date" : "2025-10-30T10:04:33+00:00",
+  "date" : "2026-02-09T10:35:12+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

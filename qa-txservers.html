@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for IGTest</h1>
- <p>Generated Thu Oct 30 10:06:06 UTC 2025, FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = <a href="https://alvumu.github.io">https://alvumu.github.io</a> (<a href="https://alvumu.github.io/history.html">history</a>))</p>
+ <p>Generated Mon Feb 09 10:36:57 UTC 2026, FHIR version 5.0.0 for SKtestIG#0.1.0 (canonical = <a href="https://alvumu.github.io">https://alvumu.github.io</a> (<a href="https://alvumu.github.io/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -482,11 +482,32 @@
     <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
   </tr>
   <tr>
+    <td>Found partially authoritative server http://tx.fhir.org/r5</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://testSK.org/ValueSet/stroke-risk-factor-vs|0.1.0</td>
+    <td>[http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips, http://snomed.info/sct]</td>
+    <td>[auth = http://tx.fhir.org/r5, candidates=, auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir]</td>
+  </tr>
+  <tr>
+    <td>Found partially authoritative server http://tx.fhir.org/r5</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://testSK.org/ValueSet/stroke-risk-factor-vs|0.1.0</td>
+    <td>[http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips, http://snomed.info/sct]</td>
+    <td>[auth = http://tx.fhir.org/r5, candidates=, auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir]</td>
+  </tr>
+  <tr>
     <td>Found candidate server http://tx.fhir.org/r5</td>
     <td>http://tx.fhir.org/r5</td>
     <td>http://testSK.org/ValueSet/stroke-diagnosis-vs|0.1.0</td>
     <td>http://snomed.info/sct</td>
     <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
+  </tr>
+  <tr>
+    <td>Found partially authoritative server http://tx.fhir.org/r5</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://testSK.org/ValueSet/stroke-risk-factor-vs|0.1.0</td>
+    <td>[http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips, http://snomed.info/sct]</td>
+    <td>[auth = http://tx.fhir.org/r5, candidates=, auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir]</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
@@ -664,6 +685,20 @@
     <td>auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir</td>
   </tr>
   <tr>
+    <td>Found authoritative server http://tx.fhir.org/r5</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td></td>
+    <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
+    <td>auth = http://tx.fhir.org/r5, candidates=</td>
+  </tr>
+  <tr>
+    <td>Found partially authoritative server http://tx.fhir.org/r5</td>
+    <td>http://tx.fhir.org/r5</td>
+    <td>http://testSK.org/ValueSet/stroke-risk-factor-vs|0.1.0</td>
+    <td>[http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips, http://snomed.info/sct]</td>
+    <td>[auth = http://tx.fhir.org/r5, candidates=, auth = , candidates=http://tx.fhir.org/r5|http://tx.hl7europe.eu/r5|https://term.tehik.ee/fhir]</td>
+  </tr>
+  <tr>
     <td>Found candidate server http://tx.fhir.org/r5</td>
     <td>http://tx.fhir.org/r5</td>
     <td></td>
@@ -795,17 +830,21 @@
     </th>
   </tr>
   <tr>
+    <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
+    <td>2</td>
+    <td>3</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>http://loinc.org</td>
     <td>2</td>
     <td>0</td>
-    <td>
-      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
-    </td>
+    <td></td>
   </tr>
   <tr>
     <td>http://snomed.info/sct</td>
-    <td>36</td>
-    <td>50</td>
+    <td>37</td>
+    <td>53</td>
     <td></td>
   </tr>
   <tr>
@@ -824,7 +863,6 @@
 <p>ValueSets fetched:</p>
 <ul>
   <li>http://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html</li>
-  <li>http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips</li>
   <li>http://snomed.info/sct</li>
   <li>https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html</li>
 </ul>
@@ -851,6 +889,18 @@
 <ul>
   <li>
     <a href="http://tx.fhir.org/r5/ValueSet/dicom-cid-402-AuditActiveParticipantRoleIDCode">http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_402.html</a>
+  </li>
+</ul>
+<h2>Server: https://tx.hl7europe.eu/r5</h2>
+<a href="https://tx.hl7europe.eu/r5"></a>
+<p>Use Count: 3. Code Systems used: </p>
+<ul>
+  <li>(None)</li>
+</ul>
+<p>ValueSets fetched:</p>
+<ul>
+  <li>
+    <a href="http://tx.hl7europe.eu/r5/ValueSet/absent-or-unknown-problems-uv-ips">http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips</a>
   </li>
 </ul>
 </body>

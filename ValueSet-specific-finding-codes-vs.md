@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/specific-finding-codes-vs | *Version*:0.1.0 |
-| Active as of 2025-10-30 | *Computable Name*:SpecificFindingCodesVS |
+| Active as of 2026-02-09 | *Computable Name*:SpecificFindingCodesVS |
 
  
 Codes for specific clinical findings relevant to stroke (Afib/Flutter status, MTICI score). 
@@ -23,13 +23,6 @@ Codes for specific clinical findings relevant to stroke (Afib/Flutter status, MT
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on:
-
-* SNOMED CT International edition 01-Feb 2025
-* [codesystem mTICI Score Codes CodeSystem v0.1.0 (CodeSystem)](CodeSystem-mtici-code-cs.md)
-
-This value set contains 3 concepts
 
 -------
 
@@ -57,7 +50,7 @@ This value set contains 3 concepts
   "name" : "SpecificFindingCodesVS",
   "title" : "Specific Stroke Finding Codes ValueSet",
   "status" : "active",
-  "date" : "2025-10-30T10:04:33+00:00",
+  "date" : "2026-02-09T10:35:12+00:00",
   "publisher" : "UMU",
   "contact" : [
     {

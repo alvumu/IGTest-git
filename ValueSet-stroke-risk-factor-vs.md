@@ -24,11 +24,6 @@ To aggregate core stroke risk factors and unknown/absent problem concepts for co
 
 ### Logical Definition (CLD)
 
-This value set includes codes based on the following rules:
-
-* Import all the codes that are contained in [Stroke Risk Factor ValueSet](ValueSet-stroke-risk-factor-snomed-vs.md)
-* Import all the codes that are contained in http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips
-
  
 
 ### Expansion

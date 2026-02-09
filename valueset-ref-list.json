@@ -12,10 +12,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.109"],
       "uses" : {
       },
+      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
       "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-mechanical-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)",
       "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
-      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)"
+      "StructureDefinition-stroke-mechanical-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-statement-adherence",
@@ -32,6 +32,20 @@
       "uses" : {
       },
       "StructureDefinition-prior-medication-statement-profile.html" : "Prior Medication Statement Profile (R5)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "AbsentOrUnknownProblemsUvIps",
+      "title" : "Absent or Unknown Problems - IPS",
+      "description" : "Absent or Unknown Problems",
+      "systems" : [
+        "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"
+      ],
+      "uses" : {
+      },
+      "ValueSet-stroke-risk-factor-vs.html" : "Stroke Risk Factor ValueSet"
     },
     {
       "url" : "http://testSK.org/ValueSet/admission-source-vs",
@@ -300,10 +314,10 @@
       ],
       "uses" : {
       },
+      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)",
       "StructureDefinition-stroke-carotid-imaging-procedure-profile.html" : "Stroke Carotid Imaging Procedure Profile (R5)",
-      "StructureDefinition-stroke-mechanical-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)",
       "StructureDefinition-stroke-swallow-procedure-profile.html" : "Stroke Swallow Procedure Profile (R5)",
-      "StructureDefinition-stroke-brain-imaging-procedure-profile.html" : "Stroke Brain Imaging Procedure Profile (R5)"
+      "StructureDefinition-stroke-mechanical-procedure-profile.html" : "Stroke Thrombolysis Procedure Profile (R5)"
     },
     {
       "url" : "http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs",
@@ -324,7 +338,10 @@
       "name" : "StrokeRiskFactorValueSet",
       "title" : "Stroke Risk Factor ValueSet",
       "description" : "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status.",
-      "systems" : ["http://snomed.info/sct"],
+      "systems" : [
+        "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+        "http://snomed.info/sct"
+      ],
       "uses" : {
       },
       "StructureDefinition-stroke-risk-factor-condition-profile.html" : "Stroke Risk Factor Condition Profile"

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/stroke-arrival-mode-vs | *Version*:0.1.0 |
-| Active as of 2025-10-30 | *Computable Name*:StrokeArrivalModeVS |
+| Active as of 2026-02-09 | *Computable Name*:StrokeArrivalModeVS |
 
  
 ValueSet specifying the mode and origin of the patient's arrival. 
@@ -19,8 +19,6 @@ ValueSet specifying the mode and origin of the patient's arrival.
 * [Stroke Encounter Profile](StructureDefinition-stroke-encounter-profile.md)
 
 ### Logical Definition (CLD)
-
-* Include all codes defined in [`http://testSK.org/CodeSystem/stroke-arrival-mode-cs`](CodeSystem-stroke-arrival-mode-cs.md)version 📦0.1.0
 
  
 
@@ -52,7 +50,7 @@ ValueSet specifying the mode and origin of the patient's arrival.
   "name" : "StrokeArrivalModeVS",
   "title" : "Stroke Arrival Mode ValueSet",
   "status" : "active",
-  "date" : "2025-10-30T10:04:33+00:00",
+  "date" : "2026-02-09T10:35:12+00:00",
   "publisher" : "UMU",
   "contact" : [
     {
