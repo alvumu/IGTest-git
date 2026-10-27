@@ -12,6 +12,7 @@ Alias: StrokeEtiologyCS_URL = http://testSK.org/CodeSystem/stroke-etiology-cs
 Alias: StrokeDiagnosisVS_URL = http://testSK.org/ValueSet/stroke-diagnosis-vs
 Alias: StrokeRiskFactorSNOMEDVS_URL = http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs
 Alias: StrokeRiskFactorVS_URL = http://testSK.org/ValueSet/stroke-risk-factor-vs
+Alias: StrokeRiskFactorCS_URL = http://qualityregistry.org/CodeSystem/stroke-risk-factor-cs
 Alias: StrokeRiskFactorUnknVS_URL = http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips
 Alias: DischargeDestinationVS_URL = http://testSK.org/ValueSet/discharge-destination-vs
 Alias: AdmissionSourceVS_URL = http://testSK.org/ValueSet/admission-source-vs
@@ -79,25 +80,44 @@ Description: "Defines the SNOMED CT codes for conditions or risk factors relevan
 * SCT#230690007 "Cerebrovascular accident (disorder)"
 
 
+// Locally governed RES-Q risk factors whose source semantics are not represented
+// precisely enough by a single SNOMED CT concept.
+CodeSystem: StrokeRiskFactorCS
+Id: stroke-risk-factor-cs
+* ^url = StrokeRiskFactorCS_URL
+* ^name = "StrokeRiskFactorCS"
+* ^title = "RES-Q Stroke Risk Factor Code System"
+* ^description = "Locally governed RES-Q concepts used when the registry assertion is more specific than an available standard terminology concept."
+* ^status = #active
+* ^experimental = false
+* ^version = "1.0.0"
+* ^date = "2026-10-27"
+* ^publisher = "Health Management Institute z.ú."
+* ^purpose = "To preserve registry-specific stroke risk-factor semantics without conflating them with broader or different SNOMED CT concepts."
+* ^caseSensitive = true
+* ^content = #complete
+* #smoking-last-10-years "Smoking within the last 10 years" "The patient smoked at any time during the 10 years preceding the index stroke event."
+
 
 ValueSet: StrokeRiskFactorVS
 Id: stroke-risk-factor-vs
 Title: "Stroke Risk Factor ValueSet"
-Description: "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status."
+Description: "Defines standard and locally governed conditions or assertions relevant to stroke risk, including an option for unknown status."
 * ^url = StrokeRiskFactorVS_URL
 * ^name = "StrokeRiskFactorValueSet"
 * ^status = #active
 * ^version = "1.0.0"
-* ^date = "2025-10-07"
+* ^date = "2026-10-27"
 * ^experimental = false
 * ^publisher = "Tecnomod"
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
 * ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
-* ^purpose = "To aggregate core stroke risk factors and unknown/absent problem concepts for comprehensive capture and validation."
-* ^copyright = "This value set includes SNOMED CT® content and may include HL7 IPS value set content. SNOMED CT® is distributed by SNOMED International."
+* ^purpose = "To aggregate core stroke risk factors, locally governed RES-Q assertions, and unknown/absent problem concepts for comprehensive capture and validation."
+* ^copyright = "This value set includes SNOMED CT® content, locally governed RES-Q concepts, and may include HL7 IPS value set content. SNOMED CT® is distributed by SNOMED International."
 * ^immutable = false
 * include codes from valueset StrokeRiskFactorSNOMEDVS_URL
+* include codes from system StrokeRiskFactorCS_URL
 * include codes from valueset StrokeRiskFactorUnknVS_URL
 
 
@@ -298,7 +318,6 @@ Description: "Captures the calendar date (value[x] = date) of symptom onset for 
 * value[x] only date
 
 
-
 Extension: OnsetTimeExt
 Id: onset-time-ext
 Title: "Stroke Onset Time"
@@ -372,18 +391,18 @@ Profile: StrokeRiskFactorConditionProfile
 Id: stroke-risk-factor-condition-profile
 Parent: Condition
 Title: "Stroke Risk Factor Condition Profile"
-Description: "Defines a Condition profile for pre-existing or concurrent conditions that increase stroke risk (e.g., atrial fibrillation/flutter, diabetes, hypertension, coronary disease). The profile fixes category to problem-list-item, binds code (required) to StrokeRiskFactorVS, and supports onset[x] and recordedDate to document chronology and longitudinal tracking. Use this profile to maintain the problem list and to support risk assessment and CDS; do not use it to code the acute stroke event itself."
+Description: "Defines a Condition profile for pre-existing or concurrent conditions and registry-defined assertions that increase stroke risk (e.g., atrial fibrillation/flutter, diabetes, hypertension, coronary disease, smoking within the last 10 years). The profile fixes category to problem-list-item, binds code (required) to StrokeRiskFactorVS, and supports onset[x] and recordedDate to document chronology and longitudinal tracking. Use this profile to maintain the problem list and to support risk assessment and CDS; do not use it to code the acute stroke event itself."
 * ^url = "http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile"
 * ^name = "StrokeRiskFactorConditionProfile"
 * ^status = #active
 * ^version = "1.0.0"
-* ^date = "2025-10-07"
+* ^date = "2026-10-27"
 * ^experimental = false
 * ^publisher = "Tecnomod"
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "alvaro.riquelmet@um.es"
 * ^jurisdiction = urn:iso:std:iso:3166#ES "Spain"
-* ^purpose = "To standardize capture of stroke-related risk factor conditions for longitudinal tracking, CDS, and reporting."
+* ^purpose = "To standardize capture of stroke-related risk factor conditions and registry-defined assertions for longitudinal tracking, CDS, and reporting."
 * ^copyright = "© Tecnomod. This profile is provided for use within this Implementation Guide."
 * ^type = "Condition"
 * ^derivation = #constraint
