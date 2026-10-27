@@ -3,7 +3,7 @@
   "id" : "stroke-risk-factor-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet stroke-risk-factor-vs</b></p><a name=\"stroke-risk-factor-vs\"> </a><a name=\"hcstroke-risk-factor-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-stroke-risk-factor-snomed-vs.html\">Stroke Risk Factor ValueSet</a></li><li>Import all the codes that are contained in <a href=\"http://tx.hl7europe.eu/r5/ValueSet/absent-or-unknown-problems-uv-ips\">Absent or Unknown Problems - IPS</a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet stroke-risk-factor-vs</b></p><a name=\"stroke-risk-factor-vs\"> </a><a name=\"hcstroke-risk-factor-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-stroke-risk-factor-snomed-vs.html\">Stroke Risk Factor ValueSet</a></li><li>Include all codes defined in <a href=\"CodeSystem-stroke-risk-factor-cs.html\"><code>http://qualityregistry.org/CodeSystem/stroke-risk-factor-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li><li>Import all the codes that are contained in <a href=\"http://tx.hl7europe.eu/r5/ValueSet/7-absent-or-unknown-problems-uv-ips\">Absent or Unknown Problems - IPS</a></li></ul></div>"
   },
   "url" : "http://testSK.org/ValueSet/stroke-risk-factor-vs",
   "version" : "0.1.0",
@@ -11,7 +11,7 @@
   "title" : "Stroke Risk Factor ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-07",
+  "date" : "2026-10-27",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -20,13 +20,16 @@
       "value" : "http://testSK.org/umu"
     }]
   }],
-  "description" : "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status.",
+  "description" : "Defines standard and locally governed conditions or assertions relevant to stroke risk, including an option for unknown status.",
   "immutable" : false,
-  "purpose" : "To aggregate core stroke risk factors and unknown/absent problem concepts for comprehensive capture and validation.",
-  "copyright" : "This value set includes SNOMED CT® content and may include HL7 IPS value set content. SNOMED CT® is distributed by SNOMED International.",
+  "purpose" : "To aggregate core stroke risk factors, locally governed RES-Q assertions, and unknown/absent problem concepts for comprehensive capture and validation.",
+  "copyright" : "This value set includes SNOMED CT® content, locally governed RES-Q concepts, and may include HL7 IPS value set content. SNOMED CT® is distributed by SNOMED International.",
   "compose" : {
     "include" : [{
       "valueSet" : ["http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs"]
+    },
+    {
+      "system" : "http://qualityregistry.org/CodeSystem/stroke-risk-factor-cs"
     },
     {
       "valueSet" : ["http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips"]

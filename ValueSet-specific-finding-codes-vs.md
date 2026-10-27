@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/specific-finding-codes-vs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:SpecificFindingCodesVS |
+| Active as of 2026-10-27 | *Computable Name*:SpecificFindingCodesVS |
 
  
 Codes for specific clinical findings relevant to stroke (Afib/Flutter status, MTICI score). 
@@ -50,39 +50,31 @@ Codes for specific clinical findings relevant to stroke (Afib/Flutter status, MT
   "name" : "SpecificFindingCodesVS",
   "title" : "Specific Stroke Finding Codes ValueSet",
   "status" : "active",
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Codes for specific clinical findings relevant to stroke (Afib/Flutter status, MTICI score).",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "49436004",
-            "display" : "Atrial fibrillation (disorder)"
-          },
-          {
-            "code" : "5370000",
-            "display" : "Atrial flutter (disorder)"
-          }
-        ]
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "49436004",
+        "display" : "Atrial fibrillation (disorder)"
       },
       {
-        "system" : "http://testSK.org/CodeSystem/mtici-code-cs"
-      }
-    ]
+        "code" : "5370000",
+        "display" : "Atrial flutter (disorder)"
+      }]
+    },
+    {
+      "system" : "http://testSK.org/CodeSystem/mtici-code-cs"
+    }]
   }
 }
 

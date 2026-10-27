@@ -40,55 +40,43 @@ Profile: [Stroke Encounter Profile](StructureDefinition-stroke-encounter-profile
   "resourceType" : "Encounter",
   "id" : "StrokeEncounterExample",
   "meta" : {
-    "profile" : [
-      "http://testSK.org/StructureDefinition/stroke-encounter-profile"
-    ]
+    "profile" : ["http://testSK.org/StructureDefinition/stroke-encounter-profile"]
   },
-  "extension" : [
-    {
-      "url" : "http://testSK.org/StructureDefinition/first-hospital-ext",
-      "valueBoolean" : true
-    },
-    {
-      "url" : "http://testSK.org/StructureDefinition/initial-care-intensity-ext",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://testSK.org/CodeSystem/initial-care-intensity-cs",
-            "code" : "icu-stroke",
-            "display" : "ICU / Stroke Unit"
-          }
-        ]
-      }
-    },
-    {
-      "url" : "http://testSK.org/StructureDefinition/required-post-acute-care-ext",
-      "valueBoolean" : false
-    },
-    {
-      "url" : "http://testSK.org/StructureDefinition/discharge-department-service-ext",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "309937004",
-            "display" : "Neurology department (environment)"
-          }
-        ]
-      }
+  "extension" : [{
+    "url" : "http://testSK.org/StructureDefinition/first-hospital-ext",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://testSK.org/StructureDefinition/initial-care-intensity-ext",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://testSK.org/CodeSystem/initial-care-intensity-cs",
+        "code" : "icu-stroke",
+        "display" : "ICU / Stroke Unit"
+      }]
     }
-  ],
+  },
+  {
+    "url" : "http://testSK.org/StructureDefinition/required-post-acute-care-ext",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "http://testSK.org/StructureDefinition/discharge-department-service-ext",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "309937004",
+        "display" : "Neurology department (environment)"
+      }]
+    }
+  }],
   "status" : "completed",
-  "type" : [
-    {
-      "coding" : [
-        {
-          "code" : "inpatient",
-          "display" : "Inpatient Encounter"
-        }
-      ]
-    }
-  ],
+  "type" : [{
+    "coding" : [{
+      "code" : "inpatient",
+      "display" : "Inpatient Encounter"
+    }]
+  }],
   "subject" : {
     "reference" : "Patient/example-patient"
   },
@@ -98,22 +86,18 @@ Profile: [Stroke Encounter Profile](StructureDefinition-stroke-encounter-profile
   },
   "admission" : {
     "admitSource" : {
-      "coding" : [
-        {
-          "system" : "http://testSK.org/CodeSystem/stroke-arrival-mode-cs",
-          "code" : "ems-home",
-          "display" : "EMS from Home"
-        }
-      ]
+      "coding" : [{
+        "system" : "http://testSK.org/CodeSystem/stroke-arrival-mode-cs",
+        "code" : "ems-home",
+        "display" : "EMS from Home"
+      }]
     },
     "dischargeDisposition" : {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "306689006",
-          "display" : "Discharge to home (procedure)"
-        }
-      ]
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "306689006",
+        "display" : "Discharge to home (procedure)"
+      }]
     }
   }
 }

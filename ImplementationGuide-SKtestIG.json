@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "IGTest",
   "status" : "draft",
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
@@ -19,7 +19,6 @@
     }]
   }],
   "packageId" : "SKtestIG",
-  "license" : "CC0-1.0",
   "fhirVersion" : ["5.0.0"],
   "dependsOn" : [{
     "id" : "hl7tx",
@@ -29,7 +28,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r5",
-    "version" : "7.0.1"
+    "version" : "7.5.0"
   },
   {
     "id" : "hl7ext",
@@ -39,12 +38,12 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r5",
-    "version" : "5.2.0"
+    "version" : "5.3.0"
   }],
   "definition" : {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r5#0.9.0"
+      "valueCode" : "hl7.fhir.uv.tools.r5#1.3.0"
     }],
     "resource" : [{
       "extension" : [{
@@ -613,6 +612,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/stroke-risk-factor-cs"
+      },
+      "name" : "RES-Q Stroke Risk Factor Code System",
+      "description" : "Locally governed RES-Q concepts used when the registry assertion is more specific than an available standard terminology concept.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -907,7 +918,7 @@
         "reference" : "StructureDefinition/stroke-risk-factor-condition-profile"
       },
       "name" : "Stroke Risk Factor Condition Profile",
-      "description" : "Defines a Condition profile for pre-existing or concurrent conditions that increase stroke risk (e.g., atrial fibrillation/flutter, diabetes, hypertension, coronary disease). The profile fixes category to problem-list-item, binds code (required) to StrokeRiskFactorVS, and supports onset[x] and recordedDate to document chronology and longitudinal tracking. Use this profile to maintain the problem list and to support risk assessment and CDS; do not use it to code the acute stroke event itself.",
+      "description" : "Defines a Condition profile for pre-existing or concurrent conditions and registry-defined assertions that increase stroke risk (e.g., atrial fibrillation/flutter, diabetes, hypertension, coronary disease, smoking within the last 10 years). The profile fixes category to problem-list-item, binds code (required) to StrokeRiskFactorVS, and supports onset[x] and recordedDate to document chronology and longitudinal tracking. Use this profile to maintain the problem list and to support risk assessment and CDS; do not use it to code the acute stroke event itself.",
       "isExample" : false
     },
     {
@@ -931,7 +942,7 @@
         "reference" : "ValueSet/stroke-risk-factor-vs"
       },
       "name" : "Stroke Risk Factor ValueSet",
-      "description" : "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status.",
+      "description" : "Defines standard and locally governed conditions or assertions relevant to stroke risk, including an option for unknown status.",
       "isExample" : false
     },
     {

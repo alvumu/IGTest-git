@@ -312,7 +312,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/stroke-risk-factor-condition-profile">Stroke Risk Factor Condition Profile</a>
             </td>
             <td>
-<p>Defines a Condition profile for pre-existing or concurrent conditions that increase stroke risk (e.g., atrial fibrillation/flutter, diabetes, hypertension, coronary disease). The profile fixes category to problem-list-item, binds code (required) to StrokeRiskFactorVS, and supports onset[x] and recordedDate to document chronology and longitudinal tracking. Use this profile to maintain the problem list and to support risk assessment and CDS; do not use it to code the acute stroke event itself.</p>
+<p>Defines a Condition profile for pre-existing or concurrent conditions and registry-defined assertions that increase stroke risk (e.g., atrial fibrillation/flutter, diabetes, hypertension, coronary disease, smoking within the last 10 years). The profile fixes category to problem-list-item, binds code (required) to StrokeRiskFactorVS, and supports onset[x] and recordedDate to document chronology and longitudinal tracking. Use this profile to maintain the problem list and to support risk assessment and CDS; do not use it to code the acute stroke event itself.</p>
 </td>
          </tr>
          <tr>
@@ -685,7 +685,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="ValueSet/stroke-risk-factor-vs">Stroke Risk Factor ValueSet</a>
             </td>
             <td>
-<p>Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status.</p>
+<p>Defines standard and locally governed conditions or assertions relevant to stroke risk, including an option for unknown status.</p>
 </td>
          </tr>
          <tr>
@@ -826,6 +826,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Codes defining the timing phase of a procedure relative to the encounter start (e.g., acute vs. post-acute).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-stroke-risk-factor-cs.html"
+                  title="CodeSystem/stroke-risk-factor-cs">RES-Q Stroke Risk Factor Code System</a>
+            </td>
+            <td>
+<p>Locally governed RES-Q concepts used when the registry assertion is more specific than an available standard terminology concept.</p>
 </td>
          </tr>
          <tr>
@@ -1132,7 +1141,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Feb 9, 2026 10:35+0000">2026-02-09</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://testSK.org/umu">UMU</a>.  Package SKtestIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Oct 27, 2026 13:25+0000">2026-10-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

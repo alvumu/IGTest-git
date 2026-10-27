@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/carotid-imaging-modality-vs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:CarotidImagingModalityVS |
+| Active as of 2026-10-27 | *Computable Name*:CarotidImagingModalityVS |
 
  
 Defines codes for different types of carotid artery imaging. 
@@ -50,44 +50,36 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "CarotidImagingModalityVS",
   "title" : "Carotid Arteries Imaging Modality ValueSet",
   "status" : "active",
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Defines codes for different types of carotid artery imaging.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "58920005",
+        "display" : "Angiography of carotid artery (procedure)"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "58920005",
-            "display" : "Angiography of carotid artery (procedure)"
-          },
-          {
-            "code" : "416940007",
-            "display" : "Doppler ultrasonography of carotid arteries (procedure)"
-          },
-          {
-            "code" : "396205005",
-            "display" : "Computed tomography of brain without radiopaque contrast (procedure)"
-          },
-          {
-            "code" : "1366357009",
-            "display" : "Magnetic resonance imaging angiography of intracranial artery (procedure)"
-          }
-        ]
-      }
-    ]
+        "code" : "416940007",
+        "display" : "Doppler ultrasonography of carotid arteries (procedure)"
+      },
+      {
+        "code" : "396205005",
+        "display" : "Computed tomography of brain without radiopaque contrast (procedure)"
+      },
+      {
+        "code" : "1366357009",
+        "display" : "Magnetic resonance imaging angiography of intracranial artery (procedure)"
+      }]
+    }]
   }
 }
 

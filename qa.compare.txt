@@ -1,35 +1,36 @@
 IGTest : Validation Results
 =========================================
 
-err = 172, warn = 127, info = 41
+err = 186, warn = 185, info = 72, broken links = 0
 $--
 Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.github.io)
- Build Errors : 0 / 24 / 0
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-brain-imaging-type-cs : 2 / 2 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs : 2 / 2 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-hemorrhagic-stroke-bleeding-reason-cs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-initial-care-intensity-cs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-medication-cs : 2 / 2 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mrs-score-cs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-code-cs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-score-cs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-procedure-timing-context-cs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-arrival-mode-cs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-circumstance-codes-cs : 2 / 2 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-discharge-destination-cs : 2 / 1 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-etiology-cs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-proc-not-done-reason-cs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-procedures-cs : 2 / 2 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-screen-time-cs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-thrombectomy-complication-cs : 2 / 2 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-timing-metric-codes-cs : 2 / 2 / 2
+ Build Errors : 13 / 33 / 0
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-brain-imaging-type-cs : 2 / 3 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs : 2 / 3 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-hemorrhagic-stroke-bleeding-reason-cs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-initial-care-intensity-cs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-medication-cs : 2 / 3 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mrs-score-cs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-code-cs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-score-cs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-procedure-timing-context-cs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-arrival-mode-cs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-circumstance-codes-cs : 2 / 3 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-discharge-destination-cs : 2 / 2 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-etiology-cs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-proc-not-done-reason-cs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-risk-factor-cs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-procedures-cs : 2 / 3 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-screen-time-cs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-thrombectomy-complication-cs : 2 / 3 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-timing-metric-codes-cs : 2 / 3 / 2
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFib : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionAFlutter : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeDiagnosisConditionExample : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Condition-StrokeRiskFactorConditionExample : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Encounter-StrokeEncounterExample : 1 / 1 / 3
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG : 5 / 1 / 16
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG : 5 / 1 / 17
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationRequest-discharge-medication-request-001 : 0 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/MedicationStatement-PriorMedicationStatementExample : 1 / 0 / 1
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Observation-AgeAtOnsetObservationExample : 1 / 2 / 1
@@ -46,67 +47,68 @@ Generated $--. FHIR version $-- for SKtestIG#$-- (canonical = https://alvumu.git
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Procedure-StrokeCarotidImagingExample : 0 / 0 / 3
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Procedure-StrokeSwallowingExample : 0 / 0 / 3
  /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/Procedure-StrokeThrombolysisExample : 0 / 0 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-age-at-onset-observation-profile : 2 / 2 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-base-stroke-observation : 2 / 3 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-discharge-department-service-ext : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-discharge-medication-request-profile : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-first-hospital-ext : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-functional-score-observation-profile : 2 / 3 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-gender-snomed-ext : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-hemorrhagic-stroke-bleeding-reason-ext : 2 / 3 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-initial-care-intensity-ext : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-ischemic-stroke-etiology-ext : 2 / 3 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-observation-timing-context-ext : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-onset-date-ext : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-onset-time-ext : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-patient-age-gender-snomed-profile : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-prior-medication-statement-profile : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-procedure-timing-context-ext : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-required-post-acute-care-ext : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-specific-finding-observation-profile : 2 / 2 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-brain-imaging-procedure-profile : 2 / 2 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-carotid-imaging-procedure-profile : 2 / 2 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-circumstance-observation-profile : 2 / 2 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-diagnosis-condition-profile : 2 / 1 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-encounter-profile : 2 / 4 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-mechanical-procedure-profile : 2 / 4 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-registry-organization-profile : 2 / 2 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-risk-factor-condition-profile : 2 / 1 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-swallow-procedure-profile : 2 / 4 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-swallowing-screening-timing-category-ext : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-timing-metric-observation-profile : 2 / 2 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-vital-sign-observation-profile : 2 / 4 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-admission-source-vs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-afib-flutter-status-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-assessment-context-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-brain-imaging-modality-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-carotid-imaging-modality-vs : 3 / 1 / 2
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-dept-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-destination-vs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-functional-score-codes-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-hemorrhagic-stroke-bleeding-reason-vs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-initial-care-intensity-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-medication-vs : 3 / 3 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mrs-score-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mtici-score-vs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-perforation-procedures-vs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-procedure-timing-context-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-specific-finding-codes-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-arrival-mode-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-circumstance-codes-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-diagnosis-vs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-discharge-destination-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-etiology-vs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-vs : 3 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallow-procedures-vs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallowing-screening-timing-category-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-thrombectomy-complication-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-timing-metric-codes-vs : 2 / 1 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-vital-sign-codes-vs : 2 / 0 / 1
- /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-vs-gender-snomed : 2 / 0 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-age-at-onset-observation-profile : 2 / 2 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-base-stroke-observation : 2 / 3 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-discharge-department-service-ext : 2 / 0 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-discharge-medication-request-profile : 2 / 1 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-first-hospital-ext : 2 / 0 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-functional-score-observation-profile : 2 / 2 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-gender-snomed-ext : 2 / 0 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-hemorrhagic-stroke-bleeding-reason-ext : 2 / 3 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-initial-care-intensity-ext : 2 / 0 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-ischemic-stroke-etiology-ext : 2 / 3 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-observation-timing-context-ext : 2 / 0 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-onset-date-ext : 2 / 1 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-onset-time-ext : 2 / 1 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-patient-age-gender-snomed-profile : 2 / 0 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-prior-medication-statement-profile : 2 / 0 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-procedure-timing-context-ext : 2 / 0 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-required-post-acute-care-ext : 2 / 0 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-specific-finding-observation-profile : 2 / 2 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-brain-imaging-procedure-profile : 2 / 2 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-carotid-imaging-procedure-profile : 2 / 2 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-circumstance-observation-profile : 2 / 2 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-diagnosis-condition-profile : 2 / 1 / 3
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-encounter-profile : 2 / 4 / 3
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-mechanical-procedure-profile : 2 / 4 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-registry-organization-profile : 2 / 2 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-risk-factor-condition-profile : 2 / 1 / 3
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-swallow-procedure-profile : 2 / 4 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-swallowing-screening-timing-category-ext : 2 / 0 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-timing-metric-observation-profile : 2 / 2 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-vital-sign-observation-profile : 2 / 4 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-admission-source-vs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-afib-flutter-status-vs : 2 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-assessment-context-vs : 2 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-brain-imaging-modality-vs : 2 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-carotid-imaging-modality-vs : 3 / 2 / 2
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-dept-vs : 2 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-destination-vs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-functional-score-codes-vs : 2 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-hemorrhagic-stroke-bleeding-reason-vs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-initial-care-intensity-vs : 2 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-medication-vs : 3 / 4 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mrs-score-vs : 2 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mtici-score-vs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-perforation-procedures-vs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-procedure-timing-context-vs : 2 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-specific-finding-codes-vs : 2 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-arrival-mode-vs : 2 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-circumstance-codes-vs : 2 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-diagnosis-vs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-discharge-destination-vs : 2 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-etiology-vs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs : 2 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-vs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallow-procedures-vs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallowing-screening-timing-category-vs : 2 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-thrombectomy-complication-vs : 2 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-timing-metric-codes-vs : 2 / 2 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-vital-sign-codes-vs : 2 / 1 / 1
+ /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-vs-gender-snomed : 2 / 1 / 1
 </table>
+
 == n/a ==
 WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/AgeAtOnsetObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -129,104 +131,201 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/StrokeThrombolysisExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/TimingMetricObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/VitalSignObservationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/codesystems.html: The heading <h1> 'CodeSystems' (id=codesystems) is at a higher level than the first heading on the page (<h2> 'Codesystems'). The first heading on a page must be its top level heading (WCAG compliance test)
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/downloads.html: The heading <h1> 'Downloads' (id=downloads) is at a higher level than the first heading on the page (<h2> 'Downloads'). The first heading on a page must be its top level heading (WCAG compliance test)
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/downloads.html: The page has more than one top level heading: <h2> 'Validator Usage' (id=validator-usage) is at the same level as the first heading on the page (<h2> 'Downloads'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/examples.html: The heading <h1> 'Examples' (id=examples) is at a higher level than the first heading on the page (<h2> 'Examples'). The first heading on a page must be its top level heading (WCAG compliance test)
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/examples.html: The page has more than one top level heading: <h2> 'Condition Examples' (id=condition-examples) is at the same level as the first heading on the page (<h2> 'Examples'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/examples.html: The page has more than one top level heading: <h2> 'Encounter Examples' (id=encounter-examples) is at the same level as the first heading on the page (<h2> 'Examples'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/examples.html: The page has more than one top level heading: <h2> 'Observation Examples' (id=observation-examples) is at the same level as the first heading on the page (<h2> 'Examples'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/examples.html: The page has more than one top level heading: <h2> 'Procedure Examples' (id=procedure-examples) is at the same level as the first heading on the page (<h2> 'Examples'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/examples.html: The page has more than one top level heading: <h2> 'Patient Examples' (id=patient-examples) is at the same level as the first heading on the page (<h2> 'Examples'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/extensions.html: The heading <h1> 'Extensions' (id=extensions) is at a higher level than the first heading on the page (<h2> 'Extensions'). The first heading on a page must be its top level heading (WCAG compliance test)
+WARNING: /home/runner/work/IGTest-git/IGTest-git/output/history.html: This IG generates a page named 'history.html'. That file name is reserved by the publication process, which replaces it with the directory of published versions when the IG is published, so the content generated here will be overwritten and lost. Rename the page to something else (e.g. test-history.html).
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/history.html: The heading <h1> 'Version History' (id=version-history) is at a higher level than the first heading on the page (<h2> 'History'). The first heading on a page must be its top level heading (WCAG compliance test)
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/profiles.html: The heading <h1> 'Extensions' (id=extensions) is at a higher level than the first heading on the page (<h2> 'Profiles'). The first heading on a page must be its top level heading (WCAG compliance test)
+WARNING: /home/runner/work/IGTest-git/IGTest-git/output/searchform.html: The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 177
+WARNING: /home/runner/work/IGTest-git/IGTest-git/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 10
+WARNING: /home/runner/work/IGTest-git/IGTest-git/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 80 column 9
+WARNING: /home/runner/work/IGTest-git/IGTest-git/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 109 column 8
+WARNING: /home/runner/work/IGTest-git/IGTest-git/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 111 column 12
+WARNING: /home/runner/work/IGTest-git/IGTest-git/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 112 column 20
+WARNING: /home/runner/work/IGTest-git/IGTest-git/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 113 column 16
+WARNING: /home/runner/work/IGTest-git/IGTest-git/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 115 column 12
+ERROR: /home/runner/work/IGTest-git/IGTest-git/output/valuesets.html: The heading <h1> 'ValueSets' (id=valuesets) is at a higher level than the first heading on the page (<h2> 'Valuesets'). The first heading on a page must be its top level heading (WCAG compliance test)
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+
+
 == fsh-generated/resources/CodeSystem-assessment-context-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/assessment-context-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/assessment-context-cs) does not match the URL (http://testSK.org/CodeSystem/assessment-context-cs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource CodeSystem/assessment-context-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-assessment-context-cs: URL Mismatch https://alvumu.github.io/CodeSystem/assessment-context-cs vs http://testSK.org/CodeSystem/assessment-context-cs
+
+
 == fsh-generated/resources/CodeSystem-brain-imaging-type-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/brain-imaging-type-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-brain-imaging-type-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/brain-imaging-type-cs) does not match the URL (http://testSK.org/CodeSystem/brain-imaging-type-cs). Use the special-url parameter if you really mean for it not to match
 INFORMATION: CodeSystem/brain-imaging-type-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/brain-imaging-type-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/brain-imaging-type-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: Resource: The resource CodeSystem/brain-imaging-type-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-brain-imaging-type-cs: URL Mismatch https://alvumu.github.io/CodeSystem/brain-imaging-type-cs vs http://testSK.org/CodeSystem/brain-imaging-type-cs
+
+
 == fsh-generated/resources/CodeSystem-discharge-dept-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/discharge-dept-cs) does not match the URL (http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs). Use the special-url parameter if you really mean for it not to match
 INFORMATION: CodeSystem/discharge-dept-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/discharge-dept-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/discharge-dept-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: Resource: The resource CodeSystem/discharge-dept-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-discharge-dept-cs: URL Mismatch https://alvumu.github.io/CodeSystem/discharge-dept-cs vs http://testSK.org/CodeSystem/CodeSystem/discharge-dept-cs
+
+
 == fsh-generated/resources/CodeSystem-hemorrhagic-stroke-bleeding-reason-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-hemorrhagic-stroke-bleeding-reason-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs) does not match the URL (http://testSK.org/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource CodeSystem/hemorrhagic-stroke-bleeding-reason-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-hemorrhagic-stroke-bleeding-reason-cs: URL Mismatch https://alvumu.github.io/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs vs http://testSK.org/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs
+
+
 == fsh-generated/resources/CodeSystem-initial-care-intensity-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/initial-care-intensity-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-initial-care-intensity-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/initial-care-intensity-cs) does not match the URL (http://testSK.org/CodeSystem/initial-care-intensity-cs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource CodeSystem/initial-care-intensity-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-initial-care-intensity-cs: URL Mismatch https://alvumu.github.io/CodeSystem/initial-care-intensity-cs vs http://testSK.org/CodeSystem/initial-care-intensity-cs
+
+
 == fsh-generated/resources/CodeSystem-medication-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/medication-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-medication-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/medication-cs) does not match the URL (http://testSK.org/CodeSystem/medication-cs). Use the special-url parameter if you really mean for it not to match
 INFORMATION: CodeSystem/medication-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/medication-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/medication-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: Resource: The resource CodeSystem/medication-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-medication-cs: URL Mismatch https://alvumu.github.io/CodeSystem/medication-cs vs http://testSK.org/CodeSystem/medication-cs
+
+
 == fsh-generated/resources/CodeSystem-mrs-score-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/mrs-score-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mrs-score-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/mrs-score-cs) does not match the URL (http://testSK.org/CodeSystem/mrs-score-cs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource CodeSystem/mrs-score-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mrs-score-cs: URL Mismatch https://alvumu.github.io/CodeSystem/mrs-score-cs vs http://testSK.org/CodeSystem/mrs-score-cs
+
+
 == fsh-generated/resources/CodeSystem-mtici-code-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/mtici-code-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-code-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/mtici-code-cs) does not match the URL (http://testSK.org/CodeSystem/mtici-code-cs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource CodeSystem/mtici-code-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-code-cs: URL Mismatch https://alvumu.github.io/CodeSystem/mtici-code-cs vs http://testSK.org/CodeSystem/mtici-code-cs
+
+
 == fsh-generated/resources/CodeSystem-mtici-score-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/mtici-score-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-score-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/mtici-score-cs) does not match the URL (http://testSK.org/CodeSystem/mtici-score-cs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource CodeSystem/mtici-score-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-mtici-score-cs: URL Mismatch https://alvumu.github.io/CodeSystem/mtici-score-cs vs http://testSK.org/CodeSystem/mtici-score-cs
+
+
 == fsh-generated/resources/CodeSystem-procedure-timing-context-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/procedure-timing-context-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-procedure-timing-context-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/procedure-timing-context-cs) does not match the URL (http://testSK.org/CodeSystem/procedure-timing-context-cs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource CodeSystem/procedure-timing-context-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-procedure-timing-context-cs: URL Mismatch https://alvumu.github.io/CodeSystem/procedure-timing-context-cs vs http://testSK.org/CodeSystem/procedure-timing-context-cs
+
+
 == fsh-generated/resources/CodeSystem-stroke-arrival-mode-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/stroke-arrival-mode-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-arrival-mode-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/stroke-arrival-mode-cs) does not match the URL (http://testSK.org/CodeSystem/stroke-arrival-mode-cs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource CodeSystem/stroke-arrival-mode-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-arrival-mode-cs: URL Mismatch https://alvumu.github.io/CodeSystem/stroke-arrival-mode-cs vs http://testSK.org/CodeSystem/stroke-arrival-mode-cs
+
+
 == fsh-generated/resources/CodeSystem-stroke-circumstance-codes-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/stroke-circumstance-codes-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-circumstance-codes-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/stroke-circumstance-codes-cs) does not match the URL (http://testSK.org/CodeSystem/stroke-circumstance-codes-cs). Use the special-url parameter if you really mean for it not to match
 INFORMATION: CodeSystem/stroke-circumstance-codes-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/stroke-circumstance-codes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/stroke-circumstance-codes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: Resource: The resource CodeSystem/stroke-circumstance-codes-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-circumstance-codes-cs: URL Mismatch https://alvumu.github.io/CodeSystem/stroke-circumstance-codes-cs vs http://testSK.org/CodeSystem/stroke-circumstance-codes-cs
+
+
 == fsh-generated/resources/CodeSystem-stroke-discharge-destination-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/stroke-discharge-destination-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-discharge-destination-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/stroke-discharge-destination-cs) does not match the URL (http://testSK.org/CodeSystem/stroke-discharge-destination-cs). Use the special-url parameter if you really mean for it not to match
 INFORMATION: CodeSystem/stroke-discharge-destination-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/stroke-discharge-destination-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: Resource: The resource CodeSystem/stroke-discharge-destination-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-discharge-destination-cs: URL Mismatch https://alvumu.github.io/CodeSystem/stroke-discharge-destination-cs vs http://testSK.org/CodeSystem/stroke-discharge-destination-cs
+
+
 == fsh-generated/resources/CodeSystem-stroke-etiology-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/stroke-etiology-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-etiology-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/stroke-etiology-cs) does not match the URL (http://testSK.org/CodeSystem/stroke-etiology-cs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource CodeSystem/stroke-etiology-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-etiology-cs: URL Mismatch https://alvumu.github.io/CodeSystem/stroke-etiology-cs vs http://testSK.org/CodeSystem/stroke-etiology-cs
+
+
 == fsh-generated/resources/CodeSystem-stroke-proc-not-done-reason-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/stroke-proc-not-done-reason-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-proc-not-done-reason-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/stroke-proc-not-done-reason-cs) does not match the URL (http://testSK.org/CodeSystem/stroke-proc-not-done-reason-cs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource CodeSystem/stroke-proc-not-done-reason-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-proc-not-done-reason-cs: URL Mismatch https://alvumu.github.io/CodeSystem/stroke-proc-not-done-reason-cs vs http://testSK.org/CodeSystem/stroke-proc-not-done-reason-cs
+
+
+== fsh-generated/resources/CodeSystem-stroke-risk-factor-cs.json ==
+ERROR: CodeSystem.where(url = 'http://qualityregistry.org/CodeSystem/stroke-risk-factor-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-risk-factor-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/stroke-risk-factor-cs) does not match the URL (http://qualityregistry.org/CodeSystem/stroke-risk-factor-cs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource CodeSystem/stroke-risk-factor-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-stroke-risk-factor-cs: URL Mismatch https://alvumu.github.io/CodeSystem/stroke-risk-factor-cs vs http://qualityregistry.org/CodeSystem/stroke-risk-factor-cs
+
+
 == fsh-generated/resources/CodeSystem-swallow-procedures-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/swallow-procedures-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-procedures-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/swallow-procedures-cs) does not match the URL (http://testSK.org/CodeSystem/swallow-procedures-cs). Use the special-url parameter if you really mean for it not to match
 INFORMATION: CodeSystem/swallow-procedures-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/swallow-procedures-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/swallow-procedures-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: Resource: The resource CodeSystem/swallow-procedures-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-procedures-cs: URL Mismatch https://alvumu.github.io/CodeSystem/swallow-procedures-cs vs http://testSK.org/CodeSystem/swallow-procedures-cs
+
+
 == fsh-generated/resources/CodeSystem-swallow-screen-time-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/swallow-screen-time-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-screen-time-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/swallow-screen-time-cs) does not match the URL (http://testSK.org/CodeSystem/swallow-screen-time-cs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource CodeSystem/swallow-screen-time-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-swallow-screen-time-cs: URL Mismatch https://alvumu.github.io/CodeSystem/swallow-screen-time-cs vs http://testSK.org/CodeSystem/swallow-screen-time-cs
+
+
 == fsh-generated/resources/CodeSystem-thrombectomy-complication-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/thrombectomy-complication-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-thrombectomy-complication-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/thrombectomy-complication-cs) does not match the URL (http://testSK.org/CodeSystem/thrombectomy-complication-cs). Use the special-url parameter if you really mean for it not to match
 INFORMATION: CodeSystem/thrombectomy-complication-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/thrombectomy-complication-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/thrombectomy-complication-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: Resource: The resource CodeSystem/thrombectomy-complication-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-thrombectomy-complication-cs: URL Mismatch https://alvumu.github.io/CodeSystem/thrombectomy-complication-cs vs http://testSK.org/CodeSystem/thrombectomy-complication-cs
+
+
 == fsh-generated/resources/CodeSystem-timing-metric-codes-cs.json ==
 ERROR: CodeSystem.where(url = 'http://testSK.org/CodeSystem/timing-metric-codes-cs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-timing-metric-codes-cs.json - the canonical URL (https://alvumu.github.io/CodeSystem/timing-metric-codes-cs) does not match the URL (http://testSK.org/CodeSystem/timing-metric-codes-cs). Use the special-url parameter if you really mean for it not to match
 INFORMATION: CodeSystem/timing-metric-codes-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/timing-metric-codes-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: Resource: The resource CodeSystem/timing-metric-codes-cs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/CodeSystem-timing-metric-codes-cs: URL Mismatch https://alvumu.github.io/CodeSystem/timing-metric-codes-cs vs http://testSK.org/CodeSystem/timing-metric-codes-cs
+
+
 == fsh-generated/resources/Condition-StrokeDiagnosisConditionAFib.json ==
+
+
 == fsh-generated/resources/Condition-StrokeDiagnosisConditionAFlutter.json ==
+
+
 == fsh-generated/resources/Condition-StrokeDiagnosisConditionExample.json ==
+
+
 == fsh-generated/resources/Condition-StrokeRiskFactorConditionExample.json ==
+
+
 == fsh-generated/resources/Encounter-StrokeEncounterExample.json ==
 INFORMATION: Encounter/StrokeEncounterExample: Encounter.extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/initial-care-intensity-cs|0.1.0
 ERROR: Encounter/StrokeEncounterExample: Encounter.extension[3].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Discharge Department/Service ValueSet' (http://testSK.org/ValueSet/discharge-dept-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#309937004)
 WARNING: Encounter/StrokeEncounterExample: Encounter.type[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 INFORMATION: Encounter/StrokeEncounterExample: Encounter.admission.admitSource: Reference to experimental CodeSystem http://testSK.org/CodeSystem/stroke-arrival-mode-cs|0.1.0
+
+
 == fsh-generated/resources/ImplementationGuide-SKtestIG.json ==
 ERROR: ImplementationGuide.where(url = 'https://alvumu.github.io'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG.json - the canonical URL (https://alvumu.github.io/ImplementationGuide/SKtestIG) does not match the URL (https://alvumu.github.io). Use the special-url parameter if you really mean for it not to match
 ERROR: ImplementationGuide.url: Resource id/url mismatch: SKtestIG/https://alvumu.github.io
 WARNING: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG: Unknown Parameters: [broken-links=warning, check-urls=true]
-ERROR: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[2].code.code: Unknown code 'broken-links' in the CodeSystem 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters' version '0.9.0'
-ERROR: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[3].code.code: Unknown code 'check-urls' in the CodeSystem 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters' version '0.9.0'
+ERROR: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[2].code.code: Unknown code 'broken-links' in the CodeSystem 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters' version '1.3.0'
+ERROR: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[3].code.code: Unknown code 'check-urls' in the CodeSystem 'http://hl7.org/fhir/tools/CodeSystem/ig-parameters' version '1.3.0'
 INFORMATION: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[6].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
 INFORMATION: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[7].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
 INFORMATION: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[8].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
@@ -242,38 +341,57 @@ INFORMATION: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parame
 INFORMATION: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[18].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
 INFORMATION: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[19].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
 INFORMATION: ImplementationGuide/SKtestIG: ImplementationGuide.definition.parameter[25].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: Resource: The resource ImplementationGuide/SKtestIG could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ImplementationGuide-SKtestIG: URL Mismatch https://alvumu.github.io/ImplementationGuide/SKtestIG vs https://alvumu.github.io
+
+
 == fsh-generated/resources/MedicationRequest-discharge-medication-request-001.json ==
+
+
 == fsh-generated/resources/MedicationStatement-PriorMedicationStatementExample.json ==
 ERROR: MedicationStatement/PriorMedicationStatementExample: MedicationStatement.encounter: Unable to resolve resource with reference 'EncounterExample'
+
+
 == fsh-generated/resources/Observation-AgeAtOnsetObservationExample.json ==
 ERROR: Observation/AgeAtOnsetObservationExample: Observation.value.ofType(integer): The property 'value' is invalid
 WARNING: Observation/AgeAtOnsetObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/AgeAtOnsetObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+
+
 == fsh-generated/resources/Observation-FunctionalScoreObservationExample.json ==
 INFORMATION: Observation/FunctionalScoreObservationExample: Observation.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/assessment-context-cs|0.1.0
 INFORMATION: Observation/FunctionalScoreObservationExample: Observation.value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/mrs-score-cs|0.1.0
 WARNING: Observation/FunctionalScoreObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/FunctionalScoreObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+
+
 == fsh-generated/resources/Observation-SpecificFindingObservationExample.json ==
 WARNING: Observation/SpecificFindingObservationExample: Observation.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://testSK.org/CodeSystem/afib-flutter-status-cs' could not be found, so the code cannot be validated
 WARNING: Observation/SpecificFindingObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/SpecificFindingObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+
+
 == fsh-generated/resources/Observation-SpecificFindingObservationExampleMTICI.json ==
 ERROR: Observation/SpecificFindingObservationExampleMTICI: Observation.code.coding[0].code: Unknown code '1156911000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
 ERROR: Observation/SpecificFindingObservationExampleMTICI: Observation.code: None of the codings provided are in the value set 'Specific Stroke Finding Codes ValueSet' (http://testSK.org/ValueSet/specific-finding-codes-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#1156911000)
 INFORMATION: Observation/SpecificFindingObservationExampleMTICI: Observation.value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/mtici-score-cs|0.1.0
 WARNING: Observation/SpecificFindingObservationExampleMTICI: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/SpecificFindingObservationExampleMTICI: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+
+
 == fsh-generated/resources/Observation-StrokeCircumstanceObservationExampleWakeUp.json ==
 ERROR: Observation/StrokeCircumstanceObservationExampleWakeUp: Observation.focus[0]: Unable to resolve resource with reference 'ConditionExample'
 WARNING: Observation/StrokeCircumstanceObservationExampleWakeUp: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/StrokeCircumstanceObservationExampleWakeUp: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+
+
 == fsh-generated/resources/Observation-TimingMetricObservationExample.json ==
 INFORMATION: Observation/TimingMetricObservationExample: Observation.value.ofType(Quantity).system: A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated
 WARNING: Observation/TimingMetricObservationExample: Observation.value.ofType(Quantity).system: No definition could be found for URL value 'https://ucum.org/ucum'
 WARNING: Observation/TimingMetricObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/TimingMetricObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+
+
 == fsh-generated/resources/Observation-VitalSignObservationExample.json ==
 INFORMATION: Observation/VitalSignObservationExample: Observation.component[0].value.ofType(Quantity).system: A definition for CodeSystem 'https://ucum.org/ucum' could not be found, so the code cannot be validated
 WARNING: Observation/VitalSignObservationExample: Observation.component[0].value.ofType(Quantity).system: No definition could be found for URL value 'https://ucum.org/ucum'
@@ -281,113 +399,194 @@ INFORMATION: Observation/VitalSignObservationExample: Observation.component[1].v
 WARNING: Observation/VitalSignObservationExample: Observation.component[1].value.ofType(Quantity).system: No definition could be found for URL value 'https://ucum.org/ucum'
 WARNING: Observation/VitalSignObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/VitalSignObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+
+
 == fsh-generated/resources/Organization-ExampleStrokeOrganization.json ==
 WARNING: Organization/ExampleStrokeOrganization: Organization.identifier[0].system: No definition could be found for URL value 'https://stroke.qualityregistry.org'
+
+
 == fsh-generated/resources/Patient-PatientAgeGenderSnomedExample.json ==
+
+
 == fsh-generated/resources/Patient-example-patient.json ==
+
+
 == fsh-generated/resources/Procedure-StrokeBrainImagingExample.json ==
 INFORMATION: Procedure/StrokeBrainImagingExample: Procedure.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/procedure-timing-context-cs|0.1.0
+
+
 == fsh-generated/resources/Procedure-StrokeCarotidImagingExample.json ==
 INFORMATION: Procedure/StrokeCarotidImagingExample: Procedure.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/procedure-timing-context-cs|0.1.0
 INFORMATION: Procedure/StrokeCarotidImagingExample: Procedure.statusReason: Reference to experimental CodeSystem http://testSK.org/CodeSystem/stroke-proc-not-done-reason-cs|0.1.0
+
+
 == fsh-generated/resources/Procedure-StrokeSwallowingExample.json ==
 INFORMATION: Procedure/StrokeSwallowingExample: Procedure.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/swallow-screen-time-cs|0.1.0
 INFORMATION: Procedure/StrokeSwallowingExample: Procedure.extension[1].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/procedure-timing-context-cs|0.1.0
+
+
 == fsh-generated/resources/Procedure-StrokeThrombolysisExample.json ==
 INFORMATION: Procedure/StrokeThrombolysisExample: Procedure.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://testSK.org/CodeSystem/procedure-timing-context-cs|0.1.0
+
+
 == fsh-generated/resources/StructureDefinition-age-at-onset-observation-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/age-at-onset-observation-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-age-at-onset-observation-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/age-at-onset-observation-profile) does not match the URL (http://testSK.org/StructureDefinition/age-at-onset-observation-profile). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/age-at-onset-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/age-at-onset-observation-profile: StructureDefinition.snapshot.element[45].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/age-at-onset-observation-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-age-at-onset-observation-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/age-at-onset-observation-profile vs http://testSK.org/StructureDefinition/age-at-onset-observation-profile
+
+
 == fsh-generated/resources/StructureDefinition-base-stroke-observation.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/base-stroke-observation'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-base-stroke-observation.json - the canonical URL (https://alvumu.github.io/StructureDefinition/base-stroke-observation) does not match the URL (http://testSK.org/StructureDefinition/base-stroke-observation). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/base-stroke-observation: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/base-stroke-observation: StructureDefinition.snapshot.element[45].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/base-stroke-observation could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 WARNING: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/base-stroke-observation'): The Implementation Guide contains no examples for this profile
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-base-stroke-observation: URL Mismatch https://alvumu.github.io/StructureDefinition/base-stroke-observation vs http://testSK.org/StructureDefinition/base-stroke-observation
+
+
 == fsh-generated/resources/StructureDefinition-discharge-department-service-ext.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/discharge-department-service-ext'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-discharge-department-service-ext.json - the canonical URL (https://alvumu.github.io/StructureDefinition/discharge-department-service-ext) does not match the URL (http://testSK.org/StructureDefinition/discharge-department-service-ext). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource StructureDefinition/discharge-department-service-ext could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-discharge-department-service-ext: URL Mismatch https://alvumu.github.io/StructureDefinition/discharge-department-service-ext vs http://testSK.org/StructureDefinition/discharge-department-service-ext
+
+
 == fsh-generated/resources/StructureDefinition-discharge-medication-request-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/discharge-medication-request-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-discharge-medication-request-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/discharge-medication-request-profile) does not match the URL (http://testSK.org/StructureDefinition/discharge-medication-request-profile). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/discharge-medication-request-profile: StructureDefinition.snapshot.element[18].binding: The definition for the element 'MedicationRequest.priority' binds to the value set 'http://hl7.org/fhir/ValueSet/request-priority|5.0.0' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/discharge-medication-request-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-discharge-medication-request-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/discharge-medication-request-profile vs http://testSK.org/StructureDefinition/discharge-medication-request-profile
+
+
 == fsh-generated/resources/StructureDefinition-first-hospital-ext.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/first-hospital-ext'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-first-hospital-ext.json - the canonical URL (https://alvumu.github.io/StructureDefinition/first-hospital-ext) does not match the URL (http://testSK.org/StructureDefinition/first-hospital-ext). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource StructureDefinition/first-hospital-ext could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-first-hospital-ext: URL Mismatch https://alvumu.github.io/StructureDefinition/first-hospital-ext vs http://testSK.org/StructureDefinition/first-hospital-ext
+
+
 == fsh-generated/resources/StructureDefinition-functional-score-observation-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/functional-score-observation-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-functional-score-observation-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/functional-score-observation-profile) does not match the URL (http://testSK.org/StructureDefinition/functional-score-observation-profile). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/functional-score-observation-profile: StructureDefinition.snapshot.element[22].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/functional-score-observation-profile: StructureDefinition.snapshot.element[49].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/functional-score-observation-profile: StructureDefinition.snapshot: The slice 'valueQuantity' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/functional-score-observation-profile: StructureDefinition.snapshot.element[59].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/functional-score-observation-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-functional-score-observation-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/functional-score-observation-profile vs http://testSK.org/StructureDefinition/functional-score-observation-profile
+
+
 == fsh-generated/resources/StructureDefinition-gender-snomed-ext.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/gender-snomed-ext'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-gender-snomed-ext.json - the canonical URL (https://alvumu.github.io/StructureDefinition/gender-snomed-ext) does not match the URL (http://testSK.org/StructureDefinition/gender-snomed-ext). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource StructureDefinition/gender-snomed-ext could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-gender-snomed-ext: URL Mismatch https://alvumu.github.io/StructureDefinition/gender-snomed-ext vs http://testSK.org/StructureDefinition/gender-snomed-ext
+
+
 == fsh-generated/resources/StructureDefinition-hemorrhagic-stroke-bleeding-reason-ext.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-hemorrhagic-stroke-bleeding-reason-ext.json - the canonical URL (https://alvumu.github.io/StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext) does not match the URL (http://testSK.org/StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://testSK.org/ValueSet/hemorrhagic-stroke-bleeding-reason-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://testSK.org/ValueSet/hemorrhagic-stroke-bleeding-reason-vs' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 WARNING: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext'): The Implementation Guide contains no examples for this extension
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-hemorrhagic-stroke-bleeding-reason-ext: URL Mismatch https://alvumu.github.io/StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext vs http://testSK.org/StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext
+
+
 == fsh-generated/resources/StructureDefinition-initial-care-intensity-ext.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/initial-care-intensity-ext'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-initial-care-intensity-ext.json - the canonical URL (https://alvumu.github.io/StructureDefinition/initial-care-intensity-ext) does not match the URL (http://testSK.org/StructureDefinition/initial-care-intensity-ext). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource StructureDefinition/initial-care-intensity-ext could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-initial-care-intensity-ext: URL Mismatch https://alvumu.github.io/StructureDefinition/initial-care-intensity-ext vs http://testSK.org/StructureDefinition/initial-care-intensity-ext
+
+
 == fsh-generated/resources/StructureDefinition-ischemic-stroke-etiology-ext.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/ischemic-stroke-etiology-ext'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-ischemic-stroke-etiology-ext.json - the canonical URL (https://alvumu.github.io/StructureDefinition/ischemic-stroke-etiology-ext) does not match the URL (http://testSK.org/StructureDefinition/ischemic-stroke-etiology-ext). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/ischemic-stroke-etiology-ext: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://testSK.org/ValueSet/stroke-etiology-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/ischemic-stroke-etiology-ext: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'http://testSK.org/ValueSet/stroke-etiology-vs' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/ischemic-stroke-etiology-ext could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 WARNING: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/ischemic-stroke-etiology-ext'): The Implementation Guide contains no examples for this extension
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-ischemic-stroke-etiology-ext: URL Mismatch https://alvumu.github.io/StructureDefinition/ischemic-stroke-etiology-ext vs http://testSK.org/StructureDefinition/ischemic-stroke-etiology-ext
+
+
 == fsh-generated/resources/StructureDefinition-observation-timing-context-ext.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/observation-timing-context-ext'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-observation-timing-context-ext.json - the canonical URL (https://alvumu.github.io/StructureDefinition/observation-timing-context-ext) does not match the URL (http://testSK.org/StructureDefinition/observation-timing-context-ext). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource StructureDefinition/observation-timing-context-ext could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-observation-timing-context-ext: URL Mismatch https://alvumu.github.io/StructureDefinition/observation-timing-context-ext vs http://testSK.org/StructureDefinition/observation-timing-context-ext
+
+
 == fsh-generated/resources/StructureDefinition-onset-date-ext.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/onset-date-ext'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-onset-date-ext.json - the canonical URL (https://alvumu.github.io/StructureDefinition/onset-date-ext) does not match the URL (http://testSK.org/StructureDefinition/onset-date-ext). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource StructureDefinition/onset-date-ext could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 WARNING: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/onset-date-ext'): The Implementation Guide contains no examples for this extension
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-onset-date-ext: URL Mismatch https://alvumu.github.io/StructureDefinition/onset-date-ext vs http://testSK.org/StructureDefinition/onset-date-ext
+
+
 == fsh-generated/resources/StructureDefinition-onset-time-ext.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/onset-time-ext'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-onset-time-ext.json - the canonical URL (https://alvumu.github.io/StructureDefinition/onset-time-ext) does not match the URL (http://testSK.org/StructureDefinition/onset-time-ext). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource StructureDefinition/onset-time-ext could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 WARNING: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/onset-time-ext'): The Implementation Guide contains no examples for this extension
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-onset-time-ext: URL Mismatch https://alvumu.github.io/StructureDefinition/onset-time-ext vs http://testSK.org/StructureDefinition/onset-time-ext
+
+
 == fsh-generated/resources/StructureDefinition-patient-age-gender-snomed-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-patient-age-gender-snomed-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/patient-age-gender-snomed-profile) does not match the URL (http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource StructureDefinition/patient-age-gender-snomed-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-patient-age-gender-snomed-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/patient-age-gender-snomed-profile vs http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile
+
+
 == fsh-generated/resources/StructureDefinition-prior-medication-statement-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/prior-medication-statement-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-prior-medication-statement-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/prior-medication-statement-profile) does not match the URL (http://testSK.org/StructureDefinition/prior-medication-statement-profile). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource StructureDefinition/prior-medication-statement-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-prior-medication-statement-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/prior-medication-statement-profile vs http://testSK.org/StructureDefinition/prior-medication-statement-profile
+
+
 == fsh-generated/resources/StructureDefinition-procedure-timing-context-ext.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/procedure-timing-context-ext'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-procedure-timing-context-ext.json - the canonical URL (https://alvumu.github.io/StructureDefinition/procedure-timing-context-ext) does not match the URL (http://testSK.org/StructureDefinition/procedure-timing-context-ext). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource StructureDefinition/procedure-timing-context-ext could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-procedure-timing-context-ext: URL Mismatch https://alvumu.github.io/StructureDefinition/procedure-timing-context-ext vs http://testSK.org/StructureDefinition/procedure-timing-context-ext
+
+
 == fsh-generated/resources/StructureDefinition-required-post-acute-care-ext.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/required-post-acute-care-ext'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-required-post-acute-care-ext.json - the canonical URL (https://alvumu.github.io/StructureDefinition/required-post-acute-care-ext) does not match the URL (http://testSK.org/StructureDefinition/required-post-acute-care-ext). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource StructureDefinition/required-post-acute-care-ext could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-required-post-acute-care-ext: URL Mismatch https://alvumu.github.io/StructureDefinition/required-post-acute-care-ext vs http://testSK.org/StructureDefinition/required-post-acute-care-ext
+
+
 == fsh-generated/resources/StructureDefinition-specific-finding-observation-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/specific-finding-observation-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-specific-finding-observation-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/specific-finding-observation-profile) does not match the URL (http://testSK.org/StructureDefinition/specific-finding-observation-profile). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/specific-finding-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/specific-finding-observation-profile: StructureDefinition.snapshot.element[45].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/specific-finding-observation-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-specific-finding-observation-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/specific-finding-observation-profile vs http://testSK.org/StructureDefinition/specific-finding-observation-profile
+
+
 == fsh-generated/resources/StructureDefinition-stroke-brain-imaging-procedure-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/stroke-brain-imaging-procedure-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-brain-imaging-procedure-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/stroke-brain-imaging-procedure-profile) does not match the URL (http://testSK.org/StructureDefinition/stroke-brain-imaging-procedure-profile). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/stroke-brain-imaging-procedure-profile: StructureDefinition.differential.element[3].binding: The definition for the element 'Procedure.status' binds to the value set 'http://hl7.org/fhir/ValueSet/event-status' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/stroke-brain-imaging-procedure-profile: StructureDefinition.snapshot.element[15].binding: The definition for the element 'Procedure.status' binds to the value set 'http://hl7.org/fhir/ValueSet/event-status' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/stroke-brain-imaging-procedure-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-brain-imaging-procedure-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/stroke-brain-imaging-procedure-profile vs http://testSK.org/StructureDefinition/stroke-brain-imaging-procedure-profile
+
+
 == fsh-generated/resources/StructureDefinition-stroke-carotid-imaging-procedure-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/stroke-carotid-imaging-procedure-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-carotid-imaging-procedure-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/stroke-carotid-imaging-procedure-profile) does not match the URL (http://testSK.org/StructureDefinition/stroke-carotid-imaging-procedure-profile). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/stroke-carotid-imaging-procedure-profile: StructureDefinition.differential.element[3].binding: The definition for the element 'Procedure.status' binds to the value set 'http://hl7.org/fhir/ValueSet/event-status' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/stroke-carotid-imaging-procedure-profile: StructureDefinition.snapshot.element[15].binding: The definition for the element 'Procedure.status' binds to the value set 'http://hl7.org/fhir/ValueSet/event-status' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/stroke-carotid-imaging-procedure-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-carotid-imaging-procedure-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/stroke-carotid-imaging-procedure-profile vs http://testSK.org/StructureDefinition/stroke-carotid-imaging-procedure-profile
+
+
 == fsh-generated/resources/StructureDefinition-stroke-circumstance-observation-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-circumstance-observation-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/stroke-circumstance-observation-profile) does not match the URL (http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/stroke-circumstance-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/stroke-circumstance-observation-profile: StructureDefinition.snapshot.element[45].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/stroke-circumstance-observation-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-circumstance-observation-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/stroke-circumstance-observation-profile vs http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile
+
+
 == fsh-generated/resources/StructureDefinition-stroke-diagnosis-condition-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/stroke-diagnosis-condition-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-diagnosis-condition-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/stroke-diagnosis-condition-profile) does not match the URL (http://testSK.org/StructureDefinition/stroke-diagnosis-condition-profile). Use the special-url parameter if you really mean for it not to match
 INFORMATION: StructureDefinition/stroke-diagnosis-condition-profile: StructureDefinition.snapshot.element[16].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 WARNING: StructureDefinition/stroke-diagnosis-condition-profile: StructureDefinition.snapshot.element[29].binding: The definition for the element 'Condition.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/stroke-diagnosis-condition-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-diagnosis-condition-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/stroke-diagnosis-condition-profile vs http://testSK.org/StructureDefinition/stroke-diagnosis-condition-profile
+
+
 == fsh-generated/resources/StructureDefinition-stroke-encounter-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/stroke-encounter-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-encounter-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/stroke-encounter-profile) does not match the URL (http://testSK.org/StructureDefinition/stroke-encounter-profile). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/stroke-encounter-profile: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
@@ -395,157 +594,270 @@ WARNING: StructureDefinition/stroke-encounter-profile: StructureDefinition.diffe
 WARNING: StructureDefinition/stroke-encounter-profile: StructureDefinition.snapshot.element[14].binding: The definition for the element 'Encounter.status' binds to the value set 'http://hl7.org/fhir/ValueSet/encounter-status|5.0.0' which is experimental, but this structure is not labeled as experimental
 INFORMATION: StructureDefinition/stroke-encounter-profile: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 WARNING: StructureDefinition/stroke-encounter-profile: StructureDefinition.snapshot.element[48].binding: The definition for the element 'Encounter.reason.value' binds to the value set 'http://hl7.org/fhir/ValueSet/encounter-reason|5.0.0' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/stroke-encounter-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-encounter-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/stroke-encounter-profile vs http://testSK.org/StructureDefinition/stroke-encounter-profile
+
+
 == fsh-generated/resources/StructureDefinition-stroke-mechanical-procedure-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-mechanical-procedure-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/stroke-mechanical-procedure-profile) does not match the URL (http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/stroke-mechanical-procedure-profile: StructureDefinition.differential.element[3].binding: The definition for the element 'Procedure.status' binds to the value set 'http://hl7.org/fhir/ValueSet/event-status' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/stroke-mechanical-procedure-profile: StructureDefinition.differential.element[5].binding: The definition for the element 'Procedure.code' binds to the value set 'http://testSK.org/ValueSet/perforation-procedures-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/stroke-mechanical-procedure-profile: StructureDefinition.snapshot.element[15].binding: The definition for the element 'Procedure.status' binds to the value set 'http://hl7.org/fhir/ValueSet/event-status' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/stroke-mechanical-procedure-profile: StructureDefinition.snapshot.element[18].binding: The definition for the element 'Procedure.code' binds to the value set 'http://testSK.org/ValueSet/perforation-procedures-vs' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/stroke-mechanical-procedure-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-mechanical-procedure-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/stroke-mechanical-procedure-profile vs http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile
+
+
 == fsh-generated/resources/StructureDefinition-stroke-registry-organization-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/stroke-registry-organization-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-registry-organization-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/stroke-registry-organization-profile) does not match the URL (http://testSK.org/StructureDefinition/stroke-registry-organization-profile). Use the special-url parameter if you really mean for it not to match
-WARNING: StructureDefinition/stroke-registry-organization-profile: StructureDefinition.snapshot.element[15]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x] (fixed.exists().not())' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
-WARNING: StructureDefinition/stroke-registry-organization-profile: StructureDefinition.differential.element[3]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x] (fixed.exists().not())' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/stroke-registry-organization-profile: StructureDefinition.snapshot.element[15]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x] (fixed.exists().not())' at Organization.identifier:registry.system (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/stroke-registry-organization-profile: StructureDefinition.differential.element[3]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x] (fixed.exists().not())' at Organization.identifier:registry.system (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: Resource: The resource StructureDefinition/stroke-registry-organization-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-registry-organization-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/stroke-registry-organization-profile vs http://testSK.org/StructureDefinition/stroke-registry-organization-profile
+
+
 == fsh-generated/resources/StructureDefinition-stroke-risk-factor-condition-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-risk-factor-condition-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/stroke-risk-factor-condition-profile) does not match the URL (http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile). Use the special-url parameter if you really mean for it not to match
 INFORMATION: StructureDefinition/stroke-risk-factor-condition-profile: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 WARNING: StructureDefinition/stroke-risk-factor-condition-profile: StructureDefinition.snapshot.element[25].binding: The definition for the element 'Condition.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/stroke-risk-factor-condition-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-risk-factor-condition-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/stroke-risk-factor-condition-profile vs http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile
+
+
 == fsh-generated/resources/StructureDefinition-stroke-swallow-procedure-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/stroke-swallow-procedure-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-swallow-procedure-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/stroke-swallow-procedure-profile) does not match the URL (http://testSK.org/StructureDefinition/stroke-swallow-procedure-profile). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/stroke-swallow-procedure-profile: StructureDefinition.differential.element[4].binding: The definition for the element 'Procedure.status' binds to the value set 'http://hl7.org/fhir/ValueSet/event-status' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/stroke-swallow-procedure-profile: StructureDefinition.differential.element[6].binding: The definition for the element 'Procedure.code' binds to the value set 'http://testSK.org/ValueSet/swallow-procedures-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/stroke-swallow-procedure-profile: StructureDefinition.snapshot.element[16].binding: The definition for the element 'Procedure.status' binds to the value set 'http://hl7.org/fhir/ValueSet/event-status' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/stroke-swallow-procedure-profile: StructureDefinition.snapshot.element[19].binding: The definition for the element 'Procedure.code' binds to the value set 'http://testSK.org/ValueSet/swallow-procedures-vs' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/stroke-swallow-procedure-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-stroke-swallow-procedure-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/stroke-swallow-procedure-profile vs http://testSK.org/StructureDefinition/stroke-swallow-procedure-profile
+
+
 == fsh-generated/resources/StructureDefinition-swallowing-screening-timing-category-ext.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/swallowing-screening-timing-category-ext'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-swallowing-screening-timing-category-ext.json - the canonical URL (https://alvumu.github.io/StructureDefinition/swallowing-screening-timing-category-ext) does not match the URL (http://testSK.org/StructureDefinition/swallowing-screening-timing-category-ext). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource StructureDefinition/swallowing-screening-timing-category-ext could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-swallowing-screening-timing-category-ext: URL Mismatch https://alvumu.github.io/StructureDefinition/swallowing-screening-timing-category-ext vs http://testSK.org/StructureDefinition/swallowing-screening-timing-category-ext
+
+
 == fsh-generated/resources/StructureDefinition-timing-metric-observation-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/timing-metric-observation-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-timing-metric-observation-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/timing-metric-observation-profile) does not match the URL (http://testSK.org/StructureDefinition/timing-metric-observation-profile). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/timing-metric-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/timing-metric-observation-profile: StructureDefinition.snapshot.element[52].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/timing-metric-observation-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-timing-metric-observation-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/timing-metric-observation-profile vs http://testSK.org/StructureDefinition/timing-metric-observation-profile
+
+
 == fsh-generated/resources/StructureDefinition-vital-sign-observation-profile.json ==
 ERROR: StructureDefinition.where(url = 'http://testSK.org/StructureDefinition/vital-sign-observation-profile'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-vital-sign-observation-profile.json - the canonical URL (https://alvumu.github.io/StructureDefinition/vital-sign-observation-profile) does not match the URL (http://testSK.org/StructureDefinition/vital-sign-observation-profile). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/vital-sign-observation-profile: StructureDefinition.differential.element[4].binding: The definition for the element 'Observation.component.code' binds to the value set 'http://testSK.org/ValueSet/vital-sign-codes-vs' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/vital-sign-observation-profile: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/vital-sign-observation-profile: StructureDefinition.snapshot.element[45].binding: The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/vital-sign-observation-profile: StructureDefinition.snapshot.element[55].binding: The definition for the element 'Observation.component.code' binds to the value set 'http://testSK.org/ValueSet/vital-sign-codes-vs' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/vital-sign-observation-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/StructureDefinition-vital-sign-observation-profile: URL Mismatch https://alvumu.github.io/StructureDefinition/vital-sign-observation-profile vs http://testSK.org/StructureDefinition/vital-sign-observation-profile
+
+
 == fsh-generated/resources/ValueSet-admission-source-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/admission-source-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-admission-source-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/admission-source-vs) does not match the URL (http://testSK.org/ValueSet/admission-source-vs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource ValueSet/admission-source-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-admission-source-vs: URL Mismatch https://alvumu.github.io/ValueSet/admission-source-vs vs http://testSK.org/ValueSet/admission-source-vs
+
+
 == fsh-generated/resources/ValueSet-afib-flutter-status-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/afib-flutter-status-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-afib-flutter-status-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/afib-flutter-status-vs) does not match the URL (http://testSK.org/ValueSet/afib-flutter-status-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/afib-flutter-status-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/afib-flutter-status-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-afib-flutter-status-vs: URL Mismatch https://alvumu.github.io/ValueSet/afib-flutter-status-vs vs http://testSK.org/ValueSet/afib-flutter-status-vs
+
+
 == fsh-generated/resources/ValueSet-assessment-context-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/assessment-context-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-assessment-context-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/assessment-context-vs) does not match the URL (http://testSK.org/ValueSet/assessment-context-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/assessment-context-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/assessment-context-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-assessment-context-vs: URL Mismatch https://alvumu.github.io/ValueSet/assessment-context-vs vs http://testSK.org/ValueSet/assessment-context-vs
+
+
 == fsh-generated/resources/ValueSet-brain-imaging-modality-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/brain-imaging-modality-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-brain-imaging-modality-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/brain-imaging-modality-vs) does not match the URL (http://testSK.org/ValueSet/brain-imaging-modality-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/brain-imaging-modality-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/brain-imaging-modality-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-brain-imaging-modality-vs: URL Mismatch https://alvumu.github.io/ValueSet/brain-imaging-modality-vs vs http://testSK.org/ValueSet/brain-imaging-modality-vs
+
+
 == fsh-generated/resources/ValueSet-carotid-imaging-modality-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/carotid-imaging-modality-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-carotid-imaging-modality-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/carotid-imaging-modality-vs) does not match the URL (http://testSK.org/ValueSet/carotid-imaging-modality-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/carotid-imaging-modality-vs: ValueSet.compose.include[0].concept[1]: Wrong Display Name 'Doppler ultrasonography of carotid arteries (procedure)' for http://snomed.info/sct#416940007. Valid display is 'Past history of procedure' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/carotid-imaging-modality-vs: ValueSet.compose.include[0].concept[1]: Wrong Display Name 'Doppler ultrasonography of carotid arteries (procedure)' for http://snomed.info/sct#416940007. Valid display is one of 5 choices: 'History of procedure' (en), 'Past history of procedure (context-dependent category)' (en), 'Past history of procedure' (en), 'Past history of procedure (situation)' (en) or 'History of procedure (situation)' (en) (for the language(s) 'en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 ERROR: ValueSet/carotid-imaging-modality-vs: ValueSet.compose.include[0].concept[3]: The code '1366357009' is not valid in the system http://snomed.info/sct (Unknown code '1366357009' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
 WARNING: ValueSet/carotid-imaging-modality-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/carotid-imaging-modality-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-carotid-imaging-modality-vs: URL Mismatch https://alvumu.github.io/ValueSet/carotid-imaging-modality-vs vs http://testSK.org/ValueSet/carotid-imaging-modality-vs
+
+
 == fsh-generated/resources/ValueSet-discharge-dept-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/discharge-dept-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-dept-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/discharge-dept-vs) does not match the URL (http://testSK.org/ValueSet/discharge-dept-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/discharge-dept-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/discharge-dept-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-dept-vs: URL Mismatch https://alvumu.github.io/ValueSet/discharge-dept-vs vs http://testSK.org/ValueSet/discharge-dept-vs
+
+
 == fsh-generated/resources/ValueSet-discharge-destination-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/discharge-destination-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-destination-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/discharge-destination-vs) does not match the URL (http://testSK.org/ValueSet/discharge-destination-vs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource ValueSet/discharge-destination-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-discharge-destination-vs: URL Mismatch https://alvumu.github.io/ValueSet/discharge-destination-vs vs http://testSK.org/ValueSet/discharge-destination-vs
+
+
 == fsh-generated/resources/ValueSet-functional-score-codes-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/functional-score-codes-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-functional-score-codes-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/functional-score-codes-vs) does not match the URL (http://testSK.org/ValueSet/functional-score-codes-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/functional-score-codes-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/functional-score-codes-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-functional-score-codes-vs: URL Mismatch https://alvumu.github.io/ValueSet/functional-score-codes-vs vs http://testSK.org/ValueSet/functional-score-codes-vs
+
+
 == fsh-generated/resources/ValueSet-hemorrhagic-stroke-bleeding-reason-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/hemorrhagic-stroke-bleeding-reason-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-hemorrhagic-stroke-bleeding-reason-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/hemorrhagic-stroke-bleeding-reason-vs) does not match the URL (http://testSK.org/ValueSet/hemorrhagic-stroke-bleeding-reason-vs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource ValueSet/hemorrhagic-stroke-bleeding-reason-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-hemorrhagic-stroke-bleeding-reason-vs: URL Mismatch https://alvumu.github.io/ValueSet/hemorrhagic-stroke-bleeding-reason-vs vs http://testSK.org/ValueSet/hemorrhagic-stroke-bleeding-reason-vs
+
+
 == fsh-generated/resources/ValueSet-initial-care-intensity-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/initial-care-intensity-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-initial-care-intensity-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/initial-care-intensity-vs) does not match the URL (http://testSK.org/ValueSet/initial-care-intensity-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/initial-care-intensity-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/initial-care-intensity-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-initial-care-intensity-vs: URL Mismatch https://alvumu.github.io/ValueSet/initial-care-intensity-vs vs http://testSK.org/ValueSet/initial-care-intensity-vs
+
+
 == fsh-generated/resources/ValueSet-medication-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/medication-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-medication-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/medication-vs) does not match the URL (http://testSK.org/ValueSet/medication-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/medication-vs: ValueSet.compose.include[2].valueSet[0]: A definition could not be found for Canonical URL 'https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html'
 WARNING: ValueSet/medication-vs: ValueSet.compose.include[2].valueSet[0]: The value set import https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html could not be found so cannot be checked
 WARNING: ValueSet/medication-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/medication-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: ValueSet.where(id = 'medication-vs'): Unable to find included value set 'https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html'
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-medication-vs: URL Mismatch https://alvumu.github.io/ValueSet/medication-vs vs http://testSK.org/ValueSet/medication-vs
+
+
 == fsh-generated/resources/ValueSet-mrs-score-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/mrs-score-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mrs-score-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/mrs-score-vs) does not match the URL (http://testSK.org/ValueSet/mrs-score-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/mrs-score-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/mrs-score-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mrs-score-vs: URL Mismatch https://alvumu.github.io/ValueSet/mrs-score-vs vs http://testSK.org/ValueSet/mrs-score-vs
+
+
 == fsh-generated/resources/ValueSet-mtici-score-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/mtici-score-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mtici-score-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/mtici-score-vs) does not match the URL (http://testSK.org/ValueSet/mtici-score-vs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource ValueSet/mtici-score-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-mtici-score-vs: URL Mismatch https://alvumu.github.io/ValueSet/mtici-score-vs vs http://testSK.org/ValueSet/mtici-score-vs
+
+
 == fsh-generated/resources/ValueSet-perforation-procedures-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/perforation-procedures-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-perforation-procedures-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/perforation-procedures-vs) does not match the URL (http://testSK.org/ValueSet/perforation-procedures-vs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource ValueSet/perforation-procedures-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-perforation-procedures-vs: URL Mismatch https://alvumu.github.io/ValueSet/perforation-procedures-vs vs http://testSK.org/ValueSet/perforation-procedures-vs
+
+
 == fsh-generated/resources/ValueSet-procedure-timing-context-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/procedure-timing-context-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-procedure-timing-context-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/procedure-timing-context-vs) does not match the URL (http://testSK.org/ValueSet/procedure-timing-context-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/procedure-timing-context-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/procedure-timing-context-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-procedure-timing-context-vs: URL Mismatch https://alvumu.github.io/ValueSet/procedure-timing-context-vs vs http://testSK.org/ValueSet/procedure-timing-context-vs
+
+
 == fsh-generated/resources/ValueSet-specific-finding-codes-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/specific-finding-codes-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-specific-finding-codes-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/specific-finding-codes-vs) does not match the URL (http://testSK.org/ValueSet/specific-finding-codes-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/specific-finding-codes-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/specific-finding-codes-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-specific-finding-codes-vs: URL Mismatch https://alvumu.github.io/ValueSet/specific-finding-codes-vs vs http://testSK.org/ValueSet/specific-finding-codes-vs
+
+
 == fsh-generated/resources/ValueSet-stroke-arrival-mode-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/stroke-arrival-mode-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-arrival-mode-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/stroke-arrival-mode-vs) does not match the URL (http://testSK.org/ValueSet/stroke-arrival-mode-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/stroke-arrival-mode-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/stroke-arrival-mode-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-arrival-mode-vs: URL Mismatch https://alvumu.github.io/ValueSet/stroke-arrival-mode-vs vs http://testSK.org/ValueSet/stroke-arrival-mode-vs
+
+
 == fsh-generated/resources/ValueSet-stroke-circumstance-codes-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/stroke-circumstance-codes-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-circumstance-codes-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/stroke-circumstance-codes-vs) does not match the URL (http://testSK.org/ValueSet/stroke-circumstance-codes-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/stroke-circumstance-codes-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/stroke-circumstance-codes-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-circumstance-codes-vs: URL Mismatch https://alvumu.github.io/ValueSet/stroke-circumstance-codes-vs vs http://testSK.org/ValueSet/stroke-circumstance-codes-vs
+
+
 == fsh-generated/resources/ValueSet-stroke-diagnosis-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/stroke-diagnosis-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-diagnosis-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/stroke-diagnosis-vs) does not match the URL (http://testSK.org/ValueSet/stroke-diagnosis-vs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource ValueSet/stroke-diagnosis-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-diagnosis-vs: URL Mismatch https://alvumu.github.io/ValueSet/stroke-diagnosis-vs vs http://testSK.org/ValueSet/stroke-diagnosis-vs
+
+
 == fsh-generated/resources/ValueSet-stroke-discharge-destination-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/stroke-discharge-destination-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-discharge-destination-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/stroke-discharge-destination-vs) does not match the URL (http://testSK.org/ValueSet/stroke-discharge-destination-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/stroke-discharge-destination-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/stroke-discharge-destination-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-discharge-destination-vs: URL Mismatch https://alvumu.github.io/ValueSet/stroke-discharge-destination-vs vs http://testSK.org/ValueSet/stroke-discharge-destination-vs
+
+
 == fsh-generated/resources/ValueSet-stroke-etiology-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/stroke-etiology-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-etiology-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/stroke-etiology-vs) does not match the URL (http://testSK.org/ValueSet/stroke-etiology-vs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource ValueSet/stroke-etiology-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-etiology-vs: URL Mismatch https://alvumu.github.io/ValueSet/stroke-etiology-vs vs http://testSK.org/ValueSet/stroke-etiology-vs
+
+
 == fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/stroke-proc-not-done-reason-vs) does not match the URL (http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/stroke-proc-not-done-reason-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/stroke-proc-not-done-reason-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-proc-not-done-reason-vs: URL Mismatch https://alvumu.github.io/ValueSet/stroke-proc-not-done-reason-vs vs http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs
+
+
 == fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/stroke-risk-factor-snomed-vs) does not match the URL (http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource ValueSet/stroke-risk-factor-snomed-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-snomed-vs: URL Mismatch https://alvumu.github.io/ValueSet/stroke-risk-factor-snomed-vs vs http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs
+
+
 == fsh-generated/resources/ValueSet-stroke-risk-factor-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/stroke-risk-factor-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/stroke-risk-factor-vs) does not match the URL (http://testSK.org/ValueSet/stroke-risk-factor-vs). Use the special-url parameter if you really mean for it not to match
-ERROR: ValueSet.where(id = 'stroke-risk-factor-vs'): Unable to expand included value set 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips': Unable to expand imported value set: Error from https://tx.fhir.org/r5: A definition for CodeSystem 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' could not be found, so the value set cannot be expanded (and Error from https://tx.fhir.org/r5: A definition for CodeSystem 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' could not be found, so the value set cannot be expanded)
+WARNING: Resource: The resource ValueSet/stroke-risk-factor-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-stroke-risk-factor-vs: URL Mismatch https://alvumu.github.io/ValueSet/stroke-risk-factor-vs vs http://testSK.org/ValueSet/stroke-risk-factor-vs
+
+
 == fsh-generated/resources/ValueSet-swallow-procedures-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/swallow-procedures-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallow-procedures-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/swallow-procedures-vs) does not match the URL (http://testSK.org/ValueSet/swallow-procedures-vs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource ValueSet/swallow-procedures-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallow-procedures-vs: URL Mismatch https://alvumu.github.io/ValueSet/swallow-procedures-vs vs http://testSK.org/ValueSet/swallow-procedures-vs
+
+
 == fsh-generated/resources/ValueSet-swallowing-screening-timing-category-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/swallowing-screening-timing-category-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallowing-screening-timing-category-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/swallowing-screening-timing-category-vs) does not match the URL (http://testSK.org/ValueSet/swallowing-screening-timing-category-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/swallowing-screening-timing-category-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/swallowing-screening-timing-category-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-swallowing-screening-timing-category-vs: URL Mismatch https://alvumu.github.io/ValueSet/swallowing-screening-timing-category-vs vs http://testSK.org/ValueSet/swallowing-screening-timing-category-vs
+
+
 == fsh-generated/resources/ValueSet-thrombectomy-complication-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/thrombectomy-complication-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-thrombectomy-complication-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/thrombectomy-complication-vs) does not match the URL (http://testSK.org/ValueSet/thrombectomy-complication-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/thrombectomy-complication-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/thrombectomy-complication-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-thrombectomy-complication-vs: URL Mismatch https://alvumu.github.io/ValueSet/thrombectomy-complication-vs vs http://testSK.org/ValueSet/thrombectomy-complication-vs
+
+
 == fsh-generated/resources/ValueSet-timing-metric-codes-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/timing-metric-codes-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-timing-metric-codes-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/timing-metric-codes-vs) does not match the URL (http://testSK.org/ValueSet/timing-metric-codes-vs). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/timing-metric-codes-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/timing-metric-codes-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-timing-metric-codes-vs: URL Mismatch https://alvumu.github.io/ValueSet/timing-metric-codes-vs vs http://testSK.org/ValueSet/timing-metric-codes-vs
+
+
 == fsh-generated/resources/ValueSet-vital-sign-codes-vs.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/vital-sign-codes-vs'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-vital-sign-codes-vs.json - the canonical URL (https://alvumu.github.io/ValueSet/vital-sign-codes-vs) does not match the URL (http://testSK.org/ValueSet/vital-sign-codes-vs). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource ValueSet/vital-sign-codes-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-vital-sign-codes-vs: URL Mismatch https://alvumu.github.io/ValueSet/vital-sign-codes-vs vs http://testSK.org/ValueSet/vital-sign-codes-vs
+
+
 == fsh-generated/resources/ValueSet-vs-gender-snomed.json ==
 ERROR: ValueSet.where(url = 'http://testSK.org/ValueSet/vs-gender-snomed'): Conformance resource /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-vs-gender-snomed.json - the canonical URL (https://alvumu.github.io/ValueSet/vs-gender-snomed) does not match the URL (http://testSK.org/ValueSet/vs-gender-snomed). Use the special-url parameter if you really mean for it not to match
+WARNING: Resource: The resource ValueSet/vs-gender-snomed should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 ERROR: /home/runner/work/IGTest-git/IGTest-git/fsh-generated/resources/ValueSet-vs-gender-snomed: URL Mismatch https://alvumu.github.io/ValueSet/vs-gender-snomed vs http://testSK.org/ValueSet/vs-gender-snomed
+
+

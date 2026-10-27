@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/stroke-circumstance-codes-vs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:StrokeCircumstanceCodesVS |
+| Active as of 2026-10-27 | *Computable Name*:StrokeCircumstanceCodesVS |
 
  
 Codes for findings related to the circumstances of stroke onset (In-hospital, Wake-up). 
@@ -50,26 +50,20 @@ Codes for findings related to the circumstances of stroke onset (In-hospital, Wa
   "name" : "StrokeCircumstanceCodesVS",
   "title" : "Stroke Circumstance Codes ValueSet",
   "status" : "active",
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Codes for findings related to the circumstances of stroke onset (In-hospital, Wake-up).",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://testSK.org/CodeSystem/stroke-circumstance-codes-cs"
-      }
-    ]
+    "include" : [{
+      "system" : "http://testSK.org/CodeSystem/stroke-circumstance-codes-cs"
+    }]
   }
 }
 

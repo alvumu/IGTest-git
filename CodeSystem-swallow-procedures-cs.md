@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/swallow-procedures-cs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:SwallowProceduresCS |
+| Active as of 2026-10-27 | *Computable Name*:SwallowProceduresCS |
 
  
 Codes representing various swallowing assessment procedures. 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [SwallowProceduresValueset](ValueSet-swallow-procedures-vs.md)
+* [Swallow Procedures ValueSet](ValueSet-swallow-procedures-vs.md)
 
 
 
@@ -31,39 +31,33 @@ Codes representing various swallowing assessment procedures.
   "name" : "SwallowProceduresCS",
   "title" : "Swallow Procedures Code System",
   "status" : "active",
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Codes representing various swallowing assessment procedures.",
   "content" : "complete",
   "count" : 3,
-  "concept" : [
-    {
-      "code" : "assist",
-      "display" : "ASSIST",
-      "definition" : "Assisted Swallowing Test (ASSIST)"
-    },
-    {
-      "code" : "other",
-      "display" : "Other Swallow Procedure",
-      "definition" : "Other specified swallowing assessment procedure"
-    },
-    {
-      "code" : "v-vst",
-      "display" : "V-VST",
-      "definition" : "Volume-Viscosity Swallow Test (V-VST)"
-    }
-  ]
+  "concept" : [{
+    "code" : "assist",
+    "display" : "ASSIST",
+    "definition" : "Assisted Swallowing Test (ASSIST)"
+  },
+  {
+    "code" : "other",
+    "display" : "Other Swallow Procedure",
+    "definition" : "Other specified swallowing assessment procedure"
+  },
+  {
+    "code" : "v-vst",
+    "display" : "V-VST",
+    "definition" : "Volume-Viscosity Swallow Test (V-VST)"
+  }]
 }
 
 ```

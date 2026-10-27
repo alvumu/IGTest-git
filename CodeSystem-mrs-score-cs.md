@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/mrs-score-cs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:MRsScoreCS |
+| Active as of 2026-10-27 | *Computable Name*:MRsScoreCS |
 
  
 Codes representing the modified Rankin Scale (mRS) score for functional outcome. 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [MRsScoreVS](ValueSet-mrs-score-vs.md)
+* [modified Rankin Scale (mRS) Score ValueSet](ValueSet-mrs-score-vs.md)
 
 
 
@@ -32,60 +32,54 @@ Codes representing the modified Rankin Scale (mRS) score for functional outcome.
   "title" : "modified Rankin Scale (mRS) Score Code System",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Codes representing the modified Rankin Scale (mRS) score for functional outcome.",
   "caseSensitive" : false,
   "content" : "complete",
   "count" : 7,
-  "concept" : [
-    {
-      "code" : "0",
-      "display" : "No symptoms",
-      "definition" : "No symptoms at all."
-    },
-    {
-      "code" : "1",
-      "display" : "No significant disability",
-      "definition" : "Despite symptoms; able to carry out all usual duties and activities."
-    },
-    {
-      "code" : "2",
-      "display" : "Slight disability",
-      "definition" : "Unable to carry out all previous activities, but able to look after own affairs without assistance."
-    },
-    {
-      "code" : "3",
-      "display" : "Moderate disability",
-      "definition" : "Requiring some help, but able to walk without assistance."
-    },
-    {
-      "code" : "4",
-      "display" : "Moderately severe disability",
-      "definition" : "Unable to walk without assistance and unable to attend to own bodily needs without assistance."
-    },
-    {
-      "code" : "5",
-      "display" : "Severe disability",
-      "definition" : "Bedridden, incontinent and requiring constant nursing care and attention."
-    },
-    {
-      "code" : "6",
-      "display" : "Dead",
-      "definition" : "Patient deceased."
-    }
-  ]
+  "concept" : [{
+    "code" : "0",
+    "display" : "No symptoms",
+    "definition" : "No symptoms at all."
+  },
+  {
+    "code" : "1",
+    "display" : "No significant disability",
+    "definition" : "Despite symptoms; able to carry out all usual duties and activities."
+  },
+  {
+    "code" : "2",
+    "display" : "Slight disability",
+    "definition" : "Unable to carry out all previous activities, but able to look after own affairs without assistance."
+  },
+  {
+    "code" : "3",
+    "display" : "Moderate disability",
+    "definition" : "Requiring some help, but able to walk without assistance."
+  },
+  {
+    "code" : "4",
+    "display" : "Moderately severe disability",
+    "definition" : "Unable to walk without assistance and unable to attend to own bodily needs without assistance."
+  },
+  {
+    "code" : "5",
+    "display" : "Severe disability",
+    "definition" : "Bedridden, incontinent and requiring constant nursing care and attention."
+  },
+  {
+    "code" : "6",
+    "display" : "Dead",
+    "definition" : "Patient deceased."
+  }]
 }
 
 ```

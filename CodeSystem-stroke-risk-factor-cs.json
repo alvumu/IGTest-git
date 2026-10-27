@@ -1,0 +1,33 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "stroke-risk-factor-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem stroke-risk-factor-cs</b></p><a name=\"stroke-risk-factor-cs\"> </a><a name=\"hcstroke-risk-factor-cs\"> </a><p>This case-sensitive code system <code>http://qualityregistry.org/CodeSystem/stroke-risk-factor-cs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">smoking-last-10-years<a name=\"stroke-risk-factor-cs-smoking-last-10-years\"> </a></td><td>Smoking within the last 10 years</td><td>The patient smoked at any time during the 10 years preceding the index stroke event.</td></tr></table></div>"
+  },
+  "url" : "http://qualityregistry.org/CodeSystem/stroke-risk-factor-cs",
+  "version" : "0.1.0",
+  "name" : "StrokeRiskFactorCS",
+  "title" : "RES-Q Stroke Risk Factor Code System",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-27",
+  "publisher" : "UMU",
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
+  "description" : "Locally governed RES-Q concepts used when the registry assertion is more specific than an available standard terminology concept.",
+  "purpose" : "To preserve registry-specific stroke risk-factor semantics without conflating them with broader or different SNOMED CT concepts.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "smoking-last-10-years",
+    "display" : "Smoking within the last 10 years",
+    "definition" : "The patient smoked at any time during the 10 years preceding the index stroke event."
+  }]
+}

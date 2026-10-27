@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/mrs-score-vs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:MRsScoreVS |
+| Active as of 2026-10-27 | *Computable Name*:MRsScoreVS |
 
  
 ValueSet containing the codes for the modified Rankin Scale (mRS) score. 
@@ -50,26 +50,20 @@ ValueSet containing the codes for the modified Rankin Scale (mRS) score.
   "name" : "MRsScoreVS",
   "title" : "modified Rankin Scale (mRS) Score ValueSet",
   "status" : "active",
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "ValueSet containing the codes for the modified Rankin Scale (mRS) score.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://testSK.org/CodeSystem/mrs-score-cs"
-      }
-    ]
+    "include" : [{
+      "system" : "http://testSK.org/CodeSystem/mrs-score-cs"
+    }]
   }
 }
 

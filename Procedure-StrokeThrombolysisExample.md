@@ -27,33 +27,25 @@ Profile: [Stroke Thrombolysis Procedure Profile (R5)](StructureDefinition-stroke
   "resourceType" : "Procedure",
   "id" : "StrokeThrombolysisExample",
   "meta" : {
-    "profile" : [
-      "http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile"
-    ]
+    "profile" : ["http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile"]
   },
-  "extension" : [
-    {
-      "url" : "http://testSK.org/StructureDefinition/procedure-timing-context-ext",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://testSK.org/CodeSystem/procedure-timing-context-cs",
-            "code" : "unknown",
-            "display" : "Unknown/Not Applicable"
-          }
-        ]
-      }
+  "extension" : [{
+    "url" : "http://testSK.org/StructureDefinition/procedure-timing-context-ext",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://testSK.org/CodeSystem/procedure-timing-context-cs",
+        "code" : "unknown",
+        "display" : "Unknown/Not Applicable"
+      }]
     }
-  ],
+  }],
   "status" : "completed",
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "472191000119101",
-        "display" : "Thrombolysis of cerebral artery by intravenous infusion (procedure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "472191000119101",
+      "display" : "Thrombolysis of cerebral artery by intravenous infusion (procedure)"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-patient"

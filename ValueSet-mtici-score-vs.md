@@ -53,24 +53,18 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "experimental" : true,
   "date" : "2025-03-31",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "ValueSet containing the codes to represent the MTICI score used to assess the degree of reperfusion after a thrombectomy procedure.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://testSK.org/CodeSystem/mtici-score-cs"
-      }
-    ]
+    "include" : [{
+      "system" : "http://testSK.org/CodeSystem/mtici-score-cs"
+    }]
   }
 }
 

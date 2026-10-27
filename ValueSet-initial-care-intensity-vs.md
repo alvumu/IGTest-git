@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/initial-care-intensity-vs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:InitialCareIntensityVS |
+| Active as of 2026-10-27 | *Computable Name*:InitialCareIntensityVS |
 
  
 ValueSet indicating the level of care provided initially. 
@@ -50,26 +50,20 @@ ValueSet indicating the level of care provided initially.
   "name" : "InitialCareIntensityVS",
   "title" : "Initial Care Intensity ValueSet",
   "status" : "active",
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "ValueSet indicating the level of care provided initially.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://testSK.org/CodeSystem/initial-care-intensity-cs"
-      }
-    ]
+    "include" : [{
+      "system" : "http://testSK.org/CodeSystem/initial-care-intensity-cs"
+    }]
   }
 }
 

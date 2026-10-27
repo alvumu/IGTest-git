@@ -57,41 +57,33 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "experimental" : true,
   "date" : "2025-03-31",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Defines the modes of transport or pathways by which the patient arrived.",
   "immutable" : false,
   "purpose" : "To standardize the capture of patient admission sources for workflow, reporting, and interoperability.",
   "copyright" : "This value set includes SNOMED CT® content. SNOMED CT® is distributed by SNOMED International.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "715537001",
+        "display" : "Transportation by ambulance (procedure)"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "715537001",
-            "display" : "Transportation by ambulance (procedure)"
-          },
-          {
-            "code" : "715957006",
-            "display" : "Transportation by own transport (procedure)"
-          },
-          {
-            "code" : "384762007",
-            "display" : "Transportation procedure (procedure)"
-          }
-        ]
-      }
-    ]
+        "code" : "715957006",
+        "display" : "Transportation by own transport (procedure)"
+      },
+      {
+        "code" : "384762007",
+        "display" : "Transportation procedure (procedure)"
+      }]
+    }]
   }
 }
 

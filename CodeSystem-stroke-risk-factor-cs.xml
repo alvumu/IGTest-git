@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="stroke-risk-factor-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem stroke-risk-factor-cs</b></p><a name="stroke-risk-factor-cs"> </a><a name="hcstroke-risk-factor-cs"> </a><p>This case-sensitive code system <code>http://qualityregistry.org/CodeSystem/stroke-risk-factor-cs</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">smoking-last-10-years<a name="stroke-risk-factor-cs-smoking-last-10-years"> </a></td><td>Smoking within the last 10 years</td><td>The patient smoked at any time during the 10 years preceding the index stroke event.</td></tr></table></div>
+  </text>
+  <url value="http://qualityregistry.org/CodeSystem/stroke-risk-factor-cs"/>
+  <version value="0.1.0"/>
+  <name value="StrokeRiskFactorCS"/>
+  <title value="RES-Q Stroke Risk Factor Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-27"/>
+  <publisher value="UMU"/>
+  <contact>
+    <name value="UMU"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://testSK.org/umu"/>
+    </telecom>
+  </contact>
+  <description value="Locally governed RES-Q concepts used when the registry assertion is more specific than an available standard terminology concept."/>
+  <purpose value="To preserve registry-specific stroke risk-factor semantics without conflating them with broader or different SNOMED CT concepts."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="smoking-last-10-years"/>
+    <display value="Smoking within the last 10 years"/>
+    <definition value="The patient smoked at any time during the 10 years preceding the index stroke event."/>
+  </concept>
+</CodeSystem>

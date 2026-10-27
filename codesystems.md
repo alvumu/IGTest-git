@@ -24,6 +24,7 @@ List of **CodeSystems** defined in this guide:
 * [CodeSystem-stroke-discharge-destination-cs.html](CodeSystem-stroke-discharge-destination-cs.md)
 * [CodeSystem-stroke-etiology-cs.html](CodeSystem-stroke-etiology-cs.md)
 * [CodeSystem-stroke-proc-not-done-reason-cs.html](CodeSystem-stroke-proc-not-done-reason-cs.md)
+* [CodeSystem-stroke-risk-factor-cs.html](CodeSystem-stroke-risk-factor-cs.md)
 * [CodeSystem-swallow-procedures-cs.html](CodeSystem-swallow-procedures-cs.md)
 * [CodeSystem-swallow-screen-time-cs.html](CodeSystem-swallow-screen-time-cs.md)
 * [CodeSystem-thrombectomy-complication-cs.html](CodeSystem-thrombectomy-complication-cs.md)

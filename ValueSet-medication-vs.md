@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/medication-vs | *Version*:0.1.0 |
-| Draft as of 2026-02-09 | *Computable Name*:MedicationVS |
+| Draft as of 2026-10-27 | *Computable Name*:MedicationVS |
 
  
 SNOMED CT codes for drug products or substances. 
@@ -53,68 +53,58 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "MedicationVS",
   "title" : "Medications ValueSet",
   "status" : "draft",
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "SNOMED CT codes for drug products or substances.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "372756006",
-            "display" : "Warfarin (substance)"
-          },
-          {
-            "code" : "372586001",
-            "display" : "Hypotensive agent (substance)"
-          },
-          {
-            "code" : "372862008",
-            "display" : "Anticoagulant (substance)"
-          },
-          {
-            "code" : "312263009",
-            "display" : "Sex hormone (substance)"
-          },
-          {
-            "code" : "372912004",
-            "display" : "Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)"
-          },
-          {
-            "code" : "387458008",
-            "display" : "Aspirin (substance)"
-          },
-          {
-            "code" : "386952008",
-            "display" : "Clopidogrel (substance)"
-          },
-          {
-            "code" : "372877000",
-            "display" : "Heparin (substance)"
-          }
-        ]
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "372756006",
+        "display" : "Warfarin (substance)"
       },
       {
-        "system" : "http://testSK.org/CodeSystem/medication-cs"
+        "code" : "372586001",
+        "display" : "Hypotensive agent (substance)"
       },
       {
-        "valueSet" : [
-          "https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html"
-        ]
-      }
-    ]
+        "code" : "372862008",
+        "display" : "Anticoagulant (substance)"
+      },
+      {
+        "code" : "312263009",
+        "display" : "Sex hormone (substance)"
+      },
+      {
+        "code" : "372912004",
+        "display" : "Substance with 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor mechanism of action (substance)"
+      },
+      {
+        "code" : "387458008",
+        "display" : "Aspirin (substance)"
+      },
+      {
+        "code" : "386952008",
+        "display" : "Clopidogrel (substance)"
+      },
+      {
+        "code" : "372877000",
+        "display" : "Heparin (substance)"
+      }]
+    },
+    {
+      "system" : "http://testSK.org/CodeSystem/medication-cs"
+    },
+    {
+      "valueSet" : ["https://hl7.org/fhir/uv/ips/ValueSet-absent-or-unknown-medications-uv-ips.html"]
+    }]
   }
 }
 

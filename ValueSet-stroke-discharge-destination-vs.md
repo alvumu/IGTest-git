@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/stroke-discharge-destination-vs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:StrokeDischargeDestinationVS |
+| Active as of 2026-10-27 | *Computable Name*:StrokeDischargeDestinationVS |
 
  
 Defines the possible destinations of the patient upon discharge from the encounter. 
@@ -50,47 +50,39 @@ Defines the possible destinations of the patient upon discharge from the encount
   "name" : "StrokeDischargeDestinationVS",
   "title" : "Stroke Discharge Destination ValueSet",
   "status" : "active",
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Defines the possible destinations of the patient upon discharge from the encounter.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "306689006",
-            "display" : "Discharge to home (procedure)"
-          },
-          {
-            "code" : "37729005",
-            "display" : "Patient transfer, in-hospital (procedure)"
-          },
-          {
-            "code" : "19712007",
-            "display" : "Patient transfer, to another health care facility (procedure)"
-          },
-          {
-            "code" : "306694006",
-            "display" : "Discharge to nursing home (procedure)"
-          }
-        ]
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "306689006",
+        "display" : "Discharge to home (procedure)"
       },
       {
-        "system" : "http://testSK.org/CodeSystem/stroke-discharge-destination-cs"
-      }
-    ]
+        "code" : "37729005",
+        "display" : "Patient transfer, in-hospital (procedure)"
+      },
+      {
+        "code" : "19712007",
+        "display" : "Patient transfer, to another health care facility (procedure)"
+      },
+      {
+        "code" : "306694006",
+        "display" : "Discharge to nursing home (procedure)"
+      }]
+    },
+    {
+      "system" : "http://testSK.org/CodeSystem/stroke-discharge-destination-cs"
+    }]
   }
 }
 

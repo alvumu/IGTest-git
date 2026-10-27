@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/afib-flutter-status-vs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:AfibFlutterStatusVS |
+| Active as of 2026-10-27 | *Computable Name*:AfibFlutterStatusVS |
 
  
 ValueSet for the status of Atrial Fibrillation or Flutter assessment. 
@@ -50,40 +50,32 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "AfibFlutterStatusVS",
   "title" : "Atrial Fibrillation or Flutter Status ValueSet",
   "status" : "active",
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "ValueSet for the status of Atrial Fibrillation or Flutter assessment.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "410515003",
+        "display" : "Known present (qualifier value)"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "410515003",
-            "display" : "Known present (qualifier value)"
-          },
-          {
-            "code" : "410516002",
-            "display" : "Known absent (qualifier value)"
-          },
-          {
-            "code" : "261665006",
-            "display" : "Unknown (qualifier value)"
-          }
-        ]
-      }
-    ]
+        "code" : "410516002",
+        "display" : "Known absent (qualifier value)"
+      },
+      {
+        "code" : "261665006",
+        "display" : "Unknown (qualifier value)"
+      }]
+    }]
   }
 }
 

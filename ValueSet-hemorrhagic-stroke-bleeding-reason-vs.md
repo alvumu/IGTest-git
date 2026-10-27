@@ -57,27 +57,21 @@ To enable consistent capture of the underlying cause of bleeding in hemorrhagic 
   "experimental" : true,
   "date" : "2025-09-08",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Specifies the identified cause of a hemorrhagic stroke, typically used with an extension.",
   "immutable" : false,
   "purpose" : "To enable consistent capture of the underlying cause of bleeding in hemorrhagic stroke.",
   "copyright" : "© Tecnomod. This value set includes locally defined codes.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://testSK.org/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs"
-      }
-    ]
+    "include" : [{
+      "system" : "http://testSK.org/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs"
+    }]
   }
 }
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/StructureDefinition/stroke-carotid-imaging-procedure-profile | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:StrokeCarotidImagingProcedureProfile |
+| Active as of 2026-10-27 | *Computable Name*:StrokeCarotidImagingProcedureProfile |
 
  
 Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context. 
@@ -18,7 +18,7 @@ Procedure profile to record key stroke procedures, including status, timing, com
 
 * Examples for this Profile: [Procedure/StrokeCarotidImagingExample](Procedure-StrokeCarotidImagingExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SKtestIG|current/StructureDefinition/stroke-carotid-imaging-procedure-profile)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/SKtestIG|current/StructureDefinition/StructureDefinition-stroke-carotid-imaging-procedure-profile.json)
 
 ### Formal Views of Profile Content
 
@@ -41,116 +41,100 @@ Other representations of profile: [CSV](StructureDefinition-stroke-carotid-imagi
   "name" : "StrokeCarotidImagingProcedureProfile",
   "title" : "Stroke Carotid Imaging Procedure Profile (R5)",
   "status" : "active",
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Procedure profile to record key stroke procedures, including status, timing, complications, reasons, and context.",
   "fhirVersion" : "5.0.0",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 V2 Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 V2 Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Procedure",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Procedure",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Procedure",
-        "path" : "Procedure"
-      },
-      {
-        "id" : "Procedure.extension",
-        "path" : "Procedure.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Procedure.extension:timingContext",
-        "path" : "Procedure.extension",
-        "sliceName" : "timingContext",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://testSK.org/StructureDefinition/procedure-timing-context-ext"
-            ]
-          }
-        ],
-        "mustSupport" : true
-      },
-      {
-        "id" : "Procedure.status",
-        "path" : "Procedure.status",
-        "mustSupport" : true,
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/event-status"
-        }
-      },
-      {
-        "id" : "Procedure.statusReason",
-        "path" : "Procedure.statusReason",
-        "mustSupport" : true,
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs"
-        }
-      },
-      {
-        "id" : "Procedure.code",
-        "path" : "Procedure.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://snomed.info/sct",
-              "code" : "58920005",
-              "display" : "Angiography of carotid artery (procedure)"
-            }
-          ]
-        }
+    "element" : [{
+      "id" : "Procedure",
+      "path" : "Procedure"
+    },
+    {
+      "id" : "Procedure.extension",
+      "path" : "Procedure.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "Procedure.extension:timingContext",
+      "path" : "Procedure.extension",
+      "sliceName" : "timingContext",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://testSK.org/StructureDefinition/procedure-timing-context-ext"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.status",
+      "path" : "Procedure.status",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/event-status"
+      }
+    },
+    {
+      "id" : "Procedure.statusReason",
+      "path" : "Procedure.statusReason",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://testSK.org/ValueSet/stroke-proc-not-done-reason-vs"
+      }
+    },
+    {
+      "id" : "Procedure.code",
+      "path" : "Procedure.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "58920005",
+          "display" : "Angiography of carotid artery (procedure)"
+        }]
+      }
+    }]
   }
 }
 

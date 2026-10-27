@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/assessment-context-cs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:AssessmentContextCS |
+| Active as of 2026-10-27 | *Computable Name*:AssessmentContextCS |
 
  
 Codes defining the context or timing of a clinical assessment, particularly functional scores. 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [AssessmentContextVS](ValueSet-assessment-context-vs.md)
+* [Assessment Context ValueSet](ValueSet-assessment-context-vs.md)
 
 
 
@@ -32,45 +32,39 @@ Codes defining the context or timing of a clinical assessment, particularly func
   "title" : "Assessment Context Code System",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Codes defining the context or timing of a clinical assessment, particularly functional scores.",
   "caseSensitive" : false,
   "content" : "complete",
   "count" : 4,
-  "concept" : [
-    {
-      "code" : "pre-stroke",
-      "display" : "Pre-stroke",
-      "definition" : "Assessment reflects patient state before the current stroke event."
-    },
-    {
-      "code" : "admission",
-      "display" : "Admission",
-      "definition" : "Assessment performed upon or shortly after hospital admission for the stroke event."
-    },
-    {
-      "code" : "discharge",
-      "display" : "Discharge",
-      "definition" : "Assessment performed at the time of hospital discharge."
-    },
-    {
-      "code" : "3-month",
-      "display" : "3-Month Follow-up",
-      "definition" : "Assessment performed approximately 3 months post-discharge."
-    }
-  ]
+  "concept" : [{
+    "code" : "pre-stroke",
+    "display" : "Pre-stroke",
+    "definition" : "Assessment reflects patient state before the current stroke event."
+  },
+  {
+    "code" : "admission",
+    "display" : "Admission",
+    "definition" : "Assessment performed upon or shortly after hospital admission for the stroke event."
+  },
+  {
+    "code" : "discharge",
+    "display" : "Discharge",
+    "definition" : "Assessment performed at the time of hospital discharge."
+  },
+  {
+    "code" : "3-month",
+    "display" : "3-Month Follow-up",
+    "definition" : "Assessment performed approximately 3 months post-discharge."
+  }]
 }
 
 ```

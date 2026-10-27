@@ -57,40 +57,32 @@ To support classification of stroke etiology using a mix of local codes and sele
   "experimental" : true,
   "date" : "2025-03-31",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Specifies the determined etiology of an stroke.",
   "immutable" : false,
   "purpose" : "To support classification of stroke etiology using a mix of local codes and selected SNOMED CT concepts.",
   "copyright" : "This value set includes locally governed concepts and SNOMED CT® content. SNOMED CT® is distributed by SNOMED International.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://testSK.org/CodeSystem/stroke-etiology-cs"
+    "include" : [{
+      "system" : "http://testSK.org/CodeSystem/stroke-etiology-cs"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "16891111000119104",
+        "display" : "Cryptogenic stroke (disorder)"
       },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "16891111000119104",
-            "display" : "Cryptogenic stroke (disorder)"
-          },
-          {
-            "code" : "413758000",
-            "display" : "Cardioembolic stroke (disorder)"
-          }
-        ]
-      }
-    ]
+        "code" : "413758000",
+        "display" : "Cardioembolic stroke (disorder)"
+      }]
+    }]
   }
 }
 

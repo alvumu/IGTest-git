@@ -25,23 +25,17 @@ Anonymous Patient (no stated gender), DoB Unknown
   "resourceType" : "Patient",
   "id" : "PatientAgeGenderSnomedExample",
   "meta" : {
-    "profile" : [
-      "http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile"
-    ]
+    "profile" : ["http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile"]
   },
-  "extension" : [
-    {
-      "url" : "http://testSK.org/StructureDefinition/gender-snomed-ext",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "248153007"
-          }
-        ]
-      }
+  "extension" : [{
+    "url" : "http://testSK.org/StructureDefinition/gender-snomed-ext",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "248153007"
+      }]
     }
-  ]
+  }]
 }
 
 ```

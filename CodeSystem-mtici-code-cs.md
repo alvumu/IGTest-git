@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/mtici-code-cs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:MTICICodeCS |
+| Active as of 2026-10-27 | *Computable Name*:MTICICodeCS |
 
  
 Codes representing the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure. 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [SpecificFindingCodesVS](ValueSet-specific-finding-codes-vs.md)
+* [Specific Stroke Finding Codes ValueSet](ValueSet-specific-finding-codes-vs.md)
 
 
 
@@ -32,30 +32,24 @@ Codes representing the mTICI score used to assess the degree of reperfusion afte
   "title" : "mTICI Score Codes CodeSystem",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Codes representing the mTICI score used to assess the degree of reperfusion after a thrombectomy procedure.",
   "caseSensitive" : false,
   "content" : "complete",
   "count" : 1,
-  "concept" : [
-    {
-      "code" : "mTICI",
-      "display" : "mTICI",
-      "definition" : "Modified Thrombolysis in Cerebral Infarction"
-    }
-  ]
+  "concept" : [{
+    "code" : "mTICI",
+    "display" : "mTICI",
+    "definition" : "Modified Thrombolysis in Cerebral Infarction"
+  }]
 }
 
 ```

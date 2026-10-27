@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/vital-sign-codes-vs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:VitalSignCodesVS |
+| Active as of 2026-10-27 | *Computable Name*:VitalSignCodesVS |
 
  
 Codes for key vital signs relevant to stroke assessment (Systolic, Diastolic BP). 
@@ -51,36 +51,28 @@ Codes for key vital signs relevant to stroke assessment (Systolic, Diastolic BP)
   "title" : "Stroke Vital Sign Codes ValueSet",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Codes for key vital signs relevant to stroke assessment (Systolic, Diastolic BP).",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "271649006",
+        "display" : "Systolic blood pressure (observable entity)"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "271649006",
-            "display" : "Systolic blood pressure (observable entity)"
-          },
-          {
-            "code" : "271650006",
-            "display" : "Diastolic blood pressure (observable entity)"
-          }
-        ]
-      }
-    ]
+        "code" : "271650006",
+        "display" : "Diastolic blood pressure (observable entity)"
+      }]
+    }]
   }
 }
 

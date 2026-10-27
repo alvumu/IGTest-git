@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/thrombectomy-complication-cs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:ThrombectomyComplicationCS |
+| Active as of 2026-10-27 | *Computable Name*:ThrombectomyComplicationCS |
 
  
 Codes specifying the specific complications of thrombectomy to record. 
@@ -31,29 +31,23 @@ Codes specifying the specific complications of thrombectomy to record.
   "name" : "ThrombectomyComplicationCS",
   "title" : "Thrombectomy Complication Code System",
   "status" : "active",
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Codes specifying the specific complications of thrombectomy to record.",
   "content" : "complete",
   "count" : 1,
-  "concept" : [
-    {
-      "code" : "perforation",
-      "display" : "Vessel Perforation",
-      "definition" : "Vessel perforation occurred during the mechanical thrombectomy"
-    }
-  ]
+  "concept" : [{
+    "code" : "perforation",
+    "display" : "Vessel Perforation",
+    "definition" : "Vessel perforation occurred during the mechanical thrombectomy"
+  }]
 }
 
 ```

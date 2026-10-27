@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/stroke-arrival-mode-cs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:StrokeArrivalModeCS |
+| Active as of 2026-10-27 | *Computable Name*:StrokeArrivalModeCS |
 
  
 Codes indicating the level of care provided during the patient's initial day(s) in the hospital. 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [StrokeArrivalModeVS](ValueSet-stroke-arrival-mode-vs.md)
+* [Stroke Arrival Mode ValueSet](ValueSet-stroke-arrival-mode-vs.md)
 
 
 
@@ -32,55 +32,49 @@ Codes indicating the level of care provided during the patient's initial day(s) 
   "title" : "Initial Care Intensity Code System",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Codes indicating the level of care provided during the patient's initial day(s) in the hospital.",
   "caseSensitive" : false,
   "content" : "complete",
   "count" : 6,
-  "concept" : [
-    {
-      "code" : "priv-transport-home",
-      "display" : "Private Transportation from Home/Scene",
-      "definition" : "The patient arrived via personal or non-medical transport from their home or directly from the scene of the incident."
-    },
-    {
-      "code" : "priv-transport-gp",
-      "display" : "Private Transportation from GP",
-      "definition" : "The patient was referred and transported privately from GP."
-    },
-    {
-      "code" : "ems-gp",
-      "display" : "EMS from GP",
-      "definition" : "Emergency Medical Services (EMS) transported the patient from GP."
-    },
-    {
-      "code" : "stroke-center",
-      "display" : "Stroke Center",
-      "definition" : "The patient was transferred from a specialized stroke center, indicating prior specialized care"
-    },
-    {
-      "code" : "ems-home",
-      "display" : "EMS from Home",
-      "definition" : "Emergency Medical Services (EMS) transported the patient from their home or directly from the scene where the stroke symptoms began."
-    },
-    {
-      "code" : "another-hosp",
-      "display" : "Another Hospital",
-      "definition" : "The patient was transferred from another hospital"
-    }
-  ]
+  "concept" : [{
+    "code" : "priv-transport-home",
+    "display" : "Private Transportation from Home/Scene",
+    "definition" : "The patient arrived via personal or non-medical transport from their home or directly from the scene of the incident."
+  },
+  {
+    "code" : "priv-transport-gp",
+    "display" : "Private Transportation from GP",
+    "definition" : "The patient was referred and transported privately from GP."
+  },
+  {
+    "code" : "ems-gp",
+    "display" : "EMS from GP",
+    "definition" : "Emergency Medical Services (EMS) transported the patient from GP."
+  },
+  {
+    "code" : "stroke-center",
+    "display" : "Stroke Center",
+    "definition" : "The patient was transferred from a specialized stroke center, indicating prior specialized care"
+  },
+  {
+    "code" : "ems-home",
+    "display" : "EMS from Home",
+    "definition" : "Emergency Medical Services (EMS) transported the patient from their home or directly from the scene where the stroke symptoms began."
+  },
+  {
+    "code" : "another-hosp",
+    "display" : "Another Hospital",
+    "definition" : "The patient was transferred from another hospital"
+  }]
 }
 
 ```

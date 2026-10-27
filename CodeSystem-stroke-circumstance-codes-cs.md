@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/stroke-circumstance-codes-cs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:StrokeCircumstanceCodesCS |
+| Active as of 2026-10-27 | *Computable Name*:StrokeCircumstanceCodesCS |
 
  
 Codes for findings related to the circumstances of stroke onset (In-hospital, Wake-up). 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [StrokeCircumstanceCodesVS](ValueSet-stroke-circumstance-codes-vs.md)
+* [Stroke Circumstance Codes ValueSet](ValueSet-stroke-circumstance-codes-vs.md)
 
 
 
@@ -31,34 +31,28 @@ Codes for findings related to the circumstances of stroke onset (In-hospital, Wa
   "name" : "StrokeCircumstanceCodesCS",
   "title" : "Stroke Circumstance Codes CodeSystem",
   "status" : "active",
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Codes for findings related to the circumstances of stroke onset (In-hospital, Wake-up).",
   "content" : "complete",
   "count" : 2,
-  "concept" : [
-    {
-      "code" : "in-hospital",
-      "display" : "In-hospital Stroke",
-      "definition" : "Indicates that the stroke occurred while the patient was already admitted to the hospital for another reason."
-    },
-    {
-      "code" : "wake-up",
-      "display" : "Wake-up Stroke",
-      "definition" : "Indicates that the stroke symptoms were first noticed upon waking from sleep, with an unknown time of onset."
-    }
-  ]
+  "concept" : [{
+    "code" : "in-hospital",
+    "display" : "In-hospital Stroke",
+    "definition" : "Indicates that the stroke occurred while the patient was already admitted to the hospital for another reason."
+  },
+  {
+    "code" : "wake-up",
+    "display" : "Wake-up Stroke",
+    "definition" : "Indicates that the stroke symptoms were first noticed upon waking from sleep, with an unknown time of onset."
+  }]
 }
 
 ```

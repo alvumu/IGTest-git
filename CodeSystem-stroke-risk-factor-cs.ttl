@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://alvumu.github.io/CodeSystem/stroke-risk-factor-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "stroke-risk-factor-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem stroke-risk-factor-cs</b></p><a name=\"stroke-risk-factor-cs\"> </a><a name=\"hcstroke-risk-factor-cs\"> </a><p>This case-sensitive code system <code>http://qualityregistry.org/CodeSystem/stroke-risk-factor-cs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">smoking-last-10-years<a name=\"stroke-risk-factor-cs-smoking-last-10-years\"> </a></td><td>Smoking within the last 10 years</td><td>The patient smoked at any time during the 10 years preceding the index stroke event.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "http://qualityregistry.org/CodeSystem/stroke-risk-factor-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "StrokeRiskFactorCS"] ; # 
+  fhir:title [ fhir:v "RES-Q Stroke Risk Factor Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-10-27"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "UMU"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UMU" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://testSK.org/umu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Locally governed RES-Q concepts used when the registry assertion is more specific than an available standard terminology concept."] ; # 
+  fhir:purpose [ fhir:v "To preserve registry-specific stroke risk-factor semantics without conflating them with broader or different SNOMED CT concepts."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "smoking-last-10-years" ] ;
+     fhir:display [ fhir:v "Smoking within the last 10 years" ] ;
+     fhir:definition [ fhir:v "The patient smoked at any time during the 10 years preceding the index stroke event." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

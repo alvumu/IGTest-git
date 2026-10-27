@@ -13,14 +13,11 @@
      fhir:status [ fhir:v "generated" ] ;
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide SKtestIG</b></p><a name=\"SKtestIG\"> </a><a name=\"hcSKtestIG\"> </a><h2>IGTest</h2><p>The official URL for this implementation guide is: </p><pre>https://alvumu.github.io</pre></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [
-     fhir:v "https://alvumu.github.io"^^xsd:anyURI ;
-     fhir:l <https://alvumu.github.io>
-  ] ; # 
+  fhir:url [ fhir:v "https://alvumu.github.io"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IGTest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-02-09T10:35:12+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-10-27T13:25:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UMU"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UMU" ] ;
@@ -30,69 +27,56 @@
      ] )
   ] ) ; # 
   fhir:packageId [ fhir:v "SKtestIG"] ; # 
-  fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
   fhir:dependsOn ( [
      fhir:id [ fhir:v "hl7tx" ] ;
      fhir:extension ( [
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment>
-       ] ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
        fhir:value [
-         a fhir:Markdown ;
+         a fhir:markdown ;
          fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology"
        ]
      ] ) ;
      fhir:uri [
        fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
-       fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
-     fhir:version [ fhir:v "7.0.1" ]
+     fhir:version [ fhir:v "7.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment>
-       ] ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
        fhir:value [
-         a fhir:Markdown ;
+         a fhir:markdown ;
          fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
        ]
      ] ) ;
      fhir:uri [
        fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r5" ] ;
-     fhir:version [ fhir:v "5.2.0" ]
+     fhir:version [ fhir:v "5.3.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency>
-       ] ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
-         a fhir:Code ;
-         fhir:v "hl7.fhir.uv.tools.r5#0.9.0"
+         a fhir:code ;
+         fhir:v "hl7.fhir.uv.tools.r5#1.3.0"
        ]
      ] ) ;
      fhir:resource ( [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/admission-source-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/admission-source-vs> ;
          fhir:reference [ fhir:v "ValueSet/admission-source-vs" ]
        ] ;
        fhir:name [ fhir:v "Admission Sources ValueSet" ] ;
@@ -100,17 +84,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/age-at-onset-observation-profile> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/age-at-onset-observation-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/age-at-onset-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Age at Stroke Onset Observation Profile (R5)" ] ;
@@ -118,38 +99,32 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Observation"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Observation/AgeAtOnsetObservationExample> ;
+         fhir:link <https://alvumu.github.io/Observation/AgeAtOnsetObservationExample> ;
          fhir:reference [ fhir:v "Observation/AgeAtOnsetObservationExample" ]
        ] ;
        fhir:name [ fhir:v "AgeAtOnsetObservationExample" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/age-at-onset-observation-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/age-at-onset-observation-profile>
+         fhir:link <http://testSK.org/StructureDefinition/age-at-onset-observation-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/assessment-context-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/assessment-context-cs> ;
          fhir:reference [ fhir:v "CodeSystem/assessment-context-cs" ]
        ] ;
        fhir:name [ fhir:v "Assessment Context Code System" ] ;
@@ -157,17 +132,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/assessment-context-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/assessment-context-vs> ;
          fhir:reference [ fhir:v "ValueSet/assessment-context-vs" ]
        ] ;
        fhir:name [ fhir:v "Assessment Context ValueSet" ] ;
@@ -175,17 +147,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/afib-flutter-status-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/afib-flutter-status-vs> ;
          fhir:reference [ fhir:v "ValueSet/afib-flutter-status-vs" ]
        ] ;
        fhir:name [ fhir:v "Atrial Fibrillation or Flutter Status ValueSet" ] ;
@@ -193,17 +162,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/base-stroke-observation> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/base-stroke-observation> ;
          fhir:reference [ fhir:v "StructureDefinition/base-stroke-observation" ]
        ] ;
        fhir:name [ fhir:v "Base Profile for Stroke-Related Observations" ] ;
@@ -211,17 +177,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/brain-imaging-modality-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/brain-imaging-modality-vs> ;
          fhir:reference [ fhir:v "ValueSet/brain-imaging-modality-vs" ]
        ] ;
        fhir:name [ fhir:v "Brain Imaging Modality ValueSet" ] ;
@@ -229,17 +192,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/brain-imaging-type-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/brain-imaging-type-cs> ;
          fhir:reference [ fhir:v "CodeSystem/brain-imaging-type-cs" ]
        ] ;
        fhir:name [ fhir:v "Brain Imaging Type Code System" ] ;
@@ -247,17 +207,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/carotid-imaging-modality-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/carotid-imaging-modality-vs> ;
          fhir:reference [ fhir:v "ValueSet/carotid-imaging-modality-vs" ]
        ] ;
        fhir:name [ fhir:v "Carotid Arteries Imaging Modality ValueSet" ] ;
@@ -265,17 +222,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/discharge-dept-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/discharge-dept-cs> ;
          fhir:reference [ fhir:v "CodeSystem/discharge-dept-cs" ]
        ] ;
        fhir:name [ fhir:v "Discharge Department/Service Code System" ] ;
@@ -283,17 +237,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/discharge-department-service-ext> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/discharge-department-service-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/discharge-department-service-ext" ]
        ] ;
        fhir:name [ fhir:v "Discharge Department/Service Extension" ] ;
@@ -301,17 +252,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/discharge-dept-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/discharge-dept-vs> ;
          fhir:reference [ fhir:v "ValueSet/discharge-dept-vs" ]
        ] ;
        fhir:name [ fhir:v "Discharge Department/Service ValueSet" ] ;
@@ -319,17 +267,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/discharge-destination-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/discharge-destination-vs> ;
          fhir:reference [ fhir:v "ValueSet/discharge-destination-vs" ]
        ] ;
        fhir:name [ fhir:v "Discharge Destination ValueSet" ] ;
@@ -337,17 +282,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/discharge-medication-request-profile> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/discharge-medication-request-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/discharge-medication-request-profile" ]
        ] ;
        fhir:name [ fhir:v "Discharge Medication Request Profile" ] ;
@@ -355,38 +297,32 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "MedicationRequest"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/MedicationRequest/discharge-medication-request-001> ;
+         fhir:link <https://alvumu.github.io/MedicationRequest/discharge-medication-request-001> ;
          fhir:reference [ fhir:v "MedicationRequest/discharge-medication-request-001" ]
        ] ;
        fhir:name [ fhir:v "DischargeMedicationRequest" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/discharge-medication-request-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/discharge-medication-request-profile>
+         fhir:link <http://testSK.org/StructureDefinition/discharge-medication-request-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Organization"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Organization/ExampleStrokeOrganization> ;
+         fhir:link <https://alvumu.github.io/Organization/ExampleStrokeOrganization> ;
          fhir:reference [ fhir:v "Organization/ExampleStrokeOrganization" ]
        ] ;
        fhir:name [ fhir:v "Example Stroke Registry Organization" ] ;
@@ -394,21 +330,18 @@
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/stroke-registry-organization-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/stroke-registry-organization-profile>
+         fhir:link <http://testSK.org/StructureDefinition/stroke-registry-organization-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/first-hospital-ext> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/first-hospital-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/first-hospital-ext" ]
        ] ;
        fhir:name [ fhir:v "First Hospital Extension" ] ;
@@ -416,38 +349,32 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Observation"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Observation/FunctionalScoreObservationExample> ;
+         fhir:link <https://alvumu.github.io/Observation/FunctionalScoreObservationExample> ;
          fhir:reference [ fhir:v "Observation/FunctionalScoreObservationExample" ]
        ] ;
        fhir:name [ fhir:v "FunctionalScoreObservationExample" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/functional-score-observation-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/functional-score-observation-profile>
+         fhir:link <http://testSK.org/StructureDefinition/functional-score-observation-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/gender-snomed-ext> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/gender-snomed-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/gender-snomed-ext" ]
        ] ;
        fhir:name [ fhir:v "Gender (SNOMED CT)" ] ;
@@ -455,17 +382,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/vs-gender-snomed> ;
+         fhir:link <https://alvumu.github.io/ValueSet/vs-gender-snomed> ;
          fhir:reference [ fhir:v "ValueSet/vs-gender-snomed" ]
        ] ;
        fhir:name [ fhir:v "Gender (SNOMED CT)" ] ;
@@ -473,17 +397,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/hemorrhagic-stroke-bleeding-reason-cs> ;
          fhir:reference [ fhir:v "CodeSystem/hemorrhagic-stroke-bleeding-reason-cs" ]
        ] ;
        fhir:name [ fhir:v "Hemorrhagic Stroke Bleeding Reason Code System" ] ;
@@ -491,17 +412,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/hemorrhagic-stroke-bleeding-reason-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/hemorrhagic-stroke-bleeding-reason-vs> ;
          fhir:reference [ fhir:v "ValueSet/hemorrhagic-stroke-bleeding-reason-vs" ]
        ] ;
        fhir:name [ fhir:v "Hemorrhagic Stroke Bleeding Reason ValueSet" ] ;
@@ -509,17 +427,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/hemorrhagic-stroke-bleeding-reason-ext" ]
        ] ;
        fhir:name [ fhir:v "Hemorrhagic Stroke – Bleeding Reason" ] ;
@@ -527,17 +442,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/stroke-arrival-mode-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/stroke-arrival-mode-cs> ;
          fhir:reference [ fhir:v "CodeSystem/stroke-arrival-mode-cs" ]
        ] ;
        fhir:name [ fhir:v "Initial Care Intensity Code System" ] ;
@@ -545,17 +457,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/initial-care-intensity-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/initial-care-intensity-cs> ;
          fhir:reference [ fhir:v "CodeSystem/initial-care-intensity-cs" ]
        ] ;
        fhir:name [ fhir:v "Initial Care Intensity Code System" ] ;
@@ -563,17 +472,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/initial-care-intensity-ext> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/initial-care-intensity-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/initial-care-intensity-ext" ]
        ] ;
        fhir:name [ fhir:v "Initial Care Intensity Extension" ] ;
@@ -581,17 +487,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/initial-care-intensity-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/initial-care-intensity-vs> ;
          fhir:reference [ fhir:v "ValueSet/initial-care-intensity-vs" ]
        ] ;
        fhir:name [ fhir:v "Initial Care Intensity ValueSet" ] ;
@@ -599,17 +502,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/ischemic-stroke-etiology-ext> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/ischemic-stroke-etiology-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/ischemic-stroke-etiology-ext" ]
        ] ;
        fhir:name [ fhir:v "Ischemic Stroke – Etiology" ] ;
@@ -617,17 +517,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/medication-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/medication-cs> ;
          fhir:reference [ fhir:v "CodeSystem/medication-cs" ]
        ] ;
        fhir:name [ fhir:v "Medications CodeSystem" ] ;
@@ -635,17 +532,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/medication-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/medication-vs> ;
          fhir:reference [ fhir:v "ValueSet/medication-vs" ]
        ] ;
        fhir:name [ fhir:v "Medications ValueSet" ] ;
@@ -653,17 +547,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/mrs-score-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/mrs-score-cs> ;
          fhir:reference [ fhir:v "CodeSystem/mrs-score-cs" ]
        ] ;
        fhir:name [ fhir:v "modified Rankin Scale (mRS) Score Code System" ] ;
@@ -671,17 +562,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/mrs-score-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/mrs-score-vs> ;
          fhir:reference [ fhir:v "ValueSet/mrs-score-vs" ]
        ] ;
        fhir:name [ fhir:v "modified Rankin Scale (mRS) Score ValueSet" ] ;
@@ -689,17 +577,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/mtici-score-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/mtici-score-cs> ;
          fhir:reference [ fhir:v "CodeSystem/mtici-score-cs" ]
        ] ;
        fhir:name [ fhir:v "MTICI Score Code System" ] ;
@@ -707,17 +592,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/mtici-code-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/mtici-code-cs> ;
          fhir:reference [ fhir:v "CodeSystem/mtici-code-cs" ]
        ] ;
        fhir:name [ fhir:v "mTICI Score Codes CodeSystem" ] ;
@@ -725,17 +607,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/mtici-score-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/mtici-score-vs> ;
          fhir:reference [ fhir:v "ValueSet/mtici-score-vs" ]
        ] ;
        fhir:name [ fhir:v "MTICI Score ValueSet" ] ;
@@ -743,17 +622,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/observation-timing-context-ext> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/observation-timing-context-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/observation-timing-context-ext" ]
        ] ;
        fhir:name [ fhir:v "Observation Timing Context Extension" ] ;
@@ -761,17 +637,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/patient-age-gender-snomed-profile> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/patient-age-gender-snomed-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/patient-age-gender-snomed-profile" ]
        ] ;
        fhir:name [ fhir:v "Patient with SNOMED Gender and Age (extensions)" ] ;
@@ -779,55 +652,46 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Patient"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Patient/PatientAgeGenderSnomedExample> ;
+         fhir:link <https://alvumu.github.io/Patient/PatientAgeGenderSnomedExample> ;
          fhir:reference [ fhir:v "Patient/PatientAgeGenderSnomedExample" ]
        ] ;
        fhir:name [ fhir:v "PatientAgeGenderSnomedExample" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile>
+         fhir:link <http://testSK.org/StructureDefinition/patient-age-gender-snomed-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Patient"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Patient/example-patient> ;
+         fhir:link <https://alvumu.github.io/Patient/example-patient> ;
          fhir:reference [ fhir:v "Patient/example-patient" ]
        ] ;
        fhir:name [ fhir:v "PatientExample" ] ;
        fhir:isExample [ fhir:v true ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/perforation-procedures-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/perforation-procedures-vs> ;
          fhir:reference [ fhir:v "ValueSet/perforation-procedures-vs" ]
        ] ;
        fhir:name [ fhir:v "Perforation Procedures ValueSet" ] ;
@@ -835,17 +699,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/prior-medication-statement-profile> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/prior-medication-statement-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/prior-medication-statement-profile" ]
        ] ;
        fhir:name [ fhir:v "Prior Medication Statement Profile (R5)" ] ;
@@ -853,38 +714,32 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "MedicationStatement"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/MedicationStatement/PriorMedicationStatementExample> ;
+         fhir:link <https://alvumu.github.io/MedicationStatement/PriorMedicationStatementExample> ;
          fhir:reference [ fhir:v "MedicationStatement/PriorMedicationStatementExample" ]
        ] ;
        fhir:name [ fhir:v "PriorMedicationStatementExample" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/prior-medication-statement-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/prior-medication-statement-profile>
+         fhir:link <http://testSK.org/StructureDefinition/prior-medication-statement-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/procedure-timing-context-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/procedure-timing-context-cs> ;
          fhir:reference [ fhir:v "CodeSystem/procedure-timing-context-cs" ]
        ] ;
        fhir:name [ fhir:v "Procedure Timing Context Code System" ] ;
@@ -892,17 +747,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/procedure-timing-context-ext> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/procedure-timing-context-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/procedure-timing-context-ext" ]
        ] ;
        fhir:name [ fhir:v "Procedure Timing Context Extension" ] ;
@@ -910,17 +762,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/procedure-timing-context-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/procedure-timing-context-vs> ;
          fhir:reference [ fhir:v "ValueSet/procedure-timing-context-vs" ]
        ] ;
        fhir:name [ fhir:v "Procedure Timing Context ValueSet" ] ;
@@ -928,17 +777,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/required-post-acute-care-ext> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/required-post-acute-care-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/required-post-acute-care-ext" ]
        ] ;
        fhir:name [ fhir:v "Required Post-Acute Care Extension" ] ;
@@ -946,17 +792,29 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://alvumu.github.io/CodeSystem/stroke-risk-factor-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/stroke-risk-factor-cs" ]
+       ] ;
+       fhir:name [ fhir:v "RES-Q Stroke Risk Factor Code System" ] ;
+       fhir:description [ fhir:v "Locally governed RES-Q concepts used when the registry assertion is more specific than an available standard terminology concept." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/specific-finding-codes-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/specific-finding-codes-vs> ;
          fhir:reference [ fhir:v "ValueSet/specific-finding-codes-vs" ]
        ] ;
        fhir:name [ fhir:v "Specific Stroke Finding Codes ValueSet" ] ;
@@ -964,17 +822,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/specific-finding-observation-profile> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/specific-finding-observation-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/specific-finding-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Specific Stroke Finding Observation Profile (R5)" ] ;
@@ -982,59 +837,50 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Observation"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Observation/SpecificFindingObservationExample> ;
+         fhir:link <https://alvumu.github.io/Observation/SpecificFindingObservationExample> ;
          fhir:reference [ fhir:v "Observation/SpecificFindingObservationExample" ]
        ] ;
        fhir:name [ fhir:v "SpecificFindingObservationExample" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/specific-finding-observation-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/specific-finding-observation-profile>
+         fhir:link <http://testSK.org/StructureDefinition/specific-finding-observation-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Observation"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Observation/SpecificFindingObservationExampleMTICI> ;
+         fhir:link <https://alvumu.github.io/Observation/SpecificFindingObservationExampleMTICI> ;
          fhir:reference [ fhir:v "Observation/SpecificFindingObservationExampleMTICI" ]
        ] ;
        fhir:name [ fhir:v "SpecificFindingObservationExampleMTICI" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/specific-finding-observation-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/specific-finding-observation-profile>
+         fhir:link <http://testSK.org/StructureDefinition/specific-finding-observation-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/stroke-arrival-mode-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/stroke-arrival-mode-vs> ;
          fhir:reference [ fhir:v "ValueSet/stroke-arrival-mode-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Arrival Mode ValueSet" ] ;
@@ -1042,17 +888,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/stroke-brain-imaging-procedure-profile> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-brain-imaging-procedure-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/stroke-brain-imaging-procedure-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Brain Imaging Procedure Profile (R5)" ] ;
@@ -1060,17 +903,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/stroke-carotid-imaging-procedure-profile> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-carotid-imaging-procedure-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/stroke-carotid-imaging-procedure-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Carotid Imaging Procedure Profile (R5)" ] ;
@@ -1078,17 +918,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/stroke-circumstance-codes-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/stroke-circumstance-codes-cs> ;
          fhir:reference [ fhir:v "CodeSystem/stroke-circumstance-codes-cs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Circumstance Codes CodeSystem" ] ;
@@ -1096,17 +933,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/stroke-circumstance-codes-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/stroke-circumstance-codes-vs> ;
          fhir:reference [ fhir:v "ValueSet/stroke-circumstance-codes-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Circumstance Codes ValueSet" ] ;
@@ -1114,17 +948,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/stroke-circumstance-observation-profile> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-circumstance-observation-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/stroke-circumstance-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Circumstance Observation Profile (R5)" ] ;
@@ -1132,17 +963,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/stroke-diagnosis-condition-profile> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-diagnosis-condition-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/stroke-diagnosis-condition-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Diagnosis Condition Profile" ] ;
@@ -1150,17 +978,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/stroke-diagnosis-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/stroke-diagnosis-vs> ;
          fhir:reference [ fhir:v "ValueSet/stroke-diagnosis-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Diagnosis ValueSet" ] ;
@@ -1168,17 +993,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/stroke-discharge-destination-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/stroke-discharge-destination-cs> ;
          fhir:reference [ fhir:v "CodeSystem/stroke-discharge-destination-cs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Discharge Destination Code System" ] ;
@@ -1186,17 +1008,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/stroke-discharge-destination-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/stroke-discharge-destination-vs> ;
          fhir:reference [ fhir:v "ValueSet/stroke-discharge-destination-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Discharge Destination ValueSet" ] ;
@@ -1204,17 +1023,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/stroke-encounter-profile> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-encounter-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/stroke-encounter-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Encounter Profile" ] ;
@@ -1222,17 +1038,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/stroke-etiology-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/stroke-etiology-cs> ;
          fhir:reference [ fhir:v "CodeSystem/stroke-etiology-cs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Etiology Code System" ] ;
@@ -1240,17 +1053,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/stroke-etiology-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/stroke-etiology-vs> ;
          fhir:reference [ fhir:v "ValueSet/stroke-etiology-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Etiology ValueSet" ] ;
@@ -1258,17 +1068,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/functional-score-codes-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/functional-score-codes-vs> ;
          fhir:reference [ fhir:v "ValueSet/functional-score-codes-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Functional Score Codes ValueSet" ] ;
@@ -1276,17 +1083,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/functional-score-observation-profile> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/functional-score-observation-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/functional-score-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Functional Score Observation Profile (R5, Timing Ext)" ] ;
@@ -1294,17 +1098,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/onset-date-ext> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/onset-date-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/onset-date-ext" ]
        ] ;
        fhir:name [ fhir:v "Stroke Onset Date" ] ;
@@ -1312,17 +1113,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/onset-time-ext> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/onset-time-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/onset-time-ext" ]
        ] ;
        fhir:name [ fhir:v "Stroke Onset Time" ] ;
@@ -1330,17 +1128,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/stroke-proc-not-done-reason-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/stroke-proc-not-done-reason-cs> ;
          fhir:reference [ fhir:v "CodeSystem/stroke-proc-not-done-reason-cs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Procedure Not Done Reason Code System" ] ;
@@ -1348,17 +1143,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/stroke-proc-not-done-reason-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/stroke-proc-not-done-reason-vs> ;
          fhir:reference [ fhir:v "ValueSet/stroke-proc-not-done-reason-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Procedure Not Done Reason ValueSet" ] ;
@@ -1366,17 +1158,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/stroke-registry-organization-profile> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-registry-organization-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/stroke-registry-organization-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Registry Organization Profile" ] ;
@@ -1384,35 +1173,29 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/stroke-risk-factor-condition-profile> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-risk-factor-condition-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/stroke-risk-factor-condition-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Risk Factor Condition Profile" ] ;
-       fhir:description [ fhir:v "Defines a Condition profile for pre-existing or concurrent conditions that increase stroke risk (e.g., atrial fibrillation/flutter, diabetes, hypertension, coronary disease). The profile fixes category to problem-list-item, binds code (required) to StrokeRiskFactorVS, and supports onset[x] and recordedDate to document chronology and longitudinal tracking. Use this profile to maintain the problem list and to support risk assessment and CDS; do not use it to code the acute stroke event itself." ] ;
+       fhir:description [ fhir:v "Defines a Condition profile for pre-existing or concurrent conditions and registry-defined assertions that increase stroke risk (e.g., atrial fibrillation/flutter, diabetes, hypertension, coronary disease, smoking within the last 10 years). The profile fixes category to problem-list-item, binds code (required) to StrokeRiskFactorVS, and supports onset[x] and recordedDate to document chronology and longitudinal tracking. Use this profile to maintain the problem list and to support risk assessment and CDS; do not use it to code the acute stroke event itself." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/stroke-risk-factor-snomed-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/stroke-risk-factor-snomed-vs> ;
          fhir:reference [ fhir:v "ValueSet/stroke-risk-factor-snomed-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Risk Factor ValueSet" ] ;
@@ -1420,35 +1203,29 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/stroke-risk-factor-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/stroke-risk-factor-vs> ;
          fhir:reference [ fhir:v "ValueSet/stroke-risk-factor-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Risk Factor ValueSet" ] ;
-       fhir:description [ fhir:v "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status." ] ;
+       fhir:description [ fhir:v "Defines standard and locally governed conditions or assertions relevant to stroke risk, including an option for unknown status." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/stroke-swallow-procedure-profile> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-swallow-procedure-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/stroke-swallow-procedure-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Swallow Procedure Profile (R5)" ] ;
@@ -1456,17 +1233,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/stroke-mechanical-procedure-profile> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/stroke-mechanical-procedure-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/stroke-mechanical-procedure-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Thrombolysis Procedure Profile (R5)" ] ;
@@ -1474,17 +1248,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/timing-metric-codes-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/timing-metric-codes-vs> ;
          fhir:reference [ fhir:v "ValueSet/timing-metric-codes-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Timing Metric Codes ValueSet" ] ;
@@ -1492,17 +1263,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/timing-metric-codes-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/timing-metric-codes-cs> ;
          fhir:reference [ fhir:v "CodeSystem/timing-metric-codes-cs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Timing Metric Codes ValueSet" ] ;
@@ -1510,17 +1278,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/timing-metric-observation-profile> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/timing-metric-observation-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/timing-metric-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Timing Metric Observation Profile (R5)" ] ;
@@ -1528,17 +1293,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/vital-sign-codes-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/vital-sign-codes-vs> ;
          fhir:reference [ fhir:v "ValueSet/vital-sign-codes-vs" ]
        ] ;
        fhir:name [ fhir:v "Stroke Vital Sign Codes ValueSet" ] ;
@@ -1546,17 +1308,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/vital-sign-observation-profile> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/vital-sign-observation-profile> ;
          fhir:reference [ fhir:v "StructureDefinition/vital-sign-observation-profile" ]
        ] ;
        fhir:name [ fhir:v "Stroke Vital Sign Observation Profile (R5)" ] ;
@@ -1564,227 +1323,194 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Procedure"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Procedure/StrokeBrainImagingExample> ;
+         fhir:link <https://alvumu.github.io/Procedure/StrokeBrainImagingExample> ;
          fhir:reference [ fhir:v "Procedure/StrokeBrainImagingExample" ]
        ] ;
        fhir:name [ fhir:v "StrokeBrainImagingExample" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/stroke-brain-imaging-procedure-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/stroke-brain-imaging-procedure-profile>
+         fhir:link <http://testSK.org/StructureDefinition/stroke-brain-imaging-procedure-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Procedure"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Procedure/StrokeCarotidImagingExample> ;
+         fhir:link <https://alvumu.github.io/Procedure/StrokeCarotidImagingExample> ;
          fhir:reference [ fhir:v "Procedure/StrokeCarotidImagingExample" ]
        ] ;
        fhir:name [ fhir:v "StrokeCarotidImagingExample" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/stroke-carotid-imaging-procedure-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/stroke-carotid-imaging-procedure-profile>
+         fhir:link <http://testSK.org/StructureDefinition/stroke-carotid-imaging-procedure-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Observation"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Observation/StrokeCircumstanceObservationExampleWakeUp> ;
+         fhir:link <https://alvumu.github.io/Observation/StrokeCircumstanceObservationExampleWakeUp> ;
          fhir:reference [ fhir:v "Observation/StrokeCircumstanceObservationExampleWakeUp" ]
        ] ;
        fhir:name [ fhir:v "StrokeCircumstanceObservationExampleWakeUp" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile>
+         fhir:link <http://testSK.org/StructureDefinition/stroke-circumstance-observation-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Condition"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Condition/StrokeDiagnosisConditionAFib> ;
+         fhir:link <https://alvumu.github.io/Condition/StrokeDiagnosisConditionAFib> ;
          fhir:reference [ fhir:v "Condition/StrokeDiagnosisConditionAFib" ]
        ] ;
        fhir:name [ fhir:v "StrokeDiagnosisConditionAFib" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile>
+         fhir:link <http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Condition"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Condition/StrokeDiagnosisConditionAFlutter> ;
+         fhir:link <https://alvumu.github.io/Condition/StrokeDiagnosisConditionAFlutter> ;
          fhir:reference [ fhir:v "Condition/StrokeDiagnosisConditionAFlutter" ]
        ] ;
        fhir:name [ fhir:v "StrokeDiagnosisConditionAFlutter" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile>
+         fhir:link <http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Condition"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Condition/StrokeDiagnosisConditionExample> ;
+         fhir:link <https://alvumu.github.io/Condition/StrokeDiagnosisConditionExample> ;
          fhir:reference [ fhir:v "Condition/StrokeDiagnosisConditionExample" ]
        ] ;
        fhir:name [ fhir:v "StrokeDiagnosisConditionExample" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/stroke-diagnosis-condition-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/stroke-diagnosis-condition-profile>
+         fhir:link <http://testSK.org/StructureDefinition/stroke-diagnosis-condition-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Encounter"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Encounter/StrokeEncounterExample> ;
+         fhir:link <https://alvumu.github.io/Encounter/StrokeEncounterExample> ;
          fhir:reference [ fhir:v "Encounter/StrokeEncounterExample" ]
        ] ;
        fhir:name [ fhir:v "StrokeEncounterExample" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/stroke-encounter-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/stroke-encounter-profile>
+         fhir:link <http://testSK.org/StructureDefinition/stroke-encounter-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Condition"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Condition/StrokeRiskFactorConditionExample> ;
+         fhir:link <https://alvumu.github.io/Condition/StrokeRiskFactorConditionExample> ;
          fhir:reference [ fhir:v "Condition/StrokeRiskFactorConditionExample" ]
        ] ;
        fhir:name [ fhir:v "StrokeRiskFactorConditionExample" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile>
+         fhir:link <http://testSK.org/StructureDefinition/stroke-risk-factor-condition-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Procedure"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Procedure/StrokeSwallowingExample> ;
+         fhir:link <https://alvumu.github.io/Procedure/StrokeSwallowingExample> ;
          fhir:reference [ fhir:v "Procedure/StrokeSwallowingExample" ]
        ] ;
        fhir:name [ fhir:v "StrokeSwallowingExample" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/stroke-swallow-procedure-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/stroke-swallow-procedure-profile>
+         fhir:link <http://testSK.org/StructureDefinition/stroke-swallow-procedure-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Procedure"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Procedure/StrokeThrombolysisExample> ;
+         fhir:link <https://alvumu.github.io/Procedure/StrokeThrombolysisExample> ;
          fhir:reference [ fhir:v "Procedure/StrokeThrombolysisExample" ]
        ] ;
        fhir:name [ fhir:v "StrokeThrombolysisExample" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile>
+         fhir:link <http://testSK.org/StructureDefinition/stroke-mechanical-procedure-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/swallow-procedures-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/swallow-procedures-cs> ;
          fhir:reference [ fhir:v "CodeSystem/swallow-procedures-cs" ]
        ] ;
        fhir:name [ fhir:v "Swallow Procedures Code System" ] ;
@@ -1792,17 +1518,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/swallow-procedures-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/swallow-procedures-vs> ;
          fhir:reference [ fhir:v "ValueSet/swallow-procedures-vs" ]
        ] ;
        fhir:name [ fhir:v "Swallow Procedures ValueSet" ] ;
@@ -1810,17 +1533,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/StructureDefinition/swallowing-screening-timing-category-ext> ;
+         fhir:link <https://alvumu.github.io/StructureDefinition/swallowing-screening-timing-category-ext> ;
          fhir:reference [ fhir:v "StructureDefinition/swallowing-screening-timing-category-ext" ]
        ] ;
        fhir:name [ fhir:v "Swallowing Screening Timing Category" ] ;
@@ -1828,17 +1548,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/swallow-screen-time-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/swallow-screen-time-cs> ;
          fhir:reference [ fhir:v "CodeSystem/swallow-screen-time-cs" ]
        ] ;
        fhir:name [ fhir:v "Swallowing Screening Timing Category Code System" ] ;
@@ -1846,17 +1563,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/swallowing-screening-timing-category-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/swallowing-screening-timing-category-vs> ;
          fhir:reference [ fhir:v "ValueSet/swallowing-screening-timing-category-vs" ]
        ] ;
        fhir:name [ fhir:v "Swallowing Screening Timing Category ValueSet" ] ;
@@ -1864,17 +1578,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/CodeSystem/thrombectomy-complication-cs> ;
+         fhir:link <https://alvumu.github.io/CodeSystem/thrombectomy-complication-cs> ;
          fhir:reference [ fhir:v "CodeSystem/thrombectomy-complication-cs" ]
        ] ;
        fhir:name [ fhir:v "Thrombectomy Complication Code System" ] ;
@@ -1882,17 +1593,14 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/ValueSet/thrombectomy-complication-vs> ;
+         fhir:link <https://alvumu.github.io/ValueSet/thrombectomy-complication-vs> ;
          fhir:reference [ fhir:v "ValueSet/thrombectomy-complication-vs" ]
        ] ;
        fhir:name [ fhir:v "Thrombectomy Complication ValueSet" ] ;
@@ -1900,565 +1608,386 @@
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Observation"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Observation/TimingMetricObservationExample> ;
+         fhir:link <https://alvumu.github.io/Observation/TimingMetricObservationExample> ;
          fhir:reference [ fhir:v "Observation/TimingMetricObservationExample" ]
        ] ;
        fhir:name [ fhir:v "TimingMetricObservationExample" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/timing-metric-observation-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/timing-metric-observation-profile>
+         fhir:link <http://testSK.org/StructureDefinition/timing-metric-observation-profile>
        ] )
      ] [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:String ;
+           a fhir:string ;
            fhir:v "Observation"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://alvumu.github.io/Observation/VitalSignObservationExample> ;
+         fhir:link <https://alvumu.github.io/Observation/VitalSignObservationExample> ;
          fhir:reference [ fhir:v "Observation/VitalSignObservationExample" ]
        ] ;
        fhir:name [ fhir:v "VitalSignObservationExample" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://testSK.org/StructureDefinition/vital-sign-observation-profile"^^xsd:anyURI ;
-         fhir:l <http://testSK.org/StructureDefinition/vital-sign-observation-profile>
+         fhir:link <http://testSK.org/StructureDefinition/vital-sign-observation-profile>
        ] )
      ] ) ;
      fhir:page [
        fhir:source [
-         a fhir:Url ;
-         fhir:v "toc.html"^^xsd:anyURI ;
-         fhir:l fhir:toc.html
+         a fhir:url ;
+         fhir:v "toc.html"^^xsd:anyURI
        ] ;
-       fhir:name [
-         fhir:v "toc.html"^^xsd:anyURI ;
-         fhir:l fhir:toc.html
-       ] ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
        fhir:title [ fhir:v "Table of Contents" ] ;
        fhir:generation [ fhir:v "html" ] ;
        fhir:page ( [
          fhir:source [
-           a fhir:Url ;
-           fhir:v "index.html"^^xsd:anyURI ;
-           fhir:l fhir:index.html
+           a fhir:url ;
+           fhir:v "index.html"^^xsd:anyURI
          ] ;
-         fhir:name [
-           fhir:v "index.html"^^xsd:anyURI ;
-           fhir:l fhir:index.html
-         ] ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Index" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:source [
-           a fhir:Url ;
-           fhir:v "conformance.html"^^xsd:anyURI ;
-           fhir:l fhir:conformance.html
+           a fhir:url ;
+           fhir:v "conformance.html"^^xsd:anyURI
          ] ;
-         fhir:name [
-           fhir:v "conformance.html"^^xsd:anyURI ;
-           fhir:l fhir:conformance.html
-         ] ;
+         fhir:name [ fhir:v "conformance.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Conformance" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:source [
-           a fhir:Url ;
-           fhir:v "guidance.html"^^xsd:anyURI ;
-           fhir:l fhir:guidance.html
+           a fhir:url ;
+           fhir:v "guidance.html"^^xsd:anyURI
          ] ;
-         fhir:name [
-           fhir:v "guidance.html"^^xsd:anyURI ;
-           fhir:l fhir:guidance.html
-         ] ;
+         fhir:name [ fhir:v "guidance.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Guidance" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:source [
-           a fhir:Url ;
-           fhir:v "downloads.html"^^xsd:anyURI ;
-           fhir:l fhir:downloads.html
+           a fhir:url ;
+           fhir:v "downloads.html"^^xsd:anyURI
          ] ;
-         fhir:name [
-           fhir:v "downloads.html"^^xsd:anyURI ;
-           fhir:l fhir:downloads.html
-         ] ;
+         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Downloads" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:source [
-           a fhir:Url ;
-           fhir:v "history.html"^^xsd:anyURI ;
-           fhir:l fhir:history.html
+           a fhir:url ;
+           fhir:v "history.html"^^xsd:anyURI
          ] ;
-         fhir:name [
-           fhir:v "history.html"^^xsd:anyURI ;
-           fhir:l fhir:history.html
-         ] ;
+         fhir:name [ fhir:v "history.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "History" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:source [
-           a fhir:Url ;
-           fhir:v "profiles.html"^^xsd:anyURI ;
-           fhir:l fhir:profiles.html
+           a fhir:url ;
+           fhir:v "profiles.html"^^xsd:anyURI
          ] ;
-         fhir:name [
-           fhir:v "profiles.html"^^xsd:anyURI ;
-           fhir:l fhir:profiles.html
-         ] ;
+         fhir:name [ fhir:v "profiles.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Profiles" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:source [
-           a fhir:Url ;
-           fhir:v "codesystems.html"^^xsd:anyURI ;
-           fhir:l fhir:codesystems.html
+           a fhir:url ;
+           fhir:v "codesystems.html"^^xsd:anyURI
          ] ;
-         fhir:name [
-           fhir:v "codesystems.html"^^xsd:anyURI ;
-           fhir:l fhir:codesystems.html
-         ] ;
+         fhir:name [ fhir:v "codesystems.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Codesystems" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:source [
-           a fhir:Url ;
-           fhir:v "valuesets.html"^^xsd:anyURI ;
-           fhir:l fhir:valuesets.html
+           a fhir:url ;
+           fhir:v "valuesets.html"^^xsd:anyURI
          ] ;
-         fhir:name [
-           fhir:v "valuesets.html"^^xsd:anyURI ;
-           fhir:l fhir:valuesets.html
-         ] ;
+         fhir:name [ fhir:v "valuesets.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Valuesets" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:source [
-           a fhir:Url ;
-           fhir:v "examples.html"^^xsd:anyURI ;
-           fhir:l fhir:examples.html
+           a fhir:url ;
+           fhir:v "examples.html"^^xsd:anyURI
          ] ;
-         fhir:name [
-           fhir:v "examples.html"^^xsd:anyURI ;
-           fhir:l fhir:examples.html
-         ] ;
+         fhir:name [ fhir:v "examples.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Examples" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:source [
-           a fhir:Url ;
-           fhir:v "extensions.html"^^xsd:anyURI ;
-           fhir:l fhir:extensions.html
+           a fhir:url ;
+           fhir:v "extensions.html"^^xsd:anyURI
          ] ;
-         fhir:name [
-           fhir:v "extensions.html"^^xsd:anyURI ;
-           fhir:l fhir:extensions.html
-         ] ;
+         fhir:name [ fhir:v "extensions.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Extensions" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;
      fhir:parameter ( [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "copyrightyear" ]
        ] ;
        fhir:value [ fhir:v "2025+" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "releaselabel" ]
        ] ;
        fhir:value [ fhir:v "5" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "broken-links" ]
        ] ;
        fhir:value [ fhir:v "warning" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "check-urls" ]
        ] ;
        fhir:value [ fhir:v "true" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "excludettl" ]
        ] ;
        fhir:value [ fhir:v "true" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "autoload-resources" ]
        ] ;
        fhir:value [ fhir:v "true" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/guide-parameter-code>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-resource" ]
        ] ;
        fhir:value [ fhir:v "input/capabilities" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/guide-parameter-code>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-resource" ]
        ] ;
        fhir:value [ fhir:v "input/examples" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/guide-parameter-code>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-resource" ]
        ] ;
        fhir:value [ fhir:v "input/extensions" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/guide-parameter-code>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-resource" ]
        ] ;
        fhir:value [ fhir:v "input/models" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/guide-parameter-code>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-resource" ]
        ] ;
        fhir:value [ fhir:v "input/operations" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/guide-parameter-code>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-resource" ]
        ] ;
        fhir:value [ fhir:v "input/profiles" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/guide-parameter-code>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-resource" ]
        ] ;
        fhir:value [ fhir:v "input/resources" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/guide-parameter-code>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-resource" ]
        ] ;
        fhir:value [ fhir:v "input/vocabulary" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/guide-parameter-code>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-resource" ]
        ] ;
        fhir:value [ fhir:v "input/maps" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/guide-parameter-code>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-resource" ]
        ] ;
        fhir:value [ fhir:v "input/testing" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/guide-parameter-code>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-resource" ]
        ] ;
        fhir:value [ fhir:v "input/history" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/guide-parameter-code>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-resource" ]
        ] ;
        fhir:value [ fhir:v "fsh-generated/resources" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/guide-parameter-code>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-pages" ]
        ] ;
        fhir:value [ fhir:v "template/config" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/guide-parameter-code>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-pages" ]
        ] ;
        fhir:value [ fhir:v "input/images" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-liquid" ]
        ] ;
        fhir:value [ fhir:v "template/liquid" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-liquid" ]
        ] ;
        fhir:value [ fhir:v "input/liquid" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-qa" ]
        ] ;
        fhir:value [ fhir:v "temp/qa" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-temp" ]
        ] ;
        fhir:value [ fhir:v "temp/pages" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-output" ]
        ] ;
        fhir:value [ fhir:v "output" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/guide-parameter-code>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-tx-cache" ]
        ] ;
        fhir:value [ fhir:v "input-cache/txcache" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-suppressed-warnings" ]
        ] ;
        fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "path-history" ]
        ] ;
        fhir:value [ fhir:v "history.html" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "template-html" ]
        ] ;
        fhir:value [ fhir:v "template-page.html" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "template-md" ]
        ] ;
        fhir:value [ fhir:v "template-page-md.html" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "apply-contact" ]
        ] ;
        fhir:value [ fhir:v "true" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "apply-context" ]
        ] ;
        fhir:value [ fhir:v "true" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "apply-copyright" ]
        ] ;
        fhir:value [ fhir:v "true" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "apply-jurisdiction" ]
        ] ;
        fhir:value [ fhir:v "true" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "apply-license" ]
        ] ;
        fhir:value [ fhir:v "true" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "apply-publisher" ]
        ] ;
        fhir:value [ fhir:v "true" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "apply-version" ]
        ] ;
        fhir:value [ fhir:v "true" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "apply-wg" ]
        ] ;
        fhir:value [ fhir:v "true" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "active-tables" ]
        ] ;
        fhir:value [ fhir:v "true" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "fmm-definition" ]
        ] ;
        fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "propagate-status" ]
        ] ;
        fhir:value [ fhir:v "true" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "excludelogbinaryformat" ]
        ] ;
        fhir:value [ fhir:v "true" ]
      ] [
        fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "tabbed-snapshots" ]
        ] ;
        fhir:value [ fhir:v "true" ]

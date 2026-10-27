@@ -27,19 +27,15 @@ Profile: [Specific Stroke Finding Observation Profile (R5)](StructureDefinition-
   "resourceType" : "Observation",
   "id" : "SpecificFindingObservationExampleMTICI",
   "meta" : {
-    "profile" : [
-      "http://testSK.org/StructureDefinition/specific-finding-observation-profile"
-    ]
+    "profile" : ["http://testSK.org/StructureDefinition/specific-finding-observation-profile"]
   },
   "status" : "final",
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "1156911000",
-        "display" : "mTICI Score Assessment"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1156911000",
+      "display" : "mTICI Score Assessment"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-patient"
@@ -48,13 +44,11 @@ Profile: [Specific Stroke Finding Observation Profile (R5)](StructureDefinition-
     "reference" : "Encounter/StrokeEncounterExample"
   },
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://testSK.org/CodeSystem/mtici-score-cs",
-        "code" : "3",
-        "display" : "Grade 3: Complete antegrade reperfusion of the previously occluded target artery ischemic territory, with absence of visualized occlusion in all distal branches"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://testSK.org/CodeSystem/mtici-score-cs",
+      "code" : "3",
+      "display" : "Grade 3: Complete antegrade reperfusion of the previously occluded target artery ischemic territory, with absence of visualized occlusion in all distal branches"
+    }]
   }
 }
 

@@ -20,7 +20,7 @@ To provide a standardized set of SNOMED CT concepts representing stroke-related 
 
  **References** 
 
-* Included into [StrokeRiskFactorValueSet](ValueSet-stroke-risk-factor-vs.md)
+* Included into [Stroke Risk Factor ValueSet](ValueSet-stroke-risk-factor-vs.md)
 
 ### Logical Definition (CLD)
 
@@ -57,73 +57,65 @@ To provide a standardized set of SNOMED CT concepts representing stroke-related 
   "experimental" : false,
   "date" : "2025-10-07",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke.",
   "immutable" : false,
   "purpose" : "To provide a standardized set of SNOMED CT concepts representing stroke-related risk factors for coding and validation.",
   "copyright" : "This value set includes SNOMED CT® content. SNOMED CT® is distributed by SNOMED International.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "5370000",
+        "display" : "Atrial flutter (disorder)"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "5370000",
-            "display" : "Atrial flutter (disorder)"
-          },
-          {
-            "code" : "49436004",
-            "display" : "Atrial fibrillation (disorder)"
-          },
-          {
-            "code" : "22298006",
-            "display" : "Myocardial infarction (disorder)"
-          },
-          {
-            "code" : "53741008",
-            "display" : "Coronary arteriosclerosis (disorder)"
-          },
-          {
-            "code" : "73211009",
-            "display" : "Diabetes mellitus (disorder)"
-          },
-          {
-            "code" : "55822004",
-            "display" : "Hyperlipidemia (disorder)"
-          },
-          {
-            "code" : "38341003",
-            "display" : "Hypertensive disorder, systemic arterial (disorder)"
-          },
-          {
-            "code" : "230706003",
-            "display" : "Hemorrhagic cerebral infarction (disorder)"
-          },
-          {
-            "code" : "266257000",
-            "display" : "Transient ischemic attack (disorder)"
-          },
-          {
-            "code" : "422504002",
-            "display" : "Ischemic stroke (disorder)"
-          },
-          {
-            "code" : "230690007",
-            "display" : "Cerebrovascular accident (disorder)"
-          }
-        ]
-      }
-    ]
+        "code" : "49436004",
+        "display" : "Atrial fibrillation (disorder)"
+      },
+      {
+        "code" : "22298006",
+        "display" : "Myocardial infarction (disorder)"
+      },
+      {
+        "code" : "53741008",
+        "display" : "Coronary arteriosclerosis (disorder)"
+      },
+      {
+        "code" : "73211009",
+        "display" : "Diabetes mellitus (disorder)"
+      },
+      {
+        "code" : "55822004",
+        "display" : "Hyperlipidemia (disorder)"
+      },
+      {
+        "code" : "38341003",
+        "display" : "Hypertensive disorder, systemic arterial (disorder)"
+      },
+      {
+        "code" : "230706003",
+        "display" : "Hemorrhagic cerebral infarction (disorder)"
+      },
+      {
+        "code" : "266257000",
+        "display" : "Transient ischemic attack (disorder)"
+      },
+      {
+        "code" : "422504002",
+        "display" : "Ischemic stroke (disorder)"
+      },
+      {
+        "code" : "230690007",
+        "display" : "Cerebrovascular accident (disorder)"
+      }]
+    }]
   }
 }
 

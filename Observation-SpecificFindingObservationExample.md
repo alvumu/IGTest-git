@@ -27,19 +27,15 @@ Profile: [Specific Stroke Finding Observation Profile (R5)](StructureDefinition-
   "resourceType" : "Observation",
   "id" : "SpecificFindingObservationExample",
   "meta" : {
-    "profile" : [
-      "http://testSK.org/StructureDefinition/specific-finding-observation-profile"
-    ]
+    "profile" : ["http://testSK.org/StructureDefinition/specific-finding-observation-profile"]
   },
   "status" : "final",
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "49436004",
-        "display" : "Atrial fibrillation (disorder)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "49436004",
+      "display" : "Atrial fibrillation (disorder)"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-patient"
@@ -48,13 +44,11 @@ Profile: [Specific Stroke Finding Observation Profile (R5)](StructureDefinition-
     "reference" : "Encounter/StrokeEncounterExample"
   },
   "valueCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "http://testSK.org/CodeSystem/afib-flutter-status-cs",
-        "code" : "detected",
-        "display" : "Detected"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://testSK.org/CodeSystem/afib-flutter-status-cs",
+      "code" : "detected",
+      "display" : "Detected"
+    }]
   }
 }
 

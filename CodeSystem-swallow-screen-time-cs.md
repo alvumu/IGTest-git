@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/swallow-screen-time-cs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:SwallowScreenTimeCS |
+| Active as of 2026-10-27 | *Computable Name*:SwallowScreenTimeCS |
 
  
 Temporal categories relative to stroke onset for swallowing screening. 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [SwallowingScreeningTimingCategoryVS](ValueSet-swallowing-screening-timing-category-vs.md)
+* [Swallowing Screening Timing Category ValueSet](ValueSet-swallowing-screening-timing-category-vs.md)
 
 
 
@@ -32,30 +32,24 @@ Temporal categories relative to stroke onset for swallowing screening.
   "title" : "Swallowing Screening Timing Category Code System",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Temporal categories relative to stroke onset for swallowing screening.",
   "caseSensitive" : false,
   "content" : "complete",
   "count" : 1,
-  "concept" : [
-    {
-      "code" : "T4H",
-      "display" : "Within 4 hours",
-      "definition" : "Screening performed within 4 hours of symptom onset."
-    }
-  ]
+  "concept" : [{
+    "code" : "T4H",
+    "display" : "Within 4 hours",
+    "definition" : "Screening performed within 4 hours of symptom onset."
+  }]
 }
 
 ```

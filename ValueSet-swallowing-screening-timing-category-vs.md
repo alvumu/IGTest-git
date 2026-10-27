@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/swallowing-screening-timing-category-vs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:SwallowingScreeningTimingCategoryVS |
+| Active as of 2026-10-27 | *Computable Name*:SwallowingScreeningTimingCategoryVS |
 
  
 Temporal categories relative to stroke onset for swallowing screening. 
@@ -50,39 +50,31 @@ Temporal categories relative to stroke onset for swallowing screening.
   "name" : "SwallowingScreeningTimingCategoryVS",
   "title" : "Swallowing Screening Timing Category ValueSet",
   "status" : "active",
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Temporal categories relative to stroke onset for swallowing screening.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://testSK.org/CodeSystem/swallow-screen-time-cs"
+    "include" : [{
+      "system" : "http://testSK.org/CodeSystem/swallow-screen-time-cs"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "281380002",
+        "display" : "24 hours post admission (qualifier value)"
       },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "281380002",
-            "display" : "24 hours post admission (qualifier value)"
-          },
-          {
-            "code" : "281381003",
-            "display" : "More than 24 hours after admission (qualifier value)"
-          }
-        ]
-      }
-    ]
+        "code" : "281381003",
+        "display" : "More than 24 hours after admission (qualifier value)"
+      }]
+    }]
   }
 }
 

@@ -27,33 +27,25 @@ Profile: [Stroke Brain Imaging Procedure Profile (R5)](StructureDefinition-strok
   "resourceType" : "Procedure",
   "id" : "StrokeBrainImagingExample",
   "meta" : {
-    "profile" : [
-      "http://testSK.org/StructureDefinition/stroke-brain-imaging-procedure-profile"
-    ]
+    "profile" : ["http://testSK.org/StructureDefinition/stroke-brain-imaging-procedure-profile"]
   },
-  "extension" : [
-    {
-      "url" : "http://testSK.org/StructureDefinition/procedure-timing-context-ext",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://testSK.org/CodeSystem/procedure-timing-context-cs",
-            "code" : "acute",
-            "display" : "Acute Phase (<24h)"
-          }
-        ]
-      }
+  "extension" : [{
+    "url" : "http://testSK.org/StructureDefinition/procedure-timing-context-ext",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://testSK.org/CodeSystem/procedure-timing-context-cs",
+        "code" : "acute",
+        "display" : "Acute Phase (<24h)"
+      }]
     }
-  ],
+  }],
   "status" : "completed",
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "419949007",
-        "display" : "Computed tomography angiography of intracranial artery with contrast (procedure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "419949007",
+      "display" : "Computed tomography angiography of intracranial artery with contrast (procedure)"
+    }]
   },
   "subject" : {
     "reference" : "Patient/example-patient"

@@ -57,49 +57,41 @@ To provide a consistent set of SNOMED CT concepts for coding definitive stroke-r
   "experimental" : false,
   "date" : "2025-10-07",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "SNOMED CT concepts representing final stroke-related diagnoses intended for use in Condition.code (and similar elements) within this IG. The scope covers ischemic stroke, intracerebral hemorrhage, subarachnoid hemorrhage, cerebral venous thrombosis, and transient ischemic attack (TIA). This value set is designed to support consistent capture, validation, analytics, and decision support. Implementers should expand against a terminology server using the appropriate SNOMED CT edition/version and preferred language(s) for display. Localizations or national derivatives MAY provide additional designations without altering the canonical definition. This value set is not intended for history-of, screening, or procedural concepts.",
   "immutable" : false,
   "purpose" : "To provide a consistent set of SNOMED CT concepts for coding definitive stroke-related diagnoses in this IG.",
   "copyright" : "This value set includes SNOMED CT® content. SNOMED CT® is distributed by SNOMED International.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "422504002",
+        "display" : "Ischemic stroke (disorder)"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "422504002",
-            "display" : "Ischemic stroke (disorder)"
-          },
-          {
-            "code" : "274100004",
-            "display" : "Cerebral hemorrhage (disorder)"
-          },
-          {
-            "code" : "266257000",
-            "display" : "Transient ischemic attack (disorder)"
-          },
-          {
-            "code" : "21454007",
-            "display" : "Subarachnoid intracranial hemorrhage (disorder)"
-          },
-          {
-            "code" : "95455008",
-            "display" : "Thrombosis of cerebral veins (disorder)"
-          }
-        ]
-      }
-    ]
+        "code" : "274100004",
+        "display" : "Cerebral hemorrhage (disorder)"
+      },
+      {
+        "code" : "266257000",
+        "display" : "Transient ischemic attack (disorder)"
+      },
+      {
+        "code" : "21454007",
+        "display" : "Subarachnoid intracranial hemorrhage (disorder)"
+      },
+      {
+        "code" : "95455008",
+        "display" : "Thrombosis of cerebral veins (disorder)"
+      }]
+    }]
   }
 }
 

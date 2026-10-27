@@ -53,37 +53,29 @@ ValueSet containing SNOMED CT codes representing a range of procedures used in t
   "experimental" : true,
   "date" : "2025-03-31",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "ValueSet containing SNOMED CT codes representing a range of procedures used in the evaluation and management of stroke patients.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "1290000005",
-            "display" : "Assessment using Gugging Swallowing Screen (procedure)"
-          },
-          {
-            "code" : "63913004",
-            "display" : "Tonography with water provocation (procedure)"
-          }
-        ]
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "1290000005",
+        "display" : "Assessment using Gugging Swallowing Screen (procedure)"
       },
       {
-        "system" : "http://testSK.org/CodeSystem/swallow-procedures-cs"
-      }
-    ]
+        "code" : "63913004",
+        "display" : "Tonography with water provocation (procedure)"
+      }]
+    },
+    {
+      "system" : "http://testSK.org/CodeSystem/swallow-procedures-cs"
+    }]
   }
 }
 

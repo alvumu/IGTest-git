@@ -53,34 +53,26 @@ ValueSet containing SNOMED CT codes representing a range of perforation procedur
   "experimental" : true,
   "date" : "2025-03-31",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "ValueSet containing SNOMED CT codes representing a range of perforation procedures.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "472191000119101",
+        "display" : "Thrombolysis of cerebral artery by intravenous infusion (procedure)"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "472191000119101",
-            "display" : "Thrombolysis of cerebral artery by intravenous infusion (procedure)"
-          },
-          {
-            "code" : "397046001",
-            "display" : "Thrombectomy of artery (procedure)"
-          }
-        ]
-      }
-    ]
+        "code" : "397046001",
+        "display" : "Thrombectomy of artery (procedure)"
+      }]
+    }]
   }
 }
 

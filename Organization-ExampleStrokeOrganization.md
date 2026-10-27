@@ -8,11 +8,13 @@
 
 Profile: [Stroke Registry Organization Profile](StructureDefinition-stroke-registry-organization-profile.md)
 
-**identifier**: `https://stroke.qualityregistry.org`/987654
+University Hospital of Boston (https://stroke.qualityregistry.org#987654)
 
-**active**: true
+-------
 
-**name**: University Hospital of Boston
+| | |
+| :--- | :--- |
+| Active: | true |
 
 
 
@@ -23,16 +25,12 @@ Profile: [Stroke Registry Organization Profile](StructureDefinition-stroke-regis
   "resourceType" : "Organization",
   "id" : "ExampleStrokeOrganization",
   "meta" : {
-    "profile" : [
-      "http://testSK.org/StructureDefinition/stroke-registry-organization-profile"
-    ]
+    "profile" : ["http://testSK.org/StructureDefinition/stroke-registry-organization-profile"]
   },
-  "identifier" : [
-    {
-      "system" : "https://stroke.qualityregistry.org",
-      "value" : "987654"
-    }
-  ],
+  "identifier" : [{
+    "system" : "https://stroke.qualityregistry.org",
+    "value" : "987654"
+  }],
   "active" : true,
   "name" : "University Hospital of Boston"
 }

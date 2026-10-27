@@ -34,31 +34,23 @@ Profile: [Discharge Medication Request Profile](StructureDefinition-discharge-me
   "resourceType" : "MedicationRequest",
   "id" : "discharge-medication-request-001",
   "meta" : {
-    "profile" : [
-      "http://testSK.org/StructureDefinition/discharge-medication-request-profile"
-    ]
+    "profile" : ["http://testSK.org/StructureDefinition/discharge-medication-request-profile"]
   },
   "status" : "active",
   "intent" : "order",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-admin-location",
-          "code" : "community"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-admin-location",
+      "code" : "community"
+    }]
+  }],
   "medication" : {
     "concept" : {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "372756006",
-          "display" : "Warfarin (substance)"
-        }
-      ]
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "372756006",
+        "display" : "Warfarin (substance)"
+      }]
     }
   },
   "subject" : {

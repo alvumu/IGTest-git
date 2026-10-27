@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/procedure-timing-context-cs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:ProcedureTimingContextCS |
+| Active as of 2026-10-27 | *Computable Name*:ProcedureTimingContextCS |
 
  
 Codes defining the timing phase of a procedure relative to the encounter start (e.g., acute vs. post-acute). 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [ProcedureTimingContextVS](ValueSet-procedure-timing-context-vs.md)
+* [Procedure Timing Context ValueSet](ValueSet-procedure-timing-context-vs.md)
 
 
 
@@ -32,40 +32,34 @@ Codes defining the timing phase of a procedure relative to the encounter start (
   "title" : "Procedure Timing Context Code System",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Codes defining the timing phase of a procedure relative to the encounter start (e.g., acute vs. post-acute).",
   "caseSensitive" : false,
   "content" : "complete",
   "count" : 3,
-  "concept" : [
-    {
-      "code" : "acute",
-      "display" : "Acute Phase (<24h)",
-      "definition" : "Procedure performed within 24 hours of encounter start time."
-    },
-    {
-      "code" : "post-acute",
-      "display" : "Post-Acute Phase (>=24h)",
-      "definition" : "Procedure performed 24 hours or more after encounter start time."
-    },
-    {
-      "code" : "unknown",
-      "display" : "Unknown/Not Applicable",
-      "definition" : "Timing relative to encounter start is unknown or not applicable."
-    }
-  ]
+  "concept" : [{
+    "code" : "acute",
+    "display" : "Acute Phase (<24h)",
+    "definition" : "Procedure performed within 24 hours of encounter start time."
+  },
+  {
+    "code" : "post-acute",
+    "display" : "Post-Acute Phase (>=24h)",
+    "definition" : "Procedure performed 24 hours or more after encounter start time."
+  },
+  {
+    "code" : "unknown",
+    "display" : "Unknown/Not Applicable",
+    "definition" : "Timing relative to encounter start is unknown or not applicable."
+  }]
 }
 
 ```

@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="stroke-risk-factor-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet stroke-risk-factor-vs</b></p><a name="stroke-risk-factor-vs"> </a><a name="hcstroke-risk-factor-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-stroke-risk-factor-snomed-vs.html">Stroke Risk Factor ValueSet</a></li><li>Import all the codes that are contained in <a href="http://tx.hl7europe.eu/r5/ValueSet/absent-or-unknown-problems-uv-ips">Absent or Unknown Problems - IPS</a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet stroke-risk-factor-vs</b></p><a name="stroke-risk-factor-vs"> </a><a name="hcstroke-risk-factor-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-stroke-risk-factor-snomed-vs.html">Stroke Risk Factor ValueSet</a></li><li>Include all codes defined in <a href="CodeSystem-stroke-risk-factor-cs.html"><code>http://qualityregistry.org/CodeSystem/stroke-risk-factor-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li><li>Import all the codes that are contained in <a href="http://tx.hl7europe.eu/r5/ValueSet/7-absent-or-unknown-problems-uv-ips">Absent or Unknown Problems - IPS</a></li></ul></div>
   </text>
   <url value="http://testSK.org/ValueSet/stroke-risk-factor-vs"/>
   <version value="0.1.0"/>
@@ -11,7 +11,7 @@
   <title value="Stroke Risk Factor ValueSet"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2025-10-07"/>
+  <date value="2026-10-27"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -20,13 +20,16 @@
       <value value="http://testSK.org/umu"/>
     </telecom>
   </contact>
-  <description value="Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status."/>
+  <description value="Defines standard and locally governed conditions or assertions relevant to stroke risk, including an option for unknown status."/>
   <immutable value="false"/>
-  <purpose value="To aggregate core stroke risk factors and unknown/absent problem concepts for comprehensive capture and validation."/>
-  <copyright value="This value set includes SNOMED CT® content and may include HL7 IPS value set content. SNOMED CT® is distributed by SNOMED International."/>
+  <purpose value="To aggregate core stroke risk factors, locally governed RES-Q assertions, and unknown/absent problem concepts for comprehensive capture and validation."/>
+  <copyright value="This value set includes SNOMED CT® content, locally governed RES-Q concepts, and may include HL7 IPS value set content. SNOMED CT® is distributed by SNOMED International."/>
   <compose>
     <include>
       <valueSet value="http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs"/>
+    </include>
+    <include>
+      <system value="http://qualityregistry.org/CodeSystem/stroke-risk-factor-cs"/>
     </include>
     <include>
       <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips"/>

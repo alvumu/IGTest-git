@@ -13,7 +13,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://testSK.org/StructureDefinition/prior-medication-statement-profile"^^xsd:anyURI ;
-       fhir:l <http://testSK.org/StructureDefinition/prior-medication-statement-profile>
+       fhir:link <http://testSK.org/StructureDefinition/prior-medication-statement-profile>
      ] )
   ] ; # 
   fhir:text [
@@ -25,36 +25,29 @@
      fhir:concept [
        fhir:coding ( [
          a sct:372756006 ;
-         fhir:system [
-           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
-           fhir:l <http://snomed.info/sct>
-         ] ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "372756006" ] ;
          fhir:display [ fhir:v "Warfarin (substance)" ]
        ] )
      ]
   ] ; # 
   fhir:subject [
-     fhir:l <https://alvumu.github.io/Patient/example-patient> ;
+     fhir:link <https://alvumu.github.io/Patient/example-patient> ;
      fhir:reference [ fhir:v "Patient/example-patient" ]
   ] ; # 
   fhir:encounter [
-     fhir:l fhir:EncounterExample ;
      fhir:reference [ fhir:v "EncounterExample" ]
   ] ; # 
   fhir:reason ( [
      fhir:reference [
-       fhir:l <https://alvumu.github.io/Condition/StrokeDiagnosisConditionExample> ;
+       fhir:link <https://alvumu.github.io/Condition/StrokeDiagnosisConditionExample> ;
        fhir:reference [ fhir:v "Condition/StrokeDiagnosisConditionExample" ]
      ]
   ] ) ; # 
   fhir:adherence [
      fhir:code [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/CodeSystem/medication-statement-adherence"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/CodeSystem/medication-statement-adherence>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/CodeSystem/medication-statement-adherence"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "taking" ]
        ] )
      ]

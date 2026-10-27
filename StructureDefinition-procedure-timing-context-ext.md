@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/StructureDefinition/procedure-timing-context-ext | *Version*:0.1.0 |
-| Draft as of 2026-02-09 | *Computable Name*:ProcedureTimingContextExtension |
+| Draft as of 2026-10-27 | *Computable Name*:ProcedureTimingContextExtension |
 
 Specifies the timing phase (e.g., acute, post-acute) in which the procedure was performed relative to the start of the encounter.
 
@@ -22,7 +22,7 @@ Specifies the timing phase (e.g., acute, post-acute) in which the procedure was 
 * Use this Extension: [Stroke Brain Imaging Procedure Profile (R5)](StructureDefinition-stroke-brain-imaging-procedure-profile.md), [Stroke Carotid Imaging Procedure Profile (R5)](StructureDefinition-stroke-carotid-imaging-procedure-profile.md), [Stroke Thrombolysis Procedure Profile (R5)](StructureDefinition-stroke-mechanical-procedure-profile.md) and [Stroke Swallow Procedure Profile (R5)](StructureDefinition-stroke-swallow-procedure-profile.md)
 * Examples for this Extension: [Procedure/StrokeBrainImagingExample](Procedure-StrokeBrainImagingExample.md), [Procedure/StrokeCarotidImagingExample](Procedure-StrokeCarotidImagingExample.md), [Procedure/StrokeSwallowingExample](Procedure-StrokeSwallowingExample.md) and [Procedure/StrokeThrombolysisExample](Procedure-StrokeThrombolysisExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SKtestIG|current/StructureDefinition/procedure-timing-context-ext)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/SKtestIG|current/StructureDefinition/StructureDefinition-procedure-timing-context-ext.json)
 
 ### Formal Views of Extension Content
 
@@ -44,81 +44,67 @@ Other representations of profile: [CSV](StructureDefinition-procedure-timing-con
 {
   "resourceType" : "StructureDefinition",
   "id" : "procedure-timing-context-ext",
-  "extension" : [
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
-      "valueCode" : "can-bind"
-    }
-  ],
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+    "valueCode" : "can-bind"
+  }],
   "url" : "http://testSK.org/StructureDefinition/procedure-timing-context-ext",
   "version" : "0.1.0",
   "name" : "ProcedureTimingContextExtension",
   "title" : "Procedure Timing Context Extension",
   "status" : "draft",
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Specifies the timing phase (e.g., acute, post-acute) in which the procedure was performed relative to the start of the encounter.",
   "fhirVersion" : "5.0.0",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "Procedure"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "Procedure"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension"
-      },
-      {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "http://testSK.org/StructureDefinition/procedure-timing-context-ext"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ],
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "http://testSK.org/ValueSet/procedure-timing-context-vs"
-        }
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension"
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://testSK.org/StructureDefinition/procedure-timing-context-ext"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://testSK.org/ValueSet/procedure-timing-context-vs"
       }
-    ]
+    }]
   }
 }
 

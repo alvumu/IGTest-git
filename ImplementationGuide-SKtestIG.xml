@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="IGTest"/>
   <status value="draft"/>
-  <date value="2026-02-09T10:35:12+00:00"/>
+  <date value="2026-10-27T13:25:43+00:00"/>
   <publisher value="UMU"/>
   <contact>
     <name value="UMU"/>
@@ -19,7 +19,6 @@
     </telecom>
   </contact>
   <packageId value="SKtestIG"/>
-  <license value="CC0-1.0"/>
   <fhirVersion value="5.0.0"/>
   <dependsOn id="hl7tx">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -27,7 +26,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r5"/>
-    <version value="7.0.1"/>
+    <version value="7.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -35,11 +34,11 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r5"/>
-    <version value="5.2.0"/>
+    <version value="5.3.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r5#0.9.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r5#1.3.0"/>
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -560,6 +559,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/stroke-risk-factor-cs"/>
+      </reference>
+      <name value="RES-Q Stroke Risk Factor Code System"/>
+      <description value="Locally governed RES-Q concepts used when the registry assertion is more specific than an available standard terminology concept."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -830,7 +840,7 @@
         <reference value="StructureDefinition/stroke-risk-factor-condition-profile"/>
       </reference>
       <name value="Stroke Risk Factor Condition Profile"/>
-      <description value="Defines a Condition profile for pre-existing or concurrent conditions that increase stroke risk (e.g., atrial fibrillation/flutter, diabetes, hypertension, coronary disease). The profile fixes category to problem-list-item, binds code (required) to StrokeRiskFactorVS, and supports onset[x] and recordedDate to document chronology and longitudinal tracking. Use this profile to maintain the problem list and to support risk assessment and CDS; do not use it to code the acute stroke event itself."/>
+      <description value="Defines a Condition profile for pre-existing or concurrent conditions and registry-defined assertions that increase stroke risk (e.g., atrial fibrillation/flutter, diabetes, hypertension, coronary disease, smoking within the last 10 years). The profile fixes category to problem-list-item, binds code (required) to StrokeRiskFactorVS, and supports onset[x] and recordedDate to document chronology and longitudinal tracking. Use this profile to maintain the problem list and to support risk assessment and CDS; do not use it to code the acute stroke event itself."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -852,7 +862,7 @@
         <reference value="ValueSet/stroke-risk-factor-vs"/>
       </reference>
       <name value="Stroke Risk Factor ValueSet"/>
-      <description value="Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status."/>
+      <description value="Defines standard and locally governed conditions or assertions relevant to stroke risk, including an option for unknown status."/>
       <isExample value="false"/>
     </resource>
     <resource>

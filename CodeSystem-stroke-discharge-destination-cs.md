@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/CodeSystem/stroke-discharge-destination-cs | *Version*:0.1.0 |
-| Active as of 2026-02-09 | *Computable Name*:StrokeDischargeDestinationCS |
+| Active as of 2026-10-27 | *Computable Name*:StrokeDischargeDestinationCS |
 
  
 Codes indicating the possible destinations of the patient upon discharge from the encounter. 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [StrokeDischargeDestinationVS](ValueSet-stroke-discharge-destination-vs.md)
+* [Stroke Discharge Destination ValueSet](ValueSet-stroke-discharge-destination-vs.md)
 
 
 
@@ -32,29 +32,23 @@ Codes indicating the possible destinations of the patient upon discharge from th
   "title" : "Stroke Discharge Destination Code System",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-02-09T10:35:12+00:00",
+  "date" : "2026-10-27T13:25:43+00:00",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
   "description" : "Codes indicating the possible destinations of the patient upon discharge from the encounter.",
   "content" : "complete",
   "count" : 1,
-  "concept" : [
-    {
-      "code" : "dead",
-      "display" : "Patient Deceased",
-      "definition" : "The patient died during the hospital stay."
-    }
-  ]
+  "concept" : [{
+    "code" : "dead",
+    "display" : "Patient Deceased",
+    "definition" : "The patient died during the hospital stay."
+  }]
 }
 
 ```

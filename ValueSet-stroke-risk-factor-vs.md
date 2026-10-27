@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://testSK.org/ValueSet/stroke-risk-factor-vs | *Version*:0.1.0 |
-| Active as of 2025-10-07 | *Computable Name*:StrokeRiskFactorValueSet |
-| **Copyright/Legal**: This value set includes SNOMED CT® content and may include HL7 IPS value set content. SNOMED CT® is distributed by SNOMED International. | |
+| Active as of 2026-10-27 | *Computable Name*:StrokeRiskFactorValueSet |
+| **Copyright/Legal**: This value set includes SNOMED CT® content, locally governed RES-Q concepts, and may include HL7 IPS value set content. SNOMED CT® is distributed by SNOMED International. | |
 
  
-Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status. 
+Defines standard and locally governed conditions or assertions relevant to stroke risk, including an option for unknown status. 
 
  
-To aggregate core stroke risk factors and unknown/absent problem concepts for comprehensive capture and validation. 
+To aggregate core stroke risk factors, locally governed RES-Q assertions, and unknown/absent problem concepts for comprehensive capture and validation. 
 
  **References** 
 
@@ -27,8 +27,6 @@ To aggregate core stroke risk factors and unknown/absent problem concepts for co
  
 
 ### Expansion
-
-No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -57,34 +55,29 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "Stroke Risk Factor ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-07",
+  "date" : "2026-10-27",
   "publisher" : "UMU",
-  "contact" : [
-    {
-      "name" : "UMU",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://testSK.org/umu"
-        }
-      ]
-    }
-  ],
-  "description" : "Defines the SNOMED CT codes for conditions or risk factors relevant to stroke, including an option for unknown status.",
+  "contact" : [{
+    "name" : "UMU",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://testSK.org/umu"
+    }]
+  }],
+  "description" : "Defines standard and locally governed conditions or assertions relevant to stroke risk, including an option for unknown status.",
   "immutable" : false,
-  "purpose" : "To aggregate core stroke risk factors and unknown/absent problem concepts for comprehensive capture and validation.",
-  "copyright" : "This value set includes SNOMED CT® content and may include HL7 IPS value set content. SNOMED CT® is distributed by SNOMED International.",
+  "purpose" : "To aggregate core stroke risk factors, locally governed RES-Q assertions, and unknown/absent problem concepts for comprehensive capture and validation.",
+  "copyright" : "This value set includes SNOMED CT® content, locally governed RES-Q concepts, and may include HL7 IPS value set content. SNOMED CT® is distributed by SNOMED International.",
   "compose" : {
-    "include" : [
-      {
-        "valueSet" : ["http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs"]
-      },
-      {
-        "valueSet" : [
-          "http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips"
-        ]
-      }
-    ]
+    "include" : [{
+      "valueSet" : ["http://testSK.org/ValueSet/stroke-risk-factor-snomed-vs"]
+    },
+    {
+      "system" : "http://qualityregistry.org/CodeSystem/stroke-risk-factor-cs"
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips"]
+    }]
   }
 }
 
