@@ -31,7 +31,7 @@ Codes for findings related to the circumstances of stroke onset (In-hospital, Wa
   "name" : "StrokeCircumstanceCodesCS",
   "title" : "Stroke Circumstance Codes CodeSystem",
   "status" : "active",
-  "date" : "2026-10-27T13:25:43+00:00",
+  "date" : "2026-10-27T13:28:52+00:00",
   "publisher" : "UMU",
   "contact" : [{
     "name" : "UMU",
